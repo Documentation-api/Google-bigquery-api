@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -211,7 +207,8 @@ policyQuery,
 setting,
 type
 FROM google.cloudidentity.policies
-WHERE policiesId = '{{ policiesId }}' -- required;
+WHERE policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -228,7 +225,8 @@ type
 FROM google.cloudidentity.policies
 WHERE pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

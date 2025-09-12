@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -304,7 +300,8 @@ sessionDuration,
 state
 FROM google.iam.workforce_pools
 WHERE locationsId = '{{ locationsId }}' -- required
-AND workforcePoolsId = '{{ workforcePoolsId }}' -- required;
+AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -327,7 +324,8 @@ WHERE locationsId = '{{ locationsId }}' -- required
 AND parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -480,7 +478,8 @@ Deletes a WorkforcePool. You cannot use a deleted WorkforcePool to exchange exte
 ```sql
 DELETE FROM google.iam.workforce_pools
 WHERE locationsId = '{{ locationsId }}' --required
-AND workforcePoolsId = '{{ workforcePoolsId }}' --required;
+AND workforcePoolsId = '{{ workforcePoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -501,7 +500,8 @@ Undeletes a WorkforcePool, as long as it was deleted fewer than 30 days ago.
 ```sql
 EXEC google.iam.workforce_pools.undelete 
 @locationsId='{{ locationsId }}' --required, 
-@workforcePoolsId='{{ workforcePoolsId }}' --required;
+@workforcePoolsId='{{ workforcePoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

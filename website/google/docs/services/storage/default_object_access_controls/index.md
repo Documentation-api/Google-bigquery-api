@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -279,7 +275,8 @@ selfLink
 FROM google.storage.default_object_access_controls
 WHERE bucket = '{{ bucket }}' -- required
 AND entity = '{{ entity }}' -- required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -294,7 +291,8 @@ FROM google.storage.default_object_access_controls
 WHERE bucket = '{{ bucket }}' -- required
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
 AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -575,7 +573,8 @@ Permanently deletes the default object ACL entry for the specified entity on the
 DELETE FROM google.storage.default_object_access_controls
 WHERE bucket = '{{ bucket }}' --required
 AND entity = '{{ entity }}' --required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,7 +58,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="accessMode" /></td>
@@ -307,8 +305,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -353,8 +349,6 @@ Successful response
 </TabItem>
 <TabItem value="aggregated_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -372,7 +366,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="accessMode" /></td>
@@ -898,7 +892,8 @@ zone
 FROM google.compute.disks
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND disk = '{{ disk }}' -- required;
+AND disk = '{{ disk }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -920,7 +915,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -987,7 +983,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1536,7 +1533,8 @@ DELETE FROM google.compute.disks
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND disk = '{{ disk }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1570,7 +1568,8 @@ EXEC google.compute.disks.set_labels
 '{
 "labels": "{{ labels }}", 
 "labelFingerprint": "{{ labelFingerprint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_set_labels">
@@ -1586,7 +1585,8 @@ EXEC google.compute.disks.bulk_set_labels
 @@json=
 '{
 "requests": "{{ requests }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="resize">
@@ -1602,7 +1602,8 @@ EXEC google.compute.disks.resize
 @@json=
 '{
 "sizeGb": "{{ sizeGb }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="start_async_replication">
@@ -1618,7 +1619,8 @@ EXEC google.compute.disks.start_async_replication
 @@json=
 '{
 "asyncSecondaryDisk": "{{ asyncSecondaryDisk }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop_async_replication">
@@ -1630,7 +1632,8 @@ EXEC google.compute.disks.stop_async_replication
 @project='{{ project }}' --required, 
 @region='{{ region }}' --required, 
 @disk='{{ disk }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="stop_group_async_replication">
@@ -1645,7 +1648,8 @@ EXEC google.compute.disks.stop_group_async_replication
 @@json=
 '{
 "resourcePolicy": "{{ resourcePolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_insert">
@@ -1660,7 +1664,8 @@ EXEC google.compute.disks.bulk_insert
 @@json=
 '{
 "sourceConsistencyGroupPolicy": "{{ sourceConsistencyGroupPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -58,7 +56,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>[Output Only] Name of the resource. The name is 1-20 characters long and must be a valid 64 bit integer. (pattern: [0-9]&#123;0,20&#125;?)</td>
+    <td>[Output Only] Name of the resource. The name is 1-20 characters long and must be a valid 64 bit integer. (pattern: <code>[0-9]&#123;0,20&#125;?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="creationTimestamp" /></td>
@@ -176,7 +174,8 @@ state,
 transferable
 FROM google.compute.license_codes
 WHERE project = '{{ project }}' -- required
-AND licenseCode = '{{ licenseCode }}' -- required;
+AND licenseCode = '{{ licenseCode }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

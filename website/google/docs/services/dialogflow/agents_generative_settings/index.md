@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_get_generative_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -182,7 +180,8 @@ FROM google.dialogflow.agents_generative_settings
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 </Tabs>

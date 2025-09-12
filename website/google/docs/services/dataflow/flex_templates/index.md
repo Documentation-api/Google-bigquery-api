@@ -105,7 +105,8 @@ EXEC google.dataflow.flex_templates.projects_locations_flex_templates_launch
 '{
 "launchParameter": "{{ launchParameter }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

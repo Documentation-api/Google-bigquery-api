@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_evaluation_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_evaluation_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -312,7 +308,8 @@ schedule,
 state
 FROM google.datalabeling.evaluation_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND evaluationJobsId = '{{ evaluationJobsId }}' -- required;
+AND evaluationJobsId = '{{ evaluationJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_evaluation_jobs_list">
@@ -335,7 +332,8 @@ FROM google.datalabeling.evaluation_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -455,7 +453,8 @@ Stops and deletes an evaluation job.
 ```sql
 DELETE FROM google.datalabeling.evaluation_jobs
 WHERE projectsId = '{{ projectsId }}' --required
-AND evaluationJobsId = '{{ evaluationJobsId }}' --required;
+AND evaluationJobsId = '{{ evaluationJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -477,7 +476,8 @@ Pauses an evaluation job. Pausing an evaluation job that is already in a `PAUSED
 ```sql
 EXEC google.datalabeling.evaluation_jobs.projects_evaluation_jobs_pause 
 @projectsId='{{ projectsId }}' --required, 
-@evaluationJobsId='{{ evaluationJobsId }}' --required;
+@evaluationJobsId='{{ evaluationJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_evaluation_jobs_resume">
@@ -487,7 +487,8 @@ Resumes a paused evaluation job. A deleted evaluation job can't be resumed. Resu
 ```sql
 EXEC google.datalabeling.evaluation_jobs.projects_evaluation_jobs_resume 
 @projectsId='{{ projectsId }}' --required, 
-@evaluationJobsId='{{ evaluationJobsId }}' --required;
+@evaluationJobsId='{{ evaluationJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -300,7 +296,8 @@ wafSettings,
 webSettings
 FROM google.recaptchaenterprise.keys
 WHERE projectsId = '{{ projectsId }}' -- required
-AND keysId = '{{ keysId }}' -- required;
+AND keysId = '{{ keysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -322,7 +319,8 @@ webSettings
 FROM google.recaptchaenterprise.keys
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -497,7 +495,8 @@ Deletes the specified key.
 ```sql
 DELETE FROM google.recaptchaenterprise.keys
 WHERE projectsId = '{{ projectsId }}' --required
-AND keysId = '{{ keysId }}' --required;
+AND keysId = '{{ keysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -522,7 +521,8 @@ EXEC google.recaptchaenterprise.keys.migrate
 @@json=
 '{
 "skipBillingCheck": {{ skipBillingCheck }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

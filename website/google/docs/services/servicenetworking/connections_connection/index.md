@@ -100,7 +100,8 @@ Deletes a private service access connection.
 ```sql
 DELETE FROM google.servicenetworking.connections_connection
 WHERE servicesId = '{{ servicesId }}' --required
-AND connectionsId = '{{ connectionsId }}' --required;
+AND connectionsId = '{{ connectionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

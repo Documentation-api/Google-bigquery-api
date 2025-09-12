@@ -112,7 +112,8 @@ EXEC google.solar.building_insights.find_closest
 @location.latitude='{{ location.latitude }}', 
 @location.longitude='{{ location.longitude }}', 
 @requiredQuality='{{ requiredQuality }}', 
-@experiments='{{ experiments }}';
+@experiments='{{ experiments }}'
+;
 ```
 </TabItem>
 </Tabs>

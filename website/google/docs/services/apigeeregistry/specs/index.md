@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_versions_specs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_versions_specs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -394,7 +390,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND specsId = '{{ specsId }}' -- required;
+AND specsId = '{{ specsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_specs_list">
@@ -425,7 +422,8 @@ AND versionsId = '{{ versionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -627,7 +625,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND versionsId = '{{ versionsId }}' --required
 AND specsId = '{{ specsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -656,7 +655,8 @@ EXEC google.apigeeregistry.specs.projects_locations_apis_versions_specs_tag_revi
 @@json=
 '{
 "tag": "{{ tag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_specs_rollback">
@@ -673,7 +673,8 @@ EXEC google.apigeeregistry.specs.projects_locations_apis_versions_specs_rollback
 @@json=
 '{
 "revisionId": "{{ revisionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

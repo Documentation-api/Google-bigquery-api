@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -270,7 +266,8 @@ FROM google.healthcare.consent_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND consentStoresId = '{{ consentStoresId }}' -- required;
+AND consentStoresId = '{{ consentStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -289,7 +286,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -430,7 +428,8 @@ DELETE FROM google.healthcare.consent_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
-AND consentStoresId = '{{ consentStoresId }}' --required;
+AND consentStoresId = '{{ consentStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -462,7 +461,8 @@ EXEC google.healthcare.consent_stores.check_data_access
 "requestAttributes": "{{ requestAttributes }}", 
 "consentList": "{{ consentList }}", 
 "responseView": "{{ responseView }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="query_accessible_data">
@@ -480,7 +480,8 @@ EXEC google.healthcare.consent_stores.query_accessible_data
 "gcsDestination": "{{ gcsDestination }}", 
 "resourceAttributes": "{{ resourceAttributes }}", 
 "requestAttributes": "{{ requestAttributes }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="evaluate_user_consents">
@@ -502,7 +503,8 @@ EXEC google.healthcare.consent_stores.evaluate_user_consents
 "responseView": "{{ responseView }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

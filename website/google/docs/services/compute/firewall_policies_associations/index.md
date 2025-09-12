@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_association">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list_associations">
-
-Successful response
 
 <table>
 <thead>
@@ -228,7 +224,8 @@ FROM google.compute.firewall_policies_associations
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
 AND firewallPolicy = '{{ firewallPolicy }}' -- required
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 <TabItem value="list_associations">
@@ -240,7 +237,8 @@ SELECT
 associations,
 kind
 FROM google.compute.firewall_policies_associations
-WHERE targetResource = '{{ targetResource }}';
+WHERE targetResource = '{{ targetResource }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -380,7 +378,8 @@ WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND firewallPolicy = '{{ firewallPolicy }}' --required
 AND name = '{{ name }}'
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

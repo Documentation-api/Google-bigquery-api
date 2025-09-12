@@ -117,7 +117,8 @@ EXEC google.apigee.security_stats.organizations_environments_security_stats_quer
 "timeRange": "{{ timeRange }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_security_stats_query_time_series_stats">
@@ -138,7 +139,8 @@ EXEC google.apigee.security_stats.organizations_environments_security_stats_quer
 "timestampOrder": "{{ timestampOrder }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

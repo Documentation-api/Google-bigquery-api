@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -132,8 +130,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -224,8 +220,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -249,8 +243,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -445,7 +437,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND operationsId = '{{ operationsId }}' -- required
 AND projectId = '{{ projectId }}'
 AND zone = '{{ zone }}'
-AND operationId = '{{ operationId }}';
+AND operationId = '{{ operationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_operations_get">
@@ -473,7 +466,8 @@ FROM google.container.operations
 WHERE projectId = '{{ projectId }}' -- required
 AND zone = '{{ zone }}' -- required
 AND operationId = '{{ operationId }}' -- required
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_operations_list">
@@ -488,7 +482,8 @@ FROM google.container.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND projectId = '{{ projectId }}'
-AND zone = '{{ zone }}';
+AND zone = '{{ zone }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_operations_list">
@@ -502,7 +497,8 @@ operations
 FROM google.container.operations
 WHERE projectId = '{{ projectId }}' -- required
 AND zone = '{{ zone }}' -- required
-AND parent = '{{ parent }}';
+AND parent = '{{ parent }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -532,7 +528,8 @@ EXEC google.container.operations.projects_locations_operations_cancel
 "zone": "{{ zone }}", 
 "operationId": "{{ operationId }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_operations_cancel">
@@ -550,7 +547,8 @@ EXEC google.container.operations.projects_zones_operations_cancel
 "zone": "{{ zone }}", 
 "operationId": "{{ operationId }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

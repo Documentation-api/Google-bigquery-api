@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -328,7 +324,8 @@ vpcPeeringConfig
 FROM google.datastream.private_connections
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND privateConnectionsId = '{{ privateConnectionsId }}' -- required;
+AND privateConnectionsId = '{{ privateConnectionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -354,7 +351,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -469,7 +467,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND privateConnectionsId = '{{ privateConnectionsId }}' --required
 AND requestId = '{{ requestId }}'
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>

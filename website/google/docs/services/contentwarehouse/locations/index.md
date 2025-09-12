@@ -116,7 +116,8 @@ EXEC google.contentwarehouse.locations.initialize
 "kmsKey": "{{ kmsKey }}", 
 "accessControlMode": "{{ accessControlMode }}", 
 "enableCalUserEmailLogging": {{ enableCalUserEmailLogging }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="run_pipeline">
@@ -134,7 +135,8 @@ EXEC google.contentwarehouse.locations.run_pipeline
 "processWithDocAiPipeline": "{{ processWithDocAiPipeline }}", 
 "exportCdwPipeline": "{{ exportCdwPipeline }}", 
 "requestMetadata": "{{ requestMetadata }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

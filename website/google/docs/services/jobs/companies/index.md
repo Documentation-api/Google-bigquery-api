@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -337,7 +333,8 @@ websiteUri
 FROM google.jobs.companies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND tenantsId = '{{ tenantsId }}' -- required
-AND companiesId = '{{ companiesId }}' -- required;
+AND companiesId = '{{ companiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -364,7 +361,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND tenantsId = '{{ tenantsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND requireOpenJobs = '{{ requireOpenJobs }}';
+AND requireOpenJobs = '{{ requireOpenJobs }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -569,7 +567,8 @@ Deletes specified company. Prerequisite: The company has no jobs associated with
 DELETE FROM google.jobs.companies
 WHERE projectsId = '{{ projectsId }}' --required
 AND tenantsId = '{{ tenantsId }}' --required
-AND companiesId = '{{ companiesId }}' --required;
+AND companiesId = '{{ companiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

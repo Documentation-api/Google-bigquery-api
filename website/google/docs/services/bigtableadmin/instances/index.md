@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -284,7 +280,8 @@ tags,
 type
 FROM google.bigtableadmin.instances
 WHERE projectsId = '{{ projectsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -304,7 +301,8 @@ tags,
 type
 FROM google.bigtableadmin.instances
 WHERE projectsId = '{{ projectsId }}' -- required
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -433,7 +431,8 @@ Delete an instance from a project.
 ```sql
 DELETE FROM google.bigtableadmin.instances
 WHERE projectsId = '{{ projectsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -463,7 +462,8 @@ EXEC google.bigtableadmin.instances.partial_update_instance
 "type": "{{ type }}", 
 "labels": "{{ labels }}", 
 "tags": "{{ tags }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

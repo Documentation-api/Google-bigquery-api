@@ -113,7 +113,8 @@ EXEC google.apigee.balance.organizations_developers_balance_credit
 '{
 "transactionAmount": "{{ transactionAmount }}", 
 "transactionId": "{{ transactionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_balance_adjust">
@@ -127,7 +128,8 @@ EXEC google.apigee.balance.organizations_developers_balance_adjust
 @@json=
 '{
 "adjustment": "{{ adjustment }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

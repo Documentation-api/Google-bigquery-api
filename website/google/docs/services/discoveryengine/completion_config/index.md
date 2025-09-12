@@ -145,7 +145,8 @@ EXEC google.discoveryengine.completion_config.projects_locations_collections_dat
 "suggestionTypes": "{{ suggestionTypes }}", 
 "suggestionTypeSpecs": "{{ suggestionTypeSpecs }}", 
 "experimentIds": "{{ experimentIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_completion_config_complete_query">
@@ -169,7 +170,8 @@ EXEC google.discoveryengine.completion_config.projects_locations_collections_eng
 "suggestionTypes": "{{ suggestionTypes }}", 
 "suggestionTypeSpecs": "{{ suggestionTypeSpecs }}", 
 "experimentIds": "{{ experimentIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_completion_config_complete_query">
@@ -192,7 +194,8 @@ EXEC google.discoveryengine.completion_config.projects_locations_data_stores_com
 "suggestionTypes": "{{ suggestionTypes }}", 
 "suggestionTypeSpecs": "{{ suggestionTypeSpecs }}", 
 "experimentIds": "{{ experimentIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

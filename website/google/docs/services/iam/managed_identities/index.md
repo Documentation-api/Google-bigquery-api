@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -280,7 +276,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND namespacesId = '{{ namespacesId }}' -- required
-AND managedIdentitiesId = '{{ managedIdentitiesId }}' -- required;
+AND managedIdentitiesId = '{{ managedIdentitiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -301,7 +298,8 @@ AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND namespacesId = '{{ namespacesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -443,7 +441,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' --required
 AND namespacesId = '{{ namespacesId }}' --required
-AND managedIdentitiesId = '{{ managedIdentitiesId }}' --required;
+AND managedIdentitiesId = '{{ managedIdentitiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -468,7 +467,8 @@ EXEC google.iam.managed_identities.undelete
 @locationsId='{{ locationsId }}' --required, 
 @workloadIdentityPoolsId='{{ workloadIdentityPoolsId }}' --required, 
 @namespacesId='{{ namespacesId }}' --required, 
-@managedIdentitiesId='{{ managedIdentitiesId }}' --required;
+@managedIdentitiesId='{{ managedIdentitiesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="set_attestation_rules">
@@ -485,7 +485,8 @@ EXEC google.iam.managed_identities.set_attestation_rules
 @@json=
 '{
 "attestationRules": "{{ attestationRules }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

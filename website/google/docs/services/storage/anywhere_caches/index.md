@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -324,7 +320,8 @@ updateTime,
 zone
 FROM google.storage.anywhere_caches
 WHERE bucket = '{{ bucket }}' -- required
-AND anywhereCacheId = '{{ anywhereCacheId }}' -- required;
+AND anywhereCacheId = '{{ anywhereCacheId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -348,7 +345,8 @@ zone
 FROM google.storage.anywhere_caches
 WHERE bucket = '{{ bucket }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -543,7 +541,8 @@ Pauses an Anywhere Cache instance.
 ```sql
 EXEC google.storage.anywhere_caches.pause 
 @bucket='{{ bucket }}' --required, 
-@anywhereCacheId='{{ anywhereCacheId }}' --required;
+@anywhereCacheId='{{ anywhereCacheId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -553,7 +552,8 @@ Resumes a paused or disabled Anywhere Cache instance.
 ```sql
 EXEC google.storage.anywhere_caches.resume 
 @bucket='{{ bucket }}' --required, 
-@anywhereCacheId='{{ anywhereCacheId }}' --required;
+@anywhereCacheId='{{ anywhereCacheId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -563,7 +563,8 @@ Disables an Anywhere Cache instance.
 ```sql
 EXEC google.storage.anywhere_caches.disable 
 @bucket='{{ bucket }}' --required, 
-@anywhereCacheId='{{ anywhereCacheId }}' --required;
+@anywhereCacheId='{{ anywhereCacheId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

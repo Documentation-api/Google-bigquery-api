@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_event_stores_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -82,8 +80,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -124,8 +120,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_catalogs_event_stores_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -335,7 +327,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND eventStoresId = '{{ eventStoresId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_operations_get">
@@ -353,7 +346,8 @@ FROM google.recommendationengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_event_stores_operations_list">
@@ -374,7 +368,8 @@ AND catalogsId = '{{ catalogsId }}' -- required
 AND eventStoresId = '{{ eventStoresId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_operations_list">
@@ -394,7 +389,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

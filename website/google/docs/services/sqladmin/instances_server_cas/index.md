@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_server_cas">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ certs,
 kind
 FROM google.sqladmin.instances_server_cas
 WHERE project = '{{ project }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -210,8 +208,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -625,7 +621,8 @@ vpcPeeringConnectivity
 FROM google.datamigration.migration_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND migrationJobsId = '{{ migrationJobsId }}' -- required;
+AND migrationJobsId = '{{ migrationJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -671,7 +668,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -969,7 +967,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND migrationJobsId = '{{ migrationJobsId }}' --required
 AND requestId = '{{ requestId }}'
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1004,7 +1003,8 @@ EXEC google.datamigration.migration_jobs.start
 @@json=
 '{
 "skipValidation": {{ skipValidation }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -1015,7 +1015,8 @@ Stops a running migration job.
 EXEC google.datamigration.migration_jobs.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@migrationJobsId='{{ migrationJobsId }}' --required;
+@migrationJobsId='{{ migrationJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -1030,7 +1031,8 @@ EXEC google.datamigration.migration_jobs.resume
 @@json=
 '{
 "skipValidation": {{ skipValidation }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="promote">
@@ -1045,7 +1047,8 @@ EXEC google.datamigration.migration_jobs.promote
 @@json=
 '{
 "objectsFilter": "{{ objectsFilter }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="demote_destination">
@@ -1056,7 +1059,8 @@ Demotes the destination database to become a read replica of the source. This is
 EXEC google.datamigration.migration_jobs.demote_destination 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@migrationJobsId='{{ migrationJobsId }}' --required;
+@migrationJobsId='{{ migrationJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="verify">
@@ -1072,7 +1076,8 @@ EXEC google.datamigration.migration_jobs.verify
 '{
 "updateMask": "{{ updateMask }}", 
 "migrationJob": "{{ migrationJob }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restart">
@@ -1089,7 +1094,8 @@ EXEC google.datamigration.migration_jobs.restart
 "skipValidation": {{ skipValidation }}, 
 "objectsFilter": "{{ objectsFilter }}", 
 "restartFailedObjects": {{ restartFailedObjects }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_ssh_script">
@@ -1107,7 +1113,8 @@ EXEC google.datamigration.migration_jobs.generate_ssh_script
 "vmCreationConfig": "{{ vmCreationConfig }}", 
 "vmSelectionConfig": "{{ vmSelectionConfig }}", 
 "vmPort": {{ vmPort }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_tcp_proxy_script">
@@ -1125,7 +1132,8 @@ EXEC google.datamigration.migration_jobs.generate_tcp_proxy_script
 "vmMachineType": "{{ vmMachineType }}", 
 "vmZone": "{{ vmZone }}", 
 "vmSubnet": "{{ vmSubnet }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="fetch_source_objects">
@@ -1136,7 +1144,8 @@ Retrieves objects from the source database that can be selected for data migrati
 EXEC google.datamigration.migration_jobs.fetch_source_objects 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@migrationJobsId='{{ migrationJobsId }}' --required;
+@migrationJobsId='{{ migrationJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

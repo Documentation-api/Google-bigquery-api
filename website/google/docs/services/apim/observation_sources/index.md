@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -242,7 +238,8 @@ updateTime
 FROM google.apim.observation_sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND observationSourcesId = '{{ observationSourcesId }}' -- required;
+AND observationSourcesId = '{{ observationSourcesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -260,7 +257,8 @@ FROM google.apim.observation_sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -351,7 +349,8 @@ DeleteObservationSource deletes an observation source. This method will fail if 
 DELETE FROM google.apim.observation_sources
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND observationSourcesId = '{{ observationSourcesId }}' --required;
+AND observationSourcesId = '{{ observationSourcesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

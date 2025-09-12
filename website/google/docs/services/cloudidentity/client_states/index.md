@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -318,7 +314,8 @@ FROM google.cloudidentity.client_states
 WHERE devicesId = '{{ devicesId }}' -- required
 AND deviceUsersId = '{{ deviceUsersId }}' -- required
 AND clientStatesId = '{{ clientStatesId }}' -- required
-AND customer = '{{ customer }}';
+AND customer = '{{ customer }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -345,7 +342,8 @@ AND deviceUsersId = '{{ deviceUsersId }}' -- required
 AND customer = '{{ customer }}'
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

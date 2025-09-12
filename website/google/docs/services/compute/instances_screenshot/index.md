@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_screenshot">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ kind
 FROM google.compute.instances_screenshot
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

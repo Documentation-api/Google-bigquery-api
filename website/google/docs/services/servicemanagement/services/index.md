@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -211,7 +207,8 @@ SELECT
 producerProjectId,
 serviceName
 FROM google.servicemanagement.services
-WHERE serviceName = '{{ serviceName }}' -- required;
+WHERE serviceName = '{{ serviceName }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -226,7 +223,8 @@ FROM google.servicemanagement.services
 WHERE producerProjectId = '{{ producerProjectId }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND consumerId = '{{ consumerId }}';
+AND consumerId = '{{ consumerId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -297,7 +295,8 @@ Deletes a managed service. This method will change the service to the `Soft-Dele
 
 ```sql
 DELETE FROM google.servicemanagement.services
-WHERE serviceName = '{{ serviceName }}' --required;
+WHERE serviceName = '{{ serviceName }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -318,7 +317,8 @@ Revives a previously deleted managed service. The method restores the service us
 
 ```sql
 EXEC google.servicemanagement.services.undelete 
-@serviceName='{{ serviceName }}' --required;
+@serviceName='{{ serviceName }}' --required
+;
 ```
 </TabItem>
 <TabItem value="generate_config_report">
@@ -331,7 +331,8 @@ EXEC google.servicemanagement.services.generate_config_report
 '{
 "newConfig": "{{ newConfig }}", 
 "oldConfig": "{{ oldConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -101,7 +101,8 @@ EXEC googleworkspace.drivev3.channels.stop
 "address": "{{ address }}", 
 "params": "{{ params }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

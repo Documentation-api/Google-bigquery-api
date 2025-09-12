@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_apis_revisions_debugsessions_data_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,7 +163,8 @@ AND environmentsId = '{{ environmentsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND revisionsId = '{{ revisionsId }}' -- required
 AND debugsessionsId = '{{ debugsessionsId }}' -- required
-AND dataId = '{{ dataId }}' -- required;
+AND dataId = '{{ dataId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -189,7 +188,8 @@ EXEC google.apigee.debugsession_data.organizations_environments_apis_revisions_d
 @environmentsId='{{ environmentsId }}' --required, 
 @apisId='{{ apisId }}' --required, 
 @revisionsId='{{ revisionsId }}' --required, 
-@debugsessionsId='{{ debugsessionsId }}' --required;
+@debugsessionsId='{{ debugsessionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

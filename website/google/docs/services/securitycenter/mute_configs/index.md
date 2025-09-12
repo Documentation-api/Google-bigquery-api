@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_locations_mute_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -107,8 +105,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_mute_configs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -169,8 +165,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_mute_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -229,8 +223,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_mute_configs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -291,8 +283,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_mute_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -351,8 +341,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_mute_configs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -413,8 +401,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_mute_configs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -474,8 +460,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_mute_configs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -534,8 +518,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_mute_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -877,7 +859,8 @@ updateTime
 FROM google.securitycenter.mute_configs
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND muteConfigsId = '{{ muteConfigsId }}' -- required;
+AND muteConfigsId = '{{ muteConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_mute_configs_get">
@@ -898,7 +881,8 @@ updateTime
 FROM google.securitycenter.mute_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND muteConfigsId = '{{ muteConfigsId }}' -- required;
+AND muteConfigsId = '{{ muteConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_mute_configs_get">
@@ -919,7 +903,8 @@ updateTime
 FROM google.securitycenter.mute_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND muteConfigsId = '{{ muteConfigsId }}' -- required;
+AND muteConfigsId = '{{ muteConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_mute_configs_get">
@@ -939,7 +924,8 @@ type,
 updateTime
 FROM google.securitycenter.mute_configs
 WHERE foldersId = '{{ foldersId }}' -- required
-AND muteConfigsId = '{{ muteConfigsId }}' -- required;
+AND muteConfigsId = '{{ muteConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_mute_configs_get">
@@ -959,7 +945,8 @@ type,
 updateTime
 FROM google.securitycenter.mute_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND muteConfigsId = '{{ muteConfigsId }}' -- required;
+AND muteConfigsId = '{{ muteConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_mute_configs_get">
@@ -979,7 +966,8 @@ type,
 updateTime
 FROM google.securitycenter.mute_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND muteConfigsId = '{{ muteConfigsId }}' -- required;
+AND muteConfigsId = '{{ muteConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_mute_configs_list">
@@ -1000,7 +988,8 @@ updateTime
 FROM google.securitycenter.mute_configs
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_mute_configs_list">
@@ -1021,7 +1010,8 @@ updateTime
 FROM google.securitycenter.mute_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_mute_configs_list">
@@ -1042,7 +1032,8 @@ updateTime
 FROM google.securitycenter.mute_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1437,7 +1428,8 @@ Deletes an existing mute config.
 DELETE FROM google.securitycenter.mute_configs
 WHERE foldersId = '{{ foldersId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND muteConfigsId = '{{ muteConfigsId }}' --required;
+AND muteConfigsId = '{{ muteConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_mute_configs_delete">
@@ -1448,7 +1440,8 @@ Deletes an existing mute config.
 DELETE FROM google.securitycenter.mute_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND muteConfigsId = '{{ muteConfigsId }}' --required;
+AND muteConfigsId = '{{ muteConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_mute_configs_delete">
@@ -1459,7 +1452,8 @@ Deletes an existing mute config.
 DELETE FROM google.securitycenter.mute_configs
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND muteConfigsId = '{{ muteConfigsId }}' --required;
+AND muteConfigsId = '{{ muteConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_mute_configs_delete">
@@ -1469,7 +1463,8 @@ Deletes an existing mute config.
 ```sql
 DELETE FROM google.securitycenter.mute_configs
 WHERE foldersId = '{{ foldersId }}' --required
-AND muteConfigsId = '{{ muteConfigsId }}' --required;
+AND muteConfigsId = '{{ muteConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_mute_configs_delete">
@@ -1479,7 +1474,8 @@ Deletes an existing mute config.
 ```sql
 DELETE FROM google.securitycenter.mute_configs
 WHERE projectsId = '{{ projectsId }}' --required
-AND muteConfigsId = '{{ muteConfigsId }}' --required;
+AND muteConfigsId = '{{ muteConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_mute_configs_delete">
@@ -1489,7 +1485,8 @@ Deletes an existing mute config.
 ```sql
 DELETE FROM google.securitycenter.mute_configs
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND muteConfigsId = '{{ muteConfigsId }}' --required;
+AND muteConfigsId = '{{ muteConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

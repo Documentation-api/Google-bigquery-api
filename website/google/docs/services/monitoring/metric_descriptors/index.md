@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_metric_descriptors_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_metric_descriptors_list">
-
-Successful response
 
 <table>
 <thead>
@@ -302,7 +298,8 @@ unit,
 valueType
 FROM google.monitoring.metric_descriptors
 WHERE projectsId = '{{ projectsId }}' -- required
-AND metricDescriptorsId = '{{ metricDescriptorsId }}' -- required;
+AND metricDescriptorsId = '{{ metricDescriptorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_metric_descriptors_list">
@@ -327,7 +324,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND activeOnly = '{{ activeOnly }}';
+AND activeOnly = '{{ activeOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -476,7 +474,8 @@ Deletes a metric descriptor. Only user-created custom metrics (https://cloud.goo
 ```sql
 DELETE FROM google.monitoring.metric_descriptors
 WHERE projectsId = '{{ projectsId }}' --required
-AND metricDescriptorsId = '{{ metricDescriptorsId }}' --required;
+AND metricDescriptorsId = '{{ metricDescriptorsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

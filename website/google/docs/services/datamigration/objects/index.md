@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -264,7 +260,8 @@ FROM google.datamigration.objects
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND migrationJobsId = '{{ migrationJobsId }}' -- required
-AND objectsId = '{{ objectsId }}' -- required;
+AND objectsId = '{{ objectsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -286,7 +283,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND migrationJobsId = '{{ migrationJobsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -312,7 +310,8 @@ EXEC google.datamigration.objects.lookup
 @@json=
 '{
 "sourceObjectIdentifier": "{{ sourceObjectIdentifier }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

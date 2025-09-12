@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_analytics_admin_get_schemav2">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ FROM google.apigee.admin_schemav2
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND type = '{{ type }}'
-AND disableCache = '{{ disableCache }}';
+AND disableCache = '{{ disableCache }}'
+;
 ```
 </TabItem>
 </Tabs>

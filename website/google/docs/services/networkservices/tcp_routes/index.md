@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -54,7 +52,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Identifier. Name of the TcpRoute resource. It matches pattern `projects/*/locations/global/tcpRoutes/tcp_route_name&gt;`.</td>
+    <td>Identifier. Name of the TcpRoute resource. It matches pattern `projects/*/locations/global/tcpRoutes/tcp_route_name>`.</td>
 </tr>
 <tr>
     <td><CopyableCode code="createTime" /></td>
@@ -101,8 +99,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,7 +111,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Identifier. Name of the TcpRoute resource. It matches pattern `projects/*/locations/global/tcpRoutes/tcp_route_name&gt;`.</td>
+    <td>Identifier. Name of the TcpRoute resource. It matches pattern `projects/*/locations/global/tcpRoutes/tcp_route_name>`.</td>
 </tr>
 <tr>
     <td><CopyableCode code="createTime" /></td>
@@ -298,7 +294,8 @@ updateTime
 FROM google.networkservices.tcp_routes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND tcpRoutesId = '{{ tcpRoutesId }}' -- required;
+AND tcpRoutesId = '{{ tcpRoutesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -321,7 +318,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -473,7 +471,8 @@ Deletes a single TcpRoute.
 DELETE FROM google.networkservices.tcp_routes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND tcpRoutesId = '{{ tcpRoutesId }}' --required;
+AND tcpRoutesId = '{{ tcpRoutesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

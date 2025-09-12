@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_sessions_answers_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -127,8 +125,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_answers_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -212,8 +208,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_answers_get">
-
-Successful response
 
 <table>
 <thead>
@@ -425,7 +419,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND answersId = '{{ answersId }}' -- required;
+AND answersId = '{{ answersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_answers_get">
@@ -454,7 +449,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND answersId = '{{ answersId }}' -- required;
+AND answersId = '{{ answersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_answers_get">
@@ -482,7 +478,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND answersId = '{{ answersId }}' -- required;
+AND answersId = '{{ answersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

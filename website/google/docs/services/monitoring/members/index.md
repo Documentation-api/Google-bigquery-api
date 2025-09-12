@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_groups_members_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND interval.endTime = '{{ interval.endTime }}'
-AND interval.startTime = '{{ interval.startTime }}';
+AND interval.startTime = '{{ interval.startTime }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -117,8 +115,6 @@ Successful response
 </TabItem>
 <TabItem value="query_directory_contents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -142,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -407,7 +401,8 @@ workspaceCompilationOverrides
 FROM google.dataform.repositories
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND repositoriesId = '{{ repositoriesId }}' -- required;
+AND repositoriesId = '{{ repositoriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="query_directory_contents">
@@ -425,7 +420,8 @@ AND repositoriesId = '{{ repositoriesId }}' -- required
 AND commitSha = '{{ commitSha }}'
 AND path = '{{ path }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -452,7 +448,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -643,7 +640,8 @@ DELETE FROM google.dataform.repositories
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -673,7 +671,8 @@ EXEC google.dataform.repositories.commit
 "commitMetadata": "{{ commitMetadata }}", 
 "requiredHeadCommitSha": "{{ requiredHeadCommitSha }}", 
 "fileOperations": "{{ fileOperations }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="read_file">
@@ -686,7 +685,8 @@ EXEC google.dataform.repositories.read_file
 @locationsId='{{ locationsId }}' --required, 
 @repositoriesId='{{ repositoriesId }}' --required, 
 @commitSha='{{ commitSha }}', 
-@path='{{ path }}';
+@path='{{ path }}'
+;
 ```
 </TabItem>
 <TabItem value="compute_access_token_status">
@@ -697,7 +697,8 @@ Computes a Repository's Git access token status.
 EXEC google.dataform.repositories.compute_access_token_status 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@repositoriesId='{{ repositoriesId }}' --required;
+@repositoriesId='{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

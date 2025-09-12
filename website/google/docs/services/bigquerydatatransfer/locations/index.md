@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -236,7 +232,8 @@ locationId,
 metadata
 FROM google.bigquerydatatransfer.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_list">
@@ -255,7 +252,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -281,7 +279,8 @@ EXEC google.bigquerydatatransfer.locations.projects_locations_enroll_data_source
 @@json=
 '{
 "dataSourceIds": "{{ dataSourceIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_unenroll_data_sources">
@@ -295,7 +294,8 @@ EXEC google.bigquerydatatransfer.locations.projects_locations_unenroll_data_sour
 @@json=
 '{
 "dataSourceIds": "{{ dataSourceIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

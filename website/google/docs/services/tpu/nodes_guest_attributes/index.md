@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_guest_attributes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ guestAttributes
 FROM google.tpu.nodes_guest_attributes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND nodesId = '{{ nodesId }}' -- required;
+AND nodesId = '{{ nodesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

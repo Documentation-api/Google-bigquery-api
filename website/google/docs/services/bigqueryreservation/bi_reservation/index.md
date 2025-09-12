@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_bi_reservation">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ size,
 updateTime
 FROM google.bigqueryreservation.bi_reservation
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

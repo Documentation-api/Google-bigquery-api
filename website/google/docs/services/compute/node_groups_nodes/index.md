@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_nodes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -213,7 +211,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -320,7 +319,8 @@ DELETE FROM google.compute.node_groups_nodes
 WHERE project = '{{ project }}' --required
 AND zone = '{{ zone }}' --required
 AND nodeGroup = '{{ nodeGroup }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

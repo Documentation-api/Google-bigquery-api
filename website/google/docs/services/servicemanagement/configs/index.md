@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -496,7 +492,8 @@ usage
 FROM google.servicemanagement.configs
 WHERE serviceName = '{{ serviceName }}' -- required
 AND configId = '{{ configId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -537,7 +534,8 @@ usage
 FROM google.servicemanagement.configs
 WHERE serviceName = '{{ serviceName }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -831,7 +829,8 @@ EXEC google.servicemanagement.configs.submit
 '{
 "configSource": "{{ configSource }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

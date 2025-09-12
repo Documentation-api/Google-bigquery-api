@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_apps_keys_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_appgroups_apps_keys_get">
-
-Successful response
 
 <table>
 <thead>
@@ -343,7 +339,8 @@ FROM google.apigee.keys
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
 AND appsId = '{{ appsId }}' -- required
-AND keysId = '{{ keysId }}' -- required;
+AND keysId = '{{ keysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_keys_get">
@@ -365,7 +362,8 @@ FROM google.apigee.keys
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND appgroupsId = '{{ appgroupsId }}' -- required
 AND appsId = '{{ appsId }}' -- required
-AND keysId = '{{ keysId }}' -- required;
+AND keysId = '{{ keysId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -597,7 +595,8 @@ WHERE organizationsId = '{{ organizationsId }}' --required
 AND developersId = '{{ developersId }}' --required
 AND appsId = '{{ appsId }}' --required
 AND keysId = '{{ keysId }}' --required
-AND apiproductsId = '{{ apiproductsId }}' --required;
+AND apiproductsId = '{{ apiproductsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_keys_delete">
@@ -609,7 +608,8 @@ DELETE FROM google.apigee.keys
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND developersId = '{{ developersId }}' --required
 AND appsId = '{{ appsId }}' --required
-AND keysId = '{{ keysId }}' --required;
+AND keysId = '{{ keysId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_keys_delete">
@@ -621,7 +621,8 @@ DELETE FROM google.apigee.keys
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND appgroupsId = '{{ appgroupsId }}' --required
 AND appsId = '{{ appsId }}' --required
-AND keysId = '{{ keysId }}' --required;
+AND keysId = '{{ keysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -660,7 +661,8 @@ EXEC google.apigee.keys.organizations_developers_apps_keys_update_developer_app_
 "scopes": "{{ scopes }}", 
 "status": "{{ status }}", 
 "expiresInSeconds": "{{ expiresInSeconds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_keys_create_create">
@@ -683,7 +685,8 @@ EXEC google.apigee.keys.organizations_developers_apps_keys_create_create
 "scopes": "{{ scopes }}", 
 "status": "{{ status }}", 
 "expiresInSeconds": "{{ expiresInSeconds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_keys_apiproducts_update_developer_app_key_api_product">
@@ -697,7 +700,8 @@ EXEC google.apigee.keys.organizations_developers_apps_keys_apiproducts_update_de
 @appsId='{{ appsId }}' --required, 
 @keysId='{{ keysId }}' --required, 
 @apiproductsId='{{ apiproductsId }}' --required, 
-@action='{{ action }}';
+@action='{{ action }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_keys_update_app_group_app_key">
@@ -715,7 +719,8 @@ EXEC google.apigee.keys.organizations_appgroups_apps_keys_update_app_group_app_k
 "action": "{{ action }}", 
 "appGroupAppKey": "{{ appGroupAppKey }}", 
 "apiProducts": "{{ apiProducts }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

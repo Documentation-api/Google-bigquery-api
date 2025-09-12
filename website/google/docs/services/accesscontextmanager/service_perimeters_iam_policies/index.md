@@ -104,7 +104,8 @@ EXEC google.accesscontextmanager.service_perimeters_iam_policies.test_iam_permis
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -242,7 +238,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' -- required
 AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -263,7 +260,8 @@ AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' -- required
 AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -287,7 +285,8 @@ EXEC google.contactcenterinsights.operations.cancel
 @locationsId='{{ locationsId }}' --required, 
 @authorizedViewSetsId='{{ authorizedViewSetsId }}' --required, 
 @authorizedViewsId='{{ authorizedViewsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

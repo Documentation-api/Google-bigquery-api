@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -307,7 +303,8 @@ FROM google.securesourcemanager.issues
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND issuesId = '{{ issuesId }}' -- required;
+AND issuesId = '{{ issuesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -330,7 +327,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -470,7 +468,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
 AND issuesId = '{{ issuesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -498,7 +497,8 @@ EXEC google.securesourcemanager.issues.open
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="close">
@@ -514,7 +514,8 @@ EXEC google.securesourcemanager.issues.close
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

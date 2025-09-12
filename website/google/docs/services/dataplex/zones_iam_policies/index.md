@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_lakes_zones_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,7 +170,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND zonesId = '{{ zonesId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -231,7 +230,8 @@ EXEC google.dataplex.zones_iam_policies.projects_locations_lakes_zones_test_iam_
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

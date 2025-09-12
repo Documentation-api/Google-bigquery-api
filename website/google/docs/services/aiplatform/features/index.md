@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -348,7 +344,8 @@ FROM google.aiplatform.features
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND featureGroupsId = '{{ featureGroupsId }}' -- required
-AND featuresId = '{{ featuresId }}' -- required;
+AND featuresId = '{{ featuresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -377,7 +374,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
 AND readMask = '{{ readMask }}'
-AND latestStatsCount = '{{ latestStatsCount }}';
+AND latestStatsCount = '{{ latestStatsCount }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -584,7 +582,8 @@ DELETE FROM google.aiplatform.features
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND featureGroupsId = '{{ featureGroupsId }}' --required
-AND featuresId = '{{ featuresId }}' --required;
+AND featuresId = '{{ featuresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -232,7 +228,8 @@ error,
 metadata,
 response
 FROM google.storagetransfer.transfer_operations
-WHERE transferOperationsId = '{{ transferOperationsId }}' -- required;
+WHERE transferOperationsId = '{{ transferOperationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -249,7 +246,8 @@ response
 FROM google.storagetransfer.transfer_operations
 WHERE filter = '{{ filter }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -271,7 +269,8 @@ Cancels a transfer. Use the transferOperations.get method to check if the cancel
 
 ```sql
 EXEC google.storagetransfer.transfer_operations.cancel 
-@transferOperationsId='{{ transferOperationsId }}' --required;
+@transferOperationsId='{{ transferOperationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="pause">
@@ -280,7 +279,8 @@ Pauses a transfer operation.
 
 ```sql
 EXEC google.storagetransfer.transfer_operations.pause 
-@transferOperationsId='{{ transferOperationsId }}' --required;
+@transferOperationsId='{{ transferOperationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -289,7 +289,8 @@ Resumes a transfer operation that is paused.
 
 ```sql
 EXEC google.storagetransfer.transfer_operations.resume 
-@transferOperationsId='{{ transferOperationsId }}' --required;
+@transferOperationsId='{{ transferOperationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

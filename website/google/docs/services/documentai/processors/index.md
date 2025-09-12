@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_processors_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_processors_list">
-
-Successful response
 
 <table>
 <thead>
@@ -333,7 +329,8 @@ type
 FROM google.documentai.processors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND processorsId = '{{ processorsId }}' -- required;
+AND processorsId = '{{ processorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_list">
@@ -357,7 +354,8 @@ FROM google.documentai.processors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -460,7 +458,8 @@ Deletes the processor, unloads all deployed model artifacts if it was enabled an
 DELETE FROM google.documentai.processors
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND processorsId = '{{ processorsId }}' --required;
+AND processorsId = '{{ processorsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -497,7 +496,8 @@ EXEC google.documentai.processors.projects_locations_processors_process
 "processOptions": "{{ processOptions }}", 
 "labels": "{{ labels }}", 
 "imagelessMode": {{ imagelessMode }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_batch_process">
@@ -516,7 +516,8 @@ EXEC google.documentai.processors.projects_locations_processors_batch_process
 "skipHumanReview": {{ skipHumanReview }}, 
 "processOptions": "{{ processOptions }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_enable">
@@ -527,7 +528,8 @@ Enables a processor
 EXEC google.documentai.processors.projects_locations_processors_enable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@processorsId='{{ processorsId }}' --required;
+@processorsId='{{ processorsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_disable">
@@ -538,7 +540,8 @@ Disables a processor
 EXEC google.documentai.processors.projects_locations_processors_disable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@processorsId='{{ processorsId }}' --required;
+@processorsId='{{ processorsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_set_default_processor_version">
@@ -553,7 +556,8 @@ EXEC google.documentai.processors.projects_locations_processors_set_default_proc
 @@json=
 '{
 "defaultProcessorVersion": "{{ defaultProcessorVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

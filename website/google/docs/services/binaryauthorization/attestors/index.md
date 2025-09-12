@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -245,7 +241,8 @@ updateTime,
 userOwnedGrafeasNote
 FROM google.binaryauthorization.attestors
 WHERE projectsId = '{{ projectsId }}' -- required
-AND attestorsId = '{{ attestorsId }}' -- required;
+AND attestorsId = '{{ attestorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -262,7 +259,8 @@ userOwnedGrafeasNote
 FROM google.binaryauthorization.attestors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -390,7 +388,8 @@ Deletes an attestor. Returns `NOT_FOUND` if the attestor does not exist.
 ```sql
 DELETE FROM google.binaryauthorization.attestors
 WHERE projectsId = '{{ projectsId }}' --required
-AND attestorsId = '{{ attestorsId }}' --required;
+AND attestorsId = '{{ attestorsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -417,7 +416,8 @@ EXEC google.binaryauthorization.attestors.validate_attestation_occurrence
 "attestation": "{{ attestation }}", 
 "occurrenceNote": "{{ occurrenceNote }}", 
 "occurrenceResourceUri": "{{ occurrenceResourceUri }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

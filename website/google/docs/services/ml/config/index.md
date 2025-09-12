@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_get_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ config,
 serviceAccount,
 serviceAccountProject
 FROM google.ml.config
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

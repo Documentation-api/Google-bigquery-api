@@ -128,7 +128,8 @@ EXEC google.recommendationengine.placements.projects_locations_catalogs_event_st
 "dryRun": {{ dryRun }}, 
 "params": "{{ params }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

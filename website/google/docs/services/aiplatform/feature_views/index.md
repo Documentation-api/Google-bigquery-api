@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -408,7 +404,8 @@ FROM google.aiplatform.feature_views
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND featureOnlineStoresId = '{{ featureOnlineStoresId }}' -- required
-AND featureViewsId = '{{ featureViewsId }}' -- required;
+AND featureViewsId = '{{ featureViewsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -439,7 +436,8 @@ AND featureOnlineStoresId = '{{ featureOnlineStoresId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -635,7 +633,8 @@ DELETE FROM google.aiplatform.feature_views
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND featureOnlineStoresId = '{{ featureOnlineStoresId }}' --required
-AND featureViewsId = '{{ featureViewsId }}' --required;
+AND featureViewsId = '{{ featureViewsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -661,7 +660,8 @@ EXEC google.aiplatform.feature_views.sync
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @featureOnlineStoresId='{{ featureOnlineStoresId }}' --required, 
-@featureViewsId='{{ featureViewsId }}' --required;
+@featureViewsId='{{ featureViewsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="fetch_feature_values">
@@ -678,7 +678,8 @@ EXEC google.aiplatform.feature_views.fetch_feature_values
 '{
 "dataKey": "{{ dataKey }}", 
 "dataFormat": "{{ dataFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_nearest_entities">
@@ -695,7 +696,8 @@ EXEC google.aiplatform.feature_views.search_nearest_entities
 '{
 "query": "{{ query }}", 
 "returnFullEntity": {{ returnFullEntity }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="direct_write">
@@ -711,7 +713,8 @@ EXEC google.aiplatform.feature_views.direct_write
 @@json=
 '{
 "dataKeyAndFeatureValues": "{{ dataKeyAndFeatureValues }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

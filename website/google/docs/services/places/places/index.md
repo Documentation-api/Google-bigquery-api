@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -587,7 +585,8 @@ FROM google.places.places
 WHERE placesId = '{{ placesId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND regionCode = '{{ regionCode }}'
-AND sessionToken = '{{ sessionToken }}';
+AND sessionToken = '{{ sessionToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -621,7 +620,8 @@ EXEC google.places.places.search_nearby
 "locationRestriction": "{{ locationRestriction }}", 
 "rankPreference": "{{ rankPreference }}", 
 "routingParameters": "{{ routingParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_text">
@@ -650,7 +650,8 @@ EXEC google.places.places.search_text
 "routingParameters": "{{ routingParameters }}", 
 "searchAlongRouteParameters": "{{ searchAlongRouteParameters }}", 
 "includePureServiceAreaBusinesses": {{ includePureServiceAreaBusinesses }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="autocomplete">
@@ -673,7 +674,8 @@ EXEC google.places.places.autocomplete
 "includeQueryPredictions": {{ includeQueryPredictions }}, 
 "sessionToken": "{{ sessionToken }}", 
 "includePureServiceAreaBusinesses": {{ includePureServiceAreaBusinesses }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

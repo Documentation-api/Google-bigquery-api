@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -281,7 +277,8 @@ FROM google.storage.managed_folders
 WHERE bucket = '{{ bucket }}' -- required
 AND managedFolder = '{{ managedFolder }}' -- required
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
-AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}';
+AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -302,7 +299,8 @@ FROM google.storage.managed_folders
 WHERE bucket = '{{ bucket }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND prefix = '{{ prefix }}';
+AND prefix = '{{ prefix }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -428,7 +426,8 @@ WHERE bucket = '{{ bucket }}' --required
 AND managedFolder = '{{ managedFolder }}' --required
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
 AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
-AND allowNonEmpty = '{{ allowNonEmpty }}';
+AND allowNonEmpty = '{{ allowNonEmpty }}'
+;
 ```
 </TabItem>
 </Tabs>

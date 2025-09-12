@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -410,7 +406,8 @@ updateTime
 FROM google.aiplatform.index_endpoints
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND indexEndpointsId = '{{ indexEndpointsId }}' -- required;
+AND indexEndpointsId = '{{ indexEndpointsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -441,7 +438,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -624,7 +622,8 @@ Deletes an IndexEndpoint.
 DELETE FROM google.aiplatform.index_endpoints
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND indexEndpointsId = '{{ indexEndpointsId }}' --required;
+AND indexEndpointsId = '{{ indexEndpointsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -654,7 +653,8 @@ EXEC google.aiplatform.index_endpoints.deploy_index
 @@json=
 '{
 "deployedIndex": "{{ deployedIndex }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undeploy_index">
@@ -669,7 +669,8 @@ EXEC google.aiplatform.index_endpoints.undeploy_index
 @@json=
 '{
 "deployedIndexId": "{{ deployedIndexId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="mutate_deployed_index">
@@ -695,7 +696,8 @@ EXEC google.aiplatform.index_endpoints.mutate_deployed_index
 "deploymentGroup": "{{ deploymentGroup }}", 
 "deploymentTier": "{{ deploymentTier }}", 
 "pscAutomationConfigs": "{{ pscAutomationConfigs }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="find_neighbors">
@@ -712,7 +714,8 @@ EXEC google.aiplatform.index_endpoints.find_neighbors
 "deployedIndexId": "{{ deployedIndexId }}", 
 "queries": "{{ queries }}", 
 "returnFullDatapoint": {{ returnFullDatapoint }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="read_index_datapoints">
@@ -728,7 +731,8 @@ EXEC google.aiplatform.index_endpoints.read_index_datapoints
 '{
 "deployedIndexId": "{{ deployedIndexId }}", 
 "ids": "{{ ids }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

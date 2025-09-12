@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_media">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ WHERE placesId = '{{ placesId }}' -- required
 AND photosId = '{{ photosId }}' -- required
 AND maxWidthPx = '{{ maxWidthPx }}'
 AND maxHeightPx = '{{ maxHeightPx }}'
-AND skipHttpRedirect = '{{ skipHttpRedirect }}';
+AND skipHttpRedirect = '{{ skipHttpRedirect }}'
+;
 ```
 </TabItem>
 </Tabs>

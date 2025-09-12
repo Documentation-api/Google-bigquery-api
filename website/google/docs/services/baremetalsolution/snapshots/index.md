@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -256,7 +252,8 @@ FROM google.baremetalsolution.snapshots
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND volumesId = '{{ volumesId }}' -- required
-AND snapshotsId = '{{ snapshotsId }}' -- required;
+AND snapshotsId = '{{ snapshotsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -276,7 +273,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND volumesId = '{{ volumesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -366,7 +364,8 @@ DELETE FROM google.baremetalsolution.snapshots
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND volumesId = '{{ volumesId }}' --required
-AND snapshotsId = '{{ snapshotsId }}' --required;
+AND snapshotsId = '{{ snapshotsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -389,7 +388,8 @@ EXEC google.baremetalsolution.snapshots.restore_volume_snapshot
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @volumesId='{{ volumesId }}' --required, 
-@snapshotsId='{{ snapshotsId }}' --required;
+@snapshotsId='{{ snapshotsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

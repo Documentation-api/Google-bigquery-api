@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_exchanges_query_templates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_exchanges_query_templates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -324,7 +320,8 @@ FROM google.analyticshub.query_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataExchangesId = '{{ dataExchangesId }}' -- required
-AND queryTemplatesId = '{{ queryTemplatesId }}' -- required;
+AND queryTemplatesId = '{{ queryTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_exchanges_query_templates_list">
@@ -348,7 +345,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataExchangesId = '{{ dataExchangesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -517,7 +515,8 @@ DELETE FROM google.analyticshub.query_templates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataExchangesId = '{{ dataExchangesId }}' --required
-AND queryTemplatesId = '{{ queryTemplatesId }}' --required;
+AND queryTemplatesId = '{{ queryTemplatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -541,7 +540,8 @@ EXEC google.analyticshub.query_templates.projects_locations_data_exchanges_query
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @dataExchangesId='{{ dataExchangesId }}' --required, 
-@queryTemplatesId='{{ queryTemplatesId }}' --required;
+@queryTemplatesId='{{ queryTemplatesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_exchanges_query_templates_approve">
@@ -553,7 +553,8 @@ EXEC google.analyticshub.query_templates.projects_locations_data_exchanges_query
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @dataExchangesId='{{ dataExchangesId }}' --required, 
-@queryTemplatesId='{{ queryTemplatesId }}' --required;
+@queryTemplatesId='{{ queryTemplatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

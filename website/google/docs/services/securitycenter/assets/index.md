@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_assets_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -67,8 +65,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_assets_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_assets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -278,7 +272,8 @@ AND readTime = '{{ readTime }}'
 AND compareDuration = '{{ compareDuration }}'
 AND fieldMask = '{{ fieldMask }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_assets_list">
@@ -297,7 +292,8 @@ AND readTime = '{{ readTime }}'
 AND compareDuration = '{{ compareDuration }}'
 AND fieldMask = '{{ fieldMask }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_assets_list">
@@ -316,7 +312,8 @@ AND readTime = '{{ readTime }}'
 AND compareDuration = '{{ compareDuration }}'
 AND fieldMask = '{{ fieldMask }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -348,7 +345,8 @@ EXEC google.securitycenter.assets.folders_assets_group
 "readTime": "{{ readTime }}", 
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_assets_group">
@@ -366,7 +364,8 @@ EXEC google.securitycenter.assets.projects_assets_group
 "readTime": "{{ readTime }}", 
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_assets_group">
@@ -384,7 +383,8 @@ EXEC google.securitycenter.assets.organizations_assets_group
 "readTime": "{{ readTime }}", 
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_assets_run_discovery">
@@ -393,7 +393,8 @@ Runs asset discovery. The discovery is tracked with a long-running operation. Th
 
 ```sql
 EXEC google.securitycenter.assets.organizations_assets_run_discovery 
-@organizationsId='{{ organizationsId }}' --required;
+@organizationsId='{{ organizationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_job_triggers_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -109,8 +107,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_job_triggers_get">
-
-Successful response
 
 <table>
 <thead>
@@ -176,8 +172,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_job_triggers_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -241,8 +235,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_job_triggers_get">
-
-Successful response
 
 <table>
 <thead>
@@ -308,8 +300,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_job_triggers_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -373,8 +363,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_job_triggers_list">
-
-Successful response
 
 <table>
 <thead>
@@ -682,7 +670,8 @@ updateTime
 FROM google.dlp.job_triggers
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND jobTriggersId = '{{ jobTriggersId }}' -- required;
+AND jobTriggersId = '{{ jobTriggersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_job_triggers_get">
@@ -704,7 +693,8 @@ updateTime
 FROM google.dlp.job_triggers
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND jobTriggersId = '{{ jobTriggersId }}' -- required;
+AND jobTriggersId = '{{ jobTriggersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_job_triggers_list">
@@ -731,7 +721,8 @@ AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
 AND filter = '{{ filter }}'
 AND type = '{{ type }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_job_triggers_get">
@@ -752,7 +743,8 @@ triggers,
 updateTime
 FROM google.dlp.job_triggers
 WHERE projectsId = '{{ projectsId }}' -- required
-AND jobTriggersId = '{{ jobTriggersId }}' -- required;
+AND jobTriggersId = '{{ jobTriggersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_job_triggers_list">
@@ -779,7 +771,8 @@ AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
 AND filter = '{{ filter }}'
 AND type = '{{ type }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_job_triggers_list">
@@ -805,7 +798,8 @@ AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
 AND filter = '{{ filter }}'
 AND type = '{{ type }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1059,7 +1053,8 @@ Deletes a job trigger. See https://cloud.google.com/sensitive-data-protection/do
 DELETE FROM google.dlp.job_triggers
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND jobTriggersId = '{{ jobTriggersId }}' --required;
+AND jobTriggersId = '{{ jobTriggersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_job_triggers_delete">
@@ -1070,7 +1065,8 @@ Deletes a job trigger. See https://cloud.google.com/sensitive-data-protection/do
 DELETE FROM google.dlp.job_triggers
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND jobTriggersId = '{{ jobTriggersId }}' --required;
+AND jobTriggersId = '{{ jobTriggersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_job_triggers_delete">
@@ -1080,7 +1076,8 @@ Deletes a job trigger. See https://cloud.google.com/sensitive-data-protection/do
 ```sql
 DELETE FROM google.dlp.job_triggers
 WHERE projectsId = '{{ projectsId }}' --required
-AND jobTriggersId = '{{ jobTriggersId }}' --required;
+AND jobTriggersId = '{{ jobTriggersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1108,7 +1105,8 @@ EXEC google.dlp.job_triggers.projects_locations_job_triggers_hybrid_inspect
 @@json=
 '{
 "hybridItem": "{{ hybridItem }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_job_triggers_activate">
@@ -1119,7 +1117,8 @@ Activate a job trigger. Causes the immediate execute of a trigger instead of wai
 EXEC google.dlp.job_triggers.projects_locations_job_triggers_activate 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@jobTriggersId='{{ jobTriggersId }}' --required;
+@jobTriggersId='{{ jobTriggersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_job_triggers_activate">
@@ -1129,7 +1128,8 @@ Activate a job trigger. Causes the immediate execute of a trigger instead of wai
 ```sql
 EXEC google.dlp.job_triggers.projects_job_triggers_activate 
 @projectsId='{{ projectsId }}' --required, 
-@jobTriggersId='{{ jobTriggersId }}' --required;
+@jobTriggersId='{{ jobTriggersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

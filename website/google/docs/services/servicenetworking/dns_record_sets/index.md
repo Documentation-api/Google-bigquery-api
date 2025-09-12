@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,7 +153,8 @@ dnsRecordSets
 FROM google.servicenetworking.dns_record_sets
 WHERE servicesId = '{{ servicesId }}' -- required
 AND consumerNetwork = '{{ consumerNetwork }}'
-AND zone = '{{ zone }}';
+AND zone = '{{ zone }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -270,7 +269,8 @@ Service producers can use this method to remove DNS record sets from private DNS
 
 ```sql
 DELETE FROM google.servicenetworking.dns_record_sets
-WHERE servicesId = '{{ servicesId }}' --required;
+WHERE servicesId = '{{ servicesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -137,8 +135,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -182,8 +178,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="aggregated_list">
-
-Successful response
 
 <table>
 <thead>
@@ -438,7 +432,8 @@ statusMessage
 FROM google.compute.node_templates
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND nodeTemplate = '{{ nodeTemplate }}' -- required;
+AND nodeTemplate = '{{ nodeTemplate }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -460,7 +455,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -493,7 +489,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -697,7 +694,8 @@ DELETE FROM google.compute.node_templates
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND nodeTemplate = '{{ nodeTemplate }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ metadata,
 response
 FROM google.apigee.operations
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_operations_list">
@@ -235,7 +232,8 @@ FROM google.apigee.operations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

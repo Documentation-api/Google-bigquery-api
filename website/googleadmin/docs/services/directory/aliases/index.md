@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ etag,
 kind
 FROM googleadmin.directory.aliases
 WHERE userKey = '{{ userKey }}' -- required
-AND event = '{{ event }}';
+AND event = '{{ event }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -250,7 +249,8 @@ Removes an alias.
 ```sql
 DELETE FROM googleadmin.directory.aliases
 WHERE userKey = '{{ userKey }}' --required
-AND alias = '{{ alias }}' --required;
+AND alias = '{{ alias }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -284,7 +284,8 @@ EXEC googleadmin.directory.aliases.watch
 "resourceId": "{{ resourceId }}", 
 "resourceUri": "{{ resourceUri }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

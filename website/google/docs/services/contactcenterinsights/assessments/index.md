@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -281,7 +277,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' -- required
 AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
 AND conversationsId = '{{ conversationsId }}' -- required
-AND assessmentsId = '{{ assessmentsId }}' -- required;
+AND assessmentsId = '{{ assessmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -303,7 +300,8 @@ AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
 AND conversationsId = '{{ conversationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -405,7 +403,8 @@ AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' --required
 AND authorizedViewsId = '{{ authorizedViewsId }}' --required
 AND conversationsId = '{{ conversationsId }}' --required
 AND assessmentsId = '{{ assessmentsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -432,7 +431,8 @@ EXEC google.contactcenterinsights.assessments.publish
 @authorizedViewSetsId='{{ authorizedViewSetsId }}' --required, 
 @authorizedViewsId='{{ authorizedViewsId }}' --required, 
 @conversationsId='{{ conversationsId }}' --required, 
-@assessmentsId='{{ assessmentsId }}' --required;
+@assessmentsId='{{ assessmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="appeal">
@@ -446,7 +446,8 @@ EXEC google.contactcenterinsights.assessments.appeal
 @authorizedViewSetsId='{{ authorizedViewSetsId }}' --required, 
 @authorizedViewsId='{{ authorizedViewsId }}' --required, 
 @conversationsId='{{ conversationsId }}' --required, 
-@assessmentsId='{{ assessmentsId }}' --required;
+@assessmentsId='{{ assessmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="finalize">
@@ -460,7 +461,8 @@ EXEC google.contactcenterinsights.assessments.finalize
 @authorizedViewSetsId='{{ authorizedViewSetsId }}' --required, 
 @authorizedViewsId='{{ authorizedViewsId }}' --required, 
 @conversationsId='{{ conversationsId }}' --required, 
-@assessmentsId='{{ assessmentsId }}' --required;
+@assessmentsId='{{ assessmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

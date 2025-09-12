@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ WHERE servicesId = '{{ servicesId }}' -- required
 AND consumerNetwork = '{{ consumerNetwork }}'
 AND zone = '{{ zone }}'
 AND domain = '{{ domain }}'
-AND type = '{{ type }}';
+AND type = '{{ type }}'
+;
 ```
 </TabItem>
 </Tabs>

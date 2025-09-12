@@ -143,7 +143,8 @@ EXEC google.discoveryengine.completion_suggestions.projects_locations_collection
 "gcsSource": "{{ gcsSource }}", 
 "bigquerySource": "{{ bigquerySource }}", 
 "errorConfig": "{{ errorConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_completion_suggestions_purge">
@@ -155,7 +156,8 @@ EXEC google.discoveryengine.completion_suggestions.projects_locations_collection
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @collectionsId='{{ collectionsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_completion_suggestions_import">
@@ -173,7 +175,8 @@ EXEC google.discoveryengine.completion_suggestions.projects_locations_data_store
 "gcsSource": "{{ gcsSource }}", 
 "bigquerySource": "{{ bigquerySource }}", 
 "errorConfig": "{{ errorConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_completion_suggestions_purge">
@@ -184,7 +187,8 @@ Permanently deletes all CompletionSuggestions for a DataStore.
 EXEC google.discoveryengine.completion_suggestions.projects_locations_data_stores_completion_suggestions_purge 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

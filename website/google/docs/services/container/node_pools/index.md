@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_clusters_node_pools_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -167,8 +165,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_get">
-
-Successful response
 
 <table>
 <thead>
@@ -294,8 +290,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_clusters_node_pools_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -314,8 +308,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_list">
-
-Successful response
 
 <table>
 <thead>
@@ -620,7 +612,8 @@ AND nodePoolsId = '{{ nodePoolsId }}' -- required
 AND projectId = '{{ projectId }}'
 AND zone = '{{ zone }}'
 AND clusterId = '{{ clusterId }}'
-AND nodePoolId = '{{ nodePoolId }}';
+AND nodePoolId = '{{ nodePoolId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_get">
@@ -656,7 +649,8 @@ WHERE projectId = '{{ projectId }}' -- required
 AND zone = '{{ zone }}' -- required
 AND clusterId = '{{ clusterId }}' -- required
 AND nodePoolId = '{{ nodePoolId }}' -- required
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_node_pools_list">
@@ -672,7 +666,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
 AND projectId = '{{ projectId }}'
 AND zone = '{{ zone }}'
-AND clusterId = '{{ clusterId }}';
+AND clusterId = '{{ clusterId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_list">
@@ -686,7 +681,8 @@ FROM google.container.node_pools
 WHERE projectId = '{{ projectId }}' -- required
 AND zone = '{{ zone }}' -- required
 AND clusterId = '{{ clusterId }}' -- required
-AND parent = '{{ parent }}';
+AND parent = '{{ parent }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1016,7 +1012,8 @@ AND nodePoolsId = '{{ nodePoolsId }}' --required
 AND projectId = '{{ projectId }}'
 AND zone = '{{ zone }}'
 AND clusterId = '{{ clusterId }}'
-AND nodePoolId = '{{ nodePoolId }}';
+AND nodePoolId = '{{ nodePoolId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_delete">
@@ -1029,7 +1026,8 @@ WHERE projectId = '{{ projectId }}' --required
 AND zone = '{{ zone }}' --required
 AND clusterId = '{{ clusterId }}' --required
 AND nodePoolId = '{{ nodePoolId }}' --required
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1069,7 +1067,8 @@ EXEC google.container.node_pools.projects_locations_clusters_node_pools_set_auto
 "nodePoolId": "{{ nodePoolId }}", 
 "autoscaling": "{{ autoscaling }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_node_pools_complete_upgrade">
@@ -1081,7 +1080,8 @@ EXEC google.container.node_pools.projects_locations_clusters_node_pools_complete
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @clustersId='{{ clustersId }}' --required, 
-@nodePoolsId='{{ nodePoolsId }}' --required;
+@nodePoolsId='{{ nodePoolsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_node_pools_rollback">
@@ -1102,7 +1102,8 @@ EXEC google.container.node_pools.projects_locations_clusters_node_pools_rollback
 "nodePoolId": "{{ nodePoolId }}", 
 "name": "{{ name }}", 
 "respectPdb": {{ respectPdb }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_node_pools_set_management">
@@ -1123,7 +1124,8 @@ EXEC google.container.node_pools.projects_locations_clusters_node_pools_set_mana
 "nodePoolId": "{{ nodePoolId }}", 
 "management": "{{ management }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_node_pools_set_size">
@@ -1144,7 +1146,8 @@ EXEC google.container.node_pools.projects_locations_clusters_node_pools_set_size
 "nodePoolId": "{{ nodePoolId }}", 
 "nodeCount": {{ nodeCount }}, 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_autoscaling">
@@ -1165,7 +1168,8 @@ EXEC google.container.node_pools.projects_zones_clusters_node_pools_autoscaling
 "nodePoolId": "{{ nodePoolId }}", 
 "autoscaling": "{{ autoscaling }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_rollback">
@@ -1186,7 +1190,8 @@ EXEC google.container.node_pools.projects_zones_clusters_node_pools_rollback
 "nodePoolId": "{{ nodePoolId }}", 
 "name": "{{ name }}", 
 "respectPdb": {{ respectPdb }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_set_management">
@@ -1207,7 +1212,8 @@ EXEC google.container.node_pools.projects_zones_clusters_node_pools_set_manageme
 "nodePoolId": "{{ nodePoolId }}", 
 "management": "{{ management }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_set_size">
@@ -1228,7 +1234,8 @@ EXEC google.container.node_pools.projects_zones_clusters_node_pools_set_size
 "nodePoolId": "{{ nodePoolId }}", 
 "nodeCount": {{ nodeCount }}, 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

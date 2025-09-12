@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -54,7 +52,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Identifier. Name of the HttpRoute resource. It matches pattern `projects/*/locations/global/httpRoutes/http_route_name&gt;`.</td>
+    <td>Identifier. Name of the HttpRoute resource. It matches pattern `projects/*/locations/global/httpRoutes/http_route_name>`.</td>
 </tr>
 <tr>
     <td><CopyableCode code="createTime" /></td>
@@ -106,8 +104,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,7 +116,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Identifier. Name of the HttpRoute resource. It matches pattern `projects/*/locations/global/httpRoutes/http_route_name&gt;`.</td>
+    <td>Identifier. Name of the HttpRoute resource. It matches pattern `projects/*/locations/global/httpRoutes/http_route_name>`.</td>
 </tr>
 <tr>
     <td><CopyableCode code="createTime" /></td>
@@ -309,7 +305,8 @@ updateTime
 FROM google.networkservices.http_routes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND httpRoutesId = '{{ httpRoutesId }}' -- required;
+AND httpRoutesId = '{{ httpRoutesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -333,7 +330,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -493,7 +491,8 @@ Deletes a single HttpRoute.
 DELETE FROM google.networkservices.http_routes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND httpRoutesId = '{{ httpRoutesId }}' --required;
+AND httpRoutesId = '{{ httpRoutesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

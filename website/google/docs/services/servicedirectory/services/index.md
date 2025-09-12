@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -261,7 +257,8 @@ FROM google.servicedirectory.services
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND namespacesId = '{{ namespacesId }}' -- required
-AND servicesId = '{{ servicesId }}' -- required;
+AND servicesId = '{{ servicesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -281,7 +278,8 @@ AND namespacesId = '{{ namespacesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -406,7 +404,8 @@ DELETE FROM google.servicedirectory.services
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND namespacesId = '{{ namespacesId }}' --required
-AND servicesId = '{{ servicesId }}' --required;
+AND servicesId = '{{ servicesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -434,7 +433,8 @@ EXEC google.servicedirectory.services.resolve
 '{
 "maxEndpoints": {{ maxEndpoints }}, 
 "endpointFilter": "{{ endpointFilter }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

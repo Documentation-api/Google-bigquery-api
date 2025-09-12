@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ secret
 FROM google.iap.identity_aware_proxy_clients
 WHERE projectsId = '{{ projectsId }}' -- required
 AND brandsId = '{{ brandsId }}' -- required
-AND identityAwareProxyClientsId = '{{ identityAwareProxyClientsId }}' -- required;
+AND identityAwareProxyClientsId = '{{ identityAwareProxyClientsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -233,7 +230,8 @@ FROM google.iap.identity_aware_proxy_clients
 WHERE projectsId = '{{ projectsId }}' -- required
 AND brandsId = '{{ brandsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -307,7 +305,8 @@ Deletes an Identity Aware Proxy (IAP) OAuth client. Useful for removing obsolete
 DELETE FROM google.iap.identity_aware_proxy_clients
 WHERE projectsId = '{{ projectsId }}' --required
 AND brandsId = '{{ brandsId }}' --required
-AND identityAwareProxyClientsId = '{{ identityAwareProxyClientsId }}' --required;
+AND identityAwareProxyClientsId = '{{ identityAwareProxyClientsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -329,7 +328,8 @@ Resets an Identity Aware Proxy (IAP) OAuth client secret. Useful if the secret w
 EXEC google.iap.identity_aware_proxy_clients.reset_secret 
 @projectsId='{{ projectsId }}' --required, 
 @brandsId='{{ brandsId }}' --required, 
-@identityAwareProxyClientsId='{{ identityAwareProxyClientsId }}' --required;
+@identityAwareProxyClientsId='{{ identityAwareProxyClientsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

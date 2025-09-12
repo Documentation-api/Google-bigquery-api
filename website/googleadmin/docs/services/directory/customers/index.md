@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -184,7 +182,8 @@ language,
 phoneNumber,
 postalAddress
 FROM googleadmin.directory.customers
-WHERE customerKey = '{{ customerKey }}' -- required;
+WHERE customerKey = '{{ customerKey }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -43,8 +43,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_versions_specs_artifacts_get_contents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -73,8 +71,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_get_contents">
-
-Successful response
 
 <table>
 <thead>
@@ -105,8 +101,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_get_contents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -136,8 +130,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_get_contents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_artifacts_get_contents">
-
-Successful response
 
 <table>
 <thead>
@@ -329,7 +319,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
 AND specsId = '{{ specsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_get_contents">
@@ -346,7 +337,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_get_contents">
@@ -363,7 +355,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND deploymentsId = '{{ deploymentsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_get_contents">
@@ -379,7 +372,8 @@ FROM google.apigeeregistry.artifacts_contents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_artifacts_get_contents">
@@ -394,7 +388,8 @@ extensions
 FROM google.apigeeregistry.artifacts_contents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

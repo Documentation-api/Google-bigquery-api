@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -212,7 +208,8 @@ FROM google.config.resource_drifts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND previewsId = '{{ previewsId }}' -- required
-AND resourceDriftsId = '{{ resourceDriftsId }}' -- required;
+AND resourceDriftsId = '{{ resourceDriftsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -231,7 +228,8 @@ AND previewsId = '{{ previewsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

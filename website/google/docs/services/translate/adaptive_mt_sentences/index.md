@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_adaptive_mt_datasets_adaptive_mt_files_adaptive_mt_sentences_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_datasets_adaptive_mt_sentences_list">
-
-Successful response
 
 <table>
 <thead>
@@ -226,7 +222,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' -- required
 AND adaptiveMtFilesId = '{{ adaptiveMtFilesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_datasets_adaptive_mt_sentences_list">
@@ -245,7 +242,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

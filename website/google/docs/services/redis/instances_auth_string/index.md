@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_auth_string">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ authString
 FROM google.redis.instances_auth_string
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

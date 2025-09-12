@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -303,7 +299,8 @@ state
 FROM google.cloudtasks.queues
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND queuesId = '{{ queuesId }}' -- required;
+AND queuesId = '{{ queuesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -325,7 +322,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -496,7 +494,8 @@ Deletes a queue. This command will delete the queue even if it has tasks in it. 
 DELETE FROM google.cloudtasks.queues
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND queuesId = '{{ queuesId }}' --required;
+AND queuesId = '{{ queuesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -520,7 +519,8 @@ Purges a queue by deleting all of its tasks. All tasks created before this metho
 EXEC google.cloudtasks.queues.purge 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@queuesId='{{ queuesId }}' --required;
+@queuesId='{{ queuesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="pause">
@@ -531,7 +531,8 @@ Pauses the queue. If a queue is paused then the system will stop dispatching tas
 EXEC google.cloudtasks.queues.pause 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@queuesId='{{ queuesId }}' --required;
+@queuesId='{{ queuesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -542,7 +543,8 @@ Resume a queue. This method resumes a queue after it has been PAUSED or DISABLED
 EXEC google.cloudtasks.queues.resume 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@queuesId='{{ queuesId }}' --required;
+@queuesId='{{ queuesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

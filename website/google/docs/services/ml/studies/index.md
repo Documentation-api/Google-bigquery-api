@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_studies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_studies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -207,7 +203,8 @@ studyConfig
 FROM google.ml.studies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND studiesId = '{{ studiesId }}' -- required;
+AND studiesId = '{{ studiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_studies_list">
@@ -219,7 +216,8 @@ SELECT
 studies
 FROM google.ml.studies
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -299,7 +297,8 @@ Deletes a study.
 DELETE FROM google.ml.studies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND studiesId = '{{ studiesId }}' --required;
+AND studiesId = '{{ studiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

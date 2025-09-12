@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,7 +58,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>[Output Only] Name of the resource. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>[Output Only] Name of the resource. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="accelerators" /></td>
@@ -137,8 +135,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -183,8 +179,6 @@ Successful response
 </TabItem>
 <TabItem value="aggregated_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -202,7 +196,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>[Output Only] Name of the resource. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>[Output Only] Name of the resource. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="accelerators" /></td>
@@ -419,7 +413,8 @@ zone
 FROM google.compute.machine_types
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
-AND machineType = '{{ machineType }}' -- required;
+AND machineType = '{{ machineType }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -441,7 +436,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -474,7 +470,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>

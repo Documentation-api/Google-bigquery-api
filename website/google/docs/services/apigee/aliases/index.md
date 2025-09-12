@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_keystores_aliases_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -205,7 +203,8 @@ FROM google.apigee.aliases
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND keystoresId = '{{ keystoresId }}' -- required
-AND aliasesId = '{{ aliasesId }}' -- required;
+AND aliasesId = '{{ aliasesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -353,7 +352,8 @@ DELETE FROM google.apigee.aliases
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
 AND keystoresId = '{{ keystoresId }}' --required
-AND aliasesId = '{{ aliasesId }}' --required;
+AND aliasesId = '{{ aliasesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -376,7 +376,8 @@ EXEC google.apigee.aliases.organizations_environments_keystores_aliases_csr
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
 @keystoresId='{{ keystoresId }}' --required, 
-@aliasesId='{{ aliasesId }}' --required;
+@aliasesId='{{ aliasesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

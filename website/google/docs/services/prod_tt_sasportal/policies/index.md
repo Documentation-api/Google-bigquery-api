@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -136,7 +134,8 @@ Gets the access control policy for a resource. Returns an empty policy if the re
 SELECT
 assignments,
 etag
-FROM google.prod_tt_sasportal.policies;
+FROM google.prod_tt_sasportal.policies
+;
 ```
 </TabItem>
 </Tabs>
@@ -162,7 +161,8 @@ EXEC google.prod_tt_sasportal.policies.policies_set
 "resource": "{{ resource }}", 
 "policy": "{{ policy }}", 
 "disableNotification": {{ disableNotification }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="policies_test">
@@ -175,7 +175,8 @@ EXEC google.prod_tt_sasportal.policies.policies_test
 '{
 "resource": "{{ resource }}", 
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_log_scopes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -84,8 +82,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_log_scopes_get">
-
-Successful response
 
 <table>
 <thead>
@@ -126,8 +122,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_log_scopes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,8 +160,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_log_scopes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -208,8 +200,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_log_scopes_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -248,8 +238,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_locations_log_scopes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -501,7 +489,8 @@ updateTime
 FROM google.logging.log_scopes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND logScopesId = '{{ logScopesId }}' -- required;
+AND logScopesId = '{{ logScopesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_log_scopes_get">
@@ -518,7 +507,8 @@ updateTime
 FROM google.logging.log_scopes
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND logScopesId = '{{ logScopesId }}' -- required;
+AND logScopesId = '{{ logScopesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_log_scopes_get">
@@ -535,7 +525,8 @@ updateTime
 FROM google.logging.log_scopes
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND logScopesId = '{{ logScopesId }}' -- required;
+AND logScopesId = '{{ logScopesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_log_scopes_list">
@@ -553,7 +544,8 @@ FROM google.logging.log_scopes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_log_scopes_list">
@@ -571,7 +563,8 @@ FROM google.logging.log_scopes
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_log_scopes_list">
@@ -589,7 +582,8 @@ FROM google.logging.log_scopes
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -819,7 +813,8 @@ Deletes a log scope.
 DELETE FROM google.logging.log_scopes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND logScopesId = '{{ logScopesId }}' --required;
+AND logScopesId = '{{ logScopesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_log_scopes_delete">
@@ -830,7 +825,8 @@ Deletes a log scope.
 DELETE FROM google.logging.log_scopes
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND logScopesId = '{{ logScopesId }}' --required;
+AND logScopesId = '{{ logScopesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_log_scopes_delete">
@@ -841,7 +837,8 @@ Deletes a log scope.
 DELETE FROM google.logging.log_scopes
 WHERE foldersId = '{{ foldersId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND logScopesId = '{{ logScopesId }}' --required;
+AND logScopesId = '{{ logScopesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

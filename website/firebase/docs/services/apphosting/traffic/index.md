@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -216,7 +214,8 @@ updateTime
 FROM firebase.apphosting.traffic
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND backendsId = '{{ backendsId }}' -- required;
+AND backendsId = '{{ backendsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

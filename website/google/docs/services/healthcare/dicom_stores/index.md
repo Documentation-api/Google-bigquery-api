@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -372,7 +368,8 @@ FROM google.healthcare.dicom_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND dicomStoresId = '{{ dicomStoresId }}' -- required;
+AND dicomStoresId = '{{ dicomStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -392,7 +389,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -543,7 +541,8 @@ DELETE FROM google.healthcare.dicom_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
-AND dicomStoresId = '{{ dicomStoresId }}' --required;
+AND dicomStoresId = '{{ dicomStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -583,7 +582,8 @@ EXEC google.healthcare.dicom_stores.deidentify
 "config": "{{ config }}", 
 "gcsConfigUri": "{{ gcsConfigUri }}", 
 "filterConfig": "{{ filterConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_blob_storage_settings">
@@ -600,7 +600,8 @@ EXEC google.healthcare.dicom_stores.set_blob_storage_settings
 '{
 "filterConfig": "{{ filterConfig }}", 
 "blobStorageSettings": "{{ blobStorageSettings }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -617,7 +618,8 @@ EXEC google.healthcare.dicom_stores.import
 '{
 "gcsSource": "{{ gcsSource }}", 
 "blobStorageSettings": "{{ blobStorageSettings }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -634,7 +636,8 @@ EXEC google.healthcare.dicom_stores.export
 '{
 "gcsDestination": "{{ gcsDestination }}", 
 "bigqueryDestination": "{{ bigqueryDestination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_for_studies">
@@ -646,7 +649,8 @@ EXEC google.healthcare.dicom_stores.search_for_studies
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
-@dicomStoresId='{{ dicomStoresId }}' --required;
+@dicomStoresId='{{ dicomStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="store_instances">
@@ -664,7 +668,8 @@ EXEC google.healthcare.dicom_stores.store_instances
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_for_series">
@@ -676,7 +681,8 @@ EXEC google.healthcare.dicom_stores.search_for_series
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
-@dicomStoresId='{{ dicomStoresId }}' --required;
+@dicomStoresId='{{ dicomStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="search_for_instances">
@@ -688,7 +694,8 @@ EXEC google.healthcare.dicom_stores.search_for_instances
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
-@dicomStoresId='{{ dicomStoresId }}' --required;
+@dicomStoresId='{{ dicomStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="retrieve_frames">
@@ -704,7 +711,8 @@ EXEC google.healthcare.dicom_stores.retrieve_frames
 @studiesId='{{ studiesId }}' --required, 
 @seriesId='{{ seriesId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
-@framesId='{{ framesId }}' --required;
+@framesId='{{ framesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="retrieve_rendered">
@@ -721,7 +729,8 @@ EXEC google.healthcare.dicom_stores.retrieve_rendered
 @seriesId='{{ seriesId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
 @framesId='{{ framesId }}' --required, 
-@viewport='{{ viewport }}';
+@viewport='{{ viewport }}'
+;
 ```
 </TabItem>
 <TabItem value="retrieve_bulkdata">
@@ -738,7 +747,8 @@ EXEC google.healthcare.dicom_stores.retrieve_bulkdata
 @seriesId='{{ seriesId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
 @bulkdataId='{{ bulkdataId }}' --required, 
-@bulkdataId1='{{ bulkdataId1 }}' --required;
+@bulkdataId1='{{ bulkdataId1 }}' --required
+;
 ```
 </TabItem>
 </Tabs>

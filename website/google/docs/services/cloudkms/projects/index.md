@@ -110,7 +110,8 @@ Returns the effective Cloud KMS Autokey configuration for a given project.
 
 ```sql
 EXEC google.cloudkms.projects.show_effective_autokey_config 
-@projectsId='{{ projectsId }}' --required;
+@projectsId='{{ projectsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="show_effective_key_access_justifications_policy_config">
@@ -119,7 +120,8 @@ Returns the KeyAccessJustificationsPolicyConfig of the resource closest to the g
 
 ```sql
 EXEC google.cloudkms.projects.show_effective_key_access_justifications_policy_config 
-@projectsId='{{ projectsId }}' --required;
+@projectsId='{{ projectsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="show_effective_key_access_justifications_enrollment_config">
@@ -128,7 +130,8 @@ Returns the KeyAccessJustificationsEnrollmentConfig of the resource closest to t
 
 ```sql
 EXEC google.cloudkms.projects.show_effective_key_access_justifications_enrollment_config 
-@projectsId='{{ projectsId }}' --required;
+@projectsId='{{ projectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

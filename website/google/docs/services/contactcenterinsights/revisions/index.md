@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -279,7 +275,8 @@ FROM google.contactcenterinsights.revisions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND qaScorecardsId = '{{ qaScorecardsId }}' -- required
-AND revisionsId = '{{ revisionsId }}' -- required;
+AND revisionsId = '{{ revisionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -300,7 +297,8 @@ AND qaScorecardsId = '{{ qaScorecardsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND qaScorecardSources = '{{ qaScorecardSources }}';
+AND qaScorecardSources = '{{ qaScorecardSources }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -394,7 +392,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND qaScorecardsId = '{{ qaScorecardsId }}' --required
 AND revisionsId = '{{ revisionsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -424,7 +423,8 @@ EXEC google.contactcenterinsights.revisions.tune_qa_scorecard_revision
 '{
 "filter": "{{ filter }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="deploy">
@@ -436,7 +436,8 @@ EXEC google.contactcenterinsights.revisions.deploy
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @qaScorecardsId='{{ qaScorecardsId }}' --required, 
-@revisionsId='{{ revisionsId }}' --required;
+@revisionsId='{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="undeploy">
@@ -448,7 +449,8 @@ EXEC google.contactcenterinsights.revisions.undeploy
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @qaScorecardsId='{{ qaScorecardsId }}' --required, 
-@revisionsId='{{ revisionsId }}' --required;
+@revisionsId='{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

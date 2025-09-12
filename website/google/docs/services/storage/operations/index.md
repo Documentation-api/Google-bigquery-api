@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -253,7 +249,8 @@ response,
 selfLink
 FROM google.storage.operations
 WHERE bucket = '{{ bucket }}' -- required
-AND operationId = '{{ operationId }}' -- required;
+AND operationId = '{{ operationId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -273,7 +270,8 @@ FROM google.storage.operations
 WHERE bucket = '{{ bucket }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -295,7 +293,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 ```sql
 EXEC google.storage.operations.cancel 
 @bucket='{{ bucket }}' --required, 
-@operationId='{{ operationId }}' --required;
+@operationId='{{ operationId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="advance_relocate_bucket">
@@ -310,7 +309,8 @@ EXEC google.storage.operations.advance_relocate_bucket
 '{
 "ttl": "{{ ttl }}", 
 "expireTime": "{{ expireTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

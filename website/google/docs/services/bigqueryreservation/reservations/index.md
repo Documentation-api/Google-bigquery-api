@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -388,7 +384,8 @@ updateTime
 FROM google.bigqueryreservation.reservations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND reservationsId = '{{ reservationsId }}' -- required;
+AND reservationsId = '{{ reservationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -418,7 +415,8 @@ FROM google.bigqueryreservation.reservations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -644,7 +642,8 @@ Deletes a reservation. Returns `google.rpc.Code.FAILED_PRECONDITION` when reserv
 DELETE FROM google.bigqueryreservation.reservations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND reservationsId = '{{ reservationsId }}' --required;
+AND reservationsId = '{{ reservationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -670,7 +669,8 @@ EXEC google.bigqueryreservation.reservations.failover_reservation
 @@json=
 '{
 "failoverMode": "{{ failoverMode }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

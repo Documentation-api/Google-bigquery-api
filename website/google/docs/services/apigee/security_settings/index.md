@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_get_security_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ SELECT
 name,
 mlRetrainingFeedbackEnabled
 FROM google.apigee.security_settings
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

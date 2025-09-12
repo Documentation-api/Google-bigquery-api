@@ -52,8 +52,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_bare_metal_clusters_bare_metal_node_pools_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -134,8 +130,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -174,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_bare_metal_node_pools_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -216,8 +208,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -256,8 +246,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -298,8 +286,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -338,8 +324,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -380,8 +364,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -420,8 +402,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -462,8 +442,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -502,8 +480,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -544,8 +520,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -584,8 +558,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -869,7 +841,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalClustersId = '{{ bareMetalClustersId }}' -- required
 AND bareMetalNodePoolsId = '{{ bareMetalNodePoolsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_operations_get">
@@ -888,7 +861,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND vmwareClustersId = '{{ vmwareClustersId }}' -- required
 AND vmwareNodePoolsId = '{{ vmwareNodePoolsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_operations_get">
@@ -906,7 +880,8 @@ FROM google.gkeonprem.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalClustersId = '{{ bareMetalClustersId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_bare_metal_node_pools_operations_list">
@@ -927,7 +902,8 @@ AND bareMetalClustersId = '{{ bareMetalClustersId }}' -- required
 AND bareMetalNodePoolsId = '{{ bareMetalNodePoolsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_operations_get">
@@ -945,7 +921,8 @@ FROM google.gkeonprem.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND vmwareClustersId = '{{ vmwareClustersId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_operations_list">
@@ -966,7 +943,8 @@ AND vmwareClustersId = '{{ vmwareClustersId }}' -- required
 AND vmwareNodePoolsId = '{{ vmwareNodePoolsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_operations_get">
@@ -984,7 +962,8 @@ FROM google.gkeonprem.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND vmwareAdminClustersId = '{{ vmwareAdminClustersId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_operations_get">
@@ -1002,7 +981,8 @@ FROM google.gkeonprem.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalAdminClustersId = '{{ bareMetalAdminClustersId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_operations_get">
@@ -1019,7 +999,8 @@ response
 FROM google.gkeonprem.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_operations_list">
@@ -1039,7 +1020,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalClustersId = '{{ bareMetalClustersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_operations_list">
@@ -1059,7 +1041,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND vmwareClustersId = '{{ vmwareClustersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_operations_list">
@@ -1079,7 +1062,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND vmwareAdminClustersId = '{{ vmwareAdminClustersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_operations_list">
@@ -1099,7 +1083,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalAdminClustersId = '{{ bareMetalAdminClustersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_operations_list">
@@ -1118,7 +1103,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1140,7 +1126,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 DELETE FROM google.gkeonprem.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1162,7 +1149,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.gkeonprem.operations.projects_locations_operations_cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

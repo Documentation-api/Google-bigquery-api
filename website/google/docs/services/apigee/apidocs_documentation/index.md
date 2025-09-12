@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_sites_apidocs_get_documentation">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,7 +163,8 @@ status
 FROM google.apigee.apidocs_documentation
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND sitesId = '{{ sitesId }}' -- required
-AND apidocsId = '{{ apidocsId }}' -- required;
+AND apidocsId = '{{ apidocsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

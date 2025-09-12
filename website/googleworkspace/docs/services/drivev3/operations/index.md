@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ error,
 metadata,
 response
 FROM googleworkspace.drivev3.operations
-WHERE name = '{{ name }}' -- required;
+WHERE name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

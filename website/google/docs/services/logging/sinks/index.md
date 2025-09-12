@@ -48,8 +48,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="sinks_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -133,8 +131,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_sinks_get">
-
-Successful response
 
 <table>
 <thead>
@@ -220,8 +216,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_sinks_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -305,8 +299,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_sinks_get">
-
-Successful response
 
 <table>
 <thead>
@@ -392,8 +384,6 @@ Successful response
 </TabItem>
 <TabItem value="billing_accounts_sinks_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -477,8 +467,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="sinks_get">
-
-Successful response
 
 <table>
 <thead>
@@ -564,8 +552,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_sinks_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -649,8 +635,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sinks_list">
-
-Successful response
 
 <table>
 <thead>
@@ -736,8 +720,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_sinks_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -821,8 +803,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_sinks_list">
-
-Successful response
 
 <table>
 <thead>
@@ -1257,7 +1237,8 @@ WHERE parentType = '{{ parentType }}' -- required
 AND parent = '{{ parent }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_sinks_get">
@@ -1282,7 +1263,8 @@ updateTime,
 writerIdentity
 FROM google.logging.sinks
 WHERE projectsId = '{{ projectsId }}' -- required
-AND sinksId = '{{ sinksId }}' -- required;
+AND sinksId = '{{ sinksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sinks_get">
@@ -1307,7 +1289,8 @@ updateTime,
 writerIdentity
 FROM google.logging.sinks
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sinksId = '{{ sinksId }}' -- required;
+AND sinksId = '{{ sinksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_sinks_get">
@@ -1332,7 +1315,8 @@ updateTime,
 writerIdentity
 FROM google.logging.sinks
 WHERE foldersId = '{{ foldersId }}' -- required
-AND sinksId = '{{ sinksId }}' -- required;
+AND sinksId = '{{ sinksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_sinks_get">
@@ -1357,7 +1341,8 @@ updateTime,
 writerIdentity
 FROM google.logging.sinks
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
-AND sinksId = '{{ sinksId }}' -- required;
+AND sinksId = '{{ sinksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="sinks_get">
@@ -1381,7 +1366,8 @@ resourceName,
 updateTime,
 writerIdentity
 FROM google.logging.sinks
-WHERE sinkName = '{{ sinkName }}' -- required;
+WHERE sinkName = '{{ sinkName }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_sinks_list">
@@ -1408,7 +1394,8 @@ FROM google.logging.sinks
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sinks_list">
@@ -1435,7 +1422,8 @@ FROM google.logging.sinks
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_sinks_list">
@@ -1462,7 +1450,8 @@ FROM google.logging.sinks
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_sinks_list">
@@ -1489,7 +1478,8 @@ FROM google.logging.sinks
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2261,7 +2251,8 @@ Deletes a sink. If the sink has a unique writer_identity, then that service acco
 ```sql
 DELETE FROM google.logging.sinks
 WHERE projectsId = '{{ projectsId }}' --required
-AND sinksId = '{{ sinksId }}' --required;
+AND sinksId = '{{ sinksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sinks_delete">
@@ -2271,7 +2262,8 @@ Deletes a sink. If the sink has a unique writer_identity, then that service acco
 ```sql
 DELETE FROM google.logging.sinks
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND sinksId = '{{ sinksId }}' --required;
+AND sinksId = '{{ sinksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_sinks_delete">
@@ -2281,7 +2273,8 @@ Deletes a sink. If the sink has a unique writer_identity, then that service acco
 ```sql
 DELETE FROM google.logging.sinks
 WHERE foldersId = '{{ foldersId }}' --required
-AND sinksId = '{{ sinksId }}' --required;
+AND sinksId = '{{ sinksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_sinks_delete">
@@ -2291,7 +2284,8 @@ Deletes a sink. If the sink has a unique writer_identity, then that service acco
 ```sql
 DELETE FROM google.logging.sinks
 WHERE billingAccountsId = '{{ billingAccountsId }}' --required
-AND sinksId = '{{ sinksId }}' --required;
+AND sinksId = '{{ sinksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="sinks_delete">
@@ -2300,7 +2294,8 @@ Deletes a sink. If the sink has a unique writer_identity, then that service acco
 
 ```sql
 DELETE FROM google.logging.sinks
-WHERE sinkName = '{{ sinkName }}' --required;
+WHERE sinkName = '{{ sinkName }}' --required
+;
 ```
 </TabItem>
 </Tabs>

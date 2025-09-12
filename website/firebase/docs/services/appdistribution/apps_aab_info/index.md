@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_aab_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ integrationState,
 testCertificate
 FROM firebase.appdistribution.apps_aab_info
 WHERE projectsId = '{{ projectsId }}' -- required
-AND appsId = '{{ appsId }}' -- required;
+AND appsId = '{{ appsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

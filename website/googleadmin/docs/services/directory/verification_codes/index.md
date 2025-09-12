@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -148,7 +146,8 @@ etag,
 items,
 kind
 FROM googleadmin.directory.verification_codes
-WHERE userKey = '{{ userKey }}' -- required;
+WHERE userKey = '{{ userKey }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -169,7 +168,8 @@ Generates new backup verification codes for the user.
 
 ```sql
 EXEC googleadmin.directory.verification_codes.generate 
-@userKey='{{ userKey }}' --required;
+@userKey='{{ userKey }}' --required
+;
 ```
 </TabItem>
 <TabItem value="invalidate">
@@ -178,7 +178,8 @@ Invalidates the current backup verification codes for the user.
 
 ```sql
 EXEC googleadmin.directory.verification_codes.invalidate 
-@userKey='{{ userKey }}' --required;
+@userKey='{{ userKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

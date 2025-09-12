@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,7 +145,8 @@ SELECT
 certificates
 FROM firebase.firebase.sha
 WHERE projectsId = '{{ projectsId }}' -- required
-AND androidAppsId = '{{ androidAppsId }}' -- required;
+AND androidAppsId = '{{ androidAppsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -236,7 +235,8 @@ Removes a ShaCertificate from the specified AndroidApp.
 DELETE FROM firebase.firebase.sha
 WHERE projectsId = '{{ projectsId }}' --required
 AND androidAppsId = '{{ androidAppsId }}' --required
-AND shaId = '{{ shaId }}' --required;
+AND shaId = '{{ shaId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

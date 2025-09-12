@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_nodes_nodes_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="customers_nodes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -219,7 +215,8 @@ WHERE customersId = '{{ customersId }}' -- required
 AND nodesId = '{{ nodesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="customers_nodes_list">
@@ -235,7 +232,8 @@ FROM google.sasportal.customer_nodes
 WHERE customersId = '{{ customersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -346,7 +344,8 @@ Deletes a node.
 ```sql
 DELETE FROM google.sasportal.customer_nodes
 WHERE customersId = '{{ customersId }}' --required
-AND nodesId = '{{ nodesId }}' --required;
+AND nodesId = '{{ nodesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

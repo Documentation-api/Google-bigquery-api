@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -290,7 +286,8 @@ status,
 type
 FROM googleadmin.directory.members
 WHERE groupKey = '{{ groupKey }}' -- required
-AND memberKey = '{{ memberKey }}' -- required;
+AND memberKey = '{{ memberKey }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -312,7 +309,8 @@ WHERE groupKey = '{{ groupKey }}' -- required
 AND includeDerivedMembership = '{{ includeDerivedMembership }}'
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
-AND roles = '{{ roles }}';
+AND roles = '{{ roles }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -515,7 +513,8 @@ Removes a member from a group.
 ```sql
 DELETE FROM googleadmin.directory.members
 WHERE groupKey = '{{ groupKey }}' --required
-AND memberKey = '{{ memberKey }}' --required;
+AND memberKey = '{{ memberKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -536,7 +535,8 @@ Checks whether the given user is a member of the group. Membership can be direct
 ```sql
 EXEC googleadmin.directory.members.has_member 
 @groupKey='{{ groupKey }}' --required, 
-@memberKey='{{ memberKey }}' --required;
+@memberKey='{{ memberKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

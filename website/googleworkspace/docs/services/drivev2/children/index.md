@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -240,7 +236,8 @@ kind,
 selfLink
 FROM googleworkspace.drivev2.children
 WHERE folderId = '{{ folderId }}' -- required
-AND childId = '{{ childId }}' -- required;
+AND childId = '{{ childId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -258,7 +255,8 @@ WHERE folderId = '{{ folderId }}' -- required
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND q = '{{ q }}';
+AND q = '{{ q }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -362,7 +360,8 @@ Removes a child from a folder.
 DELETE FROM googleworkspace.drivev2.children
 WHERE folderId = '{{ folderId }}' --required
 AND childId = '{{ childId }}' --required
-AND enforceSingleParent = '{{ enforceSingleParent }}';
+AND enforceSingleParent = '{{ enforceSingleParent }}'
+;
 ```
 </TabItem>
 </Tabs>

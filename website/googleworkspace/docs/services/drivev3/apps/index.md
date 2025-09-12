@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -175,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -320,7 +316,8 @@ supportsMultiOpen,
 supportsOfflineCreate,
 useByDefault
 FROM googleworkspace.drivev3.apps
-WHERE appId = '{{ appId }}' -- required;
+WHERE appId = '{{ appId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -336,7 +333,8 @@ selfLink
 FROM googleworkspace.drivev3.apps
 WHERE appFilterExtensions = '{{ appFilterExtensions }}'
 AND appFilterMimeTypes = '{{ appFilterMimeTypes }}'
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 </Tabs>

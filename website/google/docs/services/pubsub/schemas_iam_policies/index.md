@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_schemas_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,7 +158,8 @@ role
 FROM google.pubsub.schemas_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND schemasId = '{{ schemasId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -213,7 +212,8 @@ EXEC google.pubsub.schemas_iam_policies.projects_schemas_test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

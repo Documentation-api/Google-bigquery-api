@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_usable">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -248,7 +246,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND workstationClustersId = '{{ workstationClustersId }}' -- required
 AND workstationConfigsId = '{{ workstationConfigsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

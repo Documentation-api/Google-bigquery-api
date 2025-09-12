@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_notes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -167,8 +165,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_notes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -294,8 +290,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_notes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -419,8 +413,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_notes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -751,7 +743,8 @@ vulnerabilityAssessment
 FROM google.containeranalysis.notes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND notesId = '{{ notesId }}' -- required;
+AND notesId = '{{ notesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_notes_list">
@@ -788,7 +781,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_notes_get">
@@ -821,7 +815,8 @@ vulnerability,
 vulnerabilityAssessment
 FROM google.containeranalysis.notes
 WHERE projectsId = '{{ projectsId }}' -- required
-AND notesId = '{{ notesId }}' -- required;
+AND notesId = '{{ notesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_notes_list">
@@ -857,7 +852,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1358,7 +1354,8 @@ Deletes the specified note.
 DELETE FROM google.containeranalysis.notes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND notesId = '{{ notesId }}' --required;
+AND notesId = '{{ notesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_notes_delete">
@@ -1368,7 +1365,8 @@ Deletes the specified note.
 ```sql
 DELETE FROM google.containeranalysis.notes
 WHERE projectsId = '{{ projectsId }}' --required
-AND notesId = '{{ notesId }}' --required;
+AND notesId = '{{ notesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

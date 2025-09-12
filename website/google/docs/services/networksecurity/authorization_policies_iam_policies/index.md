@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_authorization_policies_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ FROM google.networksecurity.authorization_policies_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND authorizationPoliciesId = '{{ authorizationPoliciesId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -223,7 +222,8 @@ EXEC google.networksecurity.authorization_policies_iam_policies.projects_locatio
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

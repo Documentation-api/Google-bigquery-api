@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_blob">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM google.securesourcemanager.repositories_blob
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND sha = '{{ sha }}';
+AND sha = '{{ sha }}'
+;
 ```
 </TabItem>
 </Tabs>

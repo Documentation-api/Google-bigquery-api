@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -334,7 +330,8 @@ FROM google.storage.folders
 WHERE bucket = '{{ bucket }}' -- required
 AND folder = '{{ folder }}' -- required
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
-AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}';
+AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -359,7 +356,8 @@ AND endOffset = '{{ endOffset }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND prefix = '{{ prefix }}'
-AND startOffset = '{{ startOffset }}';
+AND startOffset = '{{ startOffset }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -496,7 +494,8 @@ DELETE FROM google.storage.folders
 WHERE bucket = '{{ bucket }}' --required
 AND folder = '{{ folder }}' --required
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
-AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}';
+AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -520,7 +519,8 @@ EXEC google.storage.folders.rename
 @sourceFolder='{{ sourceFolder }}' --required, 
 @destinationFolder='{{ destinationFolder }}' --required, 
 @ifSourceMetagenerationMatch='{{ ifSourceMetagenerationMatch }}', 
-@ifSourceMetagenerationNotMatch='{{ ifSourceMetagenerationNotMatch }}';
+@ifSourceMetagenerationNotMatch='{{ ifSourceMetagenerationNotMatch }}'
+;
 ```
 </TabItem>
 </Tabs>

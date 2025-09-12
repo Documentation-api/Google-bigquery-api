@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -422,7 +418,8 @@ updateTime
 FROM google.aiplatform.schedules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND schedulesId = '{{ schedulesId }}' -- required;
+AND schedulesId = '{{ schedulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -456,7 +453,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -664,7 +662,8 @@ Deletes a Schedule.
 DELETE FROM google.aiplatform.schedules
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND schedulesId = '{{ schedulesId }}' --required;
+AND schedulesId = '{{ schedulesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -687,7 +686,8 @@ Pauses a Schedule. Will mark Schedule.state to 'PAUSED'. If the schedule is paus
 EXEC google.aiplatform.schedules.pause 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@schedulesId='{{ schedulesId }}' --required;
+@schedulesId='{{ schedulesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -702,7 +702,8 @@ EXEC google.aiplatform.schedules.resume
 @@json=
 '{
 "catchUp": {{ catchUp }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

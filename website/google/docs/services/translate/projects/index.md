@@ -121,7 +121,8 @@ EXEC google.translate.projects.projects_translate_text
 "glossaryConfig": "{{ glossaryConfig }}", 
 "transliterationConfig": "{{ transliterationConfig }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_romanize_text">
@@ -135,7 +136,8 @@ EXEC google.translate.projects.projects_romanize_text
 '{
 "contents": "{{ contents }}", 
 "sourceLanguageCode": "{{ sourceLanguageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_detect_language">
@@ -151,7 +153,8 @@ EXEC google.translate.projects.projects_detect_language
 "content": "{{ content }}", 
 "mimeType": "{{ mimeType }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

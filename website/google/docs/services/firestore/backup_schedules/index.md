@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -220,7 +216,8 @@ weeklyRecurrence
 FROM google.firestore.backup_schedules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
-AND backupSchedulesId = '{{ backupSchedulesId }}' -- required;
+AND backupSchedulesId = '{{ backupSchedulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -232,7 +229,8 @@ SELECT
 backupSchedules
 FROM google.firestore.backup_schedules
 WHERE projectsId = '{{ projectsId }}' -- required
-AND databasesId = '{{ databasesId }}' -- required;
+AND databasesId = '{{ databasesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -358,7 +356,8 @@ Deletes a backup schedule.
 DELETE FROM google.firestore.backup_schedules
 WHERE projectsId = '{{ projectsId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND backupSchedulesId = '{{ backupSchedulesId }}' --required;
+AND backupSchedulesId = '{{ backupSchedulesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

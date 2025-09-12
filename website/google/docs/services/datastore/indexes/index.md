@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -242,7 +238,8 @@ properties,
 state
 FROM google.datastore.indexes
 WHERE projectId = '{{ projectId }}' -- required
-AND indexId = '{{ indexId }}' -- required;
+AND indexId = '{{ indexId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -261,7 +258,8 @@ FROM google.datastore.indexes
 WHERE projectId = '{{ projectId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -346,7 +344,8 @@ Deletes an existing index. An index can only be deleted if it is in a `READY` or
 ```sql
 DELETE FROM google.datastore.indexes
 WHERE projectId = '{{ projectId }}' --required
-AND indexId = '{{ indexId }}' --required;
+AND indexId = '{{ indexId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

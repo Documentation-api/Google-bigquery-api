@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_connections_repositories_fetch_git_refs">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ AND connectionsId = '{{ connectionsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND refType = '{{ refType }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

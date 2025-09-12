@@ -146,7 +146,8 @@ EXEC google.vision.images.projects_locations_images_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_images_async_batch_annotate">
@@ -163,7 +164,8 @@ EXEC google.vision.images.projects_locations_images_async_batch_annotate
 "outputConfig": "{{ outputConfig }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_images_annotate">
@@ -178,7 +180,8 @@ EXEC google.vision.images.projects_images_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_images_async_batch_annotate">
@@ -194,7 +197,8 @@ EXEC google.vision.images.projects_images_async_batch_annotate
 "outputConfig": "{{ outputConfig }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="images_annotate">
@@ -208,7 +212,8 @@ EXEC google.vision.images.images_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="images_async_batch_annotate">
@@ -223,7 +228,8 @@ EXEC google.vision.images.images_async_batch_annotate
 "outputConfig": "{{ outputConfig }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

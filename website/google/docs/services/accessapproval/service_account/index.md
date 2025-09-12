@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_get_service_account">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -67,8 +65,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_get_service_account">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_get_service_account">
-
-Successful response
 
 <table>
 <thead>
@@ -208,7 +202,8 @@ SELECT
 name,
 accountEmail
 FROM google.accessapproval.service_account
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_get_service_account">
@@ -220,7 +215,8 @@ SELECT
 name,
 accountEmail
 FROM google.accessapproval.service_account
-WHERE foldersId = '{{ foldersId }}' -- required;
+WHERE foldersId = '{{ foldersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_get_service_account">
@@ -232,7 +228,8 @@ SELECT
 name,
 accountEmail
 FROM google.accessapproval.service_account
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

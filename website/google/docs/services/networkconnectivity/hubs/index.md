@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,8 +120,6 @@ Successful response
 </TabItem>
 <TabItem value="query_status">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -414,7 +408,8 @@ uniqueId,
 updateTime
 FROM google.networkconnectivity.hubs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND hubsId = '{{ hubsId }}' -- required;
+AND hubsId = '{{ hubsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="query_status">
@@ -432,7 +427,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND groupBy = '{{ groupBy }}';
+AND groupBy = '{{ groupBy }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -459,7 +455,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -612,7 +609,8 @@ Deletes a Network Connectivity Center hub.
 DELETE FROM google.networkconnectivity.hubs
 WHERE projectsId = '{{ projectsId }}' --required
 AND hubsId = '{{ hubsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -642,7 +640,8 @@ EXEC google.networkconnectivity.hubs.reject_spoke
 "spokeUri": "{{ spokeUri }}", 
 "requestId": "{{ requestId }}", 
 "details": "{{ details }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="accept_spoke">
@@ -657,7 +656,8 @@ EXEC google.networkconnectivity.hubs.accept_spoke
 '{
 "spokeUri": "{{ spokeUri }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="accept_spoke_update">
@@ -673,7 +673,8 @@ EXEC google.networkconnectivity.hubs.accept_spoke_update
 "spokeUri": "{{ spokeUri }}", 
 "spokeEtag": "{{ spokeEtag }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reject_spoke_update">
@@ -690,7 +691,8 @@ EXEC google.networkconnectivity.hubs.reject_spoke_update
 "spokeEtag": "{{ spokeEtag }}", 
 "details": "{{ details }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

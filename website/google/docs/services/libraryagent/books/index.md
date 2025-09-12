@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -215,7 +211,8 @@ read,
 title
 FROM google.libraryagent.books
 WHERE shelvesId = '{{ shelvesId }}' -- required
-AND booksId = '{{ booksId }}' -- required;
+AND booksId = '{{ booksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -231,7 +228,8 @@ title
 FROM google.libraryagent.books
 WHERE shelvesId = '{{ shelvesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -253,7 +251,8 @@ Borrow a book from the library. Returns the book if it is borrowed successfully.
 ```sql
 EXEC google.libraryagent.books.borrow 
 @shelvesId='{{ shelvesId }}' --required, 
-@booksId='{{ booksId }}' --required;
+@booksId='{{ booksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="return">
@@ -263,7 +262,8 @@ Return a book to the library. Returns the book if it is returned to the library 
 ```sql
 EXEC google.libraryagent.books.return 
 @shelvesId='{{ shelvesId }}' --required, 
-@booksId='{{ booksId }}' --required;
+@booksId='{{ booksId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_tag_templates_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,7 +158,8 @@ role
 FROM google.datacatalog.tag_templates_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND tagTemplatesId = '{{ tagTemplatesId }}' -- required;
+AND tagTemplatesId = '{{ tagTemplatesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -215,7 +214,8 @@ EXEC google.datacatalog.tag_templates_iam_policies.projects_locations_tag_templa
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

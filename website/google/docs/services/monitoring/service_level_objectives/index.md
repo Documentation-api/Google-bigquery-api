@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="services_service_level_objectives_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="services_service_level_objectives_get">
-
-Successful response
 
 <table>
 <thead>
@@ -284,7 +280,8 @@ AND parent = '{{ parent }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="services_service_level_objectives_get">
@@ -302,7 +299,8 @@ serviceLevelIndicator,
 userLabels
 FROM google.monitoring.service_level_objectives
 WHERE name = '{{ name }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -463,7 +461,8 @@ Delete the given ServiceLevelObjective.
 
 ```sql
 DELETE FROM google.monitoring.service_level_objectives
-WHERE name = '{{ name }}' --required;
+WHERE name = '{{ name }}' --required
+;
 ```
 </TabItem>
 </Tabs>

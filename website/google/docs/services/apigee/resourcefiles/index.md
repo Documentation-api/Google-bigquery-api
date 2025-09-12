@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_resourcefiles_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_environments_resourcefiles_list_environment_resources">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_resourcefiles_list">
-
-Successful response
 
 <table>
 <thead>
@@ -243,7 +237,8 @@ FROM google.apigee.resourcefiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND type = '{{ type }}' -- required
-AND name = '{{ name }}' -- required;
+AND name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_resourcefiles_list_environment_resources">
@@ -256,7 +251,8 @@ resourceFile
 FROM google.apigee.resourcefiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND type = '{{ type }}' -- required;
+AND type = '{{ type }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_resourcefiles_list">
@@ -269,7 +265,8 @@ resourceFile
 FROM google.apigee.resourcefiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND type = '{{ type }}';
+AND type = '{{ type }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -396,7 +393,8 @@ DELETE FROM google.apigee.resourcefiles
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
 AND type = '{{ type }}' --required
-AND name = '{{ name }}' --required;
+AND name = '{{ name }}' --required
+;
 ```
 </TabItem>
 </Tabs>

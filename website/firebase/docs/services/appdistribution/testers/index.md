@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -189,7 +187,8 @@ FROM firebase.appdistribution.testers
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -246,7 +245,8 @@ EXEC firebase.appdistribution.testers.batch_add
 @@json=
 '{
 "emails": "{{ emails }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_remove">
@@ -259,7 +259,8 @@ EXEC firebase.appdistribution.testers.batch_remove
 @@json=
 '{
 "emails": "{{ emails }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

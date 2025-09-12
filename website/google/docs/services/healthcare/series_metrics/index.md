@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_series_metrics">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND dicomStoresId = '{{ dicomStoresId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
-AND seriesId = '{{ seriesId }}' -- required;
+AND seriesId = '{{ seriesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

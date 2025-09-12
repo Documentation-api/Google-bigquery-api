@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -383,7 +379,8 @@ visibility
 FROM google.dns.managed_zones
 WHERE project = '{{ project }}' -- required
 AND managedZone = '{{ managedZone }}' -- required
-AND clientOperationId = '{{ clientOperationId }}';
+AND clientOperationId = '{{ clientOperationId }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -413,7 +410,8 @@ FROM google.dns.managed_zones
 WHERE project = '{{ project }}' -- required
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
-AND dnsName = '{{ dnsName }}';
+AND dnsName = '{{ dnsName }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -711,7 +709,8 @@ Deletes a previously created ManagedZone.
 DELETE FROM google.dns.managed_zones
 WHERE project = '{{ project }}' --required
 AND managedZone = '{{ managedZone }}' --required
-AND clientOperationId = '{{ clientOperationId }}';
+AND clientOperationId = '{{ clientOperationId }}'
+;
 ```
 </TabItem>
 </Tabs>

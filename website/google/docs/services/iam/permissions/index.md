@@ -94,7 +94,8 @@ EXEC google.iam.permissions.query_testable_permissions
 "fullResourceName": "{{ fullResourceName }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

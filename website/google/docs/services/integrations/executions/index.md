@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_integrations_executions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -142,8 +140,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_products_integrations_executions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -244,8 +240,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -344,8 +338,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -700,7 +692,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND productsId = '{{ productsId }}' -- required
 AND integrationsId = '{{ integrationsId }}' -- required
-AND executionsId = '{{ executionsId }}' -- required;
+AND executionsId = '{{ executionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_executions_list">
@@ -750,7 +743,8 @@ AND filterParams.parameterPairKey = '{{ filterParams.parameterPairKey }}'
 AND filterParams.parameterPairValue = '{{ filterParams.parameterPairValue }}'
 AND refreshAcl = '{{ refreshAcl }}'
 AND truncateParams = '{{ truncateParams }}'
-AND snapshotMetadataWithoutParams = '{{ snapshotMetadataWithoutParams }}';
+AND snapshotMetadataWithoutParams = '{{ snapshotMetadataWithoutParams }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_get">
@@ -780,7 +774,8 @@ FROM google.integrations.executions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND integrationsId = '{{ integrationsId }}' -- required
-AND executionsId = '{{ executionsId }}' -- required;
+AND executionsId = '{{ executionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_list">
@@ -829,7 +824,8 @@ AND filterParams.parameterPairKey = '{{ filterParams.parameterPairKey }}'
 AND filterParams.parameterPairValue = '{{ filterParams.parameterPairValue }}'
 AND refreshAcl = '{{ refreshAcl }}'
 AND truncateParams = '{{ truncateParams }}'
-AND snapshotMetadataWithoutParams = '{{ snapshotMetadataWithoutParams }}';
+AND snapshotMetadataWithoutParams = '{{ snapshotMetadataWithoutParams }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -856,7 +852,8 @@ EXEC google.integrations.executions.projects_locations_products_integrations_exe
 @locationsId='{{ locationsId }}' --required, 
 @productsId='{{ productsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
-@executionsId='{{ executionsId }}' --required;
+@executionsId='{{ executionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_cancel">
@@ -872,7 +869,8 @@ EXEC google.integrations.executions.projects_locations_integrations_executions_c
 @@json=
 '{
 "cancelReason": "{{ cancelReason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_download">
@@ -884,7 +882,8 @@ EXEC google.integrations.executions.projects_locations_integrations_executions_d
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
-@executionsId='{{ executionsId }}' --required;
+@executionsId='{{ executionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_replay">
@@ -903,7 +902,8 @@ EXEC google.integrations.executions.projects_locations_integrations_executions_r
 "updateMask": "{{ updateMask }}", 
 "modifiedParameters": "{{ modifiedParameters }}", 
 "replayMode": "{{ replayMode }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -361,7 +357,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND specsId = '{{ specsId }}' -- required;
+AND specsId = '{{ specsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -390,7 +387,8 @@ AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -597,7 +595,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND specsId = '{{ specsId }}' --required;
+AND specsId = '{{ specsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -621,7 +620,8 @@ EXEC google.apihub.specs.lint
 @locationsId='{{ locationsId }}' --required, 
 @apisId='{{ apisId }}' --required, 
 @versionsId='{{ versionsId }}' --required, 
-@specsId='{{ specsId }}' --required;
+@specsId='{{ specsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

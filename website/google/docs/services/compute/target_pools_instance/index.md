@@ -203,7 +203,8 @@ DELETE FROM google.compute.target_pools_instance
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND targetPool = '{{ targetPool }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

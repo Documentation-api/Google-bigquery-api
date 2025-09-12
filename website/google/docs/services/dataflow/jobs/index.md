@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -197,8 +195,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_jobs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -354,8 +350,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_jobs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -509,8 +503,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -881,7 +873,8 @@ FROM google.dataflow.jobs
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
 AND jobId = '{{ jobId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_get">
@@ -922,7 +915,8 @@ FROM google.dataflow.jobs
 WHERE projectId = '{{ projectId }}' -- required
 AND jobId = '{{ jobId }}' -- required
 AND view = '{{ view }}'
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_jobs_list">
@@ -966,7 +960,8 @@ AND filter = '{{ filter }}'
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_list">
@@ -1010,7 +1005,8 @@ AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND location = '{{ location }}'
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1552,7 +1548,8 @@ EXEC google.dataflow.jobs.projects_jobs_aggregated
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
 @location='{{ location }}', 
-@name='{{ name }}';
+@name='{{ name }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_snapshot">
@@ -1569,7 +1566,8 @@ EXEC google.dataflow.jobs.projects_jobs_snapshot
 "location": "{{ location }}", 
 "snapshotSources": {{ snapshotSources }}, 
 "description": "{{ description }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_jobs_snapshot">
@@ -1587,7 +1585,8 @@ EXEC google.dataflow.jobs.projects_locations_jobs_snapshot
 "location": "{{ location }}", 
 "snapshotSources": {{ snapshotSources }}, 
 "description": "{{ description }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

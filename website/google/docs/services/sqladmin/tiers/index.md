@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 items,
 kind
 FROM google.sqladmin.tiers
-WHERE project = '{{ project }}' -- required;
+WHERE project = '{{ project }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -336,7 +332,8 @@ usedBy
 FROM google.certificatemanager.certificates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND certificatesId = '{{ certificatesId }}' -- required;
+AND certificatesId = '{{ certificatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -363,7 +360,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -516,7 +514,8 @@ Deletes a single Certificate.
 DELETE FROM google.certificatemanager.certificates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND certificatesId = '{{ certificatesId }}' --required;
+AND certificatesId = '{{ certificatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

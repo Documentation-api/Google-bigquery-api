@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,7 +145,8 @@ etag,
 notificationSettings
 FROM google.advisorynotifications.settings
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

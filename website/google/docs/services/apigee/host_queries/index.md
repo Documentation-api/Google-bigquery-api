@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_host_queries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_host_queries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -272,7 +268,8 @@ state,
 updated
 FROM google.apigee.host_queries
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND hostQueriesId = '{{ hostQueriesId }}' -- required;
+AND hostQueriesId = '{{ hostQueriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_host_queries_list">
@@ -290,7 +287,8 @@ AND from = '{{ from }}'
 AND to = '{{ to }}'
 AND dataset = '{{ dataset }}'
 AND inclQueriesWithoutReport = '{{ inclQueriesWithoutReport }}'
-AND envgroupHostname = '{{ envgroupHostname }}';
+AND envgroupHostname = '{{ envgroupHostname }}'
+;
 ```
 </TabItem>
 </Tabs>

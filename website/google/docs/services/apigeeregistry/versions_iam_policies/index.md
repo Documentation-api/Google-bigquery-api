@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_versions_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,7 +170,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -229,7 +228,8 @@ EXEC google.apigeeregistry.versions_iam_policies.projects_locations_apis_version
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_jobs_get_metrics">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_jobs_get_metrics">
-
-Successful response
 
 <table>
 <thead>
@@ -186,7 +182,8 @@ FROM google.dataflow.jobs_metrics
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
 AND jobId = '{{ jobId }}' -- required
-AND startTime = '{{ startTime }}';
+AND startTime = '{{ startTime }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_get_metrics">
@@ -201,7 +198,8 @@ FROM google.dataflow.jobs_metrics
 WHERE projectId = '{{ projectId }}' -- required
 AND jobId = '{{ jobId }}' -- required
 AND startTime = '{{ startTime }}'
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>

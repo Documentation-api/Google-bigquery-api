@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -321,7 +317,8 @@ resolved
 FROM googleworkspace.drivev3.comments
 WHERE fileId = '{{ fileId }}' -- required
 AND commentId = '{{ commentId }}' -- required
-AND includeDeleted = '{{ includeDeleted }}';
+AND includeDeleted = '{{ includeDeleted }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -347,7 +344,8 @@ WHERE fileId = '{{ fileId }}' -- required
 AND includeDeleted = '{{ includeDeleted }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND startModifiedTime = '{{ startModifiedTime }}';
+AND startModifiedTime = '{{ startModifiedTime }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -550,7 +548,8 @@ Deletes a comment. For more information, see [Manage comments and replies](https
 ```sql
 DELETE FROM googleworkspace.drivev3.comments
 WHERE fileId = '{{ fileId }}' --required
-AND commentId = '{{ commentId }}' --required;
+AND commentId = '{{ commentId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

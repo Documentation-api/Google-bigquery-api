@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -319,7 +315,8 @@ etag,
 kind,
 nonEditableAliases
 FROM googleadmin.directory.groups
-WHERE groupKey = '{{ groupKey }}' -- required;
+WHERE groupKey = '{{ groupKey }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -346,7 +343,8 @@ AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND query = '{{ query }}'
 AND sortOrder = '{{ sortOrder }}'
-AND userKey = '{{ userKey }}';
+AND userKey = '{{ userKey }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -565,7 +563,8 @@ Deletes a group.
 
 ```sql
 DELETE FROM googleadmin.directory.groups
-WHERE groupKey = '{{ groupKey }}' --required;
+WHERE groupKey = '{{ groupKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_reports_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_reports_list">
-
-Successful response
 
 <table>
 <thead>
@@ -310,7 +306,8 @@ toTime,
 topk
 FROM google.apigee.reports
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND reportsId = '{{ reportsId }}' -- required;
+AND reportsId = '{{ reportsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_reports_list">
@@ -322,7 +319,8 @@ SELECT
 qualifier
 FROM google.apigee.reports
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND expand = '{{ expand }}';
+AND expand = '{{ expand }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -584,7 +582,8 @@ Deletes an existing custom report definition
 ```sql
 DELETE FROM google.apigee.reports
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND reportsId = '{{ reportsId }}' --required;
+AND reportsId = '{{ reportsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

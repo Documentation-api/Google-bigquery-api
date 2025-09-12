@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ visibility
 FROM googleworkspace.drivev2.properties
 WHERE fileId = '{{ fileId }}' -- required
 AND propertyKey = '{{ propertyKey }}' -- required
-AND visibility = '{{ visibility }}';
+AND visibility = '{{ visibility }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -251,7 +248,8 @@ items,
 kind,
 selfLink
 FROM googleworkspace.drivev2.properties
-WHERE fileId = '{{ fileId }}' -- required;
+WHERE fileId = '{{ fileId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -433,7 +431,8 @@ Deletes a property.
 DELETE FROM googleworkspace.drivev2.properties
 WHERE fileId = '{{ fileId }}' --required
 AND propertyKey = '{{ propertyKey }}' --required
-AND visibility = '{{ visibility }}';
+AND visibility = '{{ visibility }}'
+;
 ```
 </TabItem>
 </Tabs>

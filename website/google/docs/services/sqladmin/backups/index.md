@@ -159,7 +159,8 @@ EXEC google.sqladmin.backups.create_backup
 "location": "{{ location }}", 
 "ttlDays": "{{ ttlDays }}", 
 "expiryTime": "{{ expiryTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="list_backups">
@@ -171,7 +172,8 @@ EXEC google.sqladmin.backups.list_backups
 @projectsId='{{ projectsId }}' --required, 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@filter='{{ filter }}';
+@filter='{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="get_backup">
@@ -181,7 +183,8 @@ Retrieves a resource containing information about a backup.
 ```sql
 EXEC google.sqladmin.backups.get_backup 
 @projectsId='{{ projectsId }}' --required, 
-@backupsId='{{ backupsId }}' --required;
+@backupsId='{{ backupsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="update_backup">
@@ -200,7 +203,8 @@ EXEC google.sqladmin.backups.update_backup
 "location": "{{ location }}", 
 "ttlDays": "{{ ttlDays }}", 
 "expiryTime": "{{ expiryTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="delete_backup">
@@ -210,7 +214,8 @@ Deletes the backup.
 ```sql
 EXEC google.sqladmin.backups.delete_backup 
 @projectsId='{{ projectsId }}' --required, 
-@backupsId='{{ backupsId }}' --required;
+@backupsId='{{ backupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

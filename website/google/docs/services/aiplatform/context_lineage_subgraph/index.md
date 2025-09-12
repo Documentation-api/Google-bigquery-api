@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="query_context_lineage_subgraph">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ FROM google.aiplatform.context_lineage_subgraph
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND metadataStoresId = '{{ metadataStoresId }}' -- required
-AND contextsId = '{{ contextsId }}' -- required;
+AND contextsId = '{{ contextsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -432,7 +428,8 @@ updateTime
 FROM google.datamigration.conversion_workspaces
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND conversionWorkspacesId = '{{ conversionWorkspacesId }}' -- required;
+AND conversionWorkspacesId = '{{ conversionWorkspacesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -458,7 +455,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -627,7 +625,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND conversionWorkspacesId = '{{ conversionWorkspacesId }}' --required
 AND requestId = '{{ requestId }}'
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -662,7 +661,8 @@ EXEC google.datamigration.conversion_workspaces.seed
 "autoCommit": {{ autoCommit }}, 
 "sourceConnectionProfile": "{{ sourceConnectionProfile }}", 
 "destinationConnectionProfile": "{{ destinationConnectionProfile }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="convert">
@@ -679,7 +679,8 @@ EXEC google.datamigration.conversion_workspaces.convert
 "autoCommit": {{ autoCommit }}, 
 "filter": "{{ filter }}", 
 "convertFullPath": {{ convertFullPath }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="commit">
@@ -694,7 +695,8 @@ EXEC google.datamigration.conversion_workspaces.commit
 @@json=
 '{
 "commitName": "{{ commitName }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rollback">
@@ -705,7 +707,8 @@ Rolls back a conversion workspace to the last committed snapshot.
 EXEC google.datamigration.conversion_workspaces.rollback 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@conversionWorkspacesId='{{ conversionWorkspacesId }}' --required;
+@conversionWorkspacesId='{{ conversionWorkspacesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="apply">
@@ -723,7 +726,8 @@ EXEC google.datamigration.conversion_workspaces.apply
 "dryRun": {{ dryRun }}, 
 "autoCommit": {{ autoCommit }}, 
 "connectionProfile": "{{ connectionProfile }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="describe_database_entities">
@@ -741,7 +745,8 @@ EXEC google.datamigration.conversion_workspaces.describe_database_entities
 @uncommitted={{ uncommitted }}, 
 @commitId='{{ commitId }}', 
 @filter='{{ filter }}', 
-@view='{{ view }}';
+@view='{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="search_background_jobs">
@@ -755,7 +760,8 @@ EXEC google.datamigration.conversion_workspaces.search_background_jobs
 @conversionWorkspacesId='{{ conversionWorkspacesId }}' --required, 
 @returnMostRecentPerJobType={{ returnMostRecentPerJobType }}, 
 @maxSize='{{ maxSize }}', 
-@completedUntilTime='{{ completedUntilTime }}';
+@completedUntilTime='{{ completedUntilTime }}'
+;
 ```
 </TabItem>
 <TabItem value="describe_conversion_workspace_revisions">
@@ -767,7 +773,8 @@ EXEC google.datamigration.conversion_workspaces.describe_conversion_workspace_re
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @conversionWorkspacesId='{{ conversionWorkspacesId }}' --required, 
-@commitId='{{ commitId }}';
+@commitId='{{ commitId }}'
+;
 ```
 </TabItem>
 </Tabs>

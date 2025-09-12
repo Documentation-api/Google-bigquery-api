@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_integrations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_integrations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -325,7 +321,8 @@ AND productsId = '{{ productsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_list">
@@ -347,7 +344,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -369,7 +367,8 @@ Delete the selected integration and all versions inside
 DELETE FROM google.integrations.integrations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND integrationsId = '{{ integrationsId }}' --required;
+AND integrationsId = '{{ integrationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -408,7 +407,8 @@ EXEC google.integrations.integrations.projects_locations_products_integrations_e
 "requestId": "{{ requestId }}", 
 "executionId": "{{ executionId }}", 
 "inputParameters": "{{ inputParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_schedule">
@@ -430,7 +430,8 @@ EXEC google.integrations.integrations.projects_locations_products_integrations_s
 "parameterEntries": "{{ parameterEntries }}", 
 "inputParameters": "{{ inputParameters }}", 
 "userGeneratedExecutionId": "{{ userGeneratedExecutionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_test">
@@ -453,7 +454,8 @@ EXEC google.integrations.integrations.projects_locations_products_integrations_t
 "deadlineSecondsTime": "{{ deadlineSecondsTime }}", 
 "inputParameters": "{{ inputParameters }}", 
 "configParameters": "{{ configParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_execute">
@@ -474,7 +476,8 @@ EXEC google.integrations.integrations.projects_locations_integrations_execute
 "requestId": "{{ requestId }}", 
 "executionId": "{{ executionId }}", 
 "inputParameters": "{{ inputParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_schedule">
@@ -495,7 +498,8 @@ EXEC google.integrations.integrations.projects_locations_integrations_schedule
 "parameterEntries": "{{ parameterEntries }}", 
 "inputParameters": "{{ inputParameters }}", 
 "userGeneratedExecutionId": "{{ userGeneratedExecutionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_test">
@@ -517,7 +521,8 @@ EXEC google.integrations.integrations.projects_locations_integrations_test
 "deadlineSecondsTime": "{{ deadlineSecondsTime }}", 
 "inputParameters": "{{ inputParameters }}", 
 "configParameters": "{{ configParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_search">
@@ -532,7 +537,8 @@ EXEC google.integrations.integrations.projects_locations_integrations_search
 @filter='{{ filter }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@enableNaturalLanguageQueryUnderstanding={{ enableNaturalLanguageQueryUnderstanding }};
+@enableNaturalLanguageQueryUnderstanding={{ enableNaturalLanguageQueryUnderstanding }}
+;
 ```
 </TabItem>
 </Tabs>

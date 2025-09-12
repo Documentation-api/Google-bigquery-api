@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_router_status">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ result
 FROM google.compute.router_status
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND router = '{{ router }}' -- required;
+AND router = '{{ router }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_processors_processor_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -372,7 +368,8 @@ FROM google.documentai.processor_versions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND processorsId = '{{ processorsId }}' -- required
-AND processorVersionsId = '{{ processorVersionsId }}' -- required;
+AND processorVersionsId = '{{ processorVersionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_list">
@@ -400,7 +397,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND processorsId = '{{ processorsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -423,7 +421,8 @@ DELETE FROM google.documentai.processor_versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND processorsId = '{{ processorsId }}' --required
-AND processorVersionsId = '{{ processorVersionsId }}' --required;
+AND processorVersionsId = '{{ processorVersionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -462,7 +461,8 @@ EXEC google.documentai.processor_versions.projects_locations_processors_processo
 "processOptions": "{{ processOptions }}", 
 "labels": "{{ labels }}", 
 "imagelessMode": {{ imagelessMode }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_batch_process">
@@ -482,7 +482,8 @@ EXEC google.documentai.processor_versions.projects_locations_processors_processo
 "skipHumanReview": {{ skipHumanReview }}, 
 "processOptions": "{{ processOptions }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_train">
@@ -502,7 +503,8 @@ EXEC google.documentai.processor_versions.projects_locations_processors_processo
 "documentSchema": "{{ documentSchema }}", 
 "inputData": "{{ inputData }}", 
 "baseProcessorVersion": "{{ baseProcessorVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_deploy">
@@ -514,7 +516,8 @@ EXEC google.documentai.processor_versions.projects_locations_processors_processo
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @processorsId='{{ processorsId }}' --required, 
-@processorVersionsId='{{ processorVersionsId }}' --required;
+@processorVersionsId='{{ processorVersionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_undeploy">
@@ -526,7 +529,8 @@ EXEC google.documentai.processor_versions.projects_locations_processors_processo
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @processorsId='{{ processorsId }}' --required, 
-@processorVersionsId='{{ processorVersionsId }}' --required;
+@processorVersionsId='{{ processorVersionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processors_processor_versions_evaluate_processor_version">
@@ -542,7 +546,8 @@ EXEC google.documentai.processor_versions.projects_locations_processors_processo
 @@json=
 '{
 "evaluationDocuments": "{{ evaluationDocuments }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

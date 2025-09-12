@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_apk_details">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,7 +120,8 @@ Gets the details of an Android application APK.
 SELECT
 apkDetail
 FROM firebase.testing.application_detail_service_apk_details
-WHERE bundleLocation.gcsPath = '{{ bundleLocation.gcsPath }}';
+WHERE bundleLocation.gcsPath = '{{ bundleLocation.gcsPath }}'
+;
 ```
 </TabItem>
 </Tabs>

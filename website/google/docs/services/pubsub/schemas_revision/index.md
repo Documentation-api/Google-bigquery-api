@@ -106,7 +106,8 @@ Deletes a specific schema revision.
 DELETE FROM google.pubsub.schemas_revision
 WHERE projectsId = '{{ projectsId }}' --required
 AND schemasId = '{{ schemasId }}' --required
-AND revisionId = '{{ revisionId }}';
+AND revisionId = '{{ revisionId }}'
+;
 ```
 </TabItem>
 </Tabs>

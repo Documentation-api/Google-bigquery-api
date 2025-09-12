@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_taxonomies_policy_tags_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_taxonomies_policy_tags_list">
-
-Successful response
 
 <table>
 <thead>
@@ -250,7 +246,8 @@ FROM google.datacatalog.policy_tags
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND taxonomiesId = '{{ taxonomiesId }}' -- required
-AND policyTagsId = '{{ policyTagsId }}' -- required;
+AND policyTagsId = '{{ policyTagsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_taxonomies_policy_tags_list">
@@ -269,7 +266,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND taxonomiesId = '{{ taxonomiesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -408,7 +406,8 @@ DELETE FROM google.datacatalog.policy_tags
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND taxonomiesId = '{{ taxonomiesId }}' --required
-AND policyTagsId = '{{ policyTagsId }}' --required;
+AND policyTagsId = '{{ policyTagsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

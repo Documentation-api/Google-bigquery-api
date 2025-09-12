@@ -130,7 +130,8 @@ EXEC google.iamcredentials.service_accounts.generate_access_token
 "delegates": "{{ delegates }}", 
 "scope": "{{ scope }}", 
 "lifetime": "{{ lifetime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_id_token">
@@ -147,7 +148,8 @@ EXEC google.iamcredentials.service_accounts.generate_id_token
 "audience": "{{ audience }}", 
 "includeEmail": {{ includeEmail }}, 
 "organizationNumberIncluded": {{ organizationNumberIncluded }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sign_blob">
@@ -162,7 +164,8 @@ EXEC google.iamcredentials.service_accounts.sign_blob
 '{
 "delegates": "{{ delegates }}", 
 "payload": "{{ payload }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sign_jwt">
@@ -177,7 +180,8 @@ EXEC google.iamcredentials.service_accounts.sign_jwt
 '{
 "delegates": "{{ delegates }}", 
 "payload": "{{ payload }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

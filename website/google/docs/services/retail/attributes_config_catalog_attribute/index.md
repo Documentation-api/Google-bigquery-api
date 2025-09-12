@@ -170,7 +170,8 @@ Removes the specified CatalogAttribute from the AttributesConfig. If the Catalog
 DELETE FROM google.retail.attributes_config_catalog_attribute
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND catalogsId = '{{ catalogsId }}' --required;
+AND catalogsId = '{{ catalogsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

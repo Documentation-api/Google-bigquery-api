@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_perf_metrics_summary">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -182,7 +180,8 @@ FROM firebase.toolresults.steps_perf_metrics_summary
 WHERE projectId = '{{ projectId }}' -- required
 AND historyId = '{{ historyId }}' -- required
 AND executionId = '{{ executionId }}' -- required
-AND stepId = '{{ stepId }}' -- required;
+AND stepId = '{{ stepId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

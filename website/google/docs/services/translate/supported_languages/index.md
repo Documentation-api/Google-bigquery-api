@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get_supported_languages">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_get_supported_languages">
-
-Successful response
 
 <table>
 <thead>
@@ -170,7 +166,8 @@ FROM google.translate.supported_languages
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND displayLanguageCode = '{{ displayLanguageCode }}'
-AND model = '{{ model }}';
+AND model = '{{ model }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_get_supported_languages">
@@ -183,7 +180,8 @@ languages
 FROM google.translate.supported_languages
 WHERE projectsId = '{{ projectsId }}' -- required
 AND displayLanguageCode = '{{ displayLanguageCode }}'
-AND model = '{{ model }}';
+AND model = '{{ model }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_flowhooks_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ sharedFlow
 FROM google.apigee.flowhooks
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND flowhooksId = '{{ flowhooksId }}' -- required;
+AND flowhooksId = '{{ flowhooksId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -195,7 +194,8 @@ EXEC google.apigee.flowhooks.organizations_environments_flowhooks_attach_shared_
 "description": "{{ description }}", 
 "sharedFlow": "{{ sharedFlow }}", 
 "continueOnError": {{ continueOnError }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_flowhooks_detach_shared_flow_from_flow_hook">
@@ -206,7 +206,8 @@ Detaches a shared flow from a flow hook.
 EXEC google.apigee.flowhooks.organizations_environments_flowhooks_detach_shared_flow_from_flow_hook 
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
-@flowhooksId='{{ flowhooksId }}' --required;
+@flowhooksId='{{ flowhooksId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

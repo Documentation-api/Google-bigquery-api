@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_health">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -159,7 +157,8 @@ kind
 FROM google.compute.target_pools_health_check
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND targetPool = '{{ targetPool }}' -- required;
+AND targetPool = '{{ targetPool }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -266,7 +265,8 @@ DELETE FROM google.compute.target_pools_health_check
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND targetPool = '{{ targetPool }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

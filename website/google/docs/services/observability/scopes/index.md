@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ updateTime
 FROM google.observability.scopes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND scopesId = '{{ scopesId }}' -- required;
+AND scopesId = '{{ scopesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

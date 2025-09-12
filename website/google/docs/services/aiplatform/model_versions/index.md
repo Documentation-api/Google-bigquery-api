@@ -106,7 +106,8 @@ Deletes a Model version. Model version can only be deleted if there are no Deplo
 DELETE FROM google.aiplatform.model_versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND modelsId = '{{ modelsId }}' --required;
+AND modelsId = '{{ modelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

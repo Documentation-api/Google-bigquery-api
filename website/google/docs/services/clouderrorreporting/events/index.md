@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -202,7 +200,8 @@ AND serviceFilter.version = '{{ serviceFilter.version }}'
 AND serviceFilter.resourceType = '{{ serviceFilter.resourceType }}'
 AND timeRange.period = '{{ timeRange.period }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -223,7 +222,8 @@ Deletes all error events of a given project.
 ```sql
 DELETE FROM google.clouderrorreporting.events
 WHERE projectsId = '{{ projectsId }}' --required
-AND locationsId = '{{ locationsId }}' --required;
+AND locationsId = '{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -250,7 +250,8 @@ EXEC google.clouderrorreporting.events.report
 "serviceContext": "{{ serviceContext }}", 
 "message": "{{ message }}", 
 "context": "{{ context }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -314,7 +310,8 @@ weeklyBackupLimit
 FROM google.netapp.backup_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND backupPoliciesId = '{{ backupPoliciesId }}' -- required;
+AND backupPoliciesId = '{{ backupPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -339,7 +336,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -499,7 +497,8 @@ Warning! This operation will permanently delete the backup policy.
 DELETE FROM google.netapp.backup_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND backupPoliciesId = '{{ backupPoliciesId }}' --required;
+AND backupPoliciesId = '{{ backupPoliciesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

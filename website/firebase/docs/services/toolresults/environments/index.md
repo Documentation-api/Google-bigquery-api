@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -290,7 +286,8 @@ FROM firebase.toolresults.environments
 WHERE projectId = '{{ projectId }}' -- required
 AND historyId = '{{ historyId }}' -- required
 AND executionId = '{{ executionId }}' -- required
-AND environmentId = '{{ environmentId }}' -- required;
+AND environmentId = '{{ environmentId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -315,7 +312,8 @@ WHERE projectId = '{{ projectId }}' -- required
 AND historyId = '{{ historyId }}' -- required
 AND executionId = '{{ executionId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

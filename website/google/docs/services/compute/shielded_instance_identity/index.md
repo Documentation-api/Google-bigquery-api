@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_shielded_instance_identity">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ signingKey
 FROM google.compute.shielded_instance_identity
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

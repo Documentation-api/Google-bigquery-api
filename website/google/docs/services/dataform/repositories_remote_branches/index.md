@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_remote_branches">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ branches
 FROM google.dataform.repositories_remote_branches
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND repositoriesId = '{{ repositoriesId }}' -- required;
+AND repositoriesId = '{{ repositoriesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

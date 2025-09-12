@@ -101,7 +101,8 @@ EXEC google.storage.channels.stop
 "resourceUri": "{{ resourceUri }}", 
 "token": "{{ token }}", 
 "type": "{{ type }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

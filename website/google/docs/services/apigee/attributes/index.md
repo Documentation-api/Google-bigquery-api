@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_apps_attributes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -69,8 +67,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apiproducts_attributes_get">
-
-Successful response
 
 <table>
 <thead>
@@ -96,8 +92,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_developers_apps_attributes_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -116,8 +110,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_developers_attributes_get">
-
-Successful response
 
 <table>
 <thead>
@@ -143,8 +135,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_apiproducts_attributes_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -163,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_developers_attributes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -353,7 +341,8 @@ FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
 AND appsId = '{{ appsId }}' -- required
-AND attributesId = '{{ attributesId }}' -- required;
+AND attributesId = '{{ attributesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_attributes_get">
@@ -367,7 +356,8 @@ value
 FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apiproductsId = '{{ apiproductsId }}' -- required
-AND attributesId = '{{ attributesId }}' -- required;
+AND attributesId = '{{ attributesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_attributes_list">
@@ -380,7 +370,8 @@ attribute
 FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
-AND appsId = '{{ appsId }}' -- required;
+AND appsId = '{{ appsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_attributes_get">
@@ -394,7 +385,8 @@ value
 FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
-AND attributesId = '{{ attributesId }}' -- required;
+AND attributesId = '{{ attributesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_attributes_list">
@@ -406,7 +398,8 @@ SELECT
 attribute
 FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND apiproductsId = '{{ apiproductsId }}' -- required;
+AND apiproductsId = '{{ apiproductsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_attributes_list">
@@ -418,7 +411,8 @@ SELECT
 attribute
 FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND developersId = '{{ developersId }}' -- required;
+AND developersId = '{{ developersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -443,7 +437,8 @@ DELETE FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND developersId = '{{ developersId }}' --required
 AND appsId = '{{ appsId }}' --required
-AND attributesId = '{{ attributesId }}' --required;
+AND attributesId = '{{ attributesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_attributes_delete">
@@ -454,7 +449,8 @@ Deletes an API product attribute.
 DELETE FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND apiproductsId = '{{ apiproductsId }}' --required
-AND attributesId = '{{ attributesId }}' --required;
+AND attributesId = '{{ attributesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_attributes_delete">
@@ -465,7 +461,8 @@ Deletes a developer attribute.
 DELETE FROM google.apigee.attributes
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND developersId = '{{ developersId }}' --required
-AND attributesId = '{{ attributesId }}' --required;
+AND attributesId = '{{ attributesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -494,7 +491,8 @@ EXEC google.apigee.attributes.organizations_apiproducts_attributes_update_api_pr
 '{
 "name": "{{ name }}", 
 "value": "{{ value }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_attributes_update_developer_app_attribute">
@@ -511,7 +509,8 @@ EXEC google.apigee.attributes.organizations_developers_apps_attributes_update_de
 '{
 "name": "{{ name }}", 
 "value": "{{ value }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_attributes_update_developer_attribute">
@@ -527,7 +526,8 @@ EXEC google.apigee.attributes.organizations_developers_attributes_update_develop
 '{
 "name": "{{ name }}", 
 "value": "{{ value }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_guest_attributes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
 AND instance = '{{ instance }}' -- required
 AND queryPath = '{{ queryPath }}'
-AND variableKey = '{{ variableKey }}';
+AND variableKey = '{{ variableKey }}'
+;
 ```
 </TabItem>
 </Tabs>

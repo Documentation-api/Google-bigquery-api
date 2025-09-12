@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -359,7 +355,8 @@ FROM firebase.dataconnect.connectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
-AND connectorsId = '{{ connectorsId }}' -- required;
+AND connectorsId = '{{ connectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -385,7 +382,8 @@ AND servicesId = '{{ servicesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -552,7 +550,8 @@ AND force = '{{ force }}'
 AND etag = '{{ etag }}'
 AND requestId = '{{ requestId }}'
 AND allowMissing = '{{ allowMissing }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -581,7 +580,8 @@ EXEC firebase.dataconnect.connectors.execute_query
 '{
 "operationName": "{{ operationName }}", 
 "variables": "{{ variables }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="execute_mutation">
@@ -598,7 +598,8 @@ EXEC firebase.dataconnect.connectors.execute_mutation
 '{
 "operationName": "{{ operationName }}", 
 "variables": "{{ variables }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

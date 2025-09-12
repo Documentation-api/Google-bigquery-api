@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -317,7 +313,8 @@ updateTime
 FROM google.developerconnect.account_connectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND accountConnectorsId = '{{ accountConnectorsId }}' -- required;
+AND accountConnectorsId = '{{ accountConnectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -340,7 +337,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -499,7 +497,8 @@ AND accountConnectorsId = '{{ accountConnectorsId }}' --required
 AND requestId = '{{ requestId }}'
 AND validateOnly = '{{ validateOnly }}'
 AND etag = '{{ etag }}'
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>

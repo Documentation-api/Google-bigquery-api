@@ -161,7 +161,8 @@ Removes a public SSH key from an environment. Clients will no longer be able to 
 ```sql
 DELETE FROM google.cloudshell.public_keys
 WHERE usersId = '{{ usersId }}' --required
-AND environmentsId = '{{ environmentsId }}' --required;
+AND environmentsId = '{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

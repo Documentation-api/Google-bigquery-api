@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -268,7 +264,8 @@ type
 FROM firebase.database.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -287,7 +284,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -379,7 +377,8 @@ Marks a DatabaseInstance to be deleted. The DatabaseInstance will be set to the 
 DELETE FROM firebase.database.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -403,7 +402,8 @@ Restores a DatabaseInstance that was previously marked to be deleted. After the 
 EXEC firebase.database.instances.undelete 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -414,7 +414,8 @@ Disables a DatabaseInstance. The database can be re-enabled later using Reenable
 EXEC firebase.database.instances.disable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="reenable">
@@ -425,7 +426,8 @@ Enables a DatabaseInstance. The database must have been disabled previously usin
 EXEC firebase.database.instances.reenable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

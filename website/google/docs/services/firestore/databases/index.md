@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -359,7 +355,8 @@ updateTime,
 versionRetentionPeriod
 FROM google.firestore.databases
 WHERE projectsId = '{{ projectsId }}' -- required
-AND databasesId = '{{ databasesId }}' -- required;
+AND databasesId = '{{ databasesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -372,7 +369,8 @@ databases,
 unreachable
 FROM google.firestore.databases
 WHERE projectsId = '{{ projectsId }}' -- required
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -564,7 +562,8 @@ Bulk deletes a subset of documents from Google Cloud Firestore. Documents create
 ```sql
 DELETE FROM google.firestore.databases
 WHERE projectsId = '{{ projectsId }}' --required
-AND databasesId = '{{ databasesId }}' --required;
+AND databasesId = '{{ databasesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="delete">
@@ -575,7 +574,8 @@ Deletes a database.
 DELETE FROM google.firestore.databases
 WHERE projectsId = '{{ projectsId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -606,7 +606,8 @@ EXEC google.firestore.databases.export_documents
 "outputUriPrefix": "{{ outputUriPrefix }}", 
 "namespaceIds": "{{ namespaceIds }}", 
 "snapshotTime": "{{ snapshotTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import_documents">
@@ -622,7 +623,8 @@ EXEC google.firestore.databases.import_documents
 "collectionIds": "{{ collectionIds }}", 
 "inputUriPrefix": "{{ inputUriPrefix }}", 
 "namespaceIds": "{{ namespaceIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -638,7 +640,8 @@ EXEC google.firestore.databases.restore
 "backup": "{{ backup }}", 
 "encryptionConfig": "{{ encryptionConfig }}", 
 "tags": "{{ tags }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="clone">
@@ -654,7 +657,8 @@ EXEC google.firestore.databases.clone
 "pitrSnapshot": "{{ pitrSnapshot }}", 
 "encryptionConfig": "{{ encryptionConfig }}", 
 "tags": "{{ tags }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

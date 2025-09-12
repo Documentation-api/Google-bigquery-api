@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_google_domains_forwarding_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ emailForwardings
 FROM google.domains.registrations_google_domains_forwarding_config
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND registrationsId = '{{ registrationsId }}' -- required;
+AND registrationsId = '{{ registrationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

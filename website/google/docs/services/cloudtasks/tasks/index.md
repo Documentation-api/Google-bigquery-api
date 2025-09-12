@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -329,7 +325,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND queuesId = '{{ queuesId }}' -- required
 AND tasksId = '{{ tasksId }}' -- required
-AND responseView = '{{ responseView }}';
+AND responseView = '{{ responseView }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -355,7 +352,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND queuesId = '{{ queuesId }}' -- required
 AND responseView = '{{ responseView }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -451,7 +449,8 @@ DELETE FROM google.cloudtasks.tasks
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND queuesId = '{{ queuesId }}' --required
-AND tasksId = '{{ tasksId }}' --required;
+AND tasksId = '{{ tasksId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -479,7 +478,8 @@ EXEC google.cloudtasks.tasks.run
 @@json=
 '{
 "responseView": "{{ responseView }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="buffer">
@@ -495,7 +495,8 @@ EXEC google.cloudtasks.tasks.buffer
 @@json=
 '{
 "body": "{{ body }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

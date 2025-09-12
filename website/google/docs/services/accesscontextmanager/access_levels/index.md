@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -251,7 +247,8 @@ title
 FROM google.accesscontextmanager.access_levels
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
 AND accessLevelsId = '{{ accessLevelsId }}' -- required
-AND accessLevelFormat = '{{ accessLevelFormat }}';
+AND accessLevelFormat = '{{ accessLevelFormat }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -269,7 +266,8 @@ FROM google.accesscontextmanager.access_levels
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND accessLevelFormat = '{{ accessLevelFormat }}';
+AND accessLevelFormat = '{{ accessLevelFormat }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -432,7 +430,8 @@ Deletes an access level based on the resource name. The long-running operation f
 ```sql
 DELETE FROM google.accesscontextmanager.access_levels
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' --required
-AND accessLevelsId = '{{ accessLevelsId }}' --required;
+AND accessLevelsId = '{{ accessLevelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

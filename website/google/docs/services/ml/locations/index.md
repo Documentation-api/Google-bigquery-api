@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -179,7 +175,8 @@ name,
 capabilities
 FROM google.ml.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_list">
@@ -193,7 +190,8 @@ capabilities
 FROM google.ml.locations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -188,7 +186,8 @@ speechConfig,
 updateTime
 FROM google.contactcenterinsights.settings
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -329,7 +325,8 @@ workload
 FROM google.datapipelines.pipelines
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND pipelinesId = '{{ pipelinesId }}' -- required;
+AND pipelinesId = '{{ pipelinesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -354,7 +351,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -532,7 +530,8 @@ Deletes a pipeline. If a scheduler job is attached to the pipeline, it will be d
 DELETE FROM google.datapipelines.pipelines
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND pipelinesId = '{{ pipelinesId }}' --required;
+AND pipelinesId = '{{ pipelinesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -555,7 +554,8 @@ Freezes pipeline execution permanently. If there's a corresponding scheduler ent
 EXEC google.datapipelines.pipelines.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@pipelinesId='{{ pipelinesId }}' --required;
+@pipelinesId='{{ pipelinesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="run">
@@ -566,7 +566,8 @@ Creates a job for the specified pipeline directly. You can use this method when 
 EXEC google.datapipelines.pipelines.run 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@pipelinesId='{{ pipelinesId }}' --required;
+@pipelinesId='{{ pipelinesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_buckets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -117,8 +115,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_buckets_get">
-
-Successful response
 
 <table>
 <thead>
@@ -189,8 +185,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_buckets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -259,8 +253,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_get">
-
-Successful response
 
 <table>
 <thead>
@@ -331,8 +323,6 @@ Successful response
 </TabItem>
 <TabItem value="locations_buckets_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -401,8 +391,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_buckets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -473,8 +461,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_buckets_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -544,8 +530,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_buckets_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -614,8 +598,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -1010,7 +992,8 @@ updateTime
 FROM google.logging.buckets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND bucketsId = '{{ bucketsId }}' -- required;
+AND bucketsId = '{{ bucketsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_get">
@@ -1033,7 +1016,8 @@ updateTime
 FROM google.logging.buckets
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND bucketsId = '{{ bucketsId }}' -- required;
+AND bucketsId = '{{ bucketsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_get">
@@ -1056,7 +1040,8 @@ updateTime
 FROM google.logging.buckets
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND bucketsId = '{{ bucketsId }}' -- required;
+AND bucketsId = '{{ bucketsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_get">
@@ -1079,7 +1064,8 @@ updateTime
 FROM google.logging.buckets
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND bucketsId = '{{ bucketsId }}' -- required;
+AND bucketsId = '{{ bucketsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="locations_buckets_list">
@@ -1103,7 +1089,8 @@ FROM google.logging.buckets
 WHERE parentType = '{{ parentType }}' -- required
 AND parent = '{{ parent }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_buckets_list">
@@ -1127,7 +1114,8 @@ FROM google.logging.buckets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_list">
@@ -1151,7 +1139,8 @@ FROM google.logging.buckets
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_list">
@@ -1175,7 +1164,8 @@ FROM google.logging.buckets
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_list">
@@ -1199,7 +1189,8 @@ FROM google.logging.buckets
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1667,7 +1658,8 @@ Deletes a log bucket.Changes the bucket's lifecycle_state to the DELETE_REQUESTE
 DELETE FROM google.logging.buckets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND bucketsId = '{{ bucketsId }}' --required;
+AND bucketsId = '{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_delete">
@@ -1678,7 +1670,8 @@ Deletes a log bucket.Changes the bucket's lifecycle_state to the DELETE_REQUESTE
 DELETE FROM google.logging.buckets
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND bucketsId = '{{ bucketsId }}' --required;
+AND bucketsId = '{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_delete">
@@ -1689,7 +1682,8 @@ Deletes a log bucket.Changes the bucket's lifecycle_state to the DELETE_REQUESTE
 DELETE FROM google.logging.buckets
 WHERE foldersId = '{{ foldersId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND bucketsId = '{{ bucketsId }}' --required;
+AND bucketsId = '{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_delete">
@@ -1700,7 +1694,8 @@ Deletes a log bucket.Changes the bucket's lifecycle_state to the DELETE_REQUESTE
 DELETE FROM google.logging.buckets
 WHERE billingAccountsId = '{{ billingAccountsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND bucketsId = '{{ bucketsId }}' --required;
+AND bucketsId = '{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1724,7 +1719,8 @@ Undeletes a log bucket. A bucket that has been deleted can be undeleted within t
 
 ```sql
 EXEC google.logging.buckets.locations_buckets_undelete 
-@name='{{ name }}' --required;
+@name='{{ name }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_buckets_undelete">
@@ -1735,7 +1731,8 @@ Undeletes a log bucket. A bucket that has been deleted can be undeleted within t
 EXEC google.logging.buckets.projects_locations_buckets_undelete 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@bucketsId='{{ bucketsId }}' --required;
+@bucketsId='{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_undelete">
@@ -1746,7 +1743,8 @@ Undeletes a log bucket. A bucket that has been deleted can be undeleted within t
 EXEC google.logging.buckets.organizations_locations_buckets_undelete 
 @organizationsId='{{ organizationsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@bucketsId='{{ bucketsId }}' --required;
+@bucketsId='{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_undelete">
@@ -1757,7 +1755,8 @@ Undeletes a log bucket. A bucket that has been deleted can be undeleted within t
 EXEC google.logging.buckets.folders_locations_buckets_undelete 
 @foldersId='{{ foldersId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@bucketsId='{{ bucketsId }}' --required;
+@bucketsId='{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_undelete">
@@ -1768,7 +1767,8 @@ Undeletes a log bucket. A bucket that has been deleted can be undeleted within t
 EXEC google.logging.buckets.billing_accounts_locations_buckets_undelete 
 @billingAccountsId='{{ billingAccountsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@bucketsId='{{ bucketsId }}' --required;
+@bucketsId='{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

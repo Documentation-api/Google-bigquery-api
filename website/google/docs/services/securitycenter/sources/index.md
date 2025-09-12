@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_sources_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_sources_list">
-
-Successful response
 
 <table>
 <thead>
@@ -114,8 +110,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_sources_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -149,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sources_list">
-
-Successful response
 
 <table>
 <thead>
@@ -320,7 +312,8 @@ description,
 displayName
 FROM google.securitycenter.sources
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sourcesId = '{{ sourcesId }}' -- required;
+AND sourcesId = '{{ sourcesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_sources_list">
@@ -336,7 +329,8 @@ displayName
 FROM google.securitycenter.sources
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_sources_list">
@@ -352,7 +346,8 @@ displayName
 FROM google.securitycenter.sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sources_list">
@@ -368,7 +363,8 @@ displayName
 FROM google.securitycenter.sources
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

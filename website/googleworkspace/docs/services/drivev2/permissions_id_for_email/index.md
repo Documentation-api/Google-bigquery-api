@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_id_for_email">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 id,
 kind
 FROM googleworkspace.drivev2.permissions_id_for_email
-WHERE email = '{{ email }}' -- required;
+WHERE email = '{{ email }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

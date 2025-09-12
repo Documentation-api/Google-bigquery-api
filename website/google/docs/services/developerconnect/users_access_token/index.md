@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_access_token">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ token
 FROM google.developerconnect.users_access_token
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND accountConnectorsId = '{{ accountConnectorsId }}' -- required;
+AND accountConnectorsId = '{{ accountConnectorsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

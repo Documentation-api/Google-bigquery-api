@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ FROM google.bigtableadmin.schema_bundles_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND tablesId = '{{ tablesId }}' -- required
-AND schemaBundlesId = '{{ schemaBundlesId }}' -- required;
+AND schemaBundlesId = '{{ schemaBundlesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -225,7 +224,8 @@ EXEC google.bigtableadmin.schema_bundles_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

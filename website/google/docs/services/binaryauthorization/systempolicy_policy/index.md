@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -182,7 +180,8 @@ kubernetesNamespaceAdmissionRules,
 kubernetesServiceAccountAdmissionRules,
 updateTime
 FROM google.binaryauthorization.systempolicy_policy
-WHERE locationsId = '{{ locationsId }}' -- required;
+WHERE locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

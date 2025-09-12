@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_jobs_debug_get_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_jobs_debug_get_config">
-
-Successful response
 
 <table>
 <thead>
@@ -164,7 +160,8 @@ config
 FROM google.dataflow.debug_config
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
-AND jobId = '{{ jobId }}' -- required;
+AND jobId = '{{ jobId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_debug_get_config">
@@ -176,7 +173,8 @@ SELECT
 config
 FROM google.dataflow.debug_config
 WHERE projectId = '{{ projectId }}' -- required
-AND jobId = '{{ jobId }}' -- required;
+AND jobId = '{{ jobId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

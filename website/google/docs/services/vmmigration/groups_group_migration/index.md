@@ -172,7 +172,8 @@ Removes a MigratingVm from a Group.
 DELETE FROM google.vmmigration.groups_group_migration
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND groupsId = '{{ groupsId }}' --required;
+AND groupsId = '{{ groupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

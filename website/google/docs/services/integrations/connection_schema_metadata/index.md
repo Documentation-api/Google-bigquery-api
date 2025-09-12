@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_connections_get_connection_schema_metadata">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ entities
 FROM google.integrations.connection_schema_metadata
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND connectionsId = '{{ connectionsId }}' -- required;
+AND connectionsId = '{{ connectionsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

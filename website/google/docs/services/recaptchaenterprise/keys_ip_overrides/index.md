@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_ip_overrides">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM google.recaptchaenterprise.keys_ip_overrides
 WHERE projectsId = '{{ projectsId }}' -- required
 AND keysId = '{{ keysId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

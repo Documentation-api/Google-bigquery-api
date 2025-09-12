@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_trace_config_overrides_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_trace_config_overrides_list">
-
-Successful response
 
 <table>
 <thead>
@@ -222,7 +218,8 @@ samplingConfig
 FROM google.apigee.overrides
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND overridesId = '{{ overridesId }}' -- required;
+AND overridesId = '{{ overridesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_trace_config_overrides_list">
@@ -238,7 +235,8 @@ FROM google.apigee.overrides
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -358,7 +356,8 @@ Deletes a distributed trace configuration override.
 DELETE FROM google.apigee.overrides
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND overridesId = '{{ overridesId }}' --required;
+AND overridesId = '{{ overridesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

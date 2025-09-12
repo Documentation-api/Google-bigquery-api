@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -378,7 +374,8 @@ targetProject,
 user
 FROM google.sqladmin.operations
 WHERE project = '{{ project }}' -- required
-AND operation = '{{ operation }}' -- required;
+AND operation = '{{ operation }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -410,7 +407,8 @@ FROM google.sqladmin.operations
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}'
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -431,7 +429,8 @@ Cancels an instance operation that has been performed on an instance.
 ```sql
 EXEC google.sqladmin.operations.cancel 
 @project='{{ project }}' --required, 
-@operation='{{ operation }}' --required;
+@operation='{{ operation }}' --required
+;
 ```
 </TabItem>
 </Tabs>

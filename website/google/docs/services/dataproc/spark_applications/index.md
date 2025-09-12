@@ -549,7 +549,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 '{
 "parent": "{{ parent }}", 
 "sparkWrapperObjects": "{{ sparkWrapperObjects }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search">
@@ -567,7 +568,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @minEndTime='{{ minEndTime }}', 
 @maxEndTime='{{ maxEndTime }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access">
@@ -580,7 +582,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @locationsId='{{ locationsId }}' --required, 
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_jobs">
@@ -596,7 +599,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @parent='{{ parent }}', 
 @jobStatus='{{ jobStatus }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access_job">
@@ -610,7 +614,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@jobId='{{ jobId }}';
+@jobId='{{ jobId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_stages">
@@ -627,7 +632,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @stageStatus='{{ stageStatus }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@summaryMetricsMask='{{ summaryMetricsMask }}';
+@summaryMetricsMask='{{ summaryMetricsMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_stage_attempts">
@@ -644,7 +650,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @stageId='{{ stageId }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@summaryMetricsMask='{{ summaryMetricsMask }}';
+@summaryMetricsMask='{{ summaryMetricsMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access_stage_attempt">
@@ -660,7 +667,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @parent='{{ parent }}', 
 @stageId='{{ stageId }}', 
 @stageAttemptId='{{ stageAttemptId }}', 
-@summaryMetricsMask='{{ summaryMetricsMask }}';
+@summaryMetricsMask='{{ summaryMetricsMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_stage_attempt_tasks">
@@ -679,7 +687,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @sortRuntime={{ sortRuntime }}, 
 @taskStatus='{{ taskStatus }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_executors">
@@ -695,7 +704,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @parent='{{ parent }}', 
 @executorStatus='{{ executorStatus }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_executor_stage_summary">
@@ -712,7 +722,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @stageId='{{ stageId }}', 
 @stageAttemptId='{{ stageAttemptId }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_search_sql_queries">
@@ -729,7 +740,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @details={{ details }}, 
 @planDescription={{ planDescription }}, 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access_sql_query">
@@ -745,7 +757,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @parent='{{ parent }}', 
 @executionId='{{ executionId }}', 
 @details={{ details }}, 
-@planDescription={{ planDescription }};
+@planDescription={{ planDescription }}
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access_sql_plan">
@@ -759,7 +772,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@executionId='{{ executionId }}';
+@executionId='{{ executionId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access_stage_rdd_graph">
@@ -773,7 +787,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@stageId='{{ stageId }}';
+@stageId='{{ stageId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_access_environment_info">
@@ -786,7 +801,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @locationsId='{{ locationsId }}' --required, 
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_summarize_jobs">
@@ -799,7 +815,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @locationsId='{{ locationsId }}' --required, 
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_summarize_stages">
@@ -812,7 +829,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @locationsId='{{ locationsId }}' --required, 
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_summarize_stage_attempt_tasks">
@@ -827,7 +845,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
 @stageId='{{ stageId }}', 
-@stageAttemptId='{{ stageAttemptId }}';
+@stageAttemptId='{{ stageAttemptId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_spark_applications_summarize_executors">
@@ -840,7 +859,8 @@ EXEC google.dataproc.spark_applications.projects_locations_batches_spark_applica
 @locationsId='{{ locationsId }}' --required, 
 @batchesId='{{ batchesId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_write">
@@ -857,7 +877,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 '{
 "parent": "{{ parent }}", 
 "sparkWrapperObjects": "{{ sparkWrapperObjects }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search">
@@ -875,7 +896,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @minEndTime='{{ minEndTime }}', 
 @maxEndTime='{{ maxEndTime }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access">
@@ -888,7 +910,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @locationsId='{{ locationsId }}' --required, 
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_jobs">
@@ -905,7 +928,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @jobStatus='{{ jobStatus }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@jobIds='{{ jobIds }}';
+@jobIds='{{ jobIds }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access_job">
@@ -919,7 +943,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@jobId='{{ jobId }}';
+@jobId='{{ jobId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_stages">
@@ -937,7 +962,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
 @summaryMetricsMask='{{ summaryMetricsMask }}', 
-@stageIds='{{ stageIds }}';
+@stageIds='{{ stageIds }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_stage_attempts">
@@ -954,7 +980,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @stageId='{{ stageId }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@summaryMetricsMask='{{ summaryMetricsMask }}';
+@summaryMetricsMask='{{ summaryMetricsMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access_stage_attempt">
@@ -970,7 +997,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @parent='{{ parent }}', 
 @stageId='{{ stageId }}', 
 @stageAttemptId='{{ stageAttemptId }}', 
-@summaryMetricsMask='{{ summaryMetricsMask }}';
+@summaryMetricsMask='{{ summaryMetricsMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_stage_attempt_tasks">
@@ -989,7 +1017,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sortRuntime={{ sortRuntime }}, 
 @taskStatus='{{ taskStatus }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_executors">
@@ -1005,7 +1034,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @parent='{{ parent }}', 
 @executorStatus='{{ executorStatus }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_executor_stage_summary">
@@ -1022,7 +1052,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @stageId='{{ stageId }}', 
 @stageAttemptId='{{ stageAttemptId }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_search_sql_queries">
@@ -1040,7 +1071,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @planDescription={{ planDescription }}, 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@operationIds='{{ operationIds }}';
+@operationIds='{{ operationIds }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access_sql_query">
@@ -1056,7 +1088,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @parent='{{ parent }}', 
 @executionId='{{ executionId }}', 
 @details={{ details }}, 
-@planDescription={{ planDescription }};
+@planDescription={{ planDescription }}
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access_sql_plan">
@@ -1070,7 +1103,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@executionId='{{ executionId }}';
+@executionId='{{ executionId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access_stage_rdd_graph">
@@ -1084,7 +1118,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@stageId='{{ stageId }}';
+@stageId='{{ stageId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_access_environment_info">
@@ -1097,7 +1132,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @locationsId='{{ locationsId }}' --required, 
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_summarize_jobs">
@@ -1111,7 +1147,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@jobIds='{{ jobIds }}';
+@jobIds='{{ jobIds }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_summarize_stages">
@@ -1125,7 +1162,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
-@stageIds='{{ stageIds }}';
+@stageIds='{{ stageIds }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_summarize_stage_attempt_tasks">
@@ -1140,7 +1178,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
 @parent='{{ parent }}', 
 @stageId='{{ stageId }}', 
-@stageAttemptId='{{ stageAttemptId }}';
+@stageAttemptId='{{ stageAttemptId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_spark_applications_summarize_executors">
@@ -1153,7 +1192,8 @@ EXEC google.dataproc.spark_applications.projects_locations_sessions_spark_applic
 @locationsId='{{ locationsId }}' --required, 
 @sessionsId='{{ sessionsId }}' --required, 
 @sparkApplicationsId='{{ sparkApplicationsId }}' --required, 
-@parent='{{ parent }}';
+@parent='{{ parent }}'
+;
 ```
 </TabItem>
 </Tabs>

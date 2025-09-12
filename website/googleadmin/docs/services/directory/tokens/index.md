@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ scopes,
 userKey
 FROM googleadmin.directory.tokens
 WHERE userKey = '{{ userKey }}' -- required
-AND clientId = '{{ clientId }}' -- required;
+AND clientId = '{{ clientId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -230,7 +227,8 @@ etag,
 items,
 kind
 FROM googleadmin.directory.tokens
-WHERE userKey = '{{ userKey }}' -- required;
+WHERE userKey = '{{ userKey }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -251,7 +249,8 @@ Deletes all access tokens issued by a user for an application.
 ```sql
 DELETE FROM googleadmin.directory.tokens
 WHERE userKey = '{{ userKey }}' --required
-AND clientId = '{{ clientId }}' --required;
+AND clientId = '{{ clientId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

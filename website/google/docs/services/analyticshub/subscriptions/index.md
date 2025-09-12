@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_subscriptions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_subscriptions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -354,7 +350,8 @@ subscriberContact
 FROM google.analyticshub.subscriptions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND subscriptionsId = '{{ subscriptionsId }}' -- required;
+AND subscriptionsId = '{{ subscriptionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_subscriptions_list">
@@ -383,7 +380,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -405,7 +403,8 @@ Deletes a subscription.
 DELETE FROM google.analyticshub.subscriptions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND subscriptionsId = '{{ subscriptionsId }}' --required;
+AND subscriptionsId = '{{ subscriptionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -428,7 +427,8 @@ Refreshes a Subscription to a Data Exchange. A Data Exchange can become stale wh
 EXEC google.analyticshub.subscriptions.projects_locations_subscriptions_refresh 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@subscriptionsId='{{ subscriptionsId }}' --required;
+@subscriptionsId='{{ subscriptionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_subscriptions_revoke">
@@ -443,7 +443,8 @@ EXEC google.analyticshub.subscriptions.projects_locations_subscriptions_revoke
 @@json=
 '{
 "revokeCommercial": {{ revokeCommercial }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

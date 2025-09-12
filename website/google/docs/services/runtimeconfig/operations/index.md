@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -177,7 +175,8 @@ response
 FROM google.runtimeconfig.operations
 WHERE filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -197,7 +196,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 
 ```sql
 DELETE FROM google.runtimeconfig.operations
-WHERE operationsId = '{{ operationsId }}' --required;
+WHERE operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -217,7 +217,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 
 ```sql
 EXEC google.runtimeconfig.operations.cancel 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -112,7 +112,8 @@ EXEC google.airquality.heatmap_tiles.lookup_heatmap_tile
 @mapType='{{ mapType }}' --required, 
 @zoom='{{ zoom }}' --required, 
 @x='{{ x }}' --required, 
-@y='{{ y }}' --required;
+@y='{{ y }}' --required
+;
 ```
 </TabItem>
 </Tabs>

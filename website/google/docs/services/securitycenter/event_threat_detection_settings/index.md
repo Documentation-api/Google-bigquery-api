@@ -125,7 +125,8 @@ EXEC google.securitycenter.event_threat_detection_settings.folders_event_threat_
 '{
 "rawText": "{{ rawText }}", 
 "type": "{{ type }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_validate_custom_module">
@@ -139,7 +140,8 @@ EXEC google.securitycenter.event_threat_detection_settings.projects_event_threat
 '{
 "rawText": "{{ rawText }}", 
 "type": "{{ type }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_validate_custom_module">
@@ -153,7 +155,8 @@ EXEC google.securitycenter.event_threat_detection_settings.organizations_event_t
 '{
 "rawText": "{{ rawText }}", 
 "type": "{{ type }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

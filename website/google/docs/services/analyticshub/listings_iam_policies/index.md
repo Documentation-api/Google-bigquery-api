@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_exchanges_listings_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ FROM google.analyticshub.listings_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataExchangesId = '{{ dataExchangesId }}' -- required
-AND listingsId = '{{ listingsId }}' -- required;
+AND listingsId = '{{ listingsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -225,7 +224,8 @@ EXEC google.analyticshub.listings_iam_policies.projects_locations_data_exchanges
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

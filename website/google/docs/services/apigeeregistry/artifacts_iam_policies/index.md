@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_versions_specs_artifacts_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_get_iam_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -104,8 +100,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_artifacts_get_iam_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -346,7 +338,8 @@ AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
 AND specsId = '{{ specsId }}' -- required
 AND artifactsId = '{{ artifactsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_get_iam_policy">
@@ -364,7 +357,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
 AND artifactsId = '{{ artifactsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_get_iam_policy">
@@ -381,7 +375,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND artifactsId = '{{ artifactsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_artifacts_get_iam_policy">
@@ -397,7 +392,8 @@ FROM google.apigeeregistry.artifacts_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND artifactsId = '{{ artifactsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -521,7 +517,8 @@ EXEC google.apigeeregistry.artifacts_iam_policies.projects_locations_apis_versio
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_test_iam_permissions">
@@ -538,7 +535,8 @@ EXEC google.apigeeregistry.artifacts_iam_policies.projects_locations_apis_versio
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_test_iam_permissions">
@@ -554,7 +552,8 @@ EXEC google.apigeeregistry.artifacts_iam_policies.projects_locations_apis_artifa
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_artifacts_test_iam_permissions">
@@ -569,7 +568,8 @@ EXEC google.apigeeregistry.artifacts_iam_policies.projects_locations_artifacts_t
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

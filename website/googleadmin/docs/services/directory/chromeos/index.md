@@ -113,7 +113,8 @@ EXEC googleadmin.directory.chromeos.issue_command
 '{
 "commandType": "{{ commandType }}", 
 "payload": "{{ payload }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_change_status">
@@ -128,7 +129,8 @@ EXEC googleadmin.directory.chromeos.batch_change_status
 "deviceIds": "{{ deviceIds }}", 
 "changeChromeOsDeviceStatusAction": "{{ changeChromeOsDeviceStatusAction }}", 
 "deprovisionReason": "{{ deprovisionReason }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

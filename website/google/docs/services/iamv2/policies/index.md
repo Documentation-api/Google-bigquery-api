@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list_policies">
-
-Successful response
 
 <table>
 <thead>
@@ -304,7 +300,8 @@ updateTime
 FROM google.iamv2.policies
 WHERE policiesId = '{{ policiesId }}' -- required
 AND policiesId1 = '{{ policiesId1 }}' -- required
-AND policiesId2 = '{{ policiesId2 }}' -- required;
+AND policiesId2 = '{{ policiesId2 }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list_policies">
@@ -327,7 +324,8 @@ FROM google.iamv2.policies
 WHERE policiesId = '{{ policiesId }}' -- required
 AND policiesId1 = '{{ policiesId1 }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -479,7 +477,8 @@ DELETE FROM google.iamv2.policies
 WHERE policiesId = '{{ policiesId }}' --required
 AND policiesId1 = '{{ policiesId1 }}' --required
 AND policiesId2 = '{{ policiesId2 }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

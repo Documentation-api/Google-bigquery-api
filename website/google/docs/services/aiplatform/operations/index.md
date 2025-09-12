@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -255,7 +251,8 @@ FROM google.aiplatform.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND ragCorporaId = '{{ ragCorporaId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -275,7 +272,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND ragCorporaId = '{{ ragCorporaId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -298,7 +296,8 @@ DELETE FROM google.aiplatform.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND ragCorporaId = '{{ ragCorporaId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -322,7 +321,8 @@ EXEC google.aiplatform.operations.cancel
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @ragCorporaId='{{ ragCorporaId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="wait">
@@ -335,7 +335,8 @@ EXEC google.aiplatform.operations.wait
 @locationsId='{{ locationsId }}' --required, 
 @ragCorporaId='{{ ragCorporaId }}' --required, 
 @operationsId='{{ operationsId }}' --required, 
-@timeout='{{ timeout }}';
+@timeout='{{ timeout }}'
+;
 ```
 </TabItem>
 </Tabs>

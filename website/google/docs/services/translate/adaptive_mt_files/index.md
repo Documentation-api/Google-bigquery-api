@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_adaptive_mt_datasets_adaptive_mt_files_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_datasets_adaptive_mt_files_list">
-
-Successful response
 
 <table>
 <thead>
@@ -231,7 +227,8 @@ FROM google.translate.adaptive_mt_files
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' -- required
-AND adaptiveMtFilesId = '{{ adaptiveMtFilesId }}' -- required;
+AND adaptiveMtFilesId = '{{ adaptiveMtFilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_datasets_adaptive_mt_files_list">
@@ -250,7 +247,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -273,7 +271,8 @@ DELETE FROM google.translate.adaptive_mt_files
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' --required
-AND adaptiveMtFilesId = '{{ adaptiveMtFilesId }}' --required;
+AND adaptiveMtFilesId = '{{ adaptiveMtFilesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

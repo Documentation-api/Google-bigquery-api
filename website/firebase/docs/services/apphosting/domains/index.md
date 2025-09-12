@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -389,7 +385,8 @@ FROM firebase.apphosting.domains
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND backendsId = '{{ backendsId }}' -- required
-AND domainsId = '{{ domainsId }}' -- required;
+AND domainsId = '{{ domainsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -420,7 +417,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -593,7 +591,8 @@ AND backendsId = '{{ backendsId }}' --required
 AND domainsId = '{{ domainsId }}' --required
 AND requestId = '{{ requestId }}'
 AND etag = '{{ etag }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>

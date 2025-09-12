@@ -130,7 +130,8 @@ EXEC google.pollen.forecast.lookup
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
 @languageCode='{{ languageCode }}', 
-@plantsDescription={{ plantsDescription }};
+@plantsDescription={{ plantsDescription }}
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_uptime_check_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_uptime_check_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -375,7 +371,8 @@ timeout,
 userLabels
 FROM google.monitoring.uptime_check_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND uptimeCheckConfigsId = '{{ uptimeCheckConfigsId }}' -- required;
+AND uptimeCheckConfigsId = '{{ uptimeCheckConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_uptime_check_configs_list">
@@ -405,7 +402,8 @@ FROM google.monitoring.uptime_check_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -659,7 +657,8 @@ Deletes an Uptime check configuration. Note that this method will fail if the Up
 ```sql
 DELETE FROM google.monitoring.uptime_check_configs
 WHERE projectsId = '{{ projectsId }}' --required
-AND uptimeCheckConfigsId = '{{ uptimeCheckConfigsId }}' --required;
+AND uptimeCheckConfigsId = '{{ uptimeCheckConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

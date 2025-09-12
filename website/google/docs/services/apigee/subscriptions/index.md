@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_subscriptions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_developers_subscriptions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -223,7 +219,8 @@ startTime
 FROM google.apigee.subscriptions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
-AND subscriptionsId = '{{ subscriptionsId }}' -- required;
+AND subscriptionsId = '{{ subscriptionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_subscriptions_list">
@@ -238,7 +235,8 @@ FROM google.apigee.subscriptions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
 AND startKey = '{{ startKey }}'
-AND count = '{{ count }}';
+AND count = '{{ count }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -329,7 +327,8 @@ Expires an API product subscription immediately.
 EXEC google.apigee.subscriptions.organizations_developers_subscriptions_expire 
 @organizationsId='{{ organizationsId }}' --required, 
 @developersId='{{ developersId }}' --required, 
-@subscriptionsId='{{ subscriptionsId }}' --required;
+@subscriptionsId='{{ subscriptionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -111,7 +111,8 @@ EXEC google.retail.completion_data.projects_locations_catalogs_completion_data_i
 '{
 "inputConfig": "{{ inputConfig }}", 
 "notificationPubsubTopic": "{{ notificationPubsubTopic }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

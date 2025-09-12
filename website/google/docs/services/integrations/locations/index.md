@@ -105,7 +105,8 @@ EXEC google.integrations.locations.projects_locations_generate_open_api_spec
 '{
 "apiTriggerResources": "{{ apiTriggerResources }}", 
 "fileFormat": "{{ fileFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

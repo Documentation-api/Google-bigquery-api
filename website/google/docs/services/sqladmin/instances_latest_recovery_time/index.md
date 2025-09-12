@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_latest_recovery_time">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ latestRecoveryTime
 FROM google.sqladmin.instances_latest_recovery_time
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
-AND sourceInstanceDeletionTime = '{{ sourceInstanceDeletionTime }}';
+AND sourceInstanceDeletionTime = '{{ sourceInstanceDeletionTime }}'
+;
 ```
 </TabItem>
 </Tabs>

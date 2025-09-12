@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -378,7 +374,8 @@ updateTime
 FROM google.aiplatform.indexes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND indexesId = '{{ indexesId }}' -- required;
+AND indexesId = '{{ indexesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -408,7 +405,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -573,7 +571,8 @@ Deletes an Index. An Index can only be deleted when all its DeployedIndexes had 
 DELETE FROM google.aiplatform.indexes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND indexesId = '{{ indexesId }}' --required;
+AND indexesId = '{{ indexesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -601,7 +600,8 @@ EXEC google.aiplatform.indexes.upsert_datapoints
 '{
 "datapoints": "{{ datapoints }}", 
 "updateMask": "{{ updateMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="remove_datapoints">
@@ -616,7 +616,8 @@ EXEC google.aiplatform.indexes.remove_datapoints
 @@json=
 '{
 "datapointIds": "{{ datapointIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

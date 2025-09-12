@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_app_connections_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_app_connections_list">
-
-Successful response
 
 <table>
 <thead>
@@ -374,7 +370,8 @@ updateTime
 FROM google.beyondcorp.app_connections
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND appConnectionsId = '{{ appConnectionsId }}' -- required;
+AND appConnectionsId = '{{ appConnectionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_app_connections_list">
@@ -402,7 +399,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -576,7 +574,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND appConnectionsId = '{{ appConnectionsId }}' --required
 AND requestId = '{{ requestId }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -600,7 +599,8 @@ EXEC google.beyondcorp.app_connections.projects_locations_app_connections_resolv
 @locationsId='{{ locationsId }}' --required, 
 @appConnectorId='{{ appConnectorId }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

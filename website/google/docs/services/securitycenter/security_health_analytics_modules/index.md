@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_security_health_analytics_settings_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -99,8 +97,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_get">
-
-Successful response
 
 <table>
 <thead>
@@ -156,8 +152,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -211,8 +205,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_security_health_analytics_settings_custom_modules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -268,8 +260,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -323,8 +313,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -557,7 +545,8 @@ lastEditor,
 updateTime
 FROM google.securitycenter.security_health_analytics_modules
 WHERE foldersId = '{{ foldersId }}' -- required
-AND customModulesId = '{{ customModulesId }}' -- required;
+AND customModulesId = '{{ customModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_get">
@@ -576,7 +565,8 @@ lastEditor,
 updateTime
 FROM google.securitycenter.security_health_analytics_modules
 WHERE projectsId = '{{ projectsId }}' -- required
-AND customModulesId = '{{ customModulesId }}' -- required;
+AND customModulesId = '{{ customModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_get">
@@ -595,7 +585,8 @@ lastEditor,
 updateTime
 FROM google.securitycenter.security_health_analytics_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND customModulesId = '{{ customModulesId }}' -- required;
+AND customModulesId = '{{ customModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_security_health_analytics_settings_custom_modules_list">
@@ -615,7 +606,8 @@ updateTime
 FROM google.securitycenter.security_health_analytics_modules
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_list">
@@ -635,7 +627,8 @@ updateTime
 FROM google.securitycenter.security_health_analytics_modules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_list">
@@ -655,7 +648,8 @@ updateTime
 FROM google.securitycenter.security_health_analytics_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -832,7 +826,8 @@ Deletes the specified SecurityHealthAnalyticsCustomModule and all of its descend
 ```sql
 DELETE FROM google.securitycenter.security_health_analytics_modules
 WHERE foldersId = '{{ foldersId }}' --required
-AND customModulesId = '{{ customModulesId }}' --required;
+AND customModulesId = '{{ customModulesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_delete">
@@ -842,7 +837,8 @@ Deletes the specified SecurityHealthAnalyticsCustomModule and all of its descend
 ```sql
 DELETE FROM google.securitycenter.security_health_analytics_modules
 WHERE projectsId = '{{ projectsId }}' --required
-AND customModulesId = '{{ customModulesId }}' --required;
+AND customModulesId = '{{ customModulesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_delete">
@@ -852,7 +848,8 @@ Deletes the specified SecurityHealthAnalyticsCustomModule and all of its descend
 ```sql
 DELETE FROM google.securitycenter.security_health_analytics_modules
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND customModulesId = '{{ customModulesId }}' --required;
+AND customModulesId = '{{ customModulesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

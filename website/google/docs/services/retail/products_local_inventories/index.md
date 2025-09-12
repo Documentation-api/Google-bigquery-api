@@ -215,7 +215,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
 AND branchesId = '{{ branchesId }}' --required
-AND productsId = '{{ productsId }}' --required;
+AND productsId = '{{ productsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

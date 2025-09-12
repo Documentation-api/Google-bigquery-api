@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -154,7 +152,8 @@ members,
 role
 FROM google.spanner.instances_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -207,7 +206,8 @@ EXEC google.spanner.instances_iam_policies.projects_instances_test_iam_permissio
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

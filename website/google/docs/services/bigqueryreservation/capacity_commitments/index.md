@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -339,7 +335,8 @@ state
 FROM google.bigqueryreservation.capacity_commitments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND capacityCommitmentsId = '{{ capacityCommitmentsId }}' -- required;
+AND capacityCommitmentsId = '{{ capacityCommitmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -363,7 +360,8 @@ FROM google.bigqueryreservation.capacity_commitments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -527,7 +525,8 @@ DELETE FROM google.bigqueryreservation.capacity_commitments
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND capacityCommitmentsId = '{{ capacityCommitmentsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -554,7 +553,8 @@ EXEC google.bigqueryreservation.capacity_commitments.split
 @@json=
 '{
 "slotCount": "{{ slotCount }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="merge">
@@ -569,7 +569,8 @@ EXEC google.bigqueryreservation.capacity_commitments.merge
 '{
 "capacityCommitmentIds": "{{ capacityCommitmentIds }}", 
 "capacityCommitmentId": "{{ capacityCommitmentId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

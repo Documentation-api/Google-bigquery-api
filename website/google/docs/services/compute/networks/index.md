@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -59,12 +57,12 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?`. The first character must be a lowercase letter, and all following characters (except for the last character) must be a dash, lowercase letter, or digit. The last character must be a lowercase letter or digit. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?`. The first character must be a lowercase letter, and all following characters (except for the last character) must be a dash, lowercase letter, or digit. The last character must be a lowercase letter or digit. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="IPv4Range" /></td>
     <td><code>string</code></td>
-    <td>Deprecated in favor of subnet mode networks. The range of internal addresses that are legal on this network. This range is a CIDR specification, for example: 192.168.0.0/16. Provided by the client when the network is created. (pattern: [0-9]&#123;1,3&#125;(?:\.[0-9]&#123;1,3&#125;)&#123;3&#125;/[0-9]&#123;1,2&#125;)</td>
+    <td>Deprecated in favor of subnet mode networks. The range of internal addresses that are legal on this network. This range is a CIDR specification, for example: 192.168.0.0/16. Provided by the client when the network is created. (pattern: <code>[0-9]&#123;1,3&#125;(?:\.[0-9]&#123;1,3&#125;)&#123;3&#125;/[0-9]&#123;1,2&#125;</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="autoCreateSubnetworks" /></td>
@@ -94,7 +92,7 @@ Successful response
 <tr>
     <td><CopyableCode code="gatewayIPv4" /></td>
     <td><code>string</code></td>
-    <td>[Output Only] The gateway address for default routing out of the network, selected by Google Cloud. (pattern: [0-9]&#123;1,3&#125;(?:\.[0-9]&#123;1,3&#125;)&#123;3&#125;)</td>
+    <td>[Output Only] The gateway address for default routing out of the network, selected by Google Cloud. (pattern: <code>[0-9]&#123;1,3&#125;(?:\.[0-9]&#123;1,3&#125;)&#123;3&#125;</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="internalIpv6Range" /></td>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -362,7 +358,8 @@ selfLinkWithId,
 subnetworks
 FROM google.compute.networks
 WHERE project = '{{ project }}' -- required
-AND network = '{{ network }}' -- required;
+AND network = '{{ network }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -383,7 +380,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -685,7 +683,8 @@ Deletes the specified network.
 DELETE FROM google.compute.networks
 WHERE project = '{{ project }}' --required
 AND network = '{{ network }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -712,7 +711,8 @@ EXEC google.compute.networks.request_remove_peering
 @@json=
 '{
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="switch_to_custom_mode">
@@ -723,7 +723,8 @@ Switches the network mode from auto subnet mode to custom subnet mode.
 EXEC google.compute.networks.switch_to_custom_mode 
 @project='{{ project }}' --required, 
 @network='{{ network }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

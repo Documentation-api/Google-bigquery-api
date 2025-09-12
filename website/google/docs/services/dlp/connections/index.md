@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_connections_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_connections_get">
-
-Successful response
 
 <table>
 <thead>
@@ -114,8 +110,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_connections_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -149,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_connections_list">
-
-Successful response
 
 <table>
 <thead>
@@ -363,7 +355,8 @@ state
 FROM google.dlp.connections
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND connectionsId = '{{ connectionsId }}' -- required;
+AND connectionsId = '{{ connectionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_connections_get">
@@ -379,7 +372,8 @@ state
 FROM google.dlp.connections
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND connectionsId = '{{ connectionsId }}' -- required;
+AND connectionsId = '{{ connectionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_connections_list">
@@ -397,7 +391,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_connections_list">
@@ -415,7 +410,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -569,7 +565,8 @@ Delete a Connection.
 DELETE FROM google.dlp.connections
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND connectionsId = '{{ connectionsId }}' --required;
+AND connectionsId = '{{ connectionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_connections_delete">
@@ -580,7 +577,8 @@ Delete a Connection.
 DELETE FROM google.dlp.connections
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND connectionsId = '{{ connectionsId }}' --required;
+AND connectionsId = '{{ connectionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -605,7 +603,8 @@ EXEC google.dlp.connections.projects_locations_connections_search
 @locationsId='{{ locationsId }}' --required, 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@filter='{{ filter }}';
+@filter='{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_connections_search">
@@ -618,7 +617,8 @@ EXEC google.dlp.connections.organizations_locations_connections_search
 @locationsId='{{ locationsId }}' --required, 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@filter='{{ filter }}';
+@filter='{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

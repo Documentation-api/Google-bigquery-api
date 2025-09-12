@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_sites_apidocs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sites_apidocs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -299,7 +295,8 @@ status
 FROM google.apigee.apidocs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND sitesId = '{{ sitesId }}' -- required
-AND apidocsId = '{{ apidocsId }}' -- required;
+AND apidocsId = '{{ apidocsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sites_apidocs_list">
@@ -329,7 +326,8 @@ FROM google.apigee.apidocs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND sitesId = '{{ sitesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -540,7 +538,8 @@ Deletes a catalog item.
 DELETE FROM google.apigee.apidocs
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND sitesId = '{{ sitesId }}' --required
-AND apidocsId = '{{ apidocsId }}' --required;
+AND apidocsId = '{{ apidocsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

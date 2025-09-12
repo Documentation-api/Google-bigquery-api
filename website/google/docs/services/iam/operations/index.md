@@ -48,8 +48,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_workload_identity_pool_namespace_managed_identity_workload_source_operations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -88,8 +86,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_workload_identity_pool_namespace_managed_identity_operations">
-
-Successful response
 
 <table>
 <thead>
@@ -130,8 +126,6 @@ Successful response
 </TabItem>
 <TabItem value="get_workload_identity_pool_provider_key_operations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,8 +164,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_workload_identity_pool_namespace_operations">
-
-Successful response
 
 <table>
 <thead>
@@ -212,8 +204,6 @@ Successful response
 </TabItem>
 <TabItem value="get_workload_identity_pool_provider_operations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -252,8 +242,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_workforce_pool_provider_key_operations">
-
-Successful response
 
 <table>
 <thead>
@@ -294,8 +282,6 @@ Successful response
 </TabItem>
 <TabItem value="get_workload_identity_pool_operations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -334,8 +320,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_workforce_pool_provider_operations">
-
-Successful response
 
 <table>
 <thead>
@@ -376,8 +360,6 @@ Successful response
 </TabItem>
 <TabItem value="get_workforce_pool_subject_operations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -416,8 +398,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_workforce_pool_operations">
-
-Successful response
 
 <table>
 <thead>
@@ -652,7 +632,8 @@ AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND namespacesId = '{{ namespacesId }}' -- required
 AND managedIdentitiesId = '{{ managedIdentitiesId }}' -- required
 AND workloadSourcesId = '{{ workloadSourcesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workload_identity_pool_namespace_managed_identity_operations">
@@ -672,7 +653,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND namespacesId = '{{ namespacesId }}' -- required
 AND managedIdentitiesId = '{{ managedIdentitiesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workload_identity_pool_provider_key_operations">
@@ -692,7 +674,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND providersId = '{{ providersId }}' -- required
 AND keysId = '{{ keysId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workload_identity_pool_namespace_operations">
@@ -711,7 +694,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND namespacesId = '{{ namespacesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workload_identity_pool_provider_operations">
@@ -730,7 +714,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND providersId = '{{ providersId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workforce_pool_provider_key_operations">
@@ -749,7 +734,8 @@ WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
 AND providersId = '{{ providersId }}' -- required
 AND keysId = '{{ keysId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workload_identity_pool_operations">
@@ -767,7 +753,8 @@ FROM google.iam.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workforce_pool_provider_operations">
@@ -785,7 +772,8 @@ FROM google.iam.operations
 WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
 AND providersId = '{{ providersId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workforce_pool_subject_operations">
@@ -803,7 +791,8 @@ FROM google.iam.operations
 WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
 AND subjectsId = '{{ subjectsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_workforce_pool_operations">
@@ -820,7 +809,8 @@ response
 FROM google.iam.operations
 WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

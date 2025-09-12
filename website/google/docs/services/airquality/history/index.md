@@ -102,7 +102,8 @@ EXEC google.airquality.history.lookup
 "languageCode": "{{ languageCode }}", 
 "uaqiColorPalette": "{{ uaqiColorPalette }}", 
 "customLocalAqis": "{{ customLocalAqis }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

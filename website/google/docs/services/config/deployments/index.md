@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -175,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -525,7 +521,8 @@ workerPool
 FROM google.config.deployments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND deploymentsId = '{{ deploymentsId }}' -- required;
+AND deploymentsId = '{{ deploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -564,7 +561,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -765,7 +763,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND deploymentsId = '{{ deploymentsId }}' --required
 AND requestId = '{{ requestId }}'
 AND force = '{{ force }}'
-AND deletePolicy = '{{ deletePolicy }}';
+AND deletePolicy = '{{ deletePolicy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -796,7 +795,8 @@ EXEC google.config.deployments.export_state
 @@json=
 '{
 "draft": {{ draft }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import_state">
@@ -811,7 +811,8 @@ EXEC google.config.deployments.import_state
 @@json=
 '{
 "lockId": "{{ lockId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="delete_state">
@@ -826,7 +827,8 @@ EXEC google.config.deployments.delete_state
 @@json=
 '{
 "lockId": "{{ lockId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="lock">
@@ -837,7 +839,8 @@ Locks a deployment.
 EXEC google.config.deployments.lock 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@deploymentsId='{{ deploymentsId }}' --required;
+@deploymentsId='{{ deploymentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="unlock">
@@ -852,7 +855,8 @@ EXEC google.config.deployments.unlock
 @@json=
 '{
 "lockId": "{{ lockId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export_lock">
@@ -863,7 +867,8 @@ Exports the lock info on a locked deployment.
 EXEC google.config.deployments.export_lock 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@deploymentsId='{{ deploymentsId }}' --required;
+@deploymentsId='{{ deploymentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

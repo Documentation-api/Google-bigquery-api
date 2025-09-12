@@ -106,7 +106,8 @@ EXEC google.healthcare.nlp.analyze_entities
 "documentContent": "{{ documentContent }}", 
 "licensedVocabularies": "{{ licensedVocabularies }}", 
 "alternativeOutputFormat": "{{ alternativeOutputFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

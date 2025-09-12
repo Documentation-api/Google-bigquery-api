@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_nat_ip_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ FROM google.compute.router_nat_ip_info
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
 AND router = '{{ router }}' -- required
-AND natName = '{{ natName }}';
+AND natName = '{{ natName }}'
+;
 ```
 </TabItem>
 </Tabs>

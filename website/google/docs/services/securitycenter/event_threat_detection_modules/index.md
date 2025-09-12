@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_event_threat_detection_settings_custom_modules_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -107,8 +105,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -395,7 +389,8 @@ updateTime
 FROM google.securitycenter.event_threat_detection_modules
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_list">
@@ -417,7 +412,8 @@ updateTime
 FROM google.securitycenter.event_threat_detection_modules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_list">
@@ -439,7 +435,8 @@ updateTime
 FROM google.securitycenter.event_threat_detection_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -644,7 +641,8 @@ Deletes the specified Event Threat Detection custom module and all of its descen
 ```sql
 DELETE FROM google.securitycenter.event_threat_detection_modules
 WHERE foldersId = '{{ foldersId }}' --required
-AND customModulesId = '{{ customModulesId }}' --required;
+AND customModulesId = '{{ customModulesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_delete">
@@ -654,7 +652,8 @@ Deletes the specified Event Threat Detection custom module and all of its descen
 ```sql
 DELETE FROM google.securitycenter.event_threat_detection_modules
 WHERE projectsId = '{{ projectsId }}' --required
-AND customModulesId = '{{ customModulesId }}' --required;
+AND customModulesId = '{{ customModulesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_delete">
@@ -664,7 +663,8 @@ Deletes the specified Event Threat Detection custom module and all of its descen
 ```sql
 DELETE FROM google.securitycenter.event_threat_detection_modules
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND customModulesId = '{{ customModulesId }}' --required;
+AND customModulesId = '{{ customModulesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

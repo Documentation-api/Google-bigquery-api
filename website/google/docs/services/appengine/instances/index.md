@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -370,7 +366,8 @@ FROM google.appengine.instances
 WHERE appsId = '{{ appsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -401,7 +398,8 @@ WHERE appsId = '{{ appsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -424,7 +422,8 @@ DELETE FROM google.appengine.instances
 WHERE appsId = '{{ appsId }}' --required
 AND servicesId = '{{ servicesId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -451,7 +450,8 @@ EXEC google.appengine.instances.debug
 @@json=
 '{
 "sshKey": "{{ sshKey }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

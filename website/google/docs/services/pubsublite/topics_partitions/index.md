@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="admin_projects_locations_topics_get_partitions">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ partitionCount
 FROM google.pubsublite.topics_partitions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND topicsId = '{{ topicsId }}' -- required;
+AND topicsId = '{{ topicsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

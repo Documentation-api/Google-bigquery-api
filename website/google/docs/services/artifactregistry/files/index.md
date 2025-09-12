@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -300,7 +296,8 @@ FROM google.artifactregistry.files
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND filesId = '{{ filesId }}' -- required;
+AND filesId = '{{ filesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -324,7 +321,8 @@ AND repositoriesId = '{{ repositoriesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -387,7 +385,8 @@ DELETE FROM google.artifactregistry.files
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
-AND filesId = '{{ filesId }}' --required;
+AND filesId = '{{ filesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -411,7 +410,8 @@ EXEC google.artifactregistry.files.download
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @repositoriesId='{{ repositoriesId }}' --required, 
-@filesId='{{ filesId }}' --required;
+@filesId='{{ filesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="upload">
@@ -426,7 +426,8 @@ EXEC google.artifactregistry.files.upload
 @@json=
 '{
 "fileId": "{{ fileId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

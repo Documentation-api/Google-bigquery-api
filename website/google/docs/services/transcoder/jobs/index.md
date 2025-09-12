@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -368,7 +364,8 @@ ttlAfterCompletionDays
 FROM google.transcoder.jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND jobsId = '{{ jobsId }}' -- required;
+AND jobsId = '{{ jobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -399,7 +396,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -559,7 +557,8 @@ DELETE FROM google.transcoder.jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND jobsId = '{{ jobsId }}' --required
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 </Tabs>

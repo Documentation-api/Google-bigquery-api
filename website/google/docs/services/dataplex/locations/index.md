@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -276,7 +272,8 @@ locationId,
 metadata
 FROM google.dataplex.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_list">
@@ -295,7 +292,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -321,7 +319,8 @@ EXEC google.dataplex.locations.projects_locations_lookup_entry
 @view='{{ view }}', 
 @aspectTypes='{{ aspectTypes }}', 
 @paths='{{ paths }}', 
-@entry='{{ entry }}';
+@entry='{{ entry }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_search_entries">
@@ -337,7 +336,8 @@ EXEC google.dataplex.locations.projects_locations_search_entries
 @pageToken='{{ pageToken }}', 
 @orderBy='{{ orderBy }}', 
 @scope='{{ scope }}', 
-@semanticSearch={{ semanticSearch }};
+@semanticSearch={{ semanticSearch }}
+;
 ```
 </TabItem>
 </Tabs>

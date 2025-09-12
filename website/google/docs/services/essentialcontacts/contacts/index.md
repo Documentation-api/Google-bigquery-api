@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_contacts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -89,8 +87,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_contacts_get">
-
-Successful response
 
 <table>
 <thead>
@@ -136,8 +132,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_contacts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -181,8 +175,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_contacts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -228,8 +220,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_contacts_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -273,8 +263,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_contacts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -568,7 +556,8 @@ validateTime,
 validationState
 FROM google.essentialcontacts.contacts
 WHERE projectsId = '{{ projectsId }}' -- required
-AND contactsId = '{{ contactsId }}' -- required;
+AND contactsId = '{{ contactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_contacts_get">
@@ -585,7 +574,8 @@ validateTime,
 validationState
 FROM google.essentialcontacts.contacts
 WHERE foldersId = '{{ foldersId }}' -- required
-AND contactsId = '{{ contactsId }}' -- required;
+AND contactsId = '{{ contactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_contacts_get">
@@ -602,7 +592,8 @@ validateTime,
 validationState
 FROM google.essentialcontacts.contacts
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND contactsId = '{{ contactsId }}' -- required;
+AND contactsId = '{{ contactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_contacts_list">
@@ -620,7 +611,8 @@ validationState
 FROM google.essentialcontacts.contacts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_contacts_list">
@@ -638,7 +630,8 @@ validationState
 FROM google.essentialcontacts.contacts
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_contacts_list">
@@ -656,7 +649,8 @@ validationState
 FROM google.essentialcontacts.contacts
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -885,7 +879,8 @@ Deletes a contact.
 ```sql
 DELETE FROM google.essentialcontacts.contacts
 WHERE projectsId = '{{ projectsId }}' --required
-AND contactsId = '{{ contactsId }}' --required;
+AND contactsId = '{{ contactsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_contacts_delete">
@@ -895,7 +890,8 @@ Deletes a contact.
 ```sql
 DELETE FROM google.essentialcontacts.contacts
 WHERE foldersId = '{{ foldersId }}' --required
-AND contactsId = '{{ contactsId }}' --required;
+AND contactsId = '{{ contactsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_contacts_delete">
@@ -905,7 +901,8 @@ Deletes a contact.
 ```sql
 DELETE FROM google.essentialcontacts.contacts
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND contactsId = '{{ contactsId }}' --required;
+AND contactsId = '{{ contactsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -933,7 +930,8 @@ EXEC google.essentialcontacts.contacts.projects_contacts_compute
 @projectsId='{{ projectsId }}' --required, 
 @notificationCategories='{{ notificationCategories }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_contacts_send_test_message">
@@ -947,7 +945,8 @@ EXEC google.essentialcontacts.contacts.projects_contacts_send_test_message
 '{
 "contacts": "{{ contacts }}", 
 "notificationCategory": "{{ notificationCategory }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_contacts_compute">
@@ -959,7 +958,8 @@ EXEC google.essentialcontacts.contacts.folders_contacts_compute
 @foldersId='{{ foldersId }}' --required, 
 @notificationCategories='{{ notificationCategories }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_contacts_send_test_message">
@@ -973,7 +973,8 @@ EXEC google.essentialcontacts.contacts.folders_contacts_send_test_message
 '{
 "contacts": "{{ contacts }}", 
 "notificationCategory": "{{ notificationCategory }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_contacts_compute">
@@ -985,7 +986,8 @@ EXEC google.essentialcontacts.contacts.organizations_contacts_compute
 @organizationsId='{{ organizationsId }}' --required, 
 @notificationCategories='{{ notificationCategories }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_contacts_send_test_message">
@@ -999,7 +1001,8 @@ EXEC google.essentialcontacts.contacts.organizations_contacts_send_test_message
 '{
 "contacts": "{{ contacts }}", 
 "notificationCategory": "{{ notificationCategory }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

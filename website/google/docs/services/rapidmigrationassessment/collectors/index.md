@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -395,7 +391,8 @@ vsphereScan
 FROM google.rapidmigrationassessment.collectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND collectorsId = '{{ collectorsId }}' -- required;
+AND collectorsId = '{{ collectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -425,7 +422,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -599,7 +597,8 @@ DELETE FROM google.rapidmigrationassessment.collectors
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectorsId = '{{ collectorsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -627,7 +626,8 @@ EXEC google.rapidmigrationassessment.collectors.resume
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="register">
@@ -642,7 +642,8 @@ EXEC google.rapidmigrationassessment.collectors.register
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="pause">
@@ -657,7 +658,8 @@ EXEC google.rapidmigrationassessment.collectors.pause
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

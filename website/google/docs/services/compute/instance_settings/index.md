@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -163,7 +161,8 @@ metadata,
 zone
 FROM google.compute.instance_settings
 WHERE project = '{{ project }}' -- required
-AND zone = '{{ zone }}' -- required;
+AND zone = '{{ zone }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

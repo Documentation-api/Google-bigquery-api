@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_devices_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -117,8 +115,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="customers_nodes_devices_list">
-
-Successful response
 
 <table>
 <thead>
@@ -189,8 +185,6 @@ Successful response
 </TabItem>
 <TabItem value="customers_deployments_devices_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -259,8 +253,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="nodes_devices_get">
-
-Successful response
 
 <table>
 <thead>
@@ -331,8 +323,6 @@ Successful response
 </TabItem>
 <TabItem value="nodes_nodes_devices_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -401,8 +391,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="nodes_deployments_devices_list">
-
-Successful response
 
 <table>
 <thead>
@@ -473,8 +461,6 @@ Successful response
 </TabItem>
 <TabItem value="deployments_devices_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -544,8 +530,6 @@ Successful response
 </TabItem>
 <TabItem value="customers_devices_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -614,8 +598,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="nodes_devices_list">
-
-Successful response
 
 <table>
 <thead>
@@ -989,7 +971,8 @@ serialNumber,
 state
 FROM google.sasportal.devices
 WHERE customersId = '{{ customersId }}' -- required
-AND devicesId = '{{ devicesId }}' -- required;
+AND devicesId = '{{ devicesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="customers_nodes_devices_list">
@@ -1014,7 +997,8 @@ WHERE customersId = '{{ customersId }}' -- required
 AND nodesId = '{{ nodesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="customers_deployments_devices_list">
@@ -1039,7 +1023,8 @@ WHERE customersId = '{{ customersId }}' -- required
 AND deploymentsId = '{{ deploymentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_devices_get">
@@ -1061,7 +1046,8 @@ serialNumber,
 state
 FROM google.sasportal.devices
 WHERE nodesId = '{{ nodesId }}' -- required
-AND devicesId = '{{ devicesId }}' -- required;
+AND devicesId = '{{ devicesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="nodes_nodes_devices_list">
@@ -1086,7 +1072,8 @@ WHERE nodesId = '{{ nodesId }}' -- required
 AND nodesId1 = '{{ nodesId1 }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_deployments_devices_list">
@@ -1111,7 +1098,8 @@ WHERE nodesId = '{{ nodesId }}' -- required
 AND deploymentsId = '{{ deploymentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="deployments_devices_get">
@@ -1133,7 +1121,8 @@ serialNumber,
 state
 FROM google.sasportal.devices
 WHERE deploymentsId = '{{ deploymentsId }}' -- required
-AND devicesId = '{{ devicesId }}' -- required;
+AND devicesId = '{{ devicesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="customers_devices_list">
@@ -1157,7 +1146,8 @@ FROM google.sasportal.devices
 WHERE customersId = '{{ customersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_devices_list">
@@ -1181,7 +1171,8 @@ FROM google.sasportal.devices
 WHERE nodesId = '{{ nodesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1688,7 +1679,8 @@ Deletes a device.
 ```sql
 DELETE FROM google.sasportal.devices
 WHERE customersId = '{{ customersId }}' --required
-AND devicesId = '{{ devicesId }}' --required;
+AND devicesId = '{{ devicesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="nodes_devices_delete">
@@ -1698,7 +1690,8 @@ Deletes a device.
 ```sql
 DELETE FROM google.sasportal.devices
 WHERE nodesId = '{{ nodesId }}' --required
-AND devicesId = '{{ devicesId }}' --required;
+AND devicesId = '{{ devicesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="deployments_devices_delete">
@@ -1708,7 +1701,8 @@ Deletes a device.
 ```sql
 DELETE FROM google.sasportal.devices
 WHERE deploymentsId = '{{ deploymentsId }}' --required
-AND devicesId = '{{ devicesId }}' --required;
+AND devicesId = '{{ devicesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1738,7 +1732,8 @@ EXEC google.sasportal.devices.customers_devices_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="customers_devices_sign_device">
@@ -1752,7 +1747,8 @@ EXEC google.sasportal.devices.customers_devices_sign_device
 @@json=
 '{
 "device": "{{ device }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_devices_move">
@@ -1766,7 +1762,8 @@ EXEC google.sasportal.devices.nodes_devices_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_devices_sign_device">
@@ -1780,7 +1777,8 @@ EXEC google.sasportal.devices.nodes_devices_sign_device
 @@json=
 '{
 "device": "{{ device }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="deployments_devices_move">
@@ -1794,7 +1792,8 @@ EXEC google.sasportal.devices.deployments_devices_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="deployments_devices_sign_device">
@@ -1808,7 +1807,8 @@ EXEC google.sasportal.devices.deployments_devices_sign_device
 @@json=
 '{
 "device": "{{ device }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

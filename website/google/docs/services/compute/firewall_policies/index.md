@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -79,7 +77,7 @@ Successful response
 <tr>
     <td><CopyableCode code="displayName" /></td>
     <td><code>string</code></td>
-    <td>Deprecated, please use short name instead. User-provided name of the Organization firewall policy. The name should be unique in the organization in which the firewall policy is created. This field is not applicable to network firewall policies. This name must be set on creation and cannot be changed. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>Deprecated, please use short name instead. User-provided name of the Organization firewall policy. The name should be unique in the organization in which the firewall policy is created. This field is not applicable to network firewall policies. This name must be set on creation and cannot be changed. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="fingerprint" /></td>
@@ -129,14 +127,12 @@ Successful response
 <tr>
     <td><CopyableCode code="shortName" /></td>
     <td><code>string</code></td>
-    <td>User-provided name of the Organization firewall policy. The name should be unique in the organization in which the firewall policy is created. This field is not applicable to network firewall policies. This name must be set on creation and cannot be changed. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>User-provided name of the Organization firewall policy. The name should be unique in the organization in which the firewall policy is created. This field is not applicable to network firewall policies. This name must be set on creation and cannot be changed. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 </tbody>
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -349,7 +345,8 @@ shortName
 FROM google.compute.firewall_policies
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND firewallPolicy = '{{ firewallPolicy }}' -- required;
+AND firewallPolicy = '{{ firewallPolicy }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -370,7 +367,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -646,7 +644,8 @@ DELETE FROM google.compute.firewall_policies
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND firewallPolicy = '{{ firewallPolicy }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -669,7 +668,8 @@ Moves the specified firewall policy.
 EXEC google.compute.firewall_policies.move 
 @firewallPolicy='{{ firewallPolicy }}' --required, 
 @parentId='{{ parentId }}', 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="clone_rules">
@@ -682,7 +682,8 @@ EXEC google.compute.firewall_policies.clone_rules
 @region='{{ region }}' --required, 
 @firewallPolicy='{{ firewallPolicy }}' --required, 
 @requestId='{{ requestId }}', 
-@sourceFirewallPolicy='{{ sourceFirewallPolicy }}';
+@sourceFirewallPolicy='{{ sourceFirewallPolicy }}'
+;
 ```
 </TabItem>
 </Tabs>

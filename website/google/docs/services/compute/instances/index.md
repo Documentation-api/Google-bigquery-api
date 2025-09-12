@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,7 +58,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>The name of the resource, provided by the client when initially creating the resource. The resource name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>The name of the resource, provided by the client when initially creating the resource. The resource name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="advancedMachineFeatures" /></td>
@@ -287,8 +285,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -333,8 +329,6 @@ Successful response
 </TabItem>
 <TabItem value="aggregated_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -352,7 +346,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>The name of the resource, provided by the client when initially creating the resource. The resource name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>The name of the resource, provided by the client when initially creating the resource. The resource name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="advancedMachineFeatures" /></td>
@@ -1043,7 +1037,8 @@ zone
 FROM google.compute.instances
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -1065,7 +1060,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -1128,7 +1124,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1654,7 +1651,8 @@ DELETE FROM google.compute.instances
 WHERE project = '{{ project }}' --required
 AND zone = '{{ zone }}' --required
 AND instance = '{{ instance }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1705,7 +1703,8 @@ EXEC google.compute.instances.reset
 @project='{{ project }}' --required, 
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="simulate_maintenance_event">
@@ -1718,7 +1717,8 @@ EXEC google.compute.instances.simulate_maintenance_event
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
 @requestId='{{ requestId }}', 
-@withExtendedNotifications={{ withExtendedNotifications }};
+@withExtendedNotifications={{ withExtendedNotifications }}
+;
 ```
 </TabItem>
 <TabItem value="perform_maintenance">
@@ -1730,7 +1730,8 @@ EXEC google.compute.instances.perform_maintenance
 @project='{{ project }}' --required, 
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="report_host_as_faulty">
@@ -1747,7 +1748,8 @@ EXEC google.compute.instances.report_host_as_faulty
 '{
 "faultReasons": "{{ faultReasons }}", 
 "disruptionSchedule": "{{ disruptionSchedule }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="update_network_interface">
@@ -1779,7 +1781,8 @@ EXEC google.compute.instances.update_network_interface
 "queueCount": {{ queueCount }}, 
 "nicType": "{{ nicType }}", 
 "networkAttachment": "{{ networkAttachment }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_scheduling">
@@ -1808,7 +1811,8 @@ EXEC google.compute.instances.set_scheduling
 "instanceTerminationAction": "{{ instanceTerminationAction }}", 
 "hostErrorTimeoutSeconds": {{ hostErrorTimeoutSeconds }}, 
 "localSsdRecoveryTimeout": "{{ localSsdRecoveryTimeout }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="send_diagnostic_interrupt">
@@ -1819,7 +1823,8 @@ Sends diagnostic interrupt to the instance.
 EXEC google.compute.instances.send_diagnostic_interrupt 
 @project='{{ project }}' --required, 
 @zone='{{ zone }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="attach_disk">
@@ -1853,7 +1858,8 @@ EXEC google.compute.instances.attach_disk
 "shieldedInstanceInitialState": "{{ shieldedInstanceInitialState }}", 
 "forceAttach": {{ forceAttach }}, 
 "architecture": "{{ architecture }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="detach_disk">
@@ -1866,7 +1872,8 @@ EXEC google.compute.instances.detach_disk
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
 @deviceName='{{ deviceName }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="set_machine_resources">
@@ -1882,7 +1889,8 @@ EXEC google.compute.instances.set_machine_resources
 @@json=
 '{
 "guestAccelerators": "{{ guestAccelerators }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_machine_type">
@@ -1898,7 +1906,8 @@ EXEC google.compute.instances.set_machine_type
 @@json=
 '{
 "machineType": "{{ machineType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_metadata">
@@ -1916,7 +1925,8 @@ EXEC google.compute.instances.set_metadata
 "kind": "{{ kind }}", 
 "fingerprint": "{{ fingerprint }}", 
 "items": "{{ items }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_min_cpu_platform">
@@ -1932,7 +1942,8 @@ EXEC google.compute.instances.set_min_cpu_platform
 @@json=
 '{
 "minCpuPlatform": "{{ minCpuPlatform }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_tags">
@@ -1949,7 +1960,8 @@ EXEC google.compute.instances.set_tags
 '{
 "items": "{{ items }}", 
 "fingerprint": "{{ fingerprint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_labels">
@@ -1966,7 +1978,8 @@ EXEC google.compute.instances.set_labels
 '{
 "labels": "{{ labels }}", 
 "labelFingerprint": "{{ labelFingerprint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_name">
@@ -1983,7 +1996,8 @@ EXEC google.compute.instances.set_name
 '{
 "name": "{{ name }}", 
 "currentName": "{{ currentName }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_disk_auto_delete">
@@ -1997,7 +2011,8 @@ EXEC google.compute.instances.set_disk_auto_delete
 @instance='{{ instance }}' --required, 
 @autoDelete='{{ autoDelete }}' --required, 
 @deviceName='{{ deviceName }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="start">
@@ -2009,7 +2024,8 @@ EXEC google.compute.instances.start
 @project='{{ project }}' --required, 
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="start_with_encryption_key">
@@ -2025,7 +2041,8 @@ EXEC google.compute.instances.start_with_encryption_key
 @@json=
 '{
 "disks": "{{ disks }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -2038,7 +2055,8 @@ EXEC google.compute.instances.stop
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
 @discardLocalSsd={{ discardLocalSsd }}, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="set_service_account">
@@ -2055,7 +2073,8 @@ EXEC google.compute.instances.set_service_account
 '{
 "email": "{{ email }}", 
 "scopes": "{{ scopes }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_deletion_protection">
@@ -2068,7 +2087,8 @@ EXEC google.compute.instances.set_deletion_protection
 @zone='{{ zone }}' --required, 
 @resource='{{ resource }}' --required, 
 @deletionProtection={{ deletionProtection }}, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="suspend">
@@ -2081,7 +2101,8 @@ EXEC google.compute.instances.suspend
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
 @discardLocalSsd={{ discardLocalSsd }}, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -2093,7 +2114,8 @@ EXEC google.compute.instances.resume
 @project='{{ project }}' --required, 
 @zone='{{ zone }}' --required, 
 @instance='{{ instance }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="update_shielded_instance_config">
@@ -2111,7 +2133,8 @@ EXEC google.compute.instances.update_shielded_instance_config
 "enableSecureBoot": {{ enableSecureBoot }}, 
 "enableVtpm": {{ enableVtpm }}, 
 "enableIntegrityMonitoring": {{ enableIntegrityMonitoring }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="update_display_device">
@@ -2127,7 +2150,8 @@ EXEC google.compute.instances.update_display_device
 @@json=
 '{
 "enableDisplay": {{ enableDisplay }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_shielded_instance_integrity_policy">
@@ -2143,7 +2167,8 @@ EXEC google.compute.instances.set_shielded_instance_integrity_policy
 @@json=
 '{
 "updateAutoLearnPolicy": {{ updateAutoLearnPolicy }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_security_policy">
@@ -2160,7 +2185,8 @@ EXEC google.compute.instances.set_security_policy
 '{
 "securityPolicy": "{{ securityPolicy }}", 
 "networkInterfaces": "{{ networkInterfaces }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_insert">
@@ -2181,7 +2207,8 @@ EXEC google.compute.instances.bulk_insert
 "sourceInstanceTemplate": "{{ sourceInstanceTemplate }}", 
 "instanceProperties": "{{ instanceProperties }}", 
 "locationPolicy": "{{ locationPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

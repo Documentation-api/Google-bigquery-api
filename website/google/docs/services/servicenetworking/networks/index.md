@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -212,7 +210,8 @@ FROM google.servicenetworking.networks
 WHERE servicesId = '{{ servicesId }}' -- required
 AND projectsId = '{{ projectsId }}' -- required
 AND networksId = '{{ networksId }}' -- required
-AND includeUsedIpRanges = '{{ includeUsedIpRanges }}';
+AND includeUsedIpRanges = '{{ includeUsedIpRanges }}'
+;
 ```
 </TabItem>
 </Tabs>

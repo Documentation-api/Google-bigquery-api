@@ -101,7 +101,8 @@ EXEC google.speech.speech.recognize
 '{
 "config": "{{ config }}", 
 "audio": "{{ audio }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="longrunningrecognize">
@@ -115,7 +116,8 @@ EXEC google.speech.speech.longrunningrecognize
 "config": "{{ config }}", 
 "audio": "{{ audio }}", 
 "outputConfig": "{{ outputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

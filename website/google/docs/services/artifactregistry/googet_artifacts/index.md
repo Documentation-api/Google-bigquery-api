@@ -118,7 +118,8 @@ EXEC google.artifactregistry.googet_artifacts.import
 @@json=
 '{
 "gcsSource": "{{ gcsSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upload">
@@ -129,7 +130,8 @@ Directly uploads a GooGet artifact. The returned Operation will complete once th
 EXEC google.artifactregistry.googet_artifacts.upload 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@repositoriesId='{{ repositoriesId }}' --required;
+@repositoriesId='{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

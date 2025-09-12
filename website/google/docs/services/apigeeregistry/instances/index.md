@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_instances_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -189,7 +187,8 @@ updateTime
 FROM google.apigeeregistry.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -276,7 +275,8 @@ Deletes the Registry instance.
 DELETE FROM google.apigeeregistry.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

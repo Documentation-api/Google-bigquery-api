@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -218,7 +216,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND customRulesBucket = '{{ customRulesBucket }}'
-AND evaluationType = '{{ evaluationType }}';
+AND evaluationType = '{{ evaluationType }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -355,7 +351,8 @@ FROM google.aiplatform.executions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND metadataStoresId = '{{ metadataStoresId }}' -- required
-AND executionsId = '{{ executionsId }}' -- required;
+AND executionsId = '{{ executionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -382,7 +379,8 @@ AND metadataStoresId = '{{ metadataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -572,7 +570,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND metadataStoresId = '{{ metadataStoresId }}' --required
 AND executionsId = '{{ executionsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -600,7 +599,8 @@ EXEC google.aiplatform.executions.purge
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="add_execution_events">
@@ -616,7 +616,8 @@ EXEC google.aiplatform.executions.add_execution_events
 @@json=
 '{
 "events": "{{ events }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

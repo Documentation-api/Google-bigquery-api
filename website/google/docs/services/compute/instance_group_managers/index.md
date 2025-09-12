@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,7 +58,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>The name of the managed instance group. The name must be 1-63 characters long, and comply with RFC1035. (pattern: &#91;a-z&#93;(?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>The name of the managed instance group. The name must be 1-63 characters long, and comply with RFC1035. (pattern: <code>&#91;a-z&#93;(?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="allInstancesConfig" /></td>
@@ -217,8 +215,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -263,8 +259,6 @@ Successful response
 </TabItem>
 <TabItem value="aggregated_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -282,7 +276,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>The name of the managed instance group. The name must be 1-63 characters long, and comply with RFC1035. (pattern: &#91;a-z&#93;(?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>The name of the managed instance group. The name must be 1-63 characters long, and comply with RFC1035. (pattern: <code>&#91;a-z&#93;(?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="allInstancesConfig" /></td>
@@ -703,7 +697,8 @@ zone
 FROM google.compute.instance_group_managers
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND instanceGroupManager = '{{ instanceGroupManager }}' -- required;
+AND instanceGroupManager = '{{ instanceGroupManager }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -725,7 +720,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -774,7 +770,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1222,7 +1219,8 @@ DELETE FROM google.compute.instance_group_managers
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND instanceGroupManager = '{{ instanceGroupManager }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1259,7 +1257,8 @@ EXEC google.compute.instance_group_managers.suspend_instances
 '{
 "instances": "{{ instances }}", 
 "forceSuspend": {{ forceSuspend }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="resume_instances">
@@ -1275,7 +1274,8 @@ EXEC google.compute.instance_group_managers.resume_instances
 @@json=
 '{
 "instances": "{{ instances }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop_instances">
@@ -1292,7 +1292,8 @@ EXEC google.compute.instance_group_managers.stop_instances
 '{
 "instances": "{{ instances }}", 
 "forceStop": {{ forceStop }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="start_instances">
@@ -1308,7 +1309,8 @@ EXEC google.compute.instance_group_managers.start_instances
 @@json=
 '{
 "instances": "{{ instances }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="abandon_instances">
@@ -1324,7 +1326,8 @@ EXEC google.compute.instance_group_managers.abandon_instances
 @@json=
 '{
 "instances": "{{ instances }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="recreate_instances">
@@ -1340,7 +1343,8 @@ EXEC google.compute.instance_group_managers.recreate_instances
 @@json=
 '{
 "instances": "{{ instances }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="resize">
@@ -1353,7 +1357,8 @@ EXEC google.compute.instance_group_managers.resize
 @region='{{ region }}' --required, 
 @instanceGroupManager='{{ instanceGroupManager }}' --required, 
 @size='{{ size }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="set_instance_template">
@@ -1369,7 +1374,8 @@ EXEC google.compute.instance_group_managers.set_instance_template
 @@json=
 '{
 "instanceTemplate": "{{ instanceTemplate }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_target_pools">
@@ -1386,7 +1392,8 @@ EXEC google.compute.instance_group_managers.set_target_pools
 '{
 "targetPools": "{{ targetPools }}", 
 "fingerprint": "{{ fingerprint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="apply_updates_to_instances">
@@ -1404,7 +1411,8 @@ EXEC google.compute.instance_group_managers.apply_updates_to_instances
 "minimalAction": "{{ minimalAction }}", 
 "mostDisruptiveAllowedAction": "{{ mostDisruptiveAllowedAction }}", 
 "allInstances": {{ allInstances }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

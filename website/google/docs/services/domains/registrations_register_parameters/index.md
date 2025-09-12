@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_register_parameters">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ registerParameters
 FROM google.domains.registrations_register_parameters
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND domainName = '{{ domainName }}';
+AND domainName = '{{ domainName }}'
+;
 ```
 </TabItem>
 </Tabs>

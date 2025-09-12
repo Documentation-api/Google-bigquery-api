@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_operations_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,7 +158,8 @@ role
 FROM google.dataproc.operations_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -215,7 +214,8 @@ EXEC google.dataproc.operations_iam_policies.projects_regions_operations_test_ia
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

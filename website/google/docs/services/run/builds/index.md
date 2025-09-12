@@ -112,7 +112,8 @@ EXEC google.run.builds.submit
 "tags": "{{ tags }}", 
 "machineType": "{{ machineType }}", 
 "releaseTrack": "{{ releaseTrack }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

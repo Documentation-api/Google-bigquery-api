@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -239,7 +235,8 @@ priority,
 sourceRange
 FROM google.appengine.ingress_rules
 WHERE appsId = '{{ appsId }}' -- required
-AND ingressRulesId = '{{ ingressRulesId }}' -- required;
+AND ingressRulesId = '{{ ingressRulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -256,7 +253,8 @@ FROM google.appengine.ingress_rules
 WHERE appsId = '{{ appsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND matchingAddress = '{{ matchingAddress }}';
+AND matchingAddress = '{{ matchingAddress }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -392,7 +390,8 @@ Deletes the specified firewall rule.
 ```sql
 DELETE FROM google.appengine.ingress_rules
 WHERE appsId = '{{ appsId }}' --required
-AND ingressRulesId = '{{ ingressRulesId }}' --required;
+AND ingressRulesId = '{{ ingressRulesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

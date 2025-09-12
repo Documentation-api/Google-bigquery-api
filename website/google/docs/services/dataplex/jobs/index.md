@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_lakes_tasks_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -118,8 +116,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_lakes_tasks_jobs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -193,8 +189,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_scans_jobs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -279,8 +273,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_scans_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -526,7 +518,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND tasksId = '{{ tasksId }}' -- required
-AND jobsId = '{{ jobsId }}' -- required;
+AND jobsId = '{{ jobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_lakes_tasks_jobs_list">
@@ -553,7 +546,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND tasksId = '{{ tasksId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_scans_jobs_get">
@@ -581,7 +575,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataScansId = '{{ dataScansId }}' -- required
 AND jobsId = '{{ jobsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_scans_jobs_list">
@@ -610,7 +605,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND dataScansId = '{{ dataScansId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -635,7 +631,8 @@ EXEC google.dataplex.jobs.projects_locations_lakes_tasks_jobs_cancel
 @locationsId='{{ locationsId }}' --required, 
 @lakesId='{{ lakesId }}' --required, 
 @tasksId='{{ tasksId }}' --required, 
-@jobsId='{{ jobsId }}' --required;
+@jobsId='{{ jobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_scans_jobs_generate_data_quality_rules">
@@ -647,7 +644,8 @@ EXEC google.dataplex.jobs.projects_locations_data_scans_jobs_generate_data_quali
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @dataScansId='{{ dataScansId }}' --required, 
-@jobsId='{{ jobsId }}' --required;
+@jobsId='{{ jobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

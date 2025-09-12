@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_namespaced">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ purposeData,
 shortName,
 updateTime
 FROM google.cloudresourcemanager.tag_keys_namespaced
-WHERE name = '{{ name }}';
+WHERE name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>

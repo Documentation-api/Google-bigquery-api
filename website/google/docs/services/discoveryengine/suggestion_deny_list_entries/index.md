@@ -141,7 +141,8 @@ EXEC google.discoveryengine.suggestion_deny_list_entries.projects_locations_coll
 '{
 "inlineSource": "{{ inlineSource }}", 
 "gcsSource": "{{ gcsSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_suggestion_deny_list_entries_purge">
@@ -153,7 +154,8 @@ EXEC google.discoveryengine.suggestion_deny_list_entries.projects_locations_coll
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @collectionsId='{{ collectionsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_suggestion_deny_list_entries_import">
@@ -169,7 +171,8 @@ EXEC google.discoveryengine.suggestion_deny_list_entries.projects_locations_data
 '{
 "inlineSource": "{{ inlineSource }}", 
 "gcsSource": "{{ gcsSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_suggestion_deny_list_entries_purge">
@@ -180,7 +183,8 @@ Permanently deletes all SuggestionDenyListEntry for a DataStore.
 EXEC google.discoveryengine.suggestion_deny_list_entries.projects_locations_data_stores_suggestion_deny_list_entries_purge 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

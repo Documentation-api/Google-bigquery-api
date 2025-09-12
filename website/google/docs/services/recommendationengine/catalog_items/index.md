@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_catalog_items_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_catalog_items_list">
-
-Successful response
 
 <table>
 <thead>
@@ -306,7 +302,8 @@ FROM google.recommendationengine.catalog_items
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
-AND catalogItemsId = '{{ catalogItemsId }}' -- required;
+AND catalogItemsId = '{{ catalogItemsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_catalog_items_list">
@@ -330,7 +327,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -517,7 +515,8 @@ DELETE FROM google.recommendationengine.catalog_items
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
-AND catalogItemsId = '{{ catalogItemsId }}' --required;
+AND catalogItemsId = '{{ catalogItemsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -546,7 +545,8 @@ EXEC google.recommendationengine.catalog_items.projects_locations_catalogs_catal
 "inputConfig": "{{ inputConfig }}", 
 "errorsConfig": "{{ errorsConfig }}", 
 "updateMask": "{{ updateMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

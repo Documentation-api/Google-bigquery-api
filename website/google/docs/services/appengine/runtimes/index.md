@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_runtimes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ supportedOperatingSystems,
 warnings
 FROM google.appengine.runtimes
 WHERE appsId = '{{ appsId }}' -- required
-AND environment = '{{ environment }}';
+AND environment = '{{ environment }}'
+;
 ```
 </TabItem>
 </Tabs>

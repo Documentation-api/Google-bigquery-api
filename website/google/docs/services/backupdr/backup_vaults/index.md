@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -421,7 +417,8 @@ FROM google.backupdr.backup_vaults
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND backupVaultsId = '{{ backupVaultsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -453,7 +450,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -632,7 +630,8 @@ AND force = '{{ force }}'
 AND etag = '{{ etag }}'
 AND validateOnly = '{{ validateOnly }}'
 AND allowMissing = '{{ allowMissing }}'
-AND ignoreBackupPlanReferences = '{{ ignoreBackupPlanReferences }}';
+AND ignoreBackupPlanReferences = '{{ ignoreBackupPlanReferences }}'
+;
 ```
 </TabItem>
 </Tabs>

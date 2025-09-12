@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -186,7 +182,8 @@ FROM google.managedkafka.contexts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
-AND contextsId = '{{ contextsId }}' -- required;
+AND contextsId = '{{ contextsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -201,7 +198,8 @@ extensions
 FROM google.managedkafka.contexts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required;
+AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

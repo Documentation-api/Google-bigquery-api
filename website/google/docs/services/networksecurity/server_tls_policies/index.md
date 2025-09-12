@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_server_tls_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_server_tls_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -287,7 +283,8 @@ updateTime
 FROM google.networksecurity.server_tls_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND serverTlsPoliciesId = '{{ serverTlsPoliciesId }}' -- required;
+AND serverTlsPoliciesId = '{{ serverTlsPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_server_tls_policies_list">
@@ -309,7 +306,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -461,7 +459,8 @@ Deletes a single ServerTlsPolicy.
 DELETE FROM google.networksecurity.server_tls_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND serverTlsPoliciesId = '{{ serverTlsPoliciesId }}' --required;
+AND serverTlsPoliciesId = '{{ serverTlsPoliciesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_connections_repositories_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_connections_repositories_list">
-
-Successful response
 
 <table>
 <thead>
@@ -306,7 +302,8 @@ FROM google.cloudbuild.repositories
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND connectionsId = '{{ connectionsId }}' -- required
-AND repositoriesId = '{{ repositoriesId }}' -- required;
+AND repositoriesId = '{{ repositoriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_connections_repositories_list">
@@ -329,7 +326,8 @@ AND connectionsId = '{{ connectionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -469,7 +467,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND connectionsId = '{{ connectionsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
 AND etag = '{{ etag }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -493,7 +492,8 @@ EXEC google.cloudbuild.repositories.projects_locations_connections_repositories_
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @connectionsId='{{ connectionsId }}' --required, 
-@repositoriesId='{{ repositoriesId }}' --required;
+@repositoriesId='{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_connections_repositories_access_read_token">
@@ -505,7 +505,8 @@ EXEC google.cloudbuild.repositories.projects_locations_connections_repositories_
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @connectionsId='{{ connectionsId }}' --required, 
-@repositoriesId='{{ repositoriesId }}' --required;
+@repositoriesId='{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

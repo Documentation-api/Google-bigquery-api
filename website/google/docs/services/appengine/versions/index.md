@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -265,8 +263,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -672,7 +668,8 @@ FROM google.appengine.versions
 WHERE appsId = '{{ appsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -728,7 +725,8 @@ WHERE appsId = '{{ appsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1137,7 +1135,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND applicationsId = '{{ applicationsId }}' --required
 AND servicesId = '{{ servicesId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

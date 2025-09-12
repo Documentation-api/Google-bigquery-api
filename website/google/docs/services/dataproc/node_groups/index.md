@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_clusters_node_groups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -194,7 +192,8 @@ FROM google.dataproc.node_groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
-AND nodeGroupsId = '{{ nodeGroupsId }}' -- required;
+AND nodeGroupsId = '{{ nodeGroupsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -317,7 +316,8 @@ EXEC google.dataproc.node_groups.projects_regions_clusters_node_groups_resize
 "requestId": "{{ requestId }}", 
 "gracefulDecommissionTimeout": "{{ gracefulDecommissionTimeout }}", 
 "parentOperationId": "{{ parentOperationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_clusters_node_groups_repair">
@@ -335,7 +335,8 @@ EXEC google.dataproc.node_groups.projects_regions_clusters_node_groups_repair
 "instanceNames": "{{ instanceNames }}", 
 "repairAction": "{{ repairAction }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

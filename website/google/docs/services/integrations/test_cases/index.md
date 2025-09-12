@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_integrations_versions_test_cases_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_test_cases_list">
-
-Successful response
 
 <table>
 <thead>
@@ -404,7 +400,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND integrationsId = '{{ integrationsId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND testCasesId = '{{ testCasesId }}' -- required;
+AND testCasesId = '{{ testCasesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_test_cases_list">
@@ -435,7 +432,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -666,7 +664,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND integrationsId = '{{ integrationsId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND testCasesId = '{{ testCasesId }}' --required;
+AND testCasesId = '{{ testCasesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -698,7 +697,8 @@ EXEC google.integrations.test_cases.projects_locations_integrations_versions_tes
 @@json=
 '{
 "inputParameters": "{{ inputParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_test_cases_upload">
@@ -715,7 +715,8 @@ EXEC google.integrations.test_cases.projects_locations_integrations_versions_tes
 '{
 "content": "{{ content }}", 
 "fileFormat": "{{ fileFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_test_cases_download">
@@ -729,7 +730,8 @@ EXEC google.integrations.test_cases.projects_locations_integrations_versions_tes
 @integrationsId='{{ integrationsId }}' --required, 
 @versionsId='{{ versionsId }}' --required, 
 @testCasesId='{{ testCasesId }}' --required, 
-@fileFormat='{{ fileFormat }}';
+@fileFormat='{{ fileFormat }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_test_cases_takeover_edit_lock">
@@ -742,7 +744,8 @@ EXEC google.integrations.test_cases.projects_locations_integrations_versions_tes
 @locationsId='{{ locationsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
 @versionsId='{{ versionsId }}' --required, 
-@testCasesId='{{ testCasesId }}' --required;
+@testCasesId='{{ testCasesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_test_cases_execute">
@@ -754,7 +757,8 @@ EXEC google.integrations.test_cases.projects_locations_integrations_versions_tes
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

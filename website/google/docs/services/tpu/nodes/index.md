@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -185,8 +183,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -494,7 +490,8 @@ upcomingMaintenance
 FROM google.tpu.nodes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND nodesId = '{{ nodesId }}' -- required;
+AND nodesId = '{{ nodesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -533,7 +530,8 @@ FROM google.tpu.nodes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -758,7 +756,8 @@ Deletes a node.
 DELETE FROM google.tpu.nodes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND nodesId = '{{ nodesId }}' --required;
+AND nodesId = '{{ nodesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -781,7 +780,8 @@ Stops a node. This operation is only available with single TPU nodes.
 EXEC google.tpu.nodes.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@nodesId='{{ nodesId }}' --required;
+@nodesId='{{ nodesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="start">
@@ -792,7 +792,8 @@ Starts a node.
 EXEC google.tpu.nodes.start 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@nodesId='{{ nodesId }}' --required;
+@nodesId='{{ nodesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_deployments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -388,7 +384,8 @@ FROM google.apigeeregistry.deployments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
-AND deploymentsId = '{{ deploymentsId }}' -- required;
+AND deploymentsId = '{{ deploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_list">
@@ -418,7 +415,8 @@ AND apisId = '{{ apisId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -629,7 +627,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND deploymentsId = '{{ deploymentsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -657,7 +656,8 @@ EXEC google.apigeeregistry.deployments.projects_locations_apis_deployments_tag_r
 @@json=
 '{
 "tag": "{{ tag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_rollback">
@@ -673,7 +673,8 @@ EXEC google.apigeeregistry.deployments.projects_locations_apis_deployments_rollb
 @@json=
 '{
 "revisionId": "{{ revisionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

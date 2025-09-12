@@ -92,7 +92,8 @@ EXEC google.policytroubleshooter.iam.troubleshoot
 @@json=
 '{
 "accessTuple": "{{ accessTuple }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

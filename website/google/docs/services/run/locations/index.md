@@ -129,7 +129,8 @@ Export generated customer metadata for a given project.
 ```sql
 EXEC google.run.locations.export_project_metadata 
 @projectsId='{{ projectsId }}' --required, 
-@locationsId='{{ locationsId }}' --required;
+@locationsId='{{ locationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="export_metadata">
@@ -140,7 +141,8 @@ Export generated customer metadata for a given resource.
 EXEC google.run.locations.export_metadata 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@locationsId1='{{ locationsId1 }}' --required;
+@locationsId1='{{ locationsId1 }}' --required
+;
 ```
 </TabItem>
 <TabItem value="export_image_metadata">
@@ -151,7 +153,8 @@ Export image metadata for a given resource.
 EXEC google.run.locations.export_image_metadata 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@locationsId1='{{ locationsId1 }}' --required;
+@locationsId1='{{ locationsId1 }}' --required
+;
 ```
 </TabItem>
 <TabItem value="export_image">
@@ -166,7 +169,8 @@ EXEC google.run.locations.export_image
 @@json=
 '{
 "destinationRepo": "{{ destinationRepo }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

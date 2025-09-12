@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -559,7 +555,8 @@ AND modelsId = '{{ modelsId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND view = '{{ view }}'
 AND isHuggingFaceModel = '{{ isHuggingFaceModel }}'
-AND huggingFaceToken = '{{ huggingFaceToken }}';
+AND huggingFaceToken = '{{ huggingFaceToken }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -610,7 +607,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND readMask = '{{ readMask }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -711,7 +709,8 @@ Deletes a Model. A model cannot be deleted if any Endpoint resource has a Deploy
 DELETE FROM google.aiplatform.models
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND modelsId = '{{ modelsId }}' --required;
+AND modelsId = '{{ modelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -753,7 +752,8 @@ EXEC google.aiplatform.models.upload
 "modelId": "{{ modelId }}", 
 "model": "{{ model }}", 
 "serviceAccount": "{{ serviceAccount }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="update_explanation_dataset">
@@ -768,7 +768,8 @@ EXEC google.aiplatform.models.update_explanation_dataset
 @@json=
 '{
 "examples": "{{ examples }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="merge_version_aliases">
@@ -783,7 +784,8 @@ EXEC google.aiplatform.models.merge_version_aliases
 @@json=
 '{
 "versionAliases": "{{ versionAliases }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -798,7 +800,8 @@ EXEC google.aiplatform.models.export
 @@json=
 '{
 "outputConfig": "{{ outputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="copy">
@@ -815,7 +818,8 @@ EXEC google.aiplatform.models.copy
 "parentModel": "{{ parentModel }}", 
 "sourceModel": "{{ sourceModel }}", 
 "encryptionSpec": "{{ encryptionSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="predict">
@@ -830,7 +834,8 @@ EXEC google.aiplatform.models.predict
 '{
 "instances": "{{ instances }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="raw_predict">
@@ -846,7 +851,8 @@ EXEC google.aiplatform.models.raw_predict
 @@json=
 '{
 "httpBody": "{{ httpBody }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stream_raw_predict">
@@ -862,7 +868,8 @@ EXEC google.aiplatform.models.stream_raw_predict
 @@json=
 '{
 "httpBody": "{{ httpBody }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="server_streaming_predict">
@@ -879,7 +886,8 @@ EXEC google.aiplatform.models.server_streaming_predict
 '{
 "inputs": "{{ inputs }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="predict_long_running">
@@ -894,7 +902,8 @@ EXEC google.aiplatform.models.predict_long_running
 '{
 "instances": "{{ instances }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_content">
@@ -916,7 +925,8 @@ EXEC google.aiplatform.models.generate_content
 "safetySettings": "{{ safetySettings }}", 
 "modelArmorConfig": "{{ modelArmorConfig }}", 
 "generationConfig": "{{ generationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stream_generate_content">
@@ -938,7 +948,8 @@ EXEC google.aiplatform.models.stream_generate_content
 "safetySettings": "{{ safetySettings }}", 
 "modelArmorConfig": "{{ modelArmorConfig }}", 
 "generationConfig": "{{ generationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="count_tokens">
@@ -957,7 +968,8 @@ EXEC google.aiplatform.models.count_tokens
 "systemInstruction": "{{ systemInstruction }}", 
 "tools": "{{ tools }}", 
 "generationConfig": "{{ generationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="compute_tokens">
@@ -973,7 +985,8 @@ EXEC google.aiplatform.models.compute_tokens
 "instances": "{{ instances }}", 
 "model": "{{ model }}", 
 "contents": "{{ contents }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="fetch_predict_operation">
@@ -987,7 +1000,8 @@ EXEC google.aiplatform.models.fetch_predict_operation
 @@json=
 '{
 "operationName": "{{ operationName }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

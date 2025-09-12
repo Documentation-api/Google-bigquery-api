@@ -104,7 +104,8 @@ EXEC firebase.appdistribution.media.upload
 @@json=
 '{
 "blob": "{{ blob }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

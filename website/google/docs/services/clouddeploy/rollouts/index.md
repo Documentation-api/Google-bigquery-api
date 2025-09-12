@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -505,7 +501,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND deliveryPipelinesId = '{{ deliveryPipelinesId }}' -- required
 AND releasesId = '{{ releasesId }}' -- required
-AND rolloutsId = '{{ rolloutsId }}' -- required;
+AND rolloutsId = '{{ rolloutsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -545,7 +542,8 @@ AND releasesId = '{{ releasesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -697,7 +695,8 @@ EXEC google.clouddeploy.rollouts.approve
 '{
 "approved": {{ approved }}, 
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="advance">
@@ -715,7 +714,8 @@ EXEC google.clouddeploy.rollouts.advance
 '{
 "phaseId": "{{ phaseId }}", 
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="cancel">
@@ -732,7 +732,8 @@ EXEC google.clouddeploy.rollouts.cancel
 @@json=
 '{
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="ignore_job">
@@ -751,7 +752,8 @@ EXEC google.clouddeploy.rollouts.ignore_job
 "phaseId": "{{ phaseId }}", 
 "jobId": "{{ jobId }}", 
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="retry_job">
@@ -770,7 +772,8 @@ EXEC google.clouddeploy.rollouts.retry_job
 "phaseId": "{{ phaseId }}", 
 "jobId": "{{ jobId }}", 
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

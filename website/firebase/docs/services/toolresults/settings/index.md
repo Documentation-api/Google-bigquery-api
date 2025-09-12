@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 name,
 defaultBucket
 FROM firebase.toolresults.settings
-WHERE projectId = '{{ projectId }}' -- required;
+WHERE projectId = '{{ projectId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

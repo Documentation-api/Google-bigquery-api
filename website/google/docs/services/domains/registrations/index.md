@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -434,7 +430,8 @@ transferFailureReason
 FROM google.domains.registrations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND registrationsId = '{{ registrationsId }}' -- required;
+AND registrationsId = '{{ registrationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -463,7 +460,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -521,7 +519,8 @@ Deletes a `Registration` resource. This method works on any `Registration` resou
 DELETE FROM google.domains.registrations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND registrationsId = '{{ registrationsId }}' --required;
+AND registrationsId = '{{ registrationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -553,7 +552,8 @@ Searches for available domain names similar to the provided query. Availability 
 EXEC google.domains.registrations.search_domains 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@query='{{ query }}';
+@query='{{ query }}'
+;
 ```
 </TabItem>
 <TabItem value="register">
@@ -571,7 +571,8 @@ EXEC google.domains.registrations.register
 "contactNotices": "{{ contactNotices }}", 
 "yearlyPrice": "{{ yearlyPrice }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="transfer">
@@ -589,7 +590,8 @@ EXEC google.domains.registrations.transfer
 "yearlyPrice": "{{ yearlyPrice }}", 
 "authorizationCode": "{{ authorizationCode }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -604,7 +606,8 @@ EXEC google.domains.registrations.import
 '{
 "domainName": "{{ domainName }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="configure_management_settings">
@@ -620,7 +623,8 @@ EXEC google.domains.registrations.configure_management_settings
 '{
 "managementSettings": "{{ managementSettings }}", 
 "updateMask": "{{ updateMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="configure_dns_settings">
@@ -637,7 +641,8 @@ EXEC google.domains.registrations.configure_dns_settings
 "dnsSettings": "{{ dnsSettings }}", 
 "updateMask": "{{ updateMask }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="configure_contact_settings">
@@ -655,7 +660,8 @@ EXEC google.domains.registrations.configure_contact_settings
 "updateMask": "{{ updateMask }}", 
 "contactNotices": "{{ contactNotices }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -666,7 +672,8 @@ Deprecated: For more information, see [Cloud Domains feature deprecation](https:
 EXEC google.domains.registrations.export 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@registrationsId='{{ registrationsId }}' --required;
+@registrationsId='{{ registrationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="reset_authorization_code">
@@ -677,7 +684,8 @@ Resets the authorization code of the `Registration` to a new random string. You 
 EXEC google.domains.registrations.reset_authorization_code 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@registrationsId='{{ registrationsId }}' --required;
+@registrationsId='{{ registrationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="initiate_push_transfer">
@@ -692,7 +700,8 @@ EXEC google.domains.registrations.initiate_push_transfer
 @@json=
 '{
 "tag": "{{ tag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="renew_domain">
@@ -708,7 +717,8 @@ EXEC google.domains.registrations.renew_domain
 '{
 "yearlyPrice": "{{ yearlyPrice }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

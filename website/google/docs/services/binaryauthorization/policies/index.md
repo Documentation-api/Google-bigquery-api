@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -82,8 +80,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -343,7 +337,8 @@ updateTime
 FROM google.binaryauthorization.policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND platformsId = '{{ platformsId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -361,7 +356,8 @@ FROM google.binaryauthorization.policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND platformsId = '{{ platformsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="get_policy">
@@ -382,7 +378,8 @@ kubernetesNamespaceAdmissionRules,
 kubernetesServiceAccountAdmissionRules,
 updateTime
 FROM google.binaryauthorization.policies
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -543,7 +540,8 @@ DELETE FROM google.binaryauthorization.policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND platformsId = '{{ platformsId }}' --required
 AND policiesId = '{{ policiesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -568,7 +566,8 @@ EXEC google.binaryauthorization.policies.evaluate
 @@json=
 '{
 "resource": "{{ resource }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

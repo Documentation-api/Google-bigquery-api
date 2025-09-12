@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_cmek_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ kmsKeyName,
 kmsKeyVersionName,
 serviceAccountId
 FROM google.logging.logging_cmek_settings
-WHERE name = '{{ name }}' -- required;
+WHERE name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

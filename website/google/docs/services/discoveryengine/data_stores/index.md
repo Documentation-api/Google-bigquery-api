@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,8 +150,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_list">
-
-Successful response
 
 <table>
 <thead>
@@ -264,8 +260,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -374,8 +368,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_list">
-
-Successful response
 
 <table>
 <thead>
@@ -736,7 +728,8 @@ FROM google.discoveryengine.data_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
-AND dataStoresId = '{{ dataStoresId }}' -- required;
+AND dataStoresId = '{{ dataStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_list">
@@ -770,7 +763,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_get">
@@ -801,7 +795,8 @@ workspaceConfig
 FROM google.discoveryengine.data_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataStoresId = '{{ dataStoresId }}' -- required;
+AND dataStoresId = '{{ dataStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_list">
@@ -834,7 +829,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1210,7 +1206,8 @@ DELETE FROM google.discoveryengine.data_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
-AND dataStoresId = '{{ dataStoresId }}' --required;
+AND dataStoresId = '{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_delete">
@@ -1221,7 +1218,8 @@ Deletes a DataStore.
 DELETE FROM google.discoveryengine.data_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND dataStoresId = '{{ dataStoresId }}' --required;
+AND dataStoresId = '{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1250,7 +1248,8 @@ EXEC google.discoveryengine.data_stores.projects_locations_collections_data_stor
 @query='{{ query }}', 
 @queryModel='{{ queryModel }}', 
 @userPseudoId='{{ userPseudoId }}', 
-@includeTailSuggestions={{ includeTailSuggestions }};
+@includeTailSuggestions={{ includeTailSuggestions }}
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_train_custom_model">
@@ -1269,7 +1268,8 @@ EXEC google.discoveryengine.data_stores.projects_locations_collections_data_stor
 "modelType": "{{ modelType }}", 
 "errorConfig": "{{ errorConfig }}", 
 "modelId": "{{ modelId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_complete_query">
@@ -1284,7 +1284,8 @@ EXEC google.discoveryengine.data_stores.projects_locations_data_stores_complete_
 @query='{{ query }}', 
 @queryModel='{{ queryModel }}', 
 @userPseudoId='{{ userPseudoId }}', 
-@includeTailSuggestions={{ includeTailSuggestions }};
+@includeTailSuggestions={{ includeTailSuggestions }}
+;
 ```
 </TabItem>
 </Tabs>

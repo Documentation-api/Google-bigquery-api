@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ FROM google.baremetalsolution.ssh_keys
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -247,7 +246,8 @@ Deletes a public SSH key registered in the specified project.
 DELETE FROM google.baremetalsolution.ssh_keys
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND sshKeysId = '{{ sshKeysId }}' --required;
+AND sshKeysId = '{{ sshKeysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

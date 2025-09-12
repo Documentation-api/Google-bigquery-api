@@ -122,7 +122,8 @@ EXEC google.servicenetworking.services.disable_vpc_service_controls
 @@json=
 '{
 "consumerNetwork": "{{ consumerNetwork }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable_vpc_service_controls">
@@ -135,7 +136,8 @@ EXEC google.servicenetworking.services.enable_vpc_service_controls
 @@json=
 '{
 "consumerNetwork": "{{ consumerNetwork }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_range">
@@ -149,7 +151,8 @@ EXEC google.servicenetworking.services.search_range
 '{
 "network": "{{ network }}", 
 "ipPrefixLength": {{ ipPrefixLength }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="validate">
@@ -166,7 +169,8 @@ EXEC google.servicenetworking.services.validate
 "consumerProject": "{{ consumerProject }}", 
 "rangeReservation": "{{ rangeReservation }}", 
 "checkServiceNetworkingUsePermission": {{ checkServiceNetworkingUsePermission }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

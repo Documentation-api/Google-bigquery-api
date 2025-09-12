@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -386,7 +382,8 @@ FROM google.backupdr.data_sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND backupVaultsId = '{{ backupVaultsId }}' -- required
-AND dataSourcesId = '{{ dataSourcesId }}' -- required;
+AND dataSourcesId = '{{ dataSourcesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -415,7 +412,8 @@ AND backupVaultsId = '{{ backupVaultsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -478,7 +476,8 @@ DELETE FROM google.backupdr.data_sources
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND backupVaultsId = '{{ backupVaultsId }}' --required
-AND dataSourcesId = '{{ dataSourcesId }}' --required;
+AND dataSourcesId = '{{ dataSourcesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -510,7 +509,8 @@ EXEC google.backupdr.data_sources.set_internal_status
 '{
 "value": "{{ value }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="initiate_backup">
@@ -527,7 +527,8 @@ EXEC google.backupdr.data_sources.initiate_backup
 '{
 "requestId": "{{ requestId }}", 
 "backupId": "{{ backupId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="abandon_backup">
@@ -543,7 +544,8 @@ EXEC google.backupdr.data_sources.abandon_backup
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="finalize_backup">
@@ -565,7 +567,8 @@ EXEC google.backupdr.data_sources.finalize_backup
 "recoveryRangeStartTime": "{{ recoveryRangeStartTime }}", 
 "recoveryRangeEndTime": "{{ recoveryRangeEndTime }}", 
 "retentionDuration": "{{ retentionDuration }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="fetch_access_token">
@@ -581,7 +584,8 @@ EXEC google.backupdr.data_sources.fetch_access_token
 @@json=
 '{
 "generationId": {{ generationId }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

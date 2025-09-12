@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -309,7 +305,8 @@ restrictions,
 themeId
 FROM googleworkspace.drivev2.teamdrives
 WHERE teamDriveId = '{{ teamDriveId }}' -- required
-AND useDomainAdminAccess = '{{ useDomainAdminAccess }}';
+AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -333,7 +330,8 @@ FROM googleworkspace.drivev2.teamdrives
 WHERE maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND q = '{{ q }}'
-AND useDomainAdminAccess = '{{ useDomainAdminAccess }}';
+AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -525,7 +523,8 @@ Deprecated: Use `drives.delete` instead.
 
 ```sql
 DELETE FROM googleworkspace.drivev2.teamdrives
-WHERE teamDriveId = '{{ teamDriveId }}' --required;
+WHERE teamDriveId = '{{ teamDriveId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

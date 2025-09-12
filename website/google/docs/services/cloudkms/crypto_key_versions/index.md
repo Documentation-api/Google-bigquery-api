@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -455,7 +451,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND keyRingsId = '{{ keyRingsId }}' -- required
 AND cryptoKeysId = '{{ cryptoKeysId }}' -- required
-AND cryptoKeyVersionsId = '{{ cryptoKeyVersionsId }}' -- required;
+AND cryptoKeyVersionsId = '{{ cryptoKeyVersionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -489,7 +486,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -642,7 +640,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND keyRingsId = '{{ keyRingsId }}' --required
 AND cryptoKeysId = '{{ cryptoKeysId }}' --required
-AND cryptoKeyVersionsId = '{{ cryptoKeyVersionsId }}' --required;
+AND cryptoKeyVersionsId = '{{ cryptoKeyVersionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -681,7 +680,8 @@ EXEC google.cloudkms.crypto_key_versions.import
 "importJob": "{{ importJob }}", 
 "wrappedKey": "{{ wrappedKey }}", 
 "rsaAesWrappedKey": "{{ rsaAesWrappedKey }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -694,7 +694,8 @@ EXEC google.cloudkms.crypto_key_versions.restore
 @locationsId='{{ locationsId }}' --required, 
 @keyRingsId='{{ keyRingsId }}' --required, 
 @cryptoKeysId='{{ cryptoKeysId }}' --required, 
-@cryptoKeyVersionsId='{{ cryptoKeyVersionsId }}' --required;
+@cryptoKeyVersionsId='{{ cryptoKeyVersionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="raw_encrypt">
@@ -716,7 +717,8 @@ EXEC google.cloudkms.crypto_key_versions.raw_encrypt
 "additionalAuthenticatedDataCrc32c": "{{ additionalAuthenticatedDataCrc32c }}", 
 "initializationVector": "{{ initializationVector }}", 
 "initializationVectorCrc32c": "{{ initializationVectorCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="raw_decrypt">
@@ -739,7 +741,8 @@ EXEC google.cloudkms.crypto_key_versions.raw_decrypt
 "ciphertextCrc32c": "{{ ciphertextCrc32c }}", 
 "additionalAuthenticatedDataCrc32c": "{{ additionalAuthenticatedDataCrc32c }}", 
 "initializationVectorCrc32c": "{{ initializationVectorCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="asymmetric_sign">
@@ -759,7 +762,8 @@ EXEC google.cloudkms.crypto_key_versions.asymmetric_sign
 "digestCrc32c": "{{ digestCrc32c }}", 
 "data": "{{ data }}", 
 "dataCrc32c": "{{ dataCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="asymmetric_decrypt">
@@ -777,7 +781,8 @@ EXEC google.cloudkms.crypto_key_versions.asymmetric_decrypt
 '{
 "ciphertext": "{{ ciphertext }}", 
 "ciphertextCrc32c": "{{ ciphertextCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="mac_sign">
@@ -795,7 +800,8 @@ EXEC google.cloudkms.crypto_key_versions.mac_sign
 '{
 "data": "{{ data }}", 
 "dataCrc32c": "{{ dataCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="mac_verify">
@@ -815,7 +821,8 @@ EXEC google.cloudkms.crypto_key_versions.mac_verify
 "dataCrc32c": "{{ dataCrc32c }}", 
 "mac": "{{ mac }}", 
 "macCrc32c": "{{ macCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="decapsulate">
@@ -833,7 +840,8 @@ EXEC google.cloudkms.crypto_key_versions.decapsulate
 '{
 "ciphertext": "{{ ciphertext }}", 
 "ciphertextCrc32c": "{{ ciphertextCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_datasets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_datasets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -299,7 +295,8 @@ inputConfigs,
 lastMigrateTime
 FROM google.datalabeling.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
-AND datasetsId = '{{ datasetsId }}' -- required;
+AND datasetsId = '{{ datasetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_list">
@@ -320,7 +317,8 @@ FROM google.datalabeling.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -393,7 +391,8 @@ Deletes a dataset by resource name.
 ```sql
 DELETE FROM google.datalabeling.datasets
 WHERE projectsId = '{{ projectsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -423,7 +422,8 @@ EXEC google.datalabeling.datasets.projects_datasets_import_data
 '{
 "inputConfig": "{{ inputConfig }}", 
 "userEmailAddress": "{{ userEmailAddress }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_export_data">
@@ -440,7 +440,8 @@ EXEC google.datalabeling.datasets.projects_datasets_export_data
 "filter": "{{ filter }}", 
 "outputConfig": "{{ outputConfig }}", 
 "userEmailAddress": "{{ userEmailAddress }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_image_label">
@@ -459,7 +460,8 @@ EXEC google.datalabeling.datasets.projects_datasets_image_label
 "segmentationConfig": "{{ segmentationConfig }}", 
 "basicConfig": "{{ basicConfig }}", 
 "feature": "{{ feature }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_video_label">
@@ -478,7 +480,8 @@ EXEC google.datalabeling.datasets.projects_datasets_video_label
 "eventConfig": "{{ eventConfig }}", 
 "basicConfig": "{{ basicConfig }}", 
 "feature": "{{ feature }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_text_label">
@@ -495,7 +498,8 @@ EXEC google.datalabeling.datasets.projects_datasets_text_label
 "textEntityExtractionConfig": "{{ textEntityExtractionConfig }}", 
 "basicConfig": "{{ basicConfig }}", 
 "feature": "{{ feature }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

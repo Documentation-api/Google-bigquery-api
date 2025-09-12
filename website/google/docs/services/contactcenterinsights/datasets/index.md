@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -304,7 +300,8 @@ updateTime
 FROM google.contactcenterinsights.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND datasetsId = '{{ datasetsId }}' -- required;
+AND datasetsId = '{{ datasetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -325,7 +322,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -475,7 +473,8 @@ Delete a dataset.
 DELETE FROM google.contactcenterinsights.datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="bulk_delete_feedback_labels">
@@ -486,7 +485,8 @@ Delete feedback labels in bulk using a filter.
 DELETE FROM google.contactcenterinsights.datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -516,7 +516,8 @@ EXEC google.contactcenterinsights.datasets.bulk_upload_feedback_labels
 "gcsSource": "{{ gcsSource }}", 
 "sheetsSource": "{{ sheetsSource }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_download_feedback_labels">
@@ -538,7 +539,8 @@ EXEC google.contactcenterinsights.datasets.bulk_download_feedback_labels
 "feedbackLabelType": "{{ feedbackLabelType }}", 
 "conversationFilter": "{{ conversationFilter }}", 
 "templateQaScorecardId": "{{ templateQaScorecardId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -558,7 +560,8 @@ EXEC google.contactcenterinsights.datasets.export
 "kmsKey": "{{ kmsKey }}", 
 "writeDisposition": "{{ writeDisposition }}", 
 "exportSchemaVersion": "{{ exportSchemaVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

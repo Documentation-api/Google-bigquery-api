@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_default_bucket">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -154,7 +152,8 @@ bucket,
 location,
 storageClass
 FROM firebase.storage.default_bucket
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -236,7 +235,8 @@ Unlinks and deletes the default bucket.
 
 ```sql
 DELETE FROM firebase.storage.default_bucket
-WHERE projectsId = '{{ projectsId }}' --required;
+WHERE projectsId = '{{ projectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

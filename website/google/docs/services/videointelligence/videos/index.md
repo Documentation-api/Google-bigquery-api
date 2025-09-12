@@ -97,7 +97,8 @@ EXEC google.videointelligence.videos.videos_annotate
 "videoContext": "{{ videoContext }}", 
 "outputUri": "{{ outputUri }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

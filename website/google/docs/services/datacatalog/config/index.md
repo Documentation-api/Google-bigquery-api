@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_locations_retrieve_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 config
 FROM google.datacatalog.config
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

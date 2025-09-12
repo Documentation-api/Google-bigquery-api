@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -386,7 +382,8 @@ windowStartTime
 FROM google.sqladmin.backup_runs
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
-AND id = '{{ id }}' -- required;
+AND id = '{{ id }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -418,7 +415,8 @@ FROM google.sqladmin.backup_runs
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -623,7 +621,8 @@ Deletes the backup taken by a backup run.
 DELETE FROM google.sqladmin.backup_runs
 WHERE project = '{{ project }}' --required
 AND instance = '{{ instance }}' --required
-AND id = '{{ id }}' --required;
+AND id = '{{ id }}' --required
+;
 ```
 </TabItem>
 </Tabs>

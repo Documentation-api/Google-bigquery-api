@@ -100,7 +100,8 @@ Validates that a given CEL expression conforms to IAP restrictions.
 ```sql
 EXEC google.iap.iap.validate_attribute_expression 
 @v1Id='{{ v1Id }}' --required, 
-@expression='{{ expression }}';
+@expression='{{ expression }}'
+;
 ```
 </TabItem>
 </Tabs>

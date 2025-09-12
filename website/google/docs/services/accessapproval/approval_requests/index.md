@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_approval_requests_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -114,8 +112,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_approval_requests_get">
-
-Successful response
 
 <table>
 <thead>
@@ -186,8 +182,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_approval_requests_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -256,8 +250,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_approval_requests_list">
-
-Successful response
 
 <table>
 <thead>
@@ -328,8 +320,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_approval_requests_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -398,8 +388,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_approval_requests_list">
-
-Successful response
 
 <table>
 <thead>
@@ -676,7 +664,8 @@ requestedResourceName,
 requestedResourceProperties
 FROM google.accessapproval.approval_requests
 WHERE projectsId = '{{ projectsId }}' -- required
-AND approvalRequestsId = '{{ approvalRequestsId }}' -- required;
+AND approvalRequestsId = '{{ approvalRequestsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_approval_requests_get">
@@ -698,7 +687,8 @@ requestedResourceName,
 requestedResourceProperties
 FROM google.accessapproval.approval_requests
 WHERE foldersId = '{{ foldersId }}' -- required
-AND approvalRequestsId = '{{ approvalRequestsId }}' -- required;
+AND approvalRequestsId = '{{ approvalRequestsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_approval_requests_get">
@@ -720,7 +710,8 @@ requestedResourceName,
 requestedResourceProperties
 FROM google.accessapproval.approval_requests
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND approvalRequestsId = '{{ approvalRequestsId }}' -- required;
+AND approvalRequestsId = '{{ approvalRequestsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_approval_requests_list">
@@ -744,7 +735,8 @@ FROM google.accessapproval.approval_requests
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_approval_requests_list">
@@ -768,7 +760,8 @@ FROM google.accessapproval.approval_requests
 WHERE foldersId = '{{ foldersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_approval_requests_list">
@@ -792,7 +785,8 @@ FROM google.accessapproval.approval_requests
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -825,7 +819,8 @@ EXEC google.accessapproval.approval_requests.projects_approval_requests_approve
 @@json=
 '{
 "expireTime": "{{ expireTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_approval_requests_dismiss">
@@ -835,7 +830,8 @@ Dismisses a request. Returns the updated ApprovalRequest. NOTE: This does not de
 ```sql
 EXEC google.accessapproval.approval_requests.projects_approval_requests_dismiss 
 @projectsId='{{ projectsId }}' --required, 
-@approvalRequestsId='{{ approvalRequestsId }}' --required;
+@approvalRequestsId='{{ approvalRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_approval_requests_invalidate">
@@ -845,7 +841,8 @@ Invalidates an existing ApprovalRequest. Returns the updated ApprovalRequest. NO
 ```sql
 EXEC google.accessapproval.approval_requests.projects_approval_requests_invalidate 
 @projectsId='{{ projectsId }}' --required, 
-@approvalRequestsId='{{ approvalRequestsId }}' --required;
+@approvalRequestsId='{{ approvalRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_approval_requests_approve">
@@ -859,7 +856,8 @@ EXEC google.accessapproval.approval_requests.folders_approval_requests_approve
 @@json=
 '{
 "expireTime": "{{ expireTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_approval_requests_dismiss">
@@ -869,7 +867,8 @@ Dismisses a request. Returns the updated ApprovalRequest. NOTE: This does not de
 ```sql
 EXEC google.accessapproval.approval_requests.folders_approval_requests_dismiss 
 @foldersId='{{ foldersId }}' --required, 
-@approvalRequestsId='{{ approvalRequestsId }}' --required;
+@approvalRequestsId='{{ approvalRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_approval_requests_invalidate">
@@ -879,7 +878,8 @@ Invalidates an existing ApprovalRequest. Returns the updated ApprovalRequest. NO
 ```sql
 EXEC google.accessapproval.approval_requests.folders_approval_requests_invalidate 
 @foldersId='{{ foldersId }}' --required, 
-@approvalRequestsId='{{ approvalRequestsId }}' --required;
+@approvalRequestsId='{{ approvalRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_approval_requests_approve">
@@ -893,7 +893,8 @@ EXEC google.accessapproval.approval_requests.organizations_approval_requests_app
 @@json=
 '{
 "expireTime": "{{ expireTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_approval_requests_dismiss">
@@ -903,7 +904,8 @@ Dismisses a request. Returns the updated ApprovalRequest. NOTE: This does not de
 ```sql
 EXEC google.accessapproval.approval_requests.organizations_approval_requests_dismiss 
 @organizationsId='{{ organizationsId }}' --required, 
-@approvalRequestsId='{{ approvalRequestsId }}' --required;
+@approvalRequestsId='{{ approvalRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_approval_requests_invalidate">
@@ -913,7 +915,8 @@ Invalidates an existing ApprovalRequest. Returns the updated ApprovalRequest. NO
 ```sql
 EXEC google.accessapproval.approval_requests.organizations_approval_requests_invalidate 
 @organizationsId='{{ organizationsId }}' --required, 
-@approvalRequestsId='{{ approvalRequestsId }}' --required;
+@approvalRequestsId='{{ approvalRequestsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

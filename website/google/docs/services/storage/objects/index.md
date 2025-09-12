@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -245,8 +243,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -851,7 +847,8 @@ AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
 AND projection = '{{ projection }}'
 AND userProject = '{{ userProject }}'
 AND softDeleted = '{{ softDeleted }}'
-AND restoreToken = '{{ restoreToken }}';
+AND restoreToken = '{{ restoreToken }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -913,7 +910,8 @@ AND versions = '{{ versions }}'
 AND matchGlob = '{{ matchGlob }}'
 AND filter = '{{ filter }}'
 AND softDeleted = '{{ softDeleted }}'
-AND includeFoldersAsPrefixes = '{{ includeFoldersAsPrefixes }}';
+AND includeFoldersAsPrefixes = '{{ includeFoldersAsPrefixes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1540,7 +1538,8 @@ AND ifGenerationMatch = '{{ ifGenerationMatch }}'
 AND ifGenerationNotMatch = '{{ ifGenerationNotMatch }}'
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
 AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1578,7 +1577,8 @@ EXEC google.storage.objects.compose
 "destination": "{{ destination }}", 
 "kind": "{{ kind }}", 
 "sourceObjects": "{{ sourceObjects }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="copy">
@@ -1644,7 +1644,8 @@ EXEC google.storage.objects.copy
 "hardDeleteTime": "{{ hardDeleteTime }}", 
 "timeStorageClassUpdated": "{{ timeStorageClassUpdated }}", 
 "updated": "{{ updated }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rewrite">
@@ -1712,7 +1713,8 @@ EXEC google.storage.objects.rewrite
 "hardDeleteTime": "{{ hardDeleteTime }}", 
 "timeStorageClassUpdated": "{{ timeStorageClassUpdated }}", 
 "updated": "{{ updated }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="move">
@@ -1733,7 +1735,8 @@ EXEC google.storage.objects.move
 @ifMetagenerationMatch='{{ ifMetagenerationMatch }}', 
 @ifMetagenerationNotMatch='{{ ifMetagenerationNotMatch }}', 
 @projection='{{ projection }}', 
-@userProject='{{ userProject }}';
+@userProject='{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="watch_all">
@@ -1765,7 +1768,8 @@ EXEC google.storage.objects.watch_all
 "resourceUri": "{{ resourceUri }}", 
 "token": "{{ token }}", 
 "type": "{{ type }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -1784,7 +1788,8 @@ EXEC google.storage.objects.restore
 @copySourceAcl={{ copySourceAcl }}, 
 @projection='{{ projection }}', 
 @userProject='{{ userProject }}', 
-@restoreToken='{{ restoreToken }}';
+@restoreToken='{{ restoreToken }}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_restore">
@@ -1803,7 +1808,8 @@ EXEC google.storage.objects.bulk_restore
 "copySourceAcl": {{ copySourceAcl }}, 
 "createdAfterTime": "{{ createdAfterTime }}", 
 "createdBeforeTime": "{{ createdBeforeTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

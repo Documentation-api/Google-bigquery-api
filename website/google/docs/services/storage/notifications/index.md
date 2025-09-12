@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -231,7 +227,8 @@ topic
 FROM google.storage.notifications
 WHERE bucket = '{{ bucket }}' -- required
 AND notification = '{{ notification }}' -- required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -244,7 +241,8 @@ items,
 kind
 FROM google.storage.notifications
 WHERE bucket = '{{ bucket }}' -- required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -381,7 +379,8 @@ Permanently deletes a notification subscription.
 DELETE FROM google.storage.notifications
 WHERE bucket = '{{ bucket }}' --required
 AND notification = '{{ notification }}' --required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

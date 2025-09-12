@@ -238,7 +238,8 @@ EXEC google.discoveryengine.user_events.projects_locations_collections_data_stor
 "attributes": "{{ attributes }}", 
 "mediaInfo": "{{ mediaInfo }}", 
 "panels": "{{ panels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_user_events_collect">
@@ -253,7 +254,8 @@ EXEC google.discoveryengine.user_events.projects_locations_collections_data_stor
 @dataStoresId='{{ dataStoresId }}' --required, 
 @userEvent='{{ userEvent }}', 
 @uri='{{ uri }}', 
-@ets='{{ ets }}';
+@ets='{{ ets }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_user_events_purge">
@@ -270,7 +272,8 @@ EXEC google.discoveryengine.user_events.projects_locations_collections_data_stor
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_user_events_import">
@@ -289,7 +292,8 @@ EXEC google.discoveryengine.user_events.projects_locations_collections_data_stor
 "gcsSource": "{{ gcsSource }}", 
 "bigquerySource": "{{ bigquerySource }}", 
 "errorConfig": "{{ errorConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_user_events_write">
@@ -326,7 +330,8 @@ EXEC google.discoveryengine.user_events.projects_locations_data_stores_user_even
 "attributes": "{{ attributes }}", 
 "mediaInfo": "{{ mediaInfo }}", 
 "panels": "{{ panels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_user_events_collect">
@@ -340,7 +345,8 @@ EXEC google.discoveryengine.user_events.projects_locations_data_stores_user_even
 @dataStoresId='{{ dataStoresId }}' --required, 
 @userEvent='{{ userEvent }}', 
 @uri='{{ uri }}', 
-@ets='{{ ets }}';
+@ets='{{ ets }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_user_events_purge">
@@ -356,7 +362,8 @@ EXEC google.discoveryengine.user_events.projects_locations_data_stores_user_even
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_user_events_import">
@@ -374,7 +381,8 @@ EXEC google.discoveryengine.user_events.projects_locations_data_stores_user_even
 "gcsSource": "{{ gcsSource }}", 
 "bigquerySource": "{{ bigquerySource }}", 
 "errorConfig": "{{ errorConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_user_events_write">
@@ -410,7 +418,8 @@ EXEC google.discoveryengine.user_events.projects_locations_user_events_write
 "attributes": "{{ attributes }}", 
 "mediaInfo": "{{ mediaInfo }}", 
 "panels": "{{ panels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_user_events_collect">
@@ -423,7 +432,8 @@ EXEC google.discoveryengine.user_events.projects_locations_user_events_collect
 @locationsId='{{ locationsId }}' --required, 
 @userEvent='{{ userEvent }}', 
 @uri='{{ uri }}', 
-@ets='{{ ets }}';
+@ets='{{ ets }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_user_events_import">
@@ -440,7 +450,8 @@ EXEC google.discoveryengine.user_events.projects_locations_user_events_import
 "gcsSource": "{{ gcsSource }}", 
 "bigquerySource": "{{ bigquerySource }}", 
 "errorConfig": "{{ errorConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

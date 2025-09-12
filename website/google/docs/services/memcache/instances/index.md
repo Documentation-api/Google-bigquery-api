@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -456,7 +452,8 @@ zones
 FROM google.memcache.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -492,7 +489,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -693,7 +691,8 @@ Deletes a single Instance.
 DELETE FROM google.memcache.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -722,7 +721,8 @@ EXEC google.memcache.instances.apply_parameters
 '{
 "nodeIds": "{{ nodeIds }}", 
 "applyAll": {{ applyAll }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reschedule_maintenance">
@@ -738,7 +738,8 @@ EXEC google.memcache.instances.reschedule_maintenance
 '{
 "rescheduleType": "{{ rescheduleType }}", 
 "scheduleTime": "{{ scheduleTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upgrade">
@@ -753,7 +754,8 @@ EXEC google.memcache.instances.upgrade
 @@json=
 '{
 "memcacheVersion": "{{ memcacheVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

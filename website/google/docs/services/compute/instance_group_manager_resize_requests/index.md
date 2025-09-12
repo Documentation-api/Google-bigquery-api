@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -59,7 +57,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>The name of this resize request. The name must be 1-63 characters long, and comply with RFC1035. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>The name of this resize request. The name must be 1-63 characters long, and comply with RFC1035. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="creationTimestamp" /></td>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -312,7 +308,8 @@ FROM google.compute.instance_group_manager_resize_requests
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
 AND instanceGroupManager = '{{ instanceGroupManager }}' -- required
-AND resizeRequest = '{{ resizeRequest }}' -- required;
+AND resizeRequest = '{{ resizeRequest }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -335,7 +332,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -522,7 +520,8 @@ WHERE project = '{{ project }}' --required
 AND zone = '{{ zone }}' --required
 AND instanceGroupManager = '{{ instanceGroupManager }}' --required
 AND resizeRequest = '{{ resizeRequest }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -546,7 +545,8 @@ EXEC google.compute.instance_group_manager_resize_requests.cancel
 @zone='{{ zone }}' --required, 
 @instanceGroupManager='{{ instanceGroupManager }}' --required, 
 @resizeRequest='{{ resizeRequest }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

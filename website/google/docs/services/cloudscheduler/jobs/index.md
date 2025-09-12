@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -375,7 +371,8 @@ userUpdateTime
 FROM google.cloudscheduler.jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND jobsId = '{{ jobsId }}' -- required;
+AND jobsId = '{{ jobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -403,7 +400,8 @@ FROM google.cloudscheduler.jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -595,7 +593,8 @@ Deletes a job.
 DELETE FROM google.cloudscheduler.jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND jobsId = '{{ jobsId }}' --required;
+AND jobsId = '{{ jobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -619,7 +618,8 @@ Pauses a job. If a job is paused then the system will stop executing the job unt
 EXEC google.cloudscheduler.jobs.pause 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@jobsId='{{ jobsId }}' --required;
+@jobsId='{{ jobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -630,7 +630,8 @@ Resume a job. This method reenables a job after it has been Job.State.PAUSED. Th
 EXEC google.cloudscheduler.jobs.resume 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@jobsId='{{ jobsId }}' --required;
+@jobsId='{{ jobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="run">
@@ -641,7 +642,8 @@ Forces a job to run now. When this method is called, Cloud Scheduler will dispat
 EXEC google.cloudscheduler.jobs.run 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@jobsId='{{ jobsId }}' --required;
+@jobsId='{{ jobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

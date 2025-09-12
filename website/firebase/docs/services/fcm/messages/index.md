@@ -99,7 +99,8 @@ EXEC firebase.fcm.messages.send
 '{
 "validateOnly": {{ validateOnly }}, 
 "message": "{{ message }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

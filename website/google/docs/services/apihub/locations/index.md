@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -243,7 +239,8 @@ locationId,
 metadata
 FROM google.apihub.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -262,7 +259,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -292,7 +290,8 @@ EXEC google.apihub.locations.search_resources
 "filter": "{{ filter }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="collect_api_data">
@@ -309,7 +308,8 @@ EXEC google.apihub.locations.collect_api_data
 "pluginInstance": "{{ pluginInstance }}", 
 "actionId": "{{ actionId }}", 
 "apiData": "{{ apiData }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="lookup_runtime_project_attachment">
@@ -319,7 +319,8 @@ Look up a runtime project attachment. This API can be called in the context of a
 ```sql
 EXEC google.apihub.locations.lookup_runtime_project_attachment 
 @projectsId='{{ projectsId }}' --required, 
-@locationsId='{{ locationsId }}' --required;
+@locationsId='{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

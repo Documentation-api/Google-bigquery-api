@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -411,7 +407,8 @@ FROM google.assuredworkloads.violations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workloadsId = '{{ workloadsId }}' -- required
-AND violationsId = '{{ violationsId }}' -- required;
+AND violationsId = '{{ violationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -448,7 +445,8 @@ AND interval.startTime = '{{ interval.startTime }}'
 AND interval.endTime = '{{ interval.endTime }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -477,7 +475,8 @@ EXEC google.assuredworkloads.violations.acknowledge
 "comment": "{{ comment }}", 
 "nonCompliantOrgPolicy": "{{ nonCompliantOrgPolicy }}", 
 "acknowledgeType": "{{ acknowledgeType }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

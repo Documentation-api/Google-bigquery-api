@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_legacy_secret_key">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 legacySecretKey
 FROM google.recaptchaenterprise.keys_legacy_secret_key
 WHERE projectsId = '{{ projectsId }}' -- required
-AND keysId = '{{ keysId }}' -- required;
+AND keysId = '{{ keysId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

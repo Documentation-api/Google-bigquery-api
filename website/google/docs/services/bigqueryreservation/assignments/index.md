@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -213,7 +211,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND reservationsId = '{{ reservationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -349,7 +348,8 @@ DELETE FROM google.bigqueryreservation.assignments
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND reservationsId = '{{ reservationsId }}' --required
-AND assignmentsId = '{{ assignmentsId }}' --required;
+AND assignmentsId = '{{ assignmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -377,7 +377,8 @@ EXEC google.bigqueryreservation.assignments.move
 '{
 "destinationId": "{{ destinationId }}", 
 "assignmentId": "{{ assignmentId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_lakes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_lakes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -341,7 +337,8 @@ updateTime
 FROM google.dataplex.lakes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND lakesId = '{{ lakesId }}' -- required;
+AND lakesId = '{{ lakesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_lakes_list">
@@ -368,7 +365,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -509,7 +507,8 @@ Deletes a lake resource. All zones within the lake must be deleted before the la
 DELETE FROM google.dataplex.lakes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND lakesId = '{{ lakesId }}' --required;
+AND lakesId = '{{ lakesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

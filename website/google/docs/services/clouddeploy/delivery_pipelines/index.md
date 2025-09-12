@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -357,7 +353,8 @@ updateTime
 FROM google.clouddeploy.delivery_pipelines
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND deliveryPipelinesId = '{{ deliveryPipelinesId }}' -- required;
+AND deliveryPipelinesId = '{{ deliveryPipelinesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -383,7 +380,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -559,7 +557,8 @@ AND requestId = '{{ requestId }}'
 AND allowMissing = '{{ allowMissing }}'
 AND validateOnly = '{{ validateOnly }}'
 AND force = '{{ force }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -591,7 +590,8 @@ EXEC google.clouddeploy.delivery_pipelines.rollback_target
 "rollbackConfig": "{{ rollbackConfig }}", 
 "validateOnly": {{ validateOnly }}, 
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

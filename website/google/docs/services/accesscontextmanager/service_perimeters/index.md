@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -285,7 +281,8 @@ title,
 useExplicitDryRunSpec
 FROM google.accesscontextmanager.service_perimeters
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
-AND servicePerimetersId = '{{ servicePerimetersId }}' -- required;
+AND servicePerimetersId = '{{ servicePerimetersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -305,7 +302,8 @@ useExplicitDryRunSpec
 FROM google.accesscontextmanager.service_perimeters
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -493,7 +491,8 @@ Deletes a service perimeter based on the resource name. The long-running operati
 ```sql
 DELETE FROM google.accesscontextmanager.service_perimeters
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' --required
-AND servicePerimetersId = '{{ servicePerimetersId }}' --required;
+AND servicePerimetersId = '{{ servicePerimetersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -517,7 +516,8 @@ EXEC google.accesscontextmanager.service_perimeters.commit
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

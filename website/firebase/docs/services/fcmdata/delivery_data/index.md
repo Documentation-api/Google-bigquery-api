@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ FROM firebase.fcmdata.delivery_data
 WHERE projectsId = '{{ projectsId }}' -- required
 AND androidAppsId = '{{ androidAppsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

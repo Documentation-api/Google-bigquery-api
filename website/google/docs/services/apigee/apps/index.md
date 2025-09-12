@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_apps_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_appgroups_apps_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +196,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apps_get">
-
-Successful response
 
 <table>
 <thead>
@@ -292,8 +286,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_developers_apps_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -312,8 +304,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_appgroups_apps_list">
-
-Successful response
 
 <table>
 <thead>
@@ -388,8 +378,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apps_list">
-
-Successful response
 
 <table>
 <thead>
@@ -754,7 +742,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
 AND appsId = '{{ appsId }}' -- required
 AND query = '{{ query }}'
-AND entity = '{{ entity }}';
+AND entity = '{{ entity }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_get">
@@ -778,7 +767,8 @@ status
 FROM google.apigee.apps
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND appgroupsId = '{{ appgroupsId }}' -- required
-AND appsId = '{{ appsId }}' -- required;
+AND appsId = '{{ appsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apps_get">
@@ -804,7 +794,8 @@ scopes,
 status
 FROM google.apigee.apps
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND appsId = '{{ appsId }}' -- required;
+AND appsId = '{{ appsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_list">
@@ -820,7 +811,8 @@ AND developersId = '{{ developersId }}' -- required
 AND expand = '{{ expand }}'
 AND count = '{{ count }}'
 AND startKey = '{{ startKey }}'
-AND shallowExpand = '{{ shallowExpand }}';
+AND shallowExpand = '{{ shallowExpand }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_list">
@@ -845,7 +837,8 @@ FROM google.apigee.apps
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND appgroupsId = '{{ appgroupsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_apps_list">
@@ -882,7 +875,8 @@ AND keyStatus = '{{ keyStatus }}'
 AND apiProduct = '{{ apiProduct }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1170,7 +1164,8 @@ Deletes a developer app. **Note**: The delete operation is asynchronous. The dev
 DELETE FROM google.apigee.apps
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND developersId = '{{ developersId }}' --required
-AND appsId = '{{ appsId }}' --required;
+AND appsId = '{{ appsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_delete">
@@ -1181,7 +1176,8 @@ Deletes an AppGroup app. **Note**: The delete operation is asynchronous. The App
 DELETE FROM google.apigee.apps
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND appgroupsId = '{{ appgroupsId }}' --required
-AND appsId = '{{ appsId }}' --required;
+AND appsId = '{{ appsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1218,7 +1214,8 @@ EXEC google.apigee.apps.organizations_developers_apps_generate_key_pair_or_updat
 "keyExpiresIn": "{{ keyExpiresIn }}", 
 "appFamily": "{{ appFamily }}", 
 "apiProducts": "{{ apiProducts }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_apps_attributes">
@@ -1233,7 +1230,8 @@ EXEC google.apigee.apps.organizations_developers_apps_attributes
 @@json=
 '{
 "attribute": "{{ attribute }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

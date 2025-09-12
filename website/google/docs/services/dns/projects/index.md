@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ number,
 quota
 FROM google.dns.projects
 WHERE project = '{{ project }}' -- required
-AND clientOperationId = '{{ clientOperationId }}';
+AND clientOperationId = '{{ clientOperationId }}'
+;
 ```
 </TabItem>
 </Tabs>

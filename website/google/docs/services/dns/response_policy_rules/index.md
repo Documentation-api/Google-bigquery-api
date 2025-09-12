@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -252,7 +248,8 @@ FROM google.dns.response_policy_rules
 WHERE project = '{{ project }}' -- required
 AND responsePolicy = '{{ responsePolicy }}' -- required
 AND responsePolicyRule = '{{ responsePolicyRule }}' -- required
-AND clientOperationId = '{{ clientOperationId }}';
+AND clientOperationId = '{{ clientOperationId }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -270,7 +267,8 @@ FROM google.dns.response_policy_rules
 WHERE project = '{{ project }}' -- required
 AND responsePolicy = '{{ responsePolicy }}' -- required
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -442,7 +440,8 @@ DELETE FROM google.dns.response_policy_rules
 WHERE project = '{{ project }}' --required
 AND responsePolicy = '{{ responsePolicy }}' --required
 AND responsePolicyRule = '{{ responsePolicyRule }}' --required
-AND clientOperationId = '{{ clientOperationId }}';
+AND clientOperationId = '{{ clientOperationId }}'
+;
 ```
 </TabItem>
 </Tabs>

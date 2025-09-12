@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -316,7 +312,8 @@ sha256Hashes,
 state
 FROM firebase.firebase.android_apps
 WHERE projectsId = '{{ projectsId }}' -- required
-AND androidAppsId = '{{ androidAppsId }}' -- required;
+AND androidAppsId = '{{ androidAppsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -340,7 +337,8 @@ FROM firebase.firebase.android_apps
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -495,7 +493,8 @@ Removes the specified AndroidApp from the FirebaseProject.
 ```sql
 DELETE FROM firebase.firebase.android_apps
 WHERE projectsId = '{{ projectsId }}' --required
-AND androidAppsId = '{{ androidAppsId }}' --required;
+AND androidAppsId = '{{ androidAppsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -521,7 +520,8 @@ EXEC firebase.firebase.android_apps.undelete
 '{
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

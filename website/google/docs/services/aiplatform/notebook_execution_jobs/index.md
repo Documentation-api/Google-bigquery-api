@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -418,7 +414,8 @@ FROM google.aiplatform.notebook_execution_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND notebookExecutionJobsId = '{{ notebookExecutionJobsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -454,7 +451,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -632,7 +630,8 @@ Deletes a NotebookExecutionJob.
 DELETE FROM google.aiplatform.notebook_execution_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND notebookExecutionJobsId = '{{ notebookExecutionJobsId }}' --required;
+AND notebookExecutionJobsId = '{{ notebookExecutionJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

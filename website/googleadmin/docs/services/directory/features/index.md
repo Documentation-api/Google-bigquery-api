@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -230,7 +226,8 @@ etags,
 kind
 FROM googleadmin.directory.features
 WHERE customer = '{{ customer }}' -- required
-AND featureKey = '{{ featureKey }}' -- required;
+AND featureKey = '{{ featureKey }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -245,7 +242,8 @@ kind
 FROM googleadmin.directory.features
 WHERE customer = '{{ customer }}' -- required
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -388,7 +386,8 @@ Deletes a feature.
 ```sql
 DELETE FROM googleadmin.directory.features
 WHERE customer = '{{ customer }}' --required
-AND featureKey = '{{ featureKey }}' --required;
+AND featureKey = '{{ featureKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -413,7 +412,8 @@ EXEC googleadmin.directory.features.rename
 @@json=
 '{
 "newName": "{{ newName }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

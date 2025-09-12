@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -360,7 +356,8 @@ resourceType,
 userVisibleDescription
 FROM googleadmin.directory.calendars
 WHERE customer = '{{ customer }}' -- required
-AND calendarResourceId = '{{ calendarResourceId }}' -- required;
+AND calendarResourceId = '{{ calendarResourceId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -389,7 +386,8 @@ WHERE customer = '{{ customer }}' -- required
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND query = '{{ query }}';
+AND query = '{{ query }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -676,7 +674,8 @@ Deletes a calendar resource.
 ```sql
 DELETE FROM googleadmin.directory.calendars
 WHERE customer = '{{ customer }}' --required
-AND calendarResourceId = '{{ calendarResourceId }}' --required;
+AND calendarResourceId = '{{ calendarResourceId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_contents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ mimeType
 FROM google.apihub.style_guide_contents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND pluginsId = '{{ pluginsId }}' -- required;
+AND pluginsId = '{{ pluginsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

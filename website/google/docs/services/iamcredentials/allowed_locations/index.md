@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_allowed_locations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ encodedLocations,
 locations
 FROM google.iamcredentials.allowed_locations
 WHERE locationsId = '{{ locationsId }}' -- required
-AND workforcePoolsId = '{{ workforcePoolsId }}' -- required;
+AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

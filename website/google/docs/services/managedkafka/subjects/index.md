@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -182,7 +180,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
 AND subjectPrefix = '{{ subjectPrefix }}'
-AND deleted = '{{ deleted }}';
+AND deleted = '{{ deleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -206,7 +205,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND schemaRegistriesId = '{{ schemaRegistriesId }}' --required
 AND subjectsId = '{{ subjectsId }}' --required
-AND permanent = '{{ permanent }}';
+AND permanent = '{{ permanent }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -237,7 +237,8 @@ EXEC google.managedkafka.subjects.lookup_version
 "references": "{{ references }}", 
 "normalize": {{ normalize }}, 
 "deleted": {{ deleted }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

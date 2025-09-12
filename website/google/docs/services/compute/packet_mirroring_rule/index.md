@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_packet_mirroring_rule">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -254,7 +252,8 @@ tlsInspect
 FROM google.compute.packet_mirroring_rule
 WHERE project = '{{ project }}' -- required
 AND firewallPolicy = '{{ firewallPolicy }}' -- required
-AND priority = '{{ priority }}';
+AND priority = '{{ priority }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -531,7 +530,8 @@ DELETE FROM google.compute.packet_mirroring_rule
 WHERE project = '{{ project }}' --required
 AND firewallPolicy = '{{ firewallPolicy }}' --required
 AND priority = '{{ priority }}'
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

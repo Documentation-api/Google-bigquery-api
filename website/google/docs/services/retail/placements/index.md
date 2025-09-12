@@ -150,7 +150,8 @@ EXEC google.retail.placements.projects_locations_catalogs_placements_search
 "regionCode": "{{ regionCode }}", 
 "placeId": "{{ placeId }}", 
 "userAttributes": "{{ userAttributes }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_placements_predict">
@@ -172,7 +173,8 @@ EXEC google.retail.placements.projects_locations_catalogs_placements_predict
 "validateOnly": {{ validateOnly }}, 
 "params": "{{ params }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

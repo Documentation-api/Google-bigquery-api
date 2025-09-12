@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_key_string">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ keyString
 FROM google.apikeys.key_strings
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND keysId = '{{ keysId }}' -- required;
+AND keysId = '{{ keysId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

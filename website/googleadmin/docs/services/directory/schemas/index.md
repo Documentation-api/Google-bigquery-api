@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -226,7 +222,8 @@ schemaId,
 schemaName
 FROM googleadmin.directory.schemas
 WHERE customerId = '{{ customerId }}' -- required
-AND schemaKey = '{{ schemaKey }}' -- required;
+AND schemaKey = '{{ schemaKey }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -239,7 +236,8 @@ etag,
 kind,
 schemas
 FROM googleadmin.directory.schemas
-WHERE customerId = '{{ customerId }}' -- required;
+WHERE customerId = '{{ customerId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -418,7 +416,8 @@ Deletes a schema.
 ```sql
 DELETE FROM googleadmin.directory.schemas
 WHERE customerId = '{{ customerId }}' --required
-AND schemaKey = '{{ schemaKey }}' --required;
+AND schemaKey = '{{ schemaKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

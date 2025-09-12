@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_ca_certs">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ caCerts
 FROM google.privateca.ca_pools_ca_certs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND caPoolsId = '{{ caPoolsId }}' -- required;
+AND caPoolsId = '{{ caPoolsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

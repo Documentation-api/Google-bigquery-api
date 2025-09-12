@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_project_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -194,7 +192,8 @@ useEmailSending,
 verifyEmailTemplate
 FROM google.identitytoolkit.relyingparty_project_config
 WHERE delegatedProjectNumber = '{{ delegatedProjectNumber }}'
-AND projectNumber = '{{ projectNumber }}';
+AND projectNumber = '{{ projectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>

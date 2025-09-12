@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -344,7 +340,8 @@ updateTime
 FROM google.apikeys.keys
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND keysId = '{{ keysId }}' -- required;
+AND keysId = '{{ keysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -369,7 +366,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -506,7 +504,8 @@ DELETE FROM google.apikeys.keys
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND keysId = '{{ keysId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -527,7 +526,8 @@ Find the parent project and resource name of the API key that matches the key st
 
 ```sql
 EXEC google.apikeys.keys.lookup_key 
-@keyString='{{ keyString }}';
+@keyString='{{ keyString }}'
+;
 ```
 </TabItem>
 <TabItem value="undelete">
@@ -538,7 +538,8 @@ Undeletes an API key which was deleted within 30 days. NOTE: Key is a global res
 EXEC google.apikeys.keys.undelete 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@keysId='{{ keysId }}' --required;
+@keysId='{{ keysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

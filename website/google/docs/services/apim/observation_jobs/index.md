@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -256,7 +252,8 @@ updateTime
 FROM google.apim.observation_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND observationJobsId = '{{ observationJobsId }}' -- required;
+AND observationJobsId = '{{ observationJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -274,7 +271,8 @@ FROM google.apim.observation_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -365,7 +363,8 @@ DeleteObservationJob deletes an ObservationJob. This method will fail if the obs
 DELETE FROM google.apim.observation_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND observationJobsId = '{{ observationJobsId }}' --required;
+AND observationJobsId = '{{ observationJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -388,7 +387,8 @@ Enables the given ObservationJob.
 EXEC google.apim.observation_jobs.enable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@observationJobsId='{{ observationJobsId }}' --required;
+@observationJobsId='{{ observationJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -399,7 +399,8 @@ Disables the given ObservationJob.
 EXEC google.apim.observation_jobs.disable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@observationJobsId='{{ observationJobsId }}' --required;
+@observationJobsId='{{ observationJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

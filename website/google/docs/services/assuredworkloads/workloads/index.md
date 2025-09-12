@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -502,7 +498,8 @@ workloadOptions
 FROM google.assuredworkloads.workloads
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND workloadsId = '{{ workloadsId }}' -- required;
+AND workloadsId = '{{ workloadsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -539,7 +536,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -784,7 +782,8 @@ DELETE FROM google.assuredworkloads.workloads
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND workloadsId = '{{ workloadsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -814,7 +813,8 @@ EXEC google.assuredworkloads.workloads.restrict_allowed_resources
 @@json=
 '{
 "restrictionType": "{{ restrictionType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="analyze_workload_move">
@@ -829,7 +829,8 @@ EXEC google.assuredworkloads.workloads.analyze_workload_move
 @project='{{ project }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@assetTypes='{{ assetTypes }}';
+@assetTypes='{{ assetTypes }}'
+;
 ```
 </TabItem>
 <TabItem value="mutate_partner_permissions">
@@ -846,7 +847,8 @@ EXEC google.assuredworkloads.workloads.mutate_partner_permissions
 "partnerPermissions": "{{ partnerPermissions }}", 
 "updateMask": "{{ updateMask }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable_resource_monitoring">
@@ -857,7 +859,8 @@ Enable resource violation monitoring for a workload.
 EXEC google.assuredworkloads.workloads.enable_resource_monitoring 
 @organizationsId='{{ organizationsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@workloadsId='{{ workloadsId }}' --required;
+@workloadsId='{{ workloadsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="enable_compliance_updates">
@@ -868,7 +871,8 @@ This endpoint enables Assured Workloads service to offer compliance updates for 
 EXEC google.assuredworkloads.workloads.enable_compliance_updates 
 @organizationsId='{{ organizationsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@workloadsId='{{ workloadsId }}' --required;
+@workloadsId='{{ workloadsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -331,7 +327,8 @@ labels,
 parent,
 updateTime
 FROM google.cloudidentity.groups
-WHERE groupsId = '{{ groupsId }}' -- required;
+WHERE groupsId = '{{ groupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -354,7 +351,8 @@ FROM google.cloudidentity.groups
 WHERE parent = '{{ parent }}'
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -492,7 +490,8 @@ Deletes a `Group`.
 
 ```sql
 DELETE FROM google.cloudidentity.groups
-WHERE groupsId = '{{ groupsId }}' --required;
+WHERE groupsId = '{{ groupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -514,7 +513,8 @@ Looks up the [resource name](https://cloud.google.com/apis/design/resource_names
 ```sql
 EXEC google.cloudidentity.groups.lookup 
 @groupKey.id='{{ groupKey.id }}', 
-@groupKey.namespace='{{ groupKey.namespace }}';
+@groupKey.namespace='{{ groupKey.namespace }}'
+;
 ```
 </TabItem>
 <TabItem value="search">
@@ -526,7 +526,8 @@ EXEC google.cloudidentity.groups.search
 @query='{{ query }}', 
 @view='{{ view }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

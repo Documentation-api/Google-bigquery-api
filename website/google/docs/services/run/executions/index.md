@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -195,8 +193,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -518,7 +514,8 @@ FROM google.run.executions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND jobsId = '{{ jobsId }}' -- required
-AND executionsId = '{{ executionsId }}' -- required;
+AND executionsId = '{{ executionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -561,7 +558,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND jobsId = '{{ jobsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -586,7 +584,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND jobsId = '{{ jobsId }}' --required
 AND executionsId = '{{ executionsId }}' --required
 AND validateOnly = '{{ validateOnly }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -611,7 +610,8 @@ EXEC google.run.executions.export_status
 @locationsId='{{ locationsId }}' --required, 
 @jobsId='{{ jobsId }}' --required, 
 @executionsId='{{ executionsId }}' --required, 
-@executionsId1='{{ executionsId1 }}' --required;
+@executionsId1='{{ executionsId1 }}' --required
+;
 ```
 </TabItem>
 <TabItem value="cancel">
@@ -628,7 +628,8 @@ EXEC google.run.executions.cancel
 '{
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

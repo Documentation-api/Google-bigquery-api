@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -226,7 +222,8 @@ FROM google.contactcenterinsights.issues
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND issueModelsId = '{{ issueModelsId }}' -- required
-AND issuesId = '{{ issuesId }}' -- required;
+AND issuesId = '{{ issuesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -239,7 +236,8 @@ issues
 FROM google.contactcenterinsights.issues
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND issueModelsId = '{{ issueModelsId }}' -- required;
+AND issueModelsId = '{{ issueModelsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -371,7 +369,8 @@ DELETE FROM google.contactcenterinsights.issues
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND issueModelsId = '{{ issueModelsId }}' --required
-AND issuesId = '{{ issuesId }}' --required;
+AND issuesId = '{{ issuesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -284,7 +280,8 @@ state
 FROM google.bigtableadmin.clusters
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND clustersId = '{{ clustersId }}' -- required;
+AND clustersId = '{{ clustersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -304,7 +301,8 @@ state
 FROM google.bigtableadmin.clusters
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -465,7 +463,8 @@ Deletes a cluster from an instance.
 DELETE FROM google.bigtableadmin.clusters
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND clustersId = '{{ clustersId }}' --required;
+AND clustersId = '{{ clustersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -498,7 +497,8 @@ EXEC google.bigtableadmin.clusters.partial_update_cluster
 "clusterConfig": "{{ clusterConfig }}", 
 "defaultStorageType": "{{ defaultStorageType }}", 
 "encryptionConfig": "{{ encryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

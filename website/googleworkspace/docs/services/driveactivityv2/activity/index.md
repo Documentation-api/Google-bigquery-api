@@ -97,7 +97,8 @@ EXEC googleworkspace.driveactivityv2.activity.query
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}", 
 "filter": "{{ filter }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

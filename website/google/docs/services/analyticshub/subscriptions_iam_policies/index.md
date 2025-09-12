@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_subscriptions_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -153,7 +151,8 @@ role
 FROM google.analyticshub.subscriptions_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND subscriptionsId = '{{ subscriptionsId }}' -- required;
+AND subscriptionsId = '{{ subscriptionsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

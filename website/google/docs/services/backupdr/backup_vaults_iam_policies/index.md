@@ -110,7 +110,8 @@ EXEC google.backupdr.backup_vaults_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

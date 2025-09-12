@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -219,7 +217,8 @@ serverCaMode
 FROM google.sqladmin.connect
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
-AND readTime = '{{ readTime }}';
+AND readTime = '{{ readTime }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -247,7 +246,8 @@ EXEC google.sqladmin.connect.generate_ephemeral
 "access_token": "{{ access_token }}", 
 "readTime": "{{ readTime }}", 
 "validDuration": "{{ validDuration }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

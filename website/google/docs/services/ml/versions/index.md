@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_models_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -185,8 +183,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_models_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -487,7 +483,8 @@ state
 FROM google.ml.versions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_models_versions_list">
@@ -527,7 +524,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -821,7 +819,8 @@ Deletes a model version. Each model can have multiple versions deployed and in u
 DELETE FROM google.ml.versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND modelsId = '{{ modelsId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -843,7 +842,8 @@ Designates a version to be the default for the model. The default version is use
 EXEC google.ml.versions.projects_models_versions_set_default 
 @projectsId='{{ projectsId }}' --required, 
 @modelsId='{{ modelsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

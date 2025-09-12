@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_sites_apicategories_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sites_apicategories_list">
-
-Successful response
 
 <table>
 <thead>
@@ -229,7 +225,8 @@ status
 FROM google.apigee.apicategories
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND sitesId = '{{ sitesId }}' -- required
-AND apicategoriesId = '{{ apicategoriesId }}' -- required;
+AND apicategoriesId = '{{ apicategoriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sites_apicategories_list">
@@ -245,7 +242,8 @@ requestId,
 status
 FROM google.apigee.apicategories
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sitesId = '{{ sitesId }}' -- required;
+AND sitesId = '{{ sitesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -376,7 +374,8 @@ Deletes an API category.
 DELETE FROM google.apigee.apicategories
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND sitesId = '{{ sitesId }}' --required
-AND apicategoriesId = '{{ apicategoriesId }}' --required;
+AND apicategoriesId = '{{ apicategoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

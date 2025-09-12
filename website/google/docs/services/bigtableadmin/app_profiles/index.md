@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -287,7 +283,8 @@ standardIsolation
 FROM google.bigtableadmin.app_profiles
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND appProfilesId = '{{ appProfilesId }}' -- required;
+AND appProfilesId = '{{ appProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -308,7 +305,8 @@ FROM google.bigtableadmin.app_profiles
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -486,7 +484,8 @@ DELETE FROM google.bigtableadmin.app_profiles
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND appProfilesId = '{{ appProfilesId }}' --required
-AND ignoreWarnings = '{{ ignoreWarnings }}';
+AND ignoreWarnings = '{{ ignoreWarnings }}'
+;
 ```
 </TabItem>
 </Tabs>

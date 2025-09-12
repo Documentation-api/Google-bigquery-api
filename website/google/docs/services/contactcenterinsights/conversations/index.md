@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -521,7 +517,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' -- required
 AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
 AND conversationsId = '{{ conversationsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -561,7 +558,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -809,7 +807,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' --required
 AND authorizedViewsId = '{{ authorizedViewsId }}' --required
 AND conversationsId = '{{ conversationsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_delete">
@@ -820,7 +819,8 @@ Deletes multiple conversations in a single request.
 DELETE FROM google.contactcenterinsights.conversations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -853,7 +853,8 @@ EXEC google.contactcenterinsights.conversations.upload
 "conversationId": "{{ conversationId }}", 
 "redactionConfig": "{{ redactionConfig }}", 
 "speechConfig": "{{ speechConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sample">
@@ -870,7 +871,8 @@ EXEC google.contactcenterinsights.conversations.sample
 "destinationDataset": "{{ destinationDataset }}", 
 "parent": "{{ parent }}", 
 "sampleRule": "{{ sampleRule }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_analyze">
@@ -889,7 +891,8 @@ EXEC google.contactcenterinsights.conversations.bulk_analyze
 "filter": "{{ filter }}", 
 "analysisPercentage": {{ analysisPercentage }}, 
 "annotatorSelector": "{{ annotatorSelector }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="ingest">
@@ -910,7 +913,8 @@ EXEC google.contactcenterinsights.conversations.ingest
 "redactionConfig": "{{ redactionConfig }}", 
 "speechConfig": "{{ speechConfig }}", 
 "sampleSize": {{ sampleSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="calculate_stats">
@@ -923,7 +927,8 @@ EXEC google.contactcenterinsights.conversations.calculate_stats
 @locationsId='{{ locationsId }}' --required, 
 @authorizedViewSetsId='{{ authorizedViewSetsId }}' --required, 
 @authorizedViewsId='{{ authorizedViewsId }}' --required, 
-@filter='{{ filter }}';
+@filter='{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

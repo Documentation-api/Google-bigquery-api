@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -315,7 +311,8 @@ versionTag
 FROM google.contactcenterinsights.phrase_matchers
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND phraseMatchersId = '{{ phraseMatchersId }}' -- required;
+AND phraseMatchersId = '{{ phraseMatchersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -340,7 +337,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -510,7 +508,8 @@ Deletes a phrase matcher.
 DELETE FROM google.contactcenterinsights.phrase_matchers
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND phraseMatchersId = '{{ phraseMatchersId }}' --required;
+AND phraseMatchersId = '{{ phraseMatchersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_workflow_templates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -112,8 +110,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_get">
-
-Successful response
 
 <table>
 <thead>
@@ -184,8 +180,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_regions_workflow_templates_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -254,8 +248,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -530,7 +522,8 @@ FROM google.dataproc.workflow_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
 AND workflowTemplatesId = '{{ workflowTemplatesId }}' -- required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_get">
@@ -554,7 +547,8 @@ FROM google.dataproc.workflow_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workflowTemplatesId = '{{ workflowTemplatesId }}' -- required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_workflow_templates_list">
@@ -578,7 +572,8 @@ FROM google.dataproc.workflow_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_list">
@@ -602,7 +597,8 @@ FROM google.dataproc.workflow_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -857,7 +853,8 @@ DELETE FROM google.dataproc.workflow_templates
 WHERE projectsId = '{{ projectsId }}' --required
 AND regionsId = '{{ regionsId }}' --required
 AND workflowTemplatesId = '{{ workflowTemplatesId }}' --required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_delete">
@@ -869,7 +866,8 @@ DELETE FROM google.dataproc.workflow_templates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND workflowTemplatesId = '{{ workflowTemplatesId }}' --required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -900,7 +898,8 @@ EXEC google.dataproc.workflow_templates.projects_regions_workflow_templates_inst
 "version": {{ version }}, 
 "requestId": "{{ requestId }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_workflow_templates_instantiate_inline">
@@ -922,7 +921,8 @@ EXEC google.dataproc.workflow_templates.projects_regions_workflow_templates_inst
 "parameters": "{{ parameters }}", 
 "dagTimeout": "{{ dagTimeout }}", 
 "encryptionConfig": "{{ encryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_instantiate">
@@ -939,7 +939,8 @@ EXEC google.dataproc.workflow_templates.projects_locations_workflow_templates_in
 "version": {{ version }}, 
 "requestId": "{{ requestId }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_instantiate_inline">
@@ -961,7 +962,8 @@ EXEC google.dataproc.workflow_templates.projects_locations_workflow_templates_in
 "parameters": "{{ parameters }}", 
 "dagTimeout": "{{ dagTimeout }}", 
 "encryptionConfig": "{{ encryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -345,7 +341,8 @@ state,
 tags,
 updateTime
 FROM google.cloudresourcemanager.projects
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -370,7 +367,8 @@ FROM google.cloudresourcemanager.projects
 WHERE parent = '{{ parent }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -496,7 +494,8 @@ Marks the project identified by the specified `name` (for example, `projects/415
 
 ```sql
 DELETE FROM google.cloudresourcemanager.projects
-WHERE projectsId = '{{ projectsId }}' --required;
+WHERE projectsId = '{{ projectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -520,7 +519,8 @@ Search for projects that the caller has the `resourcemanager.projects.get` permi
 EXEC google.cloudresourcemanager.projects.search 
 @query='{{ query }}', 
 @pageToken='{{ pageToken }}', 
-@pageSize='{{ pageSize }}';
+@pageSize='{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="move">
@@ -533,7 +533,8 @@ EXEC google.cloudresourcemanager.projects.move
 @@json=
 '{
 "destinationParent": "{{ destinationParent }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete">
@@ -542,7 +543,8 @@ Restores the project identified by the specified `name` (for example, `projects/
 
 ```sql
 EXEC google.cloudresourcemanager.projects.undelete 
-@projectsId='{{ projectsId }}' --required;
+@projectsId='{{ projectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

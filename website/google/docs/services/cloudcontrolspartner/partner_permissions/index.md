@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_partner_permissions">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM google.cloudcontrolspartner.partner_permissions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND customersId = '{{ customersId }}' -- required
-AND workloadsId = '{{ workloadsId }}' -- required;
+AND workloadsId = '{{ workloadsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -271,7 +267,8 @@ FROM google.datalineage.runs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND processesId = '{{ processesId }}' -- required
-AND runsId = '{{ runsId }}' -- required;
+AND runsId = '{{ runsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -291,7 +288,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND processesId = '{{ processesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -455,7 +453,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND processesId = '{{ processesId }}' --required
 AND runsId = '{{ runsId }}' --required
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -241,7 +237,8 @@ requesterEmailAddress,
 rolesAndViews
 FROM googleworkspace.drivev3.accessproposals
 WHERE fileId = '{{ fileId }}' -- required
-AND proposalId = '{{ proposalId }}' -- required;
+AND proposalId = '{{ proposalId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -260,7 +257,8 @@ rolesAndViews
 FROM googleworkspace.drivev3.accessproposals
 WHERE fileId = '{{ fileId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -288,7 +286,8 @@ EXEC googleworkspace.drivev3.accessproposals.resolve
 "view": "{{ view }}", 
 "action": "{{ action }}", 
 "sendNotification": {{ sendNotification }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

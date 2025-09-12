@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get">
-
-Successful response
 
 <table>
 <thead>
@@ -114,8 +110,6 @@ Successful response
 </TabItem>
 <TabItem value="list_documents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -149,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="listen">
-
-Successful response
 
 <table>
 <thead>
@@ -450,7 +442,8 @@ AND orderBy = '{{ orderBy }}'
 AND mask.fieldPaths = '{{ mask.fieldPaths }}'
 AND transaction = '{{ transaction }}'
 AND readTime = '{{ readTime }}'
-AND showMissing = '{{ showMissing }}';
+AND showMissing = '{{ showMissing }}'
+;
 ```
 </TabItem>
 <TabItem value="get">
@@ -470,7 +463,8 @@ AND documentsId = '{{ documentsId }}' -- required
 AND documentsId1 = '{{ documentsId1 }}' -- required
 AND mask.fieldPaths = '{{ mask.fieldPaths }}'
 AND transaction = '{{ transaction }}'
-AND readTime = '{{ readTime }}';
+AND readTime = '{{ readTime }}'
+;
 ```
 </TabItem>
 <TabItem value="list_documents">
@@ -493,7 +487,8 @@ AND orderBy = '{{ orderBy }}'
 AND mask.fieldPaths = '{{ mask.fieldPaths }}'
 AND transaction = '{{ transaction }}'
 AND readTime = '{{ readTime }}'
-AND showMissing = '{{ showMissing }}';
+AND showMissing = '{{ showMissing }}'
+;
 ```
 </TabItem>
 <TabItem value="listen">
@@ -509,7 +504,8 @@ filter,
 targetChange
 FROM google.firestore.documents
 WHERE projectsId = '{{ projectsId }}' -- required
-AND databasesId = '{{ databasesId }}' -- required;
+AND databasesId = '{{ databasesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -664,7 +660,8 @@ AND databasesId = '{{ databasesId }}' --required
 AND documentsId = '{{ documentsId }}' --required
 AND documentsId1 = '{{ documentsId1 }}' --required
 AND currentDocument.exists = '{{ currentDocument.exists }}'
-AND currentDocument.updateTime = '{{ currentDocument.updateTime }}';
+AND currentDocument.updateTime = '{{ currentDocument.updateTime }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -701,7 +698,8 @@ EXEC google.firestore.documents.batch_get
 "transaction": "{{ transaction }}", 
 "newTransaction": "{{ newTransaction }}", 
 "readTime": "{{ readTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="begin_transaction">
@@ -715,7 +713,8 @@ EXEC google.firestore.documents.begin_transaction
 @@json=
 '{
 "options": "{{ options }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="commit">
@@ -730,7 +729,8 @@ EXEC google.firestore.documents.commit
 '{
 "writes": "{{ writes }}", 
 "transaction": "{{ transaction }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rollback">
@@ -744,7 +744,8 @@ EXEC google.firestore.documents.rollback
 @@json=
 '{
 "transaction": "{{ transaction }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="run_query">
@@ -764,7 +765,8 @@ EXEC google.firestore.documents.run_query
 "newTransaction": "{{ newTransaction }}", 
 "readTime": "{{ readTime }}", 
 "explainOptions": "{{ explainOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="run_aggregation_query">
@@ -784,7 +786,8 @@ EXEC google.firestore.documents.run_aggregation_query
 "newTransaction": "{{ newTransaction }}", 
 "readTime": "{{ readTime }}", 
 "explainOptions": "{{ explainOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="partition_query">
@@ -804,7 +807,8 @@ EXEC google.firestore.documents.partition_query
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}, 
 "readTime": "{{ readTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="write">
@@ -821,7 +825,8 @@ EXEC google.firestore.documents.write
 "writes": "{{ writes }}", 
 "streamToken": "{{ streamToken }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_write">
@@ -836,7 +841,8 @@ EXEC google.firestore.documents.batch_write
 '{
 "writes": "{{ writes }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

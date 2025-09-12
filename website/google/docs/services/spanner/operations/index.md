@@ -50,8 +50,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instance_configs_ssd_caches_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_databases_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -132,8 +128,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,8 +166,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_backups_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -214,8 +206,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_instance_configs_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -254,8 +244,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instance_configs_ssd_caches_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -296,8 +284,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_instances_databases_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -336,8 +322,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -378,8 +362,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -418,8 +400,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_backups_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -460,8 +440,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_instance_configs_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -500,8 +478,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -833,7 +809,8 @@ FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instanceConfigsId = '{{ instanceConfigsId }}' -- required
 AND ssdCachesId = '{{ ssdCachesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_operations_get">
@@ -851,7 +828,8 @@ FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_operations_get">
@@ -869,7 +847,8 @@ FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND instancePartitionsId = '{{ instancePartitionsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_backups_operations_get">
@@ -887,7 +866,8 @@ FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND backupsId = '{{ backupsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instance_configs_operations_get">
@@ -904,7 +884,8 @@ response
 FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instanceConfigsId = '{{ instanceConfigsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instance_configs_ssd_caches_operations_list">
@@ -924,7 +905,8 @@ AND instanceConfigsId = '{{ instanceConfigsId }}' -- required
 AND ssdCachesId = '{{ ssdCachesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_operations_list">
@@ -944,7 +926,8 @@ AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_operations_get">
@@ -961,7 +944,8 @@ response
 FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_operations_list">
@@ -981,7 +965,8 @@ AND instancesId = '{{ instancesId }}' -- required
 AND instancePartitionsId = '{{ instancePartitionsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_backups_operations_list">
@@ -1001,7 +986,8 @@ AND instancesId = '{{ instancesId }}' -- required
 AND backupsId = '{{ backupsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instance_configs_operations_list">
@@ -1020,7 +1006,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND instanceConfigsId = '{{ instanceConfigsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_operations_list">
@@ -1039,7 +1026,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1067,7 +1055,8 @@ DELETE FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND instanceConfigsId = '{{ instanceConfigsId }}' --required
 AND ssdCachesId = '{{ ssdCachesId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_operations_delete">
@@ -1079,7 +1068,8 @@ DELETE FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_operations_delete">
@@ -1091,7 +1081,8 @@ DELETE FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND instancePartitionsId = '{{ instancePartitionsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_backups_operations_delete">
@@ -1103,7 +1094,8 @@ DELETE FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND backupsId = '{{ backupsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instance_configs_operations_delete">
@@ -1114,7 +1106,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 DELETE FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND instanceConfigsId = '{{ instanceConfigsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_operations_delete">
@@ -1125,7 +1118,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 DELETE FROM google.spanner.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1152,7 +1146,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.spanner.operations.projects_instance_configs_operations_cancel 
 @projectsId='{{ projectsId }}' --required, 
 @instanceConfigsId='{{ instanceConfigsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instance_configs_ssd_caches_operations_cancel">
@@ -1164,7 +1159,8 @@ EXEC google.spanner.operations.projects_instance_configs_ssd_caches_operations_c
 @projectsId='{{ projectsId }}' --required, 
 @instanceConfigsId='{{ instanceConfigsId }}' --required, 
 @ssdCachesId='{{ ssdCachesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_operations_cancel">
@@ -1176,7 +1172,8 @@ EXEC google.spanner.operations.projects_instances_databases_operations_cancel
 @projectsId='{{ projectsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
 @databasesId='{{ databasesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_operations_cancel">
@@ -1187,7 +1184,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.spanner.operations.projects_instances_operations_cancel 
 @projectsId='{{ projectsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_operations_cancel">
@@ -1199,7 +1197,8 @@ EXEC google.spanner.operations.projects_instances_instance_partitions_operations
 @projectsId='{{ projectsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
 @instancePartitionsId='{{ instancePartitionsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_backups_operations_cancel">
@@ -1211,7 +1210,8 @@ EXEC google.spanner.operations.projects_instances_backups_operations_cancel
 @projectsId='{{ projectsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
 @backupsId='{{ backupsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

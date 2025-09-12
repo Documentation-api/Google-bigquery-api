@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_operational_status">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ etag,
 result
 FROM google.compute.interconnect_groups_operational_status
 WHERE project = '{{ project }}' -- required
-AND interconnectGroup = '{{ interconnectGroup }}' -- required;
+AND interconnectGroup = '{{ interconnectGroup }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_keystores_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -159,7 +157,8 @@ aliases
 FROM google.apigee.keystores
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND keystoresId = '{{ keystoresId }}' -- required;
+AND keystoresId = '{{ keystoresId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -236,7 +235,8 @@ Deletes a keystore or truststore.
 DELETE FROM google.apigee.keystores
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND keystoresId = '{{ keystoresId }}' --required;
+AND keystoresId = '{{ keystoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -484,7 +480,8 @@ FROM googleworkspace.drivelabelsv2.labels
 WHERE labelsId = '{{ labelsId }}' -- required
 AND useAdminAccess = '{{ useAdminAccess }}'
 AND languageCode = '{{ languageCode }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -524,7 +521,8 @@ AND customer = '{{ customer }}'
 AND languageCode = '{{ languageCode }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -645,7 +643,8 @@ Permanently deletes a label and related metadata on Drive items. For more inform
 DELETE FROM googleworkspace.drivelabelsv2.labels
 WHERE labelsId = '{{ labelsId }}' --required
 AND useAdminAccess = '{{ useAdminAccess }}'
-AND writeControl.requiredRevisionId = '{{ writeControl.requiredRevisionId }}';
+AND writeControl.requiredRevisionId = '{{ writeControl.requiredRevisionId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -676,7 +675,8 @@ EXEC googleworkspace.drivelabelsv2.labels.delta
 "useAdminAccess": {{ useAdminAccess }}, 
 "view": "{{ view }}", 
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="publish">
@@ -691,7 +691,8 @@ EXEC googleworkspace.drivelabelsv2.labels.publish
 "useAdminAccess": {{ useAdminAccess }}, 
 "writeControl": "{{ writeControl }}", 
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -708,7 +709,8 @@ EXEC googleworkspace.drivelabelsv2.labels.disable
 "writeControl": "{{ writeControl }}", 
 "disabledPolicy": "{{ disabledPolicy }}", 
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable">
@@ -723,7 +725,8 @@ EXEC googleworkspace.drivelabelsv2.labels.enable
 "useAdminAccess": {{ useAdminAccess }}, 
 "writeControl": "{{ writeControl }}", 
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

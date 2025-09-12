@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -404,7 +400,8 @@ sourceConfig
 FROM google.oracledatabase.autonomous_databases
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND autonomousDatabasesId = '{{ autonomousDatabasesId }}' -- required;
+AND autonomousDatabasesId = '{{ autonomousDatabasesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -434,7 +431,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -589,7 +587,8 @@ DELETE FROM google.oracledatabase.autonomous_databases
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND autonomousDatabasesId = '{{ autonomousDatabasesId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -620,7 +619,8 @@ EXEC google.oracledatabase.autonomous_databases.restore
 @@json=
 '{
 "restoreTime": "{{ restoreTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_wallet">
@@ -637,7 +637,8 @@ EXEC google.oracledatabase.autonomous_databases.generate_wallet
 "type": "{{ type }}", 
 "isRegional": {{ isRegional }}, 
 "password": "{{ password }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -648,7 +649,8 @@ Stops an Autonomous Database.
 EXEC google.oracledatabase.autonomous_databases.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@autonomousDatabasesId='{{ autonomousDatabasesId }}' --required;
+@autonomousDatabasesId='{{ autonomousDatabasesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="start">
@@ -659,7 +661,8 @@ Starts an Autonomous Database.
 EXEC google.oracledatabase.autonomous_databases.start 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@autonomousDatabasesId='{{ autonomousDatabasesId }}' --required;
+@autonomousDatabasesId='{{ autonomousDatabasesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="restart">
@@ -670,7 +673,8 @@ Restarts an Autonomous Database.
 EXEC google.oracledatabase.autonomous_databases.restart 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@autonomousDatabasesId='{{ autonomousDatabasesId }}' --required;
+@autonomousDatabasesId='{{ autonomousDatabasesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="switchover">
@@ -685,7 +689,8 @@ EXEC google.oracledatabase.autonomous_databases.switchover
 @@json=
 '{
 "peerAutonomousDatabase": "{{ peerAutonomousDatabase }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

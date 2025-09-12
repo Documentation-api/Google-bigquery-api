@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_get_sync_authorization">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 etag,
 identities
 FROM google.apigee.sync_authorization
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

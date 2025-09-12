@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_entry_groups_entries_tags_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_entry_groups_tags_list">
-
-Successful response
 
 <table>
 <thead>
@@ -296,7 +292,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND entryGroupsId = '{{ entryGroupsId }}' -- required
 AND entriesId = '{{ entriesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_tags_list">
@@ -316,7 +313,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND entryGroupsId = '{{ entryGroupsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -525,7 +523,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND entryGroupsId = '{{ entryGroupsId }}' --required
 AND entriesId = '{{ entriesId }}' --required
-AND tagsId = '{{ tagsId }}' --required;
+AND tagsId = '{{ tagsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_tags_delete">
@@ -537,7 +536,8 @@ DELETE FROM google.datacatalog.tags
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND entryGroupsId = '{{ entryGroupsId }}' --required
-AND tagsId = '{{ tagsId }}' --required;
+AND tagsId = '{{ tagsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -566,7 +566,8 @@ EXEC google.datacatalog.tags.projects_locations_entry_groups_entries_tags_reconc
 "tagTemplate": "{{ tagTemplate }}", 
 "forceDeleteMissing": {{ forceDeleteMissing }}, 
 "tags": "{{ tags }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

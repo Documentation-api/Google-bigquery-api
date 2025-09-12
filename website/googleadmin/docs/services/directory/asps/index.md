@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -211,7 +207,8 @@ lastTimeUsed,
 userKey
 FROM googleadmin.directory.asps
 WHERE userKey = '{{ userKey }}' -- required
-AND codeId = '{{ codeId }}' -- required;
+AND codeId = '{{ codeId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -224,7 +221,8 @@ etag,
 items,
 kind
 FROM googleadmin.directory.asps
-WHERE userKey = '{{ userKey }}' -- required;
+WHERE userKey = '{{ userKey }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -245,7 +243,8 @@ Deletes an ASP issued by a user.
 ```sql
 DELETE FROM googleadmin.directory.asps
 WHERE userKey = '{{ userKey }}' --required
-AND codeId = '{{ codeId }}' --required;
+AND codeId = '{{ codeId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

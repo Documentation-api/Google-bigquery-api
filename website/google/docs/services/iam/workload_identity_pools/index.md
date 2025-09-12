@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -305,7 +301,8 @@ state
 FROM google.iam.workload_identity_pools
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required;
+AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -328,7 +325,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -481,7 +479,8 @@ Deletes a WorkloadIdentityPool. You cannot use a deleted pool to exchange extern
 DELETE FROM google.iam.workload_identity_pools
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' --required;
+AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -503,7 +502,8 @@ Undeletes a WorkloadIdentityPool, as long as it was deleted fewer than 30 days a
 EXEC google.iam.workload_identity_pools.undelete 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@workloadIdentityPoolsId='{{ workloadIdentityPoolsId }}' --required;
+@workloadIdentityPoolsId='{{ workloadIdentityPoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

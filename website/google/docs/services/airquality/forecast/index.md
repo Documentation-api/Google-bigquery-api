@@ -101,7 +101,8 @@ EXEC google.airquality.forecast.lookup
 "customLocalAqis": "{{ customLocalAqis }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

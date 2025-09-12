@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -218,7 +214,8 @@ kind,
 verified
 FROM googleadmin.directory.domains
 WHERE customer = '{{ customer }}' -- required
-AND domainName = '{{ domainName }}' -- required;
+AND domainName = '{{ domainName }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -231,7 +228,8 @@ domains,
 etag,
 kind
 FROM googleadmin.directory.domains
-WHERE customer = '{{ customer }}' -- required;
+WHERE customer = '{{ customer }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -346,7 +344,8 @@ Deletes a domain of the customer.
 ```sql
 DELETE FROM googleadmin.directory.domains
 WHERE customer = '{{ customer }}' --required
-AND domainName = '{{ domainName }}' --required;
+AND domainName = '{{ domainName }}' --required
+;
 ```
 </TabItem>
 </Tabs>

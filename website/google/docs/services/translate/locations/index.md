@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -271,7 +267,8 @@ locationId,
 metadata
 FROM google.translate.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_list">
@@ -290,7 +287,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -328,7 +326,8 @@ EXEC google.translate.locations.projects_locations_translate_text
 "glossaryConfig": "{{ glossaryConfig }}", 
 "transliterationConfig": "{{ transliterationConfig }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_romanize_text">
@@ -343,7 +342,8 @@ EXEC google.translate.locations.projects_locations_romanize_text
 '{
 "contents": "{{ contents }}", 
 "sourceLanguageCode": "{{ sourceLanguageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_detect_language">
@@ -360,7 +360,8 @@ EXEC google.translate.locations.projects_locations_detect_language
 "content": "{{ content }}", 
 "mimeType": "{{ mimeType }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_translate_document">
@@ -384,7 +385,8 @@ EXEC google.translate.locations.projects_locations_translate_document
 "isTranslateNativePdfOnly": {{ isTranslateNativePdfOnly }}, 
 "enableShadowRemovalNativePdf": {{ enableShadowRemovalNativePdf }}, 
 "enableRotationCorrection": {{ enableRotationCorrection }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batch_translate_text">
@@ -404,7 +406,8 @@ EXEC google.translate.locations.projects_locations_batch_translate_text
 "outputConfig": "{{ outputConfig }}", 
 "glossaries": "{{ glossaries }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batch_translate_document">
@@ -427,7 +430,8 @@ EXEC google.translate.locations.projects_locations_batch_translate_document
 "customizedAttribution": "{{ customizedAttribution }}", 
 "enableShadowRemovalNativePdf": {{ enableShadowRemovalNativePdf }}, 
 "enableRotationCorrection": {{ enableRotationCorrection }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_translate">
@@ -444,7 +448,8 @@ EXEC google.translate.locations.projects_locations_adaptive_mt_translate
 "content": "{{ content }}", 
 "referenceSentenceConfig": "{{ referenceSentenceConfig }}", 
 "glossaryConfig": "{{ glossaryConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

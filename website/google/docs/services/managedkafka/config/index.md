@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,7 +170,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
 AND configId = '{{ configId }}' -- required
-AND defaultToGlobal = '{{ defaultToGlobal }}';
+AND defaultToGlobal = '{{ defaultToGlobal }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -226,7 +225,8 @@ DELETE FROM google.managedkafka.config
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND schemaRegistriesId = '{{ schemaRegistriesId }}' --required
-AND configId = '{{ configId }}' --required;
+AND configId = '{{ configId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

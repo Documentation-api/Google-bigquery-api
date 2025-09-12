@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_datasets_annotated_datasets_data_items_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_datasets_data_items_get">
-
-Successful response
 
 <table>
 <thead>
@@ -114,8 +110,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_data_items_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -149,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_datasets_data_items_list">
-
-Successful response
 
 <table>
 <thead>
@@ -308,7 +300,8 @@ FROM google.datalabeling.data_items
 WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
-AND dataItemsId = '{{ dataItemsId }}' -- required;
+AND dataItemsId = '{{ dataItemsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_data_items_get">
@@ -324,7 +317,8 @@ videoPayload
 FROM google.datalabeling.data_items
 WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND dataItemsId = '{{ dataItemsId }}' -- required;
+AND dataItemsId = '{{ dataItemsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_data_items_list">
@@ -343,7 +337,8 @@ AND datasetsId = '{{ datasetsId }}' -- required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_data_items_list">
@@ -361,7 +356,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_effective_firewalls">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM google.compute.effective_firewalls
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
 AND instance = '{{ instance }}' -- required
-AND networkInterface = '{{ networkInterface }}' -- required;
+AND networkInterface = '{{ networkInterface }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

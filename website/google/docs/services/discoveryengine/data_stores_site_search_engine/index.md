@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_get_site_search_engine">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_get_site_search_engine">
-
-Successful response
 
 <table>
 <thead>
@@ -170,7 +166,8 @@ FROM google.discoveryengine.data_stores_site_search_engine
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
-AND dataStoresId = '{{ dataStoresId }}' -- required;
+AND dataStoresId = '{{ dataStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_get_site_search_engine">
@@ -183,7 +180,8 @@ name
 FROM google.discoveryengine.data_stores_site_search_engine
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataStoresId = '{{ dataStoresId }}' -- required;
+AND dataStoresId = '{{ dataStoresId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

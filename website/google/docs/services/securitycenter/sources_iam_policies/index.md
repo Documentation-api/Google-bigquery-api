@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_sources_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -154,7 +152,8 @@ members,
 role
 FROM google.securitycenter.sources_iam_policies
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sourcesId = '{{ sourcesId }}' -- required;
+AND sourcesId = '{{ sourcesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -209,7 +208,8 @@ EXEC google.securitycenter.sources_iam_policies.organizations_sources_test_iam_p
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

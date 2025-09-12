@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_recaptcha_param">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 kind,
 recaptchaSiteKey,
 recaptchaStoken
-FROM google.identitytoolkit.relyingparty_recaptcha_param;
+FROM google.identitytoolkit.relyingparty_recaptcha_param
+;
 ```
 </TabItem>
 </Tabs>

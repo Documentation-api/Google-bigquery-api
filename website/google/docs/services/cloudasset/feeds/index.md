@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,7 +133,8 @@ SELECT
 feeds
 FROM google.cloudasset.feeds
 WHERE parentType = '{{ parentType }}' -- required
-AND parent = '{{ parent }}' -- required;
+AND parent = '{{ parent }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_flows_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -131,8 +127,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_agents_tools_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -171,8 +165,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_flows_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -218,8 +210,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_versions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -258,8 +248,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_tools_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -538,7 +526,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND flowsId = '{{ flowsId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_versions_get">
@@ -557,7 +546,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND playbooksId = '{{ playbooksId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_tools_versions_get">
@@ -576,7 +566,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND toolsId = '{{ toolsId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_flows_versions_list">
@@ -597,7 +588,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND flowsId = '{{ flowsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_versions_list">
@@ -617,7 +609,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND playbooksId = '{{ playbooksId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_tools_versions_list">
@@ -637,7 +630,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND toolsId = '{{ toolsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -851,7 +845,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND flowsId = '{{ flowsId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_versions_delete">
@@ -864,7 +859,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND playbooksId = '{{ playbooksId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_tools_versions_delete">
@@ -878,7 +874,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND toolsId = '{{ toolsId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -909,7 +906,8 @@ EXEC google.dialogflow.versions.projects_locations_agents_flows_versions_load
 @@json=
 '{
 "allowOverrideAgentResources": {{ allowOverrideAgentResources }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_flows_versions_compare_versions">
@@ -927,7 +925,8 @@ EXEC google.dialogflow.versions.projects_locations_agents_flows_versions_compare
 '{
 "targetVersion": "{{ targetVersion }}", 
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_versions_restore">
@@ -940,7 +939,8 @@ EXEC google.dialogflow.versions.projects_locations_agents_playbooks_versions_res
 @locationsId='{{ locationsId }}' --required, 
 @agentsId='{{ agentsId }}' --required, 
 @playbooksId='{{ playbooksId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_tools_versions_restore">
@@ -953,7 +953,8 @@ EXEC google.dialogflow.versions.projects_locations_agents_tools_versions_restore
 @locationsId='{{ locationsId }}' --required, 
 @agentsId='{{ agentsId }}' --required, 
 @toolsId='{{ toolsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

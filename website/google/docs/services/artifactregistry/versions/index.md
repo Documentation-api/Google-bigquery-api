@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -299,7 +295,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND packagesId = '{{ packagesId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -324,7 +321,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -391,7 +389,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
 AND packagesId = '{{ packagesId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 <TabItem value="batch_delete">
@@ -403,7 +402,8 @@ DELETE FROM google.artifactregistry.versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
-AND packagesId = '{{ packagesId }}' --required;
+AND packagesId = '{{ packagesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -98,7 +98,8 @@ EXEC firebase.firebase.default_location.finalize
 @@json=
 '{
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

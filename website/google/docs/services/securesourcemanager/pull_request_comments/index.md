@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -288,7 +284,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND pullRequestsId = '{{ pullRequestsId }}' -- required
-AND pullRequestCommentsId = '{{ pullRequestCommentsId }}' -- required;
+AND pullRequestCommentsId = '{{ pullRequestCommentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -309,7 +306,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND pullRequestsId = '{{ pullRequestsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -488,7 +486,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
 AND pullRequestsId = '{{ pullRequestsId }}' --required
-AND pullRequestCommentsId = '{{ pullRequestCommentsId }}' --required;
+AND pullRequestCommentsId = '{{ pullRequestCommentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -517,7 +516,8 @@ EXEC google.securesourcemanager.pull_request_comments.resolve
 '{
 "names": "{{ names }}", 
 "autoFill": {{ autoFill }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="unresolve">
@@ -534,7 +534,8 @@ EXEC google.securesourcemanager.pull_request_comments.unresolve
 '{
 "names": "{{ names }}", 
 "autoFill": {{ autoFill }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

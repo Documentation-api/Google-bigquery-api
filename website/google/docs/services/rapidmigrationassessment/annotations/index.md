@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ updateTime
 FROM google.rapidmigrationassessment.annotations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND annotationsId = '{{ annotationsId }}' -- required;
+AND annotationsId = '{{ annotationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

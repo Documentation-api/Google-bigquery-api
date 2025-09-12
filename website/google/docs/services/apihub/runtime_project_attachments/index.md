@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -225,7 +221,8 @@ runtimeProject
 FROM google.apihub.runtime_project_attachments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND runtimeProjectAttachmentsId = '{{ runtimeProjectAttachmentsId }}' -- required;
+AND runtimeProjectAttachmentsId = '{{ runtimeProjectAttachmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -243,7 +240,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -328,7 +326,8 @@ Delete a runtime project attachment in the API Hub. This call will detach the ru
 DELETE FROM google.apihub.runtime_project_attachments
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND runtimeProjectAttachmentsId = '{{ runtimeProjectAttachmentsId }}' --required;
+AND runtimeProjectAttachmentsId = '{{ runtimeProjectAttachmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

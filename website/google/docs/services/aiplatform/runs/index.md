@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -312,7 +308,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND tensorboardsId = '{{ tensorboardsId }}' -- required
 AND experimentsId = '{{ experimentsId }}' -- required
-AND runsId = '{{ runsId }}' -- required;
+AND runsId = '{{ runsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -337,7 +334,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -520,7 +518,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND tensorboardsId = '{{ tensorboardsId }}' --required
 AND experimentsId = '{{ experimentsId }}' --required
-AND runsId = '{{ runsId }}' --required;
+AND runsId = '{{ runsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -549,7 +548,8 @@ EXEC google.aiplatform.runs.write
 '{
 "tensorboardRun": "{{ tensorboardRun }}", 
 "timeSeriesData": "{{ timeSeriesData }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

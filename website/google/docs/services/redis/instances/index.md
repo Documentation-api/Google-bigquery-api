@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -245,8 +243,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -647,7 +643,8 @@ transitEncryptionMode
 FROM google.redis.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -698,7 +695,8 @@ FROM google.redis.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -998,7 +996,8 @@ Deletes a specific Redis instance. Instance stops serving and data is deleted.
 DELETE FROM google.redis.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1028,7 +1027,8 @@ EXEC google.redis.instances.upgrade
 @@json=
 '{
 "redisVersion": "{{ redisVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -1043,7 +1043,8 @@ EXEC google.redis.instances.import
 @@json=
 '{
 "inputConfig": "{{ inputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -1058,7 +1059,8 @@ EXEC google.redis.instances.export
 @@json=
 '{
 "outputConfig": "{{ outputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="failover">
@@ -1073,7 +1075,8 @@ EXEC google.redis.instances.failover
 @@json=
 '{
 "dataProtectionMode": "{{ dataProtectionMode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reschedule_maintenance">
@@ -1089,7 +1092,8 @@ EXEC google.redis.instances.reschedule_maintenance
 '{
 "rescheduleType": "{{ rescheduleType }}", 
 "scheduleTime": "{{ scheduleTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

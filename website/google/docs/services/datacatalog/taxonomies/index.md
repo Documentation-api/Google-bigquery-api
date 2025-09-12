@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_taxonomies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_taxonomies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -302,7 +298,8 @@ taxonomyTimestamps
 FROM google.datacatalog.taxonomies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND taxonomiesId = '{{ taxonomiesId }}' -- required;
+AND taxonomiesId = '{{ taxonomiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_taxonomies_list">
@@ -323,7 +320,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -492,7 +490,8 @@ Deletes a taxonomy, including all policy tags in this taxonomy, their associated
 DELETE FROM google.datacatalog.taxonomies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND taxonomiesId = '{{ taxonomiesId }}' --required;
+AND taxonomiesId = '{{ taxonomiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -519,7 +518,8 @@ EXEC google.datacatalog.taxonomies.projects_locations_taxonomies_import
 '{
 "inlineSource": "{{ inlineSource }}", 
 "crossRegionalSource": "{{ crossRegionalSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_taxonomies_export">
@@ -531,7 +531,8 @@ EXEC google.datacatalog.taxonomies.projects_locations_taxonomies_export
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @taxonomies='{{ taxonomies }}', 
-@serializedTaxonomies={{ serializedTaxonomies }};
+@serializedTaxonomies={{ serializedTaxonomies }}
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_databases_get_scans">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
 AND view = '{{ view }}'
 AND startTime = '{{ startTime }}'
-AND endTime = '{{ endTime }}';
+AND endTime = '{{ endTime }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_intercept_deployments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_intercept_deployments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -308,7 +304,8 @@ updateTime
 FROM google.networksecurity.intercept_deployments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND interceptDeploymentsId = '{{ interceptDeploymentsId }}' -- required;
+AND interceptDeploymentsId = '{{ interceptDeploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_intercept_deployments_list">
@@ -332,7 +329,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -482,7 +480,8 @@ DELETE FROM google.networksecurity.intercept_deployments
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND interceptDeploymentsId = '{{ interceptDeploymentsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

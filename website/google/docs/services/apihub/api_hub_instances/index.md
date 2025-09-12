@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -202,7 +200,8 @@ updateTime
 FROM google.apihub.api_hub_instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND apiHubInstancesId = '{{ apiHubInstancesId }}' -- required;
+AND apiHubInstancesId = '{{ apiHubInstancesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -303,7 +302,8 @@ Deletes the API hub instance.
 DELETE FROM google.apihub.api_hub_instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND apiHubInstancesId = '{{ apiHubInstancesId }}' --required;
+AND apiHubInstancesId = '{{ apiHubInstancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -324,7 +324,8 @@ Looks up an Api Hub instance in a given GCP project. There will always be only o
 ```sql
 EXEC google.apihub.api_hub_instances.lookup 
 @projectsId='{{ projectsId }}' --required, 
-@locationsId='{{ locationsId }}' --required;
+@locationsId='{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

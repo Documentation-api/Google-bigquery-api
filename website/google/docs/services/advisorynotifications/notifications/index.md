@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -229,7 +225,8 @@ FROM google.advisorynotifications.notifications
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND notificationsId = '{{ notificationsId }}' -- required
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -249,7 +246,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ error,
 metadata,
 response
 FROM google.cloudresourcemanager.operations
-WHERE operationsId = '{{ operationsId }}' -- required;
+WHERE operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

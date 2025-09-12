@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -373,7 +369,8 @@ FROM google.developerconnect.git_repository_links
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND connectionsId = '{{ connectionsId }}' -- required
-AND gitRepositoryLinksId = '{{ gitRepositoryLinksId }}' -- required;
+AND gitRepositoryLinksId = '{{ gitRepositoryLinksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -401,7 +398,8 @@ AND connectionsId = '{{ connectionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -526,7 +524,8 @@ AND connectionsId = '{{ connectionsId }}' --required
 AND gitRepositoryLinksId = '{{ gitRepositoryLinksId }}' --required
 AND requestId = '{{ requestId }}'
 AND validateOnly = '{{ validateOnly }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -556,7 +555,8 @@ EXEC google.developerconnect.git_repository_links.processgitlab_enterprise_webho
 @@json=
 '{
 "body": "{{ body }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="processgitlab_webhook">
@@ -572,7 +572,8 @@ EXEC google.developerconnect.git_repository_links.processgitlab_webhook
 @@json=
 '{
 "body": "{{ body }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="process_bitbucket_data_center_webhook">
@@ -588,7 +589,8 @@ EXEC google.developerconnect.git_repository_links.process_bitbucket_data_center_
 @@json=
 '{
 "body": "{{ body }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="process_bitbucket_cloud_webhook">
@@ -604,7 +606,8 @@ EXEC google.developerconnect.git_repository_links.process_bitbucket_cloud_webhoo
 @@json=
 '{
 "body": "{{ body }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

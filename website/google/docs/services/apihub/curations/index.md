@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -309,7 +305,8 @@ updateTime
 FROM google.apihub.curations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND curationsId = '{{ curationsId }}' -- required;
+AND curationsId = '{{ curationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -333,7 +330,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -479,7 +477,8 @@ Delete a curation resource in the API hub. A curation can only be deleted if it'
 DELETE FROM google.apihub.curations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND curationsId = '{{ curationsId }}' --required;
+AND curationsId = '{{ curationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

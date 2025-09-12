@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -267,7 +263,8 @@ FROM google.gkebackup.backup_plan_bindings
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND backupChannelsId = '{{ backupChannelsId }}' -- required
-AND backupPlanBindingsId = '{{ backupPlanBindingsId }}' -- required;
+AND backupPlanBindingsId = '{{ backupPlanBindingsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -291,7 +288,8 @@ AND backupChannelsId = '{{ backupChannelsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

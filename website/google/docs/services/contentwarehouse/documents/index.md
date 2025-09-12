@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -310,7 +308,8 @@ updater
 FROM google.contentwarehouse.documents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND documentsId = '{{ documentsId }}' -- required;
+AND documentsId = '{{ documentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -445,7 +444,8 @@ Deletes a document. Returns NOT_FOUND if the document does not exist.
 DELETE FROM google.contentwarehouse.documents
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND documentsId = '{{ documentsId }}' --required;
+AND documentsId = '{{ documentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -477,7 +477,8 @@ EXEC google.contentwarehouse.documents.set_acl
 "requestMetadata": "{{ requestMetadata }}", 
 "policy": "{{ policy }}", 
 "projectOwner": {{ projectOwner }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="lock">
@@ -493,7 +494,8 @@ EXEC google.contentwarehouse.documents.lock
 '{
 "collectionId": "{{ collectionId }}", 
 "lockingUser": "{{ lockingUser }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="linked_targets">
@@ -508,7 +510,8 @@ EXEC google.contentwarehouse.documents.linked_targets
 @@json=
 '{
 "requestMetadata": "{{ requestMetadata }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search">
@@ -531,7 +534,8 @@ EXEC google.contentwarehouse.documents.search
 "pageSize": {{ pageSize }}, 
 "histogramQueries": "{{ histogramQueries }}", 
 "qaSizeLimit": {{ qaSizeLimit }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="linked_sources">
@@ -548,7 +552,8 @@ EXEC google.contentwarehouse.documents.linked_sources
 "pageSize": {{ pageSize }}, 
 "requestMetadata": "{{ requestMetadata }}", 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

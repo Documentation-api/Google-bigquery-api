@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_attestation_rules">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -178,7 +176,8 @@ AND namespacesId = '{{ namespacesId }}' -- required
 AND managedIdentitiesId = '{{ managedIdentitiesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -271,7 +270,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' --required
 AND namespacesId = '{{ namespacesId }}' --required
-AND managedIdentitiesId = '{{ managedIdentitiesId }}' --required;
+AND managedIdentitiesId = '{{ managedIdentitiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

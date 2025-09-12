@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_buckets_links_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -87,8 +85,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_buckets_links_get">
-
-Successful response
 
 <table>
 <thead>
@@ -129,8 +125,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_buckets_links_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -169,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_links_get">
-
-Successful response
 
 <table>
 <thead>
@@ -211,8 +203,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_buckets_links_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -251,8 +241,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_buckets_links_list">
-
-Successful response
 
 <table>
 <thead>
@@ -293,8 +281,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_buckets_links_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -334,8 +320,6 @@ Successful response
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_links_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -374,8 +358,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="locations_buckets_links_list">
-
-Successful response
 
 <table>
 <thead>
@@ -667,7 +649,8 @@ FROM google.logging.links
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND linksId = '{{ linksId }}' -- required;
+AND linksId = '{{ linksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_links_get">
@@ -685,7 +668,8 @@ FROM google.logging.links
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND linksId = '{{ linksId }}' -- required;
+AND linksId = '{{ linksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_links_get">
@@ -703,7 +687,8 @@ FROM google.logging.links
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND linksId = '{{ linksId }}' -- required;
+AND linksId = '{{ linksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_links_get">
@@ -721,7 +706,8 @@ FROM google.logging.links
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND linksId = '{{ linksId }}' -- required;
+AND linksId = '{{ linksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_buckets_links_list">
@@ -740,7 +726,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_links_list">
@@ -759,7 +746,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_links_list">
@@ -778,7 +766,8 @@ WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_links_list">
@@ -797,7 +786,8 @@ WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="locations_buckets_links_list">
@@ -815,7 +805,8 @@ FROM google.logging.links
 WHERE parentType = '{{ parentType }}' -- required
 AND parent = '{{ parent }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1044,7 +1035,8 @@ DELETE FROM google.logging.links
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND bucketsId = '{{ bucketsId }}' --required
-AND linksId = '{{ linksId }}' --required;
+AND linksId = '{{ linksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_links_delete">
@@ -1056,7 +1048,8 @@ DELETE FROM google.logging.links
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND bucketsId = '{{ bucketsId }}' --required
-AND linksId = '{{ linksId }}' --required;
+AND linksId = '{{ linksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_links_delete">
@@ -1068,7 +1061,8 @@ DELETE FROM google.logging.links
 WHERE foldersId = '{{ foldersId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND bucketsId = '{{ bucketsId }}' --required
-AND linksId = '{{ linksId }}' --required;
+AND linksId = '{{ linksId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_buckets_links_delete">
@@ -1080,7 +1074,8 @@ DELETE FROM google.logging.links
 WHERE billingAccountsId = '{{ billingAccountsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND bucketsId = '{{ bucketsId }}' --required
-AND linksId = '{{ linksId }}' --required;
+AND linksId = '{{ linksId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

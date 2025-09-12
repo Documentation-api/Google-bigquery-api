@@ -123,7 +123,8 @@ EXEC firebase.appcheck.oauth_clients.exchange_debug_token
 '{
 "debugToken": "{{ debugToken }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_app_attest_challenge">
@@ -132,7 +133,8 @@ Generates a challenge that protects the integrity of an immediately following ca
 
 ```sql
 EXEC firebase.appcheck.oauth_clients.generate_app_attest_challenge 
-@oauthClientsId='{{ oauthClientsId }}' --required;
+@oauthClientsId='{{ oauthClientsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="exchange_app_attest_attestation">
@@ -148,7 +150,8 @@ EXEC firebase.appcheck.oauth_clients.exchange_app_attest_attestation
 "challenge": "{{ challenge }}", 
 "keyId": "{{ keyId }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_app_attest_assertion">
@@ -164,7 +167,8 @@ EXEC firebase.appcheck.oauth_clients.exchange_app_attest_assertion
 "assertion": "{{ assertion }}", 
 "challenge": "{{ challenge }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

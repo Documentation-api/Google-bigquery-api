@@ -107,7 +107,8 @@ EXEC google.texttospeech.locations.synthesize_long_audio
 "audioConfig": "{{ audioConfig }}", 
 "outputGcsUri": "{{ outputGcsUri }}", 
 "voice": "{{ voice }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

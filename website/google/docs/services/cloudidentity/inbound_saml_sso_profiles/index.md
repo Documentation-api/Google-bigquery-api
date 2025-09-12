@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ displayName,
 idpConfig,
 spConfig
 FROM google.cloudidentity.inbound_saml_sso_profiles
-WHERE inboundSamlSsoProfilesId = '{{ inboundSamlSsoProfilesId }}' -- required;
+WHERE inboundSamlSsoProfilesId = '{{ inboundSamlSsoProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -254,7 +251,8 @@ spConfig
 FROM google.cloudidentity.inbound_saml_sso_profiles
 WHERE filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -372,7 +370,8 @@ Deletes an InboundSamlSsoProfile.
 
 ```sql
 DELETE FROM google.cloudidentity.inbound_saml_sso_profiles
-WHERE inboundSamlSsoProfilesId = '{{ inboundSamlSsoProfilesId }}' --required;
+WHERE inboundSamlSsoProfilesId = '{{ inboundSamlSsoProfilesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

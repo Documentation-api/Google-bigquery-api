@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_discovery_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,8 +120,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_discovery_configs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -204,8 +200,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_discovery_configs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -284,8 +278,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_discovery_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -538,7 +530,8 @@ updateTime
 FROM google.dlp.discovery_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND discoveryConfigsId = '{{ discoveryConfigsId }}' -- required;
+AND discoveryConfigsId = '{{ discoveryConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_discovery_configs_get">
@@ -563,7 +556,8 @@ updateTime
 FROM google.dlp.discovery_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND discoveryConfigsId = '{{ discoveryConfigsId }}' -- required;
+AND discoveryConfigsId = '{{ discoveryConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_discovery_configs_list">
@@ -590,7 +584,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_discovery_configs_list">
@@ -617,7 +612,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -816,7 +812,8 @@ Deletes a discovery configuration.
 DELETE FROM google.dlp.discovery_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND discoveryConfigsId = '{{ discoveryConfigsId }}' --required;
+AND discoveryConfigsId = '{{ discoveryConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_discovery_configs_delete">
@@ -827,7 +824,8 @@ Deletes a discovery configuration.
 DELETE FROM google.dlp.discovery_configs
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND discoveryConfigsId = '{{ discoveryConfigsId }}' --required;
+AND discoveryConfigsId = '{{ discoveryConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

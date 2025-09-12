@@ -46,8 +46,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_recommenders_recommendations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -126,8 +124,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -208,8 +204,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -288,8 +282,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -370,8 +362,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_recommenders_recommendations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -450,8 +440,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -532,8 +520,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -612,8 +598,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -984,7 +968,8 @@ FROM google.recommender.recommendations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
-AND recommendationsId = '{{ recommendationsId }}' -- required;
+AND recommendationsId = '{{ recommendationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_get">
@@ -1010,7 +995,8 @@ FROM google.recommender.recommendations
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
-AND recommendationsId = '{{ recommendationsId }}' -- required;
+AND recommendationsId = '{{ recommendationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_get">
@@ -1036,7 +1022,8 @@ FROM google.recommender.recommendations
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
-AND recommendationsId = '{{ recommendationsId }}' -- required;
+AND recommendationsId = '{{ recommendationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_get">
@@ -1062,7 +1049,8 @@ FROM google.recommender.recommendations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
-AND recommendationsId = '{{ recommendationsId }}' -- required;
+AND recommendationsId = '{{ recommendationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_recommenders_recommendations_list">
@@ -1090,7 +1078,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_list">
@@ -1118,7 +1107,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_list">
@@ -1146,7 +1136,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_list">
@@ -1174,7 +1165,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND recommendersId = '{{ recommendersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1216,7 +1208,8 @@ EXEC google.recommender.recommendations.projects_locations_recommenders_recommen
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_recommenders_recommendations_mark_claimed">
@@ -1233,7 +1226,8 @@ EXEC google.recommender.recommendations.projects_locations_recommenders_recommen
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_recommenders_recommendations_mark_succeeded">
@@ -1250,7 +1244,8 @@ EXEC google.recommender.recommendations.projects_locations_recommenders_recommen
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_recommenders_recommendations_mark_failed">
@@ -1267,7 +1262,8 @@ EXEC google.recommender.recommendations.projects_locations_recommenders_recommen
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_mark_dismissed">
@@ -1283,7 +1279,8 @@ EXEC google.recommender.recommendations.billing_accounts_locations_recommenders_
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_mark_claimed">
@@ -1300,7 +1297,8 @@ EXEC google.recommender.recommendations.billing_accounts_locations_recommenders_
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_mark_succeeded">
@@ -1317,7 +1315,8 @@ EXEC google.recommender.recommendations.billing_accounts_locations_recommenders_
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_recommendations_mark_failed">
@@ -1334,7 +1333,8 @@ EXEC google.recommender.recommendations.billing_accounts_locations_recommenders_
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_mark_dismissed">
@@ -1350,7 +1350,8 @@ EXEC google.recommender.recommendations.folders_locations_recommenders_recommend
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_mark_claimed">
@@ -1367,7 +1368,8 @@ EXEC google.recommender.recommendations.folders_locations_recommenders_recommend
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_mark_succeeded">
@@ -1384,7 +1386,8 @@ EXEC google.recommender.recommendations.folders_locations_recommenders_recommend
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recommenders_recommendations_mark_failed">
@@ -1401,7 +1404,8 @@ EXEC google.recommender.recommendations.folders_locations_recommenders_recommend
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_mark_dismissed">
@@ -1417,7 +1421,8 @@ EXEC google.recommender.recommendations.organizations_locations_recommenders_rec
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_mark_claimed">
@@ -1434,7 +1439,8 @@ EXEC google.recommender.recommendations.organizations_locations_recommenders_rec
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_mark_succeeded">
@@ -1451,7 +1457,8 @@ EXEC google.recommender.recommendations.organizations_locations_recommenders_rec
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_recommendations_mark_failed">
@@ -1468,7 +1475,8 @@ EXEC google.recommender.recommendations.organizations_locations_recommenders_rec
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -50,8 +50,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_security_health_analytics_settings_effective_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_event_threat_detection_settings_effective_custom_modules_get">
-
-Successful response
 
 <table>
 <thead>
@@ -142,8 +138,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_effective_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -182,8 +176,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_effective_custom_modules_get">
-
-Successful response
 
 <table>
 <thead>
@@ -234,8 +226,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_effective_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -274,8 +264,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_effective_custom_modules_get">
-
-Successful response
 
 <table>
 <thead>
@@ -326,8 +314,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_security_health_analytics_settings_effective_custom_modules_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -366,8 +352,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_event_threat_detection_settings_effective_custom_modules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -418,8 +402,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_effective_custom_modules_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -458,8 +440,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_effective_custom_modules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -510,8 +490,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_effective_custom_modules_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -550,8 +528,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_effective_custom_modules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -782,7 +758,8 @@ displayName,
 enablementState
 FROM google.securitycenter.effective_custom_modules
 WHERE foldersId = '{{ foldersId }}' -- required
-AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required;
+AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_event_threat_detection_settings_effective_custom_modules_get">
@@ -800,7 +777,8 @@ enablementState,
 type
 FROM google.securitycenter.effective_custom_modules
 WHERE foldersId = '{{ foldersId }}' -- required
-AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required;
+AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_effective_custom_modules_get">
@@ -816,7 +794,8 @@ displayName,
 enablementState
 FROM google.securitycenter.effective_custom_modules
 WHERE projectsId = '{{ projectsId }}' -- required
-AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required;
+AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_effective_custom_modules_get">
@@ -834,7 +813,8 @@ enablementState,
 type
 FROM google.securitycenter.effective_custom_modules
 WHERE projectsId = '{{ projectsId }}' -- required
-AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required;
+AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_effective_custom_modules_get">
@@ -850,7 +830,8 @@ displayName,
 enablementState
 FROM google.securitycenter.effective_custom_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required;
+AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_effective_custom_modules_get">
@@ -868,7 +849,8 @@ enablementState,
 type
 FROM google.securitycenter.effective_custom_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required;
+AND effectiveCustomModulesId = '{{ effectiveCustomModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_security_health_analytics_settings_effective_custom_modules_list">
@@ -885,7 +867,8 @@ enablementState
 FROM google.securitycenter.effective_custom_modules
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_event_threat_detection_settings_effective_custom_modules_list">
@@ -904,7 +887,8 @@ type
 FROM google.securitycenter.effective_custom_modules
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_effective_custom_modules_list">
@@ -921,7 +905,8 @@ enablementState
 FROM google.securitycenter.effective_custom_modules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_effective_custom_modules_list">
@@ -940,7 +925,8 @@ type
 FROM google.securitycenter.effective_custom_modules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_effective_custom_modules_list">
@@ -957,7 +943,8 @@ enablementState
 FROM google.securitycenter.effective_custom_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_effective_custom_modules_list">
@@ -976,7 +963,8 @@ type
 FROM google.securitycenter.effective_custom_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

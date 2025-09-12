@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_databases_backup_schedules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_databases_backup_schedules_list">
-
-Successful response
 
 <table>
 <thead>
@@ -277,7 +273,8 @@ FROM google.spanner.backup_schedules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
-AND backupSchedulesId = '{{ backupSchedulesId }}' -- required;
+AND backupSchedulesId = '{{ backupSchedulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_backup_schedules_list">
@@ -298,7 +295,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -461,7 +459,8 @@ DELETE FROM google.spanner.backup_schedules
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND backupSchedulesId = '{{ backupSchedulesId }}' --required;
+AND backupSchedulesId = '{{ backupSchedulesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

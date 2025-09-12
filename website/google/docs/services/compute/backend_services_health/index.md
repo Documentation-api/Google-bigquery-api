@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_health">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ kind
 FROM google.compute.backend_services_health
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND backendService = '{{ backendService }}' -- required;
+AND backendService = '{{ backendService }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -295,7 +291,8 @@ state
 FROM google.secretmanager.versions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND secretsId = '{{ secretsId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -318,7 +315,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND secretsId = '{{ secretsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -340,7 +338,8 @@ Destroys a SecretVersion. Sets the state of the SecretVersion to DESTROYED and i
 DELETE FROM google.secretmanager.versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND secretsId = '{{ secretsId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -364,7 +363,8 @@ Accesses a SecretVersion. This call returns the secret data. `projects/*/secrets
 EXEC google.secretmanager.versions.access 
 @projectsId='{{ projectsId }}' --required, 
 @secretsId='{{ secretsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -379,7 +379,8 @@ EXEC google.secretmanager.versions.disable
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable">
@@ -394,7 +395,8 @@ EXEC google.secretmanager.versions.enable
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

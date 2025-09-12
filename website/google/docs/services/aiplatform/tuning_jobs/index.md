@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -376,7 +372,8 @@ updateTime
 FROM google.aiplatform.tuning_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND tuningJobsId = '{{ tuningJobsId }}' -- required;
+AND tuningJobsId = '{{ tuningJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -407,7 +404,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -538,7 +536,8 @@ Cancels a TuningJob. Starts asynchronous cancellation on the TuningJob. The serv
 EXEC google.aiplatform.tuning_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@tuningJobsId='{{ tuningJobsId }}' --required;
+@tuningJobsId='{{ tuningJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="rebase_tuned_model">
@@ -555,7 +554,8 @@ EXEC google.aiplatform.tuning_jobs.rebase_tuned_model
 "tuningJob": "{{ tuningJob }}", 
 "artifactDestination": "{{ artifactDestination }}", 
 "deployToSameEndpoint": {{ deployToSameEndpoint }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

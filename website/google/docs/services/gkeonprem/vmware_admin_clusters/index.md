@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_vmware_admin_clusters_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_list">
-
-Successful response
 
 <table>
 <thead>
@@ -552,7 +548,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND vmwareAdminClustersId = '{{ vmwareAdminClustersId }}' -- required
 AND view = '{{ view }}'
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_list">
@@ -596,7 +593,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -858,7 +856,8 @@ EXEC google.gkeonprem.vmware_admin_clusters.projects_locations_vmware_admin_clus
 '{
 "vmwareAdminClusterId": "{{ vmwareAdminClusterId }}", 
 "membership": "{{ membership }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_admin_clusters_unenroll">
@@ -873,7 +872,8 @@ EXEC google.gkeonprem.vmware_admin_clusters.projects_locations_vmware_admin_clus
 @etag='{{ etag }}', 
 @allowMissing={{ allowMissing }}, 
 @validateOnly={{ validateOnly }}, 
-@ignoreErrors={{ ignoreErrors }};
+@ignoreErrors={{ ignoreErrors }}
+;
 ```
 </TabItem>
 </Tabs>

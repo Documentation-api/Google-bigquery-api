@@ -230,7 +230,8 @@ Removes items from an address group.
 DELETE FROM google.networksecurity.address_groups_items
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND addressGroupsId = '{{ addressGroupsId }}' --required;
+AND addressGroupsId = '{{ addressGroupsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_address_groups_remove_items">
@@ -241,7 +242,8 @@ Removes items from an address group.
 DELETE FROM google.networksecurity.address_groups_items
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND addressGroupsId = '{{ addressGroupsId }}' --required;
+AND addressGroupsId = '{{ addressGroupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

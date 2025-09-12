@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -362,7 +358,8 @@ updateTime
 FROM google.deploymentmanager.deployments
 WHERE project = '{{ project }}' -- required
 AND deployment = '{{ deployment }}' -- required
-AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}';
+AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -388,7 +385,8 @@ WHERE project = '{{ project }}' -- required
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -705,7 +703,8 @@ DELETE FROM google.deploymentmanager.deployments
 WHERE project = '{{ project }}' --required
 AND deployment = '{{ deployment }}' --required
 AND deletePolicy = '{{ deletePolicy }}'
-AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}';
+AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -731,7 +730,8 @@ EXEC google.deploymentmanager.deployments.cancel_preview
 @@json=
 '{
 "fingerprint": "{{ fingerprint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -745,7 +745,8 @@ EXEC google.deploymentmanager.deployments.stop
 @@json=
 '{
 "fingerprint": "{{ fingerprint }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

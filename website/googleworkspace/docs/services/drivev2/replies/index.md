@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -307,7 +303,8 @@ FROM googleworkspace.drivev2.replies
 WHERE fileId = '{{ fileId }}' -- required
 AND commentId = '{{ commentId }}' -- required
 AND replyId = '{{ replyId }}' -- required
-AND includeDeleted = '{{ includeDeleted }}';
+AND includeDeleted = '{{ includeDeleted }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -331,7 +328,8 @@ WHERE fileId = '{{ fileId }}' -- required
 AND commentId = '{{ commentId }}' -- required
 AND includeDeleted = '{{ includeDeleted }}'
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -566,7 +564,8 @@ Deletes a reply.
 DELETE FROM googleworkspace.drivev2.replies
 WHERE fileId = '{{ fileId }}' --required
 AND commentId = '{{ commentId }}' --required
-AND replyId = '{{ replyId }}' --required;
+AND replyId = '{{ replyId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

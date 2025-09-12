@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_app_connectors_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_app_connectors_list">
-
-Successful response
 
 <table>
 <thead>
@@ -327,7 +323,8 @@ updateTime
 FROM google.beyondcorp.app_connectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND appConnectorsId = '{{ appConnectorsId }}' -- required;
+AND appConnectorsId = '{{ appConnectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_app_connectors_list">
@@ -351,7 +348,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -507,7 +505,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND appConnectorsId = '{{ appConnectorsId }}' --required
 AND requestId = '{{ requestId }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -530,7 +529,8 @@ Gets instance configuration for a given AppConnector. An internal method called 
 EXEC google.beyondcorp.app_connectors.projects_locations_app_connectors_resolve_instance_config 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@appConnectorsId='{{ appConnectorsId }}' --required;
+@appConnectorsId='{{ appConnectorsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_app_connectors_report_status">
@@ -547,7 +547,8 @@ EXEC google.beyondcorp.app_connectors.projects_locations_app_connectors_report_s
 "resourceInfo": "{{ resourceInfo }}", 
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

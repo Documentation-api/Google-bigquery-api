@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_route_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list_route_policies">
-
-Successful response
 
 <table>
 <thead>
@@ -249,7 +245,8 @@ FROM google.compute.route_policies
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
 AND router = '{{ router }}' -- required
-AND policy = '{{ policy }}';
+AND policy = '{{ policy }}'
+;
 ```
 </TabItem>
 <TabItem value="list_route_policies">
@@ -274,7 +271,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -355,7 +353,8 @@ WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND router = '{{ router }}' --required
 AND policy = '{{ policy }}'
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

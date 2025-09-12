@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -279,7 +275,8 @@ FROM google.apihub.discovered_api_operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND discoveredApiObservationsId = '{{ discoveredApiObservationsId }}' -- required
-AND discoveredApiOperationsId = '{{ discoveredApiOperationsId }}' -- required;
+AND discoveredApiOperationsId = '{{ discoveredApiOperationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -303,7 +300,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND discoveredApiObservationsId = '{{ discoveredApiObservationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

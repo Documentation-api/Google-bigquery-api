@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -351,7 +347,8 @@ updateTime
 FROM google.saasservicemgmt.unit_kinds
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND unitKindsId = '{{ unitKindsId }}' -- required;
+AND unitKindsId = '{{ unitKindsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -378,7 +375,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -573,7 +571,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND unitKindsId = '{{ unitKindsId }}' --required
 AND etag = '{{ etag }}'
 AND validateOnly = '{{ validateOnly }}'
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

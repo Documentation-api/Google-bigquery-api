@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -350,7 +346,8 @@ FROM google.aiplatform.trials
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
-AND trialsId = '{{ trialsId }}' -- required;
+AND trialsId = '{{ trialsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -376,7 +373,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -458,7 +456,8 @@ DELETE FROM google.aiplatform.trials
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND studiesId = '{{ studiesId }}' --required
-AND trialsId = '{{ trialsId }}' --required;
+AND trialsId = '{{ trialsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -490,7 +489,8 @@ EXEC google.aiplatform.trials.suggest
 "suggestionCount": {{ suggestionCount }}, 
 "clientId": "{{ clientId }}", 
 "contexts": "{{ contexts }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="add_trial_measurement">
@@ -506,7 +506,8 @@ EXEC google.aiplatform.trials.add_trial_measurement
 @@json=
 '{
 "measurement": "{{ measurement }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="complete">
@@ -524,7 +525,8 @@ EXEC google.aiplatform.trials.complete
 "finalMeasurement": "{{ finalMeasurement }}", 
 "trialInfeasible": {{ trialInfeasible }}, 
 "infeasibleReason": "{{ infeasibleReason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="check_trial_early_stopping_state">
@@ -536,7 +538,8 @@ EXEC google.aiplatform.trials.check_trial_early_stopping_state
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @studiesId='{{ studiesId }}' --required, 
-@trialsId='{{ trialsId }}' --required;
+@trialsId='{{ trialsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -548,7 +551,8 @@ EXEC google.aiplatform.trials.stop
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @studiesId='{{ studiesId }}' --required, 
-@trialsId='{{ trialsId }}' --required;
+@trialsId='{{ trialsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

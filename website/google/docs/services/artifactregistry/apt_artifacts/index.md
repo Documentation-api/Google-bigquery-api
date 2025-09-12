@@ -118,7 +118,8 @@ EXEC google.artifactregistry.apt_artifacts.import
 @@json=
 '{
 "gcsSource": "{{ gcsSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upload">
@@ -129,7 +130,8 @@ Directly uploads an Apt artifact. The returned Operation will complete once the 
 EXEC google.artifactregistry.apt_artifacts.upload 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@repositoriesId='{{ repositoriesId }}' --required;
+@repositoriesId='{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

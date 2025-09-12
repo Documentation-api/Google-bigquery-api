@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -185,8 +183,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -495,7 +491,8 @@ updateTime,
 usageReportingId
 FROM google.cloudcommerceprocurement.entitlements
 WHERE providersId = '{{ providersId }}' -- required
-AND entitlementsId = '{{ entitlementsId }}' -- required;
+AND entitlementsId = '{{ entitlementsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -534,7 +531,8 @@ FROM google.cloudcommerceprocurement.entitlements
 WHERE providersId = '{{ providersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -628,7 +626,8 @@ EXEC google.cloudcommerceprocurement.entitlements.approve
 '{
 "properties": "{{ properties }}", 
 "entitlementMigrated": "{{ entitlementMigrated }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reject">
@@ -642,7 +641,8 @@ EXEC google.cloudcommerceprocurement.entitlements.reject
 @@json=
 '{
 "reason": "{{ reason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="approve_plan_change">
@@ -656,7 +656,8 @@ EXEC google.cloudcommerceprocurement.entitlements.approve_plan_change
 @@json=
 '{
 "pendingPlanName": "{{ pendingPlanName }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reject_plan_change">
@@ -671,7 +672,8 @@ EXEC google.cloudcommerceprocurement.entitlements.reject_plan_change
 '{
 "reason": "{{ reason }}", 
 "pendingPlanName": "{{ pendingPlanName }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="suspend">
@@ -685,7 +687,8 @@ EXEC google.cloudcommerceprocurement.entitlements.suspend
 @@json=
 '{
 "reason": "{{ reason }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

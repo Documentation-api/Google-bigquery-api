@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_changelogs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_changelogs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -262,7 +258,8 @@ FROM google.dialogflow.changelogs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
-AND changelogsId = '{{ changelogsId }}' -- required;
+AND changelogsId = '{{ changelogsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_changelogs_list">
@@ -285,7 +282,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

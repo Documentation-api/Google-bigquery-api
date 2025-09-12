@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_simulations_valued_resources_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_simulations_attack_exposure_results_valued_resources_list">
-
-Successful response
 
 <table>
 <thead>
@@ -144,8 +140,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_simulations_valued_resources_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -194,8 +188,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_valued_resources_list">
-
-Successful response
 
 <table>
 <thead>
@@ -375,7 +367,8 @@ resourceValueConfigsUsed
 FROM google.securitycenter.valued_resources
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND simulationsId = '{{ simulationsId }}' -- required
-AND valuedResourcesId = '{{ valuedResourcesId }}' -- required;
+AND valuedResourcesId = '{{ valuedResourcesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_simulations_attack_exposure_results_valued_resources_list">
@@ -398,7 +391,8 @@ AND attackExposureResultsId = '{{ attackExposureResultsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_simulations_valued_resources_list">
@@ -420,7 +414,8 @@ AND simulationsId = '{{ simulationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_valued_resources_list">
@@ -441,7 +436,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

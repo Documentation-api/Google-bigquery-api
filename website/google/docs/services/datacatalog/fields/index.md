@@ -287,7 +287,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND tagTemplatesId = '{{ tagTemplatesId }}' --required
 AND fieldsId = '{{ fieldsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -314,7 +315,8 @@ EXEC google.datacatalog.fields.projects_locations_tag_templates_fields_rename
 @@json=
 '{
 "newTagTemplateFieldId": "{{ newTagTemplateFieldId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

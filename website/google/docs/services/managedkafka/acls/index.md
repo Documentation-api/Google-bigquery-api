@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -266,7 +262,8 @@ FROM google.managedkafka.acls
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
-AND aclsId = '{{ aclsId }}' -- required;
+AND aclsId = '{{ aclsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -286,7 +283,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -423,7 +421,8 @@ DELETE FROM google.managedkafka.acls
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND clustersId = '{{ clustersId }}' --required
-AND aclsId = '{{ aclsId }}' --required;
+AND aclsId = '{{ aclsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -355,7 +351,8 @@ updateTime
 FROM google.apihub.plugins
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND pluginsId = '{{ pluginsId }}' -- required;
+AND pluginsId = '{{ pluginsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -383,7 +380,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -537,7 +535,8 @@ Delete a Plugin in API hub. Note, only user owned plugins can be deleted via thi
 DELETE FROM google.apihub.plugins
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND pluginsId = '{{ pluginsId }}' --required;
+AND pluginsId = '{{ pluginsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -560,7 +559,8 @@ Enables a plugin. The `state` of the plugin after enabling is `ENABLED`
 EXEC google.apihub.plugins.enable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@pluginsId='{{ pluginsId }}' --required;
+@pluginsId='{{ pluginsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -571,7 +571,8 @@ Disables a plugin. The `state` of the plugin after disabling is `DISABLED`
 EXEC google.apihub.plugins.disable 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@pluginsId='{{ pluginsId }}' --required;
+@pluginsId='{{ pluginsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

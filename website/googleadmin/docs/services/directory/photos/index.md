@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -185,7 +183,8 @@ photoData,
 primaryEmail,
 width
 FROM googleadmin.directory.photos
-WHERE userKey = '{{ userKey }}' -- required;
+WHERE userKey = '{{ userKey }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -283,7 +282,8 @@ Removes the user's photo.
 
 ```sql
 DELETE FROM googleadmin.directory.photos
-WHERE userKey = '{{ userKey }}' --required;
+WHERE userKey = '{{ userKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

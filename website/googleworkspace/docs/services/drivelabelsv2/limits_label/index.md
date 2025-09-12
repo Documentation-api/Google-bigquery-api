@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_label">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ maxDraftRevisions,
 maxFields,
 maxTitleLength
 FROM googleworkspace.drivelabelsv2.limits_label
-WHERE name = '{{ name }}';
+WHERE name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -52,8 +52,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_org_policy_violations_previews_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_access_policy_simulations_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -134,8 +130,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_replays_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -174,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_locations_org_policy_violations_previews_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -216,8 +208,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_access_policy_simulations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -256,8 +246,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_locations_replays_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -298,8 +286,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_access_policy_simulations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -338,8 +324,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_replays_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -380,8 +364,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_org_policy_violations_previews_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -420,8 +402,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_replays_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -462,8 +442,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_replays_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -502,8 +480,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_replays_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -544,8 +520,6 @@ Successful response
 </TabItem>
 <TabItem value="operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -584,8 +558,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -849,7 +821,8 @@ FROM google.policysimulator.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND orgPolicyViolationsPreviewsId = '{{ orgPolicyViolationsPreviewsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_access_policy_simulations_operations_get">
@@ -867,7 +840,8 @@ FROM google.policysimulator.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND accessPolicySimulationsId = '{{ accessPolicySimulationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_replays_operations_get">
@@ -885,7 +859,8 @@ FROM google.policysimulator.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_org_policy_violations_previews_operations_get">
@@ -903,7 +878,8 @@ FROM google.policysimulator.operations
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND orgPolicyViolationsPreviewsId = '{{ orgPolicyViolationsPreviewsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_access_policy_simulations_operations_get">
@@ -921,7 +897,8 @@ FROM google.policysimulator.operations
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND accessPolicySimulationsId = '{{ accessPolicySimulationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_replays_operations_get">
@@ -939,7 +916,8 @@ FROM google.policysimulator.operations
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_access_policy_simulations_operations_get">
@@ -957,7 +935,8 @@ FROM google.policysimulator.operations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND accessPolicySimulationsId = '{{ accessPolicySimulationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_replays_operations_get">
@@ -975,7 +954,8 @@ FROM google.policysimulator.operations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_org_policy_violations_previews_operations_get">
@@ -993,7 +973,8 @@ FROM google.policysimulator.operations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND orgPolicyViolationsPreviewsId = '{{ orgPolicyViolationsPreviewsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_replays_operations_list">
@@ -1013,7 +994,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_replays_operations_list">
@@ -1033,7 +1015,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_replays_operations_list">
@@ -1053,7 +1036,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="operations_get">
@@ -1068,7 +1052,8 @@ error,
 metadata,
 response
 FROM google.policysimulator.operations
-WHERE operationsId = '{{ operationsId }}' -- required;
+WHERE operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="operations_list">
@@ -1085,7 +1070,8 @@ response
 FROM google.policysimulator.operations
 WHERE filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

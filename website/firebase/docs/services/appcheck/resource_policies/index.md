@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -261,7 +257,8 @@ updateTime
 FROM firebase.appcheck.resource_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
-AND resourcePoliciesId = '{{ resourcePoliciesId }}' -- required;
+AND resourcePoliciesId = '{{ resourcePoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -280,7 +277,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND servicesId = '{{ servicesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -431,7 +429,8 @@ DELETE FROM firebase.appcheck.resource_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND servicesId = '{{ servicesId }}' --required
 AND resourcePoliciesId = '{{ resourcePoliciesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

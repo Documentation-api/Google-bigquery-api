@@ -191,7 +191,8 @@ EXEC google.identitytoolkit.relyingparty.download_account
 "maxResults": {{ maxResults }}, 
 "nextPageToken": "{{ nextPageToken }}", 
 "targetProjectId": "{{ targetProjectId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="email_link_signin">
@@ -205,7 +206,8 @@ EXEC google.identitytoolkit.relyingparty.email_link_signin
 "email": "{{ email }}", 
 "idToken": "{{ idToken }}", 
 "oobCode": "{{ oobCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reset_password">
@@ -220,7 +222,8 @@ EXEC google.identitytoolkit.relyingparty.reset_password
 "newPassword": "{{ newPassword }}", 
 "oldPassword": "{{ oldPassword }}", 
 "oobCode": "{{ oobCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="send_verification_code">
@@ -235,7 +238,8 @@ EXEC google.identitytoolkit.relyingparty.send_verification_code
 "iosSecret": "{{ iosSecret }}", 
 "phoneNumber": "{{ phoneNumber }}", 
 "recaptchaToken": "{{ recaptchaToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_account_info">
@@ -269,7 +273,8 @@ EXEC google.identitytoolkit.relyingparty.set_account_info
 "returnSecureToken": {{ returnSecureToken }}, 
 "upgradeToFederatedLogin": {{ upgradeToFederatedLogin }}, 
 "validSince": "{{ validSince }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_project_config">
@@ -291,7 +296,8 @@ EXEC google.identitytoolkit.relyingparty.set_project_config
 "resetPasswordTemplate": "{{ resetPasswordTemplate }}", 
 "useEmailSending": {{ useEmailSending }}, 
 "verifyEmailTemplate": "{{ verifyEmailTemplate }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sign_out_user">
@@ -304,7 +310,8 @@ EXEC google.identitytoolkit.relyingparty.sign_out_user
 '{
 "instanceId": "{{ instanceId }}", 
 "localId": "{{ localId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="signup_new_user">
@@ -329,7 +336,8 @@ EXEC google.identitytoolkit.relyingparty.signup_new_user
 "photoUrl": "{{ photoUrl }}", 
 "tenantId": "{{ tenantId }}", 
 "tenantProjectNumber": "{{ tenantProjectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upload_account">
@@ -354,7 +362,8 @@ EXEC google.identitytoolkit.relyingparty.upload_account
 "signerKey": "{{ signerKey }}", 
 "targetProjectId": "{{ targetProjectId }}", 
 "users": "{{ users }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="verify_assertion">
@@ -378,7 +387,8 @@ EXEC google.identitytoolkit.relyingparty.verify_assertion
 "sessionId": "{{ sessionId }}", 
 "tenantId": "{{ tenantId }}", 
 "tenantProjectNumber": "{{ tenantProjectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="verify_custom_token">
@@ -393,7 +403,8 @@ EXEC google.identitytoolkit.relyingparty.verify_custom_token
 "instanceId": "{{ instanceId }}", 
 "returnSecureToken": {{ returnSecureToken }}, 
 "token": "{{ token }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="verify_password">
@@ -415,7 +426,8 @@ EXEC google.identitytoolkit.relyingparty.verify_password
 "returnSecureToken": {{ returnSecureToken }}, 
 "tenantId": "{{ tenantId }}", 
 "tenantProjectNumber": "{{ tenantProjectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="verify_phone_number">
@@ -433,7 +445,8 @@ EXEC google.identitytoolkit.relyingparty.verify_phone_number
 "sessionInfo": "{{ sessionInfo }}", 
 "temporaryProof": "{{ temporaryProof }}", 
 "verificationProof": "{{ verificationProof }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

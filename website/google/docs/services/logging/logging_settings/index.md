@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ kmsServiceAccountId,
 loggingServiceAccountId,
 storageLocation
 FROM google.logging.logging_settings
-WHERE name = '{{ name }}' -- required;
+WHERE name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

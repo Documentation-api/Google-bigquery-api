@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_nat_mapping_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ AND maxResults = '{{ maxResults }}'
 AND natName = '{{ natName }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>

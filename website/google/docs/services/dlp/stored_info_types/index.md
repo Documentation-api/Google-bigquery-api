@@ -46,8 +46,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_stored_info_types_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -76,8 +74,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_stored_info_types_get">
-
-Successful response
 
 <table>
 <thead>
@@ -108,8 +104,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_stored_info_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -138,8 +132,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_stored_info_types_get">
-
-Successful response
 
 <table>
 <thead>
@@ -170,8 +162,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_stored_info_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +190,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_stored_info_types_get">
-
-Successful response
 
 <table>
 <thead>
@@ -232,8 +220,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_stored_info_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -262,8 +248,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_stored_info_types_list">
-
-Successful response
 
 <table>
 <thead>
@@ -535,7 +519,8 @@ pendingVersions
 FROM google.dlp.stored_info_types
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_stored_info_types_get">
@@ -550,7 +535,8 @@ pendingVersions
 FROM google.dlp.stored_info_types
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_stored_info_types_list">
@@ -568,7 +554,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_stored_info_types_get">
@@ -582,7 +569,8 @@ currentVersion,
 pendingVersions
 FROM google.dlp.stored_info_types
 WHERE projectsId = '{{ projectsId }}' -- required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_stored_info_types_list">
@@ -600,7 +588,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_stored_info_types_get">
@@ -614,7 +603,8 @@ currentVersion,
 pendingVersions
 FROM google.dlp.stored_info_types
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_stored_info_types_list">
@@ -631,7 +621,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_stored_info_types_list">
@@ -648,7 +639,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -904,7 +896,8 @@ Deletes a stored infoType. See https://cloud.google.com/sensitive-data-protectio
 DELETE FROM google.dlp.stored_info_types
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_stored_info_types_delete">
@@ -915,7 +908,8 @@ Deletes a stored infoType. See https://cloud.google.com/sensitive-data-protectio
 DELETE FROM google.dlp.stored_info_types
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_stored_info_types_delete">
@@ -925,7 +919,8 @@ Deletes a stored infoType. See https://cloud.google.com/sensitive-data-protectio
 ```sql
 DELETE FROM google.dlp.stored_info_types
 WHERE projectsId = '{{ projectsId }}' --required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_stored_info_types_delete">
@@ -935,7 +930,8 @@ Deletes a stored infoType. See https://cloud.google.com/sensitive-data-protectio
 ```sql
 DELETE FROM google.dlp.stored_info_types
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required;
+AND storedInfoTypesId = '{{ storedInfoTypesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

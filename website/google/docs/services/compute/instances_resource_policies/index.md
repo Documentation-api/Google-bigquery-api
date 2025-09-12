@@ -203,7 +203,8 @@ DELETE FROM google.compute.instances_resource_policies
 WHERE project = '{{ project }}' --required
 AND zone = '{{ zone }}' --required
 AND instance = '{{ instance }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

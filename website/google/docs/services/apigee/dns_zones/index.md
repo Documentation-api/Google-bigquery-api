@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_dns_zones_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_dns_zones_list">
-
-Successful response
 
 <table>
 <thead>
@@ -253,7 +249,8 @@ state,
 updateTime
 FROM google.apigee.dns_zones
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND dnsZonesId = '{{ dnsZonesId }}' -- required;
+AND dnsZonesId = '{{ dnsZonesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_dns_zones_list">
@@ -272,7 +269,8 @@ updateTime
 FROM google.apigee.dns_zones
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -367,7 +365,8 @@ Deletes a previously created DNS zone.
 ```sql
 DELETE FROM google.apigee.dns_zones
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND dnsZonesId = '{{ dnsZonesId }}' --required;
+AND dnsZonesId = '{{ dnsZonesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

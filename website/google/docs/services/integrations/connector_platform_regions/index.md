@@ -89,6 +89,7 @@ Enumerates the regions for which Connector Platform is provisioned.
 
 ```sql
 EXEC google.integrations.connector_platform_regions.connector_platform_regions_enumerate 
+
 ;
 ```
 </TabItem>

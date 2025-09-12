@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_entry_groups_entries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -205,8 +203,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_entry_groups_entries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -602,7 +598,8 @@ FROM google.datacatalog.entries
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND entryGroupsId = '{{ entryGroupsId }}' -- required
-AND entriesId = '{{ entriesId }}' -- required;
+AND entriesId = '{{ entriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_entries_list">
@@ -647,7 +644,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND entryGroupsId = '{{ entryGroupsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1001,7 +999,8 @@ DELETE FROM google.datacatalog.entries
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND entryGroupsId = '{{ entryGroupsId }}' --required
-AND entriesId = '{{ entriesId }}' --required;
+AND entriesId = '{{ entriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1033,7 +1032,8 @@ EXEC google.datacatalog.entries.projects_locations_entry_groups_entries_modify_e
 @@json=
 '{
 "entryOverview": "{{ entryOverview }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_entries_modify_entry_contacts">
@@ -1049,7 +1049,8 @@ EXEC google.datacatalog.entries.projects_locations_entry_groups_entries_modify_e
 @@json=
 '{
 "contacts": "{{ contacts }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_entries_star">
@@ -1061,7 +1062,8 @@ EXEC google.datacatalog.entries.projects_locations_entry_groups_entries_star
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @entryGroupsId='{{ entryGroupsId }}' --required, 
-@entriesId='{{ entriesId }}' --required;
+@entriesId='{{ entriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_entries_unstar">
@@ -1073,7 +1075,8 @@ EXEC google.datacatalog.entries.projects_locations_entry_groups_entries_unstar
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @entryGroupsId='{{ entryGroupsId }}' --required, 
-@entriesId='{{ entriesId }}' --required;
+@entriesId='{{ entriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_entry_groups_entries_import">
@@ -1089,7 +1092,8 @@ EXEC google.datacatalog.entries.projects_locations_entry_groups_entries_import
 '{
 "gcsBucketPath": "{{ gcsBucketPath }}", 
 "jobId": "{{ jobId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="entries_lookup">
@@ -1102,7 +1106,8 @@ EXEC google.datacatalog.entries.entries_lookup
 @sqlResource='{{ sqlResource }}', 
 @fullyQualifiedName='{{ fullyQualifiedName }}', 
 @project='{{ project }}', 
-@location='{{ location }}';
+@location='{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>

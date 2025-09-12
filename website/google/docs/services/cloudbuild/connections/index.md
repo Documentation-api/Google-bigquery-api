@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_connections_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_connections_list">
-
-Successful response
 
 <table>
 <thead>
@@ -369,7 +365,8 @@ updateTime
 FROM google.cloudbuild.connections
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND connectionsId = '{{ connectionsId }}' -- required;
+AND connectionsId = '{{ connectionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_connections_list">
@@ -396,7 +393,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -576,7 +574,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND connectionsId = '{{ connectionsId }}' --required
 AND etag = '{{ etag }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -604,7 +603,8 @@ EXEC google.cloudbuild.connections.projects_locations_connections_process_webhoo
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

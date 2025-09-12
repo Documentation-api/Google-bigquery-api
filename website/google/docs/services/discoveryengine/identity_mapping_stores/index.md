@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_identity_mapping_stores_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_list">
-
-Successful response
 
 <table>
 <thead>
@@ -239,7 +235,8 @@ kmsKeyName
 FROM google.discoveryengine.identity_mapping_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND identityMappingStoresId = '{{ identityMappingStoresId }}' -- required;
+AND identityMappingStoresId = '{{ identityMappingStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_list">
@@ -255,7 +252,8 @@ FROM google.discoveryengine.identity_mapping_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -348,7 +346,8 @@ Deletes the Identity Mapping Store.
 DELETE FROM google.discoveryengine.identity_mapping_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND identityMappingStoresId = '{{ identityMappingStoresId }}' --required;
+AND identityMappingStoresId = '{{ identityMappingStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -375,7 +374,8 @@ EXEC google.discoveryengine.identity_mapping_stores.projects_locations_identity_
 @@json=
 '{
 "inlineSource": "{{ inlineSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_purge_identity_mappings">
@@ -392,7 +392,8 @@ EXEC google.discoveryengine.identity_mapping_stores.projects_locations_identity_
 "inlineSource": "{{ inlineSource }}", 
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

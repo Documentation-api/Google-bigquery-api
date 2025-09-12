@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_metadata_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_metadata_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -318,7 +314,8 @@ updateTime
 FROM google.dataplex.metadata_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND metadataJobsId = '{{ metadataJobsId }}' -- required;
+AND metadataJobsId = '{{ metadataJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_metadata_jobs_list">
@@ -344,7 +341,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -450,7 +448,8 @@ Cancels a metadata job.If you cancel a metadata import job that is in progress, 
 EXEC google.dataplex.metadata_jobs.projects_locations_metadata_jobs_cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@metadataJobsId='{{ metadataJobsId }}' --required;
+@metadataJobsId='{{ metadataJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

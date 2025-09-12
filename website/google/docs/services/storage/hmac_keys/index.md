@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -309,7 +305,8 @@ updated
 FROM google.storage.hmac_keys
 WHERE projectId = '{{ projectId }}' -- required
 AND accessId = '{{ accessId }}' -- required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -334,7 +331,8 @@ AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND serviceAccountEmail = '{{ serviceAccountEmail }}'
 AND showDeletedKeys = '{{ showDeletedKeys }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -450,7 +448,8 @@ Deletes an HMAC key.
 DELETE FROM google.storage.hmac_keys
 WHERE projectId = '{{ projectId }}' --required
 AND accessId = '{{ accessId }}' --required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

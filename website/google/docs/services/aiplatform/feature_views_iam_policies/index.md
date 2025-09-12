@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -177,7 +175,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND featureOnlineStoresId = '{{ featureOnlineStoresId }}' -- required
 AND featureViewsId = '{{ featureViewsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -231,7 +230,8 @@ EXEC google.aiplatform.feature_views_iam_policies.test_iam_permissions
 @locationsId='{{ locationsId }}' --required, 
 @featureOnlineStoresId='{{ featureOnlineStoresId }}' --required, 
 @featureViewsId='{{ featureViewsId }}' --required, 
-@permissions='{{ permissions }}';
+@permissions='{{ permissions }}'
+;
 ```
 </TabItem>
 </Tabs>

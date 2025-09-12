@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -352,7 +348,8 @@ versionAliases,
 versionDestroyTtl
 FROM google.secretmanager.secrets
 WHERE projectsId = '{{ projectsId }}' -- required
-AND secretsId = '{{ secretsId }}' -- required;
+AND secretsId = '{{ secretsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -379,7 +376,8 @@ FROM google.secretmanager.secrets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -591,7 +589,8 @@ Deletes a Secret.
 DELETE FROM google.secretmanager.secrets
 WHERE projectsId = '{{ projectsId }}' --required
 AND secretsId = '{{ secretsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

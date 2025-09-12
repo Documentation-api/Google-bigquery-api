@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -327,7 +323,8 @@ uri,
 useDriverlessConfig
 FROM googleadmin.directory.printers
 WHERE customersId = '{{ customersId }}' -- required
-AND printersId = '{{ printersId }}' -- required;
+AND printersId = '{{ printersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -352,7 +349,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orgUnitId = '{{ orgUnitId }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -545,7 +543,8 @@ Deletes a `Printer`.
 ```sql
 DELETE FROM googleadmin.directory.printers
 WHERE customersId = '{{ customersId }}' --required
-AND printersId = '{{ printersId }}' --required;
+AND printersId = '{{ printersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="batch_delete_printers">
@@ -554,7 +553,8 @@ Deletes printers in batch.
 
 ```sql
 DELETE FROM googleadmin.directory.printers
-WHERE customersId = '{{ customersId }}' --required;
+WHERE customersId = '{{ customersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

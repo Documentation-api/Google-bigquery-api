@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_replays_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_replays_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -112,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_replays_get">
-
-Successful response
 
 <table>
 <thead>
@@ -273,7 +267,8 @@ state
 FROM google.policysimulator.replays
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND replaysId = '{{ replaysId }}' -- required;
+AND replaysId = '{{ replaysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_replays_get">
@@ -289,7 +284,8 @@ state
 FROM google.policysimulator.replays
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND replaysId = '{{ replaysId }}' -- required;
+AND replaysId = '{{ replaysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_replays_get">
@@ -305,7 +301,8 @@ state
 FROM google.policysimulator.replays
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND replaysId = '{{ replaysId }}' -- required;
+AND replaysId = '{{ replaysId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

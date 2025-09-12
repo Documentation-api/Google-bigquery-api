@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetchgithub_installations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ installations
 FROM google.developerconnect.github_installations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND connectionsId = '{{ connectionsId }}' -- required;
+AND connectionsId = '{{ connectionsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -88,7 +88,8 @@ Parameters can be passed in the `WHERE` clause of a query. Check the [Methods](#
 Delete user account.
 
 ```sql
-DELETE FROM google.identitytoolkit.relyingparty_account;
+DELETE FROM google.identitytoolkit.relyingparty_account
+;
 ```
 </TabItem>
 </Tabs>

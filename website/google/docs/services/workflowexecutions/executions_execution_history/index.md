@@ -112,7 +112,8 @@ DELETE FROM google.workflowexecutions.executions_execution_history
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND workflowsId = '{{ workflowsId }}' --required
-AND executionsId = '{{ executionsId }}' --required;
+AND executionsId = '{{ executionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

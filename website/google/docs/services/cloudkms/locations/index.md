@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -229,7 +225,8 @@ locationId,
 metadata
 FROM google.cloudkms.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -248,7 +245,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -274,7 +272,8 @@ EXEC google.cloudkms.locations.generate_random_bytes
 '{
 "lengthBytes": {{ lengthBytes }}, 
 "protectionLevel": "{{ protectionLevel }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iap_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ name,
 accessSettings,
 applicationSettings
 FROM google.iap.iap_settings
-WHERE v1Id = '{{ v1Id }}' -- required;
+WHERE v1Id = '{{ v1Id }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_bgp_routes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -236,7 +234,8 @@ AND pageToken = '{{ pageToken }}'
 AND peer = '{{ peer }}'
 AND policyApplied = '{{ policyApplied }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND routeType = '{{ routeType }}';
+AND routeType = '{{ routeType }}'
+;
 ```
 </TabItem>
 </Tabs>

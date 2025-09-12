@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_security_incidents_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_security_incidents_list">
-
-Successful response
 
 <table>
 <thead>
@@ -286,7 +282,8 @@ trafficCount
 FROM google.apigee.security_incidents
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND securityIncidentsId = '{{ securityIncidentsId }}' -- required;
+AND securityIncidentsId = '{{ securityIncidentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_security_incidents_list">
@@ -309,7 +306,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

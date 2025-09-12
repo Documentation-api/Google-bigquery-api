@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_occurrences_get_notes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_occurrences_get_notes">
-
-Successful response
 
 <table>
 <thead>
@@ -395,7 +391,8 @@ vulnerabilityAssessment
 FROM google.containeranalysis.occurrences_notes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND occurrencesId = '{{ occurrencesId }}' -- required;
+AND occurrencesId = '{{ occurrencesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_occurrences_get_notes">
@@ -428,7 +425,8 @@ vulnerability,
 vulnerabilityAssessment
 FROM google.containeranalysis.occurrences_notes
 WHERE projectsId = '{{ projectsId }}' -- required
-AND occurrencesId = '{{ occurrencesId }}' -- required;
+AND occurrencesId = '{{ occurrencesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

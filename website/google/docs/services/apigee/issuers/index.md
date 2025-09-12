@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="hybrid_issuers_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -116,7 +114,8 @@ Lists hybrid services and its trusted issuers service account ids. This api is a
 ```sql
 SELECT
 issuers
-FROM google.apigee.issuers;
+FROM google.apigee.issuers
+;
 ```
 </TabItem>
 </Tabs>

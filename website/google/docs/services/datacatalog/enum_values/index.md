@@ -122,7 +122,8 @@ EXEC google.datacatalog.enum_values.projects_locations_tag_templates_fields_enum
 @@json=
 '{
 "newEnumValueDisplayName": "{{ newEnumValueDisplayName }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -272,7 +272,8 @@ Removes a peering from the specified network.
 DELETE FROM google.compute.networks_peering
 WHERE project = '{{ project }}' --required
 AND network = '{{ network }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

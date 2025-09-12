@@ -97,7 +97,8 @@ EXEC google.airquality.current_conditions.lookup
 "languageCode": "{{ languageCode }}", 
 "uaqiColorPalette": "{{ uaqiColorPalette }}", 
 "customLocalAqis": "{{ customLocalAqis }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

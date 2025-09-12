@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -316,8 +314,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -585,7 +581,8 @@ WHERE projectId = '{{ projectId }}' -- required
 AND +datasetId = '{{ +datasetId }}' -- required
 AND +tableId = '{{ +tableId }}' -- required
 AND selectedFields = '{{ selectedFields }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -611,7 +608,8 @@ FROM google.bigquery.tables
 WHERE projectId = '{{ projectId }}' -- required
 AND +datasetId = '{{ +datasetId }}' -- required
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1121,7 +1119,8 @@ Deletes the table specified by tableId from the dataset. If the table contains d
 DELETE FROM google.bigquery.tables
 WHERE projectId = '{{ projectId }}' --required
 AND +datasetId = '{{ +datasetId }}' --required
-AND +tableId = '{{ +tableId }}' --required;
+AND +tableId = '{{ +tableId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

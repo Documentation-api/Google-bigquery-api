@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -261,7 +257,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND ragCorporaId = '{{ ragCorporaId }}' -- required
 AND ragFilesId = '{{ ragFilesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -282,7 +279,8 @@ AND ragCorporaId = '{{ ragCorporaId }}' -- required
 AND ragFilesId = '{{ ragFilesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -306,7 +304,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND ragCorporaId = '{{ ragCorporaId }}' --required
 AND ragFilesId = '{{ ragFilesId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -331,7 +330,8 @@ EXEC google.aiplatform.rag_file_operations.cancel
 @locationsId='{{ locationsId }}' --required, 
 @ragCorporaId='{{ ragCorporaId }}' --required, 
 @ragFilesId='{{ ragFilesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="wait">
@@ -345,7 +345,8 @@ EXEC google.aiplatform.rag_file_operations.wait
 @ragCorporaId='{{ ragCorporaId }}' --required, 
 @ragFilesId='{{ ragFilesId }}' --required, 
 @operationsId='{{ operationsId }}' --required, 
-@timeout='{{ timeout }}';
+@timeout='{{ timeout }}'
+;
 ```
 </TabItem>
 </Tabs>

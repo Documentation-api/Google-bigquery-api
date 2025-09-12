@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_storage_layout">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ location,
 locationType
 FROM google.storage.buckets_storage_layout
 WHERE bucket = '{{ bucket }}' -- required
-AND prefix = '{{ prefix }}';
+AND prefix = '{{ prefix }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -110,7 +110,8 @@ EXEC google.geminicloudassist.instances.invoke_explain
 @@json=
 '{
 "contents": "{{ contents }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

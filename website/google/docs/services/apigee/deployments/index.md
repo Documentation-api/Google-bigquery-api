@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_apis_revisions_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -67,8 +65,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_apis_deployments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -89,8 +85,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_environments_sharedflows_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -109,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_deployments_get">
-
-Successful response
 
 <table>
 <thead>
@@ -181,8 +173,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_sharedflows_revisions_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -201,8 +191,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apis_deployments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -223,8 +211,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_environments_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -244,8 +230,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_sharedflows_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -264,8 +248,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_deployments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -463,7 +445,8 @@ deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
-AND revisionsId = '{{ revisionsId }}' -- required;
+AND revisionsId = '{{ revisionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_apis_deployments_list">
@@ -476,7 +459,8 @@ deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND apisId = '{{ apisId }}' -- required;
+AND apisId = '{{ apisId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_sharedflows_deployments_list">
@@ -489,7 +473,8 @@ deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND sharedflowsId = '{{ sharedflowsId }}' -- required;
+AND sharedflowsId = '{{ sharedflowsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_deployments_get">
@@ -512,7 +497,8 @@ state
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND deploymentsId = '{{ deploymentsId }}' -- required;
+AND deploymentsId = '{{ deploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sharedflows_revisions_deployments_list">
@@ -525,7 +511,8 @@ deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND sharedflowsId = '{{ sharedflowsId }}' -- required
-AND revisionsId = '{{ revisionsId }}' -- required;
+AND revisionsId = '{{ revisionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apis_deployments_list">
@@ -537,7 +524,8 @@ SELECT
 deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND apisId = '{{ apisId }}' -- required;
+AND apisId = '{{ apisId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_deployments_list">
@@ -550,7 +538,8 @@ deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND sharedFlows = '{{ sharedFlows }}';
+AND sharedFlows = '{{ sharedFlows }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sharedflows_deployments_list">
@@ -562,7 +551,8 @@ SELECT
 deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sharedflowsId = '{{ sharedflowsId }}' -- required;
+AND sharedflowsId = '{{ sharedflowsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_deployments_list">
@@ -574,7 +564,8 @@ SELECT
 deployments
 FROM google.apigee.deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sharedFlows = '{{ sharedFlows }}';
+AND sharedFlows = '{{ sharedFlows }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -599,7 +590,8 @@ EXEC google.apigee.deployments.organizations_environments_apis_revisions_deploym
 @environmentsId='{{ environmentsId }}' --required, 
 @apisId='{{ apisId }}' --required, 
 @revisionsId='{{ revisionsId }}' --required, 
-@override={{ override }};
+@override={{ override }}
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_apis_revisions_deployments_generate_undeploy_change_report">
@@ -611,7 +603,8 @@ EXEC google.apigee.deployments.organizations_environments_apis_revisions_deploym
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
 @apisId='{{ apisId }}' --required, 
-@revisionsId='{{ revisionsId }}' --required;
+@revisionsId='{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

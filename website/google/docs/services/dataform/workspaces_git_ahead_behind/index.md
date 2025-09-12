@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_git_ahead_behind">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND workspacesId = '{{ workspacesId }}' -- required
-AND remoteBranch = '{{ remoteBranch }}';
+AND remoteBranch = '{{ remoteBranch }}'
+;
 ```
 </TabItem>
 </Tabs>

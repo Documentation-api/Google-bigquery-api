@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -363,7 +359,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND deliveryPipelinesId = '{{ deliveryPipelinesId }}' -- required
 AND releasesId = '{{ releasesId }}' -- required
 AND rolloutsId = '{{ rolloutsId }}' -- required
-AND jobRunsId = '{{ jobRunsId }}' -- required;
+AND jobRunsId = '{{ jobRunsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -396,7 +393,8 @@ AND rolloutsId = '{{ rolloutsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -425,7 +423,8 @@ EXEC google.clouddeploy.job_runs.terminate
 @@json=
 '{
 "overrideDeployPolicy": "{{ overrideDeployPolicy }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

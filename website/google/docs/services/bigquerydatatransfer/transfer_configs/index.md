@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_transfer_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -157,8 +155,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_transfer_configs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -274,8 +270,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_transfer_configs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -389,8 +383,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_transfer_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -728,7 +720,8 @@ userId
 FROM google.bigquerydatatransfer.transfer_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND transferConfigsId = '{{ transferConfigsId }}' -- required;
+AND transferConfigsId = '{{ transferConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_get">
@@ -759,7 +752,8 @@ updateTime,
 userId
 FROM google.bigquerydatatransfer.transfer_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND transferConfigsId = '{{ transferConfigsId }}' -- required;
+AND transferConfigsId = '{{ transferConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_transfer_configs_list">
@@ -793,7 +787,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataSourceIds = '{{ dataSourceIds }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_list">
@@ -826,7 +821,8 @@ FROM google.bigquerydatatransfer.transfer_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND dataSourceIds = '{{ dataSourceIds }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1205,7 +1201,8 @@ Deletes a data transfer configuration, including any associated transfer runs an
 DELETE FROM google.bigquerydatatransfer.transfer_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND transferConfigsId = '{{ transferConfigsId }}' --required;
+AND transferConfigsId = '{{ transferConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_delete">
@@ -1215,7 +1212,8 @@ Deletes a data transfer configuration, including any associated transfer runs an
 ```sql
 DELETE FROM google.bigquerydatatransfer.transfer_configs
 WHERE projectsId = '{{ projectsId }}' --required
-AND transferConfigsId = '{{ transferConfigsId }}' --required;
+AND transferConfigsId = '{{ transferConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1244,7 +1242,8 @@ EXEC google.bigquerydatatransfer.transfer_configs.projects_transfer_configs_sche
 '{
 "startTime": "{{ startTime }}", 
 "endTime": "{{ endTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_start_manual_runs">
@@ -1259,7 +1258,8 @@ EXEC google.bigquerydatatransfer.transfer_configs.projects_transfer_configs_star
 '{
 "requestedTimeRange": "{{ requestedTimeRange }}", 
 "requestedRunTime": "{{ requestedRunTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_transfer_configs_schedule_runs">
@@ -1275,7 +1275,8 @@ EXEC google.bigquerydatatransfer.transfer_configs.projects_locations_transfer_co
 '{
 "startTime": "{{ startTime }}", 
 "endTime": "{{ endTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_transfer_configs_start_manual_runs">
@@ -1291,7 +1292,8 @@ EXEC google.bigquerydatatransfer.transfer_configs.projects_locations_transfer_co
 '{
 "requestedTimeRange": "{{ requestedTimeRange }}", 
 "requestedRunTime": "{{ requestedRunTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

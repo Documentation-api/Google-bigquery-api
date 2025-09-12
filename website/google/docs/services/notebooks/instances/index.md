@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -520,7 +516,8 @@ upgradeHistory
 FROM google.notebooks.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -555,7 +552,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -721,7 +719,8 @@ DELETE FROM google.notebooks.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -755,7 +754,8 @@ Starts a notebook instance.
 EXEC google.notebooks.instances.start 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -766,7 +766,8 @@ Stops a notebook instance.
 EXEC google.notebooks.instances.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="reset">
@@ -777,7 +778,8 @@ Resets a notebook instance.
 EXEC google.notebooks.instances.reset 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="check_upgradability">
@@ -788,7 +790,8 @@ Checks whether a notebook instance is upgradable.
 EXEC google.notebooks.instances.check_upgradability 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="upgrade">
@@ -799,7 +802,8 @@ Upgrades a notebook instance to the latest version.
 EXEC google.notebooks.instances.upgrade 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resize_disk">
@@ -815,7 +819,8 @@ EXEC google.notebooks.instances.resize_disk
 '{
 "bootDisk": "{{ bootDisk }}", 
 "dataDisk": "{{ dataDisk }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rollback">
@@ -830,7 +835,8 @@ EXEC google.notebooks.instances.rollback
 @@json=
 '{
 "targetSnapshot": "{{ targetSnapshot }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="diagnose">
@@ -846,7 +852,8 @@ EXEC google.notebooks.instances.diagnose
 '{
 "diagnosticConfig": "{{ diagnosticConfig }}", 
 "timeoutMinutes": {{ timeoutMinutes }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -861,7 +868,8 @@ EXEC google.notebooks.instances.restore
 @@json=
 '{
 "snapshot": "{{ snapshot }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="report_info_system">
@@ -877,7 +885,8 @@ EXEC google.notebooks.instances.report_info_system
 '{
 "vmId": "{{ vmId }}", 
 "event": "{{ event }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upgrade_system">
@@ -892,7 +901,8 @@ EXEC google.notebooks.instances.upgrade_system
 @@json=
 '{
 "vmId": "{{ vmId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="check_authorization">
@@ -907,7 +917,8 @@ EXEC google.notebooks.instances.check_authorization
 @@json=
 '{
 "authorizationDetails": "{{ authorizationDetails }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_access_token">
@@ -922,7 +933,8 @@ EXEC google.notebooks.instances.generate_access_token
 @@json=
 '{
 "vmToken": "{{ vmToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

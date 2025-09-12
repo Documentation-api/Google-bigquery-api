@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_security_profiles_list_revisions">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -206,7 +204,8 @@ FROM google.apigee.security_profiles_revisions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND securityProfilesId = '{{ securityProfilesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

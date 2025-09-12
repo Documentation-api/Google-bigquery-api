@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_archive_deployments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_archive_deployments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -274,7 +270,8 @@ updatedAt
 FROM google.apigee.archive_deployments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND archiveDeploymentsId = '{{ archiveDeploymentsId }}' -- required;
+AND archiveDeploymentsId = '{{ archiveDeploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_archive_deployments_list">
@@ -294,7 +291,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -419,7 +417,8 @@ Deletes an archive deployment.
 DELETE FROM google.apigee.archive_deployments
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND archiveDeploymentsId = '{{ archiveDeploymentsId }}' --required;
+AND archiveDeploymentsId = '{{ archiveDeploymentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -441,7 +440,8 @@ Generates a signed URL for uploading an Archive zip file to Google Cloud Storage
 ```sql
 EXEC google.apigee.archive_deployments.organizations_environments_archive_deployments_generate_upload_url 
 @organizationsId='{{ organizationsId }}' --required, 
-@environmentsId='{{ environmentsId }}' --required;
+@environmentsId='{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_archive_deployments_generate_download_url">
@@ -452,7 +452,8 @@ Generates a signed URL for downloading the original zip file used to create an A
 EXEC google.apigee.archive_deployments.organizations_environments_archive_deployments_generate_download_url 
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
-@archiveDeploymentsId='{{ archiveDeploymentsId }}' --required;
+@archiveDeploymentsId='{{ archiveDeploymentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

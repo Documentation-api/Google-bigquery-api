@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -337,7 +333,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND consentStoresId = '{{ consentStoresId }}' -- required
-AND consentsId = '{{ consentsId }}' -- required;
+AND consentsId = '{{ consentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -363,7 +360,8 @@ AND datasetsId = '{{ datasetsId }}' -- required
 AND consentStoresId = '{{ consentStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -552,7 +550,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND consentStoresId = '{{ consentStoresId }}' --required
-AND consentsId = '{{ consentsId }}' --required;
+AND consentsId = '{{ consentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -584,7 +583,8 @@ EXEC google.healthcare.consents.activate
 "consentArtifact": "{{ consentArtifact }}", 
 "expireTime": "{{ expireTime }}", 
 "ttl": "{{ ttl }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reject">
@@ -601,7 +601,8 @@ EXEC google.healthcare.consents.reject
 @@json=
 '{
 "consentArtifact": "{{ consentArtifact }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="revoke">
@@ -618,7 +619,8 @@ EXEC google.healthcare.consents.revoke
 @@json=
 '{
 "consentArtifact": "{{ consentArtifact }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

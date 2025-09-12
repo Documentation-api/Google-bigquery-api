@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_list">
-
-Successful response
 
 <table>
 <thead>
@@ -377,7 +373,8 @@ updateTime
 FROM google.spanner.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND fieldMask = '{{ fieldMask }}';
+AND fieldMask = '{{ fieldMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_list">
@@ -407,7 +404,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND instanceDeadline = '{{ instanceDeadline }}';
+AND instanceDeadline = '{{ instanceDeadline }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -515,7 +513,8 @@ Deletes an instance. Immediately upon completion of the request: * Billing cease
 ```sql
 DELETE FROM google.spanner.instances
 WHERE projectsId = '{{ projectsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -541,7 +540,8 @@ EXEC google.spanner.instances.projects_instances_move
 '{
 "targetConfig": "{{ targetConfig }}", 
 "targetDatabaseMoveConfigs": "{{ targetDatabaseMoveConfigs }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

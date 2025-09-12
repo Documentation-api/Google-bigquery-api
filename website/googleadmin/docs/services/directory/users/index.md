@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -285,8 +283,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -776,7 +772,8 @@ FROM googleadmin.directory.users
 WHERE userKey = '{{ userKey }}' -- required
 AND customFieldMask = '{{ customFieldMask }}'
 AND projection = '{{ projection }}'
-AND viewType = '{{ viewType }}';
+AND viewType = '{{ viewType }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -843,7 +840,8 @@ AND projection = '{{ projection }}'
 AND query = '{{ query }}'
 AND showDeleted = '{{ showDeleted }}'
 AND sortOrder = '{{ sortOrder }}'
-AND viewType = '{{ viewType }}';
+AND viewType = '{{ viewType }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1344,7 +1342,8 @@ Deletes a user.
 
 ```sql
 DELETE FROM googleadmin.directory.users
-WHERE userKey = '{{ userKey }}' --required;
+WHERE userKey = '{{ userKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1371,7 +1370,8 @@ EXEC googleadmin.directory.users.make_admin
 @@json=
 '{
 "status": {{ status }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete">
@@ -1384,7 +1384,8 @@ EXEC googleadmin.directory.users.undelete
 @@json=
 '{
 "orgUnitPath": "{{ orgUnitPath }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="watch">
@@ -1417,7 +1418,8 @@ EXEC googleadmin.directory.users.watch
 "resourceId": "{{ resourceId }}", 
 "resourceUri": "{{ resourceUri }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sign_out">
@@ -1426,7 +1428,8 @@ Signs a user out of all web and device sessions and reset their sign-in cookies.
 
 ```sql
 EXEC googleadmin.directory.users.sign_out 
-@userKey='{{ userKey }}' --required;
+@userKey='{{ userKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -115,7 +115,8 @@ EXEC google.discoveryengine.ranking_configs.projects_locations_ranking_configs_r
 "records": "{{ records }}", 
 "ignoreRecordDetailsInResponse": {{ ignoreRecordDetailsInResponse }}, 
 "userLabels": "{{ userLabels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -113,7 +113,8 @@ EXEC google.discoveryengine.grounding_configs.projects_locations_grounding_confi
 "facts": "{{ facts }}", 
 "groundingSpec": "{{ groundingSpec }}", 
 "userLabels": "{{ userLabels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

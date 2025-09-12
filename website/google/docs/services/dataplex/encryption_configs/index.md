@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_locations_encryption_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_encryption_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -286,7 +282,8 @@ updateTime
 FROM google.dataplex.encryption_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND encryptionConfigsId = '{{ encryptionConfigsId }}' -- required;
+AND encryptionConfigsId = '{{ encryptionConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_encryption_configs_list">
@@ -308,7 +305,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -437,7 +435,8 @@ DELETE FROM google.dataplex.encryption_configs
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND encryptionConfigsId = '{{ encryptionConfigsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

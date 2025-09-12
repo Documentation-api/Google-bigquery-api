@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -376,7 +372,8 @@ publishedOutsideDomain,
 selfLink
 FROM googleworkspace.drivev2.revisions
 WHERE fileId = '{{ fileId }}' -- required
-AND revisionId = '{{ revisionId }}' -- required;
+AND revisionId = '{{ revisionId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -406,7 +403,8 @@ selfLink
 FROM googleworkspace.drivev2.revisions
 WHERE fileId = '{{ fileId }}' -- required
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -547,7 +545,8 @@ Permanently deletes a file version. You can only delete revisions for files with
 ```sql
 DELETE FROM googleworkspace.drivev2.revisions
 WHERE fileId = '{{ fileId }}' --required
-AND revisionId = '{{ revisionId }}' --required;
+AND revisionId = '{{ revisionId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ FROM google.compute.storage_pools_iam_policies
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
 AND resource = '{{ resource }}' -- required
-AND optionsRequestedPolicyVersion = '{{ optionsRequestedPolicyVersion }}';
+AND optionsRequestedPolicyVersion = '{{ optionsRequestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -224,7 +223,8 @@ EXEC google.compute.storage_pools_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

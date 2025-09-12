@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -226,7 +222,8 @@ parentLink,
 selfLink
 FROM googleworkspace.drivev2.parents
 WHERE fileId = '{{ fileId }}' -- required
-AND parentId = '{{ parentId }}' -- required;
+AND parentId = '{{ parentId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -240,7 +237,8 @@ items,
 kind,
 selfLink
 FROM googleworkspace.drivev2.parents
-WHERE fileId = '{{ fileId }}' -- required;
+WHERE fileId = '{{ fileId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -352,7 +350,8 @@ Removes a parent from a file.
 DELETE FROM googleworkspace.drivev2.parents
 WHERE fileId = '{{ fileId }}' --required
 AND parentId = '{{ parentId }}' --required
-AND enforceSingleParent = '{{ enforceSingleParent }}';
+AND enforceSingleParent = '{{ enforceSingleParent }}'
+;
 ```
 </TabItem>
 </Tabs>

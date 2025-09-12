@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="fetch_for_resource_type">
-
-Successful response
 
 <table>
 <thead>
@@ -230,7 +226,8 @@ dataSourceGcpResourceInfo
 FROM google.backupdr.data_source_references
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataSourceReferencesId = '{{ dataSourceReferencesId }}' -- required;
+AND dataSourceReferencesId = '{{ dataSourceReferencesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="fetch_for_resource_type">
@@ -248,7 +245,8 @@ AND resourceType = '{{ resourceType }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

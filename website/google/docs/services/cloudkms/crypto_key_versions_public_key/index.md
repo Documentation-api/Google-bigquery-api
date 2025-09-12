@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_public_key">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -188,7 +186,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND keyRingsId = '{{ keyRingsId }}' -- required
 AND cryptoKeysId = '{{ cryptoKeysId }}' -- required
 AND cryptoKeyVersionsId = '{{ cryptoKeyVersionsId }}' -- required
-AND publicKeyFormat = '{{ publicKeyFormat }}';
+AND publicKeyFormat = '{{ publicKeyFormat }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -308,7 +304,8 @@ FROM google.securesourcemanager.pull_requests
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND pullRequestsId = '{{ pullRequestsId }}' -- required;
+AND pullRequestsId = '{{ pullRequestsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -331,7 +328,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -472,7 +470,8 @@ EXEC google.securesourcemanager.pull_requests.merge
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @repositoriesId='{{ repositoriesId }}' --required, 
-@pullRequestsId='{{ pullRequestsId }}' --required;
+@pullRequestsId='{{ pullRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="open">
@@ -484,7 +483,8 @@ EXEC google.securesourcemanager.pull_requests.open
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @repositoriesId='{{ repositoriesId }}' --required, 
-@pullRequestsId='{{ pullRequestsId }}' --required;
+@pullRequestsId='{{ pullRequestsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="close">
@@ -496,7 +496,8 @@ EXEC google.securesourcemanager.pull_requests.close
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @repositoriesId='{{ repositoriesId }}' --required, 
-@pullRequestsId='{{ pullRequestsId }}' --required;
+@pullRequestsId='{{ pullRequestsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

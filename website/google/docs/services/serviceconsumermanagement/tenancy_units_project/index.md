@@ -198,7 +198,8 @@ DELETE FROM google.serviceconsumermanagement.tenancy_units_project
 WHERE servicesId = '{{ servicesId }}' --required
 AND servicesId1 = '{{ servicesId1 }}' --required
 AND servicesId2 = '{{ servicesId2 }}' --required
-AND tenancyUnitsId = '{{ tenancyUnitsId }}' --required;
+AND tenancyUnitsId = '{{ tenancyUnitsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="delete_project">
@@ -210,7 +211,8 @@ DELETE FROM google.serviceconsumermanagement.tenancy_units_project
 WHERE servicesId = '{{ servicesId }}' --required
 AND servicesId1 = '{{ servicesId1 }}' --required
 AND servicesId2 = '{{ servicesId2 }}' --required
-AND tenancyUnitsId = '{{ tenancyUnitsId }}' --required;
+AND tenancyUnitsId = '{{ tenancyUnitsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

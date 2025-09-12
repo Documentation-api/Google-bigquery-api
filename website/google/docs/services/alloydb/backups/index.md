@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -175,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -488,7 +484,8 @@ updateTime
 FROM google.alloydb.backups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND backupsId = '{{ backupsId }}' -- required;
+AND backupsId = '{{ backupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -527,7 +524,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -718,7 +716,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND backupsId = '{{ backupsId }}' --required
 AND requestId = '{{ requestId }}'
 AND validateOnly = '{{ validateOnly }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

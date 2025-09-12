@@ -125,7 +125,8 @@ EXEC google.language.documents.analyze_sentiment
 '{
 "document": "{{ document }}", 
 "encodingType": "{{ encodingType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="analyze_entities">
@@ -138,7 +139,8 @@ EXEC google.language.documents.analyze_entities
 '{
 "document": "{{ document }}", 
 "encodingType": "{{ encodingType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="classify_text">
@@ -150,7 +152,8 @@ EXEC google.language.documents.classify_text
 @@json=
 '{
 "document": "{{ document }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="moderate_text">
@@ -163,7 +166,8 @@ EXEC google.language.documents.moderate_text
 '{
 "document": "{{ document }}", 
 "modelVersion": "{{ modelVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="annotate_text">
@@ -177,7 +181,8 @@ EXEC google.language.documents.annotate_text
 "document": "{{ document }}", 
 "features": "{{ features }}", 
 "encodingType": "{{ encodingType }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ tagValueNamespacedName
 FROM google.cloudresourcemanager.tag_bindings
 WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -258,7 +257,8 @@ Deletes a TagBinding.
 
 ```sql
 DELETE FROM google.cloudresourcemanager.tag_bindings
-WHERE tagBindingsId = '{{ tagBindingsId }}' --required;
+WHERE tagBindingsId = '{{ tagBindingsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

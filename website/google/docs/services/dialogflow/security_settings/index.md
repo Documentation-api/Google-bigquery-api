@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_security_settings_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_security_settings_list">
-
-Successful response
 
 <table>
 <thead>
@@ -310,7 +306,8 @@ retentionWindowDays
 FROM google.dialogflow.security_settings
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND securitySettingsId = '{{ securitySettingsId }}' -- required;
+AND securitySettingsId = '{{ securitySettingsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_security_settings_list">
@@ -334,7 +331,8 @@ FROM google.dialogflow.security_settings
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -537,7 +535,8 @@ Deletes the specified SecuritySettings.
 DELETE FROM google.dialogflow.security_settings
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND securitySettingsId = '{{ securitySettingsId }}' --required;
+AND securitySettingsId = '{{ securitySettingsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_cmek_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_cmek_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -225,7 +221,8 @@ state
 FROM google.discoveryengine.cmek_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND cmekConfigsId = '{{ cmekConfigsId }}' -- required;
+AND cmekConfigsId = '{{ cmekConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_cmek_configs_list">
@@ -237,7 +234,8 @@ SELECT
 cmekConfigs
 FROM google.discoveryengine.cmek_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -293,7 +291,8 @@ De-provisions a CmekConfig.
 DELETE FROM google.discoveryengine.cmek_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND cmekConfigsId = '{{ cmekConfigsId }}' --required;
+AND cmekConfigsId = '{{ cmekConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -247,7 +243,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND connectionsId = '{{ connectionsId }}' -- required
 AND entityTypesId = '{{ entityTypesId }}' -- required
 AND view = '{{ view }}'
-AND contextMetadata = '{{ contextMetadata }}';
+AND contextMetadata = '{{ contextMetadata }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -268,7 +265,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND connectionsId = '{{ connectionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -225,7 +223,8 @@ testSpecification,
 timestamp
 FROM firebase.testing.test_matrices
 WHERE projectId = '{{ projectId }}' -- required
-AND testMatrixId = '{{ testMatrixId }}' -- required;
+AND testMatrixId = '{{ testMatrixId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -395,7 +394,8 @@ Cancels unfinished test executions in a test matrix. This call returns immediate
 ```sql
 EXEC firebase.testing.test_matrices.cancel 
 @projectId='{{ projectId }}' --required, 
-@testMatrixId='{{ testMatrixId }}' --required;
+@testMatrixId='{{ testMatrixId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

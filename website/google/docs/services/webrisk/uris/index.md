@@ -100,7 +100,8 @@ This method is used to check whether a URI is on a given threatList. Multiple th
 ```sql
 EXEC google.webrisk.uris.search 
 @uri='{{ uri }}', 
-@threatTypes='{{ threatTypes }}';
+@threatTypes='{{ threatTypes }}'
+;
 ```
 </TabItem>
 </Tabs>

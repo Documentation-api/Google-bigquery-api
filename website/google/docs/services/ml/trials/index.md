@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_studies_trials_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_studies_trials_list">
-
-Successful response
 
 <table>
 <thead>
@@ -266,7 +262,8 @@ FROM google.ml.trials
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
-AND trialsId = '{{ trialsId }}' -- required;
+AND trialsId = '{{ trialsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_studies_trials_list">
@@ -279,7 +276,8 @@ trials
 FROM google.ml.trials
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND studiesId = '{{ studiesId }}' -- required;
+AND studiesId = '{{ studiesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -388,7 +386,8 @@ DELETE FROM google.ml.trials
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND studiesId = '{{ studiesId }}' --required
-AND trialsId = '{{ trialsId }}' --required;
+AND trialsId = '{{ trialsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -418,7 +417,8 @@ EXEC google.ml.trials.projects_locations_studies_trials_suggest
 '{
 "suggestionCount": {{ suggestionCount }}, 
 "clientId": "{{ clientId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_studies_trials_complete">
@@ -436,7 +436,8 @@ EXEC google.ml.trials.projects_locations_studies_trials_complete
 "finalMeasurement": "{{ finalMeasurement }}", 
 "trialInfeasible": {{ trialInfeasible }}, 
 "infeasibleReason": "{{ infeasibleReason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_studies_trials_check_early_stopping_state">
@@ -448,7 +449,8 @@ EXEC google.ml.trials.projects_locations_studies_trials_check_early_stopping_sta
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @studiesId='{{ studiesId }}' --required, 
-@trialsId='{{ trialsId }}' --required;
+@trialsId='{{ trialsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_studies_trials_stop">
@@ -460,7 +462,8 @@ EXEC google.ml.trials.projects_locations_studies_trials_stop
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @studiesId='{{ studiesId }}' --required, 
-@trialsId='{{ trialsId }}' --required;
+@trialsId='{{ trialsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

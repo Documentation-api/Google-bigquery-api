@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_buckets_views_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_buckets_views_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -102,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_locations_buckets_views_get_iam_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -296,7 +290,8 @@ FROM google.logging.views_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND viewsId = '{{ viewsId }}' -- required;
+AND viewsId = '{{ viewsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_views_get_iam_policy">
@@ -312,7 +307,8 @@ FROM google.logging.views_iam_policies
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND viewsId = '{{ viewsId }}' -- required;
+AND viewsId = '{{ viewsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_views_get_iam_policy">
@@ -328,7 +324,8 @@ FROM google.logging.views_iam_policies
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bucketsId = '{{ bucketsId }}' -- required
-AND viewsId = '{{ viewsId }}' -- required;
+AND viewsId = '{{ viewsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -428,7 +425,8 @@ EXEC google.logging.views_iam_policies.locations_buckets_views_test_iam_permissi
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_buckets_views_test_iam_permissions">
@@ -444,7 +442,8 @@ EXEC google.logging.views_iam_policies.projects_locations_buckets_views_test_iam
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_buckets_views_test_iam_permissions">
@@ -460,7 +459,8 @@ EXEC google.logging.views_iam_policies.organizations_locations_buckets_views_tes
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_buckets_views_test_iam_permissions">
@@ -476,7 +476,8 @@ EXEC google.logging.views_iam_policies.folders_locations_buckets_views_test_iam_
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

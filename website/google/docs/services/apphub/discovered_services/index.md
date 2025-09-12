@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -218,7 +214,8 @@ serviceReference
 FROM google.apphub.discovered_services
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND discoveredServicesId = '{{ discoveredServicesId }}' -- required;
+AND discoveredServicesId = '{{ discoveredServicesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -236,7 +233,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -258,7 +256,8 @@ Lists a Discovered Service in a host project and location, with a given resource
 EXEC google.apphub.discovered_services.lookup 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@uri='{{ uri }}';
+@uri='{{ uri }}'
+;
 ```
 </TabItem>
 </Tabs>

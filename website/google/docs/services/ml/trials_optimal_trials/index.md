@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_studies_trials_list_optimal_trials">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ trials
 FROM google.ml.trials_optimal_trials
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND studiesId = '{{ studiesId }}' -- required;
+AND studiesId = '{{ studiesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

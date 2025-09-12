@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -112,8 +110,6 @@ Successful response
 </TabItem>
 <TabItem value="query">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -137,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -342,7 +336,8 @@ FROM google.dataform.compilation_results
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND compilationResultsId = '{{ compilationResultsId }}' -- required;
+AND compilationResultsId = '{{ compilationResultsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="query">
@@ -360,7 +355,8 @@ AND repositoriesId = '{{ repositoriesId }}' -- required
 AND compilationResultsId = '{{ compilationResultsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -387,7 +383,8 @@ AND repositoriesId = '{{ repositoriesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

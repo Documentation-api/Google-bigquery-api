@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_rule">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -272,7 +270,8 @@ FROM google.compute.firewall_policies_rule
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
 AND firewallPolicy = '{{ firewallPolicy }}' -- required
-AND priority = '{{ priority }}';
+AND priority = '{{ priority }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -556,7 +555,8 @@ WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND firewallPolicy = '{{ firewallPolicy }}' --required
 AND priority = '{{ priority }}'
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -578,7 +578,8 @@ Copies rules to the specified firewall policy.
 EXEC google.compute.firewall_policies_rule.clone_rules 
 @firewallPolicy='{{ firewallPolicy }}' --required, 
 @requestId='{{ requestId }}', 
-@sourceFirewallPolicy='{{ sourceFirewallPolicy }}';
+@sourceFirewallPolicy='{{ sourceFirewallPolicy }}'
+;
 ```
 </TabItem>
 </Tabs>

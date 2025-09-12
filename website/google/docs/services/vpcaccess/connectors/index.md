@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -315,7 +311,8 @@ subnet
 FROM google.vpcaccess.connectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND connectorsId = '{{ connectorsId }}' -- required;
+AND connectorsId = '{{ connectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -339,7 +336,8 @@ FROM google.vpcaccess.connectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -515,7 +513,8 @@ Deletes a Serverless VPC Access connector. Returns NOT_FOUND if the resource doe
 DELETE FROM google.vpcaccess.connectors
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND connectorsId = '{{ connectorsId }}' --required;
+AND connectorsId = '{{ connectorsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

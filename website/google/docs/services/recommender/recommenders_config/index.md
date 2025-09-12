@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_recommenders_get_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_get_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -142,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_recommenders_get_config">
-
-Successful response
 
 <table>
 <thead>
@@ -331,7 +325,8 @@ updateTime
 FROM google.recommender.recommenders_config
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND recommendersId = '{{ recommendersId }}' -- required;
+AND recommendersId = '{{ recommendersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recommenders_get_config">
@@ -350,7 +345,8 @@ updateTime
 FROM google.recommender.recommenders_config
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND recommendersId = '{{ recommendersId }}' -- required;
+AND recommendersId = '{{ recommendersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recommenders_get_config">
@@ -369,7 +365,8 @@ updateTime
 FROM google.recommender.recommenders_config
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND recommendersId = '{{ recommendersId }}' -- required;
+AND recommendersId = '{{ recommendersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

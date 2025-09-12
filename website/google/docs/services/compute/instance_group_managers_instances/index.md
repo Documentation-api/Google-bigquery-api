@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_managed_instances">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -189,7 +187,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -296,7 +295,8 @@ DELETE FROM google.compute.instance_group_managers_instances
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND instanceGroupManager = '{{ instanceGroupManager }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

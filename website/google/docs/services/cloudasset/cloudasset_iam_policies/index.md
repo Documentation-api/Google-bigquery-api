@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="batch_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,7 +133,8 @@ SELECT
 policyResults
 FROM google.cloudasset.cloudasset_iam_policies
 WHERE scope = '{{ scope }}' -- required
-AND names = '{{ names }}';
+AND names = '{{ names }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -161,7 +160,8 @@ EXEC google.cloudasset.cloudasset_iam_policies.analyze_iam_policy_longrunning
 "analysisQuery": "{{ analysisQuery }}", 
 "savedAnalysisQuery": "{{ savedAnalysisQuery }}", 
 "outputConfig": "{{ outputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -193,7 +189,8 @@ name
 FROM google.bigqueryreservation.reservation_groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND reservationGroupsId = '{{ reservationGroupsId }}' -- required;
+AND reservationGroupsId = '{{ reservationGroupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -207,7 +204,8 @@ FROM google.bigqueryreservation.reservation_groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -283,7 +281,8 @@ Deletes a reservation. Returns `google.rpc.Code.FAILED_PRECONDITION` when reserv
 DELETE FROM google.bigqueryreservation.reservation_groups
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND reservationGroupsId = '{{ reservationGroupsId }}' --required;
+AND reservationGroupsId = '{{ reservationGroupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

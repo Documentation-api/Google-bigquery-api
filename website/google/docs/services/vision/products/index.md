@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_product_sets_products_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -82,8 +80,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_products_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_products_list">
-
-Successful response
 
 <table>
 <thead>
@@ -313,7 +307,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND productSetsId = '{{ productSetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_get">
@@ -330,7 +325,8 @@ productLabels
 FROM google.vision.products
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND productsId = '{{ productsId }}' -- required;
+AND productsId = '{{ productsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_list">
@@ -348,7 +344,8 @@ FROM google.vision.products
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -492,7 +489,8 @@ Permanently deletes a product and its reference images. Metadata of the product 
 DELETE FROM google.vision.products
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND productsId = '{{ productsId }}' --required;
+AND productsId = '{{ productsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -519,7 +517,8 @@ EXEC google.vision.products.projects_locations_products_purge
 "productSetPurgeConfig": "{{ productSetPurgeConfig }}", 
 "deleteOrphanProducts": {{ deleteOrphanProducts }}, 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

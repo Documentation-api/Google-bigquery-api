@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_apiproducts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apiproducts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -365,7 +361,8 @@ scopes,
 space
 FROM google.apigee.apiproducts
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND apiproductsId = '{{ apiproductsId }}' -- required;
+AND apiproductsId = '{{ apiproductsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_list">
@@ -382,7 +379,8 @@ AND attributevalue = '{{ attributevalue }}'
 AND expand = '{{ expand }}'
 AND startKey = '{{ startKey }}'
 AND count = '{{ count }}'
-AND space = '{{ space }}';
+AND space = '{{ space }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -659,7 +657,8 @@ WHERE organizationsId = '{{ organizationsId }}' --required
 AND appgroupsId = '{{ appgroupsId }}' --required
 AND appsId = '{{ appsId }}' --required
 AND keysId = '{{ keysId }}' --required
-AND apiproductsId = '{{ apiproductsId }}' --required;
+AND apiproductsId = '{{ apiproductsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_delete">
@@ -669,7 +668,8 @@ Deletes an API product from an organization. Deleting an API product causes app 
 ```sql
 DELETE FROM google.apigee.apiproducts
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND apiproductsId = '{{ apiproductsId }}' --required;
+AND apiproductsId = '{{ apiproductsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -696,7 +696,8 @@ EXEC google.apigee.apiproducts.organizations_apiproducts_move
 @@json=
 '{
 "space": "{{ space }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_attributes">
@@ -710,7 +711,8 @@ EXEC google.apigee.apiproducts.organizations_apiproducts_attributes
 @@json=
 '{
 "attribute": "{{ attribute }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_apps_keys_apiproducts_update_app_group_app_key_api_product">
@@ -724,7 +726,8 @@ EXEC google.apigee.apiproducts.organizations_appgroups_apps_keys_apiproducts_upd
 @appsId='{{ appsId }}' --required, 
 @keysId='{{ keysId }}' --required, 
 @apiproductsId='{{ apiproductsId }}' --required, 
-@action='{{ action }}';
+@action='{{ action }}'
+;
 ```
 </TabItem>
 </Tabs>

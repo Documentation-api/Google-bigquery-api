@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -281,7 +279,8 @@ usageExportLocation,
 vmDnsSetting,
 xpnProjectStatus
 FROM google.compute.projects
-WHERE project = '{{ project }}' -- required;
+WHERE project = '{{ project }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -317,7 +316,8 @@ EXEC google.compute.projects.set_common_instance_metadata
 "kind": "{{ kind }}", 
 "fingerprint": "{{ fingerprint }}", 
 "items": "{{ items }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_usage_export_bucket">
@@ -332,7 +332,8 @@ EXEC google.compute.projects.set_usage_export_bucket
 '{
 "bucketName": "{{ bucketName }}", 
 "reportNamePrefix": "{{ reportNamePrefix }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="move_instance">
@@ -347,7 +348,8 @@ EXEC google.compute.projects.move_instance
 '{
 "targetInstance": "{{ targetInstance }}", 
 "destinationZone": "{{ destinationZone }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="move_disk">
@@ -362,7 +364,8 @@ EXEC google.compute.projects.move_disk
 '{
 "targetDisk": "{{ targetDisk }}", 
 "destinationZone": "{{ destinationZone }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable_xpn_host">
@@ -372,7 +375,8 @@ Enable this project as a shared VPC host project.
 ```sql
 EXEC google.compute.projects.enable_xpn_host 
 @project='{{ project }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="disable_xpn_host">
@@ -382,7 +386,8 @@ Disable this project as a shared VPC host project.
 ```sql
 EXEC google.compute.projects.disable_xpn_host 
 @project='{{ project }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="enable_xpn_resource">
@@ -396,7 +401,8 @@ EXEC google.compute.projects.enable_xpn_resource
 @@json=
 '{
 "xpnResource": "{{ xpnResource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="disable_xpn_resource">
@@ -410,7 +416,8 @@ EXEC google.compute.projects.disable_xpn_resource
 @@json=
 '{
 "xpnResource": "{{ xpnResource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_default_network_tier">
@@ -424,7 +431,8 @@ EXEC google.compute.projects.set_default_network_tier
 @@json=
 '{
 "networkTier": "{{ networkTier }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="set_cloud_armor_tier">
@@ -438,7 +446,8 @@ EXEC google.compute.projects.set_cloud_armor_tier
 @@json=
 '{
 "cloudArmorTier": "{{ cloudArmorTier }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

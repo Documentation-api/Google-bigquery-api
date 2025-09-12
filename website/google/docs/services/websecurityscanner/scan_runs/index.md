@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -291,7 +287,8 @@ warningTraces
 FROM google.websecurityscanner.scan_runs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND scanConfigsId = '{{ scanConfigsId }}' -- required
-AND scanRunsId = '{{ scanRunsId }}' -- required;
+AND scanRunsId = '{{ scanRunsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -315,7 +312,8 @@ FROM google.websecurityscanner.scan_runs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND scanConfigsId = '{{ scanConfigsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -337,7 +335,8 @@ Stops a ScanRun. The stopped ScanRun is returned.
 EXEC google.websecurityscanner.scan_runs.stop 
 @projectsId='{{ projectsId }}' --required, 
 @scanConfigsId='{{ scanConfigsId }}' --required, 
-@scanRunsId='{{ scanRunsId }}' --required;
+@scanRunsId='{{ scanRunsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

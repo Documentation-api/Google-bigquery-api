@@ -146,7 +146,8 @@ EXEC google.vision.files.projects_locations_files_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_files_async_batch_annotate">
@@ -162,7 +163,8 @@ EXEC google.vision.files.projects_locations_files_async_batch_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_files_annotate">
@@ -177,7 +179,8 @@ EXEC google.vision.files.projects_files_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_files_async_batch_annotate">
@@ -192,7 +195,8 @@ EXEC google.vision.files.projects_files_async_batch_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="files_annotate">
@@ -206,7 +210,8 @@ EXEC google.vision.files.files_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="files_async_batch_annotate">
@@ -220,7 +225,8 @@ EXEC google.vision.files.files_async_batch_annotate
 "requests": "{{ requests }}", 
 "parent": "{{ parent }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

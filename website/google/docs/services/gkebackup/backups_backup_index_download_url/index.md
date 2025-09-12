@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_backup_index_download_url">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ FROM google.gkebackup.backups_backup_index_download_url
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND backupPlansId = '{{ backupPlansId }}' -- required
-AND backupsId = '{{ backupsId }}' -- required;
+AND backupsId = '{{ backupsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

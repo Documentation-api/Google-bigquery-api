@@ -45,8 +45,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_nodes_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="customers_deployments_get">
-
-Successful response
 
 <table>
 <thead>
@@ -117,8 +113,6 @@ Successful response
 </TabItem>
 <TabItem value="nodes_nodes_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,8 +146,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="nodes_deployments_get">
-
-Successful response
 
 <table>
 <thead>
@@ -189,8 +181,6 @@ Successful response
 </TabItem>
 <TabItem value="customers_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -225,8 +215,6 @@ Successful response
 </TabItem>
 <TabItem value="nodes_deployments_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -260,8 +248,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="deployments_get">
-
-Successful response
 
 <table>
 <thead>
@@ -512,7 +498,8 @@ WHERE customersId = '{{ customersId }}' -- required
 AND nodesId = '{{ nodesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="customers_deployments_get">
@@ -527,7 +514,8 @@ frns,
 sasUserIds
 FROM google.sasportal.deployments
 WHERE customersId = '{{ customersId }}' -- required
-AND deploymentsId = '{{ deploymentsId }}' -- required;
+AND deploymentsId = '{{ deploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="nodes_nodes_deployments_list">
@@ -545,7 +533,8 @@ WHERE nodesId = '{{ nodesId }}' -- required
 AND nodesId1 = '{{ nodesId1 }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_deployments_get">
@@ -560,7 +549,8 @@ frns,
 sasUserIds
 FROM google.sasportal.deployments
 WHERE nodesId = '{{ nodesId }}' -- required
-AND deploymentsId = '{{ deploymentsId }}' -- required;
+AND deploymentsId = '{{ deploymentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="customers_deployments_list">
@@ -577,7 +567,8 @@ FROM google.sasportal.deployments
 WHERE customersId = '{{ customersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_deployments_list">
@@ -594,7 +585,8 @@ FROM google.sasportal.deployments
 WHERE nodesId = '{{ nodesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="deployments_get">
@@ -608,7 +600,8 @@ displayName,
 frns,
 sasUserIds
 FROM google.sasportal.deployments
-WHERE deploymentsId = '{{ deploymentsId }}' -- required;
+WHERE deploymentsId = '{{ deploymentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -793,7 +786,8 @@ Deletes a deployment.
 ```sql
 DELETE FROM google.sasportal.deployments
 WHERE customersId = '{{ customersId }}' --required
-AND deploymentsId = '{{ deploymentsId }}' --required;
+AND deploymentsId = '{{ deploymentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="nodes_deployments_delete">
@@ -803,7 +797,8 @@ Deletes a deployment.
 ```sql
 DELETE FROM google.sasportal.deployments
 WHERE nodesId = '{{ nodesId }}' --required
-AND deploymentsId = '{{ deploymentsId }}' --required;
+AND deploymentsId = '{{ deploymentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -829,7 +824,8 @@ EXEC google.sasportal.deployments.customers_deployments_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_deployments_move">
@@ -843,7 +839,8 @@ EXEC google.sasportal.deployments.nodes_deployments_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

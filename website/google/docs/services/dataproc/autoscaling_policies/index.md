@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_autoscaling_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_autoscaling_policies_get">
-
-Successful response
 
 <table>
 <thead>
@@ -144,8 +140,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_regions_autoscaling_policies_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -194,8 +188,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_autoscaling_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -407,7 +399,8 @@ workerConfig
 FROM google.dataproc.autoscaling_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
-AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' -- required;
+AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_autoscaling_policies_get">
@@ -426,7 +419,8 @@ workerConfig
 FROM google.dataproc.autoscaling_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' -- required;
+AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_autoscaling_policies_list">
@@ -446,7 +440,8 @@ FROM google.dataproc.autoscaling_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_autoscaling_policies_list">
@@ -466,7 +461,8 @@ FROM google.dataproc.autoscaling_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -686,7 +682,8 @@ Deletes an autoscaling policy. It is an error to delete an autoscaling policy th
 DELETE FROM google.dataproc.autoscaling_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND regionsId = '{{ regionsId }}' --required
-AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' --required;
+AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_autoscaling_policies_delete">
@@ -697,7 +694,8 @@ Deletes an autoscaling policy. It is an error to delete an autoscaling policy th
 DELETE FROM google.dataproc.autoscaling_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' --required;
+AND autoscalingPoliciesId = '{{ autoscalingPoliciesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -258,7 +254,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND connectionsId = '{{ connectionsId }}' -- required
 AND entityTypesId = '{{ entityTypesId }}' -- required
-AND entitiesId = '{{ entitiesId }}' -- required;
+AND entitiesId = '{{ entitiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -279,7 +276,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND sortBy = '{{ sortBy }}'
 AND sortOrder = '{{ sortOrder }}'
-AND conditions = '{{ conditions }}';
+AND conditions = '{{ conditions }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -426,7 +424,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND connectionsId = '{{ connectionsId }}' --required
 AND entityTypesId = '{{ entityTypesId }}' --required
-AND entitiesId = '{{ entitiesId }}' --required;
+AND entitiesId = '{{ entitiesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="delete_entities_with_conditions">
@@ -439,7 +438,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND connectionsId = '{{ connectionsId }}' --required
 AND entityTypesId = '{{ entityTypesId }}' --required
-AND conditions = '{{ conditions }}';
+AND conditions = '{{ conditions }}'
+;
 ```
 </TabItem>
 </Tabs>

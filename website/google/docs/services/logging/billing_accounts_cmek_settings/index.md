@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="billing_accounts_get_cmek_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ kmsKeyName,
 kmsKeyVersionName,
 serviceAccountId
 FROM google.logging.billing_accounts_cmek_settings
-WHERE billingAccountsId = '{{ billingAccountsId }}' -- required;
+WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_rendered">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ AND dicomStoresId = '{{ dicomStoresId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
 AND seriesId = '{{ seriesId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND viewport = '{{ viewport }}';
+AND viewport = '{{ viewport }}'
+;
 ```
 </TabItem>
 </Tabs>

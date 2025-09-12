@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_authz_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_authz_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -308,7 +304,8 @@ updateTime
 FROM google.networksecurity.authz_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND authzPoliciesId = '{{ authzPoliciesId }}' -- required;
+AND authzPoliciesId = '{{ authzPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_authz_policies_list">
@@ -332,7 +329,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -499,7 +497,8 @@ DELETE FROM google.networksecurity.authz_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND authzPoliciesId = '{{ authzPoliciesId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

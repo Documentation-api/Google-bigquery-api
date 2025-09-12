@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_clusters_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_regions_clusters_list">
-
-Successful response
 
 <table>
 <thead>
@@ -368,7 +364,8 @@ virtualClusterConfig
 FROM google.dataproc.clusters
 WHERE projectId = '{{ projectId }}' -- required
 AND region = '{{ region }}' -- required
-AND clusterName = '{{ clusterName }}' -- required;
+AND clusterName = '{{ clusterName }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_clusters_list">
@@ -391,7 +388,8 @@ WHERE projectId = '{{ projectId }}' -- required
 AND region = '{{ region }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -544,7 +542,8 @@ AND region = '{{ region }}' --required
 AND clusterName = '{{ clusterName }}' --required
 AND clusterUuid = '{{ clusterUuid }}'
 AND requestId = '{{ requestId }}'
-AND gracefulTerminationTimeout = '{{ gracefulTerminationTimeout }}';
+AND gracefulTerminationTimeout = '{{ gracefulTerminationTimeout }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -575,7 +574,8 @@ EXEC google.dataproc.clusters.projects_regions_clusters_stop
 '{
 "clusterUuid": "{{ clusterUuid }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_clusters_start">
@@ -591,7 +591,8 @@ EXEC google.dataproc.clusters.projects_regions_clusters_start
 '{
 "clusterUuid": "{{ clusterUuid }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_clusters_repair">
@@ -611,7 +612,8 @@ EXEC google.dataproc.clusters.projects_regions_clusters_repair
 "gracefulDecommissionTimeout": "{{ gracefulDecommissionTimeout }}", 
 "parentOperationId": "{{ parentOperationId }}", 
 "cluster": "{{ cluster }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_clusters_diagnose">
@@ -632,7 +634,8 @@ EXEC google.dataproc.clusters.projects_regions_clusters_diagnose
 "yarnApplicationId": "{{ yarnApplicationId }}", 
 "jobs": "{{ jobs }}", 
 "yarnApplicationIds": "{{ yarnApplicationIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_clusters_inject_credentials">
@@ -648,7 +651,8 @@ EXEC google.dataproc.clusters.projects_regions_clusters_inject_credentials
 '{
 "clusterUuid": "{{ clusterUuid }}", 
 "credentialsCiphertext": "{{ credentialsCiphertext }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

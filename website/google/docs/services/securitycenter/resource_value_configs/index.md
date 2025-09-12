@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_resource_value_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_resource_value_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -304,7 +300,8 @@ tagValues,
 updateTime
 FROM google.securitycenter.resource_value_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND resourceValueConfigsId = '{{ resourceValueConfigsId }}' -- required;
+AND resourceValueConfigsId = '{{ resourceValueConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_resource_value_configs_list">
@@ -327,7 +324,8 @@ updateTime
 FROM google.securitycenter.resource_value_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -438,7 +436,8 @@ Deletes a ResourceValueConfig.
 ```sql
 DELETE FROM google.securitycenter.resource_value_configs
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND resourceValueConfigsId = '{{ resourceValueConfigsId }}' --required;
+AND resourceValueConfigsId = '{{ resourceValueConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ findingTypeStats
 FROM google.websecurityscanner.finding_type_stats
 WHERE projectsId = '{{ projectsId }}' -- required
 AND scanConfigsId = '{{ scanConfigsId }}' -- required
-AND scanRunsId = '{{ scanRunsId }}' -- required;
+AND scanRunsId = '{{ scanRunsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

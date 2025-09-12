@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_peering_routes">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -206,7 +204,8 @@ AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND peeringName = '{{ peeringName }}'
 AND region = '{{ region }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>

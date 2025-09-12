@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_file_store_data_profiles_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -192,8 +190,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_file_store_data_profiles_get">
-
-Successful response
 
 <table>
 <thead>
@@ -344,8 +340,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_file_store_data_profiles_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -494,8 +488,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_file_store_data_profiles_list">
-
-Successful response
 
 <table>
 <thead>
@@ -809,7 +801,8 @@ tags
 FROM google.dlp.file_store_data_profiles
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' -- required;
+AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_file_store_data_profiles_get">
@@ -848,7 +841,8 @@ tags
 FROM google.dlp.file_store_data_profiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' -- required;
+AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_file_store_data_profiles_list">
@@ -890,7 +884,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_file_store_data_profiles_list">
@@ -932,7 +927,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -955,7 +951,8 @@ Delete a FileStoreDataProfile. Will not prevent the profile from being regenerat
 DELETE FROM google.dlp.file_store_data_profiles
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' --required;
+AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_file_store_data_profiles_delete">
@@ -966,7 +963,8 @@ Delete a FileStoreDataProfile. Will not prevent the profile from being regenerat
 DELETE FROM google.dlp.file_store_data_profiles
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' --required;
+AND fileStoreDataProfilesId = '{{ fileStoreDataProfilesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

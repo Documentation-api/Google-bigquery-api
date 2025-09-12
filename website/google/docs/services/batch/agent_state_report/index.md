@@ -106,7 +106,8 @@ EXEC google.batch.agent_state_report.report
 "metadata": "{{ metadata }}", 
 "agentInfo": "{{ agentInfo }}", 
 "agentTimingInfo": "{{ agentTimingInfo }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

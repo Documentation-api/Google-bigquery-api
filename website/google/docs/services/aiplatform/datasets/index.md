@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -452,7 +448,8 @@ FROM google.aiplatform.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -484,7 +481,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND readMask = '{{ readMask }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -667,7 +665,8 @@ Deletes a Dataset.
 DELETE FROM google.aiplatform.datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -695,7 +694,8 @@ EXEC google.aiplatform.datasets.import
 @@json=
 '{
 "importConfigs": "{{ importConfigs }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -710,7 +710,8 @@ EXEC google.aiplatform.datasets.export
 @@json=
 '{
 "exportConfig": "{{ exportConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_data_items">
@@ -734,7 +735,8 @@ EXEC google.aiplatform.datasets.search_data_items
 @annotationsLimit='{{ annotationsLimit }}', 
 @pageSize='{{ pageSize }}', 
 @orderBy='{{ orderBy }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -258,7 +254,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
 AND evaluationsId = '{{ evaluationsId }}' -- required
-AND slicesId = '{{ slicesId }}' -- required;
+AND slicesId = '{{ slicesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -281,7 +278,8 @@ AND evaluationsId = '{{ evaluationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -309,7 +307,8 @@ EXEC google.aiplatform.slices.batch_import
 @@json=
 '{
 "evaluatedAnnotations": "{{ evaluatedAnnotations }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

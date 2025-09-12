@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_apis_revisions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sharedflows_revisions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -259,7 +255,8 @@ FROM google.apigee.revisions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND revisionsId = '{{ revisionsId }}' -- required
-AND format = '{{ format }}';
+AND format = '{{ format }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sharedflows_revisions_get">
@@ -275,7 +272,8 @@ FROM google.apigee.revisions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND sharedflowsId = '{{ sharedflowsId }}' -- required
 AND revisionsId = '{{ revisionsId }}' -- required
-AND format = '{{ format }}';
+AND format = '{{ format }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -298,7 +296,8 @@ Deletes an API proxy revision and all policies, resources, endpoints, and revisi
 DELETE FROM google.apigee.revisions
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND apisId = '{{ apisId }}' --required
-AND revisionsId = '{{ revisionsId }}' --required;
+AND revisionsId = '{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sharedflows_revisions_delete">
@@ -309,7 +308,8 @@ Deletes a shared flow and all associated policies, resources, and revisions. You
 DELETE FROM google.apigee.revisions
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND sharedflowsId = '{{ sharedflowsId }}' --required
-AND revisionsId = '{{ revisionsId }}' --required;
+AND revisionsId = '{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -338,7 +338,8 @@ EXEC google.apigee.revisions.organizations_environments_apis_revisions_deploy
 @revisionsId='{{ revisionsId }}' --required, 
 @override={{ override }}, 
 @sequencedRollout={{ sequencedRollout }}, 
-@serviceAccount='{{ serviceAccount }}';
+@serviceAccount='{{ serviceAccount }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_apis_revisions_undeploy">
@@ -351,7 +352,8 @@ EXEC google.apigee.revisions.organizations_environments_apis_revisions_undeploy
 @environmentsId='{{ environmentsId }}' --required, 
 @apisId='{{ apisId }}' --required, 
 @revisionsId='{{ revisionsId }}' --required, 
-@sequencedRollout={{ sequencedRollout }};
+@sequencedRollout={{ sequencedRollout }}
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_sharedflows_revisions_deploy">
@@ -365,7 +367,8 @@ EXEC google.apigee.revisions.organizations_environments_sharedflows_revisions_de
 @sharedflowsId='{{ sharedflowsId }}' --required, 
 @revisionsId='{{ revisionsId }}' --required, 
 @override={{ override }}, 
-@serviceAccount='{{ serviceAccount }}';
+@serviceAccount='{{ serviceAccount }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_sharedflows_revisions_undeploy">
@@ -377,7 +380,8 @@ EXEC google.apigee.revisions.organizations_environments_sharedflows_revisions_un
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
 @sharedflowsId='{{ sharedflowsId }}' --required, 
-@revisionsId='{{ revisionsId }}' --required;
+@revisionsId='{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

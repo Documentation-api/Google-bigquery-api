@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_serving_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_serving_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -434,7 +430,8 @@ FROM google.retail.serving_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
-AND servingConfigsId = '{{ servingConfigsId }}' -- required;
+AND servingConfigsId = '{{ servingConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_serving_configs_list">
@@ -468,7 +465,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -770,7 +768,8 @@ DELETE FROM google.retail.serving_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
-AND servingConfigsId = '{{ servingConfigsId }}' --required;
+AND servingConfigsId = '{{ servingConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -824,7 +823,8 @@ EXEC google.retail.serving_configs.projects_locations_catalogs_serving_configs_s
 "regionCode": "{{ regionCode }}", 
 "placeId": "{{ placeId }}", 
 "userAttributes": "{{ userAttributes }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_serving_configs_predict">
@@ -846,7 +846,8 @@ EXEC google.retail.serving_configs.projects_locations_catalogs_serving_configs_p
 "validateOnly": {{ validateOnly }}, 
 "params": "{{ params }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

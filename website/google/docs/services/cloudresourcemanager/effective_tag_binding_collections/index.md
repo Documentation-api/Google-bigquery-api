@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ effectiveTags,
 fullResourceName
 FROM google.cloudresourcemanager.effective_tag_binding_collections
 WHERE locationsId = '{{ locationsId }}' -- required
-AND effectiveTagBindingCollectionsId = '{{ effectiveTagBindingCollectionsId }}' -- required;
+AND effectiveTagBindingCollectionsId = '{{ effectiveTagBindingCollectionsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_security_monitoring_conditions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_security_monitoring_conditions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -292,7 +288,8 @@ totalMonitoredResources,
 updateTime
 FROM google.apigee.security_monitoring_conditions
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND securityMonitoringConditionsId = '{{ securityMonitoringConditionsId }}' -- required;
+AND securityMonitoringConditionsId = '{{ securityMonitoringConditionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_monitoring_conditions_list">
@@ -314,7 +311,8 @@ FROM google.apigee.security_monitoring_conditions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -459,7 +457,8 @@ Delete a security monitoring condition.
 ```sql
 DELETE FROM google.apigee.security_monitoring_conditions
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND securityMonitoringConditionsId = '{{ securityMonitoringConditionsId }}' --required;
+AND securityMonitoringConditionsId = '{{ securityMonitoringConditionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

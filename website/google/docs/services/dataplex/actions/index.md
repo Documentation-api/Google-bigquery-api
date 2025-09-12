@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_lakes_zones_assets_actions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -137,8 +135,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_lakes_zones_actions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -232,8 +228,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_lakes_actions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -458,7 +452,8 @@ AND lakesId = '{{ lakesId }}' -- required
 AND zonesId = '{{ zonesId }}' -- required
 AND assetsId = '{{ assetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_lakes_zones_actions_list">
@@ -489,7 +484,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND zonesId = '{{ zonesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_lakes_actions_list">
@@ -519,7 +515,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

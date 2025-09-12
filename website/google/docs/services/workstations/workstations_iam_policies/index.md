@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -178,7 +176,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND workstationClustersId = '{{ workstationClustersId }}' -- required
 AND workstationConfigsId = '{{ workstationConfigsId }}' -- required
 AND workstationsId = '{{ workstationsId }}' -- required
-AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}';
+AND options.requestedPolicyVersion = '{{ options.requestedPolicyVersion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -239,7 +238,8 @@ EXEC google.workstations.workstations_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

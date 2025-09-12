@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -319,7 +315,8 @@ FROM google.apigeeregistry.versions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_list">
@@ -344,7 +341,8 @@ AND apisId = '{{ apisId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -521,7 +519,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>

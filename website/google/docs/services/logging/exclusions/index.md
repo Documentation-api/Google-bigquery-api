@@ -48,8 +48,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="exclusions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -93,8 +91,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_exclusions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -140,8 +136,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_exclusions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -185,8 +179,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_exclusions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -232,8 +224,6 @@ Successful response
 </TabItem>
 <TabItem value="billing_accounts_exclusions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -277,8 +267,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="exclusions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -324,8 +312,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_exclusions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -369,8 +355,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_exclusions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -416,8 +400,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_exclusions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -461,8 +443,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_exclusions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -805,7 +785,8 @@ FROM google.logging.exclusions
 WHERE parentType = '{{ parentType }}' -- required
 AND parent = '{{ parent }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_exclusions_get">
@@ -822,7 +803,8 @@ filter,
 updateTime
 FROM google.logging.exclusions
 WHERE projectsId = '{{ projectsId }}' -- required
-AND exclusionsId = '{{ exclusionsId }}' -- required;
+AND exclusionsId = '{{ exclusionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_exclusions_get">
@@ -839,7 +821,8 @@ filter,
 updateTime
 FROM google.logging.exclusions
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND exclusionsId = '{{ exclusionsId }}' -- required;
+AND exclusionsId = '{{ exclusionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_exclusions_get">
@@ -856,7 +839,8 @@ filter,
 updateTime
 FROM google.logging.exclusions
 WHERE foldersId = '{{ foldersId }}' -- required
-AND exclusionsId = '{{ exclusionsId }}' -- required;
+AND exclusionsId = '{{ exclusionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_exclusions_get">
@@ -873,7 +857,8 @@ filter,
 updateTime
 FROM google.logging.exclusions
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
-AND exclusionsId = '{{ exclusionsId }}' -- required;
+AND exclusionsId = '{{ exclusionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="exclusions_get">
@@ -889,7 +874,8 @@ disabled,
 filter,
 updateTime
 FROM google.logging.exclusions
-WHERE name = '{{ name }}' -- required;
+WHERE name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_exclusions_list">
@@ -907,7 +893,8 @@ updateTime
 FROM google.logging.exclusions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_exclusions_list">
@@ -925,7 +912,8 @@ updateTime
 FROM google.logging.exclusions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_exclusions_list">
@@ -943,7 +931,8 @@ updateTime
 FROM google.logging.exclusions
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_exclusions_list">
@@ -961,7 +950,8 @@ updateTime
 FROM google.logging.exclusions
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1324,7 +1314,8 @@ Deletes an exclusion in the _Default sink.
 ```sql
 DELETE FROM google.logging.exclusions
 WHERE projectsId = '{{ projectsId }}' --required
-AND exclusionsId = '{{ exclusionsId }}' --required;
+AND exclusionsId = '{{ exclusionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_exclusions_delete">
@@ -1334,7 +1325,8 @@ Deletes an exclusion in the _Default sink.
 ```sql
 DELETE FROM google.logging.exclusions
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND exclusionsId = '{{ exclusionsId }}' --required;
+AND exclusionsId = '{{ exclusionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_exclusions_delete">
@@ -1344,7 +1336,8 @@ Deletes an exclusion in the _Default sink.
 ```sql
 DELETE FROM google.logging.exclusions
 WHERE foldersId = '{{ foldersId }}' --required
-AND exclusionsId = '{{ exclusionsId }}' --required;
+AND exclusionsId = '{{ exclusionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_exclusions_delete">
@@ -1354,7 +1347,8 @@ Deletes an exclusion in the _Default sink.
 ```sql
 DELETE FROM google.logging.exclusions
 WHERE billingAccountsId = '{{ billingAccountsId }}' --required
-AND exclusionsId = '{{ exclusionsId }}' --required;
+AND exclusionsId = '{{ exclusionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="exclusions_delete">
@@ -1363,7 +1357,8 @@ Deletes an exclusion in the _Default sink.
 
 ```sql
 DELETE FROM google.logging.exclusions
-WHERE name = '{{ name }}' --required;
+WHERE name = '{{ name }}' --required
+;
 ```
 </TabItem>
 </Tabs>

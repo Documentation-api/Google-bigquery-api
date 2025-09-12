@@ -112,7 +112,8 @@ EXEC google.artifactregistry.generic_artifacts.upload
 "packageId": "{{ packageId }}", 
 "versionId": "{{ versionId }}", 
 "filename": "{{ filename }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

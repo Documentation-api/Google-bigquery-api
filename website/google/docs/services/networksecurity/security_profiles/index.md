@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_locations_security_profiles_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_security_profiles_list">
-
-Successful response
 
 <table>
 <thead>
@@ -309,7 +305,8 @@ updateTime
 FROM google.networksecurity.security_profiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND securityProfilesId = '{{ securityProfilesId }}' -- required;
+AND securityProfilesId = '{{ securityProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_security_profiles_list">
@@ -332,7 +329,8 @@ FROM google.networksecurity.security_profiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -494,7 +492,8 @@ DELETE FROM google.networksecurity.security_profiles
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND securityProfilesId = '{{ securityProfilesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -59,7 +57,7 @@ Successful response
 <tr>
     <td><CopyableCode code="name" /></td>
     <td><code>string</code></td>
-    <td>Name of the resource. The name must be 1-63 characters long and comply with RFC1035. (pattern: [a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?)</td>
+    <td>Name of the resource. The name must be 1-63 characters long and comply with RFC1035. (pattern: <code>[a-z](?:[-a-z0-9]&#123;0,61&#125;[a-z0-9])?</code>)</td>
 </tr>
 <tr>
     <td><CopyableCode code="allowedReplacementLicenses" /></td>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -354,7 +350,8 @@ transferable,
 updateTimestamp
 FROM google.compute.licenses
 WHERE project = '{{ project }}' -- required
-AND license = '{{ license }}' -- required;
+AND license = '{{ license }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -374,7 +371,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -684,7 +682,8 @@ Deletes the specified license. *Caution* This resource is intended for use only 
 DELETE FROM google.compute.licenses
 WHERE project = '{{ project }}' --required
 AND license = '{{ license }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

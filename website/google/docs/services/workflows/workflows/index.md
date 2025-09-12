@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -419,7 +415,8 @@ FROM google.workflows.workflows
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workflowsId = '{{ workflowsId }}' -- required
-AND revisionId = '{{ revisionId }}';
+AND revisionId = '{{ revisionId }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -453,7 +450,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -639,7 +637,8 @@ Deletes a workflow with the specified name. This method also cancels and deletes
 DELETE FROM google.workflows.workflows
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND workflowsId = '{{ workflowsId }}' --required;
+AND workflowsId = '{{ workflowsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

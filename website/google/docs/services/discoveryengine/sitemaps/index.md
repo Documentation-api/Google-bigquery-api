@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_sitemaps_fetch">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_sitemaps_fetch">
-
-Successful response
 
 <table>
 <thead>
@@ -209,7 +205,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND matcher.urisMatcher.uris = '{{ matcher.urisMatcher.uris }}';
+AND matcher.urisMatcher.uris = '{{ matcher.urisMatcher.uris }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_sitemaps_fetch">
@@ -223,7 +220,8 @@ FROM google.discoveryengine.sitemaps
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND matcher.urisMatcher.uris = '{{ matcher.urisMatcher.uris }}';
+AND matcher.urisMatcher.uris = '{{ matcher.urisMatcher.uris }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -338,7 +336,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND sitemapsId = '{{ sitemapsId }}' --required;
+AND sitemapsId = '{{ sitemapsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_sitemaps_delete">
@@ -350,7 +349,8 @@ DELETE FROM google.discoveryengine.sitemaps
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND sitemapsId = '{{ sitemapsId }}' --required;
+AND sitemapsId = '{{ sitemapsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

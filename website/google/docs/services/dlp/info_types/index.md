@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_info_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -62,8 +60,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_info_types_list">
-
-Successful response
 
 <table>
 <thead>
@@ -84,8 +80,6 @@ Successful response
 </TabItem>
 <TabItem value="locations_info_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -104,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="info_types_list">
-
-Successful response
 
 <table>
 <thead>
@@ -246,7 +238,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND filter = '{{ filter }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_info_types_list">
@@ -261,7 +254,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND filter = '{{ filter }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="locations_info_types_list">
@@ -275,7 +269,8 @@ FROM google.dlp.info_types
 WHERE locationsId = '{{ locationsId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND filter = '{{ filter }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="info_types_list">
@@ -289,7 +284,8 @@ FROM google.dlp.info_types
 WHERE parent = '{{ parent }}'
 AND languageCode = '{{ languageCode }}'
 AND filter = '{{ filter }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 </Tabs>

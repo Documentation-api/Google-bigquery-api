@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_models_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_models_list">
-
-Successful response
 
 <table>
 <thead>
@@ -276,7 +272,8 @@ onlinePredictionLogging,
 regions
 FROM google.ml.models
 WHERE projectsId = '{{ projectsId }}' -- required
-AND modelsId = '{{ modelsId }}' -- required;
+AND modelsId = '{{ modelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_models_list">
@@ -297,7 +294,8 @@ FROM google.ml.models
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -457,7 +455,8 @@ Deletes a model. You can only delete a model if there are no versions in it. You
 ```sql
 DELETE FROM google.ml.models
 WHERE projectsId = '{{ projectsId }}' --required
-AND modelsId = '{{ modelsId }}' --required;
+AND modelsId = '{{ modelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

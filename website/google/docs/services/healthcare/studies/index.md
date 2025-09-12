@@ -146,7 +146,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND dicomStoresId = '{{ dicomStoresId }}' --required
-AND studiesId = '{{ studiesId }}' --required;
+AND studiesId = '{{ studiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -178,7 +179,8 @@ EXEC google.healthcare.studies.set_blob_storage_settings
 '{
 "filterConfig": "{{ filterConfig }}", 
 "blobStorageSettings": "{{ blobStorageSettings }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="store_instances">
@@ -197,7 +199,8 @@ EXEC google.healthcare.studies.store_instances
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_for_series">
@@ -210,7 +213,8 @@ EXEC google.healthcare.studies.search_for_series
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @dicomStoresId='{{ dicomStoresId }}' --required, 
-@studiesId='{{ studiesId }}' --required;
+@studiesId='{{ studiesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="search_for_instances">
@@ -223,7 +227,8 @@ EXEC google.healthcare.studies.search_for_instances
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @dicomStoresId='{{ dicomStoresId }}' --required, 
-@studiesId='{{ studiesId }}' --required;
+@studiesId='{{ studiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

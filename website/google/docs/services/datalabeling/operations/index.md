@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -231,7 +227,8 @@ metadata,
 response
 FROM google.datalabeling.operations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_operations_list">
@@ -249,7 +246,8 @@ FROM google.datalabeling.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -270,7 +268,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 ```sql
 DELETE FROM google.datalabeling.operations
 WHERE projectsId = '{{ projectsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -291,7 +290,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 ```sql
 EXEC google.datalabeling.operations.projects_operations_cancel 
 @projectsId='{{ projectsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

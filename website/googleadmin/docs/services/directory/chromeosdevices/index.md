@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -320,8 +318,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -809,7 +805,8 @@ willAutoRenew
 FROM googleadmin.directory.chromeosdevices
 WHERE customerId = '{{ customerId }}' -- required
 AND deviceId = '{{ deviceId }}' -- required
-AND projection = '{{ projection }}';
+AND projection = '{{ projection }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -880,7 +877,8 @@ AND pageToken = '{{ pageToken }}'
 AND projection = '{{ projection }}'
 AND query = '{{ query }}'
 AND sortOrder = '{{ sortOrder }}'
-AND includeChildOrgunits = '{{ includeChildOrgunits }}';
+AND includeChildOrgunits = '{{ includeChildOrgunits }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1149,7 +1147,8 @@ EXEC googleadmin.directory.chromeosdevices.action
 '{
 "action": "{{ action }}", 
 "deprovisionReason": "{{ deprovisionReason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="move_devices_to_ou">
@@ -1163,7 +1162,8 @@ EXEC googleadmin.directory.chromeosdevices.move_devices_to_ou
 @@json=
 '{
 "deviceIds": "{{ deviceIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

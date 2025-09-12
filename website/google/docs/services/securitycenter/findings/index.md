@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_sources_findings_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_sources_findings_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -102,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sources_findings_list">
-
-Successful response
 
 <table>
 <thead>
@@ -399,7 +393,8 @@ AND readTime = '{{ readTime }}'
 AND compareDuration = '{{ compareDuration }}'
 AND fieldMask = '{{ fieldMask }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_sources_findings_list">
@@ -420,7 +415,8 @@ AND readTime = '{{ readTime }}'
 AND compareDuration = '{{ compareDuration }}'
 AND fieldMask = '{{ fieldMask }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sources_findings_list">
@@ -441,7 +437,8 @@ AND readTime = '{{ readTime }}'
 AND compareDuration = '{{ compareDuration }}'
 AND fieldMask = '{{ fieldMask }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1394,7 +1391,8 @@ EXEC google.securitycenter.findings.folders_findings_bulk_mute
 "filter": "{{ filter }}", 
 "muteAnnotation": "{{ muteAnnotation }}", 
 "muteState": "{{ muteState }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_sources_findings_group">
@@ -1413,7 +1411,8 @@ EXEC google.securitycenter.findings.folders_sources_findings_group
 "compareDuration": "{{ compareDuration }}", 
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_sources_findings_set_state">
@@ -1429,7 +1428,8 @@ EXEC google.securitycenter.findings.folders_sources_findings_set_state
 '{
 "state": "{{ state }}", 
 "startTime": "{{ startTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_sources_findings_set_mute">
@@ -1444,7 +1444,8 @@ EXEC google.securitycenter.findings.folders_sources_findings_set_mute
 @@json=
 '{
 "mute": "{{ mute }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_findings_bulk_mute">
@@ -1459,7 +1460,8 @@ EXEC google.securitycenter.findings.projects_findings_bulk_mute
 "filter": "{{ filter }}", 
 "muteAnnotation": "{{ muteAnnotation }}", 
 "muteState": "{{ muteState }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_sources_findings_group">
@@ -1478,7 +1480,8 @@ EXEC google.securitycenter.findings.projects_sources_findings_group
 "compareDuration": "{{ compareDuration }}", 
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_sources_findings_set_state">
@@ -1494,7 +1497,8 @@ EXEC google.securitycenter.findings.projects_sources_findings_set_state
 '{
 "state": "{{ state }}", 
 "startTime": "{{ startTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_sources_findings_set_mute">
@@ -1509,7 +1513,8 @@ EXEC google.securitycenter.findings.projects_sources_findings_set_mute
 @@json=
 '{
 "mute": "{{ mute }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_findings_bulk_mute">
@@ -1524,7 +1529,8 @@ EXEC google.securitycenter.findings.organizations_findings_bulk_mute
 "filter": "{{ filter }}", 
 "muteAnnotation": "{{ muteAnnotation }}", 
 "muteState": "{{ muteState }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sources_findings_group">
@@ -1543,7 +1549,8 @@ EXEC google.securitycenter.findings.organizations_sources_findings_group
 "compareDuration": "{{ compareDuration }}", 
 "pageToken": "{{ pageToken }}", 
 "pageSize": {{ pageSize }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sources_findings_set_state">
@@ -1559,7 +1566,8 @@ EXEC google.securitycenter.findings.organizations_sources_findings_set_state
 '{
 "state": "{{ state }}", 
 "startTime": "{{ startTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_sources_findings_set_mute">
@@ -1574,7 +1582,8 @@ EXEC google.securitycenter.findings.organizations_sources_findings_set_mute
 @@json=
 '{
 "mute": "{{ mute }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

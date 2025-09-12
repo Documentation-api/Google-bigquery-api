@@ -112,7 +112,8 @@ EXEC google.serviceconsumermanagement.services.search
 @servicesId='{{ servicesId }}' --required, 
 @pageSize='{{ pageSize }}', 
 @query='{{ query }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

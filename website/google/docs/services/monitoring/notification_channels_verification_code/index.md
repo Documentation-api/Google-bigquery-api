@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_notification_channels_get_verification_code">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ code,
 expireTime
 FROM google.monitoring.notification_channels_verification_code
 WHERE projectsId = '{{ projectsId }}' -- required
-AND notificationChannelsId = '{{ notificationChannelsId }}' -- required;
+AND notificationChannelsId = '{{ notificationChannelsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

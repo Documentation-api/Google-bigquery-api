@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ displayName,
 state
 FROM google.storagetransfer.agent_pools
 WHERE projectsId = '{{ projectsId }}' -- required
-AND agentPoolsId = '{{ agentPoolsId }}' -- required;
+AND agentPoolsId = '{{ agentPoolsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -254,7 +251,8 @@ FROM google.storagetransfer.agent_pools
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -373,7 +371,8 @@ Deletes an agent pool.
 ```sql
 DELETE FROM google.storagetransfer.agent_pools
 WHERE projectsId = '{{ projectsId }}' --required
-AND agentPoolsId = '{{ agentPoolsId }}' --required;
+AND agentPoolsId = '{{ agentPoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

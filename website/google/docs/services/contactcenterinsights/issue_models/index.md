@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -279,7 +275,8 @@ updateTime
 FROM google.contactcenterinsights.issue_models
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND issueModelsId = '{{ issueModelsId }}' -- required;
+AND issueModelsId = '{{ issueModelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -291,7 +288,8 @@ SELECT
 issueModels
 FROM google.contactcenterinsights.issue_models
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -437,7 +435,8 @@ Deletes an issue model.
 DELETE FROM google.contactcenterinsights.issue_models
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND issueModelsId = '{{ issueModelsId }}' --required;
+AND issueModelsId = '{{ issueModelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -467,7 +466,8 @@ EXEC google.contactcenterinsights.issue_models.deploy
 @@json=
 '{
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undeploy">
@@ -482,7 +482,8 @@ EXEC google.contactcenterinsights.issue_models.undeploy
 @@json=
 '{
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -498,7 +499,8 @@ EXEC google.contactcenterinsights.issue_models.export
 '{
 "gcsDestination": "{{ gcsDestination }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -514,7 +516,8 @@ EXEC google.contactcenterinsights.issue_models.import
 "gcsSource": "{{ gcsSource }}", 
 "parent": "{{ parent }}", 
 "createNewModel": {{ createNewModel }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="calculate_issue_model_stats">
@@ -525,7 +528,8 @@ Gets an issue model's statistics.
 EXEC google.contactcenterinsights.issue_models.calculate_issue_model_stats 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@issueModelsId='{{ issueModelsId }}' --required;
+@issueModelsId='{{ issueModelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

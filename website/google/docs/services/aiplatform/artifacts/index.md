@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -117,8 +115,6 @@ Successful response
 </TabItem>
 <TabItem value="query_artifact_lineage_subgraph">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -404,7 +398,8 @@ FROM google.aiplatform.artifacts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND metadataStoresId = '{{ metadataStoresId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="query_artifact_lineage_subgraph">
@@ -422,7 +417,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND metadataStoresId = '{{ metadataStoresId }}' -- required
 AND artifactsId = '{{ artifactsId }}' -- required
 AND maxHops = '{{ maxHops }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -450,7 +446,8 @@ AND metadataStoresId = '{{ metadataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -650,7 +647,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND metadataStoresId = '{{ metadataStoresId }}' --required
 AND artifactsId = '{{ artifactsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -677,7 +675,8 @@ EXEC google.aiplatform.artifacts.purge
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

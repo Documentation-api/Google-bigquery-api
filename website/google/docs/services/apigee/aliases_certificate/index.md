@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_keystores_aliases_get_certificate">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ FROM google.apigee.aliases_certificate
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND keystoresId = '{{ keystoresId }}' -- required
-AND aliasesId = '{{ aliasesId }}' -- required;
+AND aliasesId = '{{ aliasesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -255,8 +253,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -632,7 +628,8 @@ wifiMacAddress
 FROM googleadmin.directory.mobiledevices
 WHERE customerId = '{{ customerId }}' -- required
 AND resourceId = '{{ resourceId }}' -- required
-AND projection = '{{ projection }}';
+AND projection = '{{ projection }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -688,7 +685,8 @@ AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND projection = '{{ projection }}'
 AND query = '{{ query }}'
-AND sortOrder = '{{ sortOrder }}';
+AND sortOrder = '{{ sortOrder }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -709,7 +707,8 @@ Removes a mobile device.
 ```sql
 DELETE FROM googleadmin.directory.mobiledevices
 WHERE customerId = '{{ customerId }}' --required
-AND resourceId = '{{ resourceId }}' --required;
+AND resourceId = '{{ resourceId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -734,7 +733,8 @@ EXEC googleadmin.directory.mobiledevices.action
 @@json=
 '{
 "action": "{{ action }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

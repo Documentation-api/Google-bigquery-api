@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -298,7 +294,8 @@ stateHistories,
 ttl
 FROM firebase.testing.device_sessions
 WHERE projectsId = '{{ projectsId }}' -- required
-AND deviceSessionsId = '{{ deviceSessionsId }}' -- required;
+AND deviceSessionsId = '{{ deviceSessionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -321,7 +318,8 @@ FROM firebase.testing.device_sessions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -456,7 +454,8 @@ POST /v1/projects/&#123;project_id&#125;/deviceSessions/&#123;device_session_id&
 ```sql
 EXEC firebase.testing.device_sessions.cancel 
 @projectsId='{{ projectsId }}' --required, 
-@deviceSessionsId='{{ deviceSessionsId }}' --required;
+@deviceSessionsId='{{ deviceSessionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

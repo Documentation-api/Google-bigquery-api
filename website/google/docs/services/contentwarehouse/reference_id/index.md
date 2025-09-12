@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -268,7 +266,8 @@ updater
 FROM google.contentwarehouse.reference_id
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND referenceIdId = '{{ referenceIdId }}' -- required;
+AND referenceIdId = '{{ referenceIdId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -322,7 +321,8 @@ Deletes a document. Returns NOT_FOUND if the document does not exist.
 DELETE FROM google.contentwarehouse.reference_id
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND referenceIdId = '{{ referenceIdId }}' --required;
+AND referenceIdId = '{{ referenceIdId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

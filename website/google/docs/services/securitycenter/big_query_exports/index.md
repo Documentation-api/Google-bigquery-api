@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_big_query_exports_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -78,7 +76,7 @@ Successful response
 <tr>
     <td><CopyableCode code="filter" /></td>
     <td><code>string</code></td>
-    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `&gt;`, `&lt;`, `&gt;=`, `&lt;=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
+    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `>`, `<`, `>=`, `<=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
 </tr>
 <tr>
     <td><CopyableCode code="mostRecentEditor" /></td>
@@ -100,8 +98,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_big_query_exports_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +130,7 @@ Successful response
 <tr>
     <td><CopyableCode code="filter" /></td>
     <td><code>string</code></td>
-    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `&gt;`, `&lt;`, `&gt;=`, `&lt;=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
+    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `>`, `<`, `>=`, `<=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
 </tr>
 <tr>
     <td><CopyableCode code="mostRecentEditor" /></td>
@@ -156,8 +152,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_big_query_exports_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -190,7 +184,7 @@ Successful response
 <tr>
     <td><CopyableCode code="filter" /></td>
     <td><code>string</code></td>
-    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `&gt;`, `&lt;`, `&gt;=`, `&lt;=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
+    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `>`, `<`, `>=`, `<=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
 </tr>
 <tr>
     <td><CopyableCode code="mostRecentEditor" /></td>
@@ -212,8 +206,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_big_query_exports_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -246,7 +238,7 @@ Successful response
 <tr>
     <td><CopyableCode code="filter" /></td>
     <td><code>string</code></td>
-    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `&gt;`, `&lt;`, `&gt;=`, `&lt;=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
+    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `>`, `<`, `>=`, `<=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
 </tr>
 <tr>
     <td><CopyableCode code="mostRecentEditor" /></td>
@@ -268,8 +260,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_big_query_exports_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -302,7 +292,7 @@ Successful response
 <tr>
     <td><CopyableCode code="filter" /></td>
     <td><code>string</code></td>
-    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `&gt;`, `&lt;`, `&gt;=`, `&lt;=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
+    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `>`, `<`, `>=`, `<=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
 </tr>
 <tr>
     <td><CopyableCode code="mostRecentEditor" /></td>
@@ -324,8 +314,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_big_query_exports_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -358,7 +346,7 @@ Successful response
 <tr>
     <td><CopyableCode code="filter" /></td>
     <td><code>string</code></td>
-    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `&gt;`, `&lt;`, `&gt;=`, `&lt;=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
+    <td>Expression that defines the filter to apply across create/update events of findings. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are supported, and `OR` has higher precedence than `AND`. Restrictions have the form ` ` and may have a `-` character in front of them to indicate negation. The fields map to those defined in the corresponding resource. The supported operators are: * `=` for all value types. * `>`, `<`, `>=`, `<=` for integer values. * `:`, meaning substring matching, for strings. The supported value types are: * string literals in quotes. * integer literals without quotes. * boolean literals `true` and `false` without quotes.</td>
 </tr>
 <tr>
     <td><CopyableCode code="mostRecentEditor" /></td>
@@ -588,7 +576,8 @@ principal,
 updateTime
 FROM google.securitycenter.big_query_exports
 WHERE foldersId = '{{ foldersId }}' -- required
-AND bigQueryExportsId = '{{ bigQueryExportsId }}' -- required;
+AND bigQueryExportsId = '{{ bigQueryExportsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_big_query_exports_get">
@@ -607,7 +596,8 @@ principal,
 updateTime
 FROM google.securitycenter.big_query_exports
 WHERE projectsId = '{{ projectsId }}' -- required
-AND bigQueryExportsId = '{{ bigQueryExportsId }}' -- required;
+AND bigQueryExportsId = '{{ bigQueryExportsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_big_query_exports_get">
@@ -626,7 +616,8 @@ principal,
 updateTime
 FROM google.securitycenter.big_query_exports
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND bigQueryExportsId = '{{ bigQueryExportsId }}' -- required;
+AND bigQueryExportsId = '{{ bigQueryExportsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_big_query_exports_list">
@@ -646,7 +637,8 @@ updateTime
 FROM google.securitycenter.big_query_exports
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_big_query_exports_list">
@@ -666,7 +658,8 @@ updateTime
 FROM google.securitycenter.big_query_exports
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_big_query_exports_list">
@@ -686,7 +679,8 @@ updateTime
 FROM google.securitycenter.big_query_exports
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -949,7 +943,8 @@ Deletes an existing BigQuery export.
 ```sql
 DELETE FROM google.securitycenter.big_query_exports
 WHERE foldersId = '{{ foldersId }}' --required
-AND bigQueryExportsId = '{{ bigQueryExportsId }}' --required;
+AND bigQueryExportsId = '{{ bigQueryExportsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_big_query_exports_delete">
@@ -959,7 +954,8 @@ Deletes an existing BigQuery export.
 ```sql
 DELETE FROM google.securitycenter.big_query_exports
 WHERE projectsId = '{{ projectsId }}' --required
-AND bigQueryExportsId = '{{ bigQueryExportsId }}' --required;
+AND bigQueryExportsId = '{{ bigQueryExportsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_big_query_exports_delete">
@@ -969,7 +965,8 @@ Deletes an existing BigQuery export.
 ```sql
 DELETE FROM google.securitycenter.big_query_exports
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND bigQueryExportsId = '{{ bigQueryExportsId }}' --required;
+AND bigQueryExportsId = '{{ bigQueryExportsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

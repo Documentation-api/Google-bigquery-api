@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_glossaries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_glossaries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -282,7 +278,8 @@ submitTime
 FROM google.translate.glossaries
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND glossariesId = '{{ glossariesId }}' -- required;
+AND glossariesId = '{{ glossariesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_glossaries_list">
@@ -304,7 +301,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -444,7 +442,8 @@ Deletes a glossary, or cancels glossary construction if the glossary isn't creat
 DELETE FROM google.translate.glossaries
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND glossariesId = '{{ glossariesId }}' --required;
+AND glossariesId = '{{ glossariesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
