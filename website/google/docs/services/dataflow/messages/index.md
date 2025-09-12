@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_jobs_messages_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_jobs_messages_list">
-
-Successful response
 
 <table>
 <thead>
@@ -232,7 +228,8 @@ AND minimumImportance = '{{ minimumImportance }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND startTime = '{{ startTime }}'
-AND endTime = '{{ endTime }}';
+AND endTime = '{{ endTime }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_messages_list">
@@ -253,7 +250,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND startTime = '{{ startTime }}'
 AND endTime = '{{ endTime }}'
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>

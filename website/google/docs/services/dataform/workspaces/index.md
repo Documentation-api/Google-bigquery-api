@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </TabItem>
 <TabItem value="query_directory_contents">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -102,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -378,7 +372,8 @@ FROM google.dataform.workspaces
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND workspacesId = '{{ workspacesId }}' -- required;
+AND workspacesId = '{{ workspacesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="query_directory_contents">
@@ -396,7 +391,8 @@ AND repositoriesId = '{{ repositoriesId }}' -- required
 AND workspacesId = '{{ workspacesId }}' -- required
 AND path = '{{ path }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -416,7 +412,8 @@ AND repositoriesId = '{{ repositoriesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -501,7 +498,8 @@ DELETE FROM google.dataform.workspaces
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND repositoriesId = '{{ repositoriesId }}' --required
-AND workspacesId = '{{ workspacesId }}' --required;
+AND workspacesId = '{{ workspacesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -536,7 +534,8 @@ EXEC google.dataform.workspaces.install_npm_packages
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @repositoriesId='{{ repositoriesId }}' --required, 
-@workspacesId='{{ workspacesId }}' --required;
+@workspacesId='{{ workspacesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="pull">
@@ -553,7 +552,8 @@ EXEC google.dataform.workspaces.pull
 '{
 "remoteBranch": "{{ remoteBranch }}", 
 "author": "{{ author }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="push">
@@ -569,7 +569,8 @@ EXEC google.dataform.workspaces.push
 @@json=
 '{
 "remoteBranch": "{{ remoteBranch }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="commit">
@@ -587,7 +588,8 @@ EXEC google.dataform.workspaces.commit
 "author": "{{ author }}", 
 "commitMessage": "{{ commitMessage }}", 
 "paths": "{{ paths }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reset">
@@ -604,7 +606,8 @@ EXEC google.dataform.workspaces.reset
 '{
 "paths": "{{ paths }}", 
 "clean": {{ clean }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_files">
@@ -619,7 +622,8 @@ EXEC google.dataform.workspaces.search_files
 @workspacesId='{{ workspacesId }}' --required, 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@filter='{{ filter }}';
+@filter='{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="make_directory">
@@ -635,7 +639,8 @@ EXEC google.dataform.workspaces.make_directory
 @@json=
 '{
 "path": "{{ path }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="remove_directory">
@@ -651,7 +656,8 @@ EXEC google.dataform.workspaces.remove_directory
 @@json=
 '{
 "path": "{{ path }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="move_directory">
@@ -668,7 +674,8 @@ EXEC google.dataform.workspaces.move_directory
 '{
 "path": "{{ path }}", 
 "newPath": "{{ newPath }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="read_file">
@@ -682,7 +689,8 @@ EXEC google.dataform.workspaces.read_file
 @repositoriesId='{{ repositoriesId }}' --required, 
 @workspacesId='{{ workspacesId }}' --required, 
 @path='{{ path }}', 
-@revision='{{ revision }}';
+@revision='{{ revision }}'
+;
 ```
 </TabItem>
 <TabItem value="remove_file">
@@ -698,7 +706,8 @@ EXEC google.dataform.workspaces.remove_file
 @@json=
 '{
 "path": "{{ path }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="move_file">
@@ -715,7 +724,8 @@ EXEC google.dataform.workspaces.move_file
 '{
 "path": "{{ path }}", 
 "newPath": "{{ newPath }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="write_file">
@@ -732,7 +742,8 @@ EXEC google.dataform.workspaces.write_file
 '{
 "path": "{{ path }}", 
 "contents": "{{ contents }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -210,8 +208,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -568,7 +564,8 @@ userMetadata
 FROM google.looker.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -612,7 +609,8 @@ FROM google.looker.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -871,7 +869,8 @@ DELETE FROM google.looker.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -896,7 +895,8 @@ Restart instance.
 EXEC google.looker.instances.restart 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -911,7 +911,8 @@ EXEC google.looker.instances.restore
 @@json=
 '{
 "backup": "{{ backup }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -926,7 +927,8 @@ EXEC google.looker.instances.import
 @@json=
 '{
 "gcsUri": "{{ gcsUri }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -942,7 +944,8 @@ EXEC google.looker.instances.export
 '{
 "gcsUri": "{{ gcsUri }}", 
 "encryptionConfig": "{{ encryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

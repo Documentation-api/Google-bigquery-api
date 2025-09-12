@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_file_diff">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
 AND workspacesId = '{{ workspacesId }}' -- required
-AND path = '{{ path }}';
+AND path = '{{ path }}'
+;
 ```
 </TabItem>
 </Tabs>

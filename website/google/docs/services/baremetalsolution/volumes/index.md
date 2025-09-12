@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -175,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -465,7 +461,8 @@ workloadProfile
 FROM google.baremetalsolution.volumes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND volumesId = '{{ volumesId }}' -- required;
+AND volumesId = '{{ volumesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -503,7 +500,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -580,7 +578,8 @@ EXEC google.baremetalsolution.volumes.rename
 @@json=
 '{
 "newVolumeId": "{{ newVolumeId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="evict">
@@ -591,7 +590,8 @@ Skips volume's cooloff and deletes it now. Volume must be in cooloff state.
 EXEC google.baremetalsolution.volumes.evict 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@volumesId='{{ volumesId }}' --required;
+@volumesId='{{ volumesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resize">
@@ -606,7 +606,8 @@ EXEC google.baremetalsolution.volumes.resize
 @@json=
 '{
 "sizeGib": "{{ sizeGib }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

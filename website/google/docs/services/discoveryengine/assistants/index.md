@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_engines_assistants_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -189,7 +187,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
-AND assistantsId = '{{ assistantsId }}' -- required;
+AND assistantsId = '{{ assistantsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -259,7 +258,8 @@ EXEC google.discoveryengine.assistants.projects_locations_collections_engines_as
 "userMetadata": "{{ userMetadata }}", 
 "toolsSpec": "{{ toolsSpec }}", 
 "generationSpec": "{{ generationSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

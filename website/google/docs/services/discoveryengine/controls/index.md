@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_controls_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -114,8 +112,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_engines_controls_get">
-
-Successful response
 
 <table>
 <thead>
@@ -186,8 +182,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_controls_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -256,8 +250,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_engines_controls_list">
-
-Successful response
 
 <table>
 <thead>
@@ -328,8 +320,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_controls_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -398,8 +388,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_controls_list">
-
-Successful response
 
 <table>
 <thead>
@@ -699,7 +687,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND controlsId = '{{ controlsId }}' -- required;
+AND controlsId = '{{ controlsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_controls_get">
@@ -724,7 +713,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
-AND controlsId = '{{ controlsId }}' -- required;
+AND controlsId = '{{ controlsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_controls_list">
@@ -751,7 +741,8 @@ AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_controls_list">
@@ -778,7 +769,8 @@ AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_controls_get">
@@ -802,7 +794,8 @@ FROM google.discoveryengine.controls
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND controlsId = '{{ controlsId }}' -- required;
+AND controlsId = '{{ controlsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_controls_list">
@@ -828,7 +821,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1227,7 +1221,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND controlsId = '{{ controlsId }}' --required;
+AND controlsId = '{{ controlsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_controls_delete">
@@ -1240,7 +1235,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND enginesId = '{{ enginesId }}' --required
-AND controlsId = '{{ controlsId }}' --required;
+AND controlsId = '{{ controlsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_controls_delete">
@@ -1252,7 +1248,8 @@ DELETE FROM google.discoveryengine.controls
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND controlsId = '{{ controlsId }}' --required;
+AND controlsId = '{{ controlsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

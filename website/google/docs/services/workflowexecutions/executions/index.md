@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -382,7 +378,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workflowsId = '{{ workflowsId }}' -- required
 AND executionsId = '{{ executionsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -415,7 +412,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -539,7 +537,8 @@ EXEC google.workflowexecutions.executions.cancel
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @workflowsId='{{ workflowsId }}' --required, 
-@executionsId='{{ executionsId }}' --required;
+@executionsId='{{ executionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="export_data">
@@ -551,7 +550,8 @@ EXEC google.workflowexecutions.executions.export_data
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @workflowsId='{{ workflowsId }}' --required, 
-@executionsId='{{ executionsId }}' --required;
+@executionsId='{{ executionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -381,7 +377,8 @@ updateTime
 FROM google.aiplatform.training_pipelines
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND trainingPipelinesId = '{{ trainingPipelinesId }}' -- required;
+AND trainingPipelinesId = '{{ trainingPipelinesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -413,7 +410,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -557,7 +555,8 @@ Deletes a TrainingPipeline.
 DELETE FROM google.aiplatform.training_pipelines
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND trainingPipelinesId = '{{ trainingPipelinesId }}' --required;
+AND trainingPipelinesId = '{{ trainingPipelinesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -579,7 +578,8 @@ Cancels a TrainingPipeline. Starts asynchronous cancellation on the TrainingPipe
 EXEC google.aiplatform.training_pipelines.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@trainingPipelinesId='{{ trainingPipelinesId }}' --required;
+@trainingPipelinesId='{{ trainingPipelinesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

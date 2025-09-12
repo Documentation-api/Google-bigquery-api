@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_exchanges_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -107,8 +105,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_exchanges_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_data_exchanges_list">
-
-Successful response
 
 <table>
 <thead>
@@ -391,7 +385,8 @@ sharingEnvironmentConfig
 FROM google.analyticshub.data_exchanges
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataExchangesId = '{{ dataExchangesId }}' -- required;
+AND dataExchangesId = '{{ dataExchangesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_exchanges_list">
@@ -414,7 +409,8 @@ FROM google.analyticshub.data_exchanges
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_data_exchanges_list">
@@ -437,7 +433,8 @@ FROM google.analyticshub.data_exchanges
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -616,7 +613,8 @@ Deletes an existing data exchange.
 DELETE FROM google.analyticshub.data_exchanges
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND dataExchangesId = '{{ dataExchangesId }}' --required;
+AND dataExchangesId = '{{ dataExchangesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -645,7 +643,8 @@ EXEC google.analyticshub.data_exchanges.projects_locations_data_exchanges_subscr
 "destinationDataset": "{{ destinationDataset }}", 
 "subscription": "{{ subscription }}", 
 "subscriberContact": "{{ subscriberContact }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

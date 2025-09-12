@@ -89,6 +89,7 @@ Get token signing public key.
 
 ```sql
 EXEC google.identitytoolkit.relyingparty_public_keys.get_public_keys 
+
 ;
 ```
 </TabItem>

@@ -169,7 +169,8 @@ EXEC google.retail.user_events.projects_locations_catalogs_user_events_write
 "pageViewId": "{{ pageViewId }}", 
 "entity": "{{ entity }}", 
 "panels": "{{ panels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_user_events_collect">
@@ -188,7 +189,8 @@ EXEC google.retail.user_events.projects_locations_catalogs_user_events_collect
 "uri": "{{ uri }}", 
 "ets": "{{ ets }}", 
 "rawJson": "{{ rawJson }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_user_events_purge">
@@ -204,7 +206,8 @@ EXEC google.retail.user_events.projects_locations_catalogs_user_events_purge
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_user_events_import">
@@ -220,7 +223,8 @@ EXEC google.retail.user_events.projects_locations_catalogs_user_events_import
 '{
 "inputConfig": "{{ inputConfig }}", 
 "errorsConfig": "{{ errorsConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_user_events_rejoin">
@@ -235,7 +239,8 @@ EXEC google.retail.user_events.projects_locations_catalogs_user_events_rejoin
 @@json=
 '{
 "userEventRejoinScope": "{{ userEventRejoinScope }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_jobs_debug_get_worker_stacktraces">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ sdks
 FROM google.dataflow.debug_worker_stacktraces
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
-AND jobId = '{{ jobId }}' -- required;
+AND jobId = '{{ jobId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

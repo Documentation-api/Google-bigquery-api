@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -316,7 +312,8 @@ state,
 teamId
 FROM firebase.firebase.ios_apps
 WHERE projectsId = '{{ projectsId }}' -- required
-AND iosAppsId = '{{ iosAppsId }}' -- required;
+AND iosAppsId = '{{ iosAppsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -340,7 +337,8 @@ FROM firebase.firebase.ios_apps
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -495,7 +493,8 @@ Removes the specified IosApp from the FirebaseProject.
 ```sql
 DELETE FROM firebase.firebase.ios_apps
 WHERE projectsId = '{{ projectsId }}' --required
-AND iosAppsId = '{{ iosAppsId }}' --required;
+AND iosAppsId = '{{ iosAppsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -521,7 +520,8 @@ EXEC firebase.firebase.ios_apps.undelete
 '{
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

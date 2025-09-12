@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -340,7 +336,8 @@ userEmail
 FROM google.cloudidentity.device_users
 WHERE devicesId = '{{ devicesId }}' -- required
 AND deviceUsersId = '{{ deviceUsersId }}' -- required
-AND customer = '{{ customer }}';
+AND customer = '{{ customer }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -365,7 +362,8 @@ AND customer = '{{ customer }}'
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -387,7 +385,8 @@ Deletes the specified DeviceUser. This also revokes the user's access to device 
 DELETE FROM google.cloudidentity.device_users
 WHERE devicesId = '{{ devicesId }}' --required
 AND deviceUsersId = '{{ deviceUsersId }}' --required
-AND customer = '{{ customer }}';
+AND customer = '{{ customer }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -416,7 +415,8 @@ EXEC google.cloudidentity.device_users.lookup
 @pageToken='{{ pageToken }}', 
 @androidId='{{ androidId }}', 
 @rawResourceId='{{ rawResourceId }}', 
-@userId='{{ userId }}';
+@userId='{{ userId }}'
+;
 ```
 </TabItem>
 <TabItem value="approve">
@@ -430,7 +430,8 @@ EXEC google.cloudidentity.device_users.approve
 @@json=
 '{
 "customer": "{{ customer }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="block">
@@ -444,7 +445,8 @@ EXEC google.cloudidentity.device_users.block
 @@json=
 '{
 "customer": "{{ customer }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="wipe">
@@ -458,7 +460,8 @@ EXEC google.cloudidentity.device_users.wipe
 @@json=
 '{
 "customer": "{{ customer }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="cancel_wipe">
@@ -472,7 +475,8 @@ EXEC google.cloudidentity.device_users.cancel_wipe
 @@json=
 '{
 "customer": "{{ customer }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

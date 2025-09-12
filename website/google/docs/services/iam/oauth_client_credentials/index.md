@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -219,7 +215,8 @@ FROM google.iam.oauth_client_credentials
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND oauthClientsId = '{{ oauthClientsId }}' -- required
-AND credentialsId = '{{ credentialsId }}' -- required;
+AND credentialsId = '{{ credentialsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -232,7 +229,8 @@ oauthClientCredentials
 FROM google.iam.oauth_client_credentials
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND oauthClientsId = '{{ oauthClientsId }}' -- required;
+AND oauthClientsId = '{{ oauthClientsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -365,7 +363,8 @@ DELETE FROM google.iam.oauth_client_credentials
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND oauthClientsId = '{{ oauthClientsId }}' --required
-AND credentialsId = '{{ credentialsId }}' --required;
+AND credentialsId = '{{ credentialsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

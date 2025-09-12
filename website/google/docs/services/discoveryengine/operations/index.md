@@ -64,8 +64,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_models_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -104,8 +102,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -146,8 +142,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_schemas_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -186,8 +180,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_models_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -228,8 +220,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -268,8 +258,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_schemas_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -310,8 +298,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_engines_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -350,8 +336,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_models_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -392,8 +376,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -432,8 +414,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_connector_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -474,8 +454,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -514,8 +492,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -556,8 +532,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_engines_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -596,8 +570,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_podcasts_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -638,8 +610,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_models_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -678,8 +648,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -720,8 +688,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -760,8 +726,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -802,8 +766,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_data_connector_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -842,8 +804,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -884,8 +844,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -924,8 +882,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -966,8 +922,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -1006,8 +960,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -1048,8 +1000,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -1088,8 +1038,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -1494,7 +1442,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_operations_get">
@@ -1514,7 +1463,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_schemas_operations_get">
@@ -1534,7 +1484,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND schemasId = '{{ schemasId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_models_operations_list">
@@ -1556,7 +1507,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_operations_list">
@@ -1578,7 +1530,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_schemas_operations_list">
@@ -1600,7 +1553,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND schemasId = '{{ schemasId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_operations_get">
@@ -1619,7 +1573,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_models_operations_get">
@@ -1638,7 +1593,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_operations_get">
@@ -1657,7 +1613,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_connector_operations_get">
@@ -1675,7 +1632,8 @@ FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_operations_get">
@@ -1693,7 +1651,8 @@ FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_operations_list">
@@ -1714,7 +1673,8 @@ AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_operations_list">
@@ -1735,7 +1695,8 @@ AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_podcasts_operations_get">
@@ -1753,7 +1714,8 @@ FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND podcastsId = '{{ podcastsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_models_operations_list">
@@ -1774,7 +1736,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND modelsId = '{{ modelsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_operations_get">
@@ -1792,7 +1755,8 @@ FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_operations_list">
@@ -1813,7 +1777,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_operations_get">
@@ -1831,7 +1796,8 @@ FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND identityMappingStoresId = '{{ identityMappingStoresId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_connector_operations_list">
@@ -1851,7 +1817,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_operations_list">
@@ -1871,7 +1838,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_operations_get">
@@ -1888,7 +1856,8 @@ response
 FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_operations_list">
@@ -1908,7 +1877,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_identity_mapping_stores_operations_list">
@@ -1928,7 +1898,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND identityMappingStoresId = '{{ identityMappingStoresId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_operations_get">
@@ -1944,7 +1915,8 @@ metadata,
 response
 FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_operations_list">
@@ -1963,7 +1935,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_operations_list">
@@ -1981,7 +1954,8 @@ FROM google.discoveryengine.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2005,7 +1979,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 ```sql
 EXEC google.discoveryengine.operations.projects_operations_cancel 
 @projectsId='{{ projectsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_operations_cancel">
@@ -2019,7 +1994,8 @@ EXEC google.discoveryengine.operations.projects_locations_collections_data_store
 @collectionsId='{{ collectionsId }}' --required, 
 @dataStoresId='{{ dataStoresId }}' --required, 
 @branchesId='{{ branchesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_operations_cancel">
@@ -2032,7 +2008,8 @@ EXEC google.discoveryengine.operations.projects_locations_collections_engines_op
 @locationsId='{{ locationsId }}' --required, 
 @collectionsId='{{ collectionsId }}' --required, 
 @enginesId='{{ enginesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_operations_cancel">
@@ -2045,7 +2022,8 @@ EXEC google.discoveryengine.operations.projects_locations_data_stores_branches_o
 @locationsId='{{ locationsId }}' --required, 
 @dataStoresId='{{ dataStoresId }}' --required, 
 @branchesId='{{ branchesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

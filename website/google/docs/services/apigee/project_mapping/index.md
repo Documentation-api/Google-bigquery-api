@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_get_project_mapping">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ organization,
 projectId,
 projectIds
 FROM google.apigee.project_mapping
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

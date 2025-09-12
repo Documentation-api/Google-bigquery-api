@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_memberships_features_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_memberships_features_list">
-
-Successful response
 
 <table>
 <thead>
@@ -308,7 +304,8 @@ FROM google.gkehub.features
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND membershipsId = '{{ membershipsId }}' -- required
-AND featuresId = '{{ featuresId }}' -- required;
+AND featuresId = '{{ featuresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_memberships_features_list">
@@ -332,7 +329,8 @@ AND membershipsId = '{{ membershipsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -466,7 +464,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND membershipsId = '{{ membershipsId }}' --required
 AND featuresId = '{{ featuresId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

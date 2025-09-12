@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,7 +170,8 @@ fingerprint,
 key
 FROM google.oslogin.ssh_public_keys
 WHERE usersId = '{{ usersId }}' -- required
-AND sshPublicKeysId = '{{ sshPublicKeysId }}' -- required;
+AND sshPublicKeysId = '{{ sshPublicKeysId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -279,7 +278,8 @@ Deletes an SSH public key.
 ```sql
 DELETE FROM google.oslogin.ssh_public_keys
 WHERE usersId = '{{ usersId }}' --required
-AND sshPublicKeysId = '{{ sshPublicKeysId }}' --required;
+AND sshPublicKeysId = '{{ sshPublicKeysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -205,8 +203,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -564,7 +560,8 @@ visibility
 FROM google.jobs.jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND tenantsId = '{{ tenantsId }}' -- required
-AND jobsId = '{{ jobsId }}' -- required;
+AND jobsId = '{{ jobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -609,7 +606,8 @@ AND tenantsId = '{{ tenantsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND jobView = '{{ jobView }}';
+AND jobView = '{{ jobView }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1021,7 +1019,8 @@ Deletes the specified job. Typically, the job becomes unsearchable within 10 sec
 DELETE FROM google.jobs.jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND tenantsId = '{{ tenantsId }}' --required
-AND jobsId = '{{ jobsId }}' --required;
+AND jobsId = '{{ jobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="batch_delete">
@@ -1031,7 +1030,8 @@ Begins executing a batch delete jobs operation.
 ```sql
 DELETE FROM google.jobs.jobs
 WHERE projectsId = '{{ projectsId }}' --required
-AND tenantsId = '{{ tenantsId }}' --required;
+AND tenantsId = '{{ tenantsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1071,7 +1071,8 @@ EXEC google.jobs.jobs.search
 "disableKeywordMatch": {{ disableKeywordMatch }}, 
 "keywordMatchMode": "{{ keywordMatchMode }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_for_alert">
@@ -1099,7 +1100,8 @@ EXEC google.jobs.jobs.search_for_alert
 "disableKeywordMatch": {{ disableKeywordMatch }}, 
 "keywordMatchMode": "{{ keywordMatchMode }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

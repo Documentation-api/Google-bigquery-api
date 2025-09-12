@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="batch_get_assets_history">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ AND assetNames = '{{ assetNames }}'
 AND contentType = '{{ contentType }}'
 AND readTimeWindow.startTime = '{{ readTimeWindow.startTime }}'
 AND readTimeWindow.endTime = '{{ readTimeWindow.endTime }}'
-AND relationshipTypes = '{{ relationshipTypes }}';
+AND relationshipTypes = '{{ relationshipTypes }}'
+;
 ```
 </TabItem>
 </Tabs>

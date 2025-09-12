@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_auth_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -142,8 +140,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_products_auth_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -244,8 +240,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_auth_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -344,8 +338,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_auth_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -648,7 +640,8 @@ FROM google.integrations.auth_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND productsId = '{{ productsId }}' -- required
-AND authConfigsId = '{{ authConfigsId }}' -- required;
+AND authConfigsId = '{{ authConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_auth_configs_list">
@@ -681,7 +674,8 @@ AND productsId = '{{ productsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_auth_configs_get">
@@ -710,7 +704,8 @@ visibility
 FROM google.integrations.auth_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND authConfigsId = '{{ authConfigsId }}' -- required;
+AND authConfigsId = '{{ authConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_auth_configs_list">
@@ -742,7 +737,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1110,7 +1106,8 @@ DELETE FROM google.integrations.auth_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND productsId = '{{ productsId }}' --required
-AND authConfigsId = '{{ authConfigsId }}' --required;
+AND authConfigsId = '{{ authConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_auth_configs_delete">
@@ -1121,7 +1118,8 @@ Deletes an auth config.
 DELETE FROM google.integrations.auth_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND authConfigsId = '{{ authConfigsId }}' --required;
+AND authConfigsId = '{{ authConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

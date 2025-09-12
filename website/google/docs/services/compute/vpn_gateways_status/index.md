@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_status">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ result
 FROM google.compute.vpn_gateways_status
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND vpnGateway = '{{ vpnGateway }}' -- required;
+AND vpnGateway = '{{ vpnGateway }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

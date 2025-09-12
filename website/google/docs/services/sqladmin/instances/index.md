@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -310,8 +308,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -735,7 +731,8 @@ upgradableDatabaseVersions,
 writeEndpoint
 FROM google.sqladmin.instances
 WHERE project = '{{ project }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -751,7 +748,8 @@ FROM google.sqladmin.instances
 WHERE project = '{{ project }}' -- required
 AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1280,7 +1278,8 @@ AND instance = '{{ instance }}' --required
 AND enableFinalBackup = '{{ enableFinalBackup }}'
 AND finalBackupTtlDays = '{{ finalBackupTtlDays }}'
 AND finalBackupExpiryTime = '{{ finalBackupExpiryTime }}'
-AND finalBackupDescription = '{{ finalBackupDescription }}';
+AND finalBackupDescription = '{{ finalBackupDescription }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1331,7 +1330,8 @@ EXEC google.sqladmin.instances.clone
 @@json=
 '{
 "cloneContext": "{{ cloneContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="demote_master">
@@ -1345,7 +1345,8 @@ EXEC google.sqladmin.instances.demote_master
 @@json=
 '{
 "demoteMasterContext": "{{ demoteMasterContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="demote">
@@ -1359,7 +1360,8 @@ EXEC google.sqladmin.instances.demote
 @@json=
 '{
 "demoteContext": "{{ demoteContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -1373,7 +1375,8 @@ EXEC google.sqladmin.instances.export
 @@json=
 '{
 "exportContext": "{{ exportContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="failover">
@@ -1387,7 +1390,8 @@ EXEC google.sqladmin.instances.failover
 @@json=
 '{
 "failoverContext": "{{ failoverContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reencrypt">
@@ -1401,7 +1405,8 @@ EXEC google.sqladmin.instances.reencrypt
 @@json=
 '{
 "backupReencryptionConfig": "{{ backupReencryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -1415,7 +1420,8 @@ EXEC google.sqladmin.instances.import
 @@json=
 '{
 "importContext": "{{ importContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="list_server_certificates">
@@ -1425,7 +1431,8 @@ Lists all versions of server certificates and certificate authorities (CAs) for 
 ```sql
 EXEC google.sqladmin.instances.list_server_certificates 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="promote_replica">
@@ -1436,7 +1443,8 @@ Promotes the read replica instance to be an independent Cloud SQL primary instan
 EXEC google.sqladmin.instances.promote_replica 
 @project='{{ project }}' --required, 
 @instance='{{ instance }}' --required, 
-@failover={{ failover }};
+@failover={{ failover }}
+;
 ```
 </TabItem>
 <TabItem value="switchover">
@@ -1447,7 +1455,8 @@ Switches over from the primary instance to the DR replica instance.
 EXEC google.sqladmin.instances.switchover 
 @project='{{ project }}' --required, 
 @instance='{{ instance }}' --required, 
-@dbTimeout='{{ dbTimeout }}';
+@dbTimeout='{{ dbTimeout }}'
+;
 ```
 </TabItem>
 <TabItem value="reset_ssl_config">
@@ -1457,7 +1466,8 @@ Deletes all client certificates and generates a new server SSL certificate for t
 ```sql
 EXEC google.sqladmin.instances.reset_ssl_config 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="restart">
@@ -1467,7 +1477,8 @@ Restarts a Cloud SQL instance.
 ```sql
 EXEC google.sqladmin.instances.restart 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="restore_backup">
@@ -1485,7 +1496,8 @@ EXEC google.sqladmin.instances.restore_backup
 "backupdrBackup": "{{ backupdrBackup }}", 
 "restoreInstanceSettings": "{{ restoreInstanceSettings }}", 
 "restoreInstanceClearOverridesFieldNames": "{{ restoreInstanceClearOverridesFieldNames }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rotate_server_ca">
@@ -1499,7 +1511,8 @@ EXEC google.sqladmin.instances.rotate_server_ca
 @@json=
 '{
 "rotateServerCaContext": "{{ rotateServerCaContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rotate_server_certificate">
@@ -1513,7 +1526,8 @@ EXEC google.sqladmin.instances.rotate_server_certificate
 @@json=
 '{
 "rotateServerCertificateContext": "{{ rotateServerCertificateContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="start_replica">
@@ -1523,7 +1537,8 @@ Starts the replication in the read replica instance.
 ```sql
 EXEC google.sqladmin.instances.start_replica 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="stop_replica">
@@ -1533,7 +1548,8 @@ Stops the replication in the read replica instance.
 ```sql
 EXEC google.sqladmin.instances.stop_replica 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="truncate_log">
@@ -1547,7 +1563,8 @@ EXEC google.sqladmin.instances.truncate_log
 @@json=
 '{
 "truncateLogContext": "{{ truncateLogContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="execute_sql">
@@ -1564,7 +1581,8 @@ EXEC google.sqladmin.instances.execute_sql
 "database": "{{ database }}", 
 "autoIamAuthn": {{ autoIamAuthn }}, 
 "rowLimit": "{{ rowLimit }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="acquire_ssrs_lease">
@@ -1578,7 +1596,8 @@ EXEC google.sqladmin.instances.acquire_ssrs_lease
 @@json=
 '{
 "acquireSsrsLeaseContext": "{{ acquireSsrsLeaseContext }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="release_ssrs_lease">
@@ -1588,7 +1607,8 @@ Release a lease for the setup of SQL Server Reporting Services (SSRS).
 ```sql
 EXEC google.sqladmin.instances.release_ssrs_lease 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 <TabItem value="point_in_time_restore">
@@ -1607,7 +1627,8 @@ EXEC google.sqladmin.instances.point_in_time_restore
 "allocatedIpRange": "{{ allocatedIpRange }}", 
 "preferredZone": "{{ preferredZone }}", 
 "preferredSecondaryZone": "{{ preferredSecondaryZone }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reschedule_maintenance">
@@ -1621,7 +1642,8 @@ EXEC google.sqladmin.instances.reschedule_maintenance
 @@json=
 '{
 "reschedule": "{{ reschedule }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="verify_external_sync_settings">
@@ -1641,7 +1663,8 @@ EXEC google.sqladmin.instances.verify_external_sync_settings
 "migrationType": "{{ migrationType }}", 
 "syncParallelLevel": "{{ syncParallelLevel }}", 
 "selectedObjects": "{{ selectedObjects }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="start_external_sync">
@@ -1660,7 +1683,8 @@ EXEC google.sqladmin.instances.start_external_sync
 "syncParallelLevel": "{{ syncParallelLevel }}", 
 "migrationType": "{{ migrationType }}", 
 "replicaOverwriteEnabled": {{ replicaOverwriteEnabled }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="perform_disk_shrink">
@@ -1674,7 +1698,8 @@ EXEC google.sqladmin.instances.perform_disk_shrink
 @@json=
 '{
 "targetSizeGb": "{{ targetSizeGb }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reset_replica_size">
@@ -1684,7 +1709,8 @@ Reset Replica Size to primary instance disk size.
 ```sql
 EXEC google.sqladmin.instances.reset_replica_size 
 @project='{{ project }}' --required, 
-@instance='{{ instance }}' --required;
+@instance='{{ instance }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_sessions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_sessions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -375,7 +371,8 @@ uuid
 FROM google.dataproc.sessions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND sessionsId = '{{ sessionsId }}' -- required;
+AND sessionsId = '{{ sessionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sessions_list">
@@ -405,7 +402,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -539,7 +537,8 @@ DELETE FROM google.dataproc.sessions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND sessionsId = '{{ sessionsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -565,7 +564,8 @@ EXEC google.dataproc.sessions.projects_locations_sessions_terminate
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -148,7 +146,8 @@ condition,
 members,
 role
 FROM google.cloudresourcemanager.folders_iam_policies
-WHERE foldersId = '{{ foldersId }}' -- required;
+WHERE foldersId = '{{ foldersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -201,7 +200,8 @@ EXEC google.cloudresourcemanager.folders_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

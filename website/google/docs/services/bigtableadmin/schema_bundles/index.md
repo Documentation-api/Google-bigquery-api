@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -248,7 +244,8 @@ FROM google.bigtableadmin.schema_bundles
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND tablesId = '{{ tablesId }}' -- required
-AND schemaBundlesId = '{{ schemaBundlesId }}' -- required;
+AND schemaBundlesId = '{{ schemaBundlesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -266,7 +263,8 @@ AND instancesId = '{{ instancesId }}' -- required
 AND tablesId = '{{ tablesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -403,7 +401,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND tablesId = '{{ tablesId }}' --required
 AND schemaBundlesId = '{{ schemaBundlesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

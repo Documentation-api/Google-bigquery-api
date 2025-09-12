@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_get_trace_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ exporter,
 samplingConfig
 FROM google.apigee.environments_trace_config
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

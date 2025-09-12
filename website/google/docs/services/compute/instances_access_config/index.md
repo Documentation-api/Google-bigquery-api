@@ -356,7 +356,8 @@ AND zone = '{{ zone }}' --required
 AND instance = '{{ instance }}' --required
 AND accessConfig = '{{ accessConfig }}' --required
 AND networkInterface = '{{ networkInterface }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

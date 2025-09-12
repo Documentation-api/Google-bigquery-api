@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_conversations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -89,8 +87,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_engines_conversations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -136,8 +132,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_conversations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -181,8 +175,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_engines_conversations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -228,8 +220,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_conversations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -273,8 +263,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_conversations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -565,7 +553,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND conversationsId = '{{ conversationsId }}' -- required;
+AND conversationsId = '{{ conversationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_conversations_get">
@@ -585,7 +574,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
-AND conversationsId = '{{ conversationsId }}' -- required;
+AND conversationsId = '{{ conversationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_conversations_list">
@@ -608,7 +598,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_conversations_list">
@@ -631,7 +622,8 @@ AND enginesId = '{{ enginesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_conversations_get">
@@ -650,7 +642,8 @@ FROM google.discoveryengine.conversations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND conversationsId = '{{ conversationsId }}' -- required;
+AND conversationsId = '{{ conversationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_conversations_list">
@@ -672,7 +665,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -949,7 +943,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND conversationsId = '{{ conversationsId }}' --required;
+AND conversationsId = '{{ conversationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_conversations_delete">
@@ -962,7 +957,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND enginesId = '{{ enginesId }}' --required
-AND conversationsId = '{{ conversationsId }}' --required;
+AND conversationsId = '{{ conversationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_conversations_delete">
@@ -974,7 +970,8 @@ DELETE FROM google.discoveryengine.conversations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND conversationsId = '{{ conversationsId }}' --required;
+AND conversationsId = '{{ conversationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1011,7 +1008,8 @@ EXEC google.discoveryengine.conversations.projects_locations_collections_data_st
 "summarySpec": "{{ summarySpec }}", 
 "filter": "{{ filter }}", 
 "boostSpec": "{{ boostSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_conversations_converse">
@@ -1035,7 +1033,8 @@ EXEC google.discoveryengine.conversations.projects_locations_collections_engines
 "summarySpec": "{{ summarySpec }}", 
 "filter": "{{ filter }}", 
 "boostSpec": "{{ boostSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_conversations_converse">
@@ -1058,7 +1057,8 @@ EXEC google.discoveryengine.conversations.projects_locations_data_stores_convers
 "summarySpec": "{{ summarySpec }}", 
 "filter": "{{ filter }}", 
 "boostSpec": "{{ boostSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

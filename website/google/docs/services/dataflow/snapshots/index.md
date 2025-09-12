@@ -43,8 +43,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_snapshots_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -109,8 +107,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_jobs_snapshots_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -129,8 +125,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_snapshots_get">
-
-Successful response
 
 <table>
 <thead>
@@ -196,8 +190,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_snapshots_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -216,8 +208,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_snapshots_list">
-
-Successful response
 
 <table>
 <thead>
@@ -387,7 +377,8 @@ ttl
 FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
-AND snapshotId = '{{ snapshotId }}' -- required;
+AND snapshotId = '{{ snapshotId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_jobs_snapshots_list">
@@ -400,7 +391,8 @@ snapshots
 FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
-AND jobId = '{{ jobId }}' -- required;
+AND jobId = '{{ jobId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_snapshots_get">
@@ -422,7 +414,8 @@ ttl
 FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' -- required
 AND snapshotId = '{{ snapshotId }}' -- required
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_snapshots_list">
@@ -435,7 +428,8 @@ snapshots
 FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
-AND jobId = '{{ jobId }}';
+AND jobId = '{{ jobId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_snapshots_list">
@@ -448,7 +442,8 @@ snapshots
 FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' -- required
 AND jobId = '{{ jobId }}'
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -471,7 +466,8 @@ Deletes a snapshot.
 DELETE FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' --required
 AND location = '{{ location }}' --required
-AND snapshotId = '{{ snapshotId }}' --required;
+AND snapshotId = '{{ snapshotId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_delete_snapshots">
@@ -482,7 +478,8 @@ Deletes a snapshot.
 DELETE FROM google.dataflow.snapshots
 WHERE projectId = '{{ projectId }}' --required
 AND snapshotId = '{{ snapshotId }}'
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>

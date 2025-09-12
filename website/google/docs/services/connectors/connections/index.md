@@ -138,7 +138,8 @@ Reports the status of the connection. Note that when the connection is in a stat
 EXEC google.connectors.connections.check_status 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@connectionsId='{{ connectionsId }}' --required;
+@connectionsId='{{ connectionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="check_readiness">
@@ -149,7 +150,8 @@ Reports readiness status of the connector. Similar logic to GetStatus but modifi
 EXEC google.connectors.connections.check_readiness 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@connectionsId='{{ connectionsId }}' --required;
+@connectionsId='{{ connectionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="exchange_auth_code">
@@ -164,7 +166,8 @@ EXEC google.connectors.connections.exchange_auth_code
 @@json=
 '{
 "authCodeData": "{{ authCodeData }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="refresh_access_token">
@@ -179,7 +182,8 @@ EXEC google.connectors.connections.refresh_access_token
 @@json=
 '{
 "refreshToken": "{{ refreshToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="execute_sql_query">
@@ -194,7 +198,8 @@ EXEC google.connectors.connections.execute_sql_query
 @@json=
 '{
 "query": "{{ query }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -443,7 +439,8 @@ FROM google.netapp.replications
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND volumesId = '{{ volumesId }}' -- required
-AND replicationsId = '{{ replicationsId }}' -- required;
+AND replicationsId = '{{ replicationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -477,7 +474,8 @@ AND volumesId = '{{ volumesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -637,7 +635,8 @@ DELETE FROM google.netapp.replications
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND volumesId = '{{ volumesId }}' --required
-AND replicationsId = '{{ replicationsId }}' --required;
+AND replicationsId = '{{ replicationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -668,7 +667,8 @@ EXEC google.netapp.replications.stop
 @@json=
 '{
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -680,7 +680,8 @@ EXEC google.netapp.replications.resume
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @volumesId='{{ volumesId }}' --required, 
-@replicationsId='{{ replicationsId }}' --required;
+@replicationsId='{{ replicationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="reverse_direction">
@@ -692,7 +693,8 @@ EXEC google.netapp.replications.reverse_direction
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @volumesId='{{ volumesId }}' --required, 
-@replicationsId='{{ replicationsId }}' --required;
+@replicationsId='{{ replicationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="establish_peering">
@@ -711,7 +713,8 @@ EXEC google.netapp.replications.establish_peering
 "peerSvmName": "{{ peerSvmName }}", 
 "peerIpAddresses": "{{ peerIpAddresses }}", 
 "peerVolumeName": "{{ peerVolumeName }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sync">
@@ -723,7 +726,8 @@ EXEC google.netapp.replications.sync
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @volumesId='{{ volumesId }}' --required, 
-@replicationsId='{{ replicationsId }}' --required;
+@replicationsId='{{ replicationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_appgroups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_appgroups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -298,7 +294,8 @@ organization,
 status
 FROM google.apigee.appgroups
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND appgroupsId = '{{ appgroupsId }}' -- required;
+AND appgroupsId = '{{ appgroupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_appgroups_list">
@@ -321,7 +318,8 @@ FROM google.apigee.appgroups
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -480,7 +478,8 @@ Deletes an AppGroup. All app and API keys associations with the AppGroup are als
 ```sql
 DELETE FROM google.apigee.appgroups
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND appgroupsId = '{{ appgroupsId }}' --required;
+AND appgroupsId = '{{ appgroupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

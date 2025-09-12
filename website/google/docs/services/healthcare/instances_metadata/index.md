@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_metadata">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ AND datasetsId = '{{ datasetsId }}' -- required
 AND dicomStoresId = '{{ dicomStoresId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
 AND seriesId = '{{ seriesId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

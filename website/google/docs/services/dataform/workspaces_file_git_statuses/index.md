@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_file_git_statuses">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ FROM google.dataform.workspaces_file_git_statuses
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND repositoriesId = '{{ repositoriesId }}' -- required
-AND workspacesId = '{{ workspacesId }}' -- required;
+AND workspacesId = '{{ workspacesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

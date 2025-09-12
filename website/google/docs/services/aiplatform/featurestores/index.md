@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -354,7 +350,8 @@ updateTime
 FROM google.aiplatform.featurestores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND featurestoresId = '{{ featurestoresId }}' -- required;
+AND featurestoresId = '{{ featurestoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -381,7 +378,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -526,7 +524,8 @@ DELETE FROM google.aiplatform.featurestores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND featurestoresId = '{{ featurestoresId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -558,7 +557,8 @@ EXEC google.aiplatform.featurestores.batch_read_feature_values
 "passThroughFields": "{{ passThroughFields }}", 
 "entityTypeSpecs": "{{ entityTypeSpecs }}", 
 "startTime": "{{ startTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_features">
@@ -571,7 +571,8 @@ EXEC google.aiplatform.featurestores.search_features
 @locationsId='{{ locationsId }}' --required, 
 @query='{{ query }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

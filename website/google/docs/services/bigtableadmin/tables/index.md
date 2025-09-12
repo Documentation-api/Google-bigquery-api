@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -363,7 +359,8 @@ FROM google.bigtableadmin.tables
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND tablesId = '{{ tablesId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -388,7 +385,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -524,7 +522,8 @@ Permanently deletes a specified table and all of its data.
 DELETE FROM google.bigtableadmin.tables
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND tablesId = '{{ tablesId }}' --required;
+AND tablesId = '{{ tablesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -551,7 +550,8 @@ Restores a specified table which was accidentally deleted.
 EXEC google.bigtableadmin.tables.undelete 
 @projectsId='{{ projectsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
-@tablesId='{{ tablesId }}' --required;
+@tablesId='{{ tablesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="modify_column_families">
@@ -567,7 +567,8 @@ EXEC google.bigtableadmin.tables.modify_column_families
 '{
 "modifications": "{{ modifications }}", 
 "ignoreWarnings": {{ ignoreWarnings }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="drop_row_range">
@@ -583,7 +584,8 @@ EXEC google.bigtableadmin.tables.drop_row_range
 '{
 "rowKeyPrefix": "{{ rowKeyPrefix }}", 
 "deleteAllDataFromTable": {{ deleteAllDataFromTable }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_consistency_token">
@@ -594,7 +596,8 @@ Generates a consistency token for a Table, which can be used in CheckConsistency
 EXEC google.bigtableadmin.tables.generate_consistency_token 
 @projectsId='{{ projectsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
-@tablesId='{{ tablesId }}' --required;
+@tablesId='{{ tablesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="check_consistency">
@@ -611,7 +614,8 @@ EXEC google.bigtableadmin.tables.check_consistency
 "consistencyToken": "{{ consistencyToken }}", 
 "standardReadRemoteWrites": "{{ standardReadRemoteWrites }}", 
 "dataBoostReadLocalWrites": "{{ dataBoostReadLocalWrites }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -626,7 +630,8 @@ EXEC google.bigtableadmin.tables.restore
 '{
 "tableId": "{{ tableId }}", 
 "backup": "{{ backup }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

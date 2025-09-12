@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_metrics_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_metrics_list">
-
-Successful response
 
 <table>
 <thead>
@@ -321,7 +317,8 @@ valueExtractor,
 version
 FROM google.logging.metrics
 WHERE projectsId = '{{ projectsId }}' -- required
-AND metricsId = '{{ metricsId }}' -- required;
+AND metricsId = '{{ metricsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_metrics_list">
@@ -346,7 +343,8 @@ version
 FROM google.logging.metrics
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -535,7 +533,8 @@ Deletes a logs-based metric.
 ```sql
 DELETE FROM google.logging.metrics
 WHERE projectsId = '{{ projectsId }}' --required
-AND metricsId = '{{ metricsId }}' --required;
+AND metricsId = '{{ metricsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

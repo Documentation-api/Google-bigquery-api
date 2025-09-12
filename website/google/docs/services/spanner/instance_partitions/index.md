@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_instance_partitions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -315,7 +311,8 @@ updateTime
 FROM google.spanner.instance_partitions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND instancePartitionsId = '{{ instancePartitionsId }}' -- required;
+AND instancePartitionsId = '{{ instancePartitionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_instance_partitions_list">
@@ -340,7 +337,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND instancePartitionDeadline = '{{ instancePartitionDeadline }}';
+AND instancePartitionDeadline = '{{ instancePartitionDeadline }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -456,7 +454,8 @@ DELETE FROM google.spanner.instance_partitions
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND instancePartitionsId = '{{ instancePartitionsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_schema">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
 AND subjectsId = '{{ subjectsId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND deleted = '{{ deleted }}';
+AND deleted = '{{ deleted }}'
+;
 ```
 </TabItem>
 </Tabs>

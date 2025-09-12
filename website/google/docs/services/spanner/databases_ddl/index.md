@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_databases_get_ddl">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,7 +145,8 @@ statements
 FROM google.spanner.databases_ddl
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND databasesId = '{{ databasesId }}' -- required;
+AND databasesId = '{{ databasesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

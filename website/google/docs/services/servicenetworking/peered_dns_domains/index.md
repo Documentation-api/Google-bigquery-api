@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -153,7 +151,8 @@ peeredDnsDomains
 FROM google.servicenetworking.peered_dns_domains
 WHERE servicesId = '{{ servicesId }}' -- required
 AND projectsId = '{{ projectsId }}' -- required
-AND networksId = '{{ networksId }}' -- required;
+AND networksId = '{{ networksId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -242,7 +241,8 @@ DELETE FROM google.servicenetworking.peered_dns_domains
 WHERE servicesId = '{{ servicesId }}' --required
 AND projectsId = '{{ projectsId }}' --required
 AND networksId = '{{ networksId }}' --required
-AND peeredDnsDomainsId = '{{ peeredDnsDomainsId }}' --required;
+AND peeredDnsDomainsId = '{{ peeredDnsDomainsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_workflow_templates_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_get_iam_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -219,7 +215,8 @@ role
 FROM google.dataproc.workflow_templates_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND regionsId = '{{ regionsId }}' -- required
-AND workflowTemplatesId = '{{ workflowTemplatesId }}' -- required;
+AND workflowTemplatesId = '{{ workflowTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_get_iam_policy">
@@ -234,7 +231,8 @@ role
 FROM google.dataproc.workflow_templates_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND workflowTemplatesId = '{{ workflowTemplatesId }}' -- required;
+AND workflowTemplatesId = '{{ workflowTemplatesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -309,7 +307,8 @@ EXEC google.dataproc.workflow_templates_iam_policies.projects_regions_workflow_t
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_workflow_templates_test_iam_permissions">
@@ -324,7 +323,8 @@ EXEC google.dataproc.workflow_templates_iam_policies.projects_locations_workflow
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

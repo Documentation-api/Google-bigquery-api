@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_branches_batch_get_documents_metadata">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_batch_get_documents_metadata">
-
-Successful response
 
 <table>
 <thead>
@@ -188,7 +184,8 @@ AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
 AND matcher.urisMatcher.uris = '{{ matcher.urisMatcher.uris }}'
-AND matcher.fhirMatcher.fhirResources = '{{ matcher.fhirMatcher.fhirResources }}';
+AND matcher.fhirMatcher.fhirResources = '{{ matcher.fhirMatcher.fhirResources }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_batch_get_documents_metadata">
@@ -204,7 +201,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
 AND matcher.urisMatcher.uris = '{{ matcher.urisMatcher.uris }}'
-AND matcher.fhirMatcher.fhirResources = '{{ matcher.fhirMatcher.fhirResources }}';
+AND matcher.fhirMatcher.fhirResources = '{{ matcher.fhirMatcher.fhirResources }}'
+;
 ```
 </TabItem>
 </Tabs>

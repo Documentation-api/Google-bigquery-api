@@ -184,7 +184,8 @@ EXEC firebase.appcheck.apps.exchange_safety_net_token
 @@json=
 '{
 "safetyNetToken": "{{ safetyNetToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_play_integrity_challenge">
@@ -194,7 +195,8 @@ Generates a challenge that protects the integrity of an immediately following in
 ```sql
 EXEC firebase.appcheck.apps.generate_play_integrity_challenge 
 @projectsId='{{ projectsId }}' --required, 
-@appsId='{{ appsId }}' --required;
+@appsId='{{ appsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="exchange_play_integrity_token">
@@ -209,7 +211,8 @@ EXEC firebase.appcheck.apps.exchange_play_integrity_token
 '{
 "playIntegrityToken": "{{ playIntegrityToken }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_device_check_token">
@@ -224,7 +227,8 @@ EXEC firebase.appcheck.apps.exchange_device_check_token
 '{
 "deviceToken": "{{ deviceToken }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_recaptcha_v3_token">
@@ -239,7 +243,8 @@ EXEC firebase.appcheck.apps.exchange_recaptcha_v3_token
 '{
 "recaptchaV3Token": "{{ recaptchaV3Token }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_recaptcha_enterprise_token">
@@ -254,7 +259,8 @@ EXEC firebase.appcheck.apps.exchange_recaptcha_enterprise_token
 '{
 "recaptchaEnterpriseToken": "{{ recaptchaEnterpriseToken }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_custom_token">
@@ -269,7 +275,8 @@ EXEC firebase.appcheck.apps.exchange_custom_token
 '{
 "customToken": "{{ customToken }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_debug_token">
@@ -284,7 +291,8 @@ EXEC firebase.appcheck.apps.exchange_debug_token
 '{
 "debugToken": "{{ debugToken }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_app_attest_challenge">
@@ -294,7 +302,8 @@ Generates a challenge that protects the integrity of an immediately following ca
 ```sql
 EXEC firebase.appcheck.apps.generate_app_attest_challenge 
 @projectsId='{{ projectsId }}' --required, 
-@appsId='{{ appsId }}' --required;
+@appsId='{{ appsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="exchange_app_attest_attestation">
@@ -311,7 +320,8 @@ EXEC firebase.appcheck.apps.exchange_app_attest_attestation
 "challenge": "{{ challenge }}", 
 "keyId": "{{ keyId }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="exchange_app_attest_assertion">
@@ -328,7 +338,8 @@ EXEC firebase.appcheck.apps.exchange_app_attest_assertion
 "assertion": "{{ assertion }}", 
 "challenge": "{{ challenge }}", 
 "limitedUse": {{ limitedUse }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

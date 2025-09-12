@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -289,7 +285,8 @@ orgUnitId,
 uri
 FROM googleadmin.directory.print_servers
 WHERE customersId = '{{ customersId }}' -- required
-AND printServersId = '{{ printServersId }}' -- required;
+AND printServersId = '{{ printServersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -311,7 +308,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orgUnitId = '{{ orgUnitId }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -481,7 +479,8 @@ Deletes a print server.
 ```sql
 DELETE FROM googleadmin.directory.print_servers
 WHERE customersId = '{{ customersId }}' --required
-AND printServersId = '{{ printServersId }}' --required;
+AND printServersId = '{{ printServersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="batch_delete_print_servers">
@@ -490,7 +489,8 @@ Deletes multiple print servers.
 
 ```sql
 DELETE FROM googleadmin.directory.print_servers
-WHERE customersId = '{{ customersId }}' --required;
+WHERE customersId = '{{ customersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

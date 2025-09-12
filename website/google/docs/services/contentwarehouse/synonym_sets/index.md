@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ synonyms
 FROM google.contentwarehouse.synonym_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND synonymSetsId = '{{ synonymSetsId }}' -- required;
+AND synonymSetsId = '{{ synonymSetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -233,7 +230,8 @@ FROM google.contentwarehouse.synonym_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -352,7 +350,8 @@ Deletes a SynonymSet for a given context. Throws a NOT_FOUND exception if the Sy
 DELETE FROM google.contentwarehouse.synonym_sets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND synonymSetsId = '{{ synonymSetsId }}' --required;
+AND synonymSetsId = '{{ synonymSetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

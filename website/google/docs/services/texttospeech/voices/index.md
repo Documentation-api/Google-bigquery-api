@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,7 +120,8 @@ Returns a list of Voice supported for synthesis.
 SELECT
 voices
 FROM google.texttospeech.voices
-WHERE languageCode = '{{ languageCode }}';
+WHERE languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 </Tabs>

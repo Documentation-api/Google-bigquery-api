@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -185,8 +183,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -378,7 +374,8 @@ zone
 FROM google.compute.operations
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND operation = '{{ operation }}' -- required;
+AND operation = '{{ operation }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -400,7 +397,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -422,7 +420,8 @@ Deletes the specified region-specific Operations resource.
 DELETE FROM google.compute.operations
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
-AND operation = '{{ operation }}' --required;
+AND operation = '{{ operation }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -444,7 +443,8 @@ Waits for the specified Operation resource to return as `DONE` or for the reques
 EXEC google.compute.operations.wait 
 @project='{{ project }}' --required, 
 @region='{{ region }}' --required, 
-@operation='{{ operation }}' --required;
+@operation='{{ operation }}' --required
+;
 ```
 </TabItem>
 </Tabs>

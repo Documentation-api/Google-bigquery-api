@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_envgroups_get_deployed_ingress_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ uid
 FROM google.apigee.envgroup_config
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND envgroupsId = '{{ envgroupsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>

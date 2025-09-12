@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_datasets_evaluations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -199,7 +197,8 @@ evaluationMetrics
 FROM google.datalabeling.evaluations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND evaluationsId = '{{ evaluationsId }}' -- required;
+AND evaluationsId = '{{ evaluationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -227,7 +226,8 @@ EXEC google.datalabeling.evaluations.projects_datasets_evaluations_example_compa
 '{
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_evaluations_search">
@@ -239,7 +239,8 @@ EXEC google.datalabeling.evaluations.projects_evaluations_search
 @projectsId='{{ projectsId }}' --required, 
 @filter='{{ filter }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

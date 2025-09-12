@@ -126,7 +126,8 @@ EXEC google.bigqueryreservation.locations.search_assignments
 @locationsId='{{ locationsId }}' --required, 
 @query='{{ query }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="search_all_assignments">
@@ -139,7 +140,8 @@ EXEC google.bigqueryreservation.locations.search_all_assignments
 @locationsId='{{ locationsId }}' --required, 
 @query='{{ query }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

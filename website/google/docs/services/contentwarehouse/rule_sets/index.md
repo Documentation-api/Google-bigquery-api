@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -228,7 +224,8 @@ source
 FROM google.contentwarehouse.rule_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND ruleSetsId = '{{ ruleSetsId }}' -- required;
+AND ruleSetsId = '{{ ruleSetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -245,7 +242,8 @@ FROM google.contentwarehouse.rule_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -371,7 +369,8 @@ Deletes a ruleset. Returns NOT_FOUND if the document does not exist.
 DELETE FROM google.contentwarehouse.rule_sets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND ruleSetsId = '{{ ruleSetsId }}' --required;
+AND ruleSetsId = '{{ ruleSetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

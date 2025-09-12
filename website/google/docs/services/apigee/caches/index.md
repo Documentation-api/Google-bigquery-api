@@ -106,7 +106,8 @@ Deletes a cache.
 DELETE FROM google.apigee.caches
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND cachesId = '{{ cachesId }}' --required;
+AND cachesId = '{{ cachesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

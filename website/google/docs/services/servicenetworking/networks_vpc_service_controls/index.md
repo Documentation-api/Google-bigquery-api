@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_vpc_service_controls">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ enabled
 FROM google.servicenetworking.networks_vpc_service_controls
 WHERE servicesId = '{{ servicesId }}' -- required
 AND projectsId = '{{ projectsId }}' -- required
-AND networksId = '{{ networksId }}' -- required;
+AND networksId = '{{ networksId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="admin_projects_locations_topics_subscriptions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -56,8 +54,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="admin_projects_locations_subscriptions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -92,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="admin_projects_locations_subscriptions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -286,7 +280,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND topicsId = '{{ topicsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="admin_projects_locations_subscriptions_get">
@@ -302,7 +297,8 @@ topic
 FROM google.pubsublite.subscriptions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND subscriptionsId = '{{ subscriptionsId }}' -- required;
+AND subscriptionsId = '{{ subscriptionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="admin_projects_locations_subscriptions_list">
@@ -319,7 +315,8 @@ FROM google.pubsublite.subscriptions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -457,7 +454,8 @@ Deletes the specified subscription.
 DELETE FROM google.pubsublite.subscriptions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND subscriptionsId = '{{ subscriptionsId }}' --required;
+AND subscriptionsId = '{{ subscriptionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -485,7 +483,8 @@ EXEC google.pubsublite.subscriptions.admin_projects_locations_subscriptions_seek
 '{
 "namedTarget": "{{ namedTarget }}", 
 "timeTarget": "{{ timeTarget }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="cursor_projects_locations_subscriptions_commit_cursor">
@@ -501,7 +500,8 @@ EXEC google.pubsublite.subscriptions.cursor_projects_locations_subscriptions_com
 '{
 "partition": "{{ partition }}", 
 "cursor": "{{ cursor }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

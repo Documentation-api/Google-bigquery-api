@@ -46,8 +46,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_saved_queries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -101,8 +99,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_saved_queries_get">
-
-Successful response
 
 <table>
 <thead>
@@ -158,8 +154,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_saved_queries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -213,8 +207,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_saved_queries_get">
-
-Successful response
 
 <table>
 <thead>
@@ -270,8 +262,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_saved_queries_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -325,8 +315,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_saved_queries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -382,8 +370,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_saved_queries_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -437,8 +423,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_saved_queries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -755,7 +739,8 @@ visibility
 FROM google.logging.saved_queries
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND savedQueriesId = '{{ savedQueriesId }}' -- required;
+AND savedQueriesId = '{{ savedQueriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_saved_queries_get">
@@ -775,7 +760,8 @@ visibility
 FROM google.logging.saved_queries
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND savedQueriesId = '{{ savedQueriesId }}' -- required;
+AND savedQueriesId = '{{ savedQueriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_saved_queries_get">
@@ -795,7 +781,8 @@ visibility
 FROM google.logging.saved_queries
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND savedQueriesId = '{{ savedQueriesId }}' -- required;
+AND savedQueriesId = '{{ savedQueriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_saved_queries_get">
@@ -815,7 +802,8 @@ visibility
 FROM google.logging.saved_queries
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND savedQueriesId = '{{ savedQueriesId }}' -- required;
+AND savedQueriesId = '{{ savedQueriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_saved_queries_list">
@@ -837,7 +825,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_saved_queries_list">
@@ -859,7 +848,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_saved_queries_list">
@@ -881,7 +871,8 @@ WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_saved_queries_list">
@@ -903,7 +894,8 @@ WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1264,7 +1256,8 @@ Deletes an existing SavedQuery that was created by the user making the request.
 DELETE FROM google.logging.saved_queries
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND savedQueriesId = '{{ savedQueriesId }}' --required;
+AND savedQueriesId = '{{ savedQueriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_saved_queries_delete">
@@ -1275,7 +1268,8 @@ Deletes an existing SavedQuery that was created by the user making the request.
 DELETE FROM google.logging.saved_queries
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND savedQueriesId = '{{ savedQueriesId }}' --required;
+AND savedQueriesId = '{{ savedQueriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_saved_queries_delete">
@@ -1286,7 +1280,8 @@ Deletes an existing SavedQuery that was created by the user making the request.
 DELETE FROM google.logging.saved_queries
 WHERE foldersId = '{{ foldersId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND savedQueriesId = '{{ savedQueriesId }}' --required;
+AND savedQueriesId = '{{ savedQueriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_saved_queries_delete">
@@ -1297,7 +1292,8 @@ Deletes an existing SavedQuery that was created by the user making the request.
 DELETE FROM google.logging.saved_queries
 WHERE billingAccountsId = '{{ billingAccountsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND savedQueriesId = '{{ savedQueriesId }}' --required;
+AND savedQueriesId = '{{ savedQueriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

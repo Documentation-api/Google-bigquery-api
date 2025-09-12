@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -296,7 +294,8 @@ user
 FROM googleworkspace.drivev2.about
 WHERE includeSubscribed = '{{ includeSubscribed }}'
 AND maxChangeIdCount = '{{ maxChangeIdCount }}'
-AND startChangeId = '{{ startChangeId }}';
+AND startChangeId = '{{ startChangeId }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -98,7 +98,8 @@ EXEC google.cloudtrace.traces.batch_write
 @@json=
 '{
 "spans": "{{ spans }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

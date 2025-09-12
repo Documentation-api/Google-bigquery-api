@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -320,7 +316,8 @@ updateTime
 FROM google.networkservices.endpoint_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND endpointPoliciesId = '{{ endpointPoliciesId }}' -- required;
+AND endpointPoliciesId = '{{ endpointPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -345,7 +342,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -522,7 +520,8 @@ Deletes a single EndpointPolicy.
 DELETE FROM google.networkservices.endpoint_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND endpointPoliciesId = '{{ endpointPoliciesId }}' --required;
+AND endpointPoliciesId = '{{ endpointPoliciesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

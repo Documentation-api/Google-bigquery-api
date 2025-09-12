@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_get_balance">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 wallets
 FROM google.apigee.developers_balance
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND developersId = '{{ developersId }}' -- required;
+AND developersId = '{{ developersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

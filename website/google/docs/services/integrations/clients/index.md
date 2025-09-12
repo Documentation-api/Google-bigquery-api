@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get_clients">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -184,7 +182,8 @@ SELECT
 client
 FROM google.integrations.clients
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -245,7 +244,8 @@ EXEC google.integrations.clients.projects_locations_clients_provision
 "skipCpProvision": {{ skipCpProvision }}, 
 "enableHttpCall": {{ enableHttpCall }}, 
 "enableManagedAiFeatures": {{ enableManagedAiFeatures }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clients_provision_client_post_processor">
@@ -259,7 +259,8 @@ EXEC google.integrations.clients.projects_locations_clients_provision_client_pos
 @@json=
 '{
 "workflows": "{{ workflows }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clients_deprovision">
@@ -269,7 +270,8 @@ Perform the deprovisioning steps to disable a user GCP project to use IP and pur
 ```sql
 EXEC google.integrations.clients.projects_locations_clients_deprovision 
 @projectsId='{{ projectsId }}' --required, 
-@locationsId='{{ locationsId }}' --required;
+@locationsId='{{ locationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clients_change_config">
@@ -284,7 +286,8 @@ EXEC google.integrations.clients.projects_locations_clients_change_config
 '{
 "updateMask": "{{ updateMask }}", 
 "customerConfig": "{{ customerConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clients_switch">
@@ -298,7 +301,8 @@ EXEC google.integrations.clients.projects_locations_clients_switch
 @@json=
 '{
 "cloudKmsConfig": "{{ cloudKmsConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clients_switch_variable_masking">
@@ -312,7 +316,8 @@ EXEC google.integrations.clients.projects_locations_clients_switch_variable_mask
 @@json=
 '{
 "enableVariableMasking": {{ enableVariableMasking }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clients_toggle_http">
@@ -326,7 +331,8 @@ EXEC google.integrations.clients.projects_locations_clients_toggle_http
 @@json=
 '{
 "enableHttpCall": {{ enableHttpCall }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

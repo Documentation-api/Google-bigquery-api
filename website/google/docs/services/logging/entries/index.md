@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="entries_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -143,7 +141,8 @@ Lists log entries. Use this method to retrieve log entries that originated from 
 SELECT
 entries,
 nextPageToken
-FROM google.logging.entries;
+FROM google.logging.entries
+;
 ```
 </TabItem>
 </Tabs>
@@ -170,7 +169,8 @@ EXEC google.logging.entries.entries_copy
 "name": "{{ name }}", 
 "filter": "{{ filter }}", 
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="entries_write">
@@ -187,7 +187,8 @@ EXEC google.logging.entries.entries_write
 "entries": "{{ entries }}", 
 "partialSuccess": {{ partialSuccess }}, 
 "dryRun": {{ dryRun }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="entries_tail">
@@ -201,7 +202,8 @@ EXEC google.logging.entries.entries_tail
 "resourceNames": "{{ resourceNames }}", 
 "filter": "{{ filter }}", 
 "bufferWindow": "{{ bufferWindow }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

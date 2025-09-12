@@ -94,7 +94,8 @@ Unlinks the specified FirebaseProject from its Google Analytics account. This ca
 
 ```sql
 DELETE FROM firebase.firebase.analytics
-WHERE projectsId = '{{ projectsId }}' --required;
+WHERE projectsId = '{{ projectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

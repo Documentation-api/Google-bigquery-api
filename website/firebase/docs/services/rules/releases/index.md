@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -227,7 +223,8 @@ rulesetName,
 updateTime
 FROM firebase.rules.releases
 WHERE projectsId = '{{ projectsId }}' -- required
-AND releasesId = '{{ releasesId }}' -- required;
+AND releasesId = '{{ releasesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -244,7 +241,8 @@ FROM firebase.rules.releases
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -350,7 +348,8 @@ Delete a `Release` by resource name.
 ```sql
 DELETE FROM firebase.rules.releases
 WHERE projectsId = '{{ projectsId }}' --required
-AND releasesId = '{{ releasesId }}' --required;
+AND releasesId = '{{ releasesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_rag_engine_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -141,7 +139,8 @@ name,
 ragManagedDbConfig
 FROM google.aiplatform.rag_engine_config
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_apis_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apis_list">
-
-Successful response
 
 <table>
 <thead>
@@ -263,7 +259,8 @@ revision,
 space
 FROM google.apigee.apis
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND apisId = '{{ apisId }}' -- required;
+AND apisId = '{{ apisId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apis_list">
@@ -277,7 +274,8 @@ FROM google.apigee.apis
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND includeRevisions = '{{ includeRevisions }}'
 AND includeMetaData = '{{ includeMetaData }}'
-AND space = '{{ space }}';
+AND space = '{{ space }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -432,7 +430,8 @@ Deletes an API proxy and all associated endpoints, policies, resources, and revi
 ```sql
 DELETE FROM google.apigee.apis
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND apisId = '{{ apisId }}' --required;
+AND apisId = '{{ apisId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -457,7 +456,8 @@ EXEC google.apigee.apis.organizations_apis_move
 @@json=
 '{
 "space": "{{ space }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_get_completion_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -206,7 +204,8 @@ suggestionsInputConfig
 FROM google.retail.catalogs_completion_config
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND catalogsId = '{{ catalogsId }}' -- required;
+AND catalogsId = '{{ catalogsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

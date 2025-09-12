@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -230,7 +228,8 @@ FROM google.retail.catalogs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -291,7 +290,8 @@ EXEC google.retail.catalogs.projects_locations_catalogs_export_analytics_metrics
 '{
 "outputConfig": "{{ outputConfig }}", 
 "filter": "{{ filter }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_set_default_branch">
@@ -308,7 +308,8 @@ EXEC google.retail.catalogs.projects_locations_catalogs_set_default_branch
 "branchId": "{{ branchId }}", 
 "note": "{{ note }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_complete_query">
@@ -327,7 +328,8 @@ EXEC google.retail.catalogs.projects_locations_catalogs_complete_query
 @dataset='{{ dataset }}', 
 @maxSuggestions='{{ maxSuggestions }}', 
 @enableAttributeSuggestions={{ enableAttributeSuggestions }}, 
-@entity='{{ entity }}';
+@entity='{{ entity }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -104,7 +104,8 @@ EXEC google.compute.external_vpn_gateways_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

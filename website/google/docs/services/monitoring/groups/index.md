@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_groups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_groups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -258,7 +254,8 @@ isCluster,
 parentName
 FROM google.monitoring.groups
 WHERE projectsId = '{{ projectsId }}' -- required
-AND groupsId = '{{ groupsId }}' -- required;
+AND groupsId = '{{ groupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_groups_list">
@@ -278,7 +275,8 @@ AND childrenOfGroup = '{{ childrenOfGroup }}'
 AND ancestorsOfGroup = '{{ ancestorsOfGroup }}'
 AND descendantsOfGroup = '{{ descendantsOfGroup }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -416,7 +414,8 @@ Deletes an existing group.
 DELETE FROM google.monitoring.groups
 WHERE projectsId = '{{ projectsId }}' --required
 AND groupsId = '{{ groupsId }}' --required
-AND recursive = '{{ recursive }}';
+AND recursive = '{{ recursive }}'
+;
 ```
 </TabItem>
 </Tabs>

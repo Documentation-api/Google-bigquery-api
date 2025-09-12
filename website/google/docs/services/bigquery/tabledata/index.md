@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -201,7 +199,8 @@ AND formatOptions.useInt64Timestamp = '{{ formatOptions.useInt64Timestamp }}'
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND selectedFields = '{{ selectedFields }}'
-AND startIndex = '{{ startIndex }}';
+AND startIndex = '{{ startIndex }}'
+;
 ```
 </TabItem>
 </Tabs>

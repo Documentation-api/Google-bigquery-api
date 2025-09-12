@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 accountEmail,
 subjectId
 FROM google.storagetransfer.google_service_accounts
-WHERE projectId = '{{ projectId }}' -- required;
+WHERE projectId = '{{ projectId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

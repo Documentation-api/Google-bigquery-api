@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -415,7 +411,8 @@ FROM google.bigquery.routines
 WHERE projectId = '{{ projectId }}' -- required
 AND +datasetId = '{{ +datasetId }}' -- required
 AND +routineId = '{{ +routineId }}' -- required
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -450,7 +447,8 @@ AND +datasetId = '{{ +datasetId }}' -- required
 AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -720,7 +718,8 @@ Deletes the routine specified by routineId from the dataset.
 DELETE FROM google.bigquery.routines
 WHERE projectId = '{{ projectId }}' --required
 AND +datasetId = '{{ +datasetId }}' --required
-AND +routineId = '{{ +routineId }}' --required;
+AND +routineId = '{{ +routineId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

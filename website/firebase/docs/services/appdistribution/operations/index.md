@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -250,7 +246,8 @@ FROM firebase.appdistribution.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND appsId = '{{ appsId }}' -- required
 AND releasesId = '{{ releasesId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -270,7 +267,8 @@ AND appsId = '{{ appsId }}' -- required
 AND releasesId = '{{ releasesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -293,7 +291,8 @@ DELETE FROM firebase.appdistribution.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND appsId = '{{ appsId }}' --required
 AND releasesId = '{{ releasesId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -317,7 +316,8 @@ EXEC firebase.appdistribution.operations.cancel
 @projectsId='{{ projectsId }}' --required, 
 @appsId='{{ appsId }}' --required, 
 @releasesId='{{ releasesId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="wait">
@@ -333,7 +333,8 @@ EXEC firebase.appdistribution.operations.wait
 @@json=
 '{
 "timeout": "{{ timeout }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

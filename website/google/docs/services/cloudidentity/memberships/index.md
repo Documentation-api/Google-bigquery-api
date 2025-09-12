@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -315,7 +311,8 @@ type,
 updateTime
 FROM google.cloudidentity.memberships
 WHERE groupsId = '{{ groupsId }}' -- required
-AND membershipsId = '{{ membershipsId }}' -- required;
+AND membershipsId = '{{ membershipsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -335,7 +332,8 @@ FROM google.cloudidentity.memberships
 WHERE groupsId = '{{ groupsId }}' -- required
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -412,7 +410,8 @@ Deletes a `Membership`.
 ```sql
 DELETE FROM google.cloudidentity.memberships
 WHERE groupsId = '{{ groupsId }}' --required
-AND membershipsId = '{{ membershipsId }}' --required;
+AND membershipsId = '{{ membershipsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -439,7 +438,8 @@ Looks up the [resource name](https://cloud.google.com/apis/design/resource_names
 EXEC google.cloudidentity.memberships.lookup 
 @groupsId='{{ groupsId }}' --required, 
 @memberKey.id='{{ memberKey.id }}', 
-@memberKey.namespace='{{ memberKey.namespace }}';
+@memberKey.namespace='{{ memberKey.namespace }}'
+;
 ```
 </TabItem>
 <TabItem value="modify_membership_roles">
@@ -455,7 +455,8 @@ EXEC google.cloudidentity.memberships.modify_membership_roles
 "addRoles": "{{ addRoles }}", 
 "removeRoles": "{{ removeRoles }}", 
 "updateRolesParams": "{{ updateRolesParams }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search_transitive_memberships">
@@ -466,7 +467,8 @@ Search transitive memberships of a group. **Note:** This feature is only availab
 EXEC google.cloudidentity.memberships.search_transitive_memberships 
 @groupsId='{{ groupsId }}' --required, 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="search_transitive_groups">
@@ -478,7 +480,8 @@ EXEC google.cloudidentity.memberships.search_transitive_groups
 @groupsId='{{ groupsId }}' --required, 
 @query='{{ query }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="check_transitive_membership">
@@ -488,7 +491,8 @@ Check a potential member for membership in a group. **Note:** This feature is on
 ```sql
 EXEC google.cloudidentity.memberships.check_transitive_membership 
 @groupsId='{{ groupsId }}' --required, 
-@query='{{ query }}';
+@query='{{ query }}'
+;
 ```
 </TabItem>
 <TabItem value="search_direct_groups">
@@ -501,7 +505,8 @@ EXEC google.cloudidentity.memberships.search_direct_groups
 @query='{{ query }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@orderBy='{{ orderBy }}';
+@orderBy='{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

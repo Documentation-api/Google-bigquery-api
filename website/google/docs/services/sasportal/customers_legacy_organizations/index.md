@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_list_legacy_organizations">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -116,7 +114,8 @@ Returns a list of legacy organizations.
 ```sql
 SELECT
 organizations
-FROM google.sasportal.customers_legacy_organizations;
+FROM google.sasportal.customers_legacy_organizations
+;
 ```
 </TabItem>
 </Tabs>

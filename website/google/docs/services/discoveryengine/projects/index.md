@@ -100,7 +100,8 @@ EXEC google.discoveryengine.projects.projects_provision
 "acceptDataUseTerms": {{ acceptDataUseTerms }}, 
 "dataUseTermsVersion": "{{ dataUseTermsVersion }}", 
 "saasParams": "{{ saasParams }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

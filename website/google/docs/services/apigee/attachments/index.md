@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_envgroups_attachments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -78,8 +76,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_instances_attachments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -108,8 +104,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_envgroups_attachments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -144,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_instances_attachments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -320,7 +312,8 @@ environmentGroupId
 FROM google.apigee.attachments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND envgroupsId = '{{ envgroupsId }}' -- required
-AND attachmentsId = '{{ attachmentsId }}' -- required;
+AND attachmentsId = '{{ attachmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_instances_attachments_get">
@@ -335,7 +328,8 @@ environment
 FROM google.apigee.attachments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND attachmentsId = '{{ attachmentsId }}' -- required;
+AND attachmentsId = '{{ attachmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_envgroups_attachments_list">
@@ -352,7 +346,8 @@ FROM google.apigee.attachments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND envgroupsId = '{{ envgroupsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_instances_attachments_list">
@@ -368,7 +363,8 @@ FROM google.apigee.attachments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -479,7 +475,8 @@ Deletes an environment group attachment.
 DELETE FROM google.apigee.attachments
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND envgroupsId = '{{ envgroupsId }}' --required
-AND attachmentsId = '{{ attachmentsId }}' --required;
+AND attachmentsId = '{{ attachmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_instances_attachments_delete">
@@ -490,7 +487,8 @@ Deletes an attachment. **Note:** Not supported for Apigee hybrid.
 DELETE FROM google.apigee.attachments
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND attachmentsId = '{{ attachmentsId }}' --required;
+AND attachmentsId = '{{ attachmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

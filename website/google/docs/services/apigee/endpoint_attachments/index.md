@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_endpoint_attachments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_endpoint_attachments_list">
-
-Successful response
 
 <table>
 <thead>
@@ -242,7 +238,8 @@ serviceAttachment,
 state
 FROM google.apigee.endpoint_attachments
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND endpointAttachmentsId = '{{ endpointAttachmentsId }}' -- required;
+AND endpointAttachmentsId = '{{ endpointAttachmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_endpoint_attachments_list">
@@ -260,7 +257,8 @@ state
 FROM google.apigee.endpoint_attachments
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -348,7 +346,8 @@ Deletes an endpoint attachment.
 ```sql
 DELETE FROM google.apigee.endpoint_attachments
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND endpointAttachmentsId = '{{ endpointAttachmentsId }}' --required;
+AND endpointAttachmentsId = '{{ endpointAttachmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

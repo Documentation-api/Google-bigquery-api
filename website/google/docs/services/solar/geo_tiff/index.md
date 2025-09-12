@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ contentType,
 data,
 extensions
 FROM google.solar.geo_tiff
-WHERE id = '{{ id }}';
+WHERE id = '{{ id }}'
+;
 ```
 </TabItem>
 </Tabs>

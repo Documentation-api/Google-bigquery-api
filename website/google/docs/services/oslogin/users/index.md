@@ -111,7 +111,8 @@ EXEC google.oslogin.users.import_ssh_public_key
 '{
 "key": "{{ key }}", 
 "expirationTimeUsec": "{{ expirationTimeUsec }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

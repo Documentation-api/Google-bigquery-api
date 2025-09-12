@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_kaj_policy_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ SELECT
 name,
 defaultKeyAccessJustificationPolicy
 FROM google.cloudkms.kaj_policy_config
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_dicomstore_metrics">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ FROM google.healthcare.dicom_store_metrics
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND dicomStoresId = '{{ dicomStoresId }}' -- required;
+AND dicomStoresId = '{{ dicomStoresId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

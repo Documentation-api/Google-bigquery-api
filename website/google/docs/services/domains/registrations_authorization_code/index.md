@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_authorization_code">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ code
 FROM google.domains.registrations_authorization_code
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND registrationsId = '{{ registrationsId }}' -- required;
+AND registrationsId = '{{ registrationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

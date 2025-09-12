@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -281,7 +277,8 @@ WHERE bucket = '{{ bucket }}' -- required
 AND object = '{{ object }}' -- required
 AND entity = '{{ entity }}' -- required
 AND generation = '{{ generation }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -296,7 +293,8 @@ FROM google.storage.object_access_controls
 WHERE bucket = '{{ bucket }}' -- required
 AND object = '{{ object }}' -- required
 AND generation = '{{ generation }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -592,7 +590,8 @@ WHERE bucket = '{{ bucket }}' --required
 AND object = '{{ object }}' --required
 AND entity = '{{ entity }}' --required
 AND generation = '{{ generation }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

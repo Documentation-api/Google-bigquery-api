@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -425,7 +421,8 @@ vcenter
 FROM google.vmwareengine.private_clouds
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND privateCloudsId = '{{ privateCloudsId }}' -- required;
+AND privateCloudsId = '{{ privateCloudsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -454,7 +451,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -603,7 +601,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND privateCloudsId = '{{ privateCloudsId }}' --required
 AND requestId = '{{ requestId }}'
 AND force = '{{ force }}'
-AND delayHours = '{{ delayHours }}';
+AND delayHours = '{{ delayHours }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -635,7 +634,8 @@ EXEC google.vmwareengine.private_clouds.private_cloud_deletion_now
 '{
 "requestId": "{{ requestId }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete">
@@ -650,7 +650,8 @@ EXEC google.vmwareengine.private_clouds.undelete
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="show_nsx_credentials">
@@ -661,7 +662,8 @@ Gets details of credentials for NSX appliance.
 EXEC google.vmwareengine.private_clouds.show_nsx_credentials 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@privateCloudsId='{{ privateCloudsId }}' --required;
+@privateCloudsId='{{ privateCloudsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="show_vcenter_credentials">
@@ -673,7 +675,8 @@ EXEC google.vmwareengine.private_clouds.show_vcenter_credentials
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @privateCloudsId='{{ privateCloudsId }}' --required, 
-@username='{{ username }}';
+@username='{{ username }}'
+;
 ```
 </TabItem>
 <TabItem value="reset_nsx_credentials">
@@ -688,7 +691,8 @@ EXEC google.vmwareengine.private_clouds.reset_nsx_credentials
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reset_vcenter_credentials">
@@ -704,7 +708,8 @@ EXEC google.vmwareengine.private_clouds.reset_vcenter_credentials
 '{
 "requestId": "{{ requestId }}", 
 "username": "{{ username }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

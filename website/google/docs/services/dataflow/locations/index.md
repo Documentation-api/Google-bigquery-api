@@ -105,7 +105,8 @@ EXEC google.dataflow.locations.projects_locations_worker_messages
 '{
 "workerMessages": "{{ workerMessages }}", 
 "location": "{{ location }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

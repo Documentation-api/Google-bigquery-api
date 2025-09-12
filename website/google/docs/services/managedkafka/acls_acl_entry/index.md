@@ -201,7 +201,8 @@ DELETE FROM google.managedkafka.acls_acl_entry
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND clustersId = '{{ clustersId }}' --required
-AND aclsId = '{{ aclsId }}' --required;
+AND aclsId = '{{ aclsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

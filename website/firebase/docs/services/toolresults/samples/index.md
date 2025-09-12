@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -171,7 +169,8 @@ AND executionId = '{{ executionId }}' -- required
 AND stepId = '{{ stepId }}' -- required
 AND sampleSeriesId = '{{ sampleSeriesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

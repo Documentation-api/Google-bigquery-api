@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_databases_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_databases_list">
-
-Successful response
 
 <table>
 <thead>
@@ -346,7 +342,8 @@ versionRetentionPeriod
 FROM google.spanner.databases
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND databasesId = '{{ databasesId }}' -- required;
+AND databasesId = '{{ databasesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_list">
@@ -372,7 +369,8 @@ FROM google.spanner.databases
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -510,7 +508,8 @@ Drops (aka deletes) a Cloud Spanner database. Completed backups for the database
 DELETE FROM google.spanner.databases
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND databasesId = '{{ databasesId }}' --required;
+AND databasesId = '{{ databasesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -539,7 +538,8 @@ EXEC google.spanner.databases.projects_instances_databases_changequorum
 "name": "{{ name }}", 
 "quorumType": "{{ quorumType }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_restore">
@@ -555,7 +555,8 @@ EXEC google.spanner.databases.projects_instances_databases_restore
 "databaseId": "{{ databaseId }}", 
 "backup": "{{ backup }}", 
 "encryptionConfig": "{{ encryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -292,7 +288,8 @@ FROM google.file.snapshots
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND snapshotsId = '{{ snapshotsId }}' -- required;
+AND snapshotsId = '{{ snapshotsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -316,7 +313,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
 AND filter = '{{ filter }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -451,7 +449,8 @@ DELETE FROM google.file.snapshots
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND snapshotsId = '{{ snapshotsId }}' --required;
+AND snapshotsId = '{{ snapshotsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

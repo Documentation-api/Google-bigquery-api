@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -332,7 +328,8 @@ usageMetadata
 FROM google.aiplatform.cached_contents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND cachedContentsId = '{{ cachedContentsId }}' -- required;
+AND cachedContentsId = '{{ cachedContentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -358,7 +355,8 @@ FROM google.aiplatform.cached_contents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -554,7 +552,8 @@ Deletes cached content
 DELETE FROM google.aiplatform.cached_contents
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND cachedContentsId = '{{ cachedContentsId }}' --required;
+AND cachedContentsId = '{{ cachedContentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

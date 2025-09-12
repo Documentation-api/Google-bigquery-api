@@ -100,7 +100,8 @@ EXEC google.iam.iam_policies.query_auditable_services
 @@json=
 '{
 "fullResourceName": "{{ fullResourceName }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="lint_policy">
@@ -113,7 +114,8 @@ EXEC google.iam.iam_policies.lint_policy
 '{
 "fullResourceName": "{{ fullResourceName }}", 
 "condition": "{{ condition }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

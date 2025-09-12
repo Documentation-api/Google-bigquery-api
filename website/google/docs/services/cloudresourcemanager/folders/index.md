@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -334,7 +330,8 @@ state,
 tags,
 updateTime
 FROM google.cloudresourcemanager.folders
-WHERE foldersId = '{{ foldersId }}' -- required;
+WHERE foldersId = '{{ foldersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -358,7 +355,8 @@ FROM google.cloudresourcemanager.folders
 WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -476,7 +474,8 @@ Requests deletion of a folder. The folder is moved into the DELETE_REQUESTED sta
 
 ```sql
 DELETE FROM google.cloudresourcemanager.folders
-WHERE foldersId = '{{ foldersId }}' --required;
+WHERE foldersId = '{{ foldersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -500,7 +499,8 @@ Search for folders that match specific filter criteria. `search()` provides an e
 EXEC google.cloudresourcemanager.folders.search 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@query='{{ query }}';
+@query='{{ query }}'
+;
 ```
 </TabItem>
 <TabItem value="move">
@@ -513,7 +513,8 @@ EXEC google.cloudresourcemanager.folders.move
 @@json=
 '{
 "destinationParent": "{{ destinationParent }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete">
@@ -522,7 +523,8 @@ Cancels the deletion request for a folder. This method may be called on a folder
 
 ```sql
 EXEC google.cloudresourcemanager.folders.undelete 
-@foldersId='{{ foldersId }}' --required;
+@foldersId='{{ foldersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

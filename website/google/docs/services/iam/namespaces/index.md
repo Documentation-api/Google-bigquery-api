@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -278,7 +274,8 @@ FROM google.iam.namespaces
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
-AND namespacesId = '{{ namespacesId }}' -- required;
+AND namespacesId = '{{ namespacesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -299,7 +296,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -426,7 +424,8 @@ DELETE FROM google.iam.namespaces
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND workloadIdentityPoolsId = '{{ workloadIdentityPoolsId }}' --required
-AND namespacesId = '{{ namespacesId }}' --required;
+AND namespacesId = '{{ namespacesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -449,7 +448,8 @@ EXEC google.iam.namespaces.undelete
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @workloadIdentityPoolsId='{{ workloadIdentityPoolsId }}' --required, 
-@namespacesId='{{ namespacesId }}' --required;
+@namespacesId='{{ namespacesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

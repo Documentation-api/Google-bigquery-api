@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_start_page_token">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM googleworkspace.drivev3.changes_start_page_token
 WHERE driveId = '{{ driveId }}'
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
-AND teamDriveId = '{{ teamDriveId }}';
+AND teamDriveId = '{{ teamDriveId }}'
+;
 ```
 </TabItem>
 </Tabs>

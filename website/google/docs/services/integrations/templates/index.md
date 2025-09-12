@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_templates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_templates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -444,7 +440,8 @@ visibility
 FROM google.integrations.templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND templatesId = '{{ templatesId }}' -- required;
+AND templatesId = '{{ templatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_list">
@@ -476,7 +473,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -711,7 +709,8 @@ Deletes a template
 DELETE FROM google.integrations.templates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND templatesId = '{{ templatesId }}' --required;
+AND templatesId = '{{ templatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -745,7 +744,8 @@ EXEC google.integrations.templates.projects_locations_templates_search
 @orderBy='{{ orderBy }}', 
 @readMask='{{ readMask }}', 
 @query='{{ query }}', 
-@enableNaturalLanguageQueryUnderstanding={{ enableNaturalLanguageQueryUnderstanding }};
+@enableNaturalLanguageQueryUnderstanding={{ enableNaturalLanguageQueryUnderstanding }}
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_use">
@@ -762,7 +762,8 @@ EXEC google.integrations.templates.projects_locations_templates_use
 "integrationDetails": "{{ integrationDetails }}", 
 "subIntegrations": "{{ subIntegrations }}", 
 "integrationRegion": "{{ integrationRegion }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_import">
@@ -778,7 +779,8 @@ EXEC google.integrations.templates.projects_locations_templates_import
 '{
 "integration": "{{ integration }}", 
 "subIntegrations": "{{ subIntegrations }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_share">
@@ -793,7 +795,8 @@ EXEC google.integrations.templates.projects_locations_templates_share
 @@json=
 '{
 "resourceNames": "{{ resourceNames }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_unshare">
@@ -808,7 +811,8 @@ EXEC google.integrations.templates.projects_locations_templates_unshare
 @@json=
 '{
 "resourceNames": "{{ resourceNames }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_upload">
@@ -823,7 +827,8 @@ EXEC google.integrations.templates.projects_locations_templates_upload
 '{
 "content": "{{ content }}", 
 "fileFormat": "{{ fileFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_download">
@@ -835,7 +840,8 @@ EXEC google.integrations.templates.projects_locations_templates_download
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @templatesId='{{ templatesId }}' --required, 
-@fileFormat='{{ fileFormat }}';
+@fileFormat='{{ fileFormat }}'
+;
 ```
 </TabItem>
 </Tabs>

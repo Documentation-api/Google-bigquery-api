@@ -110,7 +110,8 @@ EXEC google.compute.network_endpoint_groups_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

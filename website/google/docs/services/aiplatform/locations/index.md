@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -264,7 +260,8 @@ locationId,
 metadata
 FROM google.aiplatform.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -283,7 +280,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -347,7 +345,8 @@ EXEC google.aiplatform.locations.evaluate_instances
 "metrics": "{{ metrics }}", 
 "instance": "{{ instance }}", 
 "autoraterConfig": "{{ autoraterConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="evaluate_dataset">
@@ -364,7 +363,8 @@ EXEC google.aiplatform.locations.evaluate_dataset
 "metrics": "{{ metrics }}", 
 "outputConfig": "{{ outputConfig }}", 
 "autoraterConfig": "{{ autoraterConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_instance_rubrics">
@@ -380,7 +380,8 @@ EXEC google.aiplatform.locations.generate_instance_rubrics
 "contents": "{{ contents }}", 
 "predefinedRubricGenerationSpec": "{{ predefinedRubricGenerationSpec }}", 
 "rubricGenerationSpec": "{{ rubricGenerationSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="deploy">
@@ -398,7 +399,8 @@ EXEC google.aiplatform.locations.deploy
 "modelConfig": "{{ modelConfig }}", 
 "endpointConfig": "{{ endpointConfig }}", 
 "deployConfig": "{{ deployConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="augment_prompt">
@@ -414,7 +416,8 @@ EXEC google.aiplatform.locations.augment_prompt
 "vertexRagStore": "{{ vertexRagStore }}", 
 "contents": "{{ contents }}", 
 "model": "{{ model }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="corroborate_content">
@@ -430,7 +433,8 @@ EXEC google.aiplatform.locations.corroborate_content
 "content": "{{ content }}", 
 "facts": "{{ facts }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

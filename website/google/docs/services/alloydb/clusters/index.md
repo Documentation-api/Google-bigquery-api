@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -225,8 +223,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -658,7 +654,8 @@ FROM google.alloydb.clusters
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -707,7 +704,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -964,7 +962,8 @@ AND clustersId = '{{ clustersId }}' --required
 AND requestId = '{{ requestId }}'
 AND etag = '{{ etag }}'
 AND validateOnly = '{{ validateOnly }}'
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -997,7 +996,8 @@ EXEC google.alloydb.clusters.restore_from_cloud_sql
 "cloudsqlBackupRunSource": "{{ cloudsqlBackupRunSource }}", 
 "clusterId": "{{ clusterId }}", 
 "cluster": "{{ cluster }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -1015,7 +1015,8 @@ EXEC google.alloydb.clusters.export
 "csvExportOptions": "{{ csvExportOptions }}", 
 "sqlExportOptions": "{{ sqlExportOptions }}", 
 "database": "{{ database }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -1034,7 +1035,8 @@ EXEC google.alloydb.clusters.import
 "gcsUri": "{{ gcsUri }}", 
 "database": "{{ database }}", 
 "user": "{{ user }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upgrade">
@@ -1052,7 +1054,8 @@ EXEC google.alloydb.clusters.upgrade
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="promote">
@@ -1069,7 +1072,8 @@ EXEC google.alloydb.clusters.promote
 "requestId": "{{ requestId }}", 
 "etag": "{{ etag }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="switchover">
@@ -1085,7 +1089,8 @@ EXEC google.alloydb.clusters.switchover
 '{
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -1104,7 +1109,8 @@ EXEC google.alloydb.clusters.restore
 "cluster": "{{ cluster }}", 
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

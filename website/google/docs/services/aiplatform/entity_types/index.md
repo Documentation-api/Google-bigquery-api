@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -372,7 +368,8 @@ FROM google.aiplatform.entity_types
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND featurestoresId = '{{ featurestoresId }}' -- required
-AND entityTypesId = '{{ entityTypesId }}' -- required;
+AND entityTypesId = '{{ entityTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -399,7 +396,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -564,7 +562,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND featurestoresId = '{{ featurestoresId }}' --required
 AND entityTypesId = '{{ entityTypesId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -597,7 +596,8 @@ EXEC google.aiplatform.entity_types.read_feature_values
 '{
 "entityId": "{{ entityId }}", 
 "featureSelector": "{{ featureSelector }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="streaming_read_feature_values">
@@ -614,7 +614,8 @@ EXEC google.aiplatform.entity_types.streaming_read_feature_values
 '{
 "entityIds": "{{ entityIds }}", 
 "featureSelector": "{{ featureSelector }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="write_feature_values">
@@ -630,7 +631,8 @@ EXEC google.aiplatform.entity_types.write_feature_values
 @@json=
 '{
 "payloads": "{{ payloads }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import_feature_values">
@@ -655,7 +657,8 @@ EXEC google.aiplatform.entity_types.import_feature_values
 "disableOnlineServing": {{ disableOnlineServing }}, 
 "workerCount": {{ workerCount }}, 
 "disableIngestionAnalysis": {{ disableIngestionAnalysis }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="export_feature_values">
@@ -675,7 +678,8 @@ EXEC google.aiplatform.entity_types.export_feature_values
 "destination": "{{ destination }}", 
 "featureSelector": "{{ featureSelector }}", 
 "settings": "{{ settings }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="delete_feature_values">
@@ -692,7 +696,8 @@ EXEC google.aiplatform.entity_types.delete_feature_values
 '{
 "selectEntity": "{{ selectEntity }}", 
 "selectTimeRangeAndFeature": "{{ selectTimeRangeAndFeature }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

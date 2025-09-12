@@ -118,7 +118,8 @@ EXEC google.kmsinventory.protected_resources.search
 @cryptoKey='{{ cryptoKey }}', 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@resourceTypes='{{ resourceTypes }}';
+@resourceTypes='{{ resourceTypes }}'
+;
 ```
 </TabItem>
 </Tabs>

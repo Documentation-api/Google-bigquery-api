@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_aspect_types_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_aspect_types_list">
-
-Successful response
 
 <table>
 <thead>
@@ -335,7 +331,8 @@ updateTime
 FROM google.dataplex.aspect_types
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND aspectTypesId = '{{ aspectTypesId }}' -- required;
+AND aspectTypesId = '{{ aspectTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_aspect_types_list">
@@ -361,7 +358,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -519,7 +517,8 @@ DELETE FROM google.dataplex.aspect_types
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND aspectTypesId = '{{ aspectTypesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

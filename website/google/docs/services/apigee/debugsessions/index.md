@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_apis_revisions_debugsessions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_environments_apis_revisions_debugsessions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -117,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apis_debugsessions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -284,7 +278,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND revisionsId = '{{ revisionsId }}' -- required
-AND debugsessionsId = '{{ debugsessionsId }}' -- required;
+AND debugsessionsId = '{{ debugsessionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_apis_revisions_debugsessions_list">
@@ -301,7 +296,8 @@ AND environmentsId = '{{ environmentsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND revisionsId = '{{ revisionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_apis_debugsessions_list">
@@ -318,7 +314,8 @@ FROM google.apigee.debugsessions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

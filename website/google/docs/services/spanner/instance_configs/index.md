@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instance_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instance_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -342,7 +338,8 @@ state,
 storageLimitPerProcessingUnit
 FROM google.spanner.instance_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND instanceConfigsId = '{{ instanceConfigsId }}' -- required;
+AND instanceConfigsId = '{{ instanceConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instance_configs_list">
@@ -368,7 +365,8 @@ storageLimitPerProcessingUnit
 FROM google.spanner.instance_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -486,7 +484,8 @@ DELETE FROM google.spanner.instance_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND instanceConfigsId = '{{ instanceConfigsId }}' --required
 AND etag = '{{ etag }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>

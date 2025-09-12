@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -173,7 +169,8 @@ SELECT
 name,
 theme
 FROM google.libraryagent.shelves
-WHERE shelvesId = '{{ shelvesId }}' -- required;
+WHERE shelvesId = '{{ shelvesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -186,7 +183,8 @@ name,
 theme
 FROM google.libraryagent.shelves
 WHERE pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

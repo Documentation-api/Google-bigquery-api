@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -331,7 +327,8 @@ trainingInput,
 trainingOutput
 FROM google.ml.jobs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND jobsId = '{{ jobsId }}' -- required;
+AND jobsId = '{{ jobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_list">
@@ -357,7 +354,8 @@ FROM google.ml.jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -563,7 +561,8 @@ Cancels a running job.
 ```sql
 EXEC google.ml.jobs.projects_jobs_cancel 
 @projectsId='{{ projectsId }}' --required, 
-@jobsId='{{ jobsId }}' --required;
+@jobsId='{{ jobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

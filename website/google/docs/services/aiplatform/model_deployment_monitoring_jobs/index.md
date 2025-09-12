@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -180,8 +178,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -495,7 +491,8 @@ updateTime
 FROM google.aiplatform.model_deployment_monitoring_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND modelDeploymentMonitoringJobsId = '{{ modelDeploymentMonitoringJobsId }}' -- required;
+AND modelDeploymentMonitoringJobsId = '{{ modelDeploymentMonitoringJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -535,7 +532,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -767,7 +765,8 @@ Deletes a ModelDeploymentMonitoringJob.
 DELETE FROM google.aiplatform.model_deployment_monitoring_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND modelDeploymentMonitoringJobsId = '{{ modelDeploymentMonitoringJobsId }}' --required;
+AND modelDeploymentMonitoringJobsId = '{{ modelDeploymentMonitoringJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -801,7 +800,8 @@ EXEC google.aiplatform.model_deployment_monitoring_jobs.search_model_deployment_
 "pageToken": "{{ pageToken }}", 
 "startTime": "{{ startTime }}", 
 "endTime": "{{ endTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="pause">
@@ -812,7 +812,8 @@ Pauses a ModelDeploymentMonitoringJob. If the job is running, the server makes a
 EXEC google.aiplatform.model_deployment_monitoring_jobs.pause 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@modelDeploymentMonitoringJobsId='{{ modelDeploymentMonitoringJobsId }}' --required;
+@modelDeploymentMonitoringJobsId='{{ modelDeploymentMonitoringJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume">
@@ -823,7 +824,8 @@ Resumes a paused ModelDeploymentMonitoringJob. It will start to run from next sc
 EXEC google.aiplatform.model_deployment_monitoring_jobs.resume 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@modelDeploymentMonitoringJobsId='{{ modelDeploymentMonitoringJobsId }}' --required;
+@modelDeploymentMonitoringJobsId='{{ modelDeploymentMonitoringJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

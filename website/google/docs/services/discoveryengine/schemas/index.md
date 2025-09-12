@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_schemas_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_schemas_list">
-
-Successful response
 
 <table>
 <thead>
@@ -104,8 +100,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_schemas_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_schemas_list">
-
-Successful response
 
 <table>
 <thead>
@@ -340,7 +332,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND schemasId = '{{ schemasId }}' -- required;
+AND schemasId = '{{ schemasId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_schemas_list">
@@ -358,7 +351,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_schemas_get">
@@ -374,7 +368,8 @@ FROM google.discoveryengine.schemas
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND schemasId = '{{ schemasId }}' -- required;
+AND schemasId = '{{ schemasId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_schemas_list">
@@ -391,7 +386,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -591,7 +587,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND schemasId = '{{ schemasId }}' --required;
+AND schemasId = '{{ schemasId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_schemas_delete">
@@ -603,7 +600,8 @@ DELETE FROM google.discoveryengine.schemas
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND schemasId = '{{ schemasId }}' --required;
+AND schemasId = '{{ schemasId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -256,7 +252,8 @@ timeZone
 FROM google.healthcare.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND datasetsId = '{{ datasetsId }}' -- required;
+AND datasetsId = '{{ datasetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -274,7 +271,8 @@ FROM google.healthcare.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -402,7 +400,8 @@ Deletes the specified health dataset and all data contained in the dataset. Dele
 DELETE FROM google.healthcare.datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -430,7 +429,8 @@ EXEC google.healthcare.datasets.deidentify
 "destinationDataset": "{{ destinationDataset }}", 
 "config": "{{ config }}", 
 "gcsConfigUri": "{{ gcsConfigUri }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_get_addons_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,7 +163,8 @@ integrationConfig,
 monetizationConfig
 FROM google.apigee.addons_config
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -191,7 +190,8 @@ EXEC google.apigee.addons_config.organizations_environments_addons_config_set_ad
 '{
 "analyticsEnabled": {{ analyticsEnabled }}, 
 "apiSecurityEnabled": {{ apiSecurityEnabled }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="retrieve_series">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -178,7 +176,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND dicomStoresId = '{{ dicomStoresId }}' -- required
 AND studiesId = '{{ studiesId }}' -- required
-AND seriesId = '{{ seriesId }}' -- required;
+AND seriesId = '{{ seriesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -203,7 +202,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND dicomStoresId = '{{ dicomStoresId }}' --required
 AND studiesId = '{{ studiesId }}' --required
-AND seriesId = '{{ seriesId }}' --required;
+AND seriesId = '{{ seriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -228,7 +228,8 @@ EXEC google.healthcare.series.search_for_instances
 @datasetsId='{{ datasetsId }}' --required, 
 @dicomStoresId='{{ dicomStoresId }}' --required, 
 @studiesId='{{ studiesId }}' --required, 
-@seriesId='{{ seriesId }}' --required;
+@seriesId='{{ seriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

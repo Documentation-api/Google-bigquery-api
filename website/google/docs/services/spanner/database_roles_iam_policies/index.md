@@ -116,7 +116,8 @@ EXEC google.spanner.database_roles_iam_policies.projects_instances_databases_dat
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

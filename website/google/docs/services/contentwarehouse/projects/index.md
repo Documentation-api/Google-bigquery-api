@@ -100,7 +100,8 @@ EXEC google.contentwarehouse.projects.set_acl
 "requestMetadata": "{{ requestMetadata }}", 
 "policy": "{{ policy }}", 
 "projectOwner": {{ projectOwner }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

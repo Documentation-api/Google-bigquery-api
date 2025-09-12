@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_regions_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_regions_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -460,7 +456,8 @@ yarnApplications
 FROM google.dataproc.jobs
 WHERE projectId = '{{ projectId }}' -- required
 AND region = '{{ region }}' -- required
-AND jobId = '{{ jobId }}' -- required;
+AND jobId = '{{ jobId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_jobs_list">
@@ -498,7 +495,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND clusterName = '{{ clusterName }}'
 AND jobStateMatcher = '{{ jobStateMatcher }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -583,7 +581,8 @@ Deletes the job from the project. If the job is active, the delete fails, and th
 DELETE FROM google.dataproc.jobs
 WHERE projectId = '{{ projectId }}' --required
 AND region = '{{ region }}' --required
-AND jobId = '{{ jobId }}' --required;
+AND jobId = '{{ jobId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -611,7 +610,8 @@ EXEC google.dataproc.jobs.projects_regions_jobs_submit
 '{
 "job": "{{ job }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_jobs_submit_as_operation">
@@ -626,7 +626,8 @@ EXEC google.dataproc.jobs.projects_regions_jobs_submit_as_operation
 '{
 "job": "{{ job }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_regions_jobs_cancel">
@@ -637,7 +638,8 @@ Starts a job cancellation request. To access the job resource after cancellation
 EXEC google.dataproc.jobs.projects_regions_jobs_cancel 
 @projectId='{{ projectId }}' --required, 
 @region='{{ region }}' --required, 
-@jobId='{{ jobId }}' --required;
+@jobId='{{ jobId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

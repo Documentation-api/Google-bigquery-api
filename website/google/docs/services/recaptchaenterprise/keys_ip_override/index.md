@@ -155,7 +155,8 @@ Removes an IP override from a key. The following restrictions hold: * If the IP 
 ```sql
 DELETE FROM google.recaptchaenterprise.keys_ip_override
 WHERE projectsId = '{{ projectsId }}' --required
-AND keysId = '{{ keysId }}' --required;
+AND keysId = '{{ keysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

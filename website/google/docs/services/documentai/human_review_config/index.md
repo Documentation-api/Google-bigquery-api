@@ -113,7 +113,8 @@ EXEC google.documentai.human_review_config.projects_locations_processors_human_r
 "enableSchemaValidation": {{ enableSchemaValidation }}, 
 "priority": "{{ priority }}", 
 "documentSchema": "{{ documentSchema }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

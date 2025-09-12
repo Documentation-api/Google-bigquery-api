@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_deployments_list_revisions">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -243,7 +241,8 @@ AND apisId = '{{ apisId }}' -- required
 AND deploymentsId = '{{ deploymentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -266,7 +265,8 @@ DELETE FROM google.apigeeregistry.deployment_revisions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
-AND deploymentsId = '{{ deploymentsId }}' --required;
+AND deploymentsId = '{{ deploymentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

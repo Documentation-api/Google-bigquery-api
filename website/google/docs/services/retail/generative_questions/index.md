@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_generative_questions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ generativeQuestionConfigs
 FROM google.retail.generative_questions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND catalogsId = '{{ catalogsId }}' -- required;
+AND catalogsId = '{{ catalogsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -122,7 +122,8 @@ Creates new lineage events together with their parents: process and run. Updates
 EXEC google.datalineage.locations.process_open_lineage_run_event 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@requestId='{{ requestId }}';
+@requestId='{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="search_links">
@@ -139,7 +140,8 @@ EXEC google.datalineage.locations.search_links
 "target": "{{ target }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_search_link_processes">
@@ -155,7 +157,8 @@ EXEC google.datalineage.locations.batch_search_link_processes
 "links": "{{ links }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

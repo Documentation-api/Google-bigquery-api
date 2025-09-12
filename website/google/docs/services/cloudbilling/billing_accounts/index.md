@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -253,7 +249,8 @@ masterBillingAccount,
 open,
 parent
 FROM google.cloudbilling.billing_accounts
-WHERE billingAccountsId = '{{ billingAccountsId }}' -- required;
+WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -272,7 +269,8 @@ FROM google.cloudbilling.billing_accounts
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -390,7 +388,8 @@ Changes which parent organization a billing account belongs to.
 ```sql
 EXEC google.cloudbilling.billing_accounts.move 
 @organizationsId='{{ organizationsId }}' --required, 
-@billingAccountsId='{{ billingAccountsId }}' --required;
+@billingAccountsId='{{ billingAccountsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

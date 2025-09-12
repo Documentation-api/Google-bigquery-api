@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_models_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_models_list">
-
-Successful response
 
 <table>
 <thead>
@@ -386,7 +382,8 @@ FROM google.retail.models
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
-AND modelsId = '{{ modelsId }}' -- required;
+AND modelsId = '{{ modelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_models_list">
@@ -415,7 +412,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -603,7 +601,8 @@ DELETE FROM google.retail.models
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
-AND modelsId = '{{ modelsId }}' --required;
+AND modelsId = '{{ modelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -628,7 +627,8 @@ EXEC google.retail.models.projects_locations_catalogs_models_pause
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @catalogsId='{{ catalogsId }}' --required, 
-@modelsId='{{ modelsId }}' --required;
+@modelsId='{{ modelsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_models_resume">
@@ -640,7 +640,8 @@ EXEC google.retail.models.projects_locations_catalogs_models_resume
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @catalogsId='{{ catalogsId }}' --required, 
-@modelsId='{{ modelsId }}' --required;
+@modelsId='{{ modelsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_models_tune">
@@ -652,7 +653,8 @@ EXEC google.retail.models.projects_locations_catalogs_models_tune
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @catalogsId='{{ catalogsId }}' --required, 
-@modelsId='{{ modelsId }}' --required;
+@modelsId='{{ modelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

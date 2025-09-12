@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -364,7 +360,8 @@ FROM google.vmmigration.datacenter_connectors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND sourcesId = '{{ sourcesId }}' -- required
-AND datacenterConnectorsId = '{{ datacenterConnectorsId }}' -- required;
+AND datacenterConnectorsId = '{{ datacenterConnectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -394,7 +391,8 @@ AND sourcesId = '{{ sourcesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -499,7 +497,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND sourcesId = '{{ sourcesId }}' --required
 AND datacenterConnectorsId = '{{ datacenterConnectorsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -526,7 +525,8 @@ EXEC google.vmmigration.datacenter_connectors.upgrade_appliance
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

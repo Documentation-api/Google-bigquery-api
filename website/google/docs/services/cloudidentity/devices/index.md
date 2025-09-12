@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -215,8 +213,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -552,7 +548,8 @@ unifiedDeviceId,
 wifiMacAddresses
 FROM google.cloudidentity.devices
 WHERE devicesId = '{{ devicesId }}' -- required
-AND customer = '{{ customer }}';
+AND customer = '{{ customer }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -599,7 +596,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -703,7 +701,8 @@ Deletes the specified device.
 ```sql
 DELETE FROM google.cloudidentity.devices
 WHERE devicesId = '{{ devicesId }}' --required
-AND customer = '{{ customer }}';
+AND customer = '{{ customer }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -729,7 +728,8 @@ EXEC google.cloudidentity.devices.wipe
 '{
 "customer": "{{ customer }}", 
 "removeResetLock": {{ removeResetLock }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="cancel_wipe">
@@ -742,7 +742,8 @@ EXEC google.cloudidentity.devices.cancel_wipe
 @@json=
 '{
 "customer": "{{ customer }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

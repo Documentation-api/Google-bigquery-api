@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -384,7 +380,8 @@ subscriptionPlan,
 subscriptionType,
 type
 FROM google.apigee.organizations
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_list">
@@ -394,7 +391,8 @@ Lists the Apigee organizations and associated Google Cloud projects that you hav
 ```sql
 SELECT
 organizations
-FROM google.apigee.organizations;
+FROM google.apigee.organizations
+;
 ```
 </TabItem>
 </Tabs>
@@ -655,7 +653,8 @@ Delete an Apigee organization. For organizations with BillingType EVALUATION, an
 ```sql
 DELETE FROM google.apigee.organizations
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND retention = '{{ retention }}';
+AND retention = '{{ retention }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -683,7 +682,8 @@ EXEC google.apigee.organizations.organizations_set_sync_authorization
 '{
 "identities": "{{ identities }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_set_addons">
@@ -696,7 +696,8 @@ EXEC google.apigee.organizations.organizations_set_addons
 @@json=
 '{
 "addonsConfig": "{{ addonsConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_assessment_results_batch_compute">
@@ -714,7 +715,8 @@ EXEC google.apigee.organizations.organizations_security_assessment_results_batch
 "include": "{{ include }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_provision_organization">
@@ -730,7 +732,8 @@ EXEC google.apigee.organizations.projects_provision_organization
 "disableVpcPeering": {{ disableVpcPeering }}, 
 "analyticsRegion": "{{ analyticsRegion }}", 
 "runtimeLocation": "{{ runtimeLocation }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

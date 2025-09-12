@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -359,7 +355,8 @@ updateTime
 FROM google.aiplatform.nas_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND nasJobsId = '{{ nasJobsId }}' -- required;
+AND nasJobsId = '{{ nasJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -389,7 +386,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -503,7 +501,8 @@ Deletes a NasJob.
 DELETE FROM google.aiplatform.nas_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND nasJobsId = '{{ nasJobsId }}' --required;
+AND nasJobsId = '{{ nasJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -525,7 +524,8 @@ Cancels a NasJob. Starts asynchronous cancellation on the NasJob. The server mak
 EXEC google.aiplatform.nas_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@nasJobsId='{{ nasJobsId }}' --required;
+@nasJobsId='{{ nasJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -190,7 +186,8 @@ FROM google.servicenetworking.dns_zones
 WHERE servicesId = '{{ servicesId }}' -- required
 AND projectsId = '{{ projectsId }}' -- required
 AND networksId = '{{ networksId }}' -- required
-AND dnsZonesId = '{{ dnsZonesId }}' -- required;
+AND dnsZonesId = '{{ dnsZonesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -203,7 +200,8 @@ dnsZonePairs
 FROM google.servicenetworking.dns_zones
 WHERE servicesId = '{{ servicesId }}' -- required
 AND projectsId = '{{ projectsId }}' -- required
-AND networksId = '{{ networksId }}' -- required;
+AND networksId = '{{ networksId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -286,7 +284,8 @@ Service producers can use this method to remove private DNS zones in the shared 
 
 ```sql
 DELETE FROM google.servicenetworking.dns_zones
-WHERE servicesId = '{{ servicesId }}' --required;
+WHERE servicesId = '{{ servicesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

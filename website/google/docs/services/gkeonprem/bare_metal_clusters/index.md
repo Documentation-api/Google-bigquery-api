@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_bare_metal_clusters_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -220,8 +218,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_list">
-
-Successful response
 
 <table>
 <thead>
@@ -635,7 +631,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalClustersId = '{{ bareMetalClustersId }}' -- required
 AND view = '{{ view }}'
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_list">
@@ -684,7 +681,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND view = '{{ view }}'
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -947,7 +945,8 @@ AND etag = '{{ etag }}'
 AND allowMissing = '{{ allowMissing }}'
 AND validateOnly = '{{ validateOnly }}'
 AND force = '{{ force }}'
-AND ignoreErrors = '{{ ignoreErrors }}';
+AND ignoreErrors = '{{ ignoreErrors }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -977,7 +976,8 @@ EXEC google.gkeonprem.bare_metal_clusters.projects_locations_bare_metal_clusters
 "localName": "{{ localName }}", 
 "adminClusterMembership": "{{ adminClusterMembership }}", 
 "localNamespace": "{{ localNamespace }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_unenroll">
@@ -992,7 +992,8 @@ EXEC google.gkeonprem.bare_metal_clusters.projects_locations_bare_metal_clusters
 @etag='{{ etag }}', 
 @allowMissing={{ allowMissing }}, 
 @validateOnly={{ validateOnly }}, 
-@force={{ force }};
+@force={{ force }}
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_clusters_query_version_config">
@@ -1005,7 +1006,8 @@ EXEC google.gkeonprem.bare_metal_clusters.projects_locations_bare_metal_clusters
 @locationsId='{{ locationsId }}' --required, 
 @createConfig.adminClusterMembership='{{ createConfig.adminClusterMembership }}', 
 @createConfig.adminClusterName='{{ createConfig.adminClusterName }}', 
-@upgradeConfig.clusterName='{{ upgradeConfig.clusterName }}';
+@upgradeConfig.clusterName='{{ upgradeConfig.clusterName }}'
+;
 ```
 </TabItem>
 </Tabs>

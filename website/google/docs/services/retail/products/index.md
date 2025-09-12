@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_branches_products_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -225,8 +223,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_branches_products_list">
-
-Successful response
 
 <table>
 <thead>
@@ -616,7 +612,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
-AND productsId = '{{ productsId }}' -- required;
+AND productsId = '{{ productsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_branches_products_list">
@@ -667,7 +664,8 @@ AND branchesId = '{{ branchesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1102,7 +1100,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
 AND branchesId = '{{ branchesId }}' --required
-AND productsId = '{{ productsId }}' --required;
+AND productsId = '{{ productsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1132,7 +1131,8 @@ EXEC google.retail.products.projects_locations_catalogs_branches_products_purge
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_branches_products_import">
@@ -1153,7 +1153,8 @@ EXEC google.retail.products.projects_locations_catalogs_branches_products_import
 "updateMask": "{{ updateMask }}", 
 "reconciliationMode": "{{ reconciliationMode }}", 
 "notificationPubsubTopic": "{{ notificationPubsubTopic }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_branches_products_set_inventory">
@@ -1173,7 +1174,8 @@ EXEC google.retail.products.projects_locations_catalogs_branches_products_set_in
 "setMask": "{{ setMask }}", 
 "setTime": "{{ setTime }}", 
 "allowMissing": {{ allowMissing }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

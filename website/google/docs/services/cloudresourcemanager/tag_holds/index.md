@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -188,7 +186,8 @@ FROM google.cloudresourcemanager.tag_holds
 WHERE tagValuesId = '{{ tagValuesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -277,7 +276,8 @@ Deletes a TagHold.
 DELETE FROM google.cloudresourcemanager.tag_holds
 WHERE tagValuesId = '{{ tagValuesId }}' --required
 AND tagHoldsId = '{{ tagHoldsId }}' --required
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>

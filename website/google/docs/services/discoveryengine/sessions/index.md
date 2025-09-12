@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_sessions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -99,8 +97,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -156,8 +152,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_sessions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -211,8 +205,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -268,8 +260,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -323,8 +313,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -612,7 +600,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND includeAnswerDetails = '{{ includeAnswerDetails }}';
+AND includeAnswerDetails = '{{ includeAnswerDetails }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_get">
@@ -635,7 +624,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND enginesId = '{{ enginesId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND includeAnswerDetails = '{{ includeAnswerDetails }}';
+AND includeAnswerDetails = '{{ includeAnswerDetails }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_sessions_list">
@@ -660,7 +650,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_list">
@@ -685,7 +676,8 @@ AND enginesId = '{{ enginesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_get">
@@ -707,7 +699,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND includeAnswerDetails = '{{ includeAnswerDetails }}';
+AND includeAnswerDetails = '{{ includeAnswerDetails }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_list">
@@ -731,7 +724,8 @@ AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1048,7 +1042,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND sessionsId = '{{ sessionsId }}' --required;
+AND sessionsId = '{{ sessionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_sessions_delete">
@@ -1061,7 +1056,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND enginesId = '{{ enginesId }}' --required
-AND sessionsId = '{{ sessionsId }}' --required;
+AND sessionsId = '{{ sessionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_sessions_delete">
@@ -1073,7 +1069,8 @@ DELETE FROM google.discoveryengine.sessions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND sessionsId = '{{ sessionsId }}' --required;
+AND sessionsId = '{{ sessionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

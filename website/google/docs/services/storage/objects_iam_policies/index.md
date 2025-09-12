@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -171,7 +169,8 @@ FROM google.storage.objects_iam_policies
 WHERE bucket = '{{ bucket }}' -- required
 AND object = '{{ object }}' -- required
 AND generation = '{{ generation }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -231,7 +230,8 @@ EXEC google.storage.objects_iam_policies.test_iam_permissions
 @object='{{ object }}' --required, 
 @permissions='{{ permissions }}' --required, 
 @generation='{{ generation }}', 
-@userProject='{{ userProject }}';
+@userProject='{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

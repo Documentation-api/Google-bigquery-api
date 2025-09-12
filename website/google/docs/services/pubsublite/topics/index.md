@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="admin_projects_locations_topics_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </TabItem>
 <TabItem value="admin_projects_locations_reservations_topics_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="admin_projects_locations_topics_list">
-
-Successful response
 
 <table>
 <thead>
@@ -289,7 +283,8 @@ retentionConfig
 FROM google.pubsublite.topics
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND topicsId = '{{ topicsId }}' -- required;
+AND topicsId = '{{ topicsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="admin_projects_locations_reservations_topics_list">
@@ -304,7 +299,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND reservationsId = '{{ reservationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="admin_projects_locations_topics_list">
@@ -321,7 +317,8 @@ FROM google.pubsublite.topics
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -455,7 +452,8 @@ Deletes the specified topic.
 DELETE FROM google.pubsublite.topics
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND topicsId = '{{ topicsId }}' --required;
+AND topicsId = '{{ topicsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -485,7 +483,8 @@ EXEC google.pubsublite.topics.topic_stats_projects_locations_topics_compute_mess
 "partition": "{{ partition }}", 
 "startCursor": "{{ startCursor }}", 
 "endCursor": "{{ endCursor }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="topic_stats_projects_locations_topics_compute_head_cursor">
@@ -500,7 +499,8 @@ EXEC google.pubsublite.topics.topic_stats_projects_locations_topics_compute_head
 @@json=
 '{
 "partition": "{{ partition }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="topic_stats_projects_locations_topics_compute_time_cursor">
@@ -516,7 +516,8 @@ EXEC google.pubsublite.topics.topic_stats_projects_locations_topics_compute_time
 '{
 "partition": "{{ partition }}", 
 "target": "{{ target }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

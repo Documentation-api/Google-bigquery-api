@@ -116,7 +116,8 @@ EXEC google.dlp.image.projects_locations_image_redact
 "imageRedactionConfigs": "{{ imageRedactionConfigs }}", 
 "includeFindings": {{ includeFindings }}, 
 "byteItem": "{{ byteItem }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_image_redact">
@@ -133,7 +134,8 @@ EXEC google.dlp.image.projects_image_redact
 "imageRedactionConfigs": "{{ imageRedactionConfigs }}", 
 "includeFindings": {{ includeFindings }}, 
 "byteItem": "{{ byteItem }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

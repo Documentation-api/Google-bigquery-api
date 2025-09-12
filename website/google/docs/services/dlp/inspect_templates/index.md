@@ -46,8 +46,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_inspect_templates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -91,8 +89,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_inspect_templates_get">
-
-Successful response
 
 <table>
 <thead>
@@ -138,8 +134,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_inspect_templates_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -183,8 +177,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_inspect_templates_get">
-
-Successful response
 
 <table>
 <thead>
@@ -230,8 +222,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_inspect_templates_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -275,8 +265,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_inspect_templates_get">
-
-Successful response
 
 <table>
 <thead>
@@ -322,8 +310,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_inspect_templates_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -367,8 +353,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_inspect_templates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -658,7 +642,8 @@ updateTime
 FROM google.dlp.inspect_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_inspect_templates_get">
@@ -676,7 +661,8 @@ updateTime
 FROM google.dlp.inspect_templates
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_inspect_templates_list">
@@ -697,7 +683,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_inspect_templates_get">
@@ -714,7 +701,8 @@ inspectConfig,
 updateTime
 FROM google.dlp.inspect_templates
 WHERE projectsId = '{{ projectsId }}' -- required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_inspect_templates_list">
@@ -735,7 +723,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_inspect_templates_get">
@@ -752,7 +741,8 @@ inspectConfig,
 updateTime
 FROM google.dlp.inspect_templates
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_inspect_templates_list">
@@ -772,7 +762,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_inspect_templates_list">
@@ -792,7 +783,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1072,7 +1064,8 @@ Deletes an InspectTemplate. See https://cloud.google.com/sensitive-data-protecti
 DELETE FROM google.dlp.inspect_templates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_inspect_templates_delete">
@@ -1083,7 +1076,8 @@ Deletes an InspectTemplate. See https://cloud.google.com/sensitive-data-protecti
 DELETE FROM google.dlp.inspect_templates
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_inspect_templates_delete">
@@ -1093,7 +1087,8 @@ Deletes an InspectTemplate. See https://cloud.google.com/sensitive-data-protecti
 ```sql
 DELETE FROM google.dlp.inspect_templates
 WHERE projectsId = '{{ projectsId }}' --required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_inspect_templates_delete">
@@ -1103,7 +1098,8 @@ Deletes an InspectTemplate. See https://cloud.google.com/sensitive-data-protecti
 ```sql
 DELETE FROM google.dlp.inspect_templates
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required;
+AND inspectTemplatesId = '{{ inspectTemplatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

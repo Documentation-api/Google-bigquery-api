@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -392,7 +388,8 @@ updateTime
 FROM google.aiplatform.hyperparameter_tuning_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND hyperparameterTuningJobsId = '{{ hyperparameterTuningJobsId }}' -- required;
+AND hyperparameterTuningJobsId = '{{ hyperparameterTuningJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -425,7 +422,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -563,7 +561,8 @@ Deletes a HyperparameterTuningJob.
 DELETE FROM google.aiplatform.hyperparameter_tuning_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND hyperparameterTuningJobsId = '{{ hyperparameterTuningJobsId }}' --required;
+AND hyperparameterTuningJobsId = '{{ hyperparameterTuningJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -585,7 +584,8 @@ Cancels a HyperparameterTuningJob. Starts asynchronous cancellation on the Hyper
 EXEC google.aiplatform.hyperparameter_tuning_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@hyperparameterTuningJobsId='{{ hyperparameterTuningJobsId }}' --required;
+@hyperparameterTuningJobsId='{{ hyperparameterTuningJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

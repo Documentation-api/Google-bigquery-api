@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_models_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_models_list">
-
-Successful response
 
 <table>
 <thead>
@@ -292,7 +288,8 @@ validateExampleCount
 FROM google.translate.models
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND modelsId = '{{ modelsId }}' -- required;
+AND modelsId = '{{ modelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_models_list">
@@ -316,7 +313,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -406,7 +404,8 @@ Deletes a model.
 DELETE FROM google.translate.models
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND modelsId = '{{ modelsId }}' --required;
+AND modelsId = '{{ modelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

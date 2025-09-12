@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -194,7 +192,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -308,7 +307,8 @@ DELETE FROM google.datafusion.dns_peerings
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND dnsPeeringsId = '{{ dnsPeeringsId }}' --required;
+AND dnsPeeringsId = '{{ dnsPeeringsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

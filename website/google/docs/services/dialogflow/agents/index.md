@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -175,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_list">
-
-Successful response
 
 <table>
 <thead>
@@ -474,7 +470,8 @@ timeZone
 FROM google.dialogflow.agents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND agentsId = '{{ agentsId }}' -- required;
+AND agentsId = '{{ agentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_list">
@@ -511,7 +508,8 @@ FROM google.dialogflow.agents
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -825,7 +823,8 @@ Deletes the specified agent.
 DELETE FROM google.dialogflow.agents
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND agentsId = '{{ agentsId }}' --required;
+AND agentsId = '{{ agentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -857,7 +856,8 @@ EXEC google.dialogflow.agents.projects_locations_agents_export
 "environment": "{{ environment }}", 
 "gitDestination": "{{ gitDestination }}", 
 "includeBigqueryExportSettings": {{ includeBigqueryExportSettings }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_restore">
@@ -875,7 +875,8 @@ EXEC google.dialogflow.agents.projects_locations_agents_restore
 "agentContent": "{{ agentContent }}", 
 "gitSource": "{{ gitSource }}", 
 "restoreOption": "{{ restoreOption }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_validate">
@@ -890,7 +891,8 @@ EXEC google.dialogflow.agents.projects_locations_agents_validate
 @@json=
 '{
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

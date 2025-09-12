@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -409,7 +405,8 @@ FROM google.datamigration.mapping_rules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND conversionWorkspacesId = '{{ conversionWorkspacesId }}' -- required
-AND mappingRulesId = '{{ mappingRulesId }}' -- required;
+AND mappingRulesId = '{{ mappingRulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -442,7 +439,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND conversionWorkspacesId = '{{ conversionWorkspacesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -661,7 +659,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND conversionWorkspacesId = '{{ conversionWorkspacesId }}' --required
 AND mappingRulesId = '{{ mappingRulesId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -689,7 +688,8 @@ EXEC google.datamigration.mapping_rules.import
 "rulesFormat": "{{ rulesFormat }}", 
 "rulesFiles": "{{ rulesFiles }}", 
 "autoCommit": {{ autoCommit }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

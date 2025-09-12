@@ -43,8 +43,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_dlp_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -118,8 +116,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_dlp_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -195,8 +191,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_dlp_jobs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -271,8 +265,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_dlp_jobs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -346,8 +338,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_dlp_jobs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -631,7 +621,8 @@ type
 FROM google.dlp.dlp_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dlpJobsId = '{{ dlpJobsId }}' -- required;
+AND dlpJobsId = '{{ dlpJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_dlp_jobs_list">
@@ -660,7 +651,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND type = '{{ type }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_dlp_jobs_get">
@@ -683,7 +675,8 @@ state,
 type
 FROM google.dlp.dlp_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND dlpJobsId = '{{ dlpJobsId }}' -- required;
+AND dlpJobsId = '{{ dlpJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_dlp_jobs_list">
@@ -712,7 +705,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND type = '{{ type }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_dlp_jobs_list">
@@ -740,7 +734,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND type = '{{ type }}'
 AND orderBy = '{{ orderBy }}'
-AND locationId = '{{ locationId }}';
+AND locationId = '{{ locationId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -880,7 +875,8 @@ Deletes a long-running DlpJob. This method indicates that the client is no longe
 DELETE FROM google.dlp.dlp_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND dlpJobsId = '{{ dlpJobsId }}' --required;
+AND dlpJobsId = '{{ dlpJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_dlp_jobs_delete">
@@ -890,7 +886,8 @@ Deletes a long-running DlpJob. This method indicates that the client is no longe
 ```sql
 DELETE FROM google.dlp.dlp_jobs
 WHERE projectsId = '{{ projectsId }}' --required
-AND dlpJobsId = '{{ dlpJobsId }}' --required;
+AND dlpJobsId = '{{ dlpJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -915,7 +912,8 @@ Starts asynchronous cancellation on a long-running DlpJob. The server makes a be
 EXEC google.dlp.dlp_jobs.projects_locations_dlp_jobs_cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dlpJobsId='{{ dlpJobsId }}' --required;
+@dlpJobsId='{{ dlpJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_dlp_jobs_hybrid_inspect">
@@ -930,7 +928,8 @@ EXEC google.dlp.dlp_jobs.projects_locations_dlp_jobs_hybrid_inspect
 @@json=
 '{
 "hybridItem": "{{ hybridItem }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_dlp_jobs_finish">
@@ -941,7 +940,8 @@ Finish a running hybrid DlpJob. Triggers the finalization steps and running of a
 EXEC google.dlp.dlp_jobs.projects_locations_dlp_jobs_finish 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dlpJobsId='{{ dlpJobsId }}' --required;
+@dlpJobsId='{{ dlpJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_dlp_jobs_cancel">
@@ -951,7 +951,8 @@ Starts asynchronous cancellation on a long-running DlpJob. The server makes a be
 ```sql
 EXEC google.dlp.dlp_jobs.projects_dlp_jobs_cancel 
 @projectsId='{{ projectsId }}' --required, 
-@dlpJobsId='{{ dlpJobsId }}' --required;
+@dlpJobsId='{{ dlpJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

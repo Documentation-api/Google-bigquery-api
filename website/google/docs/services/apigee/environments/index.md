@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -291,7 +289,8 @@ state,
 type
 FROM google.apigee.environments
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -567,7 +566,8 @@ DeleteSecurityProfileEnvironmentAssociation removes profile environment associat
 DELETE FROM google.apigee.environments
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND securityProfilesId = '{{ securityProfilesId }}' --required
-AND environmentsId = '{{ environmentsId }}' --required;
+AND environmentsId = '{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_delete">
@@ -577,7 +577,8 @@ Deletes an environment from an organization. **Warning: You must delete all key 
 ```sql
 DELETE FROM google.apigee.environments
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND environmentsId = '{{ environmentsId }}' --required;
+AND environmentsId = '{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -616,7 +617,8 @@ EXEC google.apigee.environments.organizations_environments_modify_environment
 "type": "{{ type }}", 
 "hasAttachedFlowHooks": {{ hasAttachedFlowHooks }}, 
 "clientIpResolutionConfig": "{{ clientIpResolutionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_subscribe">
@@ -626,7 +628,8 @@ Creates a subscription for the environment's Pub/Sub topic. The server will assi
 ```sql
 EXEC google.apigee.environments.organizations_environments_subscribe 
 @organizationsId='{{ organizationsId }}' --required, 
-@environmentsId='{{ environmentsId }}' --required;
+@environmentsId='{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_unsubscribe">
@@ -640,7 +643,8 @@ EXEC google.apigee.environments.organizations_environments_unsubscribe
 @@json=
 '{
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_profiles_environments_compute_environment_scores">
@@ -658,7 +662,8 @@ EXEC google.apigee.environments.organizations_security_profiles_environments_com
 "filters": "{{ filters }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

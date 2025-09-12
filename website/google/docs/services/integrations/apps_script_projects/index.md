@@ -168,7 +168,8 @@ EXEC google.integrations.apps_script_projects.projects_locations_apps_script_pro
 @@json=
 '{
 "scriptId": "{{ scriptId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

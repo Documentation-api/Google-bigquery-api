@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_target_sites_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -107,8 +105,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_target_sites_list">
-
-Successful response
 
 <table>
 <thead>
@@ -174,8 +170,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_target_sites_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -239,8 +233,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_target_sites_list">
-
-Successful response
 
 <table>
 <thead>
@@ -491,7 +483,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND targetSitesId = '{{ targetSitesId }}' -- required;
+AND targetSitesId = '{{ targetSitesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_target_sites_list">
@@ -516,7 +509,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_target_sites_get">
@@ -539,7 +533,8 @@ FROM google.discoveryengine.target_sites
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
-AND targetSitesId = '{{ targetSitesId }}' -- required;
+AND targetSitesId = '{{ targetSitesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_target_sites_list">
@@ -563,7 +558,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -815,7 +811,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND targetSitesId = '{{ targetSitesId }}' --required;
+AND targetSitesId = '{{ targetSitesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_target_sites_delete">
@@ -827,7 +824,8 @@ DELETE FROM google.discoveryengine.target_sites
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
-AND targetSitesId = '{{ targetSitesId }}' --required;
+AND targetSitesId = '{{ targetSitesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

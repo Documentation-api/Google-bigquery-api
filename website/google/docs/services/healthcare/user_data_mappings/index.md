@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -279,7 +275,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND consentStoresId = '{{ consentStoresId }}' -- required
-AND userDataMappingsId = '{{ userDataMappingsId }}' -- required;
+AND userDataMappingsId = '{{ userDataMappingsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -301,7 +298,8 @@ AND datasetsId = '{{ datasetsId }}' -- required
 AND consentStoresId = '{{ consentStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -449,7 +447,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND consentStoresId = '{{ consentStoresId }}' --required
-AND userDataMappingsId = '{{ userDataMappingsId }}' --required;
+AND userDataMappingsId = '{{ userDataMappingsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -473,7 +472,8 @@ EXEC google.healthcare.user_data_mappings.archive
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @consentStoresId='{{ consentStoresId }}' --required, 
-@userDataMappingsId='{{ userDataMappingsId }}' --required;
+@userDataMappingsId='{{ userDataMappingsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

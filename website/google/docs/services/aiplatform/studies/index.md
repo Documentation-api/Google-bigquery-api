@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -250,7 +246,8 @@ studySpec
 FROM google.aiplatform.studies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND studiesId = '{{ studiesId }}' -- required;
+AND studiesId = '{{ studiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -269,7 +266,8 @@ FROM google.aiplatform.studies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -353,7 +351,8 @@ Deletes a Study.
 DELETE FROM google.aiplatform.studies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND studiesId = '{{ studiesId }}' --required;
+AND studiesId = '{{ studiesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -378,7 +377,8 @@ EXEC google.aiplatform.studies.lookup
 @@json=
 '{
 "displayName": "{{ displayName }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

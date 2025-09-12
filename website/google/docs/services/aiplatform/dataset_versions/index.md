@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -328,7 +324,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND datasetVersionsId = '{{ datasetVersionsId }}' -- required
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -355,7 +352,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND readMask = '{{ readMask }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -483,7 +481,8 @@ DELETE FROM google.aiplatform.dataset_versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
-AND datasetVersionsId = '{{ datasetVersionsId }}' --required;
+AND datasetVersionsId = '{{ datasetVersionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -506,7 +505,8 @@ EXEC google.aiplatform.dataset_versions.restore
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
-@datasetVersionsId='{{ datasetVersionsId }}' --required;
+@datasetVersionsId='{{ datasetVersionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_clusters_get_jwks">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ keys
 FROM google.container.clusters_jwks
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND clustersId = '{{ clustersId }}' -- required;
+AND clustersId = '{{ clustersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

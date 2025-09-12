@@ -121,7 +121,8 @@ EXEC google.dataflow.debug.projects_jobs_debug_send_capture
 "data": "{{ data }}", 
 "dataFormat": "{{ dataFormat }}", 
 "location": "{{ location }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_jobs_debug_send_capture">
@@ -140,7 +141,8 @@ EXEC google.dataflow.debug.projects_locations_jobs_debug_send_capture
 "data": "{{ data }}", 
 "dataFormat": "{{ dataFormat }}", 
 "location": "{{ location }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

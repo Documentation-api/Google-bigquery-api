@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -244,7 +240,8 @@ response
 FROM google.backupdr.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -263,7 +260,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -285,7 +283,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 DELETE FROM google.backupdr.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -308,7 +307,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.backupdr.operations.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="initialize">
@@ -324,7 +324,8 @@ EXEC google.backupdr.operations.initialize
 "resourceType": "{{ resourceType }}", 
 "requestId": "{{ requestId }}", 
 "cloudSqlInstanceInitializationConfig": "{{ cloudSqlInstanceInitializationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

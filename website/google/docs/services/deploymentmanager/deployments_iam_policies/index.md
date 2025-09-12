@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,7 +164,8 @@ FROM google.deploymentmanager.deployments_iam_policies
 WHERE project = '{{ project }}' -- required
 AND resource = '{{ resource }}' -- required
 AND optionsRequestedPolicyVersion = '{{ optionsRequestedPolicyVersion }}'
-AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}';
+AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -224,7 +223,8 @@ EXEC google.deploymentmanager.deployments_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

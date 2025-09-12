@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -155,8 +153,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -424,7 +420,8 @@ vulnerabilityScanningConfig
 FROM google.artifactregistry.repositories
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND repositoriesId = '{{ repositoriesId }}' -- required;
+AND repositoriesId = '{{ repositoriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -459,7 +456,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -692,7 +690,8 @@ Deletes a repository and all of its contents. The returned Operation will finish
 DELETE FROM google.artifactregistry.repositories
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND repositoriesId = '{{ repositoriesId }}' --required;
+AND repositoriesId = '{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

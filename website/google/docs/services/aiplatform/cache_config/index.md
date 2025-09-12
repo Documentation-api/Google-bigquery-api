@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_cache_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,7 +133,8 @@ SELECT
 name,
 disableCache
 FROM google.aiplatform.cache_config
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

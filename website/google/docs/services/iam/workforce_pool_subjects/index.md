@@ -113,7 +113,8 @@ Deletes a WorkforcePoolSubject. Subject must not already be in a deleted state. 
 DELETE FROM google.iam.workforce_pool_subjects
 WHERE locationsId = '{{ locationsId }}' --required
 AND workforcePoolsId = '{{ workforcePoolsId }}' --required
-AND subjectsId = '{{ subjectsId }}' --required;
+AND subjectsId = '{{ subjectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -135,7 +136,8 @@ Undeletes a WorkforcePoolSubject, as long as it was deleted fewer than 30 days a
 EXEC google.iam.workforce_pool_subjects.undelete 
 @locationsId='{{ locationsId }}' --required, 
 @workforcePoolsId='{{ workforcePoolsId }}' --required, 
-@subjectsId='{{ subjectsId }}' --required;
+@subjectsId='{{ subjectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_queries_get_result">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ extensions
 FROM google.apigee.queries_result
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND queriesId = '{{ queriesId }}' -- required;
+AND queriesId = '{{ queriesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -192,7 +192,8 @@ EXEC google.recaptchaenterprise.assessments.annotate
 "accountId": "{{ accountId }}", 
 "hashedAccountId": "{{ hashedAccountId }}", 
 "transactionEvent": "{{ transactionEvent }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

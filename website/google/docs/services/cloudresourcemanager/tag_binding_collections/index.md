@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -153,7 +151,8 @@ fullResourceName,
 tags
 FROM google.cloudresourcemanager.tag_binding_collections
 WHERE locationsId = '{{ locationsId }}' -- required
-AND tagBindingCollectionsId = '{{ tagBindingCollectionsId }}' -- required;
+AND tagBindingCollectionsId = '{{ tagBindingCollectionsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

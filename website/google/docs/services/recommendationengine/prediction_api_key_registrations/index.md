@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_event_stores_prediction_api_key_registrations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -171,7 +169,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND eventStoresId = '{{ eventStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -255,7 +254,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
 AND eventStoresId = '{{ eventStoresId }}' --required
-AND predictionApiKeyRegistrationsId = '{{ predictionApiKeyRegistrationsId }}' --required;
+AND predictionApiKeyRegistrationsId = '{{ predictionApiKeyRegistrationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

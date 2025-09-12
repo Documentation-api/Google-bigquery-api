@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_login_profile">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ sshPublicKeys
 FROM google.oslogin.users_login_profile
 WHERE usersId = '{{ usersId }}' -- required
 AND projectId = '{{ projectId }}'
-AND systemId = '{{ systemId }}';
+AND systemId = '{{ systemId }}'
+;
 ```
 </TabItem>
 </Tabs>

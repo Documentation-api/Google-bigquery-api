@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -488,7 +484,8 @@ workloadProfile
 FROM google.baremetalsolution.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -523,7 +520,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -599,7 +597,8 @@ Load auth info for a server.
 EXEC google.baremetalsolution.instances.load_auth_info 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="reimage">
@@ -616,7 +615,8 @@ EXEC google.baremetalsolution.instances.reimage
 "osImage": "{{ osImage }}", 
 "kmsKeyVersion": "{{ kmsKeyVersion }}", 
 "sshKeys": "{{ sshKeys }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable_hyperthreading">
@@ -627,7 +627,8 @@ Perform enable hyperthreading operation on a single server.
 EXEC google.baremetalsolution.instances.enable_hyperthreading 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable_hyperthreading">
@@ -638,7 +639,8 @@ Perform disable hyperthreading operation on a single server.
 EXEC google.baremetalsolution.instances.disable_hyperthreading 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="rename">
@@ -653,7 +655,8 @@ EXEC google.baremetalsolution.instances.rename
 @@json=
 '{
 "newInstanceId": "{{ newInstanceId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reset">
@@ -664,7 +667,8 @@ Perform an ungraceful, hard reset on a server. Equivalent to shutting the power 
 EXEC google.baremetalsolution.instances.reset 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="start">
@@ -675,7 +679,8 @@ Starts a server that was shutdown.
 EXEC google.baremetalsolution.instances.start 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -686,7 +691,8 @@ Stop a running server.
 EXEC google.baremetalsolution.instances.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="enable_interactive_serial_console">
@@ -697,7 +703,8 @@ Enable the interactive serial console feature on an instance.
 EXEC google.baremetalsolution.instances.enable_interactive_serial_console 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable_interactive_serial_console">
@@ -708,7 +715,8 @@ Disable the interactive serial console feature on an instance.
 EXEC google.baremetalsolution.instances.disable_interactive_serial_console 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@instancesId='{{ instancesId }}' --required;
+@instancesId='{{ instancesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="detach_lun">
@@ -724,7 +732,8 @@ EXEC google.baremetalsolution.instances.detach_lun
 '{
 "lun": "{{ lun }}", 
 "skipReboot": {{ skipReboot }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

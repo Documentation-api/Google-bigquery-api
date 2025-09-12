@@ -95,7 +95,8 @@ EXEC google.texttospeech.text.synthesize
 "voice": "{{ voice }}", 
 "audioConfig": "{{ audioConfig }}", 
 "advancedVoiceOptions": "{{ advancedVoiceOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

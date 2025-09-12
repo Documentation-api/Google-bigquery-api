@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -245,8 +243,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -689,7 +685,8 @@ AND softDeleted = '{{ softDeleted }}'
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
 AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
 AND projection = '{{ projection }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -743,7 +740,8 @@ AND pageToken = '{{ pageToken }}'
 AND prefix = '{{ prefix }}'
 AND softDeleted = '{{ softDeleted }}'
 AND projection = '{{ projection }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1338,7 +1336,8 @@ DELETE FROM google.storage.buckets
 WHERE bucket = '{{ bucket }}' --required
 AND ifMetagenerationMatch = '{{ ifMetagenerationMatch }}'
 AND ifMetagenerationNotMatch = '{{ ifMetagenerationNotMatch }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1363,7 +1362,8 @@ EXEC google.storage.buckets.restore
 @bucket='{{ bucket }}' --required, 
 @generation='{{ generation }}' --required, 
 @projection='{{ projection }}', 
-@userProject='{{ userProject }}';
+@userProject='{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="relocate">
@@ -1378,7 +1378,8 @@ EXEC google.storage.buckets.relocate
 "destinationLocation": "{{ destinationLocation }}", 
 "destinationCustomPlacementConfig": "{{ destinationCustomPlacementConfig }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="lock_retention_policy">
@@ -1389,7 +1390,8 @@ Locks retention policy on a bucket.
 EXEC google.storage.buckets.lock_retention_policy 
 @bucket='{{ bucket }}' --required, 
 @ifMetagenerationMatch='{{ ifMetagenerationMatch }}' --required, 
-@userProject='{{ userProject }}';
+@userProject='{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

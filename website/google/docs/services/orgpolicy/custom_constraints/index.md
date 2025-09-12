@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_custom_constraints_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_custom_constraints_list">
-
-Successful response
 
 <table>
 <thead>
@@ -266,7 +262,8 @@ resourceTypes,
 updateTime
 FROM google.orgpolicy.custom_constraints
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND customConstraintsId = '{{ customConstraintsId }}' -- required;
+AND customConstraintsId = '{{ customConstraintsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_custom_constraints_list">
@@ -286,7 +283,8 @@ updateTime
 FROM google.orgpolicy.custom_constraints
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -441,7 +439,8 @@ Deletes a custom constraint. Returns a `google.rpc.Status` with `google.rpc.Code
 ```sql
 DELETE FROM google.orgpolicy.custom_constraints
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND customConstraintsId = '{{ customConstraintsId }}' --required;
+AND customConstraintsId = '{{ customConstraintsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

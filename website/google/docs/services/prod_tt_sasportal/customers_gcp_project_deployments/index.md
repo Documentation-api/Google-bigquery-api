@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_list_gcp_project_deployments">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -116,7 +114,8 @@ Returns a list of SAS deployments associated with current GCP project. Includes 
 ```sql
 SELECT
 deployments
-FROM google.prod_tt_sasportal.customers_gcp_project_deployments;
+FROM google.prod_tt_sasportal.customers_gcp_project_deployments
+;
 ```
 </TabItem>
 </Tabs>

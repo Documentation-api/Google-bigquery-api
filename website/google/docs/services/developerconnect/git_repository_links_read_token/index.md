@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_read_token">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ FROM google.developerconnect.git_repository_links_read_token
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND connectionsId = '{{ connectionsId }}' -- required
-AND gitRepositoryLinksId = '{{ gitRepositoryLinksId }}' -- required;
+AND gitRepositoryLinksId = '{{ gitRepositoryLinksId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

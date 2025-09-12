@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_topics_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_topics_list">
-
-Successful response
 
 <table>
 <thead>
@@ -295,7 +291,8 @@ schemaSettings,
 state
 FROM google.pubsub.topics
 WHERE projectsId = '{{ projectsId }}' -- required
-AND topicsId = '{{ topicsId }}' -- required;
+AND topicsId = '{{ topicsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_topics_list">
@@ -317,7 +314,8 @@ state
 FROM google.pubsub.topics
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -374,7 +372,8 @@ Deletes the topic with the given name. Returns `NOT_FOUND` if the topic does not
 ```sql
 DELETE FROM google.pubsub.topics
 WHERE projectsId = '{{ projectsId }}' --required
-AND topicsId = '{{ topicsId }}' --required;
+AND topicsId = '{{ topicsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -408,7 +407,8 @@ EXEC google.pubsub.topics.projects_topics_create
 "messageRetentionDuration": "{{ messageRetentionDuration }}", 
 "ingestionDataSourceSettings": "{{ ingestionDataSourceSettings }}", 
 "messageTransforms": "{{ messageTransforms }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_topics_publish">
@@ -422,7 +422,8 @@ EXEC google.pubsub.topics.projects_topics_publish
 @@json=
 '{
 "messages": "{{ messages }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

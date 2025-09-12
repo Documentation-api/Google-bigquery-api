@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -190,7 +188,8 @@ state,
 webHost
 FROM google.cloudshell.environments
 WHERE usersId = '{{ usersId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -217,7 +216,8 @@ EXEC google.cloudshell.environments.start
 '{
 "accessToken": "{{ accessToken }}", 
 "publicKeys": "{{ publicKeys }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="authorize">
@@ -233,7 +233,8 @@ EXEC google.cloudshell.environments.authorize
 "accessToken": "{{ accessToken }}", 
 "idToken": "{{ idToken }}", 
 "expireTime": "{{ expireTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

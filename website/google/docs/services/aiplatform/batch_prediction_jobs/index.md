@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -516,7 +512,8 @@ state,
 unmanagedContainerModel,
 updateTime
 FROM google.aiplatform.batch_prediction_jobs
-WHERE batchPredictionJobsId = '{{ batchPredictionJobsId }}' -- required;
+WHERE batchPredictionJobsId = '{{ batchPredictionJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -559,7 +556,8 @@ WHERE parent = '{{ parent }}'
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -751,7 +749,8 @@ Deletes a BatchPredictionJob. Can only be called on jobs that already finished.
 DELETE FROM google.aiplatform.batch_prediction_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND batchPredictionJobsId = '{{ batchPredictionJobsId }}' --required;
+AND batchPredictionJobsId = '{{ batchPredictionJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -773,7 +772,8 @@ Cancels a BatchPredictionJob. Starts asynchronous cancellation on the BatchPredi
 EXEC google.aiplatform.batch_prediction_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@batchPredictionJobsId='{{ batchPredictionJobsId }}' --required;
+@batchPredictionJobsId='{{ batchPredictionJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_bare_metal_admin_clusters_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_list">
-
-Successful response
 
 <table>
 <thead>
@@ -564,7 +560,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND bareMetalAdminClustersId = '{{ bareMetalAdminClustersId }}' -- required
 AND view = '{{ view }}'
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_list">
@@ -608,7 +605,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -863,7 +861,8 @@ EXEC google.gkeonprem.bare_metal_admin_clusters.projects_locations_bare_metal_ad
 '{
 "bareMetalAdminClusterId": "{{ bareMetalAdminClusterId }}", 
 "membership": "{{ membership }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_unenroll">
@@ -878,7 +877,8 @@ EXEC google.gkeonprem.bare_metal_admin_clusters.projects_locations_bare_metal_ad
 @etag='{{ etag }}', 
 @allowMissing={{ allowMissing }}, 
 @validateOnly={{ validateOnly }}, 
-@ignoreErrors={{ ignoreErrors }};
+@ignoreErrors={{ ignoreErrors }}
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_bare_metal_admin_clusters_query_version_config">
@@ -889,7 +889,8 @@ Queries the bare metal admin cluster version config.
 EXEC google.gkeonprem.bare_metal_admin_clusters.projects_locations_bare_metal_admin_clusters_query_version_config 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@upgradeConfig.clusterName='{{ upgradeConfig.clusterName }}';
+@upgradeConfig.clusterName='{{ upgradeConfig.clusterName }}'
+;
 ```
 </TabItem>
 </Tabs>

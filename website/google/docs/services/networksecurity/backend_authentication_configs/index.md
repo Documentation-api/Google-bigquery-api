@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_backend_authentication_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_backend_authentication_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -298,7 +294,8 @@ wellKnownRoots
 FROM google.networksecurity.backend_authentication_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND backendAuthenticationConfigsId = '{{ backendAuthenticationConfigsId }}' -- required;
+AND backendAuthenticationConfigsId = '{{ backendAuthenticationConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_backend_authentication_configs_list">
@@ -320,7 +317,8 @@ FROM google.networksecurity.backend_authentication_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -474,7 +472,8 @@ DELETE FROM google.networksecurity.backend_authentication_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND backendAuthenticationConfigsId = '{{ backendAuthenticationConfigsId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

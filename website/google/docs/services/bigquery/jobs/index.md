@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -337,7 +333,8 @@ user_email
 FROM google.bigquery.jobs
 WHERE projectId = '{{ projectId }}' -- required
 AND +jobId = '{{ +jobId }}' -- required
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -365,7 +362,8 @@ AND minCreationTime = '{{ minCreationTime }}'
 AND pageToken = '{{ pageToken }}'
 AND parentJobId = '{{ parentJobId }}'
 AND projection = '{{ projection }}'
-AND stateFilter = '{{ stateFilter }}';
+AND stateFilter = '{{ stateFilter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -449,7 +447,8 @@ Requests the deletion of the metadata of a job. This call returns when the job's
 DELETE FROM google.bigquery.jobs
 WHERE projectId = '{{ projectId }}' --required
 AND +jobId = '{{ +jobId }}' --required
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -472,7 +471,8 @@ Requests that a job be cancelled. This call will return immediately, and the cli
 EXEC google.bigquery.jobs.cancel 
 @projectId='{{ projectId }}' --required, 
 @+jobId='{{ +jobId }}' --required, 
-@location='{{ location }}';
+@location='{{ location }}'
+;
 ```
 </TabItem>
 <TabItem value="query">
@@ -508,7 +508,8 @@ EXEC google.bigquery.jobs.query
 "useLegacySql": {{ useLegacySql }}, 
 "useQueryCache": {{ useQueryCache }}, 
 "writeIncrementalResults": {{ writeIncrementalResults }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

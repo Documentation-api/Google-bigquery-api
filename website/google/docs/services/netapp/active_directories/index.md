@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -446,7 +442,8 @@ username
 FROM google.netapp.active_directories
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND activeDirectoriesId = '{{ activeDirectoriesId }}' -- required;
+AND activeDirectoriesId = '{{ activeDirectoriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -483,7 +480,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -739,7 +737,8 @@ Delete the active directory specified in the request.
 DELETE FROM google.netapp.active_directories
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND activeDirectoriesId = '{{ activeDirectoriesId }}' --required;
+AND activeDirectoriesId = '{{ activeDirectoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -474,7 +470,8 @@ WHERE fileId = '{{ fileId }}' -- required
 AND permissionId = '{{ permissionId }}' -- required
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
-AND useDomainAdminAccess = '{{ useDomainAdminAccess }}';
+AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -511,7 +508,8 @@ AND pageToken = '{{ pageToken }}'
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
-AND includePermissionsForView = '{{ includePermissionsForView }}';
+AND includePermissionsForView = '{{ includePermissionsForView }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -900,7 +898,8 @@ AND permissionId = '{{ permissionId }}' --required
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
-AND enforceExpansiveAccess = '{{ enforceExpansiveAccess }}';
+AND enforceExpansiveAccess = '{{ enforceExpansiveAccess }}'
+;
 ```
 </TabItem>
 </Tabs>

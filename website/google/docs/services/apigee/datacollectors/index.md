@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_datacollectors_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_datacollectors_list">
-
-Successful response
 
 <table>
 <thead>
@@ -243,7 +239,8 @@ lastModifiedAt,
 type
 FROM google.apigee.datacollectors
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND datacollectorsId = '{{ datacollectorsId }}' -- required;
+AND datacollectorsId = '{{ datacollectorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_datacollectors_list">
@@ -260,7 +257,8 @@ type
 FROM google.apigee.datacollectors
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -382,7 +380,8 @@ Deletes a data collector.
 ```sql
 DELETE FROM google.apigee.datacollectors
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND datacollectorsId = '{{ datacollectorsId }}' --required;
+AND datacollectorsId = '{{ datacollectorsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

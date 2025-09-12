@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -157,7 +155,8 @@ disableCloudLogging,
 preferenceSet
 FROM google.migrationcenter.settings
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

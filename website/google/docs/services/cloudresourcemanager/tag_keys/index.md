@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -302,7 +298,8 @@ purposeData,
 shortName,
 updateTime
 FROM google.cloudresourcemanager.tag_keys
-WHERE tagKeysId = '{{ tagKeysId }}' -- required;
+WHERE tagKeysId = '{{ tagKeysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -324,7 +321,8 @@ updateTime
 FROM google.cloudresourcemanager.tag_keys
 WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -474,7 +472,8 @@ Deletes a TagKey. The TagKey cannot be deleted if it has any child TagValues.
 DELETE FROM google.cloudresourcemanager.tag_keys
 WHERE tagKeysId = '{{ tagKeysId }}' --required
 AND validateOnly = '{{ validateOnly }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

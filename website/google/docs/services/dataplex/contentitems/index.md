@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_lakes_contentitems_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_lakes_contentitems_list">
-
-Successful response
 
 <table>
 <thead>
@@ -321,7 +317,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND contentitemsId = '{{ contentitemsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_lakes_contentitems_list">
@@ -346,7 +343,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -516,7 +514,8 @@ DELETE FROM google.dataplex.contentitems
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND lakesId = '{{ lakesId }}' --required
-AND contentitemsId = '{{ contentitemsId }}' --required;
+AND contentitemsId = '{{ contentitemsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

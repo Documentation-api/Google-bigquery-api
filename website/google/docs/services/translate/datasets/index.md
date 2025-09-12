@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_datasets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_datasets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -301,7 +297,8 @@ validateExampleCount
 FROM google.translate.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND datasetsId = '{{ datasetsId }}' -- required;
+AND datasetsId = '{{ datasetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_datasets_list">
@@ -324,7 +321,8 @@ FROM google.translate.datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -421,7 +419,8 @@ Deletes a dataset and all of its contents.
 DELETE FROM google.translate.datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND datasetsId = '{{ datasetsId }}' --required;
+AND datasetsId = '{{ datasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -448,7 +447,8 @@ EXEC google.translate.datasets.projects_locations_datasets_import_data
 @@json=
 '{
 "inputConfig": "{{ inputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_datasets_export_data">
@@ -463,7 +463,8 @@ EXEC google.translate.datasets.projects_locations_datasets_export_data
 @@json=
 '{
 "outputConfig": "{{ outputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

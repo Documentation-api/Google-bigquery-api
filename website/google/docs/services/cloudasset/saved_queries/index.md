@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get">
-
-Successful response
 
 <table>
 <thead>
@@ -289,7 +285,8 @@ WHERE parentType = '{{ parentType }}' -- required
 AND parent = '{{ parent }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="get">
@@ -307,7 +304,8 @@ labels,
 lastUpdateTime,
 lastUpdater
 FROM google.cloudasset.saved_queries
-WHERE name = '{{ name }}' -- required;
+WHERE name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -445,7 +443,8 @@ Deletes a saved query.
 
 ```sql
 DELETE FROM google.cloudasset.saved_queries
-WHERE name = '{{ name }}' --required;
+WHERE name = '{{ name }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ configFileContents,
 configFilename
 FROM firebase.firebase.ios_apps_config
 WHERE projectsId = '{{ projectsId }}' -- required
-AND iosAppsId = '{{ iosAppsId }}' -- required;
+AND iosAppsId = '{{ iosAppsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

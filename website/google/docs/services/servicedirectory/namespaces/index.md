@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ uid
 FROM google.servicedirectory.namespaces
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND namespacesId = '{{ namespacesId }}' -- required;
+AND namespacesId = '{{ namespacesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -255,7 +252,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -371,7 +369,8 @@ Deletes a namespace. This also deletes all services and endpoints in the namespa
 DELETE FROM google.servicedirectory.namespaces
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND namespacesId = '{{ namespacesId }}' --required;
+AND namespacesId = '{{ namespacesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

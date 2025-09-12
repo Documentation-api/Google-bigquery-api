@@ -128,7 +128,8 @@ Delete feedback labels in bulk using a filter.
 ```sql
 DELETE FROM google.contactcenterinsights.locations
 WHERE projectsId = '{{ projectsId }}' --required
-AND locationsId = '{{ locationsId }}' --required;
+AND locationsId = '{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -159,7 +160,8 @@ EXEC google.contactcenterinsights.locations.query_metrics
 "timeGranularity": "{{ timeGranularity }}", 
 "dimensions": "{{ dimensions }}", 
 "measureMask": "{{ measureMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="query_performance_overview">
@@ -176,7 +178,8 @@ EXEC google.contactcenterinsights.locations.query_performance_overview
 "filter": "{{ filter }}", 
 "queryInterval": "{{ queryInterval }}", 
 "comparisonQueryInterval": "{{ comparisonQueryInterval }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_upload_feedback_labels">
@@ -192,7 +195,8 @@ EXEC google.contactcenterinsights.locations.bulk_upload_feedback_labels
 "gcsSource": "{{ gcsSource }}", 
 "sheetsSource": "{{ sheetsSource }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk_download_feedback_labels">
@@ -213,7 +217,8 @@ EXEC google.contactcenterinsights.locations.bulk_download_feedback_labels
 "feedbackLabelType": "{{ feedbackLabelType }}", 
 "conversationFilter": "{{ conversationFilter }}", 
 "templateQaScorecardId": "{{ templateQaScorecardId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

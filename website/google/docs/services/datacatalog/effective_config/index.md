@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_retrieve_effective_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_retrieve_effective_config">
-
-Successful response
 
 <table>
 <thead>
@@ -185,7 +181,8 @@ tagTemplateMigration,
 templateMigrationEnabledTime
 FROM google.datacatalog.effective_config
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_retrieve_effective_config">
@@ -199,7 +196,8 @@ tagTemplateMigration,
 templateMigrationEnabledTime
 FROM google.datacatalog.effective_config
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

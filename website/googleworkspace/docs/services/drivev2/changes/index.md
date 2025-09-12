@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -370,7 +366,8 @@ WHERE changeId = '{{ changeId }}' -- required
 AND driveId = '{{ driveId }}'
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
-AND teamDriveId = '{{ teamDriveId }}';
+AND teamDriveId = '{{ teamDriveId }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -407,7 +404,8 @@ AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND teamDriveId = '{{ teamDriveId }}'
 AND includePermissionsForView = '{{ includePermissionsForView }}'
-AND includeLabels = '{{ includeLabels }}';
+AND includeLabels = '{{ includeLabels }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -454,7 +452,8 @@ EXEC googleworkspace.drivev2.changes.watch
 "address": "{{ address }}", 
 "params": "{{ params }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

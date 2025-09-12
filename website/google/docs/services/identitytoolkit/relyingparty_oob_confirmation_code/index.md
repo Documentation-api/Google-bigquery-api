@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_oob_confirmation_code">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 email,
 kind,
 oobCode
-FROM google.identitytoolkit.relyingparty_oob_confirmation_code;
+FROM google.identitytoolkit.relyingparty_oob_confirmation_code
+;
 ```
 </TabItem>
 </Tabs>

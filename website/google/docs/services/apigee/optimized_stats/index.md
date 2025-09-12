@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_optimized_stats_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_optimized_host_stats_get">
-
-Successful response
 
 <table>
 <thead>
@@ -264,7 +260,8 @@ AND tsAscending = '{{ tsAscending }}'
 AND realtime = '{{ realtime }}'
 AND sonar = '{{ sonar }}'
 AND tzo = '{{ tzo }}'
-AND accuracy = '{{ accuracy }}';
+AND accuracy = '{{ accuracy }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_optimized_host_stats_get">
@@ -290,7 +287,8 @@ AND tsAscending = '{{ tsAscending }}'
 AND realtime = '{{ realtime }}'
 AND tzo = '{{ tzo }}'
 AND accuracy = '{{ accuracy }}'
-AND envgroupHostname = '{{ envgroupHostname }}';
+AND envgroupHostname = '{{ envgroupHostname }}'
+;
 ```
 </TabItem>
 </Tabs>

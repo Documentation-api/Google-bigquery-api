@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -373,7 +369,8 @@ updateTime
 FROM google.aiplatform.tensorboards
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND tensorboardsId = '{{ tensorboardsId }}' -- required;
+AND tensorboardsId = '{{ tensorboardsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -402,7 +399,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -550,7 +548,8 @@ Deletes a Tensorboard.
 DELETE FROM google.aiplatform.tensorboards
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND tensorboardsId = '{{ tensorboardsId }}' --required;
+AND tensorboardsId = '{{ tensorboardsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -574,7 +573,8 @@ Returns a list of monthly active users for a given TensorBoard instance.
 EXEC google.aiplatform.tensorboards.read_usage 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@tensorboardsId='{{ tensorboardsId }}' --required;
+@tensorboardsId='{{ tensorboardsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="read_size">
@@ -585,7 +585,8 @@ Returns the storage size for a given TensorBoard instance.
 EXEC google.aiplatform.tensorboards.read_size 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@tensorboardsId='{{ tensorboardsId }}' --required;
+@tensorboardsId='{{ tensorboardsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="batch_read">
@@ -597,7 +598,8 @@ EXEC google.aiplatform.tensorboards.batch_read
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @tensorboardsId='{{ tensorboardsId }}' --required, 
-@timeSeries='{{ timeSeries }}';
+@timeSeries='{{ timeSeries }}'
+;
 ```
 </TabItem>
 </Tabs>

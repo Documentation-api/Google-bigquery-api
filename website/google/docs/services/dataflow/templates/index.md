@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_templates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_templates_get">
-
-Successful response
 
 <table>
 <thead>
@@ -251,7 +247,8 @@ FROM google.dataflow.templates
 WHERE projectId = '{{ projectId }}' -- required
 AND location = '{{ location }}' -- required
 AND gcsPath = '{{ gcsPath }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_templates_get">
@@ -268,7 +265,8 @@ FROM google.dataflow.templates
 WHERE projectId = '{{ projectId }}' -- required
 AND gcsPath = '{{ gcsPath }}'
 AND view = '{{ view }}'
-AND location = '{{ location }}';
+AND location = '{{ location }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -460,7 +458,8 @@ EXEC google.dataflow.templates.projects_templates_launch
 "environment": "{{ environment }}", 
 "update": {{ update }}, 
 "transformNameMapping": "{{ transformNameMapping }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_templates_launch">
@@ -482,7 +481,8 @@ EXEC google.dataflow.templates.projects_locations_templates_launch
 "environment": "{{ environment }}", 
 "update": {{ update }}, 
 "transformNameMapping": "{{ transformNameMapping }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

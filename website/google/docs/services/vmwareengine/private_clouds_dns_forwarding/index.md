@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_dns_forwarding">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -169,7 +167,8 @@ updateTime
 FROM google.vmwareengine.private_clouds_dns_forwarding
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND privateCloudsId = '{{ privateCloudsId }}' -- required;
+AND privateCloudsId = '{{ privateCloudsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

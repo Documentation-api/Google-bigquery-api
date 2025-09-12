@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -370,7 +366,8 @@ source,
 updateTime
 FROM google.networkmanagement.connectivity_tests
 WHERE projectsId = '{{ projectsId }}' -- required
-AND connectivityTestsId = '{{ connectivityTestsId }}' -- required;
+AND connectivityTestsId = '{{ connectivityTestsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -399,7 +396,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -568,7 +566,8 @@ Deletes a specific `ConnectivityTest`.
 ```sql
 DELETE FROM google.networkmanagement.connectivity_tests
 WHERE projectsId = '{{ projectsId }}' --required
-AND connectivityTestsId = '{{ connectivityTestsId }}' --required;
+AND connectivityTestsId = '{{ connectivityTestsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -589,7 +588,8 @@ Rerun an existing `ConnectivityTest`. After the user triggers the rerun, the rea
 ```sql
 EXEC google.networkmanagement.connectivity_tests.rerun 
 @projectsId='{{ projectsId }}' --required, 
-@connectivityTestsId='{{ connectivityTestsId }}' --required;
+@connectivityTestsId='{{ connectivityTestsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

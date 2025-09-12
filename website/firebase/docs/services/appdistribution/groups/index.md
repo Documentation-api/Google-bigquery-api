@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -257,7 +253,8 @@ releaseCount,
 testerCount
 FROM firebase.appdistribution.groups
 WHERE projectsId = '{{ projectsId }}' -- required
-AND groupsId = '{{ groupsId }}' -- required;
+AND groupsId = '{{ groupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -274,7 +271,8 @@ testerCount
 FROM firebase.appdistribution.groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -387,7 +385,8 @@ Delete a group.
 ```sql
 DELETE FROM firebase.appdistribution.groups
 WHERE projectsId = '{{ projectsId }}' --required
-AND groupsId = '{{ groupsId }}' --required;
+AND groupsId = '{{ groupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -414,7 +413,8 @@ EXEC firebase.appdistribution.groups.batch_join
 '{
 "emails": "{{ emails }}", 
 "createMissingTesters": {{ createMissingTesters }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_leave">
@@ -428,7 +428,8 @@ EXEC firebase.appdistribution.groups.batch_leave
 @@json=
 '{
 "emails": "{{ emails }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

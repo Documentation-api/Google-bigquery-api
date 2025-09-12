@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ type
 FROM googleadmin.directory.commands
 WHERE customerId = '{{ customerId }}' -- required
 AND deviceId = '{{ deviceId }}' -- required
-AND commandId = '{{ commandId }}' -- required;
+AND commandId = '{{ commandId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_get_debugmask">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -193,7 +191,8 @@ responseXPaths,
 variables
 FROM google.apigee.environments_debugmask
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

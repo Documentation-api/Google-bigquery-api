@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_ldapssettings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ state,
 updateTime
 FROM google.managedidentities.domains_ldapssettings
 WHERE projectsId = '{{ projectsId }}' -- required
-AND domainsId = '{{ domainsId }}' -- required;
+AND domainsId = '{{ domainsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_clusters_well-known_get_openid-configuration">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -176,7 +174,8 @@ subject_types_supported
 FROM google.container.well_known_openid_configuration
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND clustersId = '{{ clustersId }}' -- required;
+AND clustersId = '{{ clustersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

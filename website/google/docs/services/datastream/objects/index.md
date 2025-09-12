@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -267,7 +263,8 @@ FROM google.datastream.objects
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND streamsId = '{{ streamsId }}' -- required
-AND objectsId = '{{ objectsId }}' -- required;
+AND objectsId = '{{ objectsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -288,7 +285,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND streamsId = '{{ streamsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -316,7 +314,8 @@ EXEC google.datastream.objects.lookup
 @@json=
 '{
 "sourceObjectIdentifier": "{{ sourceObjectIdentifier }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="start_backfill_job">
@@ -328,7 +327,8 @@ EXEC google.datastream.objects.start_backfill_job
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @streamsId='{{ streamsId }}' --required, 
-@objectsId='{{ objectsId }}' --required;
+@objectsId='{{ objectsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="stop_backfill_job">
@@ -340,7 +340,8 @@ EXEC google.datastream.objects.stop_backfill_job
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @streamsId='{{ streamsId }}' --required, 
-@objectsId='{{ objectsId }}' --required;
+@objectsId='{{ objectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

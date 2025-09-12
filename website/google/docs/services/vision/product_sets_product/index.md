@@ -166,7 +166,8 @@ Removes a Product from the specified ProductSet.
 DELETE FROM google.vision.product_sets_product
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND productSetsId = '{{ productSetsId }}' --required;
+AND productSetsId = '{{ productSetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -195,8 +193,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -521,7 +517,8 @@ version
 FROM google.aiplatform.notebook_runtimes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND notebookRuntimesId = '{{ notebookRuntimesId }}' -- required;
+AND notebookRuntimesId = '{{ notebookRuntimesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -565,7 +562,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND readMask = '{{ readMask }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -587,7 +585,8 @@ Deletes a NotebookRuntime.
 DELETE FROM google.aiplatform.notebook_runtimes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND notebookRuntimesId = '{{ notebookRuntimesId }}' --required;
+AND notebookRuntimesId = '{{ notebookRuntimesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -617,7 +616,8 @@ EXEC google.aiplatform.notebook_runtimes.assign
 "notebookRuntimeTemplate": "{{ notebookRuntimeTemplate }}", 
 "notebookRuntime": "{{ notebookRuntime }}", 
 "notebookRuntimeId": "{{ notebookRuntimeId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upgrade">
@@ -628,7 +628,8 @@ Upgrades a NotebookRuntime.
 EXEC google.aiplatform.notebook_runtimes.upgrade 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@notebookRuntimesId='{{ notebookRuntimesId }}' --required;
+@notebookRuntimesId='{{ notebookRuntimesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="start">
@@ -639,7 +640,8 @@ Starts a NotebookRuntime.
 EXEC google.aiplatform.notebook_runtimes.start 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@notebookRuntimesId='{{ notebookRuntimesId }}' --required;
+@notebookRuntimesId='{{ notebookRuntimesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -650,7 +652,8 @@ Stops a NotebookRuntime.
 EXEC google.aiplatform.notebook_runtimes.stop 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@notebookRuntimesId='{{ notebookRuntimesId }}' --required;
+@notebookRuntimesId='{{ notebookRuntimesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

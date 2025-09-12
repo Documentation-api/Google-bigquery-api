@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_executable">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ updateTime
 FROM firebase.rules.releases_executable
 WHERE projectsId = '{{ projectsId }}' -- required
 AND releasesId = '{{ releasesId }}' -- required
-AND executableVersion = '{{ executableVersion }}';
+AND executableVersion = '{{ executableVersion }}'
+;
 ```
 </TabItem>
 </Tabs>

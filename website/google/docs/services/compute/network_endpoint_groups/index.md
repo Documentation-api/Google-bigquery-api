@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,8 +150,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -197,8 +193,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="aggregated_list">
-
-Successful response
 
 <table>
 <thead>
@@ -485,7 +479,8 @@ zone
 FROM google.compute.network_endpoint_groups
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
-AND networkEndpointGroup = '{{ networkEndpointGroup }}' -- required;
+AND networkEndpointGroup = '{{ networkEndpointGroup }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -507,7 +502,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -543,7 +539,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -773,7 +770,8 @@ DELETE FROM google.compute.network_endpoint_groups
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND networkEndpointGroup = '{{ networkEndpointGroup }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -801,7 +799,8 @@ EXEC google.compute.network_endpoint_groups.attach_network_endpoints
 @@json=
 '{
 "networkEndpoints": "{{ networkEndpoints }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="detach_network_endpoints">
@@ -817,7 +816,8 @@ EXEC google.compute.network_endpoint_groups.detach_network_endpoints
 @@json=
 '{
 "networkEndpoints": "{{ networkEndpoints }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

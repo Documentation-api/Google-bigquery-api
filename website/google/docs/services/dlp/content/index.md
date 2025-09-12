@@ -146,7 +146,8 @@ EXEC google.dlp.content.projects_content_inspect
 "item": "{{ item }}", 
 "inspectTemplateName": "{{ inspectTemplateName }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_content_deidentify">
@@ -164,7 +165,8 @@ EXEC google.dlp.content.projects_content_deidentify
 "inspectTemplateName": "{{ inspectTemplateName }}", 
 "deidentifyTemplateName": "{{ deidentifyTemplateName }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_content_reidentify">
@@ -182,7 +184,8 @@ EXEC google.dlp.content.projects_content_reidentify
 "inspectTemplateName": "{{ inspectTemplateName }}", 
 "reidentifyTemplateName": "{{ reidentifyTemplateName }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_content_inspect">
@@ -199,7 +202,8 @@ EXEC google.dlp.content.projects_locations_content_inspect
 "item": "{{ item }}", 
 "inspectTemplateName": "{{ inspectTemplateName }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_content_deidentify">
@@ -218,7 +222,8 @@ EXEC google.dlp.content.projects_locations_content_deidentify
 "inspectTemplateName": "{{ inspectTemplateName }}", 
 "deidentifyTemplateName": "{{ deidentifyTemplateName }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_content_reidentify">
@@ -237,7 +242,8 @@ EXEC google.dlp.content.projects_locations_content_reidentify
 "inspectTemplateName": "{{ inspectTemplateName }}", 
 "reidentifyTemplateName": "{{ reidentifyTemplateName }}", 
 "locationId": "{{ locationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -348,7 +344,8 @@ webAccessUris
 FROM google.aiplatform.custom_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND customJobsId = '{{ customJobsId }}' -- required;
+AND customJobsId = '{{ customJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -377,7 +374,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -483,7 +481,8 @@ Deletes a CustomJob.
 DELETE FROM google.aiplatform.custom_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND customJobsId = '{{ customJobsId }}' --required;
+AND customJobsId = '{{ customJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -505,7 +504,8 @@ Cancels a CustomJob. Starts asynchronous cancellation on the CustomJob. The serv
 EXEC google.aiplatform.custom_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@customJobsId='{{ customJobsId }}' --required;
+@customJobsId='{{ customJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -234,7 +230,8 @@ updateTime
 FROM google.firestore.user_creds
 WHERE projectsId = '{{ projectsId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
-AND userCredsId = '{{ userCredsId }}' -- required;
+AND userCredsId = '{{ userCredsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -246,7 +243,8 @@ SELECT
 userCreds
 FROM google.firestore.user_creds
 WHERE projectsId = '{{ projectsId }}' -- required
-AND databasesId = '{{ databasesId }}' -- required;
+AND databasesId = '{{ databasesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -334,7 +332,8 @@ Deletes a user creds.
 DELETE FROM google.firestore.user_creds
 WHERE projectsId = '{{ projectsId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND userCredsId = '{{ userCredsId }}' --required;
+AND userCredsId = '{{ userCredsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -358,7 +357,8 @@ Enables a user creds. No-op if the user creds are already enabled.
 EXEC google.firestore.user_creds.enable 
 @projectsId='{{ projectsId }}' --required, 
 @databasesId='{{ databasesId }}' --required, 
-@userCredsId='{{ userCredsId }}' --required;
+@userCredsId='{{ userCredsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -369,7 +369,8 @@ Disables a user creds. No-op if the user creds are already disabled.
 EXEC google.firestore.user_creds.disable 
 @projectsId='{{ projectsId }}' --required, 
 @databasesId='{{ databasesId }}' --required, 
-@userCredsId='{{ userCredsId }}' --required;
+@userCredsId='{{ userCredsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="reset_password">
@@ -380,7 +381,8 @@ Resets the password of a user creds.
 EXEC google.firestore.user_creds.reset_password 
 @projectsId='{{ projectsId }}' --required, 
 @databasesId='{{ databasesId }}' --required, 
-@userCredsId='{{ userCredsId }}' --required;
+@userCredsId='{{ userCredsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_apis_keyvaluemaps_entries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -69,8 +67,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_keyvaluemaps_entries_get">
-
-Successful response
 
 <table>
 <thead>
@@ -96,8 +92,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_apis_keyvaluemaps_entries_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -121,8 +115,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_keyvaluemaps_entries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -148,8 +140,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_keyvaluemaps_entries_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -173,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_keyvaluemaps_entries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -399,7 +387,8 @@ FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' -- required
-AND entriesId = '{{ entriesId }}' -- required;
+AND entriesId = '{{ entriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_keyvaluemaps_entries_get">
@@ -414,7 +403,8 @@ FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' -- required
-AND entriesId = '{{ entriesId }}' -- required;
+AND entriesId = '{{ entriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apis_keyvaluemaps_entries_list">
@@ -430,7 +420,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_keyvaluemaps_entries_list">
@@ -446,7 +437,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_keyvaluemaps_entries_get">
@@ -460,7 +452,8 @@ value
 FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' -- required
-AND entriesId = '{{ entriesId }}' -- required;
+AND entriesId = '{{ entriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_keyvaluemaps_entries_list">
@@ -475,7 +468,8 @@ FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -683,7 +677,8 @@ DELETE FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required
-AND entriesId = '{{ entriesId }}' --required;
+AND entriesId = '{{ entriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_keyvaluemaps_entries_delete">
@@ -695,7 +690,8 @@ DELETE FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required
-AND entriesId = '{{ entriesId }}' --required;
+AND entriesId = '{{ entriesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_keyvaluemaps_entries_delete">
@@ -706,7 +702,8 @@ Deletes a key value entry from a key value map scoped to an organization, enviro
 DELETE FROM google.apigee.entries
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required
-AND entriesId = '{{ entriesId }}' --required;
+AND entriesId = '{{ entriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

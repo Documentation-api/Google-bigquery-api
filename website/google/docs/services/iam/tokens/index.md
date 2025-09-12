@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -262,7 +258,8 @@ WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
 AND providersId = '{{ providersId }}' -- required
 AND scimTenantsId = '{{ scimTenantsId }}' -- required
-AND tokensId = '{{ tokensId }}' -- required;
+AND tokensId = '{{ tokensId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -282,7 +279,8 @@ AND providersId = '{{ providersId }}' -- required
 AND scimTenantsId = '{{ scimTenantsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -414,7 +412,8 @@ WHERE locationsId = '{{ locationsId }}' --required
 AND workforcePoolsId = '{{ workforcePoolsId }}' --required
 AND providersId = '{{ providersId }}' --required
 AND scimTenantsId = '{{ scimTenantsId }}' --required
-AND tokensId = '{{ tokensId }}' --required;
+AND tokensId = '{{ tokensId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -438,7 +437,8 @@ EXEC google.iam.tokens.undelete
 @workforcePoolsId='{{ workforcePoolsId }}' --required, 
 @providersId='{{ providersId }}' --required, 
 @scimTenantsId='{{ scimTenantsId }}' --required, 
-@tokensId='{{ tokensId }}' --required;
+@tokensId='{{ tokensId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

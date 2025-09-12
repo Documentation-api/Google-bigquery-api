@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_recent_queries_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -77,8 +75,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_recent_queries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -114,8 +110,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_recent_queries_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -149,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_recent_queries_list">
-
-Successful response
 
 <table>
 <thead>
@@ -314,7 +306,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_recent_queries_list">
@@ -332,7 +325,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_recent_queries_list">
@@ -350,7 +344,8 @@ WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_recent_queries_list">
@@ -368,7 +363,8 @@ WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

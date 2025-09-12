@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -341,7 +337,8 @@ FROM google.workloadmanager.executions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND evaluationsId = '{{ evaluationsId }}' -- required
-AND executionsId = '{{ executionsId }}' -- required;
+AND executionsId = '{{ executionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -370,7 +367,8 @@ AND evaluationsId = '{{ evaluationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -394,7 +392,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND evaluationsId = '{{ evaluationsId }}' --required
 AND executionsId = '{{ executionsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -422,7 +421,8 @@ EXEC google.workloadmanager.executions.run
 "executionId": "{{ executionId }}", 
 "execution": "{{ execution }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

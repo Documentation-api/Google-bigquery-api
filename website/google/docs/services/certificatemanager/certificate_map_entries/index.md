@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -309,7 +305,8 @@ FROM google.certificatemanager.certificate_map_entries
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND certificateMapsId = '{{ certificateMapsId }}' -- required
-AND certificateMapEntriesId = '{{ certificateMapEntriesId }}' -- required;
+AND certificateMapEntriesId = '{{ certificateMapEntriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -334,7 +331,8 @@ AND certificateMapsId = '{{ certificateMapsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -494,7 +492,8 @@ DELETE FROM google.certificatemanager.certificate_map_entries
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND certificateMapsId = '{{ certificateMapsId }}' --required
-AND certificateMapEntriesId = '{{ certificateMapEntriesId }}' --required;
+AND certificateMapEntriesId = '{{ certificateMapEntriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

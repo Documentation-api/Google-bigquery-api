@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_security_profiles_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_security_profiles_list">
-
-Successful response
 
 <table>
 <thead>
@@ -320,7 +316,8 @@ revisionUpdateTime,
 scoringConfigs
 FROM google.apigee.security_profiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND securityProfilesId = '{{ securityProfilesId }}' -- required;
+AND securityProfilesId = '{{ securityProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_profiles_list">
@@ -344,7 +341,8 @@ scoringConfigs
 FROM google.apigee.security_profiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -503,7 +501,8 @@ DeleteSecurityProfile delete a profile with all its revisions.
 ```sql
 DELETE FROM google.apigee.security_profiles
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND securityProfilesId = '{{ securityProfilesId }}' --required;
+AND securityProfilesId = '{{ securityProfilesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

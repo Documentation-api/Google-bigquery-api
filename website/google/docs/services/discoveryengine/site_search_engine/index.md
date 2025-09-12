@@ -160,7 +160,8 @@ EXEC google.discoveryengine.site_search_engine.projects_locations_collections_da
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @collectionsId='{{ collectionsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_disable_advanced_site_search">
@@ -172,7 +173,8 @@ EXEC google.discoveryengine.site_search_engine.projects_locations_collections_da
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @collectionsId='{{ collectionsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_recrawl_uris">
@@ -189,7 +191,8 @@ EXEC google.discoveryengine.site_search_engine.projects_locations_collections_da
 '{
 "uris": "{{ uris }}", 
 "siteCredential": "{{ siteCredential }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_site_search_engine_batch_verify_target_sites">
@@ -201,7 +204,8 @@ EXEC google.discoveryengine.site_search_engine.projects_locations_collections_da
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @collectionsId='{{ collectionsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_enable_advanced_site_search">
@@ -212,7 +216,8 @@ Upgrade from basic site search to advanced site search.
 EXEC google.discoveryengine.site_search_engine.projects_locations_data_stores_site_search_engine_enable_advanced_site_search 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_disable_advanced_site_search">
@@ -223,7 +228,8 @@ Downgrade from advanced site search to basic site search.
 EXEC google.discoveryengine.site_search_engine.projects_locations_data_stores_site_search_engine_disable_advanced_site_search 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataStoresId='{{ dataStoresId }}' --required;
+@dataStoresId='{{ dataStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_site_search_engine_recrawl_uris">
@@ -239,7 +245,8 @@ EXEC google.discoveryengine.site_search_engine.projects_locations_data_stores_si
 '{
 "uris": "{{ uris }}", 
 "siteCredential": "{{ siteCredential }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

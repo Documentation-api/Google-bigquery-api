@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_list">
-
-Successful response
 
 <table>
 <thead>
@@ -394,7 +390,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND vmwareClustersId = '{{ vmwareClustersId }}' -- required
 AND vmwareNodePoolsId = '{{ vmwareNodePoolsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_list">
@@ -423,7 +420,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND vmwareClustersId = '{{ vmwareClustersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -599,7 +597,8 @@ AND vmwareNodePoolsId = '{{ vmwareNodePoolsId }}' --required
 AND etag = '{{ etag }}'
 AND allowMissing = '{{ allowMissing }}'
 AND validateOnly = '{{ validateOnly }}'
-AND ignoreErrors = '{{ ignoreErrors }}';
+AND ignoreErrors = '{{ ignoreErrors }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -626,7 +625,8 @@ EXEC google.gkeonprem.vmware_node_pools.projects_locations_vmware_clusters_vmwar
 @@json=
 '{
 "vmwareNodePoolId": "{{ vmwareNodePoolId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_vmware_clusters_vmware_node_pools_unenroll">
@@ -641,7 +641,8 @@ EXEC google.gkeonprem.vmware_node_pools.projects_locations_vmware_clusters_vmwar
 @vmwareNodePoolsId='{{ vmwareNodePoolsId }}' --required, 
 @etag='{{ etag }}', 
 @allowMissing={{ allowMissing }}, 
-@validateOnly={{ validateOnly }};
+@validateOnly={{ validateOnly }}
+;
 ```
 </TabItem>
 </Tabs>

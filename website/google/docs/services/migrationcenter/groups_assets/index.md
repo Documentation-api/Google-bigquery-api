@@ -186,7 +186,8 @@ Removes assets from a group.
 DELETE FROM google.migrationcenter.groups_assets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND groupsId = '{{ groupsId }}' --required;
+AND groupsId = '{{ groupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

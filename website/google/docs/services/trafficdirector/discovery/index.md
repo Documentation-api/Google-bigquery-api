@@ -94,7 +94,8 @@ EXEC google.trafficdirector.discovery.client_status
 "nodeMatchers": "{{ nodeMatchers }}", 
 "node": "{{ node }}", 
 "excludeResourceContents": {{ excludeResourceContents }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

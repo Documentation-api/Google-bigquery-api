@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -285,7 +281,8 @@ roleId,
 scopeType
 FROM googleadmin.directory.role_assignments
 WHERE customer = '{{ customer }}' -- required
-AND roleAssignmentId = '{{ roleAssignmentId }}' -- required;
+AND roleAssignmentId = '{{ roleAssignmentId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -309,7 +306,8 @@ AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND roleId = '{{ roleId }}'
 AND userKey = '{{ userKey }}'
-AND includeIndirectRoleAssignments = '{{ includeIndirectRoleAssignments }}';
+AND includeIndirectRoleAssignments = '{{ includeIndirectRoleAssignments }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -433,7 +431,8 @@ Deletes a role assignment.
 ```sql
 DELETE FROM googleadmin.directory.role_assignments
 WHERE customer = '{{ customer }}' --required
-AND roleAssignmentId = '{{ roleAssignmentId }}' --required;
+AND roleAssignmentId = '{{ roleAssignmentId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

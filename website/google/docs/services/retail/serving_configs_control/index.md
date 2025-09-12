@@ -198,7 +198,8 @@ DELETE FROM google.retail.serving_configs_control
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
-AND servingConfigsId = '{{ servingConfigsId }}' --required;
+AND servingConfigsId = '{{ servingConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="nodes_nodes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="nodes_get">
-
-Successful response
 
 <table>
 <thead>
@@ -180,7 +176,8 @@ displayName,
 sasUserIds
 FROM google.sasportal.node
 WHERE nodesId = '{{ nodesId }}' -- required
-AND nodesId1 = '{{ nodesId1 }}' -- required;
+AND nodesId1 = '{{ nodesId1 }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="nodes_get">
@@ -193,7 +190,8 @@ name,
 displayName,
 sasUserIds
 FROM google.sasportal.node
-WHERE nodesId = '{{ nodesId }}' -- required;
+WHERE nodesId = '{{ nodesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

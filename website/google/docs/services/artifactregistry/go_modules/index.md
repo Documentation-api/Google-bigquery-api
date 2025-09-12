@@ -106,7 +106,8 @@ Directly uploads a Go module. The returned Operation will complete once the Go m
 EXEC google.artifactregistry.go_modules.upload 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@repositoriesId='{{ repositoriesId }}' --required;
+@repositoriesId='{{ repositoriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

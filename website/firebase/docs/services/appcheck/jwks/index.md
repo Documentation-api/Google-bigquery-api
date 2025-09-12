@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -116,7 +114,8 @@ Returns a public JWK set as specified by [RFC 7517](https://tools.ietf.org/html/
 ```sql
 SELECT
 keys
-FROM firebase.appcheck.jwks;
+FROM firebase.appcheck.jwks
+;
 ```
 </TabItem>
 </Tabs>

@@ -253,7 +253,8 @@ Deletes a key value map from an API proxy.
 DELETE FROM google.apigee.keyvaluemaps
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND apisId = '{{ apisId }}' --required
-AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required;
+AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_keyvaluemaps_delete">
@@ -264,7 +265,8 @@ Deletes a key value map from an environment.
 DELETE FROM google.apigee.keyvaluemaps
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required;
+AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_keyvaluemaps_delete">
@@ -274,7 +276,8 @@ Deletes a key value map from an organization.
 ```sql
 DELETE FROM google.apigee.keyvaluemaps
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required;
+AND keyvaluemapsId = '{{ keyvaluemapsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

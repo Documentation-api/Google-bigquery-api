@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -261,7 +257,8 @@ updateTime
 FROM google.contentwarehouse.document_schemas
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND documentSchemasId = '{{ documentSchemasId }}' -- required;
+AND documentSchemasId = '{{ documentSchemasId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -281,7 +278,8 @@ FROM google.contentwarehouse.document_schemas
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -420,7 +418,8 @@ Deletes a document schema. Returns NOT_FOUND if the document schema does not exi
 DELETE FROM google.contentwarehouse.document_schemas
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND documentSchemasId = '{{ documentSchemasId }}' --required;
+AND documentSchemasId = '{{ documentSchemasId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

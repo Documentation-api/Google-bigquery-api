@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="batch_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get">
-
-Successful response
 
 <table>
 <thead>
@@ -198,7 +194,8 @@ services
 FROM google.serviceusage.services
 WHERE parentType = '{{ parentType }}' -- required
 AND parent = '{{ parent }}' -- required
-AND names = '{{ names }}';
+AND names = '{{ names }}'
+;
 ```
 </TabItem>
 <TabItem value="get">
@@ -212,7 +209,8 @@ config,
 parent,
 state
 FROM google.serviceusage.services
-WHERE name = '{{ name }}' -- required;
+WHERE name = '{{ name }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -238,7 +236,8 @@ EXEC google.serviceusage.services.disable
 '{
 "checkIfServiceHasUsage": "{{ checkIfServiceHasUsage }}", 
 "disableDependentServices": {{ disableDependentServices }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_enable">
@@ -252,7 +251,8 @@ EXEC google.serviceusage.services.batch_enable
 @@json=
 '{
 "serviceIds": "{{ serviceIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

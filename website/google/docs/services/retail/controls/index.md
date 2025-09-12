@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_controls_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_catalogs_controls_list">
-
-Successful response
 
 <table>
 <thead>
@@ -271,7 +267,8 @@ FROM google.retail.controls
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
-AND controlsId = '{{ controlsId }}' -- required;
+AND controlsId = '{{ controlsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_controls_list">
@@ -292,7 +289,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -445,7 +443,8 @@ DELETE FROM google.retail.controls
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
-AND controlsId = '{{ controlsId }}' --required;
+AND controlsId = '{{ controlsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

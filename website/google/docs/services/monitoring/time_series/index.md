@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_time_series_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -97,8 +95,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_time_series_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_time_series_list">
-
-Successful response
 
 <table>
 <thead>
@@ -408,7 +402,8 @@ AND secondaryAggregation.groupByFields = '{{ secondaryAggregation.groupByFields 
 AND orderBy = '{{ orderBy }}'
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_time_series_list">
@@ -441,7 +436,8 @@ AND secondaryAggregation.groupByFields = '{{ secondaryAggregation.groupByFields 
 AND orderBy = '{{ orderBy }}'
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_time_series_list">
@@ -474,7 +470,8 @@ AND secondaryAggregation.groupByFields = '{{ secondaryAggregation.groupByFields 
 AND orderBy = '{{ orderBy }}'
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -543,7 +540,8 @@ EXEC google.monitoring.time_series.projects_time_series_query
 "query": "{{ query }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

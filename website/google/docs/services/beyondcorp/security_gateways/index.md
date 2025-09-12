@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_security_gateways_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_security_gateways_list">
-
-Successful response
 
 <table>
 <thead>
@@ -302,7 +298,8 @@ updateTime
 FROM google.beyondcorp.security_gateways
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND securityGatewaysId = '{{ securityGatewaysId }}' -- required;
+AND securityGatewaysId = '{{ securityGatewaysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_security_gateways_list">
@@ -325,7 +322,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -460,7 +458,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND securityGatewaysId = '{{ securityGatewaysId }}' --required
 AND requestId = '{{ requestId }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>

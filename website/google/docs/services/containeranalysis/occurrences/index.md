@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_occurrences_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -159,8 +157,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_notes_occurrences_list">
-
-Successful response
 
 <table>
 <thead>
@@ -276,8 +272,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_occurrences_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -391,8 +385,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_occurrences_list">
-
-Successful response
 
 <table>
 <thead>
@@ -508,8 +500,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_notes_occurrences_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -623,8 +613,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_occurrences_list">
-
-Successful response
 
 <table>
 <thead>
@@ -959,7 +947,8 @@ vulnerability
 FROM google.containeranalysis.occurrences
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND occurrencesId = '{{ occurrencesId }}' -- required;
+AND occurrencesId = '{{ occurrencesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_notes_occurrences_list">
@@ -994,7 +983,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND notesId = '{{ notesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_occurrences_get">
@@ -1025,7 +1015,8 @@ upgrade,
 vulnerability
 FROM google.containeranalysis.occurrences
 WHERE projectsId = '{{ projectsId }}' -- required
-AND occurrencesId = '{{ occurrencesId }}' -- required;
+AND occurrencesId = '{{ occurrencesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_occurrences_list">
@@ -1060,7 +1051,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_notes_occurrences_list">
@@ -1094,7 +1086,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND notesId = '{{ notesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_occurrences_list">
@@ -1128,7 +1121,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1593,7 +1587,8 @@ Deletes the specified occurrence. For example, use this method to delete an occu
 DELETE FROM google.containeranalysis.occurrences
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND occurrencesId = '{{ occurrencesId }}' --required;
+AND occurrencesId = '{{ occurrencesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_occurrences_delete">
@@ -1603,7 +1598,8 @@ Deletes the specified occurrence. For example, use this method to delete an occu
 ```sql
 DELETE FROM google.containeranalysis.occurrences
 WHERE projectsId = '{{ projectsId }}' --required
-AND occurrencesId = '{{ occurrencesId }}' --required;
+AND occurrencesId = '{{ occurrencesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -245,7 +241,8 @@ sqlserverDatabaseDetails
 FROM google.sqladmin.databases
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
-AND database = '{{ database }}' -- required;
+AND database = '{{ database }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -258,7 +255,8 @@ items,
 kind
 FROM google.sqladmin.databases
 WHERE project = '{{ project }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -510,7 +508,8 @@ Deletes a database from a Cloud SQL instance.
 DELETE FROM google.sqladmin.databases
 WHERE project = '{{ project }}' --required
 AND instance = '{{ instance }}' --required
-AND database = '{{ database }}' --required;
+AND database = '{{ database }}' --required
+;
 ```
 </TabItem>
 </Tabs>

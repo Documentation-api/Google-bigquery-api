@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_datasets_annotated_datasets_feedback_threads_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_feedback_threads_list">
-
-Successful response
 
 <table>
 <thead>
@@ -198,7 +194,8 @@ FROM google.datalabeling.feedback_threads
 WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
-AND feedbackThreadsId = '{{ feedbackThreadsId }}' -- required;
+AND feedbackThreadsId = '{{ feedbackThreadsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_feedback_threads_list">
@@ -214,7 +211,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -237,7 +235,8 @@ DELETE FROM google.datalabeling.feedback_threads
 WHERE projectsId = '{{ projectsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' --required
-AND feedbackThreadsId = '{{ feedbackThreadsId }}' --required;
+AND feedbackThreadsId = '{{ feedbackThreadsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

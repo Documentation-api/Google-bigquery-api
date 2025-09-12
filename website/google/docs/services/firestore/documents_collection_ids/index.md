@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_collection_ids">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM google.firestore.documents_collection_ids
 WHERE projectsId = '{{ projectsId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
 AND documentsId = '{{ documentsId }}' -- required
-AND documentsId1 = '{{ documentsId1 }}' -- required;
+AND documentsId1 = '{{ documentsId1 }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

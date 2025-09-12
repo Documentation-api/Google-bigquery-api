@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_clusters_node_pools_fetch_node_pool_upgrade_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_fetch_node_pool_upgrade_info">
-
-Successful response
 
 <table>
 <thead>
@@ -247,7 +243,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
 AND nodePoolsId = '{{ nodePoolsId }}' -- required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_node_pools_fetch_node_pool_upgrade_info">
@@ -268,7 +265,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND zonesId = '{{ zonesId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
 AND nodePoolsId = '{{ nodePoolsId }}' -- required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 </Tabs>

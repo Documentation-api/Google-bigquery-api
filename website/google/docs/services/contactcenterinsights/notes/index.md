@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -237,7 +235,8 @@ AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
 AND conversationsId = '{{ conversationsId }}' -- required
 AND assessmentsId = '{{ assessmentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -411,7 +410,8 @@ AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' --required
 AND authorizedViewsId = '{{ authorizedViewsId }}' --required
 AND conversationsId = '{{ conversationsId }}' --required
 AND assessmentsId = '{{ assessmentsId }}' --required
-AND notesId = '{{ notesId }}' --required;
+AND notesId = '{{ notesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

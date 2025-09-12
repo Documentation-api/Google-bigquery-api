@@ -106,7 +106,8 @@ EXEC google.ondemandscanning.scans.analyze_packages
 "resourceUri": "{{ resourceUri }}", 
 "packages": "{{ packages }}", 
 "includeOsvData": {{ includeOsvData }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

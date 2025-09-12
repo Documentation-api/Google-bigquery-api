@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -280,7 +276,8 @@ FROM google.alloydb.users
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
-AND usersId = '{{ usersId }}' -- required;
+AND usersId = '{{ usersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -301,7 +298,8 @@ AND clustersId = '{{ clustersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -458,7 +456,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND clustersId = '{{ clustersId }}' --required
 AND usersId = '{{ usersId }}' --required
 AND requestId = '{{ requestId }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>

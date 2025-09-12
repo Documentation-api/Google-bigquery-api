@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_environments_sessions_entity_types_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -74,8 +72,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_sessions_entity_types_get">
-
-Successful response
 
 <table>
 <thead>
@@ -106,8 +102,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_agents_environments_sessions_entity_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -136,8 +130,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_entity_types_get">
-
-Successful response
 
 <table>
 <thead>
@@ -193,8 +185,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_agents_sessions_entity_types_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -223,8 +213,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_entity_types_list">
-
-Successful response
 
 <table>
 <thead>
@@ -516,7 +504,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND entityTypesId = '{{ entityTypesId }}' -- required;
+AND entityTypesId = '{{ entityTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_sessions_entity_types_get">
@@ -533,7 +522,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
-AND entityTypesId = '{{ entityTypesId }}' -- required;
+AND entityTypesId = '{{ entityTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_environments_sessions_entity_types_list">
@@ -552,7 +542,8 @@ AND agentsId = '{{ agentsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_entity_types_get">
@@ -574,7 +565,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND entityTypesId = '{{ entityTypesId }}' -- required
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_sessions_entity_types_list">
@@ -592,7 +584,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND sessionsId = '{{ sessionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_entity_types_list">
@@ -615,7 +608,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -926,7 +920,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
 AND sessionsId = '{{ sessionsId }}' --required
-AND entityTypesId = '{{ entityTypesId }}' --required;
+AND entityTypesId = '{{ entityTypesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_sessions_entity_types_delete">
@@ -939,7 +934,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND sessionsId = '{{ sessionsId }}' --required
-AND entityTypesId = '{{ entityTypesId }}' --required;
+AND entityTypesId = '{{ entityTypesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_entity_types_delete">
@@ -952,7 +948,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND entityTypesId = '{{ entityTypesId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -983,7 +980,8 @@ EXEC google.dialogflow.entity_types.projects_locations_agents_entity_types_expor
 "entityTypesContentInline": {{ entityTypesContentInline }}, 
 "dataFormat": "{{ dataFormat }}", 
 "languageCode": "{{ languageCode }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_entity_types_import">
@@ -1001,7 +999,8 @@ EXEC google.dialogflow.entity_types.projects_locations_agents_entity_types_impor
 "entityTypesContent": "{{ entityTypesContent }}", 
 "mergeOption": "{{ mergeOption }}", 
 "targetEntityType": "{{ targetEntityType }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

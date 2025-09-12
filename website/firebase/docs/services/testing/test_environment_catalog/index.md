@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ softwareCatalog
 FROM firebase.testing.test_environment_catalog
 WHERE environmentType = '{{ environmentType }}' -- required
 AND projectId = '{{ projectId }}'
-AND includeViewableModels = '{{ includeViewableModels }}';
+AND includeViewableModels = '{{ includeViewableModels }}'
+;
 ```
 </TabItem>
 </Tabs>

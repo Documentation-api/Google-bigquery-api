@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get_server_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ FROM google.container.server_config
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND projectId = '{{ projectId }}'
-AND zone = '{{ zone }}';
+AND zone = '{{ zone }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ name,
 externalId
 FROM google.jobs.tenants
 WHERE projectsId = '{{ projectsId }}' -- required
-AND tenantsId = '{{ tenantsId }}' -- required;
+AND tenantsId = '{{ tenantsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -251,7 +248,8 @@ externalId
 FROM google.jobs.tenants
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -354,7 +352,8 @@ Deletes specified tenant.
 ```sql
 DELETE FROM google.jobs.tenants
 WHERE projectsId = '{{ projectsId }}' --required
-AND tenantsId = '{{ tenantsId }}' --required;
+AND tenantsId = '{{ tenantsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -381,7 +380,8 @@ EXEC google.jobs.tenants.complete_query
 @pageSize='{{ pageSize }}', 
 @company='{{ company }}', 
 @scope='{{ scope }}', 
-@type='{{ type }}';
+@type='{{ type }}'
+;
 ```
 </TabItem>
 </Tabs>

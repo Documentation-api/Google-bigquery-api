@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -243,7 +239,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND processesId = '{{ processesId }}' -- required
 AND runsId = '{{ runsId }}' -- required
-AND lineageEventsId = '{{ lineageEventsId }}' -- required;
+AND lineageEventsId = '{{ lineageEventsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -262,7 +259,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND processesId = '{{ processesId }}' -- required
 AND runsId = '{{ runsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -375,7 +373,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND processesId = '{{ processesId }}' --required
 AND runsId = '{{ runsId }}' --required
 AND lineageEventsId = '{{ lineageEventsId }}' --required
-AND allowMissing = '{{ allowMissing }}';
+AND allowMissing = '{{ allowMissing }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -291,7 +287,8 @@ FROM google.contactcenterinsights.authorized_views
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' -- required
-AND authorizedViewsId = '{{ authorizedViewsId }}' -- required;
+AND authorizedViewsId = '{{ authorizedViewsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -312,7 +309,8 @@ AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -447,7 +445,8 @@ DELETE FROM google.contactcenterinsights.authorized_views
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND authorizedViewSetsId = '{{ authorizedViewSetsId }}' --required
-AND authorizedViewsId = '{{ authorizedViewsId }}' --required;
+AND authorizedViewsId = '{{ authorizedViewsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -479,7 +478,8 @@ EXEC google.contactcenterinsights.authorized_views.query_metrics
 "timeGranularity": "{{ timeGranularity }}", 
 "dimensions": "{{ dimensions }}", 
 "measureMask": "{{ measureMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="query_performance_overview">
@@ -498,7 +498,8 @@ EXEC google.contactcenterinsights.authorized_views.query_performance_overview
 "filter": "{{ filter }}", 
 "queryInterval": "{{ queryInterval }}", 
 "comparisonQueryInterval": "{{ comparisonQueryInterval }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search">
@@ -513,7 +514,8 @@ EXEC google.contactcenterinsights.authorized_views.search
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
 @query='{{ query }}', 
-@orderBy='{{ orderBy }}';
+@orderBy='{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

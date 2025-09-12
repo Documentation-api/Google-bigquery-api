@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -265,7 +263,8 @@ servingStatus,
 sslPolicy
 FROM google.appengine.apps
 WHERE appsId = '{{ appsId }}' -- required
-AND includeExtraData = '{{ includeExtraData }}';
+AND includeExtraData = '{{ includeExtraData }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -452,7 +451,8 @@ Recreates the required App Engine features for the specified App Engine applicat
 
 ```sql
 EXEC google.appengine.apps.repair 
-@appsId='{{ appsId }}' --required;
+@appsId='{{ appsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

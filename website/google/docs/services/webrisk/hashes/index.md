@@ -100,7 +100,8 @@ Gets the full hashes that match the requested hash prefix. This is used after a 
 ```sql
 EXEC google.webrisk.hashes.search 
 @hashPrefix='{{ hashPrefix }}', 
-@threatTypes='{{ threatTypes }}';
+@threatTypes='{{ threatTypes }}'
+;
 ```
 </TabItem>
 </Tabs>

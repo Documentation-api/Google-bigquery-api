@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_taxonomies_attributes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_taxonomies_attributes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -352,7 +348,8 @@ FROM google.dataplex.attributes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataTaxonomiesId = '{{ dataTaxonomiesId }}' -- required
-AND attributesId = '{{ attributesId }}' -- required;
+AND attributesId = '{{ attributesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_taxonomies_attributes_list">
@@ -380,7 +377,8 @@ AND dataTaxonomiesId = '{{ dataTaxonomiesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -553,7 +551,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataTaxonomiesId = '{{ dataTaxonomiesId }}' --required
 AND attributesId = '{{ attributesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

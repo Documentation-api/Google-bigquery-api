@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_acl">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ policy
 FROM google.contentwarehouse.acls
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND documentsId = '{{ documentsId }}' -- required;
+AND documentsId = '{{ documentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

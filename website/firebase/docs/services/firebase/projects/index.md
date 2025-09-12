@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -268,7 +264,8 @@ projectNumber,
 resources,
 state
 FROM firebase.firebase.projects
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -288,7 +285,8 @@ state
 FROM firebase.firebase.projects
 WHERE pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -348,7 +346,8 @@ EXEC firebase.firebase.projects.search_apps
 @pageToken='{{ pageToken }}', 
 @pageSize='{{ pageSize }}', 
 @filter='{{ filter }}', 
-@showDeleted={{ showDeleted }};
+@showDeleted={{ showDeleted }}
+;
 ```
 </TabItem>
 </Tabs>

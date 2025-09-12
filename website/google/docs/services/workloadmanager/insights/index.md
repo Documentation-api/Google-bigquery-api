@@ -119,7 +119,8 @@ DELETE FROM google.workloadmanager.insights
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND insightsId = '{{ insightsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -146,7 +147,8 @@ EXEC google.workloadmanager.insights.write_insight
 "insight": "{{ insight }}", 
 "requestId": "{{ requestId }}", 
 "agentVersion": "{{ agentVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

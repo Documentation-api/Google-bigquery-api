@@ -114,7 +114,8 @@ EXEC google.aiplatform.migratable_resources.search
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}", 
 "filter": "{{ filter }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="batch_migrate">
@@ -128,7 +129,8 @@ EXEC google.aiplatform.migratable_resources.batch_migrate
 @@json=
 '{
 "migrateResourceRequests": "{{ migrateResourceRequests }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

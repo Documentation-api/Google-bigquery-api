@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_notification_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -84,8 +82,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_notification_configs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -126,8 +122,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_notification_configs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,8 +160,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_notification_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -208,8 +200,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_notification_configs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -248,8 +238,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_notification_configs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -495,7 +483,8 @@ serviceAccount,
 streamingConfig
 FROM google.securitycenter.notification_configs
 WHERE foldersId = '{{ foldersId }}' -- required
-AND notificationConfigsId = '{{ notificationConfigsId }}' -- required;
+AND notificationConfigsId = '{{ notificationConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_notification_configs_get">
@@ -511,7 +500,8 @@ serviceAccount,
 streamingConfig
 FROM google.securitycenter.notification_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND notificationConfigsId = '{{ notificationConfigsId }}' -- required;
+AND notificationConfigsId = '{{ notificationConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_notification_configs_get">
@@ -527,7 +517,8 @@ serviceAccount,
 streamingConfig
 FROM google.securitycenter.notification_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND notificationConfigsId = '{{ notificationConfigsId }}' -- required;
+AND notificationConfigsId = '{{ notificationConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_notification_configs_list">
@@ -544,7 +535,8 @@ streamingConfig
 FROM google.securitycenter.notification_configs
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_notification_configs_list">
@@ -561,7 +553,8 @@ streamingConfig
 FROM google.securitycenter.notification_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_notification_configs_list">
@@ -578,7 +571,8 @@ streamingConfig
 FROM google.securitycenter.notification_configs
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -823,7 +817,8 @@ Deletes a notification config.
 ```sql
 DELETE FROM google.securitycenter.notification_configs
 WHERE foldersId = '{{ foldersId }}' --required
-AND notificationConfigsId = '{{ notificationConfigsId }}' --required;
+AND notificationConfigsId = '{{ notificationConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_notification_configs_delete">
@@ -833,7 +828,8 @@ Deletes a notification config.
 ```sql
 DELETE FROM google.securitycenter.notification_configs
 WHERE projectsId = '{{ projectsId }}' --required
-AND notificationConfigsId = '{{ notificationConfigsId }}' --required;
+AND notificationConfigsId = '{{ notificationConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_notification_configs_delete">
@@ -843,7 +839,8 @@ Deletes a notification config.
 ```sql
 DELETE FROM google.securitycenter.notification_configs
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND notificationConfigsId = '{{ notificationConfigsId }}' --required;
+AND notificationConfigsId = '{{ notificationConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

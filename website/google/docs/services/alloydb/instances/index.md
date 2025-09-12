@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -576,7 +572,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -621,7 +618,8 @@ AND clustersId = '{{ clustersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -877,7 +875,8 @@ AND clustersId = '{{ clustersId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND requestId = '{{ requestId }}'
 AND etag = '{{ etag }}'
-AND validateOnly = '{{ validateOnly }}';
+AND validateOnly = '{{ validateOnly }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -907,7 +906,8 @@ EXEC google.alloydb.instances.failover
 '{
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="inject_fault">
@@ -925,7 +925,8 @@ EXEC google.alloydb.instances.inject_fault
 "faultType": "{{ faultType }}", 
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restart">
@@ -943,7 +944,8 @@ EXEC google.alloydb.instances.restart
 "requestId": "{{ requestId }}", 
 "validateOnly": {{ validateOnly }}, 
 "nodeIds": "{{ nodeIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

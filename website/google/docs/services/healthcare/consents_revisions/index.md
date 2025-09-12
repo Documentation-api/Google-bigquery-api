@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_revisions">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -225,7 +223,8 @@ AND consentStoresId = '{{ consentStoresId }}' -- required
 AND consentsId = '{{ consentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -249,7 +248,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND consentStoresId = '{{ consentStoresId }}' --required
-AND consentsId = '{{ consentsId }}' --required;
+AND consentsId = '{{ consentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

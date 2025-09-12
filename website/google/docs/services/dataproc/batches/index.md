@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_batches_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_batches_list">
-
-Successful response
 
 <table>
 <thead>
@@ -391,7 +387,8 @@ uuid
 FROM google.dataproc.batches
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND batchesId = '{{ batchesId }}' -- required;
+AND batchesId = '{{ batchesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_batches_list">
@@ -423,7 +420,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -549,7 +547,8 @@ Deletes the batch workload resource. If the batch is not in a CANCELLED, SUCCEED
 DELETE FROM google.dataproc.batches
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND batchesId = '{{ batchesId }}' --required;
+AND batchesId = '{{ batchesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -576,7 +575,8 @@ EXEC google.dataproc.batches.projects_locations_batches_analyze
 '{
 "requestId": "{{ requestId }}", 
 "requestorId": "{{ requestorId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

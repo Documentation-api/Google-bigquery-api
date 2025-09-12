@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ stats
 FROM google.firestore.backups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND backupsId = '{{ backupsId }}' -- required;
+AND backupsId = '{{ backupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -231,7 +228,8 @@ unreachable
 FROM google.firestore.backups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -253,7 +251,8 @@ Deletes a backup.
 DELETE FROM google.firestore.backups
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND backupsId = '{{ backupsId }}' --required;
+AND backupsId = '{{ backupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

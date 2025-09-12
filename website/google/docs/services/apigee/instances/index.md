@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_instances_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_instances_list">
-
-Successful response
 
 <table>
 <thead>
@@ -366,7 +362,8 @@ serviceAttachment,
 state
 FROM google.apigee.instances
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_instances_list">
@@ -394,7 +391,8 @@ state
 FROM google.apigee.instances
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -560,7 +558,8 @@ Deletes an Apigee runtime instance. The instance stops serving requests and the 
 ```sql
 DELETE FROM google.apigee.instances
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -587,7 +586,8 @@ EXEC google.apigee.instances.organizations_instances_report_status
 "instanceUid": "{{ instanceUid }}", 
 "reportTime": "{{ reportTime }}", 
 "resources": "{{ resources }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

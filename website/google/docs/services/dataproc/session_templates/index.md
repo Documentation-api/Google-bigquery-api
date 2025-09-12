@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_session_templates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_session_templates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -310,7 +306,8 @@ uuid
 FROM google.dataproc.session_templates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND sessionTemplatesId = '{{ sessionTemplatesId }}' -- required;
+AND sessionTemplatesId = '{{ sessionTemplatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_session_templates_list">
@@ -335,7 +332,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -502,7 +500,8 @@ Deletes a session template.
 DELETE FROM google.dataproc.session_templates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND sessionTemplatesId = '{{ sessionTemplatesId }}' --required;
+AND sessionTemplatesId = '{{ sessionTemplatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

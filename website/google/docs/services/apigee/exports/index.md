@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_analytics_exports_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_analytics_exports_list">
-
-Successful response
 
 <table>
 <thead>
@@ -219,7 +215,8 @@ updated
 FROM google.apigee.exports
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND exportsId = '{{ exportsId }}' -- required;
+AND exportsId = '{{ exportsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_analytics_exports_list">
@@ -231,7 +228,8 @@ SELECT
 exports
 FROM google.apigee.exports
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

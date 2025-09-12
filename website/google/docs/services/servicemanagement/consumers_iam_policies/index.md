@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -154,7 +152,8 @@ members,
 role
 FROM google.servicemanagement.consumers_iam_policies
 WHERE servicesId = '{{ servicesId }}' -- required
-AND consumersId = '{{ consumersId }}' -- required;
+AND consumersId = '{{ consumersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -209,7 +208,8 @@ EXEC google.servicemanagement.consumers_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -187,7 +187,8 @@ DELETE FROM google.contentwarehouse.document_links
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND documentsId = '{{ documentsId }}' --required
-AND documentLinksId = '{{ documentLinksId }}' --required;
+AND documentLinksId = '{{ documentLinksId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

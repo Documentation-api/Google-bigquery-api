@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -186,7 +184,8 @@ etag,
 state,
 updateTime
 FROM google.cloudresourcemanager.organizations
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -208,7 +207,8 @@ Searches organization resources that are visible to the user and satisfy the spe
 EXEC google.cloudresourcemanager.organizations.search 
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
-@query='{{ query }}';
+@query='{{ query }}'
+;
 ```
 </TabItem>
 </Tabs>

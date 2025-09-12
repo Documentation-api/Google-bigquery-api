@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_databases_sessions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -352,7 +348,8 @@ FROM google.spanner.sessions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
-AND sessionsId = '{{ sessionsId }}' -- required;
+AND sessionsId = '{{ sessionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_list">
@@ -373,7 +370,8 @@ AND instancesId = '{{ instancesId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -490,7 +488,8 @@ DELETE FROM google.spanner.sessions
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND sessionsId = '{{ sessionsId }}' --required;
+AND sessionsId = '{{ sessionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -528,7 +527,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_adapter
 @@json=
 '{
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_adapt_message">
@@ -546,7 +546,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_adapt_message
 "protocol": "{{ protocol }}", 
 "payload": "{{ payload }}", 
 "attachments": "{{ attachments }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_execute_sql">
@@ -574,7 +575,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_execute_sql
 "directedReadOptions": "{{ directedReadOptions }}", 
 "dataBoostEnabled": {{ dataBoostEnabled }}, 
 "lastStatement": {{ lastStatement }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_execute_streaming_sql">
@@ -602,7 +604,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_execute_strea
 "directedReadOptions": "{{ directedReadOptions }}", 
 "dataBoostEnabled": {{ dataBoostEnabled }}, 
 "lastStatement": {{ lastStatement }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_execute_batch_dml">
@@ -622,7 +625,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_execute_batch
 "seqno": "{{ seqno }}", 
 "requestOptions": "{{ requestOptions }}", 
 "lastStatements": {{ lastStatements }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_read">
@@ -650,7 +654,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_read
 "dataBoostEnabled": {{ dataBoostEnabled }}, 
 "orderBy": "{{ orderBy }}", 
 "lockHint": "{{ lockHint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_streaming_read">
@@ -678,7 +683,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_streaming_rea
 "dataBoostEnabled": {{ dataBoostEnabled }}, 
 "orderBy": "{{ orderBy }}", 
 "lockHint": "{{ lockHint }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_begin_transaction">
@@ -696,7 +702,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_begin_transac
 "options": "{{ options }}", 
 "requestOptions": "{{ requestOptions }}", 
 "mutationKey": "{{ mutationKey }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_commit">
@@ -718,7 +725,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_commit
 "maxCommitDelay": "{{ maxCommitDelay }}", 
 "requestOptions": "{{ requestOptions }}", 
 "precommitToken": "{{ precommitToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_rollback">
@@ -734,7 +742,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_rollback
 @@json=
 '{
 "transactionId": "{{ transactionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_partition_query">
@@ -754,7 +763,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_partition_que
 "params": "{{ params }}", 
 "paramTypes": "{{ paramTypes }}", 
 "partitionOptions": "{{ partitionOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_partition_read">
@@ -775,7 +785,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_partition_rea
 "columns": "{{ columns }}", 
 "keySet": "{{ keySet }}", 
 "partitionOptions": "{{ partitionOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_databases_sessions_batch_write">
@@ -793,7 +804,8 @@ EXEC google.spanner.sessions.projects_instances_databases_sessions_batch_write
 "requestOptions": "{{ requestOptions }}", 
 "mutationGroups": "{{ mutationGroups }}", 
 "excludeTxnFromChangeStreams": {{ excludeTxnFromChangeStreams }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

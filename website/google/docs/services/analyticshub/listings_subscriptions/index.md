@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_exchanges_listings_list_subscriptions">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -242,7 +240,8 @@ AND dataExchangesId = '{{ dataExchangesId }}' -- required
 AND listingsId = '{{ listingsId }}' -- required
 AND includeDeletedSubscriptions = '{{ includeDeletedSubscriptions }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

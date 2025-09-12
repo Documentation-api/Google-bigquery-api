@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -305,7 +301,8 @@ state,
 webId
 FROM firebase.firebase.web_apps
 WHERE projectsId = '{{ projectsId }}' -- required
-AND webAppsId = '{{ webAppsId }}' -- required;
+AND webAppsId = '{{ webAppsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -328,7 +325,8 @@ FROM firebase.firebase.web_apps
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -466,7 +464,8 @@ Removes the specified WebApp from the FirebaseProject.
 ```sql
 DELETE FROM firebase.firebase.web_apps
 WHERE projectsId = '{{ projectsId }}' --required
-AND webAppsId = '{{ webAppsId }}' --required;
+AND webAppsId = '{{ webAppsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -492,7 +491,8 @@ EXEC firebase.firebase.web_apps.undelete
 '{
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

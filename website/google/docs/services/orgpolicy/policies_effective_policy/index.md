@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_policies_get_effective_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -82,8 +80,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_policies_get_effective_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_policies_get_effective_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -262,7 +256,8 @@ etag,
 spec
 FROM google.orgpolicy.policies_effective_policy
 WHERE projectsId = '{{ projectsId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_policies_get_effective_policy">
@@ -278,7 +273,8 @@ etag,
 spec
 FROM google.orgpolicy.policies_effective_policy
 WHERE foldersId = '{{ foldersId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_policies_get_effective_policy">
@@ -294,7 +290,8 @@ etag,
 spec
 FROM google.orgpolicy.policies_effective_policy
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_datasets_annotated_datasets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -296,7 +292,8 @@ metadata
 FROM google.datalabeling.annotated_datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required;
+AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_list">
@@ -321,7 +318,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -343,7 +341,8 @@ Deletes an annotated dataset by resource name.
 DELETE FROM google.datalabeling.annotated_datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
-AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' --required;
+AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

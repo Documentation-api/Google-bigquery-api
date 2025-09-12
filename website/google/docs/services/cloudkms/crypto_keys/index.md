@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -366,7 +362,8 @@ FROM google.cloudkms.crypto_keys
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND keyRingsId = '{{ keyRingsId }}' -- required
-AND cryptoKeysId = '{{ cryptoKeysId }}' -- required;
+AND cryptoKeysId = '{{ cryptoKeysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -395,7 +392,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND versionView = '{{ versionView }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -603,7 +601,8 @@ EXEC google.cloudkms.crypto_keys.update_primary_version
 @@json=
 '{
 "cryptoKeyVersionId": "{{ cryptoKeyVersionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="encrypt">
@@ -622,7 +621,8 @@ EXEC google.cloudkms.crypto_keys.encrypt
 "additionalAuthenticatedData": "{{ additionalAuthenticatedData }}", 
 "plaintextCrc32c": "{{ plaintextCrc32c }}", 
 "additionalAuthenticatedDataCrc32c": "{{ additionalAuthenticatedDataCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="decrypt">
@@ -641,7 +641,8 @@ EXEC google.cloudkms.crypto_keys.decrypt
 "additionalAuthenticatedData": "{{ additionalAuthenticatedData }}", 
 "ciphertextCrc32c": "{{ ciphertextCrc32c }}", 
 "additionalAuthenticatedDataCrc32c": "{{ additionalAuthenticatedDataCrc32c }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

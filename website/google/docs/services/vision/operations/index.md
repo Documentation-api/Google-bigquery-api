@@ -43,8 +43,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -83,8 +81,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -125,8 +121,6 @@ Successful response
 </TabItem>
 <TabItem value="locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,8 +160,6 @@ Successful response
 </TabItem>
 <TabItem value="operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -206,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -387,7 +377,8 @@ response
 FROM google.vision.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_operations_get">
@@ -403,7 +394,8 @@ metadata,
 response
 FROM google.vision.operations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="locations_operations_get">
@@ -419,7 +411,8 @@ metadata,
 response
 FROM google.vision.operations
 WHERE locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="operations_get">
@@ -434,7 +427,8 @@ error,
 metadata,
 response
 FROM google.vision.operations
-WHERE operationsId = '{{ operationsId }}' -- required;
+WHERE operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="operations_list">
@@ -451,7 +445,8 @@ response
 FROM google.vision.operations
 WHERE filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -471,7 +466,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 
 ```sql
 DELETE FROM google.vision.operations
-WHERE operationsId = '{{ operationsId }}' --required;
+WHERE operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -491,7 +487,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 
 ```sql
 EXEC google.vision.operations.operations_cancel 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

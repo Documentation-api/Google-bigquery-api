@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -360,7 +356,8 @@ updateTime
 FROM google.backupdr.backup_plan_associations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND backupPlanAssociationsId = '{{ backupPlanAssociationsId }}' -- required;
+AND backupPlanAssociationsId = '{{ backupPlanAssociationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -386,7 +383,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -520,7 +518,8 @@ DELETE FROM google.backupdr.backup_plan_associations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND backupPlanAssociationsId = '{{ backupPlanAssociationsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -547,7 +546,8 @@ EXEC google.backupdr.backup_plan_associations.fetch_for_resource_type
 @pageSize='{{ pageSize }}', 
 @pageToken='{{ pageToken }}', 
 @filter='{{ filter }}', 
-@orderBy='{{ orderBy }}';
+@orderBy='{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="trigger_backup">
@@ -563,7 +563,8 @@ EXEC google.backupdr.backup_plan_associations.trigger_backup
 '{
 "ruleId": "{{ ruleId }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

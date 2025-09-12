@@ -118,7 +118,8 @@ EXEC google.webrisk.threat_lists.compute_diff
 @versionToken='{{ versionToken }}', 
 @constraints.maxDiffEntries='{{ constraints.maxDiffEntries }}', 
 @constraints.maxDatabaseEntries='{{ constraints.maxDatabaseEntries }}', 
-@constraints.supportedCompressions='{{ constraints.supportedCompressions }}';
+@constraints.supportedCompressions='{{ constraints.supportedCompressions }}'
+;
 ```
 </TabItem>
 </Tabs>

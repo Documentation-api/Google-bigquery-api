@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -254,7 +250,8 @@ parentOrgUnitId,
 parentOrgUnitPath
 FROM googleadmin.directory.orgunits
 WHERE customerId = '{{ customerId }}' -- required
-AND orgunitsId = '{{ orgunitsId }}' -- required;
+AND orgunitsId = '{{ orgunitsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -269,7 +266,8 @@ organizationUnits
 FROM googleadmin.directory.orgunits
 WHERE customerId = '{{ customerId }}' -- required
 AND orgUnitPath = '{{ orgUnitPath }}'
-AND type = '{{ type }}';
+AND type = '{{ type }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -484,7 +482,8 @@ Removes an organizational unit.
 ```sql
 DELETE FROM googleadmin.directory.orgunits
 WHERE customerId = '{{ customerId }}' --required
-AND orgunitsId = '{{ orgunitsId }}' --required;
+AND orgunitsId = '{{ orgunitsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

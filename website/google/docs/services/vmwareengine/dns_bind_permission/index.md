@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_dns_bind_permission">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -148,7 +146,8 @@ name,
 principals
 FROM google.vmwareengine.dns_bind_permission
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -175,7 +174,8 @@ EXEC google.vmwareengine.dns_bind_permission.grant
 '{
 "principal": "{{ principal }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="revoke">
@@ -190,7 +190,8 @@ EXEC google.vmwareengine.dns_bind_permission.revoke
 '{
 "principal": "{{ principal }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

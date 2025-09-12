@@ -113,7 +113,8 @@ EXEC google.workflowexecutions.workflows.trigger_pubsub_execution
 "message": "{{ message }}", 
 "GCPCloudEventsMode": "{{ GCPCloudEventsMode }}", 
 "deliveryAttempt": {{ deliveryAttempt }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

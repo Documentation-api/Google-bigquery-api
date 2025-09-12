@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ parent,
 scopes,
 title
 FROM google.accesscontextmanager.access_policies
-WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required;
+WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -254,7 +251,8 @@ title
 FROM google.accesscontextmanager.access_policies
 WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -372,7 +370,8 @@ Deletes an access policy based on the resource name. The long-running operation 
 
 ```sql
 DELETE FROM google.accesscontextmanager.access_policies
-WHERE accessPoliciesId = '{{ accessPoliciesId }}' --required;
+WHERE accessPoliciesId = '{{ accessPoliciesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

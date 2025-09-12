@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_references_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -173,7 +171,8 @@ resourceType
 FROM google.apigee.references
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND referencesId = '{{ referencesId }}' -- required;
+AND referencesId = '{{ referencesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -303,7 +302,8 @@ Deletes a Reference from an environment. Returns the deleted Reference resource.
 DELETE FROM google.apigee.references
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND referencesId = '{{ referencesId }}' --required;
+AND referencesId = '{{ referencesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

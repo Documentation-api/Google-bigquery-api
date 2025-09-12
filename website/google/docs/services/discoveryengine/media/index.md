@@ -130,7 +130,8 @@ EXEC google.discoveryengine.media.media_download
 @enginesId='{{ enginesId }}' --required, 
 @sessionsId='{{ sessionsId }}' --required, 
 @fileId='{{ fileId }}', 
-@viewId='{{ viewId }}';
+@viewId='{{ viewId }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -111,7 +111,8 @@ EXEC google.artifactregistry.kfp_artifacts.upload
 '{
 "tags": "{{ tags }}", 
 "description": "{{ description }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

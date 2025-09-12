@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_annotation_spec_sets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_annotation_spec_sets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -231,7 +227,8 @@ description,
 displayName
 FROM google.datalabeling.annotation_spec_sets
 WHERE projectsId = '{{ projectsId }}' -- required
-AND annotationSpecSetsId = '{{ annotationSpecSetsId }}' -- required;
+AND annotationSpecSetsId = '{{ annotationSpecSetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_annotation_spec_sets_list">
@@ -249,7 +246,8 @@ FROM google.datalabeling.annotation_spec_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -319,7 +317,8 @@ Deletes an annotation spec set by resource name.
 ```sql
 DELETE FROM google.datalabeling.annotation_spec_sets
 WHERE projectsId = '{{ projectsId }}' --required
-AND annotationSpecSetsId = '{{ annotationSpecSetsId }}' --required;
+AND annotationSpecSetsId = '{{ annotationSpecSetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

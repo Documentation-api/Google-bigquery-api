@@ -94,7 +94,8 @@ Turns off 2-Step Verification for user.
 
 ```sql
 EXEC googleadmin.directory.two_step_verification.turn_off 
-@userKey='{{ userKey }}' --required;
+@userKey='{{ userKey }}' --required
+;
 ```
 </TabItem>
 </Tabs>

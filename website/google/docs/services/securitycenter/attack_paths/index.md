@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_simulations_valued_resources_attack_paths_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_simulations_attack_exposure_results_attack_paths_list">
-
-Successful response
 
 <table>
 <thead>
@@ -104,8 +100,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_simulations_attack_paths_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_attack_paths_list">
-
-Successful response
 
 <table>
 <thead>
@@ -289,7 +281,8 @@ AND simulationsId = '{{ simulationsId }}' -- required
 AND valuedResourcesId = '{{ valuedResourcesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_simulations_attack_exposure_results_attack_paths_list">
@@ -307,7 +300,8 @@ AND simulationsId = '{{ simulationsId }}' -- required
 AND attackExposureResultsId = '{{ attackExposureResultsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_simulations_attack_paths_list">
@@ -324,7 +318,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND simulationsId = '{{ simulationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_attack_paths_list">
@@ -340,7 +335,8 @@ FROM google.securitycenter.attack_paths
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

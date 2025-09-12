@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -255,7 +251,8 @@ state,
 updateTime
 FROM google.cloudcommerceprocurement.accounts
 WHERE providersId = '{{ providersId }}' -- required
-AND accountsId = '{{ accountsId }}' -- required;
+AND accountsId = '{{ accountsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -274,7 +271,8 @@ updateTime
 FROM google.cloudcommerceprocurement.accounts
 WHERE providersId = '{{ providersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -303,7 +301,8 @@ EXEC google.cloudcommerceprocurement.accounts.approve
 "properties": "{{ properties }}", 
 "approvalName": "{{ approvalName }}", 
 "reason": "{{ reason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reject">
@@ -318,7 +317,8 @@ EXEC google.cloudcommerceprocurement.accounts.reject
 '{
 "approvalName": "{{ approvalName }}", 
 "reason": "{{ reason }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reset">
@@ -328,7 +328,8 @@ Resets an Account and cancels all associated Entitlements. Partner can only rese
 ```sql
 EXEC google.cloudcommerceprocurement.accounts.reset 
 @providersId='{{ providersId }}' --required, 
-@accountsId='{{ accountsId }}' --required;
+@accountsId='{{ accountsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

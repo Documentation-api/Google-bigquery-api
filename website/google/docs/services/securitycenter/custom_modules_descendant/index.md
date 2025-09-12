@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_security_health_analytics_settings_custom_modules_list_descendant">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -99,8 +97,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_event_threat_detection_settings_custom_modules_list_descendant">
-
-Successful response
 
 <table>
 <thead>
@@ -166,8 +162,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_list_descendant">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -221,8 +215,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_list_descendant">
-
-Successful response
 
 <table>
 <thead>
@@ -288,8 +280,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_list_descendant">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -343,8 +333,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_list_descendant">
-
-Successful response
 
 <table>
 <thead>
@@ -541,7 +529,8 @@ updateTime
 FROM google.securitycenter.custom_modules_descendant
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_event_threat_detection_settings_custom_modules_list_descendant">
@@ -563,7 +552,8 @@ updateTime
 FROM google.securitycenter.custom_modules_descendant
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_list_descendant">
@@ -583,7 +573,8 @@ updateTime
 FROM google.securitycenter.custom_modules_descendant
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_list_descendant">
@@ -605,7 +596,8 @@ updateTime
 FROM google.securitycenter.custom_modules_descendant
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_list_descendant">
@@ -625,7 +617,8 @@ updateTime
 FROM google.securitycenter.custom_modules_descendant
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_list_descendant">
@@ -647,7 +640,8 @@ updateTime
 FROM google.securitycenter.custom_modules_descendant
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

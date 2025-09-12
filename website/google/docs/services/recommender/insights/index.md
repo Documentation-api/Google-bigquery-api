@@ -46,8 +46,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_insight_types_insights_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -121,8 +119,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_insight_types_insights_get">
-
-Successful response
 
 <table>
 <thead>
@@ -198,8 +194,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_insight_types_insights_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -273,8 +267,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_insight_types_insights_get">
-
-Successful response
 
 <table>
 <thead>
@@ -350,8 +342,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_insight_types_insights_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -425,8 +415,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_insight_types_insights_list">
-
-Successful response
 
 <table>
 <thead>
@@ -502,8 +490,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_insight_types_insights_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -577,8 +563,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_insight_types_insights_list">
-
-Successful response
 
 <table>
 <thead>
@@ -859,7 +843,8 @@ FROM google.recommender.insights
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
-AND insightsId = '{{ insightsId }}' -- required;
+AND insightsId = '{{ insightsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_insight_types_insights_get">
@@ -884,7 +869,8 @@ FROM google.recommender.insights
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
-AND insightsId = '{{ insightsId }}' -- required;
+AND insightsId = '{{ insightsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_insight_types_insights_get">
@@ -909,7 +895,8 @@ FROM google.recommender.insights
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
-AND insightsId = '{{ insightsId }}' -- required;
+AND insightsId = '{{ insightsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_insight_types_insights_get">
@@ -934,7 +921,8 @@ FROM google.recommender.insights
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
-AND insightsId = '{{ insightsId }}' -- required;
+AND insightsId = '{{ insightsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_insight_types_insights_list">
@@ -961,7 +949,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_insight_types_insights_list">
@@ -988,7 +977,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_insight_types_insights_list">
@@ -1015,7 +1005,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_insight_types_insights_list">
@@ -1042,7 +1033,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND insightTypesId = '{{ insightTypesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1073,7 +1065,8 @@ EXEC google.recommender.insights.projects_locations_insight_types_insights_mark_
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_insight_types_insights_mark_accepted">
@@ -1090,7 +1083,8 @@ EXEC google.recommender.insights.billing_accounts_locations_insight_types_insigh
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_insight_types_insights_mark_accepted">
@@ -1107,7 +1101,8 @@ EXEC google.recommender.insights.folders_locations_insight_types_insights_mark_a
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_insight_types_insights_mark_accepted">
@@ -1124,7 +1119,8 @@ EXEC google.recommender.insights.organizations_locations_insight_types_insights_
 '{
 "stateMetadata": "{{ stateMetadata }}", 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -97,6 +97,7 @@ Generates a secret to be used with the ValidateInstaller.
 
 ```sql
 EXEC google.prod_tt_sasportal.installer.installer_generate_secret 
+
 ;
 ```
 </TabItem>
@@ -111,7 +112,8 @@ EXEC google.prod_tt_sasportal.installer.installer_validate
 "installerId": "{{ installerId }}", 
 "secret": "{{ secret }}", 
 "encodedSecret": "{{ encodedSecret }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

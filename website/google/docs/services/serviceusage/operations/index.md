@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -230,7 +226,8 @@ error,
 metadata,
 response
 FROM google.serviceusage.operations
-WHERE operationsId = '{{ operationsId }}' -- required;
+WHERE operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -248,7 +245,8 @@ FROM google.serviceusage.operations
 WHERE pageSize = '{{ pageSize }}'
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -268,7 +266,8 @@ Deletes a long-running operation. This method indicates that the client is no lo
 
 ```sql
 DELETE FROM google.serviceusage.operations
-WHERE operationsId = '{{ operationsId }}' --required;
+WHERE operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -288,7 +287,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 
 ```sql
 EXEC google.serviceusage.operations.cancel 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

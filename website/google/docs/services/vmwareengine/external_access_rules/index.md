@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -358,7 +354,8 @@ FROM google.vmwareengine.external_access_rules
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND networkPoliciesId = '{{ networkPoliciesId }}' -- required
-AND externalAccessRulesId = '{{ externalAccessRulesId }}' -- required;
+AND externalAccessRulesId = '{{ externalAccessRulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -387,7 +384,8 @@ AND networkPoliciesId = '{{ networkPoliciesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -569,7 +567,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND networkPoliciesId = '{{ networkPoliciesId }}' --required
 AND externalAccessRulesId = '{{ externalAccessRulesId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

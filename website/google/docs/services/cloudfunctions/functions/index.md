@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -442,7 +438,8 @@ FROM google.cloudfunctions.functions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND functionsId = '{{ functionsId }}' -- required
-AND revision = '{{ revision }}';
+AND revision = '{{ revision }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -473,7 +470,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -642,7 +640,8 @@ Deletes a function with the given name from the specified project. If the given 
 DELETE FROM google.cloudfunctions.functions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND functionsId = '{{ functionsId }}' --required;
+AND functionsId = '{{ functionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -675,7 +674,8 @@ EXEC google.cloudfunctions.functions.setup_function_upgrade_config
 @@json=
 '{
 "triggerServiceAccount": "{{ triggerServiceAccount }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="abort_function_upgrade">
@@ -686,7 +686,8 @@ Aborts generation upgrade process for a function with the given name from the sp
 EXEC google.cloudfunctions.functions.abort_function_upgrade 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@functionsId='{{ functionsId }}' --required;
+@functionsId='{{ functionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="redirect_function_upgrade_traffic">
@@ -697,7 +698,8 @@ Changes the traffic target of a function from the original 1st Gen function to t
 EXEC google.cloudfunctions.functions.redirect_function_upgrade_traffic 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@functionsId='{{ functionsId }}' --required;
+@functionsId='{{ functionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="rollback_function_upgrade_traffic">
@@ -708,7 +710,8 @@ Reverts the traffic target of a function from the 2nd Gen copy to the original 1
 EXEC google.cloudfunctions.functions.rollback_function_upgrade_traffic 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@functionsId='{{ functionsId }}' --required;
+@functionsId='{{ functionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="commit_function_upgrade">
@@ -719,7 +722,8 @@ Finalizes the upgrade after which function upgrade can not be rolled back. This 
 EXEC google.cloudfunctions.functions.commit_function_upgrade 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@functionsId='{{ functionsId }}' --required;
+@functionsId='{{ functionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="generate_upload_url">
@@ -734,7 +738,8 @@ EXEC google.cloudfunctions.functions.generate_upload_url
 '{
 "kmsKeyName": "{{ kmsKeyName }}", 
 "environment": "{{ environment }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_download_url">
@@ -745,7 +750,8 @@ Returns a signed URL for downloading deployed function source code. The URL is o
 EXEC google.cloudfunctions.functions.generate_download_url 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@functionsId='{{ functionsId }}' --required;
+@functionsId='{{ functionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="detach_function">
@@ -756,7 +762,8 @@ Detaches 2nd Gen function to Cloud Run function.
 EXEC google.cloudfunctions.functions.detach_function 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@functionsId='{{ functionsId }}' --required;
+@functionsId='{{ functionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_locations_org_policy_violations_previews_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_org_policy_violations_previews_list">
-
-Successful response
 
 <table>
 <thead>
@@ -252,7 +248,8 @@ violationsCount
 FROM google.policysimulator.org_policy_violations_previews
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND orgPolicyViolationsPreviewsId = '{{ orgPolicyViolationsPreviewsId }}' -- required;
+AND orgPolicyViolationsPreviewsId = '{{ orgPolicyViolationsPreviewsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_org_policy_violations_previews_list">
@@ -272,7 +269,8 @@ FROM google.policysimulator.org_policy_violations_previews
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

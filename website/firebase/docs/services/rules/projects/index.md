@@ -99,7 +99,8 @@ EXEC firebase.rules.projects.test
 '{
 "source": "{{ source }}", 
 "testSuite": "{{ testSuite }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_rule">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -219,7 +217,8 @@ FROM google.compute.security_policies_rule
 WHERE project = '{{ project }}' -- required
 AND region = '{{ region }}' -- required
 AND securityPolicy = '{{ securityPolicy }}' -- required
-AND priority = '{{ priority }}';
+AND priority = '{{ priority }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -397,7 +396,8 @@ DELETE FROM google.compute.security_policies_rule
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND securityPolicy = '{{ securityPolicy }}' --required
-AND priority = '{{ priority }}';
+AND priority = '{{ priority }}'
+;
 ```
 </TabItem>
 </Tabs>

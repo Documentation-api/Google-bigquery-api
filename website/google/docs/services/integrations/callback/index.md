@@ -118,7 +118,8 @@ EXEC google.integrations.callback.callback_generate_token
 @code='{{ code }}', 
 @gcpProjectId='{{ gcpProjectId }}', 
 @redirectUri='{{ redirectUri }}', 
-@product='{{ product }}';
+@product='{{ product }}'
+;
 ```
 </TabItem>
 </Tabs>

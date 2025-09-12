@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -216,7 +214,8 @@ AND servicesId1 = '{{ servicesId1 }}' -- required
 AND servicesId2 = '{{ servicesId2 }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -298,7 +297,8 @@ DELETE FROM google.serviceconsumermanagement.tenancy_units
 WHERE servicesId = '{{ servicesId }}' --required
 AND servicesId1 = '{{ servicesId1 }}' --required
 AND servicesId2 = '{{ servicesId2 }}' --required
-AND tenancyUnitsId = '{{ tenancyUnitsId }}' --required;
+AND tenancyUnitsId = '{{ tenancyUnitsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -328,7 +328,8 @@ EXEC google.serviceconsumermanagement.tenancy_units.apply_project_config
 '{
 "projectConfig": "{{ projectConfig }}", 
 "tag": "{{ tag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="attach_project">
@@ -346,7 +347,8 @@ EXEC google.serviceconsumermanagement.tenancy_units.attach_project
 "reservedResource": "{{ reservedResource }}", 
 "externalResource": "{{ externalResource }}", 
 "tag": "{{ tag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete_project">
@@ -362,7 +364,8 @@ EXEC google.serviceconsumermanagement.tenancy_units.undelete_project
 @@json=
 '{
 "tag": "{{ tag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

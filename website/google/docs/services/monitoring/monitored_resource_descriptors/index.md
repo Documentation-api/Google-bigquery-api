@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_monitored_resource_descriptors_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_monitored_resource_descriptors_list">
-
-Successful response
 
 <table>
 <thead>
@@ -228,7 +224,8 @@ launchStage,
 type
 FROM google.monitoring.monitored_resource_descriptors
 WHERE projectsId = '{{ projectsId }}' -- required
-AND monitoredResourceDescriptorsId = '{{ monitoredResourceDescriptorsId }}' -- required;
+AND monitoredResourceDescriptorsId = '{{ monitoredResourceDescriptorsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_monitored_resource_descriptors_list">
@@ -247,7 +244,8 @@ FROM google.monitoring.monitored_resource_descriptors
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

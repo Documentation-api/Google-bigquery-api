@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ etag,
 items,
 kind
 FROM googleadmin.directory.privileges
-WHERE customer = '{{ customer }}' -- required;
+WHERE customer = '{{ customer }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

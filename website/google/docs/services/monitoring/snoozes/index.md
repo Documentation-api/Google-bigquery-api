@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_snoozes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_snoozes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -225,7 +221,8 @@ displayName,
 interval
 FROM google.monitoring.snoozes
 WHERE projectsId = '{{ projectsId }}' -- required
-AND snoozesId = '{{ snoozesId }}' -- required;
+AND snoozesId = '{{ snoozesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_snoozes_list">
@@ -242,7 +239,8 @@ FROM google.monitoring.snoozes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

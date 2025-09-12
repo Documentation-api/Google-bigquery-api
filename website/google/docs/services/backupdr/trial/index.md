@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_trial">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -153,7 +151,8 @@ startTime,
 state
 FROM google.backupdr.trial
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -174,7 +173,8 @@ Subscribes to a trial for a project
 ```sql
 EXEC google.backupdr.trial.subscribe 
 @projectsId='{{ projectsId }}' --required, 
-@locationsId='{{ locationsId }}' --required;
+@locationsId='{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

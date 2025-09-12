@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_datasets_annotated_datasets_feedback_threads_feedback_messages_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_feedback_threads_feedback_messages_list">
-
-Successful response
 
 <table>
 <thead>
@@ -255,7 +251,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
 AND feedbackThreadsId = '{{ feedbackThreadsId }}' -- required
-AND feedbackMessagesId = '{{ feedbackMessagesId }}' -- required;
+AND feedbackMessagesId = '{{ feedbackMessagesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_datasets_annotated_datasets_feedback_threads_feedback_messages_list">
@@ -276,7 +273,8 @@ AND datasetsId = '{{ datasetsId }}' -- required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' -- required
 AND feedbackThreadsId = '{{ feedbackThreadsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -399,7 +397,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND annotatedDatasetsId = '{{ annotatedDatasetsId }}' --required
 AND feedbackThreadsId = '{{ feedbackThreadsId }}' --required
-AND feedbackMessagesId = '{{ feedbackMessagesId }}' --required;
+AND feedbackMessagesId = '{{ feedbackMessagesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

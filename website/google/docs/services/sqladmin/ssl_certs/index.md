@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -231,7 +227,8 @@ sha1Fingerprint
 FROM google.sqladmin.ssl_certs
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
-AND sha1Fingerprint = '{{ sha1Fingerprint }}' -- required;
+AND sha1Fingerprint = '{{ sha1Fingerprint }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -244,7 +241,8 @@ items,
 kind
 FROM google.sqladmin.ssl_certs
 WHERE project = '{{ project }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -319,7 +317,8 @@ Deletes the SSL certificate. For First Generation instances, the certificate rem
 DELETE FROM google.sqladmin.ssl_certs
 WHERE project = '{{ project }}' --required
 AND instance = '{{ instance }}' --required
-AND sha1Fingerprint = '{{ sha1Fingerprint }}' --required;
+AND sha1Fingerprint = '{{ sha1Fingerprint }}' --required
+;
 ```
 </TabItem>
 </Tabs>

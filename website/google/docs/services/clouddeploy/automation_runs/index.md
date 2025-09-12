@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -384,7 +380,8 @@ FROM google.clouddeploy.automation_runs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND deliveryPipelinesId = '{{ deliveryPipelinesId }}' -- required
-AND automationRunsId = '{{ automationRunsId }}' -- required;
+AND automationRunsId = '{{ automationRunsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -418,7 +415,8 @@ AND deliveryPipelinesId = '{{ deliveryPipelinesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -441,7 +439,8 @@ EXEC google.clouddeploy.automation_runs.cancel
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @deliveryPipelinesId='{{ deliveryPipelinesId }}' --required, 
-@automationRunsId='{{ automationRunsId }}' --required;
+@automationRunsId='{{ automationRunsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

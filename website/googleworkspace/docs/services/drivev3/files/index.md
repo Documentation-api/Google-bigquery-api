@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -375,8 +373,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -1065,7 +1061,8 @@ AND acknowledgeAbuse = '{{ acknowledgeAbuse }}'
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND includePermissionsForView = '{{ includePermissionsForView }}'
-AND includeLabels = '{{ includeLabels }}';
+AND includeLabels = '{{ includeLabels }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -1153,7 +1150,8 @@ AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND teamDriveId = '{{ teamDriveId }}'
 AND includePermissionsForView = '{{ includePermissionsForView }}'
-AND includeLabels = '{{ includeLabels }}';
+AND includeLabels = '{{ includeLabels }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1912,7 +1910,8 @@ DELETE FROM googleworkspace.drivev3.files
 WHERE fileId = '{{ fileId }}' --required
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
-AND enforceSingleParent = '{{ enforceSingleParent }}';
+AND enforceSingleParent = '{{ enforceSingleParent }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2012,7 +2011,8 @@ EXEC googleworkspace.drivev3.files.copy
 "sha256Checksum": "{{ sha256Checksum }}", 
 "inheritedPermissionsDisabled": {{ inheritedPermissionsDisabled }}, 
 "downloadRestrictions": "{{ downloadRestrictions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="empty_trash">
@@ -2022,7 +2022,8 @@ Permanently deletes all of the user's trashed files.
 ```sql
 EXEC googleworkspace.drivev3.files.empty_trash 
 @enforceSingleParent={{ enforceSingleParent }}, 
-@driveId='{{ driveId }}';
+@driveId='{{ driveId }}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -2032,7 +2033,8 @@ Exports a Google Workspace document to the requested MIME type and returns expor
 ```sql
 EXEC googleworkspace.drivev3.files.export 
 @fileId='{{ fileId }}' --required, 
-@mimeType='{{ mimeType }}' --required;
+@mimeType='{{ mimeType }}' --required
+;
 ```
 </TabItem>
 <TabItem value="generate_ids">
@@ -2043,7 +2045,8 @@ Generates a set of file IDs which can be provided in create or copy requests.
 EXEC googleworkspace.drivev3.files.generate_ids 
 @count='{{ count }}', 
 @space='{{ space }}', 
-@type='{{ type }}';
+@type='{{ type }}'
+;
 ```
 </TabItem>
 <TabItem value="modify_labels">
@@ -2057,7 +2060,8 @@ EXEC googleworkspace.drivev3.files.modify_labels
 '{
 "labelModifications": "{{ labelModifications }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="watch">
@@ -2084,7 +2088,8 @@ EXEC googleworkspace.drivev3.files.watch
 "address": "{{ address }}", 
 "params": "{{ params }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="download">
@@ -2095,7 +2100,8 @@ Downloads content of a file. Operations are valid for 24 hours from the time of 
 EXEC googleworkspace.drivev3.files.download 
 @fileId='{{ fileId }}' --required, 
 @mimeType='{{ mimeType }}', 
-@revisionId='{{ revisionId }}';
+@revisionId='{{ revisionId }}'
+;
 ```
 </TabItem>
 </Tabs>

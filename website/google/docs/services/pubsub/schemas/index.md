@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_schemas_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_schemas_list">
-
-Successful response
 
 <table>
 <thead>
@@ -265,7 +261,8 @@ type
 FROM google.pubsub.schemas
 WHERE projectsId = '{{ projectsId }}' -- required
 AND schemasId = '{{ schemasId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_schemas_list">
@@ -283,7 +280,8 @@ FROM google.pubsub.schemas
 WHERE projectsId = '{{ projectsId }}' -- required
 AND view = '{{ view }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -372,7 +370,8 @@ Deletes a schema.
 ```sql
 DELETE FROM google.pubsub.schemas
 WHERE projectsId = '{{ projectsId }}' --required
-AND schemasId = '{{ schemasId }}' --required;
+AND schemasId = '{{ schemasId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -400,7 +399,8 @@ EXEC google.pubsub.schemas.projects_schemas_commit
 @@json=
 '{
 "schema": "{{ schema }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_schemas_rollback">
@@ -414,7 +414,8 @@ EXEC google.pubsub.schemas.projects_schemas_rollback
 @@json=
 '{
 "revisionId": "{{ revisionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_schemas_validate">
@@ -427,7 +428,8 @@ EXEC google.pubsub.schemas.projects_schemas_validate
 @@json=
 '{
 "schema": "{{ schema }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_schemas_validate_message">
@@ -443,7 +445,8 @@ EXEC google.pubsub.schemas.projects_schemas_validate_message
 "schema": "{{ schema }}", 
 "message": "{{ message }}", 
 "encoding": "{{ encoding }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

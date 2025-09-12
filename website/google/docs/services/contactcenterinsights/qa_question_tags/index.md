@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -244,7 +240,8 @@ updateTime
 FROM google.contactcenterinsights.qa_question_tags
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND qaQuestionTagsId = '{{ qaQuestionTagsId }}' -- required;
+AND qaQuestionTagsId = '{{ qaQuestionTagsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -261,7 +258,8 @@ updateTime
 FROM google.contactcenterinsights.qa_question_tags
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -389,7 +387,8 @@ Deletes a QaQuestionTag.
 DELETE FROM google.contactcenterinsights.qa_question_tags
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND qaQuestionTagsId = '{{ qaQuestionTagsId }}' --required;
+AND qaQuestionTagsId = '{{ qaQuestionTagsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -281,7 +277,8 @@ ssoMode,
 targetGroup,
 targetOrgUnit
 FROM google.cloudidentity.inbound_sso_assignments
-WHERE inboundSsoAssignmentsId = '{{ inboundSsoAssignmentsId }}' -- required;
+WHERE inboundSsoAssignmentsId = '{{ inboundSsoAssignmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -302,7 +299,8 @@ targetOrgUnit
 FROM google.cloudidentity.inbound_sso_assignments
 WHERE filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -453,7 +451,8 @@ Deletes an InboundSsoAssignment. To disable SSO, Create (or Update) an assignmen
 
 ```sql
 DELETE FROM google.cloudidentity.inbound_sso_assignments
-WHERE inboundSsoAssignmentsId = '{{ inboundSsoAssignmentsId }}' --required;
+WHERE inboundSsoAssignmentsId = '{{ inboundSsoAssignmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

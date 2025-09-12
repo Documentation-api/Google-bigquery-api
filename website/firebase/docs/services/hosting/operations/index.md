@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -192,7 +190,8 @@ response
 FROM firebase.hosting.operations
 WHERE filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -215,7 +214,8 @@ DELETE FROM firebase.hosting.operations
 WHERE projectsId = '{{ projectsId }}' --required
 AND sitesId = '{{ sitesId }}' --required
 AND customDomainsId = '{{ customDomainsId }}' --required
-AND operationsId = '{{ operationsId }}' --required;
+AND operationsId = '{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -238,7 +238,8 @@ EXEC firebase.hosting.operations.cancel
 @projectsId='{{ projectsId }}' --required, 
 @sitesId='{{ sitesId }}' --required, 
 @customDomainsId='{{ customDomainsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ name,
 value
 FROM google.cloudresourcemanager.capabilities
 WHERE foldersId = '{{ foldersId }}' -- required
-AND capabilitiesId = '{{ capabilitiesId }}' -- required;
+AND capabilitiesId = '{{ capabilitiesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

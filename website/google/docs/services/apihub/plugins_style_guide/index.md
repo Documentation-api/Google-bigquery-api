@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_style_guide">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ linter
 FROM google.apihub.plugins_style_guide
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND pluginsId = '{{ pluginsId }}' -- required;
+AND pluginsId = '{{ pluginsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

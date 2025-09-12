@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_capabilities">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ canCreateAdminLabels,
 canCreateSharedLabels
 FROM googleworkspace.drivelabelsv2beta.users_capabilities
 WHERE usersId = '{{ usersId }}' -- required
-AND customer = '{{ customer }}';
+AND customer = '{{ customer }}'
+;
 ```
 </TabItem>
 </Tabs>

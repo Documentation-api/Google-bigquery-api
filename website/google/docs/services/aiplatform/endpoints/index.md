@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -575,7 +571,8 @@ updateTime
 FROM google.aiplatform.endpoints
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND endpointsId = '{{ endpointsId }}' -- required;
+AND endpointsId = '{{ endpointsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -614,7 +611,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND readMask = '{{ readMask }}'
 AND orderBy = '{{ orderBy }}'
-AND gdcZone = '{{ gdcZone }}';
+AND gdcZone = '{{ gdcZone }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -868,7 +866,8 @@ Deletes an Endpoint.
 DELETE FROM google.aiplatform.endpoints
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND endpointsId = '{{ endpointsId }}' --required;
+AND endpointsId = '{{ endpointsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -910,7 +909,8 @@ EXEC google.aiplatform.endpoints.deploy_model
 '{
 "deployedModel": "{{ deployedModel }}", 
 "trafficSplit": "{{ trafficSplit }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undeploy_model">
@@ -926,7 +926,8 @@ EXEC google.aiplatform.endpoints.undeploy_model
 '{
 "deployedModelId": "{{ deployedModelId }}", 
 "trafficSplit": "{{ trafficSplit }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="mutate_deployed_model">
@@ -942,7 +943,8 @@ EXEC google.aiplatform.endpoints.mutate_deployed_model
 '{
 "deployedModel": "{{ deployedModel }}", 
 "updateMask": "{{ updateMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="predict">
@@ -956,7 +958,8 @@ EXEC google.aiplatform.endpoints.predict
 '{
 "instances": "{{ instances }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="raw_predict">
@@ -971,7 +974,8 @@ EXEC google.aiplatform.endpoints.raw_predict
 @@json=
 '{
 "httpBody": "{{ httpBody }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stream_raw_predict">
@@ -986,7 +990,8 @@ EXEC google.aiplatform.endpoints.stream_raw_predict
 @@json=
 '{
 "httpBody": "{{ httpBody }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="direct_predict">
@@ -1002,7 +1007,8 @@ EXEC google.aiplatform.endpoints.direct_predict
 '{
 "inputs": "{{ inputs }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="direct_raw_predict">
@@ -1018,7 +1024,8 @@ EXEC google.aiplatform.endpoints.direct_raw_predict
 '{
 "methodName": "{{ methodName }}", 
 "input": "{{ input }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="server_streaming_predict">
@@ -1034,7 +1041,8 @@ EXEC google.aiplatform.endpoints.server_streaming_predict
 '{
 "inputs": "{{ inputs }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="predict_long_running">
@@ -1048,7 +1056,8 @@ EXEC google.aiplatform.endpoints.predict_long_running
 '{
 "instances": "{{ instances }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="explain">
@@ -1066,7 +1075,8 @@ EXEC google.aiplatform.endpoints.explain
 "parameters": "{{ parameters }}", 
 "explanationSpecOverride": "{{ explanationSpecOverride }}", 
 "deployedModelId": "{{ deployedModelId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_content">
@@ -1087,7 +1097,8 @@ EXEC google.aiplatform.endpoints.generate_content
 "safetySettings": "{{ safetySettings }}", 
 "modelArmorConfig": "{{ modelArmorConfig }}", 
 "generationConfig": "{{ generationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stream_generate_content">
@@ -1108,7 +1119,8 @@ EXEC google.aiplatform.endpoints.stream_generate_content
 "safetySettings": "{{ safetySettings }}", 
 "modelArmorConfig": "{{ modelArmorConfig }}", 
 "generationConfig": "{{ generationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="count_tokens">
@@ -1126,7 +1138,8 @@ EXEC google.aiplatform.endpoints.count_tokens
 "systemInstruction": "{{ systemInstruction }}", 
 "tools": "{{ tools }}", 
 "generationConfig": "{{ generationConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="compute_tokens">
@@ -1141,7 +1154,8 @@ EXEC google.aiplatform.endpoints.compute_tokens
 "instances": "{{ instances }}", 
 "model": "{{ model }}", 
 "contents": "{{ contents }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="fetch_predict_operation">
@@ -1154,7 +1168,8 @@ EXEC google.aiplatform.endpoints.fetch_predict_operation
 @@json=
 '{
 "operationName": "{{ operationName }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

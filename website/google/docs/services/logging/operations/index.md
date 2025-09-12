@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -87,8 +85,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -129,8 +125,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_operations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -169,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_operations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -211,8 +203,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -251,8 +241,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -293,8 +281,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -334,8 +320,6 @@ Successful response
 </TabItem>
 <TabItem value="billing_accounts_locations_operations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -374,8 +358,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="locations_operations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -621,7 +603,8 @@ response
 FROM google.logging.operations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_operations_get">
@@ -638,7 +621,8 @@ response
 FROM google.logging.operations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_operations_get">
@@ -655,7 +639,8 @@ response
 FROM google.logging.operations
 WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_operations_get">
@@ -672,7 +657,8 @@ response
 FROM google.logging.operations
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_operations_list">
@@ -691,7 +677,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_operations_list">
@@ -710,7 +697,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_operations_list">
@@ -729,7 +717,8 @@ WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_operations_list">
@@ -748,7 +737,8 @@ WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="locations_operations_list">
@@ -766,7 +756,8 @@ FROM google.logging.operations
 WHERE name = '{{ name }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -791,7 +782,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.logging.operations.projects_locations_operations_cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_operations_cancel">
@@ -802,7 +794,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.logging.operations.organizations_locations_operations_cancel 
 @organizationsId='{{ organizationsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_operations_cancel">
@@ -813,7 +806,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.logging.operations.folders_locations_operations_cancel 
 @foldersId='{{ foldersId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_operations_cancel">
@@ -824,7 +818,8 @@ Starts asynchronous cancellation on a long-running operation. The server makes a
 EXEC google.logging.operations.billing_accounts_locations_operations_cancel 
 @billingAccountsId='{{ billingAccountsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@operationsId='{{ operationsId }}' --required;
+@operationsId='{{ operationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

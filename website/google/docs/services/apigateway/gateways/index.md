@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -292,7 +288,8 @@ updateTime
 FROM google.apigateway.gateways
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND gatewaysId = '{{ gatewaysId }}' -- required;
+AND gatewaysId = '{{ gatewaysId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -315,7 +312,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -443,7 +441,8 @@ Deletes a single Gateway.
 DELETE FROM google.apigateway.gateways
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND gatewaysId = '{{ gatewaysId }}' --required;
+AND gatewaysId = '{{ gatewaysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

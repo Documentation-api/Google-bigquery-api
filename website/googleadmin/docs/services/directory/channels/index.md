@@ -101,7 +101,8 @@ EXEC googleadmin.directory.channels.stop
 "resourceId": "{{ resourceId }}", 
 "resourceUri": "{{ resourceUri }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

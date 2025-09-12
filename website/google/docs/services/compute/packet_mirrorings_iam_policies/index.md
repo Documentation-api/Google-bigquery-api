@@ -110,7 +110,8 @@ EXEC google.compute.packet_mirrorings_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_targetservers_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -196,7 +194,8 @@ sSLInfo
 FROM google.apigee.targetservers
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND targetserversId = '{{ targetserversId }}' -- required;
+AND targetserversId = '{{ targetserversId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -360,7 +359,8 @@ Deletes a TargetServer from an environment. Returns the deleted TargetServer res
 DELETE FROM google.apigee.targetservers
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND targetserversId = '{{ targetserversId }}' --required;
+AND targetserversId = '{{ targetserversId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

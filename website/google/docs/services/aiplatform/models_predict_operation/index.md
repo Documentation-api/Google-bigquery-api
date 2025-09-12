@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_predict_operation">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ FROM google.aiplatform.models_predict_operation
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND publishersId = '{{ publishersId }}' -- required
-AND modelsId = '{{ modelsId }}' -- required;
+AND modelsId = '{{ modelsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

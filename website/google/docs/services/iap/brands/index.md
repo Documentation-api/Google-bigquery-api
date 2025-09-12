@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -183,7 +179,8 @@ orgInternalOnly,
 supportEmail
 FROM google.iap.brands
 WHERE projectsId = '{{ projectsId }}' -- required
-AND brandsId = '{{ brandsId }}' -- required;
+AND brandsId = '{{ brandsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -194,7 +191,8 @@ Lists the existing brands for the project.
 SELECT
 brands
 FROM google.iap.brands
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

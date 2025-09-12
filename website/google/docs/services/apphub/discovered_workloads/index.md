@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -218,7 +214,8 @@ workloadReference
 FROM google.apphub.discovered_workloads
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND discoveredWorkloadsId = '{{ discoveredWorkloadsId }}' -- required;
+AND discoveredWorkloadsId = '{{ discoveredWorkloadsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -236,7 +233,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -258,7 +256,8 @@ Lists a Discovered Workload in a host project and location, with a given resourc
 EXEC google.apphub.discovered_workloads.lookup 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@uri='{{ uri }}';
+@uri='{{ uri }}'
+;
 ```
 </TabItem>
 </Tabs>

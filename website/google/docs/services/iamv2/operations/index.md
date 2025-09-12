@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -164,7 +162,8 @@ FROM google.iamv2.operations
 WHERE policiesId = '{{ policiesId }}' -- required
 AND policiesId1 = '{{ policiesId1 }}' -- required
 AND policiesId2 = '{{ policiesId2 }}' -- required
-AND operationsId = '{{ operationsId }}' -- required;
+AND operationsId = '{{ operationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

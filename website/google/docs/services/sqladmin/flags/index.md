@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ items,
 kind
 FROM google.sqladmin.flags
 WHERE databaseVersion = '{{ databaseVersion }}'
-AND flagScope = '{{ flagScope }}';
+AND flagScope = '{{ flagScope }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -434,7 +430,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND workstationClustersId = '{{ workstationClustersId }}' -- required
 AND workstationConfigsId = '{{ workstationConfigsId }}' -- required
-AND workstationsId = '{{ workstationsId }}' -- required;
+AND workstationsId = '{{ workstationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -467,7 +464,8 @@ AND workstationClustersId = '{{ workstationClustersId }}' -- required
 AND workstationConfigsId = '{{ workstationConfigsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -649,7 +647,8 @@ AND workstationClustersId = '{{ workstationClustersId }}' --required
 AND workstationConfigsId = '{{ workstationConfigsId }}' --required
 AND workstationsId = '{{ workstationsId }}' --required
 AND validateOnly = '{{ validateOnly }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -681,7 +680,8 @@ EXEC google.workstations.workstations.start
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}", 
 "boostConfig": "{{ boostConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop">
@@ -699,7 +699,8 @@ EXEC google.workstations.workstations.stop
 '{
 "validateOnly": {{ validateOnly }}, 
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="generate_access_token">
@@ -718,7 +719,8 @@ EXEC google.workstations.workstations.generate_access_token
 "expireTime": "{{ expireTime }}", 
 "ttl": "{{ ttl }}", 
 "port": {{ port }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

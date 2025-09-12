@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_simulations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ createTime,
 resourceValueConfigsMetadata
 FROM google.securitycenter.simulations
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND simulationsId = '{{ simulationsId }}' -- required;
+AND simulationsId = '{{ simulationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

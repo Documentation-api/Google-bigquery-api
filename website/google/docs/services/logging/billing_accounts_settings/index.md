@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="billing_accounts_get_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -158,7 +156,8 @@ kmsServiceAccountId,
 loggingServiceAccountId,
 storageLocation
 FROM google.logging.billing_accounts_settings
-WHERE billingAccountsId = '{{ billingAccountsId }}' -- required;
+WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

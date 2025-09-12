@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_environments_security_actions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_environments_security_actions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -345,7 +341,8 @@ updateTime
 FROM google.apigee.security_actions
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
-AND securityActionsId = '{{ securityActionsId }}' -- required;
+AND securityActionsId = '{{ securityActionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_security_actions_list">
@@ -371,7 +368,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND environmentsId = '{{ environmentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -570,7 +568,8 @@ Delete a SecurityAction.
 DELETE FROM google.apigee.security_actions
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND environmentsId = '{{ environmentsId }}' --required
-AND securityActionsId = '{{ securityActionsId }}' --required;
+AND securityActionsId = '{{ securityActionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -593,7 +592,8 @@ Enable a SecurityAction. The `state` of the SecurityAction after enabling is `EN
 EXEC google.apigee.security_actions.organizations_environments_security_actions_enable 
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
-@securityActionsId='{{ securityActionsId }}' --required;
+@securityActionsId='{{ securityActionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_environments_security_actions_disable">
@@ -604,7 +604,8 @@ Disable a SecurityAction. The `state` of the SecurityAction after disabling is `
 EXEC google.apigee.security_actions.organizations_environments_security_actions_disable 
 @organizationsId='{{ organizationsId }}' --required, 
 @environmentsId='{{ environmentsId }}' --required, 
-@securityActionsId='{{ securityActionsId }}' --required;
+@securityActionsId='{{ securityActionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

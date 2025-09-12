@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_membership_graph">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ metadata,
 response
 FROM google.cloudidentity.memberships_membership_graph
 WHERE groupsId = '{{ groupsId }}' -- required
-AND query = '{{ query }}';
+AND query = '{{ query }}'
+;
 ```
 </TabItem>
 </Tabs>

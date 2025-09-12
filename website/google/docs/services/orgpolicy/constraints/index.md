@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_constraints_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -102,8 +100,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_constraints_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -162,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_constraints_list">
-
-Successful response
 
 <table>
 <thead>
@@ -332,7 +326,8 @@ supportsSimulation
 FROM google.orgpolicy.constraints
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_constraints_list">
@@ -353,7 +348,8 @@ supportsSimulation
 FROM google.orgpolicy.constraints
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_constraints_list">
@@ -374,7 +370,8 @@ supportsSimulation
 FROM google.orgpolicy.constraints
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_collections_data_stores_branches_documents_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -112,8 +110,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_documents_list">
-
-Successful response
 
 <table>
 <thead>
@@ -184,8 +180,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -254,8 +248,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_list">
-
-Successful response
 
 <table>
 <thead>
@@ -547,7 +539,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
-AND documentsId = '{{ documentsId }}' -- required;
+AND documentsId = '{{ documentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_documents_list">
@@ -574,7 +567,8 @@ AND collectionsId = '{{ collectionsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_get">
@@ -599,7 +593,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
-AND documentsId = '{{ documentsId }}' -- required;
+AND documentsId = '{{ documentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_list">
@@ -625,7 +620,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND dataStoresId = '{{ dataStoresId }}' -- required
 AND branchesId = '{{ branchesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -916,7 +912,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND collectionsId = '{{ collectionsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
 AND branchesId = '{{ branchesId }}' --required
-AND documentsId = '{{ documentsId }}' --required;
+AND documentsId = '{{ documentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_delete">
@@ -929,7 +926,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataStoresId = '{{ dataStoresId }}' --required
 AND branchesId = '{{ branchesId }}' --required
-AND documentsId = '{{ documentsId }}' --required;
+AND documentsId = '{{ documentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -974,7 +972,8 @@ EXEC google.discoveryengine.documents.projects_locations_collections_data_stores
 "autoGenerateIds": {{ autoGenerateIds }}, 
 "idField": "{{ idField }}", 
 "forceRefreshContent": {{ forceRefreshContent }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_branches_documents_purge">
@@ -995,7 +994,8 @@ EXEC google.discoveryengine.documents.projects_locations_collections_data_stores
 "filter": "{{ filter }}", 
 "errorConfig": "{{ errorConfig }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_import">
@@ -1025,7 +1025,8 @@ EXEC google.discoveryengine.documents.projects_locations_data_stores_branches_do
 "autoGenerateIds": {{ autoGenerateIds }}, 
 "idField": "{{ idField }}", 
 "forceRefreshContent": {{ forceRefreshContent }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_branches_documents_purge">
@@ -1045,7 +1046,8 @@ EXEC google.discoveryengine.documents.projects_locations_data_stores_branches_do
 "filter": "{{ filter }}", 
 "errorConfig": "{{ errorConfig }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

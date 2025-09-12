@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -327,7 +323,8 @@ state
 FROM google.iam.oauth_clients
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND oauthClientsId = '{{ oauthClientsId }}' -- required;
+AND oauthClientsId = '{{ oauthClientsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -352,7 +349,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -533,7 +531,8 @@ Deletes an OauthClient. You cannot use a deleted OauthClient. However, deletion 
 DELETE FROM google.iam.oauth_clients
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND oauthClientsId = '{{ oauthClientsId }}' --required;
+AND oauthClientsId = '{{ oauthClientsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -555,7 +554,8 @@ Undeletes an OauthClient, as long as it was deleted fewer than 30 days ago.
 EXEC google.iam.oauth_clients.undelete 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@oauthClientsId='{{ oauthClientsId }}' --required;
+@oauthClientsId='{{ oauthClientsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

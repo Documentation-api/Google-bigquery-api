@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_catalogs_event_stores_user_events_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -238,7 +236,8 @@ AND catalogsId = '{{ catalogsId }}' -- required
 AND eventStoresId = '{{ eventStoresId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -274,7 +273,8 @@ EXEC google.recommendationengine.user_events.projects_locations_catalogs_event_s
 "productEventDetail": "{{ productEventDetail }}", 
 "eventTime": "{{ eventTime }}", 
 "eventSource": "{{ eventSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_event_stores_user_events_collect">
@@ -289,7 +289,8 @@ EXEC google.recommendationengine.user_events.projects_locations_catalogs_event_s
 @eventStoresId='{{ eventStoresId }}' --required, 
 @userEvent='{{ userEvent }}', 
 @uri='{{ uri }}', 
-@ets='{{ ets }}';
+@ets='{{ ets }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_event_stores_user_events_purge">
@@ -306,7 +307,8 @@ EXEC google.recommendationengine.user_events.projects_locations_catalogs_event_s
 '{
 "filter": "{{ filter }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_event_stores_user_events_import">
@@ -324,7 +326,8 @@ EXEC google.recommendationengine.user_events.projects_locations_catalogs_event_s
 "requestId": "{{ requestId }}", 
 "inputConfig": "{{ inputConfig }}", 
 "errorsConfig": "{{ errorsConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_catalogs_event_stores_user_events_rejoin">
@@ -340,7 +343,8 @@ EXEC google.recommendationengine.user_events.projects_locations_catalogs_event_s
 @@json=
 '{
 "userEventRejoinScope": "{{ userEventRejoinScope }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

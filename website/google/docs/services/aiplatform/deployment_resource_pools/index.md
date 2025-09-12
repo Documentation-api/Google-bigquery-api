@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -97,8 +95,6 @@ Successful response
 </TabItem>
 <TabItem value="query_deployed_models">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -137,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -327,7 +321,8 @@ serviceAccount
 FROM google.aiplatform.deployment_resource_pools
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND deploymentResourcePoolsId = '{{ deploymentResourcePoolsId }}' -- required;
+AND deploymentResourcePoolsId = '{{ deploymentResourcePoolsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="query_deployed_models">
@@ -346,7 +341,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND deploymentResourcePoolsId = '{{ deploymentResourcePoolsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -367,7 +363,8 @@ FROM google.aiplatform.deployment_resource_pools
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -486,7 +483,8 @@ Delete a DeploymentResourcePool.
 DELETE FROM google.aiplatform.deployment_resource_pools
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND deploymentResourcePoolsId = '{{ deploymentResourcePoolsId }}' --required;
+AND deploymentResourcePoolsId = '{{ deploymentResourcePoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

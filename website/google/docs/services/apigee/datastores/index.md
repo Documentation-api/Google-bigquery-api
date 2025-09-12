@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_analytics_datastores_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_analytics_datastores_list">
-
-Successful response
 
 <table>
 <thead>
@@ -227,7 +223,8 @@ self,
 targetType
 FROM google.apigee.datastores
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND datastoresId = '{{ datastoresId }}' -- required;
+AND datastoresId = '{{ datastoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_analytics_datastores_list">
@@ -239,7 +236,8 @@ SELECT
 datastores
 FROM google.apigee.datastores
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND targetType = '{{ targetType }}';
+AND targetType = '{{ targetType }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -359,7 +357,8 @@ Delete a Datastore from an org.
 ```sql
 DELETE FROM google.apigee.datastores
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND datastoresId = '{{ datastoresId }}' --required;
+AND datastoresId = '{{ datastoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -385,7 +384,8 @@ EXEC google.apigee.datastores.organizations_analytics_datastores_test
 "displayName": "{{ displayName }}", 
 "targetType": "{{ targetType }}", 
 "datastoreConfig": "{{ datastoreConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_notification_channels_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_notification_channels_list">
-
-Successful response
 
 <table>
 <thead>
@@ -322,7 +318,8 @@ userLabels,
 verificationStatus
 FROM google.monitoring.notification_channels
 WHERE projectsId = '{{ projectsId }}' -- required
-AND notificationChannelsId = '{{ notificationChannelsId }}' -- required;
+AND notificationChannelsId = '{{ notificationChannelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_notification_channels_list">
@@ -346,7 +343,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -531,7 +529,8 @@ Deletes a notification channel.Design your application to single-thread API call
 DELETE FROM google.monitoring.notification_channels
 WHERE projectsId = '{{ projectsId }}' --required
 AND notificationChannelsId = '{{ notificationChannelsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -553,7 +552,8 @@ Causes a verification code to be delivered to the channel. The code can then be 
 ```sql
 EXEC google.monitoring.notification_channels.projects_notification_channels_send_verification_code 
 @projectsId='{{ projectsId }}' --required, 
-@notificationChannelsId='{{ notificationChannelsId }}' --required;
+@notificationChannelsId='{{ notificationChannelsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_notification_channels_verify">
@@ -567,7 +567,8 @@ EXEC google.monitoring.notification_channels.projects_notification_channels_veri
 @@json=
 '{
 "code": "{{ code }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -238,7 +234,8 @@ authorizationType,
 orgs
 FROM google.accesscontextmanager.authorized_orgs_descs
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
-AND authorizedOrgsDescsId = '{{ authorizedOrgsDescsId }}' -- required;
+AND authorizedOrgsDescsId = '{{ authorizedOrgsDescsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -255,7 +252,8 @@ orgs
 FROM google.accesscontextmanager.authorized_orgs_descs
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -391,7 +389,8 @@ Deletes an authorized orgs desc based on the resource name. The long-running ope
 ```sql
 DELETE FROM google.accesscontextmanager.authorized_orgs_descs
 WHERE accessPoliciesId = '{{ accessPoliciesId }}' --required
-AND authorizedOrgsDescsId = '{{ authorizedOrgsDescsId }}' --required;
+AND authorizedOrgsDescsId = '{{ authorizedOrgsDescsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

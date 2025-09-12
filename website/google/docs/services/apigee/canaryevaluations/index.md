@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_instances_canaryevaluations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -189,7 +187,8 @@ verdict
 FROM google.apigee.canaryevaluations
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND canaryevaluationsId = '{{ canaryevaluationsId }}' -- required;
+AND canaryevaluationsId = '{{ canaryevaluationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

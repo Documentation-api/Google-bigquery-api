@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_topics_subscriptions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -56,8 +54,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_subscriptions_get">
-
-Successful response
 
 <table>
 <thead>
@@ -172,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_subscriptions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -453,7 +447,8 @@ FROM google.pubsub.subscriptions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND topicsId = '{{ topicsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_get">
@@ -484,7 +479,8 @@ topic,
 topicMessageRetentionDuration
 FROM google.pubsub.subscriptions
 WHERE projectsId = '{{ projectsId }}' -- required
-AND subscriptionsId = '{{ subscriptionsId }}' -- required;
+AND subscriptionsId = '{{ subscriptionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_list">
@@ -516,7 +512,8 @@ topicMessageRetentionDuration
 FROM google.pubsub.subscriptions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -583,7 +580,8 @@ Deletes an existing subscription. All messages retained in the subscription are 
 ```sql
 DELETE FROM google.pubsub.subscriptions
 WHERE projectsId = '{{ projectsId }}' --required
-AND subscriptionsId = '{{ subscriptionsId }}' --required;
+AND subscriptionsId = '{{ subscriptionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -610,7 +608,8 @@ Detaches a subscription from this topic. All messages retained in the subscripti
 ```sql
 EXEC google.pubsub.subscriptions.projects_subscriptions_detach 
 @projectsId='{{ projectsId }}' --required, 
-@subscriptionsId='{{ subscriptionsId }}' --required;
+@subscriptionsId='{{ subscriptionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_create">
@@ -640,7 +639,8 @@ EXEC google.pubsub.subscriptions.projects_subscriptions_create
 "detached": {{ detached }}, 
 "enableExactlyOnceDelivery": {{ enableExactlyOnceDelivery }}, 
 "messageTransforms": "{{ messageTransforms }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_modify_ack_deadline">
@@ -655,7 +655,8 @@ EXEC google.pubsub.subscriptions.projects_subscriptions_modify_ack_deadline
 '{
 "ackIds": "{{ ackIds }}", 
 "ackDeadlineSeconds": {{ ackDeadlineSeconds }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_acknowledge">
@@ -669,7 +670,8 @@ EXEC google.pubsub.subscriptions.projects_subscriptions_acknowledge
 @@json=
 '{
 "ackIds": "{{ ackIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_pull">
@@ -684,7 +686,8 @@ EXEC google.pubsub.subscriptions.projects_subscriptions_pull
 '{
 "returnImmediately": {{ returnImmediately }}, 
 "maxMessages": {{ maxMessages }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_modify_push_config">
@@ -698,7 +701,8 @@ EXEC google.pubsub.subscriptions.projects_subscriptions_modify_push_config
 @@json=
 '{
 "pushConfig": "{{ pushConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_subscriptions_seek">
@@ -713,7 +717,8 @@ EXEC google.pubsub.subscriptions.projects_subscriptions_seek
 '{
 "time": "{{ time }}", 
 "snapshot": "{{ snapshot }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

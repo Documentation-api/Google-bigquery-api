@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -280,7 +276,8 @@ parent,
 shortName,
 updateTime
 FROM google.cloudresourcemanager.tag_values
-WHERE tagValuesId = '{{ tagValuesId }}' -- required;
+WHERE tagValuesId = '{{ tagValuesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -300,7 +297,8 @@ updateTime
 FROM google.cloudresourcemanager.tag_values
 WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -433,7 +431,8 @@ Deletes a TagValue. The TagValue cannot have any bindings when it is deleted.
 DELETE FROM google.cloudresourcemanager.tag_values
 WHERE tagValuesId = '{{ tagValuesId }}' --required
 AND validateOnly = '{{ validateOnly }}'
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

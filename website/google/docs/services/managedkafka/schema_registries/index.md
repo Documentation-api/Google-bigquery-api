@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -189,7 +185,8 @@ contexts
 FROM google.managedkafka.schema_registries
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required;
+AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -202,7 +199,8 @@ schemaRegistries
 FROM google.managedkafka.schema_registries
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -282,7 +280,8 @@ Delete a schema registry instance.
 DELETE FROM google.managedkafka.schema_registries
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND schemaRegistriesId = '{{ schemaRegistriesId }}' --required;
+AND schemaRegistriesId = '{{ schemaRegistriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

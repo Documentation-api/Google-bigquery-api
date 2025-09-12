@@ -106,7 +106,8 @@ EXEC google.ml.projects.projects_predict
 @@json=
 '{
 "httpBody": "{{ httpBody }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_explain">
@@ -119,7 +120,8 @@ EXEC google.ml.projects.projects_explain
 @@json=
 '{
 "httpBody": "{{ httpBody }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

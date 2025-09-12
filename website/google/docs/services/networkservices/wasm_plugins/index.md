@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -299,7 +295,8 @@ FROM google.networkservices.wasm_plugins
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND wasmPluginsId = '{{ wasmPluginsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -321,7 +318,8 @@ FROM google.networkservices.wasm_plugins
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -473,7 +471,8 @@ Deletes the specified `WasmPlugin` resource.
 DELETE FROM google.networkservices.wasm_plugins
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND wasmPluginsId = '{{ wasmPluginsId }}' --required;
+AND wasmPluginsId = '{{ wasmPluginsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

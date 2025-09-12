@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -195,8 +193,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -481,7 +477,8 @@ zone
 FROM google.deploymentmanager.operations
 WHERE project = '{{ project }}' -- required
 AND operation = '{{ operation }}' -- required
-AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}';
+AND header.bypassBillingFilter = '{{ header.bypassBillingFilter }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -523,7 +520,8 @@ WHERE project = '{{ project }}' -- required
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>

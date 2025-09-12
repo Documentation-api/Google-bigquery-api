@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ extensions
 FROM google.managedkafka.types
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required;
+AND schemaRegistriesId = '{{ schemaRegistriesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

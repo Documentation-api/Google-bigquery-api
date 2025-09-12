@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -306,7 +302,8 @@ FROM google.sqladmin.users
 WHERE project = '{{ project }}' -- required
 AND instance = '{{ instance }}' -- required
 AND name = '{{ name }}' -- required
-AND host = '{{ host }}';
+AND host = '{{ host }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -328,7 +325,8 @@ sqlserverUserDetails,
 type
 FROM google.sqladmin.users
 WHERE project = '{{ project }}' -- required
-AND instance = '{{ instance }}' -- required;
+AND instance = '{{ instance }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -547,7 +545,8 @@ DELETE FROM google.sqladmin.users
 WHERE project = '{{ project }}' --required
 AND instance = '{{ instance }}' --required
 AND host = '{{ host }}'
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>

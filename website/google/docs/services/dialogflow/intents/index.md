@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_intents_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_intents_list">
-
-Successful response
 
 <table>
 <thead>
@@ -308,7 +304,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND intentsId = '{{ intentsId }}' -- required
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_intents_list">
@@ -332,7 +329,8 @@ AND agentsId = '{{ agentsId }}' -- required
 AND languageCode = '{{ languageCode }}'
 AND intentView = '{{ intentView }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -514,7 +512,8 @@ DELETE FROM google.dialogflow.intents
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
-AND intentsId = '{{ intentsId }}' --required;
+AND intentsId = '{{ intentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -543,7 +542,8 @@ EXEC google.dialogflow.intents.projects_locations_agents_intents_import
 "intentsUri": "{{ intentsUri }}", 
 "intentsContent": "{{ intentsContent }}", 
 "mergeOption": "{{ mergeOption }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_intents_export">
@@ -561,7 +561,8 @@ EXEC google.dialogflow.intents.projects_locations_agents_intents_export
 "intentsUri": "{{ intentsUri }}", 
 "intentsContentInline": {{ intentsContentInline }}, 
 "dataFormat": "{{ dataFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

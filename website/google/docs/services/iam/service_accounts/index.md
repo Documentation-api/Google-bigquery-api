@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -319,7 +315,8 @@ projectId,
 uniqueId
 FROM google.iam.service_accounts
 WHERE projectsId = '{{ projectsId }}' -- required
-AND serviceAccountsId = '{{ serviceAccountsId }}' -- required;
+AND serviceAccountsId = '{{ serviceAccountsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -340,7 +337,8 @@ uniqueId
 FROM google.iam.service_accounts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -493,7 +491,8 @@ Deletes a ServiceAccount. **Warning:** After you delete a service account, you m
 ```sql
 DELETE FROM google.iam.service_accounts
 WHERE projectsId = '{{ projectsId }}' --required
-AND serviceAccountsId = '{{ serviceAccountsId }}' --required;
+AND serviceAccountsId = '{{ serviceAccountsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -518,7 +517,8 @@ Restores a deleted ServiceAccount. **Important:** It is not always possible to r
 ```sql
 EXEC google.iam.service_accounts.undelete 
 @projectsId='{{ projectsId }}' --required, 
-@serviceAccountsId='{{ serviceAccountsId }}' --required;
+@serviceAccountsId='{{ serviceAccountsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="enable">
@@ -528,7 +528,8 @@ Enables a ServiceAccount that was disabled by DisableServiceAccount. If the serv
 ```sql
 EXEC google.iam.service_accounts.enable 
 @projectsId='{{ projectsId }}' --required, 
-@serviceAccountsId='{{ serviceAccountsId }}' --required;
+@serviceAccountsId='{{ serviceAccountsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -538,7 +539,8 @@ Disables a ServiceAccount immediately. If an application uses the service accoun
 ```sql
 EXEC google.iam.service_accounts.disable 
 @projectsId='{{ projectsId }}' --required, 
-@serviceAccountsId='{{ serviceAccountsId }}' --required;
+@serviceAccountsId='{{ serviceAccountsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="sign_blob">
@@ -552,7 +554,8 @@ EXEC google.iam.service_accounts.sign_blob
 @@json=
 '{
 "bytesToSign": "{{ bytesToSign }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="sign_jwt">
@@ -566,7 +569,8 @@ EXEC google.iam.service_accounts.sign_jwt
 @@json=
 '{
 "payload": "{{ payload }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

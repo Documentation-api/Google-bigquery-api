@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_lakes_tasks_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_lakes_tasks_list">
-
-Successful response
 
 <table>
 <thead>
@@ -365,7 +361,8 @@ FROM google.dataplex.tasks
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND lakesId = '{{ lakesId }}' -- required
-AND tasksId = '{{ tasksId }}' -- required;
+AND tasksId = '{{ tasksId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_lakes_tasks_list">
@@ -394,7 +391,8 @@ AND lakesId = '{{ lakesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -566,7 +564,8 @@ DELETE FROM google.dataplex.tasks
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND lakesId = '{{ lakesId }}' --required
-AND tasksId = '{{ tasksId }}' --required;
+AND tasksId = '{{ tasksId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -594,7 +593,8 @@ EXEC google.dataplex.tasks.projects_locations_lakes_tasks_run
 '{
 "labels": "{{ labels }}", 
 "args": "{{ args }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_scans_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_data_scans_list">
-
-Successful response
 
 <table>
 <thead>
@@ -432,7 +428,8 @@ FROM google.dataplex.data_scans
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND dataScansId = '{{ dataScansId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_scans_list">
@@ -465,7 +462,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -639,7 +637,8 @@ DELETE FROM google.dataplex.data_scans
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataScansId = '{{ dataScansId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -662,7 +661,8 @@ Runs an on-demand execution of a DataScan
 EXEC google.dataplex.data_scans.projects_locations_data_scans_run 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataScansId='{{ dataScansId }}' --required;
+@dataScansId='{{ dataScansId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_scans_generate_data_quality_rules">
@@ -673,7 +673,8 @@ Generates recommended data quality rules based on the results of a data profilin
 EXEC google.dataplex.data_scans.projects_locations_data_scans_generate_data_quality_rules 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataScansId='{{ dataScansId }}' --required;
+@dataScansId='{{ dataScansId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

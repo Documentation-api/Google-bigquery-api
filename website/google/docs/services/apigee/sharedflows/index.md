@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_sharedflows_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_sharedflows_list">
-
-Successful response
 
 <table>
 <thead>
@@ -228,7 +224,8 @@ revision,
 space
 FROM google.apigee.sharedflows
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND sharedflowsId = '{{ sharedflowsId }}' -- required;
+AND sharedflowsId = '{{ sharedflowsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_sharedflows_list">
@@ -242,7 +239,8 @@ FROM google.apigee.sharedflows
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND includeRevisions = '{{ includeRevisions }}'
 AND includeMetaData = '{{ includeMetaData }}'
-AND space = '{{ space }}';
+AND space = '{{ space }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -347,7 +345,8 @@ Deletes a shared flow and all it's revisions. The shared flow must be undeployed
 ```sql
 DELETE FROM google.apigee.sharedflows
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND sharedflowsId = '{{ sharedflowsId }}' --required;
+AND sharedflowsId = '{{ sharedflowsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -372,7 +371,8 @@ EXEC google.apigee.sharedflows.organizations_sharedflows_move
 @@json=
 '{
 "space": "{{ space }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

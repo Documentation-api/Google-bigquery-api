@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="folders_event_threat_detection_settings_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -107,8 +105,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -172,8 +168,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_get">
-
-Successful response
 
 <table>
 <thead>
@@ -410,7 +404,8 @@ type,
 updateTime
 FROM google.securitycenter.custom_modules
 WHERE foldersId = '{{ foldersId }}' -- required
-AND customModulesId = '{{ customModulesId }}' -- required;
+AND customModulesId = '{{ customModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_event_threat_detection_settings_custom_modules_get">
@@ -431,7 +426,8 @@ type,
 updateTime
 FROM google.securitycenter.custom_modules
 WHERE projectsId = '{{ projectsId }}' -- required
-AND customModulesId = '{{ customModulesId }}' -- required;
+AND customModulesId = '{{ customModulesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_event_threat_detection_settings_custom_modules_get">
@@ -452,7 +448,8 @@ type,
 updateTime
 FROM google.securitycenter.custom_modules
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND customModulesId = '{{ customModulesId }}' -- required;
+AND customModulesId = '{{ customModulesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -669,7 +666,8 @@ EXEC google.securitycenter.custom_modules.folders_security_health_analytics_sett
 '{
 "customConfig": "{{ customConfig }}", 
 "resource": "{{ resource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_security_health_analytics_settings_custom_modules_simulate">
@@ -683,7 +681,8 @@ EXEC google.securitycenter.custom_modules.projects_security_health_analytics_set
 '{
 "customConfig": "{{ customConfig }}", 
 "resource": "{{ resource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_security_health_analytics_settings_custom_modules_simulate">
@@ -697,7 +696,8 @@ EXEC google.securitycenter.custom_modules.organizations_security_health_analytic
 '{
 "customConfig": "{{ customConfig }}", 
 "resource": "{{ resource }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

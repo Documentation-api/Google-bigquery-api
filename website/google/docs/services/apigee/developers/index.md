@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_developers_list">
-
-Successful response
 
 <table>
 <thead>
@@ -307,7 +303,8 @@ userName
 FROM google.apigee.developers
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND developersId = '{{ developersId }}' -- required
-AND action = '{{ action }}';
+AND action = '{{ action }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_list">
@@ -324,7 +321,8 @@ AND startKey = '{{ startKey }}'
 AND count = '{{ count }}'
 AND ids = '{{ ids }}'
 AND includeCompany = '{{ includeCompany }}'
-AND app = '{{ app }}';
+AND app = '{{ app }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -514,7 +512,8 @@ Deletes a developer. All apps and API keys associated with the developer are als
 ```sql
 DELETE FROM google.apigee.developers
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND developersId = '{{ developersId }}' --required;
+AND developersId = '{{ developersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -537,7 +536,8 @@ Sets the status of a developer. A developer is `active` by default. If you set a
 EXEC google.apigee.developers.organizations_developers_set_developer_status 
 @organizationsId='{{ organizationsId }}' --required, 
 @developersId='{{ developersId }}' --required, 
-@action='{{ action }}';
+@action='{{ action }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_developers_attributes">
@@ -551,7 +551,8 @@ EXEC google.apigee.developers.organizations_developers_attributes
 @@json=
 '{
 "attribute": "{{ attribute }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

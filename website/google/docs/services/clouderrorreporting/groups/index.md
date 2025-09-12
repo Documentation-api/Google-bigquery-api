@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -159,7 +157,8 @@ trackingIssues
 FROM google.clouderrorreporting.groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND groupsId = '{{ groupsId }}' -- required;
+AND groupsId = '{{ groupsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

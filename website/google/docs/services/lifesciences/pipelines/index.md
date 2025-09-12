@@ -106,7 +106,8 @@ EXEC google.lifesciences.pipelines.run
 "pipeline": "{{ pipeline }}", 
 "labels": "{{ labels }}", 
 "pubSubTopic": "{{ pubSubTopic }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

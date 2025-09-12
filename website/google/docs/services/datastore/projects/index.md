@@ -172,7 +172,8 @@ EXEC google.datastore.projects.export
 "labels": "{{ labels }}", 
 "entityFilter": "{{ entityFilter }}", 
 "outputUrlPrefix": "{{ outputUrlPrefix }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -187,7 +188,8 @@ EXEC google.datastore.projects.import
 "labels": "{{ labels }}", 
 "inputUrl": "{{ inputUrl }}", 
 "entityFilter": "{{ entityFilter }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="lookup">
@@ -203,7 +205,8 @@ EXEC google.datastore.projects.lookup
 "readOptions": "{{ readOptions }}", 
 "keys": "{{ keys }}", 
 "propertyMask": "{{ propertyMask }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="run_query">
@@ -222,7 +225,8 @@ EXEC google.datastore.projects.run_query
 "gqlQuery": "{{ gqlQuery }}", 
 "propertyMask": "{{ propertyMask }}", 
 "explainOptions": "{{ explainOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="run_aggregation_query">
@@ -240,7 +244,8 @@ EXEC google.datastore.projects.run_aggregation_query
 "aggregationQuery": "{{ aggregationQuery }}", 
 "gqlQuery": "{{ gqlQuery }}", 
 "explainOptions": "{{ explainOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="begin_transaction">
@@ -254,7 +259,8 @@ EXEC google.datastore.projects.begin_transaction
 '{
 "databaseId": "{{ databaseId }}", 
 "transactionOptions": "{{ transactionOptions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="commit">
@@ -271,7 +277,8 @@ EXEC google.datastore.projects.commit
 "transaction": "{{ transaction }}", 
 "singleUseTransaction": "{{ singleUseTransaction }}", 
 "mutations": "{{ mutations }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rollback">
@@ -285,7 +292,8 @@ EXEC google.datastore.projects.rollback
 '{
 "databaseId": "{{ databaseId }}", 
 "transaction": "{{ transaction }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="allocate_ids">
@@ -299,7 +307,8 @@ EXEC google.datastore.projects.allocate_ids
 '{
 "databaseId": "{{ databaseId }}", 
 "keys": "{{ keys }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reserve_ids">
@@ -313,7 +322,8 @@ EXEC google.datastore.projects.reserve_ids
 '{
 "databaseId": "{{ databaseId }}", 
 "keys": "{{ keys }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

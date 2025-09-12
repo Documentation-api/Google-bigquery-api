@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_topics_snapshots_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -56,8 +54,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_snapshots_get">
-
-Successful response
 
 <table>
 <thead>
@@ -92,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_snapshots_list">
-
-Successful response
 
 <table>
 <thead>
@@ -251,7 +245,8 @@ FROM google.pubsub.snapshots
 WHERE projectsId = '{{ projectsId }}' -- required
 AND topicsId = '{{ topicsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_snapshots_get">
@@ -266,7 +261,8 @@ labels,
 topic
 FROM google.pubsub.snapshots
 WHERE projectsId = '{{ projectsId }}' -- required
-AND snapshotsId = '{{ snapshotsId }}' -- required;
+AND snapshotsId = '{{ snapshotsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_snapshots_list">
@@ -282,7 +278,8 @@ topic
 FROM google.pubsub.snapshots
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -333,7 +330,8 @@ Removes an existing snapshot. Snapshots are used in [Seek] (https://cloud.google
 ```sql
 DELETE FROM google.pubsub.snapshots
 WHERE projectsId = '{{ projectsId }}' --required
-AND snapshotsId = '{{ snapshotsId }}' --required;
+AND snapshotsId = '{{ snapshotsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -359,7 +357,8 @@ EXEC google.pubsub.snapshots.projects_snapshots_create
 '{
 "subscription": "{{ subscription }}", 
 "labels": "{{ labels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

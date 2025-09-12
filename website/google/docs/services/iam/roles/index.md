@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_project_roles">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -94,8 +92,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_org_roles">
-
-Successful response
 
 <table>
 <thead>
@@ -146,8 +142,6 @@ Successful response
 </TabItem>
 <TabItem value="list_project_roles">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -196,8 +190,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get">
-
-Successful response
 
 <table>
 <thead>
@@ -248,8 +240,6 @@ Successful response
 </TabItem>
 <TabItem value="list_org_roles">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -298,8 +288,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -567,7 +555,8 @@ stage,
 title
 FROM google.iam.roles
 WHERE projectsId = '{{ projectsId }}' -- required
-AND rolesId = '{{ rolesId }}' -- required;
+AND rolesId = '{{ rolesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get_org_roles">
@@ -585,7 +574,8 @@ stage,
 title
 FROM google.iam.roles
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND rolesId = '{{ rolesId }}' -- required;
+AND rolesId = '{{ rolesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list_project_roles">
@@ -606,7 +596,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 <TabItem value="get">
@@ -623,7 +614,8 @@ includedPermissions,
 stage,
 title
 FROM google.iam.roles
-WHERE rolesId = '{{ rolesId }}' -- required;
+WHERE rolesId = '{{ rolesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list_org_roles">
@@ -644,7 +636,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -665,7 +658,8 @@ WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND view = '{{ view }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -843,7 +837,8 @@ Deletes a custom Role. When you delete a custom role, the following changes occu
 DELETE FROM google.iam.roles
 WHERE projectsId = '{{ projectsId }}' --required
 AND rolesId = '{{ rolesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 <TabItem value="delete_org_roles">
@@ -854,7 +849,8 @@ Deletes a custom Role. When you delete a custom role, the following changes occu
 DELETE FROM google.iam.roles
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND rolesId = '{{ rolesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -881,7 +877,8 @@ EXEC google.iam.roles.undelete_project_roles
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="query_grantable_roles">
@@ -896,7 +893,8 @@ EXEC google.iam.roles.query_grantable_roles
 "view": "{{ view }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete_org_roles">
@@ -910,7 +908,8 @@ EXEC google.iam.roles.undelete_org_roles
 @@json=
 '{
 "etag": "{{ etag }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

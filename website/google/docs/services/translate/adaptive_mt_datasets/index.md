@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_adaptive_mt_datasets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_datasets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -266,7 +262,8 @@ updateTime
 FROM google.translate.adaptive_mt_datasets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' -- required;
+AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_adaptive_mt_datasets_list">
@@ -287,7 +284,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -393,7 +391,8 @@ Deletes an Adaptive MT dataset, including all its entries and associated metadat
 DELETE FROM google.translate.adaptive_mt_datasets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' --required;
+AND adaptiveMtDatasetsId = '{{ adaptiveMtDatasetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -420,7 +419,8 @@ EXEC google.translate.adaptive_mt_datasets.projects_locations_adaptive_mt_datase
 '{
 "fileInputSource": "{{ fileInputSource }}", 
 "gcsInputSource": "{{ gcsInputSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

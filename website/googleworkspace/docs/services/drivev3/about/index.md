@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -188,7 +186,8 @@ maxUploadSize,
 storageQuota,
 teamDriveThemes,
 user
-FROM googleworkspace.drivev3.about;
+FROM googleworkspace.drivev3.about
+;
 ```
 </TabItem>
 </Tabs>

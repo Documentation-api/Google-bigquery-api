@@ -93,7 +93,8 @@ EXEC google.areainsights.areainsights.compute_insights
 '{
 "insights": "{{ insights }}", 
 "filter": "{{ filter }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

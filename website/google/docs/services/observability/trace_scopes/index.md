@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -249,7 +245,8 @@ updateTime
 FROM google.observability.trace_scopes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND traceScopesId = '{{ traceScopesId }}' -- required;
+AND traceScopesId = '{{ traceScopesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -267,7 +264,8 @@ FROM google.observability.trace_scopes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -395,7 +393,8 @@ Delete a TraceScope.
 DELETE FROM google.observability.trace_scopes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND traceScopesId = '{{ traceScopesId }}' --required;
+AND traceScopesId = '{{ traceScopesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

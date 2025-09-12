@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_billing_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,7 +145,8 @@ billingAccountName,
 billingEnabled,
 projectId
 FROM google.cloudbilling.billing_info
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

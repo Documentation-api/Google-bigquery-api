@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_playbooks_examples_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_examples_list">
-
-Successful response
 
 <table>
 <thead>
@@ -327,7 +323,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND playbooksId = '{{ playbooksId }}' -- required
-AND examplesId = '{{ examplesId }}' -- required;
+AND examplesId = '{{ examplesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_playbooks_examples_list">
@@ -354,7 +351,8 @@ AND agentsId = '{{ agentsId }}' -- required
 AND playbooksId = '{{ playbooksId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -545,7 +543,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND playbooksId = '{{ playbooksId }}' --required
-AND examplesId = '{{ examplesId }}' --required;
+AND examplesId = '{{ examplesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

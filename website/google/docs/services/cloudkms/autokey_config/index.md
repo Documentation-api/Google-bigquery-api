@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_autokey_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -152,7 +150,8 @@ etag,
 keyProject,
 state
 FROM google.cloudkms.autokey_config
-WHERE foldersId = '{{ foldersId }}' -- required;
+WHERE foldersId = '{{ foldersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

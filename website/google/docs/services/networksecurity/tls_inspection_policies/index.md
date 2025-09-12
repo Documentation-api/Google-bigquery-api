@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_tls_inspection_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_tls_inspection_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -309,7 +305,8 @@ updateTime
 FROM google.networksecurity.tls_inspection_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND tlsInspectionPoliciesId = '{{ tlsInspectionPoliciesId }}' -- required;
+AND tlsInspectionPoliciesId = '{{ tlsInspectionPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_tls_inspection_policies_list">
@@ -332,7 +329,8 @@ FROM google.networksecurity.tls_inspection_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -503,7 +501,8 @@ DELETE FROM google.networksecurity.tls_inspection_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND tlsInspectionPoliciesId = '{{ tlsInspectionPoliciesId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>

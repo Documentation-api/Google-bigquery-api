@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_data_sources_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -147,8 +145,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_data_sources_get">
-
-Successful response
 
 <table>
 <thead>
@@ -254,8 +250,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_data_sources_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -359,8 +353,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_data_sources_list">
-
-Successful response
 
 <table>
 <thead>
@@ -612,7 +604,8 @@ updateDeadlineSeconds
 FROM google.bigquerydatatransfer.data_sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataSourcesId = '{{ dataSourcesId }}' -- required;
+AND dataSourcesId = '{{ dataSourcesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_data_sources_get">
@@ -641,7 +634,8 @@ transferType,
 updateDeadlineSeconds
 FROM google.bigquerydatatransfer.data_sources
 WHERE projectsId = '{{ projectsId }}' -- required
-AND dataSourcesId = '{{ dataSourcesId }}' -- required;
+AND dataSourcesId = '{{ dataSourcesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_sources_list">
@@ -672,7 +666,8 @@ FROM google.bigquerydatatransfer.data_sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_data_sources_list">
@@ -702,7 +697,8 @@ updateDeadlineSeconds
 FROM google.bigquerydatatransfer.data_sources
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -728,7 +724,8 @@ EXEC google.bigquerydatatransfer.data_sources.projects_enroll_data_sources
 @@json=
 '{
 "dataSourceIds": "{{ dataSourceIds }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_data_sources_check_valid_creds">
@@ -738,7 +735,8 @@ Returns true if valid credentials exist for the given data source and requesting
 ```sql
 EXEC google.bigquerydatatransfer.data_sources.projects_data_sources_check_valid_creds 
 @projectsId='{{ projectsId }}' --required, 
-@dataSourcesId='{{ dataSourcesId }}' --required;
+@dataSourcesId='{{ dataSourcesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_sources_check_valid_creds">
@@ -749,7 +747,8 @@ Returns true if valid credentials exist for the given data source and requesting
 EXEC google.bigquerydatatransfer.data_sources.projects_locations_data_sources_check_valid_creds 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataSourcesId='{{ dataSourcesId }}' --required;
+@dataSourcesId='{{ dataSourcesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

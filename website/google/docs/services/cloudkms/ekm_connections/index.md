@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -270,7 +266,8 @@ serviceResolvers
 FROM google.cloudkms.ekm_connections
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND ekmConnectionsId = '{{ ekmConnectionsId }}' -- required;
+AND ekmConnectionsId = '{{ ekmConnectionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -291,7 +288,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -430,7 +428,8 @@ Verifies that Cloud KMS can successfully connect to the external key manager spe
 EXEC google.cloudkms.ekm_connections.verify_connectivity 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@ekmConnectionsId='{{ ekmConnectionsId }}' --required;
+@ekmConnectionsId='{{ ekmConnectionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

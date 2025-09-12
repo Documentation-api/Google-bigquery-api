@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -368,7 +364,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND tensorboardsId = '{{ tensorboardsId }}' -- required
 AND experimentsId = '{{ experimentsId }}' -- required
 AND runsId = '{{ runsId }}' -- required
-AND timeSeriesId = '{{ timeSeriesId }}' -- required;
+AND timeSeriesId = '{{ timeSeriesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -397,7 +394,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -581,7 +579,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND tensorboardsId = '{{ tensorboardsId }}' --required
 AND experimentsId = '{{ experimentsId }}' --required
 AND runsId = '{{ runsId }}' --required
-AND timeSeriesId = '{{ timeSeriesId }}' --required;
+AND timeSeriesId = '{{ timeSeriesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -610,7 +609,8 @@ EXEC google.aiplatform.time_series.read
 @runsId='{{ runsId }}' --required, 
 @timeSeriesId='{{ timeSeriesId }}' --required, 
 @maxDataPoints='{{ maxDataPoints }}', 
-@filter='{{ filter }}';
+@filter='{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="read_blob_data">
@@ -625,7 +625,8 @@ EXEC google.aiplatform.time_series.read_blob_data
 @experimentsId='{{ experimentsId }}' --required, 
 @runsId='{{ runsId }}' --required, 
 @timeSeriesId='{{ timeSeriesId }}' --required, 
-@blobIds='{{ blobIds }}';
+@blobIds='{{ blobIds }}'
+;
 ```
 </TabItem>
 <TabItem value="export_tensorboard_time_series">
@@ -646,7 +647,8 @@ EXEC google.aiplatform.time_series.export_tensorboard_time_series
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}", 
 "orderBy": "{{ orderBy }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

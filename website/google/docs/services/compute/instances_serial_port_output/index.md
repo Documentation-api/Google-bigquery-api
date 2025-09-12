@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_serial_port_output">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
 AND instance = '{{ instance }}' -- required
 AND port = '{{ port }}'
-AND start = '{{ start }}';
+AND start = '{{ start }}'
+;
 ```
 </TabItem>
 </Tabs>

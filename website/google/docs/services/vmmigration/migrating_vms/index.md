@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -175,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -520,7 +516,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND sourcesId = '{{ sourcesId }}' -- required
 AND migratingVmsId = '{{ migratingVmsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -561,7 +558,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -733,7 +731,8 @@ DELETE FROM google.vmmigration.migrating_vms
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND sourcesId = '{{ sourcesId }}' --required
-AND migratingVmsId = '{{ migratingVmsId }}' --required;
+AND migratingVmsId = '{{ migratingVmsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -760,7 +759,8 @@ EXEC google.vmmigration.migrating_vms.start_migration
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @sourcesId='{{ sourcesId }}' --required, 
-@migratingVmsId='{{ migratingVmsId }}' --required;
+@migratingVmsId='{{ migratingVmsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="resume_migration">
@@ -772,7 +772,8 @@ EXEC google.vmmigration.migrating_vms.resume_migration
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @sourcesId='{{ sourcesId }}' --required, 
-@migratingVmsId='{{ migratingVmsId }}' --required;
+@migratingVmsId='{{ migratingVmsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="pause_migration">
@@ -784,7 +785,8 @@ EXEC google.vmmigration.migrating_vms.pause_migration
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @sourcesId='{{ sourcesId }}' --required, 
-@migratingVmsId='{{ migratingVmsId }}' --required;
+@migratingVmsId='{{ migratingVmsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="finalize_migration">
@@ -796,7 +798,8 @@ EXEC google.vmmigration.migrating_vms.finalize_migration
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @sourcesId='{{ sourcesId }}' --required, 
-@migratingVmsId='{{ migratingVmsId }}' --required;
+@migratingVmsId='{{ migratingVmsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="extend_migration">
@@ -808,7 +811,8 @@ EXEC google.vmmigration.migrating_vms.extend_migration
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @sourcesId='{{ sourcesId }}' --required, 
-@migratingVmsId='{{ migratingVmsId }}' --required;
+@migratingVmsId='{{ migratingVmsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

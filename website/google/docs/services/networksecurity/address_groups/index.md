@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_address_groups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -107,8 +105,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_address_groups_get">
-
-Successful response
 
 <table>
 <thead>
@@ -174,8 +170,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_address_groups_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -239,8 +233,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_address_groups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -504,7 +496,8 @@ updateTime
 FROM google.networksecurity.address_groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND addressGroupsId = '{{ addressGroupsId }}' -- required;
+AND addressGroupsId = '{{ addressGroupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_address_groups_get">
@@ -526,7 +519,8 @@ updateTime
 FROM google.networksecurity.address_groups
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND addressGroupsId = '{{ addressGroupsId }}' -- required;
+AND addressGroupsId = '{{ addressGroupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_address_groups_list">
@@ -550,7 +544,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_address_groups_list">
@@ -574,7 +569,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -814,7 +810,8 @@ DELETE FROM google.networksecurity.address_groups
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND addressGroupsId = '{{ addressGroupsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_address_groups_delete">
@@ -826,7 +823,8 @@ DELETE FROM google.networksecurity.address_groups
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND addressGroupsId = '{{ addressGroupsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -854,7 +852,8 @@ EXEC google.networksecurity.address_groups.projects_locations_address_groups_clo
 '{
 "sourceAddressGroup": "{{ sourceAddressGroup }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_address_groups_clone_items">
@@ -870,7 +869,8 @@ EXEC google.networksecurity.address_groups.organizations_locations_address_group
 '{
 "sourceAddressGroup": "{{ sourceAddressGroup }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

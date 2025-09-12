@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -110,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -257,7 +253,8 @@ selfLink
 FROM google.storage.bucket_access_controls
 WHERE bucket = '{{ bucket }}' -- required
 AND entity = '{{ entity }}' -- required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -270,7 +267,8 @@ items,
 kind
 FROM google.storage.bucket_access_controls
 WHERE bucket = '{{ bucket }}' -- required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -527,7 +525,8 @@ Permanently deletes the ACL entry for the specified entity on the specified buck
 DELETE FROM google.storage.bucket_access_controls
 WHERE bucket = '{{ bucket }}' --required
 AND entity = '{{ entity }}' --required
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -150,7 +150,8 @@ Unlinks a linked Google Cloud Storage bucket from a Firebase project.
 ```sql
 DELETE FROM firebase.storage.buckets_firebase
 WHERE projectsId = '{{ projectsId }}' --required
-AND bucketsId = '{{ bucketsId }}' --required;
+AND bucketsId = '{{ bucketsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

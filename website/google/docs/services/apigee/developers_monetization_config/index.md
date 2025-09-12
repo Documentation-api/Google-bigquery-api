@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_developers_get_monetization_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,7 +133,8 @@ SELECT
 billingType
 FROM google.apigee.developers_monetization_config
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND developersId = '{{ developersId }}' -- required;
+AND developersId = '{{ developersId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

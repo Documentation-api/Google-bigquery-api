@@ -203,7 +203,8 @@ DELETE FROM google.compute.disks_resource_policies
 WHERE project = '{{ project }}' --required
 AND region = '{{ region }}' --required
 AND disk = '{{ disk }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -372,7 +368,8 @@ FROM google.websecurityscanner.findings
 WHERE projectsId = '{{ projectsId }}' -- required
 AND scanConfigsId = '{{ scanConfigsId }}' -- required
 AND scanRunsId = '{{ scanRunsId }}' -- required
-AND findingsId = '{{ findingsId }}' -- required;
+AND findingsId = '{{ findingsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -405,7 +402,8 @@ AND scanConfigsId = '{{ scanConfigsId }}' -- required
 AND scanRunsId = '{{ scanRunsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>

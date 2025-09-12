@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_alert_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_alert_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -336,7 +332,8 @@ userLabels,
 validity
 FROM google.monitoring.alert_policies
 WHERE projectsId = '{{ projectsId }}' -- required
-AND alertPoliciesId = '{{ alertPoliciesId }}' -- required;
+AND alertPoliciesId = '{{ alertPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_alert_policies_list">
@@ -363,7 +360,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -578,7 +576,8 @@ Deletes an alerting policy.Design your application to single-thread API calls th
 ```sql
 DELETE FROM google.monitoring.alert_policies
 WHERE projectsId = '{{ projectsId }}' --required
-AND alertPoliciesId = '{{ alertPoliciesId }}' --required;
+AND alertPoliciesId = '{{ alertPoliciesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

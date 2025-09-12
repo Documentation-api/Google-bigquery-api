@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -276,7 +272,8 @@ ownershipScope,
 thresholdRules
 FROM google.billingbudgets.budgets
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
-AND budgetsId = '{{ budgetsId }}' -- required;
+AND budgetsId = '{{ budgetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -297,7 +294,8 @@ FROM google.billingbudgets.budgets
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND scope = '{{ scope }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -450,7 +448,8 @@ Deletes a budget. Returns successfully if already deleted.
 ```sql
 DELETE FROM google.billingbudgets.budgets
 WHERE billingAccountsId = '{{ billingAccountsId }}' --required
-AND budgetsId = '{{ budgetsId }}' --required;
+AND budgetsId = '{{ budgetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

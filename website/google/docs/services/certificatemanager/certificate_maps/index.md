@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -270,7 +266,8 @@ updateTime
 FROM google.certificatemanager.certificate_maps
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND certificateMapsId = '{{ certificateMapsId }}' -- required;
+AND certificateMapsId = '{{ certificateMapsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -291,7 +288,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -419,7 +417,8 @@ Deletes a single CertificateMap. A Certificate Map can't be deleted if it contai
 DELETE FROM google.certificatemanager.certificate_maps
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND certificateMapsId = '{{ certificateMapsId }}' --required;
+AND certificateMapsId = '{{ certificateMapsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

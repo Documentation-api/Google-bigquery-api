@@ -138,7 +138,8 @@ EXEC google.dataflow.work_items.projects_jobs_work_items_report_status
 "location": "{{ location }}", 
 "unifiedWorkerRequest": "{{ unifiedWorkerRequest }}", 
 "projectNumber": "{{ projectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_jobs_work_items_lease">
@@ -159,7 +160,8 @@ EXEC google.dataflow.work_items.projects_jobs_work_items_lease
 "location": "{{ location }}", 
 "unifiedWorkerRequest": "{{ unifiedWorkerRequest }}", 
 "projectNumber": "{{ projectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_jobs_work_items_report_status">
@@ -179,7 +181,8 @@ EXEC google.dataflow.work_items.projects_locations_jobs_work_items_report_status
 "location": "{{ location }}", 
 "unifiedWorkerRequest": "{{ unifiedWorkerRequest }}", 
 "projectNumber": "{{ projectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_jobs_work_items_lease">
@@ -201,7 +204,8 @@ EXEC google.dataflow.work_items.projects_locations_jobs_work_items_lease
 "location": "{{ location }}", 
 "unifiedWorkerRequest": "{{ unifiedWorkerRequest }}", 
 "projectNumber": "{{ projectNumber }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

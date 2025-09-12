@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -418,7 +414,8 @@ trusts,
 updateTime
 FROM google.managedidentities.domains
 WHERE projectsId = '{{ projectsId }}' -- required
-AND domainsId = '{{ domainsId }}' -- required;
+AND domainsId = '{{ domainsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -445,7 +442,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -598,7 +596,8 @@ Deletes a domain.
 ```sql
 DELETE FROM google.managedidentities.domains
 WHERE projectsId = '{{ projectsId }}' --required
-AND domainsId = '{{ domainsId }}' --required;
+AND domainsId = '{{ domainsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -629,7 +628,8 @@ Resets a domain's administrator password.
 ```sql
 EXEC google.managedidentities.domains.reset_admin_password 
 @projectsId='{{ projectsId }}' --required, 
-@domainsId='{{ domainsId }}' --required;
+@domainsId='{{ domainsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="domain_join_machine">
@@ -645,7 +645,8 @@ EXEC google.managedidentities.domains.domain_join_machine
 "vmIdToken": "{{ vmIdToken }}", 
 "ouName": "{{ ouName }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="restore">
@@ -659,7 +660,8 @@ EXEC google.managedidentities.domains.restore
 @@json=
 '{
 "backupId": "{{ backupId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="attach_trust">
@@ -673,7 +675,8 @@ EXEC google.managedidentities.domains.attach_trust
 @@json=
 '{
 "trust": "{{ trust }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="reconfigure_trust">
@@ -688,7 +691,8 @@ EXEC google.managedidentities.domains.reconfigure_trust
 '{
 "targetDomainName": "{{ targetDomainName }}", 
 "targetDnsIpAddresses": "{{ targetDnsIpAddresses }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="detach_trust">
@@ -702,7 +706,8 @@ EXEC google.managedidentities.domains.detach_trust
 @@json=
 '{
 "trust": "{{ trust }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="validate_trust">
@@ -716,7 +721,8 @@ EXEC google.managedidentities.domains.validate_trust
 @@json=
 '{
 "trust": "{{ trust }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="extend_schema">
@@ -732,7 +738,8 @@ EXEC google.managedidentities.domains.extend_schema
 "description": "{{ description }}", 
 "gcsPath": "{{ gcsPath }}", 
 "fileContents": "{{ fileContents }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable_migration">
@@ -746,7 +753,8 @@ EXEC google.managedidentities.domains.enable_migration
 @@json=
 '{
 "migratingDomains": "{{ migratingDomains }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="disable_migration">
@@ -756,7 +764,8 @@ Disable Domain Migration
 ```sql
 EXEC google.managedidentities.domains.disable_migration 
 @projectsId='{{ projectsId }}' --required, 
-@domainsId='{{ domainsId }}' --required;
+@domainsId='{{ domainsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="check_migration_permission">
@@ -766,7 +775,8 @@ CheckMigrationPermission API gets the current state of DomainMigration
 ```sql
 EXEC google.managedidentities.domains.check_migration_permission 
 @projectsId='{{ projectsId }}' --required, 
-@domainsId='{{ domainsId }}' --required;
+@domainsId='{{ domainsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

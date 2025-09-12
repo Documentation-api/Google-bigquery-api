@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -331,7 +327,8 @@ FROM google.iam.service_account_keys
 WHERE projectsId = '{{ projectsId }}' -- required
 AND serviceAccountsId = '{{ serviceAccountsId }}' -- required
 AND keysId = '{{ keysId }}' -- required
-AND publicKeyType = '{{ publicKeyType }}';
+AND publicKeyType = '{{ publicKeyType }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -355,7 +352,8 @@ validBeforeTime
 FROM google.iam.service_account_keys
 WHERE projectsId = '{{ projectsId }}' -- required
 AND serviceAccountsId = '{{ serviceAccountsId }}' -- required
-AND keyTypes = '{{ keyTypes }}';
+AND keyTypes = '{{ keyTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -447,7 +445,8 @@ Deletes a ServiceAccountKey. Deleting a service account key does not revoke shor
 DELETE FROM google.iam.service_account_keys
 WHERE projectsId = '{{ projectsId }}' --required
 AND serviceAccountsId = '{{ serviceAccountsId }}' --required
-AND keysId = '{{ keysId }}' --required;
+AND keysId = '{{ keysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -474,7 +473,8 @@ EXEC google.iam.service_account_keys.upload
 @@json=
 '{
 "publicKeyData": "{{ publicKeyData }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -490,7 +490,8 @@ EXEC google.iam.service_account_keys.disable
 '{
 "serviceAccountKeyDisableReason": "{{ serviceAccountKeyDisableReason }}", 
 "extendedStatusMessage": "{{ extendedStatusMessage }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable">
@@ -501,7 +502,8 @@ Enable a ServiceAccountKey.
 EXEC google.iam.service_account_keys.enable 
 @projectsId='{{ projectsId }}' --required, 
 @serviceAccountsId='{{ serviceAccountsId }}' --required, 
-@keysId='{{ keysId }}' --required;
+@keysId='{{ keysId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

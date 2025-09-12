@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_notes_get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_notes_get_iam_policy">
-
-Successful response
 
 <table>
 <thead>
@@ -214,7 +210,8 @@ role
 FROM google.containeranalysis.notes_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND notesId = '{{ notesId }}' -- required;
+AND notesId = '{{ notesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_notes_get_iam_policy">
@@ -228,7 +225,8 @@ members,
 role
 FROM google.containeranalysis.notes_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
-AND notesId = '{{ notesId }}' -- required;
+AND notesId = '{{ notesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -302,7 +300,8 @@ EXEC google.containeranalysis.notes_iam_policies.projects_locations_notes_test_i
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_notes_test_iam_permissions">
@@ -316,7 +315,8 @@ EXEC google.containeranalysis.notes_iam_policies.projects_notes_test_iam_permiss
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

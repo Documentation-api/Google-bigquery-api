@@ -119,7 +119,8 @@ EXEC google.managedkafka.compatibility.check_compatibility
 "schema": "{{ schema }}", 
 "references": "{{ references }}", 
 "verbose": {{ verbose }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

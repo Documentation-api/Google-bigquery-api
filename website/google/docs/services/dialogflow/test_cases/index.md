@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_test_cases_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_test_cases_list">
-
-Successful response
 
 <table>
 <thead>
@@ -328,7 +324,8 @@ FROM google.dialogflow.test_cases
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
-AND testCasesId = '{{ testCasesId }}' -- required;
+AND testCasesId = '{{ testCasesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_test_cases_list">
@@ -351,7 +348,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -519,7 +517,8 @@ Batch deletes test cases.
 DELETE FROM google.dialogflow.test_cases
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND agentsId = '{{ agentsId }}' --required;
+AND agentsId = '{{ agentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -550,7 +549,8 @@ EXEC google.dialogflow.test_cases.projects_locations_agents_test_cases_run
 @@json=
 '{
 "environment": "{{ environment }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_test_cases_batch_run">
@@ -566,7 +566,8 @@ EXEC google.dialogflow.test_cases.projects_locations_agents_test_cases_batch_run
 '{
 "environment": "{{ environment }}", 
 "testCases": "{{ testCases }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_test_cases_calculate_coverage">
@@ -578,7 +579,8 @@ EXEC google.dialogflow.test_cases.projects_locations_agents_test_cases_calculate
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @agentsId='{{ agentsId }}' --required, 
-@type='{{ type }}';
+@type='{{ type }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_test_cases_import">
@@ -594,7 +596,8 @@ EXEC google.dialogflow.test_cases.projects_locations_agents_test_cases_import
 '{
 "gcsUri": "{{ gcsUri }}", 
 "content": "{{ content }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_test_cases_export">
@@ -611,7 +614,8 @@ EXEC google.dialogflow.test_cases.projects_locations_agents_test_cases_export
 "gcsUri": "{{ gcsUri }}", 
 "dataFormat": "{{ dataFormat }}", 
 "filter": "{{ filter }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

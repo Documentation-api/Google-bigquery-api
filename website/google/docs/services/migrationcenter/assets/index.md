@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -135,8 +133,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -417,7 +413,8 @@ FROM google.migrationcenter.assets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND assetsId = '{{ assetsId }}' -- required
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -450,7 +447,8 @@ AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
 AND view = '{{ view }}'
-AND showHidden = '{{ showHidden }}';
+AND showHidden = '{{ showHidden }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -537,7 +535,8 @@ DELETE FROM google.migrationcenter.assets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND assetsId = '{{ assetsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 <TabItem value="batch_delete">
@@ -547,7 +546,8 @@ Deletes list of Assets.
 ```sql
 DELETE FROM google.migrationcenter.assets
 WHERE projectsId = '{{ projectsId }}' --required
-AND locationsId = '{{ locationsId }}' --required;
+AND locationsId = '{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -574,7 +574,8 @@ EXEC google.migrationcenter.assets.report_asset_frames
 @@json=
 '{
 "framesData": "{{ framesData }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="aggregate_values">
@@ -590,7 +591,8 @@ EXEC google.migrationcenter.assets.aggregate_values
 "aggregations": "{{ aggregations }}", 
 "filter": "{{ filter }}", 
 "showHidden": {{ showHidden }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

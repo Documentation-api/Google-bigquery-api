@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_certificates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -102,8 +100,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_products_certificates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -164,8 +160,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_certificates_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -224,8 +218,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_certificates_list">
-
-Successful response
 
 <table>
 <thead>
@@ -465,7 +457,8 @@ FROM google.integrations.certificates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND productsId = '{{ productsId }}' -- required
-AND certificatesId = '{{ certificatesId }}' -- required;
+AND certificatesId = '{{ certificatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_certificates_list">
@@ -490,7 +483,8 @@ AND productsId = '{{ productsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_certificates_get">
@@ -511,7 +505,8 @@ validStartTime
 FROM google.integrations.certificates
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND certificatesId = '{{ certificatesId }}' -- required;
+AND certificatesId = '{{ certificatesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_certificates_list">
@@ -535,7 +530,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -769,7 +765,8 @@ DELETE FROM google.integrations.certificates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND productsId = '{{ productsId }}' --required
-AND certificatesId = '{{ certificatesId }}' --required;
+AND certificatesId = '{{ certificatesId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_certificates_delete">
@@ -780,7 +777,8 @@ Delete a certificate
 DELETE FROM google.integrations.certificates
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND certificatesId = '{{ certificatesId }}' --required;
+AND certificatesId = '{{ certificatesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

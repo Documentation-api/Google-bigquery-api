@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_nodes_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,7 +138,8 @@ displayName,
 sasUserIds
 FROM google.sasportal.customer_node
 WHERE customersId = '{{ customersId }}' -- required
-AND nodesId = '{{ nodesId }}' -- required;
+AND nodesId = '{{ nodesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

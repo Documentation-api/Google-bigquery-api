@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -355,7 +351,8 @@ uuid
 FROM google.composer.environments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND environmentsId = '{{ environmentsId }}' -- required;
+AND environmentsId = '{{ environmentsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -378,7 +375,8 @@ FROM google.composer.environments
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -543,7 +541,8 @@ Delete an environment.
 DELETE FROM google.composer.environments
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND environmentsId = '{{ environmentsId }}' --required;
+AND environmentsId = '{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -572,7 +571,8 @@ Restart Airflow web server.
 EXEC google.composer.environments.restart_web_server 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@environmentsId='{{ environmentsId }}' --required;
+@environmentsId='{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="execute_airflow_command">
@@ -589,7 +589,8 @@ EXEC google.composer.environments.execute_airflow_command
 "command": "{{ command }}", 
 "subcommand": "{{ subcommand }}", 
 "parameters": "{{ parameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="stop_airflow_command">
@@ -607,7 +608,8 @@ EXEC google.composer.environments.stop_airflow_command
 "pod": "{{ pod }}", 
 "podNamespace": "{{ podNamespace }}", 
 "force": {{ force }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="poll_airflow_command">
@@ -625,7 +627,8 @@ EXEC google.composer.environments.poll_airflow_command
 "pod": "{{ pod }}", 
 "podNamespace": "{{ podNamespace }}", 
 "nextLineNumber": {{ nextLineNumber }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="check_upgrade">
@@ -640,7 +643,8 @@ EXEC google.composer.environments.check_upgrade
 @@json=
 '{
 "imageVersion": "{{ imageVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="save_snapshot">
@@ -655,7 +659,8 @@ EXEC google.composer.environments.save_snapshot
 @@json=
 '{
 "snapshotLocation": "{{ snapshotLocation }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="load_snapshot">
@@ -674,7 +679,8 @@ EXEC google.composer.environments.load_snapshot
 "skipEnvironmentVariablesSetting": {{ skipEnvironmentVariablesSetting }}, 
 "skipAirflowOverridesSetting": {{ skipAirflowOverridesSetting }}, 
 "skipGcsDataCopying": {{ skipGcsDataCopying }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="database_failover">
@@ -685,7 +691,8 @@ Triggers database failover (only for highly resilient environments).
 EXEC google.composer.environments.database_failover 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@environmentsId='{{ environmentsId }}' --required;
+@environmentsId='{{ environmentsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

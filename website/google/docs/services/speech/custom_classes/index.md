@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -332,7 +328,8 @@ uid
 FROM google.speech.custom_classes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND customClassesId = '{{ customClassesId }}' -- required;
+AND customClassesId = '{{ customClassesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -358,7 +355,8 @@ FROM google.speech.custom_classes
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -491,7 +489,8 @@ Delete a custom class.
 DELETE FROM google.speech.custom_classes
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND customClassesId = '{{ customClassesId }}' --required;
+AND customClassesId = '{{ customClassesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

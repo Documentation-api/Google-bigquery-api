@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_mirroring_endpoint_groups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_mirroring_endpoint_groups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -319,7 +315,8 @@ updateTime
 FROM google.networksecurity.mirroring_endpoint_groups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND mirroringEndpointGroupsId = '{{ mirroringEndpointGroupsId }}' -- required;
+AND mirroringEndpointGroupsId = '{{ mirroringEndpointGroupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_mirroring_endpoint_groups_list">
@@ -344,7 +341,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -486,7 +484,8 @@ DELETE FROM google.networksecurity.mirroring_endpoint_groups
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND mirroringEndpointGroupsId = '{{ mirroringEndpointGroupsId }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>

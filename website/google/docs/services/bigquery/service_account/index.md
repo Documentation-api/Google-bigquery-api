@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_service_account">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 email,
 kind
 FROM google.bigquery.service_account
-WHERE projectId = '{{ projectId }}' -- required;
+WHERE projectId = '{{ projectId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

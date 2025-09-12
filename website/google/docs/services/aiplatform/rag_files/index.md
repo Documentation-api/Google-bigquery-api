@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -338,7 +334,8 @@ FROM google.aiplatform.rag_files
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND ragCorporaId = '{{ ragCorporaId }}' -- required
-AND ragFilesId = '{{ ragFilesId }}' -- required;
+AND ragFilesId = '{{ ragFilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -365,7 +362,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND ragCorporaId = '{{ ragCorporaId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -389,7 +387,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND ragCorporaId = '{{ ragCorporaId }}' --required
 AND ragFilesId = '{{ ragFilesId }}' --required
-AND forceDelete = '{{ forceDelete }}';
+AND forceDelete = '{{ forceDelete }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -416,7 +415,8 @@ EXEC google.aiplatform.rag_files.import
 @@json=
 '{
 "importRagFilesConfig": "{{ importRagFilesConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="upload">
@@ -432,7 +432,8 @@ EXEC google.aiplatform.rag_files.upload
 '{
 "ragFile": "{{ ragFile }}", 
 "uploadRagFileConfig": "{{ uploadRagFileConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

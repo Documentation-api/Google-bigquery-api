@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_spaces_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_spaces_list">
-
-Successful response
 
 <table>
 <thead>
@@ -232,7 +228,8 @@ displayName,
 updateTime
 FROM google.apigee.spaces
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND spacesId = '{{ spacesId }}' -- required;
+AND spacesId = '{{ spacesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_spaces_list">
@@ -248,7 +245,8 @@ updateTime
 FROM google.apigee.spaces
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -351,7 +349,8 @@ Deletes an organization space.
 ```sql
 DELETE FROM google.apigee.spaces
 WHERE organizationsId = '{{ organizationsId }}' --required
-AND spacesId = '{{ spacesId }}' --required;
+AND spacesId = '{{ spacesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

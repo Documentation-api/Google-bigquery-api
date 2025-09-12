@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_apiproducts_rateplans_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_apiproducts_rateplans_list">
-
-Successful response
 
 <table>
 <thead>
@@ -323,7 +319,8 @@ state
 FROM google.apigee.rateplans
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND apiproductsId = '{{ apiproductsId }}' -- required
-AND rateplansId = '{{ rateplansId }}' -- required;
+AND rateplansId = '{{ rateplansId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_apiproducts_rateplans_list">
@@ -341,7 +338,8 @@ AND orderBy = '{{ orderBy }}'
 AND startKey = '{{ startKey }}'
 AND count = '{{ count }}'
 AND expand = '{{ expand }}'
-AND state = '{{ state }}';
+AND state = '{{ state }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -601,7 +599,8 @@ Deletes a rate plan.
 DELETE FROM google.apigee.rateplans
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND apiproductsId = '{{ apiproductsId }}' --required
-AND rateplansId = '{{ rateplansId }}' --required;
+AND rateplansId = '{{ rateplansId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

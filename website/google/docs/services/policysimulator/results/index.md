@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_replays_results_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -87,8 +85,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_replays_results_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -132,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_replays_results_list">
-
-Successful response
 
 <table>
 <thead>
@@ -296,7 +290,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_replays_results_list">
@@ -316,7 +311,8 @@ WHERE foldersId = '{{ foldersId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_replays_results_list">
@@ -336,7 +332,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND replaysId = '{{ replaysId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

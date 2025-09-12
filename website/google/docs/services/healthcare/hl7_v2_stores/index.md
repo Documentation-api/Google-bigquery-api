@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -281,7 +277,8 @@ FROM google.healthcare.hl7_v2_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND hl7V2StoresId = '{{ hl7V2StoresId }}' -- required;
+AND hl7V2StoresId = '{{ hl7V2StoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -301,7 +298,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -452,7 +450,8 @@ DELETE FROM google.healthcare.hl7_v2_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
-AND hl7V2StoresId = '{{ hl7V2StoresId }}' --required;
+AND hl7V2StoresId = '{{ hl7V2StoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -485,7 +484,8 @@ EXEC google.healthcare.hl7_v2_stores.export
 "filter": "{{ filter }}", 
 "gcsDestination": "{{ gcsDestination }}", 
 "pubsubDestination": "{{ pubsubDestination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -501,7 +501,8 @@ EXEC google.healthcare.hl7_v2_stores.import
 @@json=
 '{
 "gcsSource": "{{ gcsSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rollback">
@@ -523,7 +524,8 @@ EXEC google.healthcare.hl7_v2_stores.rollback
 "inputGcsObject": "{{ inputGcsObject }}", 
 "excludeRollbacks": {{ excludeRollbacks }}, 
 "filteringFields": "{{ filteringFields }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

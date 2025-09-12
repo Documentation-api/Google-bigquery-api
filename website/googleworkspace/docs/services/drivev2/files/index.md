@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -435,8 +433,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -1256,7 +1252,8 @@ AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND updateViewedDate = '{{ updateViewedDate }}'
 AND includePermissionsForView = '{{ includePermissionsForView }}'
-AND includeLabels = '{{ includeLabels }}';
+AND includeLabels = '{{ includeLabels }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -1357,7 +1354,8 @@ AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND teamDriveId = '{{ teamDriveId }}'
 AND includePermissionsForView = '{{ includePermissionsForView }}'
-AND includeLabels = '{{ includeLabels }}';
+AND includeLabels = '{{ includeLabels }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2450,7 +2448,8 @@ DELETE FROM googleworkspace.drivev2.files
 WHERE fileId = '{{ fileId }}' --required
 AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
-AND enforceSingleParent = '{{ enforceSingleParent }}';
+AND enforceSingleParent = '{{ enforceSingleParent }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2568,7 +2567,8 @@ EXEC googleworkspace.drivev2.files.copy
 "sha1Checksum": "{{ sha1Checksum }}", 
 "sha256Checksum": "{{ sha256Checksum }}", 
 "inheritedPermissionsDisabled": {{ inheritedPermissionsDisabled }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="empty_trash">
@@ -2578,7 +2578,8 @@ Permanently deletes all of the user's trashed files.
 ```sql
 EXEC googleworkspace.drivev2.files.empty_trash 
 @enforceSingleParent={{ enforceSingleParent }}, 
-@driveId='{{ driveId }}';
+@driveId='{{ driveId }}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -2588,7 +2589,8 @@ Exports a Google Workspace document to the requested MIME type and returns expor
 ```sql
 EXEC googleworkspace.drivev2.files.export 
 @fileId='{{ fileId }}' --required, 
-@mimeType='{{ mimeType }}' --required;
+@mimeType='{{ mimeType }}' --required
+;
 ```
 </TabItem>
 <TabItem value="generate_ids">
@@ -2599,7 +2601,8 @@ Generates a set of file IDs which can be provided in insert or copy requests.
 EXEC googleworkspace.drivev2.files.generate_ids 
 @maxResults='{{ maxResults }}', 
 @space='{{ space }}', 
-@type='{{ type }}';
+@type='{{ type }}'
+;
 ```
 </TabItem>
 <TabItem value="modify_labels">
@@ -2613,7 +2616,8 @@ EXEC googleworkspace.drivev2.files.modify_labels
 '{
 "labelModifications": "{{ labelModifications }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="touch">
@@ -2626,7 +2630,8 @@ EXEC googleworkspace.drivev2.files.touch
 @supportsAllDrives={{ supportsAllDrives }}, 
 @supportsTeamDrives={{ supportsTeamDrives }}, 
 @includePermissionsForView='{{ includePermissionsForView }}', 
-@includeLabels='{{ includeLabels }}';
+@includeLabels='{{ includeLabels }}'
+;
 ```
 </TabItem>
 <TabItem value="trash">
@@ -2639,7 +2644,8 @@ EXEC googleworkspace.drivev2.files.trash
 @supportsAllDrives={{ supportsAllDrives }}, 
 @supportsTeamDrives={{ supportsTeamDrives }}, 
 @includePermissionsForView='{{ includePermissionsForView }}', 
-@includeLabels='{{ includeLabels }}';
+@includeLabels='{{ includeLabels }}'
+;
 ```
 </TabItem>
 <TabItem value="untrash">
@@ -2652,7 +2658,8 @@ EXEC googleworkspace.drivev2.files.untrash
 @supportsAllDrives={{ supportsAllDrives }}, 
 @supportsTeamDrives={{ supportsTeamDrives }}, 
 @includePermissionsForView='{{ includePermissionsForView }}', 
-@includeLabels='{{ includeLabels }}';
+@includeLabels='{{ includeLabels }}'
+;
 ```
 </TabItem>
 <TabItem value="watch">
@@ -2682,7 +2689,8 @@ EXEC googleworkspace.drivev2.files.watch
 "address": "{{ address }}", 
 "params": "{{ params }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

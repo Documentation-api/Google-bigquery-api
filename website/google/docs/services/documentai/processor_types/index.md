@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_processor_types_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -92,8 +90,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_fetch_processor_types">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -112,8 +108,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_processor_types_list">
-
-Successful response
 
 <table>
 <thead>
@@ -270,7 +264,8 @@ type
 FROM google.documentai.processor_types
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND processorTypesId = '{{ processorTypesId }}' -- required;
+AND processorTypesId = '{{ processorTypesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_fetch_processor_types">
@@ -282,7 +277,8 @@ SELECT
 processorTypes
 FROM google.documentai.processor_types
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_processor_types_list">
@@ -302,7 +298,8 @@ FROM google.documentai.processor_types
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

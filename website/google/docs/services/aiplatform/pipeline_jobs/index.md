@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -449,7 +445,8 @@ updateTime
 FROM google.aiplatform.pipeline_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND pipelineJobsId = '{{ pipelineJobsId }}' -- required;
+AND pipelineJobsId = '{{ pipelineJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -486,7 +483,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -653,7 +651,8 @@ Deletes a PipelineJob.
 DELETE FROM google.aiplatform.pipeline_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND pipelineJobsId = '{{ pipelineJobsId }}' --required;
+AND pipelineJobsId = '{{ pipelineJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="batch_delete">
@@ -663,7 +662,8 @@ Batch deletes PipelineJobs The Operation is atomic. If it fails, none of the Pip
 ```sql
 DELETE FROM google.aiplatform.pipeline_jobs
 WHERE projectsId = '{{ projectsId }}' --required
-AND locationsId = '{{ locationsId }}' --required;
+AND locationsId = '{{ locationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -686,7 +686,8 @@ Cancels a PipelineJob. Starts asynchronous cancellation on the PipelineJob. The 
 EXEC google.aiplatform.pipeline_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@pipelineJobsId='{{ pipelineJobsId }}' --required;
+@pipelineJobsId='{{ pipelineJobsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="batch_cancel">
@@ -700,7 +701,8 @@ EXEC google.aiplatform.pipeline_jobs.batch_cancel
 @@json=
 '{
 "names": "{{ names }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

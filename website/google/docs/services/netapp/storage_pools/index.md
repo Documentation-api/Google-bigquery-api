@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -200,8 +198,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -537,7 +533,8 @@ zone
 FROM google.netapp.storage_pools
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND storagePoolsId = '{{ storagePoolsId }}' -- required;
+AND storagePoolsId = '{{ storagePoolsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -581,7 +578,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -847,7 +845,8 @@ Warning! This operation will permanently delete the storage pool.
 DELETE FROM google.netapp.storage_pools
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND storagePoolsId = '{{ storagePoolsId }}' --required;
+AND storagePoolsId = '{{ storagePoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -874,7 +873,8 @@ EXEC google.netapp.storage_pools.validate_directory_service
 @@json=
 '{
 "directoryServiceType": "{{ directoryServiceType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="switch">
@@ -885,7 +885,8 @@ This operation will switch the active/replica zone for a regional storagePool.
 EXEC google.netapp.storage_pools.switch 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@storagePoolsId='{{ storagePoolsId }}' --required;
+@storagePoolsId='{{ storagePoolsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -232,7 +228,8 @@ state,
 updateTime
 FROM google.cloudidentity.userinvitations
 WHERE customersId = '{{ customersId }}' -- required
-AND userinvitationsId = '{{ userinvitationsId }}' -- required;
+AND userinvitationsId = '{{ userinvitationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -250,7 +247,8 @@ WHERE customersId = '{{ customersId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -273,7 +271,8 @@ Sends a UserInvitation to email. If the `UserInvitation` does not exist for this
 ```sql
 EXEC google.cloudidentity.userinvitations.send 
 @customersId='{{ customersId }}' --required, 
-@userinvitationsId='{{ userinvitationsId }}' --required;
+@userinvitationsId='{{ userinvitationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="cancel">
@@ -283,7 +282,8 @@ Cancels a UserInvitation that was already sent.
 ```sql
 EXEC google.cloudidentity.userinvitations.cancel 
 @customersId='{{ customersId }}' --required, 
-@userinvitationsId='{{ userinvitationsId }}' --required;
+@userinvitationsId='{{ userinvitationsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="is_invitable_user">
@@ -293,7 +293,8 @@ Verifies whether a user account is eligible to receive a UserInvitation (is an u
 ```sql
 EXEC google.cloudidentity.userinvitations.is_invitable_user 
 @customersId='{{ customersId }}' --required, 
-@userinvitationsId='{{ userinvitationsId }}' --required;
+@userinvitationsId='{{ userinvitationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

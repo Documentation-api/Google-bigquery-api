@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_instances_backups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -150,8 +148,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_instances_backups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -430,7 +426,8 @@ versionTime
 FROM google.spanner.backups
 WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND backupsId = '{{ backupsId }}' -- required;
+AND backupsId = '{{ backupsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_instances_backups_list">
@@ -463,7 +460,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -625,7 +623,8 @@ Deletes a pending or completed Backup.
 DELETE FROM google.spanner.backups
 WHERE projectsId = '{{ projectsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND backupsId = '{{ backupsId }}' --required;
+AND backupsId = '{{ backupsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -653,7 +652,8 @@ EXEC google.spanner.backups.projects_instances_backups_copy
 "sourceBackup": "{{ sourceBackup }}", 
 "expireTime": "{{ expireTime }}", 
 "encryptionConfig": "{{ encryptionConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

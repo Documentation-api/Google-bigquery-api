@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -125,8 +123,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -445,7 +441,8 @@ FROM google.healthcare.fhir_stores
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND fhirStoresId = '{{ fhirStoresId }}' -- required;
+AND fhirStoresId = '{{ fhirStoresId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -474,7 +471,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -717,7 +715,8 @@ DELETE FROM google.healthcare.fhir_stores
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
-AND fhirStoresId = '{{ fhirStoresId }}' --required;
+AND fhirStoresId = '{{ fhirStoresId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -755,7 +754,8 @@ EXEC google.healthcare.fhir_stores.deidentify
 "gcsConfigUri": "{{ gcsConfigUri }}", 
 "resourceFilter": "{{ resourceFilter }}", 
 "skipModifiedResources": {{ skipModifiedResources }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="bulk-export-group">
@@ -772,7 +772,8 @@ EXEC google.healthcare.fhir_stores.bulk-export-group
 @_since='{{ _since }}', 
 @_type='{{ _type }}', 
 @outputFormat='{{ outputFormat }}', 
-@organizeOutputBy='{{ organizeOutputBy }}';
+@organizeOutputBy='{{ organizeOutputBy }}'
+;
 ```
 </TabItem>
 <TabItem value="import">
@@ -789,7 +790,8 @@ EXEC google.healthcare.fhir_stores.import
 '{
 "contentStructure": "{{ contentStructure }}", 
 "gcsSource": "{{ gcsSource }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="apply_consents">
@@ -807,7 +809,8 @@ EXEC google.healthcare.fhir_stores.apply_consents
 "patientScope": "{{ patientScope }}", 
 "timeRange": "{{ timeRange }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="apply_admin_consents">
@@ -824,7 +827,8 @@ EXEC google.healthcare.fhir_stores.apply_admin_consents
 '{
 "newConsentsList": "{{ newConsentsList }}", 
 "validateOnly": {{ validateOnly }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="explain_data_access">
@@ -837,7 +841,8 @@ EXEC google.healthcare.fhir_stores.explain_data_access
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
-@resourceId='{{ resourceId }}';
+@resourceId='{{ resourceId }}'
+;
 ```
 </TabItem>
 <TabItem value="export">
@@ -856,7 +861,8 @@ EXEC google.healthcare.fhir_stores.export
 "bigqueryDestination": "{{ bigqueryDestination }}", 
 "_since": "{{ _since }}", 
 "_type": "{{ _type }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="rollback">
@@ -879,7 +885,8 @@ EXEC google.healthcare.fhir_stores.rollback
 "resultGcsBucket": "{{ resultGcsBucket }}", 
 "inputGcsObject": "{{ inputGcsObject }}", 
 "excludeRollbacks": {{ excludeRollbacks }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

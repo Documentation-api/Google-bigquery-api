@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -100,8 +98,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -317,7 +313,8 @@ stateDetails
 FROM google.netapp.kms_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND kmsConfigsId = '{{ kmsConfigsId }}' -- required;
+AND kmsConfigsId = '{{ kmsConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -341,7 +338,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -477,7 +475,8 @@ Warning! This operation will permanently delete the Kms config.
 DELETE FROM google.netapp.kms_configs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND kmsConfigsId = '{{ kmsConfigsId }}' --required;
+AND kmsConfigsId = '{{ kmsConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -500,7 +499,8 @@ Encrypt the existing volumes without CMEK encryption with the desired the KMS co
 EXEC google.netapp.kms_configs.encrypt 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@kmsConfigsId='{{ kmsConfigsId }}' --required;
+@kmsConfigsId='{{ kmsConfigsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="verify">
@@ -511,7 +511,8 @@ Verifies KMS config reachability.
 EXEC google.netapp.kms_configs.verify 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@kmsConfigsId='{{ kmsConfigsId }}' --required;
+@kmsConfigsId='{{ kmsConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

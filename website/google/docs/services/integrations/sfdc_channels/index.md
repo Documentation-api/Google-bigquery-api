@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_sfdc_instances_sfdc_channels_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -102,8 +100,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_products_sfdc_instances_sfdc_channels_list">
-
-Successful response
 
 <table>
 <thead>
@@ -164,8 +160,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_sfdc_instances_sfdc_channels_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -224,8 +218,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_sfdc_instances_sfdc_channels_list">
-
-Successful response
 
 <table>
 <thead>
@@ -471,7 +463,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND productsId = '{{ productsId }}' -- required
 AND sfdcInstancesId = '{{ sfdcInstancesId }}' -- required
-AND sfdcChannelsId = '{{ sfdcChannelsId }}' -- required;
+AND sfdcChannelsId = '{{ sfdcChannelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_sfdc_instances_sfdc_channels_list">
@@ -497,7 +490,8 @@ AND sfdcInstancesId = '{{ sfdcInstancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sfdc_instances_sfdc_channels_get">
@@ -519,7 +513,8 @@ FROM google.integrations.sfdc_channels
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND sfdcInstancesId = '{{ sfdcInstancesId }}' -- required
-AND sfdcChannelsId = '{{ sfdcChannelsId }}' -- required;
+AND sfdcChannelsId = '{{ sfdcChannelsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sfdc_instances_sfdc_channels_list">
@@ -544,7 +539,8 @@ AND sfdcInstancesId = '{{ sfdcInstancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND readMask = '{{ readMask }}';
+AND readMask = '{{ readMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -765,7 +761,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND productsId = '{{ productsId }}' --required
 AND sfdcInstancesId = '{{ sfdcInstancesId }}' --required
-AND sfdcChannelsId = '{{ sfdcChannelsId }}' --required;
+AND sfdcChannelsId = '{{ sfdcChannelsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_sfdc_instances_sfdc_channels_delete">
@@ -777,7 +774,8 @@ DELETE FROM google.integrations.sfdc_channels
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND sfdcInstancesId = '{{ sfdcInstancesId }}' --required
-AND sfdcChannelsId = '{{ sfdcChannelsId }}' --required;
+AND sfdcChannelsId = '{{ sfdcChannelsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

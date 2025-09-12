@@ -104,7 +104,8 @@ EXEC google.addressvalidation.addressvalidation.validate_address
 "enableUspsCass": {{ enableUspsCass }}, 
 "languageOptions": "{{ languageOptions }}", 
 "sessionToken": "{{ sessionToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="provide_validation_feedback">
@@ -117,7 +118,8 @@ EXEC google.addressvalidation.addressvalidation.provide_validation_feedback
 '{
 "conclusion": "{{ conclusion }}", 
 "responseId": "{{ responseId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

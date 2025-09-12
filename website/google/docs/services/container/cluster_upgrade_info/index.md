@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_clusters_fetch_cluster_upgrade_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_clusters_fetch_cluster_upgrade_info">
-
-Successful response
 
 <table>
 <thead>
@@ -241,7 +237,8 @@ FROM google.container.cluster_upgrade_info
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_fetch_cluster_upgrade_info">
@@ -261,7 +258,8 @@ FROM google.container.cluster_upgrade_info
 WHERE projectsId = '{{ projectsId }}' -- required
 AND zonesId = '{{ zonesId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
-AND version = '{{ version }}';
+AND version = '{{ version }}'
+;
 ```
 </TabItem>
 </Tabs>

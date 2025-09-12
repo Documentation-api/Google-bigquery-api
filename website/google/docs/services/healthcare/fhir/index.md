@@ -504,7 +504,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND datasetsId = '{{ datasetsId }}' --required
 AND fhirStoresId = '{{ fhirStoresId }}' --required
 AND fhirId = '{{ fhirId }}' --required
-AND fhirId1 = '{{ fhirId1 }}' --required;
+AND fhirId1 = '{{ fhirId1 }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -547,7 +548,8 @@ EXEC google.healthcare.fhir.conditional_delete
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
-@fhirId='{{ fhirId }}' --required;
+@fhirId='{{ fhirId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="conditional_update">
@@ -566,7 +568,8 @@ EXEC google.healthcare.fhir.conditional_update
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="conditional_patch">
@@ -585,7 +588,8 @@ EXEC google.healthcare.fhir.conditional_patch
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="binary-create">
@@ -603,7 +607,8 @@ EXEC google.healthcare.fhir.binary-create
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="read">
@@ -617,7 +622,8 @@ EXEC google.healthcare.fhir.read
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
 @fhirId='{{ fhirId }}' --required, 
-@fhirId1='{{ fhirId1 }}' --required;
+@fhirId1='{{ fhirId1 }}' --required
+;
 ```
 </TabItem>
 <TabItem value="binary-read">
@@ -630,7 +636,8 @@ EXEC google.healthcare.fhir.binary-read
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
-@BinaryId='{{ BinaryId }}' --required;
+@BinaryId='{{ BinaryId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="binary-update">
@@ -649,7 +656,8 @@ EXEC google.healthcare.fhir.binary-update
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="vread">
@@ -664,7 +672,8 @@ EXEC google.healthcare.fhir.vread
 @fhirStoresId='{{ fhirStoresId }}' --required, 
 @fhirId='{{ fhirId }}' --required, 
 @fhirId1='{{ fhirId1 }}' --required, 
-@_historyId='{{ _historyId }}' --required;
+@_historyId='{{ _historyId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="binary-vread">
@@ -678,7 +687,8 @@ EXEC google.healthcare.fhir.binary-vread
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
 @BinaryId='{{ BinaryId }}' --required, 
-@_historyId='{{ _historyId }}' --required;
+@_historyId='{{ _historyId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="search">
@@ -694,7 +704,8 @@ EXEC google.healthcare.fhir.search
 @@json=
 '{
 "resourceType": "{{ resourceType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="search-type">
@@ -711,7 +722,8 @@ EXEC google.healthcare.fhir.search-type
 @@json=
 '{
 "resourceType": "{{ resourceType }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="patient-everything">
@@ -730,7 +742,8 @@ EXEC google.healthcare.fhir.patient-everything
 @_page_token='{{ _page_token }}', 
 @_count='{{ _count }}', 
 @_since='{{ _since }}', 
-@_type='{{ _type }}';
+@_type='{{ _type }}'
+;
 ```
 </TabItem>
 <TabItem value="capabilities">
@@ -742,7 +755,8 @@ EXEC google.healthcare.fhir.capabilities
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
-@fhirStoresId='{{ fhirStoresId }}' --required;
+@fhirStoresId='{{ fhirStoresId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="execute_bundle">
@@ -760,7 +774,8 @@ EXEC google.healthcare.fhir.execute_bundle
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="history">
@@ -778,7 +793,8 @@ EXEC google.healthcare.fhir.history
 @_count='{{ _count }}', 
 @_since='{{ _since }}', 
 @_at='{{ _at }}', 
-@_page_token='{{ _page_token }}';
+@_page_token='{{ _page_token }}'
+;
 ```
 </TabItem>
 <TabItem value="resource-purge">
@@ -792,7 +808,8 @@ EXEC google.healthcare.fhir.resource-purge
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
 @fhirId='{{ fhirId }}' --required, 
-@fhirId1='{{ fhirId1 }}' --required;
+@fhirId1='{{ fhirId1 }}' --required
+;
 ```
 </TabItem>
 <TabItem value="bulk-export">
@@ -807,7 +824,8 @@ EXEC google.healthcare.fhir.bulk-export
 @fhirStoresId='{{ fhirStoresId }}' --required, 
 @_since='{{ _since }}', 
 @_type='{{ _type }}', 
-@outputFormat='{{ outputFormat }}';
+@outputFormat='{{ outputFormat }}'
+;
 ```
 </TabItem>
 <TabItem value="resource-validate">
@@ -827,7 +845,8 @@ EXEC google.healthcare.fhir.resource-validate
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="consent-enforcement-status">
@@ -840,7 +859,8 @@ EXEC google.healthcare.fhir.consent-enforcement-status
 @locationsId='{{ locationsId }}' --required, 
 @datasetsId='{{ datasetsId }}' --required, 
 @fhirStoresId='{{ fhirStoresId }}' --required, 
-@ConsentId='{{ ConsentId }}' --required;
+@ConsentId='{{ ConsentId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="patient-consent-enforcement-status">
@@ -855,7 +875,8 @@ EXEC google.healthcare.fhir.patient-consent-enforcement-status
 @fhirStoresId='{{ fhirStoresId }}' --required, 
 @PatientId='{{ PatientId }}' --required, 
 @_count='{{ _count }}', 
-@_page_token='{{ _page_token }}';
+@_page_token='{{ _page_token }}'
+;
 ```
 </TabItem>
 </Tabs>

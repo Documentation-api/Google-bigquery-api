@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="customers_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="customers_list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ name,
 displayName,
 sasUserIds
 FROM google.sasportal.customers
-WHERE customersId = '{{ customersId }}' -- required;
+WHERE customersId = '{{ customersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="customers_list">
@@ -231,7 +228,8 @@ displayName,
 sasUserIds
 FROM google.sasportal.customers
 WHERE pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -288,7 +286,8 @@ EXEC google.sasportal.customers.customers_provision_deployment
 "newOrganizationDisplayName": "{{ newOrganizationDisplayName }}", 
 "newDeploymentDisplayName": "{{ newDeploymentDisplayName }}", 
 "organizationId": "{{ organizationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="customers_migrate_organization">
@@ -300,7 +299,8 @@ EXEC google.sasportal.customers.customers_migrate_organization
 @@json=
 '{
 "organizationId": "{{ organizationId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="customers_setup_sas_analytics">
@@ -312,7 +312,8 @@ EXEC google.sasportal.customers.customers_setup_sas_analytics
 @@json=
 '{
 "userId": "{{ userId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

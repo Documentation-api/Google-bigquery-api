@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -266,7 +262,8 @@ policyTag
 FROM google.bigquerydatapolicy.data_policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataPoliciesId = '{{ dataPoliciesId }}' -- required;
+AND dataPoliciesId = '{{ dataPoliciesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -285,7 +282,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -420,7 +418,8 @@ DELETE FROM google.bigquerydatapolicy.data_policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND dataPoliciesId = '{{ dataPoliciesId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -446,7 +445,8 @@ EXEC google.bigquerydatapolicy.data_policies.rename
 @@json=
 '{
 "newDataPolicyId": "{{ newDataPolicyId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

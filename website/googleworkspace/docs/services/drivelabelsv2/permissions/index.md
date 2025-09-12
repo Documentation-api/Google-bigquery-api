@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -209,7 +207,8 @@ WHERE labelsId = '{{ labelsId }}' -- required
 AND revisionsId = '{{ revisionsId }}' -- required
 AND useAdminAccess = '{{ useAdminAccess }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -355,7 +354,8 @@ DELETE FROM googleworkspace.drivelabelsv2.permissions
 WHERE labelsId = '{{ labelsId }}' --required
 AND revisionsId = '{{ revisionsId }}' --required
 AND permissionsId = '{{ permissionsId }}' --required
-AND useAdminAccess = '{{ useAdminAccess }}';
+AND useAdminAccess = '{{ useAdminAccess }}'
+;
 ```
 </TabItem>
 <TabItem value="batch_delete">
@@ -365,7 +365,8 @@ Deletes label permissions. Permissions affect the label resource as a whole, are
 ```sql
 DELETE FROM googleworkspace.drivelabelsv2.permissions
 WHERE labelsId = '{{ labelsId }}' --required
-AND revisionsId = '{{ revisionsId }}' --required;
+AND revisionsId = '{{ revisionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

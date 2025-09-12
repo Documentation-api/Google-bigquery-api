@@ -109,7 +109,8 @@ EXEC google.contactcenterinsights.insightsdata.export
 "kmsKey": "{{ kmsKey }}", 
 "writeDisposition": "{{ writeDisposition }}", 
 "exportSchemaVersion": "{{ exportSchemaVersion }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

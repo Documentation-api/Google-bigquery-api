@@ -47,8 +47,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -87,8 +85,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -129,8 +125,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -169,8 +163,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_get">
-
-Successful response
 
 <table>
 <thead>
@@ -211,8 +203,6 @@ Successful response
 </TabItem>
 <TabItem value="locations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -251,8 +241,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -293,8 +281,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_locations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -334,8 +320,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_locations_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -374,8 +358,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="billing_accounts_locations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -592,7 +574,8 @@ locationId,
 metadata
 FROM google.logging.locations
 WHERE projectsId = '{{ projectsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_get">
@@ -608,7 +591,8 @@ locationId,
 metadata
 FROM google.logging.locations
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_get">
@@ -624,7 +608,8 @@ locationId,
 metadata
 FROM google.logging.locations
 WHERE foldersId = '{{ foldersId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_get">
@@ -640,7 +625,8 @@ locationId,
 metadata
 FROM google.logging.locations
 WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
-AND locationsId = '{{ locationsId }}' -- required;
+AND locationsId = '{{ locationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="locations_list">
@@ -659,7 +645,8 @@ WHERE name = '{{ name }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_list">
@@ -678,7 +665,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_list">
@@ -697,7 +685,8 @@ WHERE organizationsId = '{{ organizationsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_locations_list">
@@ -716,7 +705,8 @@ WHERE foldersId = '{{ foldersId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 <TabItem value="billing_accounts_locations_list">
@@ -735,7 +725,8 @@ WHERE billingAccountsId = '{{ billingAccountsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND extraLocationTypes = '{{ extraLocationTypes }}';
+AND extraLocationTypes = '{{ extraLocationTypes }}'
+;
 ```
 </TabItem>
 </Tabs>

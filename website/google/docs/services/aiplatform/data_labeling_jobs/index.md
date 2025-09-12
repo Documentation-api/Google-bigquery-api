@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -145,8 +143,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -397,7 +393,8 @@ updateTime
 FROM google.aiplatform.data_labeling_jobs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND dataLabelingJobsId = '{{ dataLabelingJobsId }}' -- required;
+AND dataLabelingJobsId = '{{ dataLabelingJobsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -431,7 +428,8 @@ AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND readMask = '{{ readMask }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -590,7 +588,8 @@ Deletes a DataLabelingJob.
 DELETE FROM google.aiplatform.data_labeling_jobs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND dataLabelingJobsId = '{{ dataLabelingJobsId }}' --required;
+AND dataLabelingJobsId = '{{ dataLabelingJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -612,7 +611,8 @@ Cancels a DataLabelingJob. Success of cancellation is not guaranteed.
 EXEC google.aiplatform.data_labeling_jobs.cancel 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@dataLabelingJobsId='{{ dataLabelingJobsId }}' --required;
+@dataLabelingJobsId='{{ dataLabelingJobsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

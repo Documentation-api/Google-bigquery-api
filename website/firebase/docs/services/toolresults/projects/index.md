@@ -94,7 +94,8 @@ Creates resources for settings which have not yet been set. Currently, this crea
 
 ```sql
 EXEC firebase.toolresults.projects.initialize_settings 
-@projectId='{{ projectId }}' --required;
+@projectId='{{ projectId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

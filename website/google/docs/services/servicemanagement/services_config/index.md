@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_config">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -302,7 +300,8 @@ usage
 FROM google.servicemanagement.services_config
 WHERE serviceName = '{{ serviceName }}' -- required
 AND configId = '{{ configId }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>

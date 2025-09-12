@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -311,7 +307,8 @@ volume
 FROM google.baremetalsolution.nfs_shares
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND nfsSharesId = '{{ nfsSharesId }}' -- required;
+AND nfsSharesId = '{{ nfsSharesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -335,7 +332,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -484,7 +482,8 @@ Delete an NFS share. The underlying volume is automatically deleted.
 DELETE FROM google.baremetalsolution.nfs_shares
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND nfsSharesId = '{{ nfsSharesId }}' --required;
+AND nfsSharesId = '{{ nfsSharesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -510,7 +509,8 @@ EXEC google.baremetalsolution.nfs_shares.rename
 @@json=
 '{
 "newNfsshareId": "{{ newNfsshareId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

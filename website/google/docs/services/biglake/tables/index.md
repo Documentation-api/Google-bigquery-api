@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -306,7 +302,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND catalogsId = '{{ catalogsId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
-AND tablesId = '{{ tablesId }}' -- required;
+AND tablesId = '{{ tablesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -330,7 +327,8 @@ AND catalogsId = '{{ catalogsId }}' -- required
 AND databasesId = '{{ databasesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND view = '{{ view }}';
+AND view = '{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -479,7 +477,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND catalogsId = '{{ catalogsId }}' --required
 AND databasesId = '{{ databasesId }}' --required
-AND tablesId = '{{ tablesId }}' --required;
+AND tablesId = '{{ tablesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -507,7 +506,8 @@ EXEC google.biglake.tables.rename
 @@json=
 '{
 "newName": "{{ newName }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

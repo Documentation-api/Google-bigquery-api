@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -160,8 +158,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -408,7 +404,8 @@ transformColumns
 FROM google.bigquery.models
 WHERE projectId = '{{ projectId }}' -- required
 AND +datasetId = '{{ +datasetId }}' -- required
-AND +modelId = '{{ +modelId }}' -- required;
+AND +modelId = '{{ +modelId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -442,7 +439,8 @@ FROM google.bigquery.models
 WHERE projectId = '{{ projectId }}' -- required
 AND +datasetId = '{{ +datasetId }}' -- required
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -518,7 +516,8 @@ Deletes the model specified by modelId from the dataset.
 DELETE FROM google.bigquery.models
 WHERE projectId = '{{ projectId }}' --required
 AND +datasetId = '{{ +datasetId }}' --required
-AND +modelId = '{{ +modelId }}' --required;
+AND +modelId = '{{ +modelId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

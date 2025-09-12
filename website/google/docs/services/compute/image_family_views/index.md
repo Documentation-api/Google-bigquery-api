@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,7 +132,8 @@ image
 FROM google.compute.image_family_views
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
-AND family = '{{ family }}' -- required;
+AND family = '{{ family }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

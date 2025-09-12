@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_get_access_approval_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -127,8 +125,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_get_access_approval_settings">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -212,8 +208,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_get_access_approval_settings">
-
-Successful response
 
 <table>
 <thead>
@@ -447,7 +441,8 @@ preferredRequestExpirationDays,
 requestScopeMaxWidthPreference,
 requireCustomerVisibleJustification
 FROM google.accessapproval.access_approval_settings
-WHERE projectsId = '{{ projectsId }}' -- required;
+WHERE projectsId = '{{ projectsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_get_access_approval_settings">
@@ -471,7 +466,8 @@ preferredRequestExpirationDays,
 requestScopeMaxWidthPreference,
 requireCustomerVisibleJustification
 FROM google.accessapproval.access_approval_settings
-WHERE foldersId = '{{ foldersId }}' -- required;
+WHERE foldersId = '{{ foldersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_get_access_approval_settings">
@@ -495,7 +491,8 @@ preferredRequestExpirationDays,
 requestScopeMaxWidthPreference,
 requireCustomerVisibleJustification
 FROM google.accessapproval.access_approval_settings
-WHERE organizationsId = '{{ organizationsId }}' -- required;
+WHERE organizationsId = '{{ organizationsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -641,7 +638,8 @@ Deletes the settings associated with a project, folder, or organization. This wi
 
 ```sql
 DELETE FROM google.accessapproval.access_approval_settings
-WHERE projectsId = '{{ projectsId }}' --required;
+WHERE projectsId = '{{ projectsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="folders_delete_access_approval_settings">
@@ -650,7 +648,8 @@ Deletes the settings associated with a project, folder, or organization. This wi
 
 ```sql
 DELETE FROM google.accessapproval.access_approval_settings
-WHERE foldersId = '{{ foldersId }}' --required;
+WHERE foldersId = '{{ foldersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="organizations_delete_access_approval_settings">
@@ -659,7 +658,8 @@ Deletes the settings associated with a project, folder, or organization. This wi
 
 ```sql
 DELETE FROM google.accessapproval.access_approval_settings
-WHERE organizationsId = '{{ organizationsId }}' --required;
+WHERE organizationsId = '{{ organizationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

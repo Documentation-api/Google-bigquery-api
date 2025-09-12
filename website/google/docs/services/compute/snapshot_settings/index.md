@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -139,7 +137,8 @@ Get snapshot settings.
 SELECT
 storageLocation
 FROM google.compute.snapshot_settings
-WHERE project = '{{ project }}' -- required;
+WHERE project = '{{ project }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

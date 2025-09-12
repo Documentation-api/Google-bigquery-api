@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_product_sets_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_product_sets_list">
-
-Successful response
 
 <table>
 <thead>
@@ -245,7 +241,8 @@ indexTime
 FROM google.vision.product_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND productSetsId = '{{ productSetsId }}' -- required;
+AND productSetsId = '{{ productSetsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_product_sets_list">
@@ -262,7 +259,8 @@ FROM google.vision.product_sets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -380,7 +378,8 @@ Permanently deletes a ProductSet. Products and ReferenceImages in the ProductSet
 DELETE FROM google.vision.product_sets
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND productSetsId = '{{ productSetsId }}' --required;
+AND productSetsId = '{{ productSetsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -405,7 +404,8 @@ EXEC google.vision.product_sets.projects_locations_product_sets_import
 @@json=
 '{
 "inputConfig": "{{ inputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

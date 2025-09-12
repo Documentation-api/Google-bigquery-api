@@ -44,8 +44,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -84,8 +82,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="folders_policies_get">
-
-Successful response
 
 <table>
 <thead>
@@ -126,8 +122,6 @@ Successful response
 </TabItem>
 <TabItem value="organizations_policies_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -166,8 +160,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -208,8 +200,6 @@ Successful response
 </TabItem>
 <TabItem value="folders_policies_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -248,8 +238,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_policies_list">
-
-Successful response
 
 <table>
 <thead>
@@ -495,7 +483,8 @@ etag,
 spec
 FROM google.orgpolicy.policies
 WHERE projectsId = '{{ projectsId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="folders_policies_get">
@@ -511,7 +500,8 @@ etag,
 spec
 FROM google.orgpolicy.policies
 WHERE foldersId = '{{ foldersId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_policies_get">
@@ -527,7 +517,8 @@ etag,
 spec
 FROM google.orgpolicy.policies
 WHERE organizationsId = '{{ organizationsId }}' -- required
-AND policiesId = '{{ policiesId }}' -- required;
+AND policiesId = '{{ policiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_policies_list">
@@ -544,7 +535,8 @@ spec
 FROM google.orgpolicy.policies
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_policies_list">
@@ -561,7 +553,8 @@ spec
 FROM google.orgpolicy.policies
 WHERE foldersId = '{{ foldersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_policies_list">
@@ -578,7 +571,8 @@ spec
 FROM google.orgpolicy.policies
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -830,7 +824,8 @@ Deletes a policy. Returns a `google.rpc.Status` with `google.rpc.Code.NOT_FOUND`
 DELETE FROM google.orgpolicy.policies
 WHERE projectsId = '{{ projectsId }}' --required
 AND policiesId = '{{ policiesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 <TabItem value="folders_policies_delete">
@@ -841,7 +836,8 @@ Deletes a policy. Returns a `google.rpc.Status` with `google.rpc.Code.NOT_FOUND`
 DELETE FROM google.orgpolicy.policies
 WHERE foldersId = '{{ foldersId }}' --required
 AND policiesId = '{{ policiesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_policies_delete">
@@ -852,7 +848,8 @@ Deletes a policy. Returns a `google.rpc.Status` with `google.rpc.Code.NOT_FOUND`
 DELETE FROM google.orgpolicy.policies
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND policiesId = '{{ policiesId }}' --required
-AND etag = '{{ etag }}';
+AND etag = '{{ etag }}'
+;
 ```
 </TabItem>
 </Tabs>

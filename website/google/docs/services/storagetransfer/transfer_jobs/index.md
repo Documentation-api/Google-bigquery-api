@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -355,7 +351,8 @@ status,
 transferSpec
 FROM google.storagetransfer.transfer_jobs
 WHERE transferJobsId = '{{ transferJobsId }}' -- required
-AND projectId = '{{ projectId }}' -- required;
+AND projectId = '{{ projectId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -382,7 +379,8 @@ transferSpec
 FROM google.storagetransfer.transfer_jobs
 WHERE filter = '{{ filter }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -576,7 +574,8 @@ Deletes a transfer job. Deleting a transfer job sets its status to DELETED.
 ```sql
 DELETE FROM google.storagetransfer.transfer_jobs
 WHERE transferJobsId = '{{ transferJobsId }}' --required
-AND projectId = '{{ projectId }}' --required;
+AND projectId = '{{ projectId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -600,7 +599,8 @@ EXEC google.storagetransfer.transfer_jobs.run
 @@json=
 '{
 "projectId": "{{ projectId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

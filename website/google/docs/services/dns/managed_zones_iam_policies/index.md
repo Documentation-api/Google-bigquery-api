@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -154,7 +152,8 @@ members,
 role
 FROM google.dns.managed_zones_iam_policies
 WHERE projectsId = '{{ projectsId }}' -- required
-AND managedZonesId = '{{ managedZonesId }}' -- required;
+AND managedZonesId = '{{ managedZonesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -209,7 +208,8 @@ EXEC google.dns.managed_zones_iam_policies.test_iam_permissions
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

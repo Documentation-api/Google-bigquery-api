@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -61,8 +59,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get">
-
-Successful response
 
 <table>
 <thead>
@@ -177,8 +173,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -489,7 +483,8 @@ FROM google.privateca.certificate_authorities
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND caPoolsId = '{{ caPoolsId }}' -- required
-AND certificateAuthoritiesId = '{{ certificateAuthoritiesId }}' -- required;
+AND certificateAuthoritiesId = '{{ certificateAuthoritiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="get">
@@ -522,7 +517,8 @@ FROM google.privateca.certificate_authorities
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND caPoolsId = '{{ caPoolsId }}' -- required
-AND certificateAuthoritiesId = '{{ certificateAuthoritiesId }}' -- required;
+AND certificateAuthoritiesId = '{{ certificateAuthoritiesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -558,7 +554,8 @@ AND caPoolsId = '{{ caPoolsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -751,7 +748,8 @@ AND certificateAuthoritiesId = '{{ certificateAuthoritiesId }}' --required
 AND requestId = '{{ requestId }}'
 AND ignoreActiveCertificates = '{{ ignoreActiveCertificates }}'
 AND skipGracePeriod = '{{ skipGracePeriod }}'
-AND ignoreDependentResources = '{{ ignoreDependentResources }}';
+AND ignoreDependentResources = '{{ ignoreDependentResources }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -783,7 +781,8 @@ EXEC google.privateca.certificate_authorities.activate
 "pemCaCertificate": "{{ pemCaCertificate }}", 
 "subordinateConfig": "{{ subordinateConfig }}", 
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="disable">
@@ -800,7 +799,8 @@ EXEC google.privateca.certificate_authorities.disable
 '{
 "requestId": "{{ requestId }}", 
 "ignoreDependentResources": {{ ignoreDependentResources }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable">
@@ -816,7 +816,8 @@ EXEC google.privateca.certificate_authorities.enable
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="undelete">
@@ -832,7 +833,8 @@ EXEC google.privateca.certificate_authorities.undelete
 @@json=
 '{
 "requestId": "{{ requestId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

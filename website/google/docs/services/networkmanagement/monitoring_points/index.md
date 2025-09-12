@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -140,8 +138,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -356,7 +352,8 @@ FROM google.networkmanagement.monitoring_points
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND networkMonitoringProvidersId = '{{ networkMonitoringProvidersId }}' -- required
-AND monitoringPointsId = '{{ monitoringPointsId }}' -- required;
+AND monitoringPointsId = '{{ monitoringPointsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -387,7 +384,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND networkMonitoringProvidersId = '{{ networkMonitoringProvidersId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -471,7 +471,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_data_
 "sessionSpec": "{{ sessionSpec }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}", 
 "relevanceScoreSpec": "{{ relevanceScoreSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_serving_configs_search_lite">
@@ -517,7 +518,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_data_
 "sessionSpec": "{{ sessionSpec }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}", 
 "relevanceScoreSpec": "{{ relevanceScoreSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_serving_configs_answer">
@@ -545,7 +547,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_data_
 "userPseudoId": "{{ userPseudoId }}", 
 "userLabels": "{{ userLabels }}", 
 "endUserSpec": "{{ endUserSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_serving_configs_stream_answer">
@@ -573,7 +576,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_data_
 "userPseudoId": "{{ userPseudoId }}", 
 "userLabels": "{{ userLabels }}", 
 "endUserSpec": "{{ endUserSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_data_stores_serving_configs_recommend">
@@ -595,7 +599,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_data_
 "validateOnly": {{ validateOnly }}, 
 "params": "{{ params }}", 
 "userLabels": "{{ userLabels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_serving_configs_search">
@@ -641,7 +646,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_engin
 "sessionSpec": "{{ sessionSpec }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}", 
 "relevanceScoreSpec": "{{ relevanceScoreSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_serving_configs_search_lite">
@@ -687,7 +693,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_engin
 "sessionSpec": "{{ sessionSpec }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}", 
 "relevanceScoreSpec": "{{ relevanceScoreSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_serving_configs_answer">
@@ -715,7 +722,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_engin
 "userPseudoId": "{{ userPseudoId }}", 
 "userLabels": "{{ userLabels }}", 
 "endUserSpec": "{{ endUserSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_serving_configs_stream_answer">
@@ -743,7 +751,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_engin
 "userPseudoId": "{{ userPseudoId }}", 
 "userLabels": "{{ userLabels }}", 
 "endUserSpec": "{{ endUserSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_collections_engines_serving_configs_recommend">
@@ -765,7 +774,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_collections_engin
 "validateOnly": {{ validateOnly }}, 
 "params": "{{ params }}", 
 "userLabels": "{{ userLabels }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_serving_configs_search">
@@ -810,7 +820,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_data_stores_servi
 "sessionSpec": "{{ sessionSpec }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}", 
 "relevanceScoreSpec": "{{ relevanceScoreSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_serving_configs_search_lite">
@@ -855,7 +866,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_data_stores_servi
 "sessionSpec": "{{ sessionSpec }}", 
 "relevanceThreshold": "{{ relevanceThreshold }}", 
 "relevanceScoreSpec": "{{ relevanceScoreSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_serving_configs_answer">
@@ -882,7 +894,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_data_stores_servi
 "userPseudoId": "{{ userPseudoId }}", 
 "userLabels": "{{ userLabels }}", 
 "endUserSpec": "{{ endUserSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_serving_configs_stream_answer">
@@ -909,7 +922,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_data_stores_servi
 "userPseudoId": "{{ userPseudoId }}", 
 "userLabels": "{{ userLabels }}", 
 "endUserSpec": "{{ endUserSpec }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_data_stores_serving_configs_recommend">
@@ -930,7 +944,8 @@ EXEC google.discoveryengine.serving_configs.projects_locations_data_stores_servi
 "validateOnly": {{ validateOnly }}, 
 "params": "{{ params }}", 
 "userLabels": "{{ userLabels }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

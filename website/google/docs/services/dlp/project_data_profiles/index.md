@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_project_data_profiles_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -97,8 +95,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_project_data_profiles_get">
-
-Successful response
 
 <table>
 <thead>
@@ -154,8 +150,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_project_data_profiles_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -209,8 +203,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_locations_project_data_profiles_list">
-
-Successful response
 
 <table>
 <thead>
@@ -396,7 +388,8 @@ tableDataProfileCount
 FROM google.dlp.project_data_profiles
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND projectDataProfilesId = '{{ projectDataProfilesId }}' -- required;
+AND projectDataProfilesId = '{{ projectDataProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_project_data_profiles_get">
@@ -416,7 +409,8 @@ tableDataProfileCount
 FROM google.dlp.project_data_profiles
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND projectDataProfilesId = '{{ projectDataProfilesId }}' -- required;
+AND projectDataProfilesId = '{{ projectDataProfilesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_project_data_profiles_list">
@@ -439,7 +433,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_project_data_profiles_list">
@@ -462,7 +457,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
 AND orderBy = '{{ orderBy }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

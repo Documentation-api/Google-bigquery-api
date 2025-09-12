@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_host_stats_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -224,7 +222,8 @@ AND tsAscending = '{{ tsAscending }}'
 AND realtime = '{{ realtime }}'
 AND tzo = '{{ tzo }}'
 AND accuracy = '{{ accuracy }}'
-AND envgroupHostname = '{{ envgroupHostname }}';
+AND envgroupHostname = '{{ envgroupHostname }}'
+;
 ```
 </TabItem>
 </Tabs>

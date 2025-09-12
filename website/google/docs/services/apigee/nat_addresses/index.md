@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="organizations_instances_nat_addresses_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="organizations_instances_nat_addresses_list">
-
-Successful response
 
 <table>
 <thead>
@@ -217,7 +213,8 @@ state
 FROM google.apigee.nat_addresses
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
-AND natAddressesId = '{{ natAddressesId }}' -- required;
+AND natAddressesId = '{{ natAddressesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="organizations_instances_nat_addresses_list">
@@ -233,7 +230,8 @@ FROM google.apigee.nat_addresses
 WHERE organizationsId = '{{ organizationsId }}' -- required
 AND instancesId = '{{ instancesId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -309,7 +307,8 @@ Deletes the NAT address. Connections that are actively using the address are dra
 DELETE FROM google.apigee.nat_addresses
 WHERE organizationsId = '{{ organizationsId }}' --required
 AND instancesId = '{{ instancesId }}' --required
-AND natAddressesId = '{{ natAddressesId }}' --required;
+AND natAddressesId = '{{ natAddressesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -331,7 +330,8 @@ Activates the NAT address. The Apigee instance can now use this for Internet egr
 EXEC google.apigee.nat_addresses.organizations_instances_nat_addresses_activate 
 @organizationsId='{{ organizationsId }}' --required, 
 @instancesId='{{ instancesId }}' --required, 
-@natAddressesId='{{ natAddressesId }}' --required;
+@natAddressesId='{{ natAddressesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

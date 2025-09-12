@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="nodes_nodes_nodes_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -70,8 +68,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="nodes_nodes_list">
-
-Successful response
 
 <table>
 <thead>
@@ -257,7 +253,8 @@ WHERE nodesId = '{{ nodesId }}' -- required
 AND nodesId1 = '{{ nodesId1 }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_nodes_list">
@@ -273,7 +270,8 @@ FROM google.prod_tt_sasportal.nodes
 WHERE nodesId = '{{ nodesId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -436,7 +434,8 @@ Deletes a node.
 ```sql
 DELETE FROM google.prod_tt_sasportal.nodes
 WHERE nodesId = '{{ nodesId }}' --required
-AND nodesId1 = '{{ nodesId1 }}' --required;
+AND nodesId1 = '{{ nodesId1 }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -462,7 +461,8 @@ EXEC google.prod_tt_sasportal.nodes.customers_nodes_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="nodes_nodes_move">
@@ -476,7 +476,8 @@ EXEC google.prod_tt_sasportal.nodes.nodes_nodes_move
 @@json=
 '{
 "destination": "{{ destination }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -205,8 +203,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -439,7 +435,8 @@ FROM google.bigquery.datasets
 WHERE projectId = '{{ projectId }}' -- required
 AND +datasetId = '{{ +datasetId }}' -- required
 AND accessPolicyVersion = '{{ accessPolicyVersion }}'
-AND datasetView = '{{ datasetView }}';
+AND datasetView = '{{ datasetView }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -460,7 +457,8 @@ WHERE projectId = '{{ projectId }}' -- required
 AND all = '{{ all }}'
 AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -829,7 +827,8 @@ Deletes the dataset specified by the datasetId value. Before you can delete a da
 DELETE FROM google.bigquery.datasets
 WHERE projectId = '{{ projectId }}' --required
 AND +datasetId = '{{ +datasetId }}' --required
-AND deleteContents = '{{ deleteContents }}';
+AND deleteContents = '{{ deleteContents }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -854,7 +853,8 @@ EXEC google.bigquery.datasets.undelete
 @@json=
 '{
 "deletionTime": "{{ deletionTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

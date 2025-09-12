@@ -118,7 +118,8 @@ EXEC google.datacatalog.locations.projects_locations_set_config
 '{
 "tagTemplateMigration": "{{ tagTemplateMigration }}", 
 "catalogUiExperience": "{{ catalogUiExperience }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="organizations_locations_set_config">
@@ -133,7 +134,8 @@ EXEC google.datacatalog.locations.organizations_locations_set_config
 '{
 "tagTemplateMigration": "{{ tagTemplateMigration }}", 
 "catalogUiExperience": "{{ catalogUiExperience }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

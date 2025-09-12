@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -130,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -355,7 +351,8 @@ targetPlatforms,
 userAgent
 FROM google.websecurityscanner.scan_configs
 WHERE projectsId = '{{ projectsId }}' -- required
-AND scanConfigsId = '{{ scanConfigsId }}' -- required;
+AND scanConfigsId = '{{ scanConfigsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -382,7 +379,8 @@ userAgent
 FROM google.websecurityscanner.scan_configs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageToken = '{{ pageToken }}'
-AND pageSize = '{{ pageSize }}';
+AND pageSize = '{{ pageSize }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -618,7 +616,8 @@ Deletes an existing ScanConfig and its child resources.
 ```sql
 DELETE FROM google.websecurityscanner.scan_configs
 WHERE projectsId = '{{ projectsId }}' --required
-AND scanConfigsId = '{{ scanConfigsId }}' --required;
+AND scanConfigsId = '{{ scanConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -639,7 +638,8 @@ Start a ScanRun according to the given ScanConfig.
 ```sql
 EXEC google.websecurityscanner.scan_configs.start 
 @projectsId='{{ projectsId }}' --required, 
-@scanConfigsId='{{ scanConfigsId }}' --required;
+@scanConfigsId='{{ scanConfigsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

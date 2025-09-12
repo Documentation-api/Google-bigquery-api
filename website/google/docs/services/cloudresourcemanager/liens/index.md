@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -236,7 +232,8 @@ parent,
 reason,
 restrictions
 FROM google.cloudresourcemanager.liens
-WHERE liensId = '{{ liensId }}' -- required;
+WHERE liensId = '{{ liensId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -254,7 +251,8 @@ restrictions
 FROM google.cloudresourcemanager.liens
 WHERE parent = '{{ parent }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -354,7 +352,8 @@ Delete a Lien by `name`. Callers of this method will require permission on the `
 
 ```sql
 DELETE FROM google.cloudresourcemanager.liens
-WHERE liensId = '{{ liensId }}' --required;
+WHERE liensId = '{{ liensId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

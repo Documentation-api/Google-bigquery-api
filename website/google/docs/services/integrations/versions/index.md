@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_integrations_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -192,8 +190,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_products_integrations_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -344,8 +340,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -494,8 +488,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -944,7 +936,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND productsId = '{{ productsId }}' -- required
 AND integrationsId = '{{ integrationsId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_versions_list">
@@ -989,7 +982,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND fieldMask = '{{ fieldMask }}';
+AND fieldMask = '{{ fieldMask }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_get">
@@ -1029,7 +1023,8 @@ FROM google.integrations.versions
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND integrationsId = '{{ integrationsId }}' -- required
-AND versionsId = '{{ versionsId }}' -- required;
+AND versionsId = '{{ versionsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_list">
@@ -1073,7 +1068,8 @@ AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
 AND orderBy = '{{ orderBy }}'
-AND fieldMask = '{{ fieldMask }}';
+AND fieldMask = '{{ fieldMask }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1567,7 +1563,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND productsId = '{{ productsId }}' --required
 AND integrationsId = '{{ integrationsId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_delete">
@@ -1579,7 +1576,8 @@ DELETE FROM google.integrations.versions
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND integrationsId = '{{ integrationsId }}' --required
-AND versionsId = '{{ versionsId }}' --required;
+AND versionsId = '{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -1616,7 +1614,8 @@ EXEC google.integrations.versions.projects_locations_products_integrations_versi
 @@json=
 '{
 "configParameters": "{{ configParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_versions_upload">
@@ -1633,7 +1632,8 @@ EXEC google.integrations.versions.projects_locations_products_integrations_versi
 '{
 "content": "{{ content }}", 
 "fileFormat": "{{ fileFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_versions_download">
@@ -1648,7 +1648,8 @@ EXEC google.integrations.versions.projects_locations_products_integrations_versi
 @integrationsId='{{ integrationsId }}' --required, 
 @versionsId='{{ versionsId }}' --required, 
 @fileFormat='{{ fileFormat }}', 
-@files='{{ files }}';
+@files='{{ files }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_versions_takeover_edit_lock">
@@ -1661,7 +1662,8 @@ EXEC google.integrations.versions.projects_locations_products_integrations_versi
 @locationsId='{{ locationsId }}' --required, 
 @productsId='{{ productsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_versions_unpublish">
@@ -1674,7 +1676,8 @@ EXEC google.integrations.versions.projects_locations_products_integrations_versi
 @locationsId='{{ locationsId }}' --required, 
 @productsId='{{ productsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_publish">
@@ -1690,7 +1693,8 @@ EXEC google.integrations.versions.projects_locations_integrations_versions_publi
 @@json=
 '{
 "configParameters": "{{ configParameters }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_upload">
@@ -1706,7 +1710,8 @@ EXEC google.integrations.versions.projects_locations_integrations_versions_uploa
 '{
 "content": "{{ content }}", 
 "fileFormat": "{{ fileFormat }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_download">
@@ -1720,7 +1725,8 @@ EXEC google.integrations.versions.projects_locations_integrations_versions_downl
 @integrationsId='{{ integrationsId }}' --required, 
 @versionsId='{{ versionsId }}' --required, 
 @fileFormat='{{ fileFormat }}', 
-@files='{{ files }}';
+@files='{{ files }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_download_json_package">
@@ -1733,7 +1739,8 @@ EXEC google.integrations.versions.projects_locations_integrations_versions_downl
 @locationsId='{{ locationsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
 @versionsId='{{ versionsId }}' --required, 
-@files='{{ files }}';
+@files='{{ files }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_versions_unpublish">
@@ -1745,7 +1752,8 @@ EXEC google.integrations.versions.projects_locations_integrations_versions_unpub
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
 @integrationsId='{{ integrationsId }}' --required, 
-@versionsId='{{ versionsId }}' --required;
+@versionsId='{{ versionsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

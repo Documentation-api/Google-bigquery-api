@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -115,8 +113,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -339,7 +335,8 @@ restrictions,
 themeId
 FROM googleworkspace.drivev2.drives
 WHERE driveId = '{{ driveId }}' -- required
-AND useDomainAdminAccess = '{{ useDomainAdminAccess }}';
+AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -364,7 +361,8 @@ FROM googleworkspace.drivev2.drives
 WHERE maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND q = '{{ q }}'
-AND useDomainAdminAccess = '{{ useDomainAdminAccess }}';
+AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -568,7 +566,8 @@ Permanently deletes a shared drive for which the user is an `organizer`. The sha
 DELETE FROM googleworkspace.drivev2.drives
 WHERE driveId = '{{ driveId }}' --required
 AND useDomainAdminAccess = '{{ useDomainAdminAccess }}'
-AND allowItemDeletion = '{{ allowItemDeletion }}';
+AND allowItemDeletion = '{{ allowItemDeletion }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -589,7 +588,8 @@ Hides a shared drive from the default view.
 
 ```sql
 EXEC googleworkspace.drivev2.drives.hide 
-@driveId='{{ driveId }}' --required;
+@driveId='{{ driveId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="unhide">
@@ -598,7 +598,8 @@ Restores a shared drive to the default view.
 
 ```sql
 EXEC googleworkspace.drivev2.drives.unhide 
-@driveId='{{ driveId }}' --required;
+@driveId='{{ driveId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

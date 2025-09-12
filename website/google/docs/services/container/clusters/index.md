@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_clusters_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -452,8 +450,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_clusters_get">
-
-Successful response
 
 <table>
 <thead>
@@ -864,8 +860,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_clusters_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -1274,8 +1268,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_zones_clusters_list">
-
-Successful response
 
 <table>
 <thead>
@@ -1737,7 +1729,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND clustersId = '{{ clustersId }}' -- required
 AND projectId = '{{ projectId }}'
 AND zone = '{{ zone }}'
-AND clusterId = '{{ clusterId }}';
+AND clusterId = '{{ clusterId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_get">
@@ -1829,7 +1822,8 @@ FROM google.container.clusters
 WHERE projectId = '{{ projectId }}' -- required
 AND zone = '{{ zone }}' -- required
 AND clusterId = '{{ clusterId }}' -- required
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_list">
@@ -1921,7 +1915,8 @@ FROM google.container.clusters
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND projectId = '{{ projectId }}'
-AND zone = '{{ zone }}';
+AND zone = '{{ zone }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_list">
@@ -1935,7 +1930,8 @@ missingZones
 FROM google.container.clusters
 WHERE projectId = '{{ projectId }}' -- required
 AND zone = '{{ zone }}' -- required
-AND parent = '{{ parent }}';
+AND parent = '{{ parent }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2172,7 +2168,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND clustersId = '{{ clustersId }}' --required
 AND projectId = '{{ projectId }}'
 AND zone = '{{ zone }}'
-AND clusterId = '{{ clusterId }}';
+AND clusterId = '{{ clusterId }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_delete">
@@ -2184,7 +2181,8 @@ DELETE FROM google.container.clusters
 WHERE projectId = '{{ projectId }}' --required
 AND zone = '{{ zone }}' --required
 AND clusterId = '{{ clusterId }}' --required
-AND name = '{{ name }}';
+AND name = '{{ name }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -2238,7 +2236,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_logging
 "clusterId": "{{ clusterId }}", 
 "loggingService": "{{ loggingService }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_monitoring">
@@ -2257,7 +2256,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_monitoring
 "clusterId": "{{ clusterId }}", 
 "monitoringService": "{{ monitoringService }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_addons">
@@ -2276,7 +2276,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_addons
 "clusterId": "{{ clusterId }}", 
 "addonsConfig": "{{ addonsConfig }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_locations">
@@ -2295,7 +2296,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_locations
 "clusterId": "{{ clusterId }}", 
 "locations": "{{ locations }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_update_master">
@@ -2314,7 +2316,8 @@ EXEC google.container.clusters.projects_locations_clusters_update_master
 "clusterId": "{{ clusterId }}", 
 "masterVersion": "{{ masterVersion }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_master_auth">
@@ -2334,7 +2337,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_master_auth
 "action": "{{ action }}", 
 "update": "{{ update }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_resource_labels">
@@ -2354,7 +2358,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_resource_labels
 "resourceLabels": "{{ resourceLabels }}", 
 "labelFingerprint": "{{ labelFingerprint }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_legacy_abac">
@@ -2373,7 +2378,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_legacy_abac
 "clusterId": "{{ clusterId }}", 
 "enabled": {{ enabled }}, 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_start_ip_rotation">
@@ -2392,7 +2398,8 @@ EXEC google.container.clusters.projects_locations_clusters_start_ip_rotation
 "clusterId": "{{ clusterId }}", 
 "name": "{{ name }}", 
 "rotateCredentials": {{ rotateCredentials }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_complete_ip_rotation">
@@ -2410,7 +2417,8 @@ EXEC google.container.clusters.projects_locations_clusters_complete_ip_rotation
 "zone": "{{ zone }}", 
 "clusterId": "{{ clusterId }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_network_policy">
@@ -2429,7 +2437,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_network_policy
 "clusterId": "{{ clusterId }}", 
 "networkPolicy": "{{ networkPolicy }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_set_maintenance_policy">
@@ -2448,7 +2457,8 @@ EXEC google.container.clusters.projects_locations_clusters_set_maintenance_polic
 "clusterId": "{{ clusterId }}", 
 "maintenancePolicy": "{{ maintenancePolicy }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_clusters_check_autopilot_compatibility">
@@ -2459,7 +2469,8 @@ Checks the cluster compatibility with Autopilot mode, and returns a list of comp
 EXEC google.container.clusters.projects_locations_clusters_check_autopilot_compatibility 
 @projectsId='{{ projectsId }}' --required, 
 @locationsId='{{ locationsId }}' --required, 
-@clustersId='{{ clustersId }}' --required;
+@clustersId='{{ clustersId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_logging">
@@ -2478,7 +2489,8 @@ EXEC google.container.clusters.projects_zones_clusters_logging
 "clusterId": "{{ clusterId }}", 
 "loggingService": "{{ loggingService }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_monitoring">
@@ -2497,7 +2509,8 @@ EXEC google.container.clusters.projects_zones_clusters_monitoring
 "clusterId": "{{ clusterId }}", 
 "monitoringService": "{{ monitoringService }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_addons">
@@ -2516,7 +2529,8 @@ EXEC google.container.clusters.projects_zones_clusters_addons
 "clusterId": "{{ clusterId }}", 
 "addonsConfig": "{{ addonsConfig }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_locations">
@@ -2535,7 +2549,8 @@ EXEC google.container.clusters.projects_zones_clusters_locations
 "clusterId": "{{ clusterId }}", 
 "locations": "{{ locations }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_master">
@@ -2554,7 +2569,8 @@ EXEC google.container.clusters.projects_zones_clusters_master
 "clusterId": "{{ clusterId }}", 
 "masterVersion": "{{ masterVersion }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_set_master_auth">
@@ -2574,7 +2590,8 @@ EXEC google.container.clusters.projects_zones_clusters_set_master_auth
 "action": "{{ action }}", 
 "update": "{{ update }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_resource_labels">
@@ -2594,7 +2611,8 @@ EXEC google.container.clusters.projects_zones_clusters_resource_labels
 "resourceLabels": "{{ resourceLabels }}", 
 "labelFingerprint": "{{ labelFingerprint }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_legacy_abac">
@@ -2613,7 +2631,8 @@ EXEC google.container.clusters.projects_zones_clusters_legacy_abac
 "clusterId": "{{ clusterId }}", 
 "enabled": {{ enabled }}, 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_start_ip_rotation">
@@ -2632,7 +2651,8 @@ EXEC google.container.clusters.projects_zones_clusters_start_ip_rotation
 "clusterId": "{{ clusterId }}", 
 "name": "{{ name }}", 
 "rotateCredentials": {{ rotateCredentials }}
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_complete_ip_rotation">
@@ -2650,7 +2670,8 @@ EXEC google.container.clusters.projects_zones_clusters_complete_ip_rotation
 "zone": "{{ zone }}", 
 "clusterId": "{{ clusterId }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_set_network_policy">
@@ -2669,7 +2690,8 @@ EXEC google.container.clusters.projects_zones_clusters_set_network_policy
 "clusterId": "{{ clusterId }}", 
 "networkPolicy": "{{ networkPolicy }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_zones_clusters_set_maintenance_policy">
@@ -2688,7 +2710,8 @@ EXEC google.container.clusters.projects_zones_clusters_set_maintenance_policy
 "clusterId": "{{ clusterId }}", 
 "maintenancePolicy": "{{ maintenancePolicy }}", 
 "name": "{{ name }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

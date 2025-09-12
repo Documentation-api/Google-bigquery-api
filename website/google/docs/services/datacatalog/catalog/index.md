@@ -97,7 +97,8 @@ EXEC google.datacatalog.catalog.catalog_search
 "pageToken": "{{ pageToken }}", 
 "orderBy": "{{ orderBy }}", 
 "adminSearch": {{ adminSearch }}
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

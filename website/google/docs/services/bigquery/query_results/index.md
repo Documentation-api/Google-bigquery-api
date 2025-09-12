@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_query_results">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -236,7 +234,8 @@ AND location = '{{ location }}'
 AND maxResults = '{{ maxResults }}'
 AND pageToken = '{{ pageToken }}'
 AND startIndex = '{{ startIndex }}'
-AND timeoutMs = '{{ timeoutMs }}';
+AND timeoutMs = '{{ timeoutMs }}'
+;
 ```
 </TabItem>
 </Tabs>

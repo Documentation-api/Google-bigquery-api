@@ -48,8 +48,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_apis_versions_specs_artifacts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -108,8 +106,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_versions_specs_artifacts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -170,8 +166,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -230,8 +224,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_get">
-
-Successful response
 
 <table>
 <thead>
@@ -292,8 +284,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -352,8 +342,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -414,8 +402,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -474,8 +460,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -536,8 +520,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_artifacts_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -596,8 +578,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_artifacts_list">
-
-Successful response
 
 <table>
 <thead>
@@ -965,7 +945,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
 AND specsId = '{{ specsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_specs_artifacts_list">
@@ -992,7 +973,8 @@ AND specsId = '{{ specsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_get">
@@ -1015,7 +997,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND versionsId = '{{ versionsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_get">
@@ -1038,7 +1021,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
 AND deploymentsId = '{{ deploymentsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_list">
@@ -1064,7 +1048,8 @@ AND versionsId = '{{ versionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_list">
@@ -1090,7 +1075,8 @@ AND deploymentsId = '{{ deploymentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_get">
@@ -1112,7 +1098,8 @@ FROM google.apigeeregistry.artifacts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND apisId = '{{ apisId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_list">
@@ -1137,7 +1124,8 @@ AND apisId = '{{ apisId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_artifacts_get">
@@ -1158,7 +1146,8 @@ updateTime
 FROM google.apigeeregistry.artifacts
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND artifactsId = '{{ artifactsId }}' -- required;
+AND artifactsId = '{{ artifactsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_artifacts_list">
@@ -1182,7 +1171,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -1644,7 +1634,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND versionsId = '{{ versionsId }}' --required
 AND specsId = '{{ specsId }}' --required
-AND artifactsId = '{{ artifactsId }}' --required;
+AND artifactsId = '{{ artifactsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_versions_artifacts_delete">
@@ -1657,7 +1648,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND versionsId = '{{ versionsId }}' --required
-AND artifactsId = '{{ artifactsId }}' --required;
+AND artifactsId = '{{ artifactsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_deployments_artifacts_delete">
@@ -1670,7 +1662,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
 AND deploymentsId = '{{ deploymentsId }}' --required
-AND artifactsId = '{{ artifactsId }}' --required;
+AND artifactsId = '{{ artifactsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_apis_artifacts_delete">
@@ -1682,7 +1675,8 @@ DELETE FROM google.apigeeregistry.artifacts
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND apisId = '{{ apisId }}' --required
-AND artifactsId = '{{ artifactsId }}' --required;
+AND artifactsId = '{{ artifactsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_artifacts_delete">
@@ -1693,7 +1687,8 @@ Removes a specified artifact.
 DELETE FROM google.apigeeregistry.artifacts
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND artifactsId = '{{ artifactsId }}' --required;
+AND artifactsId = '{{ artifactsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

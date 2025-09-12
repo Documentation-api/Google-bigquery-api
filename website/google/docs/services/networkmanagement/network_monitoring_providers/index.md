@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -90,8 +88,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -259,7 +255,8 @@ updateTime
 FROM google.networkmanagement.network_monitoring_providers
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND networkMonitoringProvidersId = '{{ networkMonitoringProvidersId }}' -- required;
+AND networkMonitoringProvidersId = '{{ networkMonitoringProvidersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -279,7 +276,8 @@ FROM google.networkmanagement.network_monitoring_providers
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -360,7 +358,8 @@ Deletes a NetworkMonitoringProvider resource and all of its child resources.
 DELETE FROM google.networkmanagement.network_monitoring_providers
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND networkMonitoringProvidersId = '{{ networkMonitoringProvidersId }}' --required;
+AND networkMonitoringProvidersId = '{{ networkMonitoringProvidersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

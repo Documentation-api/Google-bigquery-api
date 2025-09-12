@@ -109,7 +109,8 @@ EXEC google.servicecontrol.services.check
 "attributes": "{{ attributes }}", 
 "resources": "{{ resources }}", 
 "flags": "{{ flags }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="report">
@@ -123,7 +124,8 @@ EXEC google.servicecontrol.services.report
 '{
 "serviceConfigId": "{{ serviceConfigId }}", 
 "operations": "{{ operations }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

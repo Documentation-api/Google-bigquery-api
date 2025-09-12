@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -165,7 +163,8 @@ role
 FROM google.storage.buckets_iam_policies
 WHERE bucket = '{{ bucket }}' -- required
 AND optionsRequestedPolicyVersion = '{{ optionsRequestedPolicyVersion }}'
-AND userProject = '{{ userProject }}';
+AND userProject = '{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -221,7 +220,8 @@ Tests a set of permissions on the given bucket to see which, if any, are held by
 EXEC google.storage.buckets_iam_policies.test_iam_permissions 
 @bucket='{{ bucket }}' --required, 
 @permissions='{{ permissions }}' --required, 
-@userProject='{{ userProject }}';
+@userProject='{{ userProject }}'
+;
 ```
 </TabItem>
 </Tabs>

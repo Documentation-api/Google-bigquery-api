@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_iam_policy">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -148,7 +146,8 @@ condition,
 members,
 role
 FROM google.accesscontextmanager.access_policies_iam_policies
-WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required;
+WHERE accessPoliciesId = '{{ accessPoliciesId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -201,7 +200,8 @@ EXEC google.accesscontextmanager.access_policies_iam_policies.test_iam_permissio
 @@json=
 '{
 "permissions": "{{ permissions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

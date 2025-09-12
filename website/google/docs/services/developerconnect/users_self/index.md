@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="fetch_self">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -159,7 +157,8 @@ lastTokenRequestTime
 FROM google.developerconnect.users_self
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND accountConnectorsId = '{{ accountConnectorsId }}' -- required;
+AND accountConnectorsId = '{{ accountConnectorsId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>
@@ -181,7 +180,8 @@ Delete the User based on the user credentials.
 DELETE FROM google.developerconnect.users_self
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND accountConnectorsId = '{{ accountConnectorsId }}' --required;
+AND accountConnectorsId = '{{ accountConnectorsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

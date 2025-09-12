@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_diagnostics">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -128,7 +126,8 @@ SELECT
 result
 FROM google.compute.interconnects_diagnostics
 WHERE project = '{{ project }}' -- required
-AND interconnect = '{{ interconnect }}' -- required;
+AND interconnect = '{{ interconnect }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

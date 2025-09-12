@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -293,7 +291,8 @@ AND assetTypes = '{{ assetTypes }}'
 AND contentType = '{{ contentType }}'
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND relationshipTypes = '{{ relationshipTypes }}';
+AND relationshipTypes = '{{ relationshipTypes }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -327,7 +326,8 @@ EXEC google.cloudasset.assets.query_assets
 "readTimeWindow": "{{ readTimeWindow }}", 
 "readTime": "{{ readTime }}", 
 "outputConfig": "{{ outputConfig }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="analyze_org_policy_governed_assets">
@@ -340,7 +340,8 @@ EXEC google.cloudasset.assets.analyze_org_policy_governed_assets
 @constraint='{{ constraint }}', 
 @filter='{{ filter }}', 
 @pageSize='{{ pageSize }}', 
-@pageToken='{{ pageToken }}';
+@pageToken='{{ pageToken }}'
+;
 ```
 </TabItem>
 <TabItem value="analyze_move">
@@ -351,7 +352,8 @@ Analyze moving a resource to a specified destination without kicking off the act
 EXEC google.cloudasset.assets.analyze_move 
 @resource='{{ resource }}' --required, 
 @destinationParent='{{ destinationParent }}', 
-@view='{{ view }}';
+@view='{{ view }}'
+;
 ```
 </TabItem>
 </Tabs>

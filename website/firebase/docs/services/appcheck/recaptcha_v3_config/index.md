@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -75,8 +73,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="batch_get">
-
-Successful response
 
 <table>
 <thead>
@@ -193,7 +189,8 @@ siteSecretSet,
 tokenTtl
 FROM firebase.appcheck.recaptcha_v3_config
 WHERE projectsId = '{{ projectsId }}' -- required
-AND appsId = '{{ appsId }}' -- required;
+AND appsId = '{{ appsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="batch_get">
@@ -205,7 +202,8 @@ SELECT
 configs
 FROM firebase.appcheck.recaptcha_v3_config
 WHERE projectsId = '{{ projectsId }}' -- required
-AND names = '{{ names }}';
+AND names = '{{ names }}'
+;
 ```
 </TabItem>
 </Tabs>

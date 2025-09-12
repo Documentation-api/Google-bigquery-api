@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -336,7 +332,8 @@ FROM google.apihub.instances
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pluginsId = '{{ pluginsId }}' -- required
-AND instancesId = '{{ instancesId }}' -- required;
+AND instancesId = '{{ instancesId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -361,7 +358,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND pluginsId = '{{ pluginsId }}' -- required
 AND filter = '{{ filter }}'
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -525,7 +523,8 @@ DELETE FROM google.apihub.instances
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND pluginsId = '{{ pluginsId }}' --required
-AND instancesId = '{{ instancesId }}' --required;
+AND instancesId = '{{ instancesId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -554,7 +553,8 @@ EXEC google.apihub.instances.execute_action
 @@json=
 '{
 "actionExecutionDetail": "{{ actionExecutionDetail }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="enable_action">
@@ -570,7 +570,8 @@ EXEC google.apihub.instances.enable_action
 @@json=
 '{
 "actionId": "{{ actionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="disable_action">
@@ -586,7 +587,8 @@ EXEC google.apihub.instances.disable_action
 @@json=
 '{
 "actionId": "{{ actionId }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

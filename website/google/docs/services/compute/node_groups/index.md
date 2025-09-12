@@ -41,8 +41,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -142,8 +140,6 @@ Successful response
 </TabItem>
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -187,8 +183,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="aggregated_list">
-
-Successful response
 
 <table>
 <thead>
@@ -482,7 +476,8 @@ zone
 FROM google.compute.node_groups
 WHERE project = '{{ project }}' -- required
 AND zone = '{{ zone }}' -- required
-AND nodeGroup = '{{ nodeGroup }}' -- required;
+AND nodeGroup = '{{ nodeGroup }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -504,7 +499,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="aggregated_list">
@@ -538,7 +534,8 @@ AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
 AND returnPartialSuccess = '{{ returnPartialSuccess }}'
-AND serviceProjectNumber = '{{ serviceProjectNumber }}';
+AND serviceProjectNumber = '{{ serviceProjectNumber }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -824,7 +821,8 @@ DELETE FROM google.compute.node_groups
 WHERE project = '{{ project }}' --required
 AND zone = '{{ zone }}' --required
 AND nodeGroup = '{{ nodeGroup }}' --required
-AND requestId = '{{ requestId }}';
+AND requestId = '{{ requestId }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -853,7 +851,8 @@ EXEC google.compute.node_groups.set_node_template
 @@json=
 '{
 "nodeTemplate": "{{ nodeTemplate }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="simulate_maintenance_event">
@@ -869,7 +868,8 @@ EXEC google.compute.node_groups.simulate_maintenance_event
 @@json=
 '{
 "nodes": "{{ nodes }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="perform_maintenance">
@@ -886,7 +886,8 @@ EXEC google.compute.node_groups.perform_maintenance
 '{
 "nodes": "{{ nodes }}", 
 "startTime": "{{ startTime }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

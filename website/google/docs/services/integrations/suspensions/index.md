@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_products_integrations_executions_suspensions_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -105,8 +103,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_suspensions_list">
-
-Successful response
 
 <table>
 <thead>
@@ -332,7 +328,8 @@ AND executionsId = '{{ executionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_suspensions_list">
@@ -359,7 +356,8 @@ AND executionsId = '{{ executionsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND filter = '{{ filter }}'
-AND orderBy = '{{ orderBy }}';
+AND orderBy = '{{ orderBy }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -391,7 +389,8 @@ EXEC google.integrations.suspensions.projects_locations_products_integrations_ex
 @@json=
 '{
 "suspension": "{{ suspension }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_products_integrations_executions_suspensions_lift">
@@ -409,7 +408,8 @@ EXEC google.integrations.suspensions.projects_locations_products_integrations_ex
 @@json=
 '{
 "suspensionResult": "{{ suspensionResult }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_suspensions_resolve">
@@ -426,7 +426,8 @@ EXEC google.integrations.suspensions.projects_locations_integrations_executions_
 @@json=
 '{
 "suspension": "{{ suspension }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_integrations_executions_suspensions_lift">
@@ -443,7 +444,8 @@ EXEC google.integrations.suspensions.projects_locations_integrations_executions_
 @@json=
 '{
 "suspensionResult": "{{ suspensionResult }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

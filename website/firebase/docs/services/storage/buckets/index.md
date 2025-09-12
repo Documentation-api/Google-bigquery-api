@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -60,8 +58,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -168,7 +164,8 @@ SELECT
 name
 FROM firebase.storage.buckets
 WHERE projectsId = '{{ projectsId }}' -- required
-AND bucketsId = '{{ bucketsId }}' -- required;
+AND bucketsId = '{{ bucketsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -181,7 +178,8 @@ name
 FROM firebase.storage.buckets
 WHERE projectsId = '{{ projectsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>

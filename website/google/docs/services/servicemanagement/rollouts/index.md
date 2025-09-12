@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -95,8 +93,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -257,7 +253,8 @@ trafficPercentStrategy,
 universe
 FROM google.servicemanagement.rollouts
 WHERE serviceName = '{{ serviceName }}' -- required
-AND rolloutId = '{{ rolloutId }}' -- required;
+AND rolloutId = '{{ rolloutId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -278,7 +275,8 @@ FROM google.servicemanagement.rollouts
 WHERE serviceName = '{{ serviceName }}' -- required
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND filter = '{{ filter }}';
+AND filter = '{{ filter }}'
+;
 ```
 </TabItem>
 </Tabs>

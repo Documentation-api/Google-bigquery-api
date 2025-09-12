@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -267,7 +265,8 @@ AND supportsAllDrives = '{{ supportsAllDrives }}'
 AND supportsTeamDrives = '{{ supportsTeamDrives }}'
 AND teamDriveId = '{{ teamDriveId }}'
 AND includePermissionsForView = '{{ includePermissionsForView }}'
-AND includeLabels = '{{ includeLabels }}';
+AND includeLabels = '{{ includeLabels }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -313,7 +312,8 @@ EXEC googleworkspace.drivev3.changes.watch
 "address": "{{ address }}", 
 "params": "{{ params }}", 
 "kind": "{{ kind }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

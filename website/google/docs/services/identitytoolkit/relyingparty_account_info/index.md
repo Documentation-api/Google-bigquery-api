@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_account_info">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -122,7 +120,8 @@ Returns the account info.
 SELECT
 kind,
 users
-FROM google.identitytoolkit.relyingparty_account_info;
+FROM google.identitytoolkit.relyingparty_account_info
+;
 ```
 </TabItem>
 </Tabs>

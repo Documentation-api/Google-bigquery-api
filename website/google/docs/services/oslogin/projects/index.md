@@ -100,7 +100,8 @@ Deletes a POSIX account.
 ```sql
 DELETE FROM google.oslogin.projects
 WHERE usersId = '{{ usersId }}' --required
-AND projectsId = '{{ projectsId }}' --required;
+AND projectsId = '{{ projectsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

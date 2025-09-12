@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="list_xpn_hosts">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -85,8 +83,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="get_xpn_host">
-
-Successful response
 
 <table>
 <thead>
@@ -282,7 +278,8 @@ AND filter = '{{ filter }}'
 AND maxResults = '{{ maxResults }}'
 AND orderBy = '{{ orderBy }}'
 AND pageToken = '{{ pageToken }}'
-AND returnPartialSuccess = '{{ returnPartialSuccess }}';
+AND returnPartialSuccess = '{{ returnPartialSuccess }}'
+;
 ```
 </TabItem>
 <TabItem value="get_xpn_host">
@@ -307,7 +304,8 @@ usageExportLocation,
 vmDnsSetting,
 xpnProjectStatus
 FROM google.compute.xpn_hosts
-WHERE project = '{{ project }}' -- required;
+WHERE project = '{{ project }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

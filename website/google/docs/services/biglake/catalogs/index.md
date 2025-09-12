@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -80,8 +78,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -237,7 +233,8 @@ updateTime
 FROM google.biglake.catalogs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND catalogsId = '{{ catalogsId }}' -- required;
+AND catalogsId = '{{ catalogsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -255,7 +252,8 @@ FROM google.biglake.catalogs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -328,7 +326,8 @@ Deletes an existing catalog specified by the catalog ID.
 DELETE FROM google.biglake.catalogs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND catalogsId = '{{ catalogsId }}' --required;
+AND catalogsId = '{{ catalogsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

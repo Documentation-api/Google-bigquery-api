@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_agents_flows_transition_route_groups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -72,8 +70,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_flows_transition_route_groups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -104,8 +100,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_agents_transition_route_groups_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -134,8 +128,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_locations_agents_transition_route_groups_list">
-
-Successful response
 
 <table>
 <thead>
@@ -346,7 +338,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND flowsId = '{{ flowsId }}' -- required
 AND transitionRouteGroupsId = '{{ transitionRouteGroupsId }}' -- required
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_flows_transition_route_groups_list">
@@ -365,7 +358,8 @@ AND agentsId = '{{ agentsId }}' -- required
 AND flowsId = '{{ flowsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_transition_route_groups_get">
@@ -382,7 +376,8 @@ WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND transitionRouteGroupsId = '{{ transitionRouteGroupsId }}' -- required
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_transition_route_groups_list">
@@ -400,7 +395,8 @@ AND locationsId = '{{ locationsId }}' -- required
 AND agentsId = '{{ agentsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND languageCode = '{{ languageCode }}';
+AND languageCode = '{{ languageCode }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -595,7 +591,8 @@ AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND flowsId = '{{ flowsId }}' --required
 AND transitionRouteGroupsId = '{{ transitionRouteGroupsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_agents_transition_route_groups_delete">
@@ -608,7 +605,8 @@ WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND agentsId = '{{ agentsId }}' --required
 AND transitionRouteGroupsId = '{{ transitionRouteGroupsId }}' --required
-AND force = '{{ force }}';
+AND force = '{{ force }}'
+;
 ```
 </TabItem>
 </Tabs>

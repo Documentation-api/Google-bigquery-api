@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get_hl7v2_store_metrics">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -146,7 +144,8 @@ FROM google.healthcare.hl7_v2_store_metrics
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND datasetsId = '{{ datasetsId }}' -- required
-AND hl7V2StoresId = '{{ hl7V2StoresId }}' -- required;
+AND hl7V2StoresId = '{{ hl7V2StoresId }}' -- required
+;
 ```
 </TabItem>
 </Tabs>

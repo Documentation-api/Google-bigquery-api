@@ -39,8 +39,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_jobs_stages_get_execution_details">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -170,7 +168,8 @@ AND stageId = '{{ stageId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
 AND startTime = '{{ startTime }}'
-AND endTime = '{{ endTime }}';
+AND endTime = '{{ endTime }}'
+;
 ```
 </TabItem>
 </Tabs>

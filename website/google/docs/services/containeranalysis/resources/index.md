@@ -118,7 +118,8 @@ EXEC google.containeranalysis.resources.projects_locations_resources_export_sbom
 @@json=
 '{
 "cloudStorageLocation": "{{ cloudStorageLocation }}"
-}';
+}'
+;
 ```
 </TabItem>
 <TabItem value="projects_resources_export_sbom">
@@ -132,7 +133,8 @@ EXEC google.containeranalysis.resources.projects_resources_export_sbom
 @@json=
 '{
 "cloudStorageLocation": "{{ cloudStorageLocation }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

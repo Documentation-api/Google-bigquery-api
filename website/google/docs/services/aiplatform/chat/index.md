@@ -100,7 +100,8 @@ EXEC google.aiplatform.chat.completions
 "contentType": "{{ contentType }}", 
 "data": "{{ data }}", 
 "extensions": "{{ extensions }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>

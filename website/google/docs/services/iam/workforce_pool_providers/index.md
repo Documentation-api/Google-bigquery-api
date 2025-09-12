@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -120,8 +118,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="list">
-
-Successful response
 
 <table>
 <thead>
@@ -349,7 +345,8 @@ state
 FROM google.iam.workforce_pool_providers
 WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
-AND providersId = '{{ providersId }}' -- required;
+AND providersId = '{{ providersId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="list">
@@ -376,7 +373,8 @@ WHERE locationsId = '{{ locationsId }}' -- required
 AND workforcePoolsId = '{{ workforcePoolsId }}' -- required
 AND pageSize = '{{ pageSize }}'
 AND pageToken = '{{ pageToken }}'
-AND showDeleted = '{{ showDeleted }}';
+AND showDeleted = '{{ showDeleted }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -568,7 +566,8 @@ Deletes a WorkforcePoolProvider. Deleting a provider does not revoke credentials
 DELETE FROM google.iam.workforce_pool_providers
 WHERE locationsId = '{{ locationsId }}' --required
 AND workforcePoolsId = '{{ workforcePoolsId }}' --required
-AND providersId = '{{ providersId }}' --required;
+AND providersId = '{{ providersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>
@@ -590,7 +589,8 @@ Undeletes a WorkforcePoolProvider, as long as it was deleted fewer than 30 days 
 EXEC google.iam.workforce_pool_providers.undelete 
 @locationsId='{{ locationsId }}' --required, 
 @workforcePoolsId='{{ workforcePoolsId }}' --required, 
-@providersId='{{ providersId }}' --required;
+@providersId='{{ providersId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

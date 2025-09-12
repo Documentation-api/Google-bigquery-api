@@ -42,8 +42,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="projects_locations_transfer_configs_runs_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -132,8 +130,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_transfer_configs_runs_get">
-
-Successful response
 
 <table>
 <thead>
@@ -224,8 +220,6 @@ Successful response
 </TabItem>
 <TabItem value="projects_locations_transfer_configs_runs_list">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -314,8 +308,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="projects_transfer_configs_runs_list">
-
-Successful response
 
 <table>
 <thead>
@@ -558,7 +550,8 @@ FROM google.bigquerydatatransfer.runs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND transferConfigsId = '{{ transferConfigsId }}' -- required
-AND runsId = '{{ runsId }}' -- required;
+AND runsId = '{{ runsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_runs_get">
@@ -585,7 +578,8 @@ userId
 FROM google.bigquerydatatransfer.runs
 WHERE projectsId = '{{ projectsId }}' -- required
 AND transferConfigsId = '{{ transferConfigsId }}' -- required
-AND runsId = '{{ runsId }}' -- required;
+AND runsId = '{{ runsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="projects_locations_transfer_configs_runs_list">
@@ -616,7 +610,8 @@ AND transferConfigsId = '{{ transferConfigsId }}' -- required
 AND states = '{{ states }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND runAttempt = '{{ runAttempt }}';
+AND runAttempt = '{{ runAttempt }}'
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_runs_list">
@@ -646,7 +641,8 @@ AND transferConfigsId = '{{ transferConfigsId }}' -- required
 AND states = '{{ states }}'
 AND pageToken = '{{ pageToken }}'
 AND pageSize = '{{ pageSize }}'
-AND runAttempt = '{{ runAttempt }}';
+AND runAttempt = '{{ runAttempt }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -670,7 +666,8 @@ DELETE FROM google.bigquerydatatransfer.runs
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
 AND transferConfigsId = '{{ transferConfigsId }}' --required
-AND runsId = '{{ runsId }}' --required;
+AND runsId = '{{ runsId }}' --required
+;
 ```
 </TabItem>
 <TabItem value="projects_transfer_configs_runs_delete">
@@ -681,7 +678,8 @@ Deletes the specified transfer run.
 DELETE FROM google.bigquerydatatransfer.runs
 WHERE projectsId = '{{ projectsId }}' --required
 AND transferConfigsId = '{{ transferConfigsId }}' --required
-AND runsId = '{{ runsId }}' --required;
+AND runsId = '{{ runsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

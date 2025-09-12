@@ -40,8 +40,6 @@ The following fields are returned by `SELECT` queries:
 >
 <TabItem value="admin_projects_locations_reservations_get">
 
-Successful response
-
 <table>
 <thead>
     <tr>
@@ -65,8 +63,6 @@ Successful response
 </table>
 </TabItem>
 <TabItem value="admin_projects_locations_reservations_list">
-
-Successful response
 
 <table>
 <thead>
@@ -216,7 +212,8 @@ throughputCapacity
 FROM google.pubsublite.reservations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
-AND reservationsId = '{{ reservationsId }}' -- required;
+AND reservationsId = '{{ reservationsId }}' -- required
+;
 ```
 </TabItem>
 <TabItem value="admin_projects_locations_reservations_list">
@@ -231,7 +228,8 @@ FROM google.pubsublite.reservations
 WHERE projectsId = '{{ projectsId }}' -- required
 AND locationsId = '{{ locationsId }}' -- required
 AND pageSize = '{{ pageSize }}'
-AND pageToken = '{{ pageToken }}';
+AND pageToken = '{{ pageToken }}'
+;
 ```
 </TabItem>
 </Tabs>
@@ -345,7 +343,8 @@ Deletes the specified reservation.
 DELETE FROM google.pubsublite.reservations
 WHERE projectsId = '{{ projectsId }}' --required
 AND locationsId = '{{ locationsId }}' --required
-AND reservationsId = '{{ reservationsId }}' --required;
+AND reservationsId = '{{ reservationsId }}' --required
+;
 ```
 </TabItem>
 </Tabs>

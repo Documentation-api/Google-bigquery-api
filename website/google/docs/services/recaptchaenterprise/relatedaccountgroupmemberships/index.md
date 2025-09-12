@@ -101,7 +101,8 @@ EXEC google.recaptchaenterprise.relatedaccountgroupmemberships.search
 "hashedAccountId": "{{ hashedAccountId }}", 
 "pageSize": {{ pageSize }}, 
 "pageToken": "{{ pageToken }}"
-}';
+}'
+;
 ```
 </TabItem>
 </Tabs>
