@@ -17,7 +17,8 @@ Content-Type: application/json
 - `https://www.googleapis.com/auth/bigquery`
     
 - `https://www.googleapis.com/auth/cloud-platform`
-- ## Get a list of datasets
+
+## Get a list of datasets
 
 ## **HTTP Request**
 
@@ -500,7 +501,7 @@ Replace `{{datasetId}}` with your dataset ID.
 
 ## Description
 
-Complelely replace all the fields of an exisitng dataset.
+Complelely replace all the fields of an exisiting dataset.
 
 ## Authentication
 
